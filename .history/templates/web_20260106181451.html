@@ -200,6 +200,45 @@
                 {% endif %}
             </section>
             
+            <!-- 单词记忆卡片 -->
+            <section class="card card-words">
+                <div class="card-header">
+                    <h3>📖 单词记忆</h3>
+                </div>
+                
+                <div class="words-carousel" id="words-carousel">
+                    {% if words %}
+                        {% for word in words %}
+                        <div class="word-card {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
+                            <div class="word-main">
+                                <h4 class="word-text">{{ word.word }}</h4>
+                                <span class="word-phonetic">{{ word.phonetic }}</span>
+                            </div>
+                            <p class="word-meaning">{{ word.meaning }}</p>
+                            <div class="word-sentences">
+                                {% for sentence in word.sentences[:2] %}
+                                <div class="sentence-item">
+                                    <p class="sentence-en">{{ sentence.en }}</p>
+                                    <p class="sentence-zh">{{ sentence.zh }}</p>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <p class="empty-state">暂无单词数据</p>
+                    {% endif %}
+                </div>
+                
+                {% if words and words|length > 1 %}
+                <div class="word-nav">
+                    <button class="nav-btn-sm" id="prev-word">←</button>
+                    <span class="nav-indicator-sm" id="word-indicator">1 / {{ words|length }}</span>
+                    <button class="nav-btn-sm" id="next-word">→</button>
+                </div>
+                {% endif %}
+            </section>
+            
         </aside>
         
     </main>
@@ -273,6 +312,29 @@
         document.getElementById('next-model')?.addEventListener('click', () => {
             currentModelIdx = (currentModelIdx + 1) % modelCards.length;
             showModel(currentModelIdx);
+        });
+
+        // 单词轮播
+        const wordCards = document.querySelectorAll('.word-card');
+        const wordIndicator = document.getElementById('word-indicator');
+        let currentWordIdx = 0;
+        
+        function showWord(idx) {
+            wordCards.forEach(c => c.classList.remove('active'));
+            wordCards[idx]?.classList.add('active');
+            if (wordIndicator) {
+                wordIndicator.textContent = `${idx + 1} / ${wordCards.length}`;
+            }
+        }
+        
+        document.getElementById('prev-word')?.addEventListener('click', () => {
+            currentWordIdx = (currentWordIdx - 1 + wordCards.length) % wordCards.length;
+            showWord(currentWordIdx);
+        });
+        
+        document.getElementById('next-word')?.addEventListener('click', () => {
+            currentWordIdx = (currentWordIdx + 1) % wordCards.length;
+            showWord(currentWordIdx);
         });
     </script>
 </body>

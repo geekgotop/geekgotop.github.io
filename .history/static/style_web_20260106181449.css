@@ -583,6 +583,99 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     border-radius: 3px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: var(--text-muted);
+/* ==================== 单词记忆卡片 ==================== */
+.card-words {
+    background: linear-gradient(135deg, var(--bg-card), var(--bg-primary));
 }
+
+.word-card {
+    display: none;
+}
+
+.word-card.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+.word-main {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.word-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--accent-color);
+    letter-spacing: 0.5px;
+}
+
+.word-phonetic {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-family: 'Inter', serif;
+}
+
+.word-meaning {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.word-sentences {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sentence-item {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.sentence-en {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.sentence-zh {
+    color: var(--text-muted);
+}
+
+.word-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+}
+
+.nav-btn-sm {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.nav-btn-sm:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+.nav-indicator-sm {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+

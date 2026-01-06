@@ -1,0 +1,681 @@
+/**
+ * Kindle-Dash 样式表 (PC Web 仪表盘版)
+ * ======================================
+ * Bento Grid 布局 + 现代科技感
+ * 支持系统级深色模式
+ */
+
+/* ==================== CSS 变量 ==================== */
+:root {
+    /* 浅色模式 */
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-card: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    --border-color: #e2e8f0;
+    --accent-color: #3b82f6;
+    --accent-hover: #2563eb;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+}
+
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #0f172a;
+        --bg-secondary: #1e293b;
+        --bg-card: #1e293b;
+        --text-primary: #f1f5f9;
+        --text-secondary: #cbd5e1;
+        --text-muted: #64748b;
+        --border-color: #334155;
+        --accent-color: #60a5fa;
+        --accent-hover: #3b82f6;
+        --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* ==================== 全局重置 ==================== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==================== 基础样式 ==================== */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* 中文字体 */
+p, blockquote, .abstract-zh, .model-desc, .model-example {
+    font-family: 'Noto Serif SC', 'Songti SC', serif;
+}
+
+/* ==================== 顶部导航 ==================== */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 32px;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.tagline {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.generated-time {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* ==================== Bento Grid 布局 ==================== */
+#bento-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr 320px;
+    gap: 24px;
+    padding: 24px 32px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ==================== 卡片通用样式 ==================== */
+.card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.badge {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 8px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: var(--radius-sm);
+}
+
+.empty-state {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 24px;
+    font-style: italic;
+}
+
+/* ==================== Focus 卡片 ==================== */
+.card-focus {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.focus-display .focus-text {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 16px;
+    opacity: 0.9;
+}
+
+.current-time {
+    font-size: 48px;
+    font-weight: 300;
+    font-family: 'Inter', monospace;
+}
+
+/* ==================== 语录卡片 ==================== */
+.quote-carousel {
+    min-height: 120px;
+    position: relative;
+}
+
+.quote-slide {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.quote-slide.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.quote-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.quote-translation {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.quote-author {
+    font-size: 12px;
+    color: var(--text-muted);
+    display: block;
+    text-align: right;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border-color);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background: var(--accent-color);
+}
+
+/* ==================== 歌词卡片 ==================== */
+.song-select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.lyrics-display {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.song-lyrics {
+    display: none;
+    text-align: center;
+}
+
+.song-lyrics.active {
+    display: block;
+}
+
+.song-lyrics p {
+    font-size: 13px;
+    line-height: 2;
+    color: var(--text-secondary);
+}
+
+.lyrics-more {
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* ==================== 论文卡片 ==================== */
+.card-papers {
+    height: fit-content;
+}
+
+.papers-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.paper-item {
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.paper-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.paper-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.paper-title .ipa {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--text-muted);
+    vertical-align: super;
+}
+
+.paper-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.paper-abstract {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.abstract-en {
+    margin-bottom: 12px;
+}
+
+.abstract-details {
+    margin-top: 12px;
+}
+
+.abstract-details summary {
+    cursor: pointer;
+    color: var(--accent-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.abstract-zh {
+    margin-top: 12px;
+    padding: 12px;
+    background: var(--bg-primary);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+}
+
+.paper-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.paper-link:hover {
+    color: var(--accent-hover);
+}
+
+/* ==================== GitHub 仓库卡片 ==================== */
+.repo-list {
+    list-style: none;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.repo-item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.repo-item:last-child {
+    border-bottom: none;
+}
+
+.repo-link {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.2s;
+}
+
+.repo-link:hover {
+    background: var(--bg-primary);
+    margin: 0 -20px;
+    padding: 12px 20px;
+}
+
+.repo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.repo-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.repo-stars {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.repo-desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.repo-meta {
+    display: flex;
+    gap: 12px;
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+/* ==================== 思维模型卡片 ==================== */
+.models-carousel {
+    min-height: 200px;
+    position: relative;
+}
+
+.model-card {
+    display: none;
+}
+
+.model-card.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+.model-name {
+    margin-bottom: 12px;
+}
+
+.model-en {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.model-zh {
+    display: block;
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+.model-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.model-example {
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 12px;
+    background: var(--bg-primary);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--accent-color);
+    margin-bottom: 12px;
+}
+
+.model-source {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: right;
+}
+
+.model-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.nav-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+
+.nav-btn:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+.model-indicator {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* ==================== 响应式布局 ==================== */
+@media (max-width: 1200px) {
+    #bento-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .column-left {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .column-center {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+    
+    .column-right {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
+
+@media (max-width: 768px) {
+    #bento-grid {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+    
+    .column-left, .column-center, .column-right {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    
+    #header {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 16px;
+    }
+    
+    .current-time {
+        font-size: 36px;
+    }
+}
+
+/* ==================== 滚动条样式 ==================== */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+
+/* ==================== 单词记忆卡片 ==================== */
+.card-words {
+    background: linear-gradient(135deg, var(--bg-card), var(--bg-primary));
+}
+
+.word-card {
+    display: none;
+}
+
+.word-card.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+.word-main {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.word-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--accent-color);
+    letter-spacing: 0.5px;
+}
+
+.word-phonetic {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-family: 'Inter', serif;
+}
+
+.word-meaning {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.word-sentences {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sentence-item {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.sentence-en {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.sentence-zh {
+    color: var(--text-muted);
+}
+
+.word-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+}
+
+.nav-btn-sm {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.nav-btn-sm:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+.nav-indicator-sm {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+

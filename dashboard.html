@@ -594,9 +594,102 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     border-radius: 3px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: var(--text-muted);
+/* ==================== 单词记忆卡片 ==================== */
+.card-words {
+    background: linear-gradient(135deg, var(--bg-card), var(--bg-primary));
 }
+
+.word-card {
+    display: none;
+}
+
+.word-card.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+.word-main {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.word-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--accent-color);
+    letter-spacing: 0.5px;
+}
+
+.word-phonetic {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-family: &#39;Inter&#39;, serif;
+}
+
+.word-meaning {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.word-sentences {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sentence-item {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.sentence-en {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.sentence-zh {
+    color: var(--text-muted);
+}
+
+.word-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+}
+
+.nav-btn-sm {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.nav-btn-sm:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+.nav-indicator-sm {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
 
     </style>
 </head>
@@ -605,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-01-06 18:13:29</span>
+        <span class="generated-time">更新于 2026-01-06 18:30:17</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -1024,6 +1117,237 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
             </section>
             
+            <!-- 单词记忆卡片 -->
+            <section class="card card-words">
+                <div class="card-header">
+                    <h3>📖 单词记忆</h3>
+                </div>
+                
+                <div class="words-carousel" id="words-carousel">
+                    
+                        
+                        <div class="word-card active" data-index="0">
+                            <div class="word-main">
+                                <h4 class="word-text">algorithm</h4>
+                                <span class="word-phonetic">/ˈælɡəˌrɪðəm/</span>
+                            </div>
+                            <p class="word-meaning">n. 算法；运算法则</p>
+                            <div class="word-sentences">
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">The sorting algorithm runs in O(n log n) time complexity.</p>
+                                    <p class="sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
+                                </div>
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">We need to optimize this algorithm for better performance.</p>
+                                    <p class="sentence-zh">我们需要优化这个算法以获得更好的性能。</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="word-card " data-index="1">
+                            <div class="word-main">
+                                <h4 class="word-text">recursion</h4>
+                                <span class="word-phonetic">/rɪˈkɜːrʒn/</span>
+                            </div>
+                            <p class="word-meaning">n. 递归；循环</p>
+                            <div class="word-sentences">
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Recursion is a method where the solution depends on solutions to smaller instances.</p>
+                                    <p class="sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
+                                </div>
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Be careful with recursion to avoid stack overflow.</p>
+                                    <p class="sentence-zh">使用递归时要小心避免栈溢出。</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="word-card " data-index="2">
+                            <div class="word-main">
+                                <h4 class="word-text">encapsulation</h4>
+                                <span class="word-phonetic">/ɪnˌkæpsjuˈleɪʃn/</span>
+                            </div>
+                            <p class="word-meaning">n. 封装；包装</p>
+                            <div class="word-sentences">
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Encapsulation hides the internal state of an object from the outside.</p>
+                                    <p class="sentence-zh">封装将对象的内部状态对外部隐藏。</p>
+                                </div>
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Good encapsulation leads to more maintainable code.</p>
+                                    <p class="sentence-zh">良好的封装能带来更易维护的代码。</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="word-card " data-index="3">
+                            <div class="word-main">
+                                <h4 class="word-text">polymorphism</h4>
+                                <span class="word-phonetic">/ˌpɒliˈmɔːfɪzəm/</span>
+                            </div>
+                            <p class="word-meaning">n. 多态性</p>
+                            <div class="word-sentences">
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Polymorphism allows objects of different classes to be treated as objects of a common superclass.</p>
+                                    <p class="sentence-zh">多态性允许不同类的对象被当作共同父类的对象来处理。</p>
+                                </div>
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Method overriding is a common way to implement polymorphism.</p>
+                                    <p class="sentence-zh">方法重写是实现多态性的常见方式。</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="word-card " data-index="4">
+                            <div class="word-main">
+                                <h4 class="word-text">inheritance</h4>
+                                <span class="word-phonetic">/ɪnˈherɪtəns/</span>
+                            </div>
+                            <p class="word-meaning">n. 继承；遗传</p>
+                            <div class="word-sentences">
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Inheritance enables new classes to receive the properties of existing classes.</p>
+                                    <p class="sentence-zh">继承使新类能够接收现有类的属性。</p>
+                                </div>
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Multiple inheritance can lead to the diamond problem.</p>
+                                    <p class="sentence-zh">多重继承可能导致菱形继承问题。</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="word-card " data-index="5">
+                            <div class="word-main">
+                                <h4 class="word-text">abstraction</h4>
+                                <span class="word-phonetic">/æbˈstrækʃn/</span>
+                            </div>
+                            <p class="word-meaning">n. 抽象；提取</p>
+                            <div class="word-sentences">
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Abstraction reduces complexity by hiding unnecessary details.</p>
+                                    <p class="sentence-zh">抽象通过隐藏不必要的细节来降低复杂性。</p>
+                                </div>
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">An abstract class cannot be instantiated directly.</p>
+                                    <p class="sentence-zh">抽象类不能被直接实例化。</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="word-card " data-index="6">
+                            <div class="word-main">
+                                <h4 class="word-text">concurrency</h4>
+                                <span class="word-phonetic">/kənˈkʌrənsi/</span>
+                            </div>
+                            <p class="word-meaning">n. 并发；并发性</p>
+                            <div class="word-sentences">
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Concurrency allows multiple tasks to run in overlapping time periods.</p>
+                                    <p class="sentence-zh">并发允许多个任务在重叠的时间段内运行。</p>
+                                </div>
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Handling concurrency correctly is crucial for multi-threaded applications.</p>
+                                    <p class="sentence-zh">正确处理并发对多线程应用程序至关重要。</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="word-card " data-index="7">
+                            <div class="word-main">
+                                <h4 class="word-text">serialization</h4>
+                                <span class="word-phonetic">/ˌsɪəriəlaɪˈzeɪʃn/</span>
+                            </div>
+                            <p class="word-meaning">n. 序列化</p>
+                            <div class="word-sentences">
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Serialization converts an object into a stream of bytes for storage.</p>
+                                    <p class="sentence-zh">序列化将对象转换为字节流以便存储。</p>
+                                </div>
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">JSON is a popular format for data serialization.</p>
+                                    <p class="sentence-zh">JSON 是一种流行的数据序列化格式。</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="word-card " data-index="8">
+                            <div class="word-main">
+                                <h4 class="word-text">asynchronous</h4>
+                                <span class="word-phonetic">/eɪˈsɪŋkrənəs/</span>
+                            </div>
+                            <p class="word-meaning">adj. 异步的</p>
+                            <div class="word-sentences">
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Asynchronous programming allows the program to continue executing while waiting for I/O.</p>
+                                    <p class="sentence-zh">异步编程允许程序在等待 I/O 时继续执行。</p>
+                                </div>
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Use async/await syntax for cleaner asynchronous code.</p>
+                                    <p class="sentence-zh">使用 async/await 语法可以获得更简洁的异步代码。</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="word-card " data-index="9">
+                            <div class="word-main">
+                                <h4 class="word-text">deprecated</h4>
+                                <span class="word-phonetic">/ˈdeprəkeɪtɪd/</span>
+                            </div>
+                            <p class="word-meaning">adj. 已弃用的；不推荐的</p>
+                            <div class="word-sentences">
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">This method is deprecated and will be removed in the next version.</p>
+                                    <p class="sentence-zh">此方法已弃用，将在下一版本中移除。</p>
+                                </div>
+                                
+                                <div class="sentence-item">
+                                    <p class="sentence-en">Avoid using deprecated APIs in new projects.</p>
+                                    <p class="sentence-zh">避免在新项目中使用已弃用的 API。</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                </div>
+                
+                
+                <div class="word-nav">
+                    <button class="nav-btn-sm" id="prev-word">←</button>
+                    <span class="nav-indicator-sm" id="word-indicator">1 / 10</span>
+                    <button class="nav-btn-sm" id="next-word">→</button>
+                </div>
+                
+            </section>
+            
         </aside>
         
     </main>
@@ -1097,6 +1421,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
         document.getElementById('next-model')?.addEventListener('click', () => {
             currentModelIdx = (currentModelIdx + 1) % modelCards.length;
             showModel(currentModelIdx);
+        });
+
+        // 单词轮播
+        const wordCards = document.querySelectorAll('.word-card');
+        const wordIndicator = document.getElementById('word-indicator');
+        let currentWordIdx = 0;
+        
+        function showWord(idx) {
+            wordCards.forEach(c => c.classList.remove('active'));
+            wordCards[idx]?.classList.add('active');
+            if (wordIndicator) {
+                wordIndicator.textContent = `${idx + 1} / ${wordCards.length}`;
+            }
+        }
+        
+        document.getElementById('prev-word')?.addEventListener('click', () => {
+            currentWordIdx = (currentWordIdx - 1 + wordCards.length) % wordCards.length;
+            showWord(currentWordIdx);
+        });
+        
+        document.getElementById('next-word')?.addEventListener('click', () => {
+            currentWordIdx = (currentWordIdx + 1) % wordCards.length;
+            showWord(currentWordIdx);
         });
     </script>
 </body>
