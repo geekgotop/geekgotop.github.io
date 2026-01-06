@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "content": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "language": "en"
+  },
+  {
+    "id": 2,
+    "content": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "language": "en"
+  },
+  {
+    "id": 3,
+    "content": "The best time to plant a tree was 20 years ago. The second best time is now.",
+    "author": "Chinese Proverb",
+    "language": "en"
+  },
+  {
+    "id": 4,
+    "content": "不积跬步，无以至千里；不积小流，无以成江海。",
+    "author": "荀子",
+    "language": "zh"
+  },
+  {
+    "id": 5,
+    "content": "博观而约取，厚积而薄发。",
+    "author": "苏轼",
+    "language": "zh"
+  }
+]

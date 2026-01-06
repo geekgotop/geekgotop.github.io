@@ -1,0 +1,61 @@
+# Kindle-Dash
+
+专为 Kindle 设计的离线信息看板 + PC 仪表盘 + GeekGo 官网
+
+## 🌐 在线访问
+
+- **官网首页**: [www.geekgo.top](https://www.geekgo.top)
+- **Kindle 版**: [www.geekgo.top/kindle.html](https://www.geekgo.top/kindle.html)
+- **Web 仪表盘**: [www.geekgo.top/dashboard.html](https://www.geekgo.top/dashboard.html)
+
+## 📦 项目结构
+
+```
+Kindle-Dash/
+├── data/                  # 本地数据源
+│   ├── lyrics/            # 歌词 .txt 文件
+│   ├── models.json        # 思维模型
+│   ├── quotes.json        # 语录
+│   └── words.json         # 计算机专业英语单词
+├── templates/             # Jinja2 模板
+│   ├── kindle.html        # Kindle 专用模板
+│   └── web.html           # PC Web 专用模板
+├── static/                # 静态资源
+│   ├── style_kindle.css   # Kindle 样式
+│   └── style_web.css      # PC Web 样式
+├── dist/                  # 生成的静态文件
+│   ├── index.html         # 官网首页
+│   ├── kindle.html        # Kindle 看板
+│   └── dashboard.html     # Web 仪表盘
+├── builder.py             # 核心构建脚本
+├── requirements.txt       # Python 依赖
+└── .github/workflows/     # GitHub Actions
+```
+
+## ✨ 功能模块
+
+| 模块 | 说明 |
+|------|------|
+| **Deep Tech** | ArXiv 论文精选，带音标标注和中文翻译 |
+| **GitHub Trending** | 近 7 天 AI 热门仓库 Top 10 |
+| **思维模型** | 第一性原理、奥卡姆剃刀等经典模型 |
+| **语录** | 中英文名言，英文自动翻译 |
+| **歌词** | 诗歌式排版的歌词本 |
+| **单词** | 计算机专业英语词汇学习 |
+
+## 🚀 本地运行
+
+```bash
+# 安装依赖
+pip install -r requirements.txt
+
+# 构建静态页面
+python builder.py
+
+# 本地预览
+cd dist && python -m http.server 8080
+```
+
+## 📄 License
+
+MIT License © 2024-2026 极客至极 GeekGo

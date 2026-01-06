@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindle Dash - 信息仪表盘</title>
+    <meta name="description" content="聚合 ArXiv 论文、GitHub Trending、思维模型、语录和歌词的信息仪表盘">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+{{ web_css }}
+    </style>
+</head>
+<body>
+    <!-- ==================== 顶部导航 ==================== -->
+    <header id="header">
+        <h1 class="logo">Kindle<span>Dash</span></h1>
+        <p class="tagline">信息聚合仪表盘</p>
+        <span class="generated-time">更新于 {{ generated_at }}</span>
+    </header>
+
+    <!-- ==================== Bento Grid 主布局 ==================== -->
+    <main id="bento-grid">
+        
+        <!-- 左列 -->
+        <aside class="column column-left">
+            
+            <!-- Focus 卡片 -->
+            <section class="card card-focus" id="focus-card">
+                <div class="focus-display">
+                    <h2 class="focus-text">FOCUS</h2>
+                    <p class="current-time" id="current-time">--:--</p>
+                </div>
+            </section>
+            
+            <!-- 语录卡片 -->
+            <section class="card card-quote">
+                <div class="card-header">
+                    <h3>💡 每日语录</h3>
+                </div>
+                <div class="quote-carousel" id="quote-carousel">
+                    {% if quotes %}
+                        {% for quote in quotes %}
+                        <div class="quote-slide {% if loop.first %}active{% endif %}">
+                            <blockquote>
+                                <p class="quote-text">{{ quote.content }}</p>
+                                {% if quote.translation %}
+                                <p class="quote-translation">{{ quote.translation }}</p>
+                                {% endif %}
+                            </blockquote>
+                            <cite class="quote-author">— {{ quote.author }}</cite>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <p class="empty-state">暂无语录</p>
+                    {% endif %}
+                </div>
+                {% if quotes and quotes|length > 1 %}
+                <div class="carousel-dots">
+                    {% for quote in quotes %}
+                    <span class="dot {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}"></span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </section>
+            
+            <!-- 歌词播放器风格卡片 -->
+            <section class="card card-lyrics">
+                <div class="card-header">
+                    <h3>🎵 歌词本</h3>
+                </div>
+                <div class="lyrics-player">
+                    {% if lyrics %}
+                        <select id="song-selector" class="song-select">
+                            {% for song in lyrics %}
+                            <option value="{{ loop.index0 }}">{{ song.name }}</option>
+                            {% endfor %}
+                        </select>
+                        <div class="lyrics-display" id="lyrics-display">
+                            {% for song in lyrics %}
+                            <div class="song-lyrics {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
+                                {% for line in song.lines[:10] %}
+                                <p>{{ line }}</p>
+                                {% endfor %}
+                                {% if song.lines|length > 10 %}
+                                <p class="lyrics-more">... 还有 {{ song.lines|length - 10 }} 行</p>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <p class="empty-state">暂无歌词</p>
+                    {% endif %}
+                </div>
+            </section>
+            
+        </aside>
+        
+        <!-- 中列：论文流 -->
+        <section class="column column-center">
+            <div class="card card-papers">
+                <div class="card-header">
+                    <h3>📄 Deep Tech</h3>
+                    <span class="badge">ArXiv 最新</span>
+                </div>
+                
+                <div class="papers-feed">
+                    {% if papers %}
+                        {% for paper in papers %}
+                        <article class="paper-item">
+                            <h4 class="paper-title">{{ paper.title_with_ipa | safe }}</h4>
+                            <div class="paper-meta">
+                                <span class="authors">{{ paper.authors | join(', ') }}</span>
+                                <span class="date">{{ paper.published }}</span>
+                                <span class="categories">{{ paper.categories[:2] | join(' | ') }}</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">{{ paper.abstract_en[:300] }}{% if paper.abstract_en|length > 300 %}...{% endif %}</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">{{ paper.abstract_zh }}</p>
+                                </details>
+                            </div>
+                            <a href="{{ paper.url }}" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        {% endfor %}
+                    {% else %}
+                        <p class="empty-state">暂无论文数据</p>
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+        
+        <!-- 右列 -->
+        <aside class="column column-right">
+            
+            <!-- GitHub Trending 卡片 -->
+            <section class="card card-github">
+                <div class="card-header">
+                    <h3>⭐ GitHub Trending</h3>
+                    <span class="badge">AI 项目</span>
+                </div>
+                
+                <ul class="repo-list">
+                    {% if repos %}
+                        {% for repo in repos %}
+                        <li class="repo-item">
+                            <a href="{{ repo.url }}" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">{{ repo.name.split('/')[1] }}</span>
+                                    <span class="repo-stars">⭐ {{ repo.stars }}</span>
+                                </div>
+                                <p class="repo-desc">{{ repo.description_zh or repo.description_en }}</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">{{ repo.language }}</span>
+                                    <span class="repo-date">{{ repo.created_at }}</span>
+                                </div>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    {% else %}
+                        <p class="empty-state">暂无仓库数据</p>
+                    {% endif %}
+                </ul>
+            </section>
+            
+            <!-- 思维模型卡片 -->
+            <section class="card card-models">
+                <div class="card-header">
+                    <h3>🧠 思维模型</h3>
+                </div>
+                
+                <div class="models-carousel" id="models-carousel">
+                    {% if models %}
+                        {% for model in models %}
+                        <div class="model-card {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
+                            <h4 class="model-name">
+                                <span class="model-en">{{ model.name_en }}</span>
+                                <span class="model-zh">{{ model.name_zh }}</span>
+                            </h4>
+                            <p class="model-desc">{{ model.description_zh }}</p>
+                            <div class="model-example">
+                                <strong>实例：</strong>{{ model.example }}
+                            </div>
+                            <p class="model-source">— {{ model.source }}</p>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <p class="empty-state">暂无思维模型</p>
+                    {% endif %}
+                </div>
+                
+                {% if models and models|length > 1 %}
+                <div class="model-nav">
+                    <button class="nav-btn" id="prev-model">←</button>
+                    <span class="model-indicator" id="model-indicator">1 / {{ models|length }}</span>
+                    <button class="nav-btn" id="next-model">→</button>
+                </div>
+                {% endif %}
+            </section>
+            
+        </aside>
+        
+    </main>
+
+    <!-- ==================== JavaScript ==================== -->
+    <script>
+        // 实时时钟
+        function updateClock() {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
+            document.getElementById('current-time').textContent = timeStr;
+        }
+        updateClock();
+        setInterval(updateClock, 1000);
+
+        // 语录轮播
+        const quoteSlides = document.querySelectorAll('.quote-slide');
+        const quoteDots = document.querySelectorAll('.carousel-dots .dot');
+        let currentQuoteIdx = 0;
+        
+        function showQuote(idx) {
+            quoteSlides.forEach(s => s.classList.remove('active'));
+            quoteDots.forEach(d => d.classList.remove('active'));
+            quoteSlides[idx]?.classList.add('active');
+            quoteDots[idx]?.classList.add('active');
+        }
+        
+        quoteDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                currentQuoteIdx = parseInt(dot.dataset.index);
+                showQuote(currentQuoteIdx);
+            });
+        });
+        
+        // 自动轮播
+        if (quoteSlides.length > 1) {
+            setInterval(() => {
+                currentQuoteIdx = (currentQuoteIdx + 1) % quoteSlides.length;
+                showQuote(currentQuoteIdx);
+            }, 8000);
+        }
+
+        // 歌词选择
+        const songSelector = document.getElementById('song-selector');
+        const songLyrics = document.querySelectorAll('.song-lyrics');
+        
+        songSelector?.addEventListener('change', function() {
+            const idx = this.value;
+            songLyrics.forEach(l => l.classList.remove('active'));
+            document.querySelector(`.song-lyrics[data-index="${idx}"]`)?.classList.add('active');
+        });
+
+        // 思维模型轮播
+        const modelCards = document.querySelectorAll('.model-card');
+        const modelIndicator = document.getElementById('model-indicator');
+        let currentModelIdx = 0;
+        
+        function showModel(idx) {
+            modelCards.forEach(c => c.classList.remove('active'));
+            modelCards[idx]?.classList.add('active');
+            if (modelIndicator) {
+                modelIndicator.textContent = `${idx + 1} / ${modelCards.length}`;
+            }
+        }
+        
+        document.getElementById('prev-model')?.addEventListener('click', () => {
+            currentModelIdx = (currentModelIdx - 1 + modelCards.length) % modelCards.length;
+            showModel(currentModelIdx);
+        });
+        
+        document.getElementById('next-model')?.addEventListener('click', () => {
+            currentModelIdx = (currentModelIdx + 1) % modelCards.length;
+            showModel(currentModelIdx);
+        });
+    </script>
+</body>
+</html>

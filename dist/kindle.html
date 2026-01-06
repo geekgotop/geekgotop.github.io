@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1072, height=1448, initial-scale=1.0, user-scalable=no">
+    <title>Kindle Dash - 离线看板</title>
+    <style>
+/**
+ * Kindle-Dash 样式表 (Kindle E-ink 优化版)
+ * ==========================================
+ * 专为 Kindle Voyage (1072x1448) 设计
+ * 纯黑白配色，无灰度，大字体高对比度
+ */
+
+/* ==================== 全局重置 ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==================== 基础样式 ==================== */
+html, body {
+    width: 1072px;
+    height: 1448px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: &#39;Songti SC&#39;, &#39;SimSun&#39;, &#39;STSong&#39;, serif;
+    padding-bottom: 80px; /* 为底部导航留空间 */
+}
+
+/* 英文字体 */
+h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
+    font-family: &#39;Bookerly&#39;, &#39;Georgia&#39;, &#39;Times New Roman&#39;, serif;
+}
+
+/* ==================== 主内容区 ==================== */
+#content {
+    padding: 20px;
+    height: calc(1448px - 80px);
+    overflow-y: auto;
+}
+
+/* Tab 内容切换 */
+.tab-content {
+    display: none;
+    height: 100%;
+}
+
+.tab-content.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==================== 通用组件 ==================== */
+
+/* 标题 */
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4px;
+    letter-spacing: 2px;
+}
+
+.section-subtitle {
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #000000;
+}
+
+/* 分隔线 */
+.divider {
+    border: none;
+    border-top: 1px dashed #000000;
+    margin: 16px 0;
+}
+
+/* 空状态 */
+.empty-state {
+    text-align: center;
+    font-size: 20px;
+    padding: 48px;
+    border: 2px dashed #000000;
+    margin: 24px 0;
+}
+
+/* 隐藏元素 */
+.hidden {
+    display: none !important;
+}
+
+/* ==================== 全屏卡片容器 ==================== */
+.fullscreen-card-container {
+    flex: 1;
+    overflow-y: auto;
+    position: relative;
+}
+
+.fullscreen-card-container.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================== 底部导航栏（模块内切换） ==================== */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 2px solid #000000;
+    margin-top: auto;
+    background: #FFFFFF;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    min-width: 140px;
+    text-align: center;
+}
+
+.nav-btn:active {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+.nav-indicator {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
+
+/* ==================== Module A: 论文区块 - 单篇展示 ==================== */
+.paper-card {
+    display: none;
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 16px;
+}
+
+.paper-card.active {
+    display: block;
+}
+
+.paper-title {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+/* IPA 音标样式 */
+.paper-title .ipa {
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+    vertical-align: super;
+}
+
+.paper-meta {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.paper-meta .authors {
+    font-style: italic;
+}
+
+.paper-meta .date {
+    margin-left: 12px;
+}
+
+.paper-abstract {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.abstract-en {
+    margin-bottom: 12px;
+}
+
+.abstract-zh {
+    font-size: 16px;
+}
+
+/* ==================== Module B: GitHub 仓库列表 ==================== */
+.repo-list {
+    list-style: none;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.repo-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid #000000;
+}
+
+.repo-stars {
+    flex-shrink: 0;
+    width: 70px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 12px;
+}
+
+.repo-info {
+    flex: 1;
+}
+
+.repo-name {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.repo-desc {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ==================== Module C: 思维模型闪卡 - 全屏 ==================== */
+.flashcard {
+    display: none;
+    padding: 24px;
+    border: 3px solid #000000;
+    text-align: center;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.flashcard.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.model-name-en {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.model-name-zh {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.model-desc {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.model-example {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    padding: 16px;
+    border: 1px dashed #000000;
+    margin-bottom: 20px;
+}
+
+.model-source {
+    font-size: 14px;
+    text-align: right;
+}
+
+/* ==================== Module D: 语录 - 居中显示 ==================== */
+.quote-card {
+    display: none;
+    text-align: center;
+    padding: 32px;
+    max-width: 900px;
+}
+
+.quote-card.active {
+    display: block;
+}
+
+.quote-content-en {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.quote-translation {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: #000000;
+}
+
+.quote-content-zh {
+    font-size: 36px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.quote-author {
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* ==================== Module E: 歌词本 - 单首显示 ==================== */
+.lyrics-card {
+    display: none;
+    text-align: center;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+.lyrics-card.active {
+    display: block;
+}
+
+.song-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #000000;
+}
+
+.lyrics-text {
+    font-family: &#39;Songti SC&#39;, &#39;Georgia&#39;, serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.lyrics-text p {
+    margin-bottom: 6px;
+}
+
+/* ==================== Module F: 单词记忆 ==================== */
+.word-card {
+    display: none;
+    padding: 24px;
+    text-align: center;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.word-card.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.word-text {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.word-phonetic {
+    font-size: 22px;
+    font-family: &#39;Georgia&#39;, serif;
+    margin-bottom: 16px;
+    color: #000000;
+}
+
+.word-meaning {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #000000;
+}
+
+.word-sentences {
+    flex: 1;
+    text-align: left;
+    overflow-y: auto;
+}
+
+.sentence-item {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #000000;
+}
+
+.sentence-item:last-child {
+    border-bottom: none;
+}
+
+.sentence-en {
+    font-size: 18px;
+    font-family: &#39;Georgia&#39;, serif;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.sentence-zh {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: 16px;
+}
+
+/* ==================== 底部导航栏（Tab 切换） ==================== */
+#tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 1072px;
+    height: 80px;
+    background-color: #FFFFFF;
+    border-top: 3px solid #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tab-btn {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.tab-btn.active {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.tab-icon {
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+.tab-label {
+    font-size: 12px;
+}
+
+/* ==================== 页脚 ==================== */
+.generated-info {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    font-size: 11px;
+    color: #000000;
+}
+
+    </style>
+</head>
+<body>
+    <!-- ==================== 主内容区 ==================== -->
+    <main id="content">
+        
+        <!-- Module A: Deep Tech (ArXiv 论文) - 单篇展示 -->
+        <section id="tab-papers" class="tab-content active">
+            <h1 class="section-title">Deep Tech</h1>
+            <p class="section-subtitle">ArXiv 最新论文精选</p>
+            
+            
+                
+                <article class="paper-card active" data-index="0">
+                    <h2 class="paper-title">DARC: Drum accompaniment<sup class='ipa'>/əˈkəmpnɪmənt/</sup> generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> with fine-grained<sup class='ipa'>/finegrained*/</sup> rhythm control</h2>
+                    <p class="paper-meta">
+                        <span class="authors">Trey Brosnan</span>
+                        <span class="date">2026-01-05</span>
+                    </p>
+                    
+                    <div class="paper-abstract">
+                        <p class="abstract-en">In music creation, rapid prototyping is essential for exploring and refining ideas, yet existing generative tools often fall short when users require both structural control and stylistic flexibility. Prior approaches in stem-to-stem generation can condition on other musical stems but offer limited control over rhythm, and timbre-transfer methods allow users to specify specific rhythms, but cannot condition on musical context. We introduce DARC, a generative drum accompaniment model that conditions both on musical context from other stems and explicit rhythm prompts such as beatboxing or tapping tracks. Using parameter-efficient fine-tuning, we augment STAGE, a state-of-the-art drum stem generator, with fine-grained rhythm control while maintaining musical context awareness.</p>
+                        <hr class="divider">
+                        <p class="abstract-zh">在音乐创作中，快速原型制作对于探索和完善想法至关重要，但当用户同时需要结构控制和风格灵活性时，现有的生成工具往往无法满足要求。先前的词干生成方法可以以其他音乐词干为条件，但对节奏的控制有限，而音色转移方法允许用户指定特定的节奏，但不能以音乐背景为条件。我们引入了 DARC，一种生成鼓伴奏模型，它以其他词干的音乐背景和明确的节奏提示（例如口技或敲击音轨）为条件。通过参数高效的微调，我们增强了 STAGE（一种最先进的鼓杆发生器），具有细粒度的节奏控制，同时保持音乐上下文感知。</p>
+                    </div>
+                </article>
+                
+                <article class="paper-card " data-index="1">
+                    <h2 class="paper-title">Falcon-H1R:<sup class='ipa'>/falconhr*/</sup> Pushing the Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> Frontiers<sup class='ipa'>/frənˈtɪrz/</sup> with a Hybrid Model for Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Test-Time<sup class='ipa'>/testtime*/</sup> Scaling</h2>
+                    <p class="paper-meta">
+                        <span class="authors">Falcon LLM Team, Iheb Chaabane, Puneesh Khanna</span>
+                        <span class="date">2026-01-05</span>
+                    </p>
+                    
+                    <div class="paper-abstract">
+                        <p class="abstract-en">This work introduces Falcon-H1R, a 7B-parameter reasoning-optimized model that establishes the feasibility of achieving competitive reasoning performance with small language models (SLMs). Falcon-H1R stands out for its parameter efficiency, consistently matching or outperforming SOTA reasoning models that are $2\times$ to $7\times$ larger across a variety of reasoning-intensive benchmarks. These results underscore the importance of careful data curation and targeted training strategies (via both efficient SFT and RL scaling) in delivering significant performance gains without increasing model size. Furthermore, Falcon-H1R advances the 3D limits of reasoning efficiency by combining faster inference (through its hybrid-parallel architecture design), token efficiency, and higher accuracy. This unique blend makes Falcon-H1R-7B a practical backbone for scaling advanced reasoning systems, particularly in scenarios requiring extensive chain-of-thoughts generation and parallel test-time scaling. Leveraging the recently introduced DeepConf approach, Falcon-H1R achieves state-of-the-art test-time scaling efficiency, offering substantial improvements in both accuracy and computational cost. As a result, Falcon-H1R demonstrates that compact models, through targeted model training and architectural choices, can deliver robust and scalable reasoning performance.</p>
+                        <hr class="divider">
+                        <p class="abstract-zh">这项工作介绍了 Falcon-H1R，这是一种 7B 参数推理优化模型，该模型确立了使用小语言模型 (SLM) 实现竞争性推理性能的可行性。 Falcon-H1R 因其参数效率而脱颖而出，在各种推理密集型基准测试中始终匹配或优于 SOTA 推理模型，后者的性能要高出 2 倍到 7 倍。这些结果强调了仔细的数据管理和有针对性的训练策略（通过有效的 SFT 和 RL 扩展）对于在不增加模型大小的情况下实现显着性能提升的重要性。此外，Falcon-H1R 通过结合更快的推理（通过其混合并行架构设计）、令牌效率和更高的准确性，突破了推理效率的 3D 限制。这种独特的混合使 Falcon-H1R-7B 成为扩展高级推理系统的实用骨干，特别是在需要广泛的思想链生成和并行测试时间扩展的场景中。利用最近推出的 DeepConf 方法，Falcon-H1R 实现了最先进的测试时间扩展效率，在准确性和计算成本方面提供了实质性改进。因此，Falcon-H1R 证明，通过有针对性的模型训练和架构选择，紧凑的模型可以提供强大且可扩展的推理性能。</p>
+                    </div>
+                </article>
+                
+                <article class="paper-card " data-index="2">
+                    <h2 class="paper-title">Robust Persona-Aware<sup class='ipa'>/personaaware*/</sup> Toxicity<sup class='ipa'>/tɑkˈsɪsəti/</sup> Detection<sup class='ipa'>/dɪˈtɛkʃən/</sup> with Prompt Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> and Learned Ensembling<sup class='ipa'>/ensembling*/</sup></h2>
+                    <p class="paper-meta">
+                        <span class="authors">Berk Atil, Rebecca J. Passonneau, Ninareh Mehrabi</span>
+                        <span class="date">2026-01-05</span>
+                    </p>
+                    
+                    <div class="paper-abstract">
+                        <p class="abstract-en">Toxicity detection is inherently subjective, shaped by the diverse perspectives and social priors of different demographic groups. While ``pluralistic&#39;&#39; modeling as used in economics and the social sciences aims to capture perspective differences across contexts, current Large Language Model (LLM) prompting techniques have different results across different personas and base models. In this work, we conduct a systematic evaluation of persona-aware toxicity detection, showing that no single prompting method, including our proposed automated prompt optimization strategy, uniformly dominates across all model-persona pairs. To exploit complementary errors, we explore ensembling four prompting variants and propose a lightweight meta-ensemble: an SVM over the 4-bit vector of prompt predictions. Our results demonstrate that the proposed SVM ensemble consistently outperforms individual prompting methods and traditional majority-voting techniques, achieving the strongest overall performance across diverse personas. This work provides one of the first systematic comparisons of persona-conditioned prompting for toxicity detection and offers a robust method for pluralistic evaluation in subjective NLP tasks.</p>
+                        <hr class="divider">
+                        <p class="abstract-zh">毒性检测本质上是主观的，受到不同人口群体的不同观点和社会先验的影响。虽然经济学和社会科学中使用的“多元”建模旨在捕捉不同背景下的视角差异，但当前的大语言模型（LLM）提示技术在不同的角色和基础模型中具有不同的结果。在这项工作中，我们对角色感知毒性检测进行了系统评估，表明没有任何一种提示方法（包括我们提出的自动提示优化策略）在所有模型角色对中统一占主导地位。为了利用互补错误，我们探索了四种提示变体的集成，并提出了一种轻量级元集成：基于 4 位提示预测向量的 SVM。我们的结果表明，所提出的 SVM 集成始终优于个人提示方法和传统的多数投票技术，在不同角色中实现了最强的整体性能。这项工作为毒性检测的角色条件提示提供了第一个系统比较，并为主观 NLP 任务中的多元评估提供了一种稳健的方法。</p>
+                    </div>
+                </article>
+                
+                
+                <div class="nav-bar">
+                    <button class="nav-btn" id="prev-paper">← 上一篇</button>
+                    <span class="nav-indicator" id="paper-indicator">1 / 3</span>
+                    <button class="nav-btn" id="next-paper">下一篇 →</button>
+                </div>
+            
+        </section>
+        
+        <!-- Module B: GitHub Trending AI -->
+        <section id="tab-repos" class="tab-content">
+            <h1 class="section-title">GitHub Trending</h1>
+            <p class="section-subtitle">近期 AI 热门项目</p>
+            
+            
+                <ul class="repo-list">
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 10</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">vitali-sialedchyk/stability-first-ai</strong>
+                            <p class="repo-desc">使用递归时间架构、主动睡眠（生成重放）和临时 LoRA 解决灾难性遗忘问题。证明神经网络中的“拉撒路效应”。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 9</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">CyberSecurityUP/DeepNudeDetect</strong>
+                            <p class="repo-desc">全面防范 Deepfakes、Deepnudes 和有害内容</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 8</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">vinpatel/HumanMark</strong>
+                            <p class="repo-desc">开源人工智能内容检测。检测人工智能生成的文本、图像、音频、视频。自托管、离线、零依赖。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 5</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">mytechnotalent/SARAN</strong>
+                            <p class="repo-desc">SARAN：浅层自回归注意力网络</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">collapseindex/collapseindex</strong>
+                            <p class="repo-desc">崩溃指数 (CI) 和结构保留指数 (SRI)：先进的诊断框架，用于对 AI 模型不稳定性进行有界、轻量级的评估，超越准确性，揭示生产系统中隐藏的脆弱性！</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">g3deon4ent/g3deon-erp</strong>
+                            <p class="repo-desc">使用 Next.js 构建的人工智能驱动的 ERP 管理前端。用于企业资源规划和业务管理的综合 SaaS 平台。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">NeuralBlitz/Advanced-Research</strong>
+                            <p class="repo-desc">高级理论物理和数学。人工智能/机器学习。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">mordiaky/LMD</strong>
+                            <p class="repo-desc">Living Memory Dynamics - 一种新颖的框架，用于通过创造性的飞跃来生成叙事记忆。具有 Joshua R. Thomas 记忆方程。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">TamTunnel/Constellation-Hub</strong>
+                            <p class="repo-desc">开源卫星星座管理和人工智能辅助运营平台。用于车队可视化、通行调度、数据路由和智能操作辅助的统一控制平面。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">imadev26/awesome-ai-tools-2026</strong>
+                            <p class="repo-desc">🤖 为开发者精心挑选的 2026 年最佳 AI 工具和资源列表</p>
+                        </div>
+                    </li>
+                
+                </ul>
+            
+        </section>
+        
+        <!-- Module C: Mental Models (思维模型) - 全屏闪卡 -->
+        <section id="tab-models" class="tab-content">
+            <div class="fullscreen-card-container">
+                
+                    
+                    <div class="flashcard active" data-index="0">
+                        <h2 class="model-name-en">First Principles Thinking</h2>
+                        <h3 class="model-name-zh">第一性原理</h3>
+                        <hr class="divider">
+                        <p class="model-desc">将复杂问题分解为最基本的元素，然后从头开始重建解决方案。不依赖类比或既有经验，而是从根本真理出发进行推理。</p>
+                        <div class="model-example">
+                            <strong>实例：</strong>埃隆·马斯克在制造电池时，不接受&#39;电池就是很贵&#39;的假设，而是分析电池的原材料成本，发现可以大幅降低成本。
+                        </div>
+                        <p class="model-source">— 亚里士多德 / 伊隆·马斯克</p>
+                    </div>
+                    
+                    <div class="flashcard " data-index="1">
+                        <h2 class="model-name-en">Occam&#39;s Razor</h2>
+                        <h3 class="model-name-zh">奥卡姆剃刀</h3>
+                        <hr class="divider">
+                        <p class="model-desc">如无必要，勿增实体。在多个假设中，选择假设最少、最简洁的那个。复杂的解释往往隐藏着错误。</p>
+                        <div class="model-example">
+                            <strong>实例：</strong>当你听到马蹄声时，先想到马，而不是斑马。除非有明确证据表明是更罕见的情况。
+                        </div>
+                        <p class="model-source">— 威廉·奥卡姆 (14世纪)</p>
+                    </div>
+                    
+                    <div class="flashcard " data-index="2">
+                        <h2 class="model-name-en">Second-Order Thinking</h2>
+                        <h3 class="model-name-zh">二阶思维</h3>
+                        <hr class="divider">
+                        <p class="model-desc">不仅考虑行动的直接后果，还要思考这些后果带来的连锁反应。问自己：&#39;然后呢？再然后呢？&#39;</p>
+                        <div class="model-example">
+                            <strong>实例：</strong>降价促销会增加短期销量（一阶效应），但可能损害品牌形象并引发价格战（二阶效应）。
+                        </div>
+                        <p class="model-source">— 霍华德·马克斯</p>
+                    </div>
+                    
+                
+            </div>
+            
+            
+            <div class="nav-bar">
+                <button class="nav-btn" id="prev-model">← 上一张</button>
+                <span class="nav-indicator" id="model-indicator">1 / 3</span>
+                <button class="nav-btn" id="next-model">下一张 →</button>
+            </div>
+            
+        </section>
+        
+        <!-- Module D: Focus & Quotes (语录) - 居中显示 -->
+        <section id="tab-focus" class="tab-content">
+            <div class="fullscreen-card-container center-content">
+                
+                    
+                    <div class="quote-card active" data-index="0">
+                        
+                            <p class="quote-content-en">The only way to do great work is to love what you do.</p>
+                            
+                            <p class="quote-translation">做好工作的唯一方法就是热爱你所做的事情。</p>
+                            
+                        
+                        <p class="quote-author">— Steve Jobs</p>
+                    </div>
+                    
+                    <div class="quote-card " data-index="1">
+                        
+                            <p class="quote-content-en">In the middle of difficulty lies opportunity.</p>
+                            
+                            <p class="quote-translation">困难之中蕴藏着机遇。</p>
+                            
+                        
+                        <p class="quote-author">— Albert Einstein</p>
+                    </div>
+                    
+                    <div class="quote-card " data-index="2">
+                        
+                            <p class="quote-content-en">The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                            
+                            <p class="quote-translation">种一棵树最好的时间是20年前。第二个最好的时间是现在。</p>
+                            
+                        
+                        <p class="quote-author">— Chinese Proverb</p>
+                    </div>
+                    
+                    <div class="quote-card " data-index="3">
+                        
+                            <p class="quote-content-zh">不积跬步，无以至千里；不积小流，无以成江海。</p>
+                        
+                        <p class="quote-author">— 荀子</p>
+                    </div>
+                    
+                    <div class="quote-card " data-index="4">
+                        
+                            <p class="quote-content-zh">博观而约取，厚积而薄发。</p>
+                        
+                        <p class="quote-author">— 苏轼</p>
+                    </div>
+                    
+                
+            </div>
+            
+            
+            <div class="nav-bar">
+                <button class="nav-btn" id="prev-quote">← 上一条</button>
+                <span class="nav-indicator" id="quote-indicator">1 / 5</span>
+                <button class="nav-btn" id="next-quote">下一条 →</button>
+            </div>
+            
+        </section>
+        
+        <!-- Module E: Lyrics (歌词本) - 单首显示 -->
+        <section id="tab-lyrics" class="tab-content">
+            <div class="fullscreen-card-container">
+                
+                    
+                    <div class="lyrics-card active" data-index="0">
+                        <h2 class="song-title">Example</h2>
+                        <div class="lyrics-text">
+                            
+                            <p>Stay hungry, stay foolish</p>
+                            
+                            <p>保持饥饿，保持愚昧</p>
+                            
+                            <p></p>
+                            
+                            <p>The people who are crazy enough to think</p>
+                            
+                            <p>那些疯狂到认为自己</p>
+                            
+                            <p>they can change the world</p>
+                            
+                            <p>能够改变世界的人</p>
+                            
+                            <p>are the ones who do</p>
+                            
+                            <p>往往正是那些真正改变世界的人</p>
+                            
+                            <p></p>
+                            
+                            <p>Here&#39;s to the crazy ones</p>
+                            
+                            <p>致那些疯狂的人</p>
+                            
+                            <p>The misfits, the rebels</p>
+                            
+                            <p>那些格格不入的人，那些叛逆者</p>
+                            
+                            <p>The troublemakers</p>
+                            
+                            <p>那些惹是生非的人</p>
+                            
+                            <p>The round pegs in the square holes</p>
+                            
+                            <p>方孔中的圆钉</p>
+                            
+                            <p></p>
+                            
+                            <p>They&#39;re not fond of rules</p>
+                            
+                            <p>他们不喜欢循规蹈矩</p>
+                            
+                            <p>And they have no respect for the status quo</p>
+                            
+                            <p>他们也不尊重现状</p>
+                            
+                            <p></p>
+                            
+                            <p>You can quote them, disagree with them</p>
+                            
+                            <p>你可以引用他们，反对他们</p>
+                            
+                            <p>Glorify or vilify them</p>
+                            
+                            <p>颂扬或诋毁他们</p>
+                            
+                            <p>But the only thing you can&#39;t do</p>
+                            
+                            <p>但唯独不能忽视他们</p>
+                            
+                            <p>is ignore them</p>
+                            
+                            <p></p>
+                            
+                            <p>Because they change things</p>
+                            
+                            <p>因为他们改变了事物</p>
+                            
+                            <p>They push the human race forward</p>
+                            
+                            <p>他们推动了人类前进</p>
+                            
+                            <p></p>
+                            
+                        </div>
+                    </div>
+                    
+                
+            </div>
+            
+            
+            <div class="nav-bar">
+                <button class="nav-btn" id="prev-lyrics">← 上一首</button>
+                <span class="nav-indicator" id="lyrics-indicator">Example</span>
+                <button class="nav-btn" id="next-lyrics">下一首 →</button>
+            </div>
+            
+        </section>
+        
+        <!-- Module F: Words (单词记忆) -->
+        <section id="tab-words" class="tab-content">
+            <div class="fullscreen-card-container">
+                
+                    
+                    <div class="word-card active" data-index="0">
+                        <h1 class="word-text">algorithm</h1>
+                        <p class="word-phonetic">/ˈælɡəˌrɪðəm/</p>
+                        <p class="word-meaning">n. 算法；运算法则</p>
+                        
+                        <div class="word-sentences">
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">The sorting algorithm runs in O(n log n) time complexity.</p>
+                                <p class="sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
+                            </div>
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">We need to optimize this algorithm for better performance.</p>
+                                <p class="sentence-zh">我们需要优化这个算法以获得更好的性能。</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="word-card " data-index="1">
+                        <h1 class="word-text">recursion</h1>
+                        <p class="word-phonetic">/rɪˈkɜːrʒn/</p>
+                        <p class="word-meaning">n. 递归；循环</p>
+                        
+                        <div class="word-sentences">
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Recursion is a method where the solution depends on solutions to smaller instances.</p>
+                                <p class="sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
+                            </div>
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Be careful with recursion to avoid stack overflow.</p>
+                                <p class="sentence-zh">使用递归时要小心避免栈溢出。</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="word-card " data-index="2">
+                        <h1 class="word-text">encapsulation</h1>
+                        <p class="word-phonetic">/ɪnˌkæpsjuˈleɪʃn/</p>
+                        <p class="word-meaning">n. 封装；包装</p>
+                        
+                        <div class="word-sentences">
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Encapsulation hides the internal state of an object from the outside.</p>
+                                <p class="sentence-zh">封装将对象的内部状态对外部隐藏。</p>
+                            </div>
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Good encapsulation leads to more maintainable code.</p>
+                                <p class="sentence-zh">良好的封装能带来更易维护的代码。</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="word-card " data-index="3">
+                        <h1 class="word-text">polymorphism</h1>
+                        <p class="word-phonetic">/ˌpɒliˈmɔːfɪzəm/</p>
+                        <p class="word-meaning">n. 多态性</p>
+                        
+                        <div class="word-sentences">
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Polymorphism allows objects of different classes to be treated as objects of a common superclass.</p>
+                                <p class="sentence-zh">多态性允许不同类的对象被当作共同父类的对象来处理。</p>
+                            </div>
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Method overriding is a common way to implement polymorphism.</p>
+                                <p class="sentence-zh">方法重写是实现多态性的常见方式。</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="word-card " data-index="4">
+                        <h1 class="word-text">inheritance</h1>
+                        <p class="word-phonetic">/ɪnˈherɪtəns/</p>
+                        <p class="word-meaning">n. 继承；遗传</p>
+                        
+                        <div class="word-sentences">
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Inheritance enables new classes to receive the properties of existing classes.</p>
+                                <p class="sentence-zh">继承使新类能够接收现有类的属性。</p>
+                            </div>
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Multiple inheritance can lead to the diamond problem.</p>
+                                <p class="sentence-zh">多重继承可能导致菱形继承问题。</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="word-card " data-index="5">
+                        <h1 class="word-text">abstraction</h1>
+                        <p class="word-phonetic">/æbˈstrækʃn/</p>
+                        <p class="word-meaning">n. 抽象；提取</p>
+                        
+                        <div class="word-sentences">
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Abstraction reduces complexity by hiding unnecessary details.</p>
+                                <p class="sentence-zh">抽象通过隐藏不必要的细节来降低复杂性。</p>
+                            </div>
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">An abstract class cannot be instantiated directly.</p>
+                                <p class="sentence-zh">抽象类不能被直接实例化。</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="word-card " data-index="6">
+                        <h1 class="word-text">concurrency</h1>
+                        <p class="word-phonetic">/kənˈkʌrənsi/</p>
+                        <p class="word-meaning">n. 并发；并发性</p>
+                        
+                        <div class="word-sentences">
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Concurrency allows multiple tasks to run in overlapping time periods.</p>
+                                <p class="sentence-zh">并发允许多个任务在重叠的时间段内运行。</p>
+                            </div>
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Handling concurrency correctly is crucial for multi-threaded applications.</p>
+                                <p class="sentence-zh">正确处理并发对多线程应用程序至关重要。</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="word-card " data-index="7">
+                        <h1 class="word-text">serialization</h1>
+                        <p class="word-phonetic">/ˌsɪəriəlaɪˈzeɪʃn/</p>
+                        <p class="word-meaning">n. 序列化</p>
+                        
+                        <div class="word-sentences">
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Serialization converts an object into a stream of bytes for storage.</p>
+                                <p class="sentence-zh">序列化将对象转换为字节流以便存储。</p>
+                            </div>
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">JSON is a popular format for data serialization.</p>
+                                <p class="sentence-zh">JSON 是一种流行的数据序列化格式。</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="word-card " data-index="8">
+                        <h1 class="word-text">asynchronous</h1>
+                        <p class="word-phonetic">/eɪˈsɪŋkrənəs/</p>
+                        <p class="word-meaning">adj. 异步的</p>
+                        
+                        <div class="word-sentences">
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Asynchronous programming allows the program to continue executing while waiting for I/O.</p>
+                                <p class="sentence-zh">异步编程允许程序在等待 I/O 时继续执行。</p>
+                            </div>
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Use async/await syntax for cleaner asynchronous code.</p>
+                                <p class="sentence-zh">使用 async/await 语法可以获得更简洁的异步代码。</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="word-card " data-index="9">
+                        <h1 class="word-text">deprecated</h1>
+                        <p class="word-phonetic">/ˈdeprəkeɪtɪd/</p>
+                        <p class="word-meaning">adj. 已弃用的；不推荐的</p>
+                        
+                        <div class="word-sentences">
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">This method is deprecated and will be removed in the next version.</p>
+                                <p class="sentence-zh">此方法已弃用，将在下一版本中移除。</p>
+                            </div>
+                            
+                            <div class="sentence-item">
+                                <p class="sentence-en">Avoid using deprecated APIs in new projects.</p>
+                                <p class="sentence-zh">避免在新项目中使用已弃用的 API。</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                
+            </div>
+            
+            
+            <div class="nav-bar">
+                <button class="nav-btn" id="prev-word">← 上一个</button>
+                <span class="nav-indicator" id="word-indicator">1 / 10</span>
+                <button class="nav-btn" id="next-word">下一个 →</button>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <!-- ==================== 底部导航栏 ==================== -->
+    <nav id="tab-bar">
+        <button class="tab-btn active" data-tab="papers">
+            <span class="tab-icon">📄</span>
+            <span class="tab-label">论文</span>
+        </button>
+        <button class="tab-btn" data-tab="repos">
+            <span class="tab-icon">⭐</span>
+            <span class="tab-label">GitHub</span>
+        </button>
+        <button class="tab-btn" data-tab="models">
+            <span class="tab-icon">🧠</span>
+            <span class="tab-label">思维</span>
+        </button>
+        <button class="tab-btn" data-tab="focus">
+            <span class="tab-icon">💡</span>
+            <span class="tab-label">语录</span>
+        </button>
+        <button class="tab-btn" data-tab="lyrics">
+            <span class="tab-icon">🎵</span>
+            <span class="tab-label">歌词</span>
+        </button>
+        <button class="tab-btn" data-tab="words">
+            <span class="tab-icon">📖</span>
+            <span class="tab-label">单词</span>
+        </button>
+    </nav>
+
+    <!-- ==================== JavaScript 交互 ==================== -->
+    <script>
+        // 通用卡片切换函数
+        function createCardSwitcher(containerSelector, prevBtnId, nextBtnId, indicatorId, isLyrics = false, lyricsData = []) {
+            const cards = document.querySelectorAll(containerSelector);
+            const indicator = document.getElementById(indicatorId);
+            let currentIndex = 0;
+            
+            function showCard(index) {
+                cards.forEach(c => c.classList.remove('active'));
+                cards[index]?.classList.add('active');
+                if (indicator) {
+                    if (isLyrics && lyricsData.length > 0) {
+                        indicator.textContent = lyricsData[index] || '';
+                    } else {
+                        indicator.textContent = `${index + 1} / ${cards.length}`;
+                    }
+                }
+            }
+            
+            document.getElementById(prevBtnId)?.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+                showCard(currentIndex);
+            });
+            
+            document.getElementById(nextBtnId)?.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % cards.length;
+                showCard(currentIndex);
+            });
+        }
+        
+        // Tab 切换
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const tabId = this.dataset.tab;
+                
+                // 更新 Tab 按钮状态
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // 更新内容区显示
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                document.getElementById('tab-' + tabId).classList.add('active');
+            });
+        });
+
+        // 论文切换
+        createCardSwitcher('.paper-card', 'prev-paper', 'next-paper', 'paper-indicator');
+        
+        // 思维模型切换
+        createCardSwitcher('.flashcard', 'prev-model', 'next-model', 'model-indicator');
+        
+        // 语录切换
+        createCardSwitcher('.quote-card', 'prev-quote', 'next-quote', 'quote-indicator');
+        
+        // 歌词切换（显示歌名）
+        const lyricsNames = ['Example'];
+        createCardSwitcher('.lyrics-card', 'prev-lyrics', 'next-lyrics', 'lyrics-indicator', true, lyricsNames);
+        
+        // 单词切换
+        createCardSwitcher('.word-card', 'prev-word', 'next-word', 'word-indicator');
+    </script>
+    
+    <!-- 生成时间 -->
+    <footer class="generated-info">
+        生成于 2026-01-06 16:49:10
+    </footer>
+</body>
+</html>

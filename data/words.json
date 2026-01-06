@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "word": "algorithm",
+    "phonetic": "/ˈælɡəˌrɪðəm/",
+    "meaning": "n. 算法；运算法则",
+    "sentences": [
+      {"en": "The sorting algorithm runs in O(n log n) time complexity.", "zh": "该排序算法的时间复杂度为 O(n log n)。"},
+      {"en": "We need to optimize this algorithm for better performance.", "zh": "我们需要优化这个算法以获得更好的性能。"}
+    ]
+  },
+  {
+    "id": 2,
+    "word": "recursion",
+    "phonetic": "/rɪˈkɜːrʒn/",
+    "meaning": "n. 递归；循环",
+    "sentences": [
+      {"en": "Recursion is a method where the solution depends on solutions to smaller instances.", "zh": "递归是一种方法，其解决方案依赖于较小实例的解决方案。"},
+      {"en": "Be careful with recursion to avoid stack overflow.", "zh": "使用递归时要小心避免栈溢出。"}
+    ]
+  },
+  {
+    "id": 3,
+    "word": "encapsulation",
+    "phonetic": "/ɪnˌkæpsjuˈleɪʃn/",
+    "meaning": "n. 封装；包装",
+    "sentences": [
+      {"en": "Encapsulation hides the internal state of an object from the outside.", "zh": "封装将对象的内部状态对外部隐藏。"},
+      {"en": "Good encapsulation leads to more maintainable code.", "zh": "良好的封装能带来更易维护的代码。"}
+    ]
+  },
+  {
+    "id": 4,
+    "word": "polymorphism",
+    "phonetic": "/ˌpɒliˈmɔːfɪzəm/",
+    "meaning": "n. 多态性",
+    "sentences": [
+      {"en": "Polymorphism allows objects of different classes to be treated as objects of a common superclass.", "zh": "多态性允许不同类的对象被当作共同父类的对象来处理。"},
+      {"en": "Method overriding is a common way to implement polymorphism.", "zh": "方法重写是实现多态性的常见方式。"}
+    ]
+  },
+  {
+    "id": 5,
+    "word": "inheritance",
+    "phonetic": "/ɪnˈherɪtəns/",
+    "meaning": "n. 继承；遗传",
+    "sentences": [
+      {"en": "Inheritance enables new classes to receive the properties of existing classes.", "zh": "继承使新类能够接收现有类的属性。"},
+      {"en": "Multiple inheritance can lead to the diamond problem.", "zh": "多重继承可能导致菱形继承问题。"}
+    ]
+  },
+  {
+    "id": 6,
+    "word": "abstraction",
+    "phonetic": "/æbˈstrækʃn/",
+    "meaning": "n. 抽象；提取",
+    "sentences": [
+      {"en": "Abstraction reduces complexity by hiding unnecessary details.", "zh": "抽象通过隐藏不必要的细节来降低复杂性。"},
+      {"en": "An abstract class cannot be instantiated directly.", "zh": "抽象类不能被直接实例化。"}
+    ]
+  },
+  {
+    "id": 7,
+    "word": "concurrency",
+    "phonetic": "/kənˈkʌrənsi/",
+    "meaning": "n. 并发；并发性",
+    "sentences": [
+      {"en": "Concurrency allows multiple tasks to run in overlapping time periods.", "zh": "并发允许多个任务在重叠的时间段内运行。"},
+      {"en": "Handling concurrency correctly is crucial for multi-threaded applications.", "zh": "正确处理并发对多线程应用程序至关重要。"}
+    ]
+  },
+  {
+    "id": 8,
+    "word": "serialization",
+    "phonetic": "/ˌsɪəriəlaɪˈzeɪʃn/",
+    "meaning": "n. 序列化",
+    "sentences": [
+      {"en": "Serialization converts an object into a stream of bytes for storage.", "zh": "序列化将对象转换为字节流以便存储。"},
+      {"en": "JSON is a popular format for data serialization.", "zh": "JSON 是一种流行的数据序列化格式。"}
+    ]
+  },
+  {
+    "id": 9,
+    "word": "asynchronous",
+    "phonetic": "/eɪˈsɪŋkrənəs/",
+    "meaning": "adj. 异步的",
+    "sentences": [
+      {"en": "Asynchronous programming allows the program to continue executing while waiting for I/O.", "zh": "异步编程允许程序在等待 I/O 时继续执行。"},
+      {"en": "Use async/await syntax for cleaner asynchronous code.", "zh": "使用 async/await 语法可以获得更简洁的异步代码。"}
+    ]
+  },
+  {
+    "id": 10,
+    "word": "deprecated",
+    "phonetic": "/ˈdeprəkeɪtɪd/",
+    "meaning": "adj. 已弃用的；不推荐的",
+    "sentences": [
+      {"en": "This method is deprecated and will be removed in the next version.", "zh": "此方法已弃用，将在下一版本中移除。"},
+      {"en": "Avoid using deprecated APIs in new projects.", "zh": "避免在新项目中使用已弃用的 API。"}
+    ]
+  }
+]

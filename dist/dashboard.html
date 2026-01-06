@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindle Dash - 信息仪表盘</title>
+    <meta name="description" content="聚合 ArXiv 论文、GitHub Trending、思维模型、语录和歌词的信息仪表盘">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+/**
+ * Kindle-Dash 样式表 (PC Web 仪表盘版)
+ * ======================================
+ * Bento Grid 布局 + 现代科技感
+ * 支持系统级深色模式
+ */
+
+/* ==================== CSS 变量 ==================== */
+:root {
+    /* 浅色模式 */
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-card: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    --border-color: #e2e8f0;
+    --accent-color: #3b82f6;
+    --accent-hover: #2563eb;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+}
+
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #0f172a;
+        --bg-secondary: #1e293b;
+        --bg-card: #1e293b;
+        --text-primary: #f1f5f9;
+        --text-secondary: #cbd5e1;
+        --text-muted: #64748b;
+        --border-color: #334155;
+        --accent-color: #60a5fa;
+        --accent-hover: #3b82f6;
+        --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* ==================== 全局重置 ==================== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==================== 基础样式 ==================== */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: &#39;Inter&#39;, -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* 中文字体 */
+p, blockquote, .abstract-zh, .model-desc, .model-example {
+    font-family: &#39;Noto Serif SC&#39;, &#39;Songti SC&#39;, serif;
+}
+
+/* ==================== 顶部导航 ==================== */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 32px;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.tagline {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.generated-time {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* ==================== Bento Grid 布局 ==================== */
+#bento-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr 320px;
+    gap: 24px;
+    padding: 24px 32px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ==================== 卡片通用样式 ==================== */
+.card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.badge {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 8px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: var(--radius-sm);
+}
+
+.empty-state {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 24px;
+    font-style: italic;
+}
+
+/* ==================== Focus 卡片 ==================== */
+.card-focus {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.focus-display .focus-text {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 16px;
+    opacity: 0.9;
+}
+
+.current-time {
+    font-size: 48px;
+    font-weight: 300;
+    font-family: &#39;Inter&#39;, monospace;
+}
+
+/* ==================== 语录卡片 ==================== */
+.quote-carousel {
+    min-height: 120px;
+    position: relative;
+}
+
+.quote-slide {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.quote-slide.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.quote-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.quote-translation {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.quote-author {
+    font-size: 12px;
+    color: var(--text-muted);
+    display: block;
+    text-align: right;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border-color);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background: var(--accent-color);
+}
+
+/* ==================== 歌词卡片 ==================== */
+.song-select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.lyrics-display {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.song-lyrics {
+    display: none;
+    text-align: center;
+}
+
+.song-lyrics.active {
+    display: block;
+}
+
+.song-lyrics p {
+    font-size: 13px;
+    line-height: 2;
+    color: var(--text-secondary);
+}
+
+.lyrics-more {
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* ==================== 论文卡片 ==================== */
+.card-papers {
+    height: fit-content;
+}
+
+.papers-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.paper-item {
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.paper-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.paper-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.paper-title .ipa {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--text-muted);
+    vertical-align: super;
+}
+
+.paper-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.paper-abstract {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.abstract-en {
+    margin-bottom: 12px;
+}
+
+.abstract-details {
+    margin-top: 12px;
+}
+
+.abstract-details summary {
+    cursor: pointer;
+    color: var(--accent-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.abstract-zh {
+    margin-top: 12px;
+    padding: 12px;
+    background: var(--bg-primary);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+}
+
+.paper-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.paper-link:hover {
+    color: var(--accent-hover);
+}
+
+/* ==================== GitHub 仓库卡片 ==================== */
+.repo-list {
+    list-style: none;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.repo-item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.repo-item:last-child {
+    border-bottom: none;
+}
+
+.repo-link {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.2s;
+}
+
+.repo-link:hover {
+    background: var(--bg-primary);
+    margin: 0 -20px;
+    padding: 12px 20px;
+}
+
+.repo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.repo-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.repo-stars {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.repo-desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.repo-meta {
+    display: flex;
+    gap: 12px;
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+/* ==================== 思维模型卡片 ==================== */
+.models-carousel {
+    min-height: 200px;
+    position: relative;
+}
+
+.model-card {
+    display: none;
+}
+
+.model-card.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+.model-name {
+    margin-bottom: 12px;
+}
+
+.model-en {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.model-zh {
+    display: block;
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+.model-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.model-example {
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 12px;
+    background: var(--bg-primary);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--accent-color);
+    margin-bottom: 12px;
+}
+
+.model-source {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: right;
+}
+
+.model-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.nav-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+
+.nav-btn:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+.model-indicator {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* ==================== 响应式布局 ==================== */
+@media (max-width: 1200px) {
+    #bento-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .column-left {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .column-center {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+    
+    .column-right {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
+
+@media (max-width: 768px) {
+    #bento-grid {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+    
+    .column-left, .column-center, .column-right {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    
+    #header {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 16px;
+    }
+    
+    .current-time {
+        font-size: 36px;
+    }
+}
+
+/* ==================== 滚动条样式 ==================== */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+    </style>
+</head>
+<body>
+    <!-- ==================== 顶部导航 ==================== -->
+    <header id="header">
+        <h1 class="logo">Kindle<span>Dash</span></h1>
+        <p class="tagline">信息聚合仪表盘</p>
+        <span class="generated-time">更新于 2026-01-06 16:49:10</span>
+    </header>
+
+    <!-- ==================== Bento Grid 主布局 ==================== -->
+    <main id="bento-grid">
+        
+        <!-- 左列 -->
+        <aside class="column column-left">
+            
+            <!-- Focus 卡片 -->
+            <section class="card card-focus" id="focus-card">
+                <div class="focus-display">
+                    <h2 class="focus-text">FOCUS</h2>
+                    <p class="current-time" id="current-time">--:--</p>
+                </div>
+            </section>
+            
+            <!-- 语录卡片 -->
+            <section class="card card-quote">
+                <div class="card-header">
+                    <h3>💡 每日语录</h3>
+                </div>
+                <div class="quote-carousel" id="quote-carousel">
+                    
+                        
+                        <div class="quote-slide active">
+                            <blockquote>
+                                <p class="quote-text">The only way to do great work is to love what you do.</p>
+                                
+                                <p class="quote-translation">做好工作的唯一方法就是热爱你所做的事情。</p>
+                                
+                            </blockquote>
+                            <cite class="quote-author">— Steve Jobs</cite>
+                        </div>
+                        
+                        <div class="quote-slide ">
+                            <blockquote>
+                                <p class="quote-text">In the middle of difficulty lies opportunity.</p>
+                                
+                                <p class="quote-translation">困难之中蕴藏着机遇。</p>
+                                
+                            </blockquote>
+                            <cite class="quote-author">— Albert Einstein</cite>
+                        </div>
+                        
+                        <div class="quote-slide ">
+                            <blockquote>
+                                <p class="quote-text">The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                                
+                                <p class="quote-translation">种一棵树最好的时间是20年前。第二个最好的时间是现在。</p>
+                                
+                            </blockquote>
+                            <cite class="quote-author">— Chinese Proverb</cite>
+                        </div>
+                        
+                        <div class="quote-slide ">
+                            <blockquote>
+                                <p class="quote-text">不积跬步，无以至千里；不积小流，无以成江海。</p>
+                                
+                            </blockquote>
+                            <cite class="quote-author">— 荀子</cite>
+                        </div>
+                        
+                        <div class="quote-slide ">
+                            <blockquote>
+                                <p class="quote-text">博观而约取，厚积而薄发。</p>
+                                
+                            </blockquote>
+                            <cite class="quote-author">— 苏轼</cite>
+                        </div>
+                        
+                    
+                </div>
+                
+                <div class="carousel-dots">
+                    
+                    <span class="dot active" data-index="0"></span>
+                    
+                    <span class="dot " data-index="1"></span>
+                    
+                    <span class="dot " data-index="2"></span>
+                    
+                    <span class="dot " data-index="3"></span>
+                    
+                    <span class="dot " data-index="4"></span>
+                    
+                </div>
+                
+            </section>
+            
+            <!-- 歌词播放器风格卡片 -->
+            <section class="card card-lyrics">
+                <div class="card-header">
+                    <h3>🎵 歌词本</h3>
+                </div>
+                <div class="lyrics-player">
+                    
+                        <select id="song-selector" class="song-select">
+                            
+                            <option value="0">Example</option>
+                            
+                        </select>
+                        <div class="lyrics-display" id="lyrics-display">
+                            
+                            <div class="song-lyrics active" data-index="0">
+                                
+                                <p>Stay hungry, stay foolish</p>
+                                
+                                <p>保持饥饿，保持愚昧</p>
+                                
+                                <p></p>
+                                
+                                <p>The people who are crazy enough to think</p>
+                                
+                                <p>那些疯狂到认为自己</p>
+                                
+                                <p>they can change the world</p>
+                                
+                                <p>能够改变世界的人</p>
+                                
+                                <p>are the ones who do</p>
+                                
+                                <p>往往正是那些真正改变世界的人</p>
+                                
+                                <p></p>
+                                
+                                
+                                <p class="lyrics-more">... 还有 27 行</p>
+                                
+                            </div>
+                            
+                        </div>
+                    
+                </div>
+            </section>
+            
+        </aside>
+        
+        <!-- 中列：论文流 -->
+        <section class="column column-center">
+            <div class="card card-papers">
+                <div class="card-header">
+                    <h3>📄 Deep Tech</h3>
+                    <span class="badge">ArXiv 最新</span>
+                </div>
+                
+                <div class="papers-feed">
+                    
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">DARC: Drum accompaniment<sup class='ipa'>/əˈkəmpnɪmənt/</sup> generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> with fine-grained<sup class='ipa'>/finegrained*/</sup> rhythm control</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Trey Brosnan</span>
+                                <span class="date">2026-01-05</span>
+                                <span class="categories">cs.SD | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">In music creation, rapid prototyping is essential for exploring and refining ideas, yet existing generative tools often fall short when users require both structural control and stylistic flexibility. Prior approaches in stem-to-stem generation can condition on other musical stems but offer limited ...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">在音乐创作中，快速原型制作对于探索和完善想法至关重要，但当用户同时需要结构控制和风格灵活性时，现有的生成工具往往无法满足要求。先前的词干生成方法可以以其他音乐词干为条件，但对节奏的控制有限，而音色转移方法允许用户指定特定的节奏，但不能以音乐背景为条件。我们引入了 DARC，一种生成鼓伴奏模型，它以其他词干的音乐背景和明确的节奏提示（例如口技或敲击音轨）为条件。通过参数高效的微调，我们增强了 STAGE（一种最先进的鼓杆发生器），具有细粒度的节奏控制，同时保持音乐上下文感知。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2601.02357v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Falcon-H1R:<sup class='ipa'>/falconhr*/</sup> Pushing the Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> Frontiers<sup class='ipa'>/frənˈtɪrz/</sup> with a Hybrid Model for Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Test-Time<sup class='ipa'>/testtime*/</sup> Scaling</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Falcon LLM Team, Iheb Chaabane, Puneesh Khanna</span>
+                                <span class="date">2026-01-05</span>
+                                <span class="categories">cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">This work introduces Falcon-H1R, a 7B-parameter reasoning-optimized model that establishes the feasibility of achieving competitive reasoning performance with small language models (SLMs). Falcon-H1R stands out for its parameter efficiency, consistently matching or outperforming SOTA reasoning model...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">这项工作介绍了 Falcon-H1R，这是一种 7B 参数推理优化模型，该模型确立了使用小语言模型 (SLM) 实现竞争性推理性能的可行性。 Falcon-H1R 因其参数效率而脱颖而出，在各种推理密集型基准测试中始终匹配或优于 SOTA 推理模型，后者的性能要高出 2 倍到 7 倍。这些结果强调了仔细的数据管理和有针对性的训练策略（通过有效的 SFT 和 RL 扩展）对于在不增加模型大小的情况下实现显着性能提升的重要性。此外，Falcon-H1R 通过结合更快的推理（通过其混合并行架构设计）、令牌效率和更高的准确性，突破了推理效率的 3D 限制。这种独特的混合使 Falcon-H1R-7B 成为扩展高级推理系统的实用骨干，特别是在需要广泛的思想链生成和并行测试时间扩展的场景中。利用最近推出的 DeepConf 方法，Falcon-H1R 实现了最先进的测试时间扩展效率，在准确性和计算成本方面提供了实质性改进。因此，Falcon-H1R 证明，通过有针对性的模型训练和架构选择，紧凑的模型可以提供强大且可扩展的推理性能。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2601.02346v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Robust Persona-Aware<sup class='ipa'>/personaaware*/</sup> Toxicity<sup class='ipa'>/tɑkˈsɪsəti/</sup> Detection<sup class='ipa'>/dɪˈtɛkʃən/</sup> with Prompt Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> and Learned Ensembling<sup class='ipa'>/ensembling*/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Berk Atil, Rebecca J. Passonneau, Ninareh Mehrabi</span>
+                                <span class="date">2026-01-05</span>
+                                <span class="categories">cs.CL</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Toxicity detection is inherently subjective, shaped by the diverse perspectives and social priors of different demographic groups. While ``pluralistic&#39;&#39; modeling as used in economics and the social sciences aims to capture perspective differences across contexts, current Large Language Model (LLM) p...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">毒性检测本质上是主观的，受到不同人口群体的不同观点和社会先验的影响。虽然经济学和社会科学中使用的“多元”建模旨在捕捉不同背景下的视角差异，但当前的大语言模型（LLM）提示技术在不同的角色和基础模型中具有不同的结果。在这项工作中，我们对角色感知毒性检测进行了系统评估，表明没有任何一种提示方法（包括我们提出的自动提示优化策略）在所有模型角色对中统一占主导地位。为了利用互补错误，我们探索了四种提示变体的集成，并提出了一种轻量级元集成：基于 4 位提示预测向量的 SVM。我们的结果表明，所提出的 SVM 集成始终优于个人提示方法和传统的多数投票技术，在不同角色中实现了最强的整体性能。这项工作为毒性检测的角色条件提示提供了第一个系统比较，并为主观 NLP 任务中的多元评估提供了一种稳健的方法。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2601.02337v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- 右列 -->
+        <aside class="column column-right">
+            
+            <!-- GitHub Trending 卡片 -->
+            <section class="card card-github">
+                <div class="card-header">
+                    <h3>⭐ GitHub Trending</h3>
+                    <span class="badge">AI 项目</span>
+                </div>
+                
+                <ul class="repo-list">
+                    
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/vitali-sialedchyk/stability-first-ai" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">stability-first-ai</span>
+                                    <span class="repo-stars">⭐ 10</span>
+                                </div>
+                                <p class="repo-desc">使用递归时间架构、主动睡眠（生成重放）和临时 LoRA 解决灾难性遗忘问题。证明神经网络中的“拉撒路效应”。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-01-03</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/CyberSecurityUP/DeepNudeDetect" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">DeepNudeDetect</span>
+                                    <span class="repo-stars">⭐ 9</span>
+                                </div>
+                                <p class="repo-desc">全面防范 Deepfakes、Deepnudes 和有害内容</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-01-03</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/vinpatel/HumanMark" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">HumanMark</span>
+                                    <span class="repo-stars">⭐ 8</span>
+                                </div>
+                                <p class="repo-desc">开源人工智能内容检测。检测人工智能生成的文本、图像、音频、视频。自托管、离线、零依赖。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Go</span>
+                                    <span class="repo-date">2026-01-01</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/mytechnotalent/SARAN" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">SARAN</span>
+                                    <span class="repo-stars">⭐ 5</span>
+                                </div>
+                                <p class="repo-desc">SARAN：浅层自回归注意力网络</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2025-12-31</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/collapseindex/collapseindex" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">collapseindex</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">崩溃指数 (CI) 和结构保留指数 (SRI)：先进的诊断框架，用于对 AI 模型不稳定性进行有界、轻量级的评估，超越准确性，揭示生产系统中隐藏的脆弱性！</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-01-04</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/g3deon4ent/g3deon-erp" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">g3deon-erp</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">使用 Next.js 构建的人工智能驱动的 ERP 管理前端。用于企业资源规划和业务管理的综合 SaaS 平台。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-01-06</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/NeuralBlitz/Advanced-Research" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Advanced-Research</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">高级理论物理和数学。人工智能/机器学习。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-01-03</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/mordiaky/LMD" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">LMD</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">Living Memory Dynamics - 一种新颖的框架，用于通过创造性的飞跃来生成叙事记忆。具有 Joshua R. Thomas 记忆方程。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-01-05</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/TamTunnel/Constellation-Hub" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Constellation-Hub</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">开源卫星星座管理和人工智能辅助运营平台。用于车队可视化、通行调度、数据路由和智能操作辅助的统一控制平面。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2025-12-31</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/imadev26/awesome-ai-tools-2026" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">awesome-ai-tools-2026</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">🤖 为开发者精心挑选的 2026 年最佳 AI 工具和资源列表</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-01-02</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                    
+                </ul>
+            </section>
+            
+            <!-- 思维模型卡片 -->
+            <section class="card card-models">
+                <div class="card-header">
+                    <h3>🧠 思维模型</h3>
+                </div>
+                
+                <div class="models-carousel" id="models-carousel">
+                    
+                        
+                        <div class="model-card active" data-index="0">
+                            <h4 class="model-name">
+                                <span class="model-en">First Principles Thinking</span>
+                                <span class="model-zh">第一性原理</span>
+                            </h4>
+                            <p class="model-desc">将复杂问题分解为最基本的元素，然后从头开始重建解决方案。不依赖类比或既有经验，而是从根本真理出发进行推理。</p>
+                            <div class="model-example">
+                                <strong>实例：</strong>埃隆·马斯克在制造电池时，不接受&#39;电池就是很贵&#39;的假设，而是分析电池的原材料成本，发现可以大幅降低成本。
+                            </div>
+                            <p class="model-source">— 亚里士多德 / 伊隆·马斯克</p>
+                        </div>
+                        
+                        <div class="model-card " data-index="1">
+                            <h4 class="model-name">
+                                <span class="model-en">Occam&#39;s Razor</span>
+                                <span class="model-zh">奥卡姆剃刀</span>
+                            </h4>
+                            <p class="model-desc">如无必要，勿增实体。在多个假设中，选择假设最少、最简洁的那个。复杂的解释往往隐藏着错误。</p>
+                            <div class="model-example">
+                                <strong>实例：</strong>当你听到马蹄声时，先想到马，而不是斑马。除非有明确证据表明是更罕见的情况。
+                            </div>
+                            <p class="model-source">— 威廉·奥卡姆 (14世纪)</p>
+                        </div>
+                        
+                        <div class="model-card " data-index="2">
+                            <h4 class="model-name">
+                                <span class="model-en">Second-Order Thinking</span>
+                                <span class="model-zh">二阶思维</span>
+                            </h4>
+                            <p class="model-desc">不仅考虑行动的直接后果，还要思考这些后果带来的连锁反应。问自己：&#39;然后呢？再然后呢？&#39;</p>
+                            <div class="model-example">
+                                <strong>实例：</strong>降价促销会增加短期销量（一阶效应），但可能损害品牌形象并引发价格战（二阶效应）。
+                            </div>
+                            <p class="model-source">— 霍华德·马克斯</p>
+                        </div>
+                        
+                    
+                </div>
+                
+                
+                <div class="model-nav">
+                    <button class="nav-btn" id="prev-model">←</button>
+                    <span class="model-indicator" id="model-indicator">1 / 3</span>
+                    <button class="nav-btn" id="next-model">→</button>
+                </div>
+                
+            </section>
+            
+        </aside>
+        
+    </main>
+
+    <!-- ==================== JavaScript ==================== -->
+    <script>
+        // 实时时钟
+        function updateClock() {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
+            document.getElementById('current-time').textContent = timeStr;
+        }
+        updateClock();
+        setInterval(updateClock, 1000);
+
+        // 语录轮播
+        const quoteSlides = document.querySelectorAll('.quote-slide');
+        const quoteDots = document.querySelectorAll('.carousel-dots .dot');
+        let currentQuoteIdx = 0;
+        
+        function showQuote(idx) {
+            quoteSlides.forEach(s => s.classList.remove('active'));
+            quoteDots.forEach(d => d.classList.remove('active'));
+            quoteSlides[idx]?.classList.add('active');
+            quoteDots[idx]?.classList.add('active');
+        }
+        
+        quoteDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                currentQuoteIdx = parseInt(dot.dataset.index);
+                showQuote(currentQuoteIdx);
+            });
+        });
+        
+        // 自动轮播
+        if (quoteSlides.length > 1) {
+            setInterval(() => {
+                currentQuoteIdx = (currentQuoteIdx + 1) % quoteSlides.length;
+                showQuote(currentQuoteIdx);
+            }, 8000);
+        }
+
+        // 歌词选择
+        const songSelector = document.getElementById('song-selector');
+        const songLyrics = document.querySelectorAll('.song-lyrics');
+        
+        songSelector?.addEventListener('change', function() {
+            const idx = this.value;
+            songLyrics.forEach(l => l.classList.remove('active'));
+            document.querySelector(`.song-lyrics[data-index="${idx}"]`)?.classList.add('active');
+        });
+
+        // 思维模型轮播
+        const modelCards = document.querySelectorAll('.model-card');
+        const modelIndicator = document.getElementById('model-indicator');
+        let currentModelIdx = 0;
+        
+        function showModel(idx) {
+            modelCards.forEach(c => c.classList.remove('active'));
+            modelCards[idx]?.classList.add('active');
+            if (modelIndicator) {
+                modelIndicator.textContent = `${idx + 1} / ${modelCards.length}`;
+            }
+        }
+        
+        document.getElementById('prev-model')?.addEventListener('click', () => {
+            currentModelIdx = (currentModelIdx - 1 + modelCards.length) % modelCards.length;
+            showModel(currentModelIdx);
+        });
+        
+        document.getElementById('next-model')?.addEventListener('click', () => {
+            currentModelIdx = (currentModelIdx + 1) % modelCards.length;
+            showModel(currentModelIdx);
+        });
+    </script>
+</body>
+</html>

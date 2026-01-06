@@ -1,0 +1,67 @@
+# Kindle-Dash 自动构建工作流
+# ============================
+# 每日 UTC 22:00（北京时间 06:00）自动运行构建脚本
+# 聚合最新数据并更新静态页面
+
+name: Build Kindle-Dash
+
+on:
+  # 定时触发：每日 UTC 22:00
+  schedule:
+    - cron: '0 22 * * *'
+  
+  # 手动触发
+  workflow_dispatch:
+  
+  # 推送到 main 分支时触发
+  push:
+    branches:
+      - main
+    paths:
+      - 'builder.py'
+      - 'templates/**'
+      - 'static/**'
+      - 'data/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. 检出代码
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      # 2. 设置 Python 环境
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      # 4. 运行构建脚本
+      - name: Run builder.py
+        run: python builder.py
+      
+      # 5. 提交生成的文件到 dist 目录
+      - name: Commit and push dist files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add dist/
+          git diff --staged --quiet || git commit -m "🤖 Auto-build: Update dashboard $(date +'%Y-%m-%d %H:%M')"
+          git push
+      
+      # 6.（可选）部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages

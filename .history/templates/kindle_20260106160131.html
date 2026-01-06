@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=1072, height=1448, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Kindle Dash - 离线看板</title>
+    <style>
+      {{ kindle_css }}
+    </style>
+  </head>
+  <body>
+    <!-- ==================== 主内容区 ==================== -->
+    <main id="content">
+      <!-- Module A: Deep Tech (ArXiv 论文) -->
+      <section id="tab-papers" class="tab-content active">
+        <h1 class="section-title">Deep Tech</h1>
+        <p class="section-subtitle">ArXiv 最新论文精选</p>
+
+        {% if papers %} {% for paper in papers %}
+        <article class="paper-card">
+          <h2 class="paper-title">{{ paper.title_with_ipa | safe }}</h2>
+          <p class="paper-meta">
+            <span class="authors">{{ paper.authors | join(', ') }}</span>
+            <span class="date">{{ paper.published }}</span>
+          </p>
+
+          <div class="paper-abstract">
+            <p class="abstract-en">{{ paper.abstract_en }}</p>
+            <hr class="divider" />
+            <p class="abstract-zh">{{ paper.abstract_zh }}</p>
+          </div>
+        </article>
+        {% endfor %} {% else %}
+        <p class="empty-state">暂无论文数据</p>
+        {% endif %}
+      </section>
+
+      <!-- Module B: GitHub Trending AI -->
+      <section id="tab-repos" class="tab-content">
+        <h1 class="section-title">GitHub Trending</h1>
+        <p class="section-subtitle">近期 AI 热门项目</p>
+
+        {% if repos %}
+        <ul class="repo-list">
+          {% for repo in repos %}
+          <li class="repo-item">
+            <span class="repo-stars">★ {{ repo.stars }}</span>
+            <div class="repo-info">
+              <strong class="repo-name">{{ repo.name }}</strong>
+              <p class="repo-desc">
+                {{ repo.description_zh or repo.description_en }}
+              </p>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p class="empty-state">暂无仓库数据</p>
+        {% endif %}
+      </section>
+
+      <!-- Module C: Mental Models (思维模型) -->
+      <section id="tab-models" class="tab-content">
+        <h1 class="section-title">Mental Models</h1>
+        <p class="section-subtitle">思维模型闪卡</p>
+
+        {% if models %}
+        <div id="flashcard-container">
+          {% for model in models %}
+          <div
+            class="flashcard {% if loop.first %}active{% endif %}"
+            data-index="{{ loop.index0 }}"
+          >
+            <h2 class="model-name-en">{{ model.name_en }}</h2>
+            <h3 class="model-name-zh">{{ model.name_zh }}</h3>
+            <hr class="divider" />
+            <p class="model-desc">{{ model.description_zh }}</p>
+            <p class="model-example"><em>例：{{ model.example }}</em></p>
+            <p class="model-source">— {{ model.source }}</p>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="flashcard-nav">
+          <span id="card-indicator">1 / {{ models | length }}</span>
+          <button id="btn-next-card" class="nav-btn">下一张 →</button>
+        </div>
+        {% else %}
+        <p class="empty-state">暂无思维模型数据</p>
+        {% endif %}
+      </section>
+
+      <!-- Module D: Focus & Quotes (专注与语录) -->
+      <section id="tab-focus" class="tab-content">
+        <div id="focus-screen" class="focus-active">
+          <h1 class="focus-text">FOCUS</h1>
+          <p class="focus-hint">点击屏幕查看语录</p>
+        </div>
+
+        <div id="quote-screen" class="quote-hidden">
+          {% if quotes %} {% for quote in quotes %}
+          <div
+            class="quote-card {% if loop.first %}active{% endif %}"
+            data-index="{{ loop.index0 }}"
+          >
+            {% if quote.language == 'zh' %}
+            <p class="quote-content-zh vertical">{{ quote.content }}</p>
+            {% else %}
+            <p class="quote-content-en">{{ quote.content }}</p>
+            {% if quote.translation %}
+            <p class="quote-translation">{{ quote.translation }}</p>
+            {% endif %} {% endif %}
+            <p class="quote-author">— {{ quote.author }}</p>
+          </div>
+          {% endfor %}
+          <div class="quote-nav">
+            <button id="btn-next-quote" class="nav-btn">下一条 →</button>
+          </div>
+          {% else %}
+          <p class="empty-state">暂无语录数据</p>
+          {% endif %}
+        </div>
+      </section>
+
+      <!-- Module E: Lyrics (歌词本) -->
+      <section id="tab-lyrics" class="tab-content">
+        <h1 class="section-title">Lyrics</h1>
+        <p class="section-subtitle">歌词本</p>
+
+        <!-- 歌曲目录 -->
+        <div id="lyrics-index">
+          {% if lyrics %}
+          <ul class="lyrics-list">
+            {% for song in lyrics %}
+            <li class="lyrics-item" data-song="{{ loop.index0 }}">
+              <span class="song-number">{{ loop.index }}.</span>
+              <span class="song-name">{{ song.name }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p class="empty-state">暂无歌词数据</p>
+          {% endif %}
+        </div>
+
+        <!-- 歌词详情 -->
+        <div id="lyrics-detail" class="hidden">
+          {% for song in lyrics %}
+          <div class="lyrics-content" data-song="{{ loop.index0 }}">
+            <h2 class="song-title">{{ song.name }}</h2>
+            <div class="lyrics-text">
+              {% for line in song.lines %}
+              <p>{{ line }}</p>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+          <button id="btn-back-index" class="nav-btn">← 返回目录</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== 底部导航栏 ==================== -->
+    <nav id="tab-bar">
+      <button class="tab-btn active" data-tab="papers">
+        <span class="tab-icon">📄</span>
+        <span class="tab-label">论文</span>
+      </button>
+      <button class="tab-btn" data-tab="repos">
+        <span class="tab-icon">⭐</span>
+        <span class="tab-label">GitHub</span>
+      </button>
+      <button class="tab-btn" data-tab="models">
+        <span class="tab-icon">🧠</span>
+        <span class="tab-label">思维</span>
+      </button>
+      <button class="tab-btn" data-tab="focus">
+        <span class="tab-icon">💡</span>
+        <span class="tab-label">语录</span>
+      </button>
+      <button class="tab-btn" data-tab="lyrics">
+        <span class="tab-icon">🎵</span>
+        <span class="tab-label">歌词</span>
+      </button>
+    </nav>
+
+    <!-- ==================== JavaScript 交互 ==================== -->
+    <script>
+      // Tab 切换
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const tabId = this.dataset.tab;
+
+          // 更新 Tab 按钮状态
+          document
+            .querySelectorAll(".tab-btn")
+            .forEach((b) => b.classList.remove("active"));
+          this.classList.add("active");
+
+          // 更新内容区显示
+          document
+            .querySelectorAll(".tab-content")
+            .forEach((c) => c.classList.remove("active"));
+          document.getElementById("tab-" + tabId).classList.add("active");
+        });
+      });
+
+      // 思维模型闪卡切换
+      let currentCardIndex = 0;
+      const cards = document.querySelectorAll(".flashcard");
+      const cardIndicator = document.getElementById("card-indicator");
+
+      document
+        .getElementById("btn-next-card")
+        ?.addEventListener("click", function () {
+          cards[currentCardIndex].classList.remove("active");
+          currentCardIndex = (currentCardIndex + 1) % cards.length;
+          cards[currentCardIndex].classList.add("active");
+          cardIndicator.textContent =
+            currentCardIndex + 1 + " / " + cards.length;
+        });
+
+      // Focus 与语录切换
+      const focusScreen = document.getElementById("focus-screen");
+      const quoteScreen = document.getElementById("quote-screen");
+
+      focusScreen?.addEventListener("click", function () {
+        focusScreen.classList.remove("focus-active");
+        focusScreen.classList.add("focus-hidden");
+        quoteScreen.classList.remove("quote-hidden");
+        quoteScreen.classList.add("quote-active");
+      });
+
+      // 语录切换
+      let currentQuoteIndex = 0;
+      const quoteCards = document.querySelectorAll(".quote-card");
+
+      document
+        .getElementById("btn-next-quote")
+        ?.addEventListener("click", function () {
+          quoteCards[currentQuoteIndex].classList.remove("active");
+          currentQuoteIndex = (currentQuoteIndex + 1) % quoteCards.length;
+          quoteCards[currentQuoteIndex].classList.add("active");
+        });
+
+      // 歌词目录与详情切换
+      const lyricsIndex = document.getElementById("lyrics-index");
+      const lyricsDetail = document.getElementById("lyrics-detail");
+      const lyricsContents = document.querySelectorAll(".lyrics-content");
+
+      document.querySelectorAll(".lyrics-item").forEach((item) => {
+        item.addEventListener("click", function () {
+          const songIndex = this.dataset.song;
+          lyricsIndex.classList.add("hidden");
+          lyricsDetail.classList.remove("hidden");
+
+          lyricsContents.forEach((c) => c.classList.remove("active"));
+          document
+            .querySelector(`.lyrics-content[data-song="${songIndex}"]`)
+            .classList.add("active");
+        });
+      });
+
+      document
+        .getElementById("btn-back-index")
+        ?.addEventListener("click", function () {
+          lyricsDetail.classList.add("hidden");
+          lyricsIndex.classList.remove("hidden");
+        });
+    </script>
+
+    <!-- 生成时间 -->
+    <footer class="generated-info">生成于 {{ generated_at }}</footer>
+  </body>
+</html>

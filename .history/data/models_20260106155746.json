@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name_en": "First Principles Thinking",
+    "name_zh": "第一性原理",
+    "description_en": "Break down complex problems into their most basic elements and rebuild from the ground up.",
+    "description_zh": "将复杂问题分解为最基本的元素，然后从头开始重建解决方案。不依赖类比或既有经验，而是从根本真理出发进行推理。",
+    "example": "埃隆·马斯克在制造电池时，不接受'电池就是很贵'的假设，而是分析电池的原材料成本，发现可以大幅降低成本。",
+    "source": "亚里士多德 / 伊隆·马斯克"
+  },
+  {
+    "id": 2,
+    "name_en": "Occam's Razor",
+    "name_zh": "奥卡姆剃刀",
+    "description_en": "When faced with competing hypotheses, select the one that makes the fewest assumptions.",
+    "description_zh": "如无必要，勿增实体。在多个假设中，选择假设最少、最简洁的那个。复杂的解释往往隐藏着错误。",
+    "example": "当你听到马蹄声时，先想到马，而不是斑马。除非有明确证据表明是更罕见的情况。",
+    "source": "威廉·奥卡姆 (14世纪)"
+  },
+  {
+    "id": 3,
+    "name_en": "Second-Order Thinking",
+    "name_zh": "二阶思维",
+    "description_en": "Consider not just the immediate consequences of an action, but also the subsequent effects of those consequences.",
+    "description_zh": "不仅考虑行动的直接后果，还要思考这些后果带来的连锁反应。问自己：'然后呢？再然后呢？'",
+    "example": "降价促销会增加短期销量（一阶效应），但可能损害品牌形象并引发价格战（二阶效应）。",
+    "source": "霍华德·马克斯"
+  }
+]

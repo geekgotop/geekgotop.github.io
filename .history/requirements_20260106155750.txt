@@ -1,0 +1,5 @@
+arxiv
+requests
+jinja2
+eng_to_ipa
+deep-translator
