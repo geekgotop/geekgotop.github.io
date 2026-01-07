@@ -25,7 +25,7 @@ html, body {
     height: 1448px;
     background-color: #FFFFFF;
     color: #000000;
-    font-size: 18px;
+    font-size: 26px; /* 上调 18-&gt;26 */
     line-height: 1.6;
     overflow: hidden; /* 防止滚轮 */
 }
@@ -41,11 +41,12 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 
 /* ==================== 主内容区 ==================== */
 #content {
-    padding: 20px;
-    height: 1368px; /* 1448px - 80px 固定值代替 calc */
+    padding: 30px;
+    height: 1288px; /* 1448 - 80 - 80 (为两个固定的 bar 留出空间) */
     overflow-y: auto;
     width: 100%;
     position: relative;
+    padding-bottom: 100px; /* 额外底部间距 */
 }
 
 /* Tab 内容切换 */
@@ -63,35 +64,35 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 
 /* 标题 */
 .section-title {
-    font-size: 32px;
+    font-size: 48px; /* 32-&gt;48 */
     font-weight: bold;
     text-align: center;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     letter-spacing: 2px;
 }
 
 .section-subtitle {
-    font-size: 14px;
+    font-size: 20px; /* 14-&gt;20 */
     text-align: center;
     color: #000000;
-    margin-bottom: 16px;
-    padding-bottom: 12px;
-    border-bottom: 2px solid #000000;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 3px solid #000000;
 }
 
 /* 分隔线 */
 .divider {
     border: none;
-    border-top: 1px dashed #000000;
-    margin: 16px 0;
+    border-top: 2px dashed #000000;
+    margin: 24px 0;
 }
 
 /* 空状态 */
 .empty-state {
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     padding: 48px;
-    border: 2px dashed #000000;
+    border: 3px dashed #000000;
     margin: 24px 0;
 }
 
@@ -109,24 +110,29 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 
 .fullscreen-card-container.center-content {
     text-align: center;
-    padding-top: 100px; /* 代替 flex 居中 */
+    padding-top: 150px; /* 增加边距 */
 }
 
-/* ==================== 导航条 ==================== */
+/* ==================== 模块导航条 (固定在底部) ==================== */
 .nav-bar {
+    position: fixed;
+    bottom: 83px; /* 高于底部 tab-bar (80px + 3px border) */
+    left: 0;
+    width: 1072px;
+    height: 80px;
     border-top: 2px solid #000000;
     background: #FFFFFF;
-    padding: 16px 0;
-    width: 100%;
     clear: both;
-    overflow: hidden; /* 清除浮动 */
+    overflow: hidden;
+    z-index: 100;
 }
 
 .nav-btn {
-    float: left; /* 改为浮动 */
-    width: 200px;
-    padding: 16px 0;
-    font-size: 18px;
+    float: left;
+    width: 250px; /* 调宽按钮以适配大字号 */
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px; /* 18-&gt;24 */
     font-weight: bold;
     background-color: #000000;
     color: #FFFFFF;
@@ -136,17 +142,17 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 
 .nav-indicator {
     float: left;
-    width: 632px; /* 1072 - 200*2 - 40 */
-    font-size: 18px;
+    width: 572px; /* 1072 - 250*2 */
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
-    line-height: 50px; /* 垂直对齐 */
+    line-height: 80px;
 }
 
 /* ==================== Module A: 论文区块 ==================== */
 .paper-card {
     display: none;
-    padding-bottom: 16px;
+    padding-bottom: 20px;
 }
 
 .paper-card.active {
@@ -154,22 +160,22 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 }
 
 .paper-title {
-    font-size: 22px;
+    font-size: 36px; /* 22-&gt;36 */
     font-weight: bold;
     line-height: 1.4;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .paper-title .ipa {
-    font-size: 11px;
+    font-size: 16px; /* 11-&gt;16 */
     font-weight: normal;
     color: #000000;
     vertical-align: super;
 }
 
 .paper-meta {
-    font-size: 13px;
-    margin-bottom: 12px;
+    font-size: 18px; /* 13-&gt;18 */
+    margin-bottom: 16px;
 }
 
 .paper-meta .date {
@@ -177,50 +183,57 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 }
 
 .paper-abstract {
-    font-size: 15px;
-    line-height: 1.8;
+    font-size: 24px; /* 15-&gt;24 */
+    line-height: 1.6;
 }
 
 .abstract-en {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+    color: #333333;
 }
 
 .abstract-zh {
-    font-size: 16px;
+    font-size: 28px; /* 摘要中文更大 */
+    font-weight: normal;
 }
 
 /* ==================== Module B: GitHub 仓库列表 ==================== */
 .repo-item {
-    padding: 14px 0;
-    border-bottom: 1px solid #000000;
+    padding: 24px 0;
+    border-bottom: 2px solid #000000;
     overflow: hidden;
 }
 
 .repo-stars {
     float: left;
-    width: 80px;
-    font-size: 16px;
+    width: 100px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .repo-info {
     float: left;
-    width: 950px;
+    width: 930px;
 }
 
 .repo-name {
-    font-size: 18px;
+    font-size: 28px; /* 18-&gt;28 */
     font-weight: bold;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+}
+
+.repo-desc {
+    font-size: 22px;
+    line-height: 1.5;
 }
 
 /* ==================== Module C: 思维模型 ==================== */
 .flashcard {
     display: none;
-    padding: 24px;
-    border: 3px solid #000000;
+    padding: 30px;
+    border: 4px solid #000000;
     text-align: center;
-    min-height: 600px;
+    min-height: 700px;
 }
 
 .flashcard.active {
@@ -228,20 +241,20 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 }
 
 .model-name-en {
-    font-size: 36px;
+    font-size: 48px; /* 36-&gt;48 */
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .model-name-zh {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 30px;
 }
 
 .model-desc {
-    font-size: 20px;
+    font-size: 28px; /* 20-&gt;28 */
     line-height: 1.8;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     text-align: left;
 }
 
@@ -256,7 +269,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 }
 
 .quote-content-en, .quote-content-zh {
-    font-size: 32px;
+    font-size: 44px; /* 32-&gt;44 */
     font-weight: bold;
     line-height: 1.5;
     margin-bottom: 24px;
@@ -272,17 +285,17 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 }
 
 .song-title {
-    font-size: 28px;
+    font-size: 40px; /* 28-&gt;40 */
     font-weight: bold;
     margin-bottom: 24px;
     padding-bottom: 12px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 3px solid #000000;
     text-align: center;
 }
 
 .lyrics-text {
     text-align: center;
-    font-size: 18px;
+    font-size: 26px; /* 18-&gt;26 */
 }
 
 /* ==================== Module F: 单词记忆 ==================== */
@@ -297,24 +310,24 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 }
 
 .word-text {
-    font-size: 56px;
+    font-size: 72px; /* 56-&gt;72 */
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .word-meaning {
-    font-size: 28px;
+    font-size: 40px; /* 28-&gt;40 */
     font-weight: bold;
     margin-bottom: 24px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 3px solid #000000;
     padding-bottom: 16px;
 }
 
 .sentence-item {
     text-align: left;
-    margin-bottom: 15px;
-    border-bottom: 1px dashed #000000;
-    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px dashed #000000;
+    padding-bottom: 15px;
 }
 
 /* ==================== 底部固定导航栏 (Legacy) ==================== */
@@ -327,17 +340,18 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     background-color: #FFFFFF;
     border-top: 3px solid #000000;
     overflow: hidden;
+    z-index: 200;
 }
 
 .tab-btn {
     float: left;
-    width: 178.6px; /* 1072 / 6 */
+    width: 178px; /* 1072 / 6 ≈ 178.6 */
     height: 80px;
     background: none;
     border: none;
     border-right: 1px solid #EEEEEE;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .tab-btn.active {
@@ -347,23 +361,23 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 
 .tab-icon {
     display: block;
-    font-size: 18px;
+    font-size: 24px; /* 18-&gt;24 */
     font-weight: bold;
     margin-bottom: 2px;
 }
 
 .tab-label {
     display: block;
-    font-size: 16px;
+    font-size: 20px; /* 16-&gt;20 */
     font-weight: bold;
 }
 
 /* ==================== 页脚 ==================== */
 .generated-info {
     position: absolute;
-    bottom: 90px;
-    right: 20px;
-    font-size: 11px;
+    bottom: 180px; /* 两个 bar 之上 */
+    right: 30px;
+    font-size: 14px;
 }
 
     </style>
@@ -1081,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-01-07 08:13:22
+        生成于 2026-01-07 08:18:13
     </footer>
 </body>
 </html>

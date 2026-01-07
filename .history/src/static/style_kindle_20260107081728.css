@@ -262,7 +262,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 }
 
 .quote-content-en, .quote-content-zh {
-    font-size: 44px; /* 32->44 */
+    font-size: 32px;
     font-weight: bold;
     line-height: 1.5;
     margin-bottom: 24px;
@@ -278,17 +278,17 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 }
 
 .song-title {
-    font-size: 40px; /* 28->40 */
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: 24px;
     padding-bottom: 12px;
-    border-bottom: 3px solid #000000;
+    border-bottom: 2px solid #000000;
     text-align: center;
 }
 
 .lyrics-text {
     text-align: center;
-    font-size: 26px; /* 18->26 */
+    font-size: 18px;
 }
 
 /* ==================== Module F: 单词记忆 ==================== */
@@ -303,24 +303,24 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 }
 
 .word-text {
-    font-size: 72px; /* 56->72 */
+    font-size: 56px;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .word-meaning {
-    font-size: 40px; /* 28->40 */
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: 24px;
-    border-bottom: 3px solid #000000;
+    border-bottom: 2px solid #000000;
     padding-bottom: 16px;
 }
 
 .sentence-item {
     text-align: left;
-    margin-bottom: 20px;
-    border-bottom: 2px dashed #000000;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #000000;
+    padding-bottom: 10px;
 }
 
 /* ==================== 底部固定导航栏 (Legacy) ==================== */
@@ -333,18 +333,17 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     background-color: #FFFFFF;
     border-top: 3px solid #000000;
     overflow: hidden;
-    z-index: 200;
 }
 
 .tab-btn {
     float: left;
-    width: 178px; /* 1072 / 6 ≈ 178.6 */
+    width: 178.6px; /* 1072 / 6 */
     height: 80px;
     background: none;
     border: none;
     border-right: 1px solid #EEEEEE;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .tab-btn.active {
@@ -354,21 +353,21 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 
 .tab-icon {
     display: block;
-    font-size: 24px; /* 18->24 */
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 2px;
 }
 
 .tab-label {
     display: block;
-    font-size: 20px; /* 16->20 */
+    font-size: 16px;
     font-weight: bold;
 }
 
 /* ==================== 页脚 ==================== */
 .generated-info {
     position: absolute;
-    bottom: 180px; /* 两个 bar 之上 */
-    right: 30px;
-    font-size: 14px;
+    bottom: 90px;
+    right: 20px;
+    font-size: 11px;
 }
