@@ -473,6 +473,11 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     </style>
 </head>
 <body>
+    <!-- ==================== 兼容性提示 ==================== -->
+    <div id="loading-msg" style="padding: 20px; font-size: 20px; font-weight: bold; background: white; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999;">
+        正在加载数据... (如果长时间停留在此，说明浏览器不支持当前脚本或 JS 报错)
+    </div>
+
     <!-- ==================== 主内容区 ==================== -->
     <main id="content">
         
@@ -551,7 +556,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 9</span>
+                        <span class="repo-stars">★ 10</span>
                         <div class="repo-info">
                             <strong class="repo-name">CyberSecurityUP/DeepNudeDetect</strong>
                             <p class="repo-desc">全面防范 Deepfakes、Deepnudes 和有害内容</p>
@@ -567,10 +572,10 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 5</span>
+                        <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">mytechnotalent/SARAN</strong>
-                            <p class="repo-desc">SARAN：浅层自回归注意力网络</p>
+                            <strong class="repo-name">g3deon4ent/g3deon-erp</strong>
+                            <p class="repo-desc">使用 Next.js 构建的人工智能驱动的 ERP 管理前端。用于企业资源规划和业务管理的综合 SaaS 平台。</p>
                         </div>
                     </li>
                 
@@ -585,16 +590,16 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">g3deon4ent/g3deon-erp</strong>
-                            <p class="repo-desc">使用 Next.js 构建的人工智能驱动的 ERP 管理前端。用于企业资源规划和业务管理的综合 SaaS 平台。</p>
+                            <strong class="repo-name">KalyanM45/Synapse-Daily</strong>
+                            <p class="repo-desc">该存储库包含精选的每周人工智能和机器学习新闻集，经过提炼为清晰、可读的见解，并编译成干净、可共享的 PDF。它的重点是消除噪音，突出人工智能领域每周真正重要的事情。它是一个结构化的每周练习，用于理解和总结人工智能的发展。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">NeuralBlitz/Advanced-Research</strong>
-                            <p class="repo-desc">高级理论物理和数学。人工智能/机器学习。</p>
+                            <strong class="repo-name">yogender-ai/knn-cat-dog-demo</strong>
+                            <p class="repo-desc">使用 Python 从头开始​​进行猫与狗图像分类的 KNN 算法。机器学习、基于距离的分类和计算机视觉实验。</p>
                         </div>
                     </li>
                 
@@ -609,8 +614,8 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">TamTunnel/Constellation-Hub</strong>
-                            <p class="repo-desc">开源卫星星座管理和人工智能辅助运营平台。用于车队可视化、通行调度、数据路由和智能操作辅助的统一控制平面。</p>
+                            <strong class="repo-name">NeuralBlitz/Advanced-Research</strong>
+                            <p class="repo-desc">高级理论物理和数学。人工智能/机器学习。</p>
                         </div>
                     </li>
                 
@@ -1082,72 +1087,102 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
         </button>
     </nav>
 
-    <!-- ==================== JavaScript 交互 ==================== -->
-    <script>
-        // 通用卡片切换函数
-        function createCardSwitcher(containerSelector, prevBtnId, nextBtnId, indicatorId, isLyrics = false, lyricsData = []) {
-            const cards = document.querySelectorAll(containerSelector);
-            const indicator = document.getElementById(indicatorId);
-            let currentIndex = 0;
-            
-            function showCard(index) {
-                cards.forEach(c => c.classList.remove('active'));
-                cards[index]?.classList.add('active');
-                if (indicator) {
-                    if (isLyrics && lyricsData.length > 0) {
-                        indicator.textContent = lyricsData[index] || '';
-                    } else {
-                        indicator.textContent = `${index + 1} / ${cards.length}`;
+    <!-- ==================== JavaScript 交互 (严格 ES5 标准) ==================== -->
+    <script type="text/javascript">
+        (function() {
+            // 通用卡片切换函数
+            function createCardSwitcher(containerSelector, prevBtnId, nextBtnId, indicatorId, isLyrics, lyricsData) {
+                var cards = document.querySelectorAll(containerSelector);
+                var indicator = document.getElementById(indicatorId);
+                var prevBtn = document.getElementById(prevBtnId);
+                var nextBtn = document.getElementById(nextBtnId);
+                var currentIndex = 0;
+                
+                function showCard(index) {
+                    for (var i = 0; i < cards.length; i++) {
+                        cards[i].className = cards[i].className.replace(' active', '');
                     }
+                    if (cards[index]) {
+                        cards[index].className += ' active';
+                    }
+                    
+                    if (indicator) {
+                        if (isLyrics && lyricsData && lyricsData.length > 0) {
+                            indicator.innerHTML = lyricsData[index] || '';
+                        } else {
+                            indicator.innerHTML = (index + 1) + ' / ' + cards.length;
+                        }
+                    }
+                }
+                
+                if (prevBtn) {
+                    prevBtn.onclick = function() {
+                        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+                        showCard(currentIndex);
+                    };
+                }
+                
+                if (nextBtn) {
+                    nextBtn.onclick = function() {
+                        currentIndex = (currentIndex + 1) % cards.length;
+                        showCard(currentIndex);
+                    };
                 }
             }
             
-            document.getElementById(prevBtnId)?.addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-                showCard(currentIndex);
-            });
-            
-            document.getElementById(nextBtnId)?.addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % cards.length;
-                showCard(currentIndex);
-            });
-        }
-        
-        // Tab 切换
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const tabId = this.dataset.tab;
-                
-                // 更新 Tab 按钮状态
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-                
-                // 更新内容区显示
-                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                document.getElementById('tab-' + tabId).classList.add('active');
-            });
-        });
+            // Tab 切换
+            var tabBtns = document.querySelectorAll('.tab-btn');
+            for (var i = 0; i < tabBtns.length; i++) {
+                tabBtns[i].onclick = function() {
+                    var tabId = this.getAttribute('data-tab');
+                    
+                    // 更新 Tab 按钮状态
+                    for (var j = 0; j < tabBtns.length; j++) {
+                        tabBtns[j].className = tabBtns[j].className.replace(' active', '');
+                    }
+                    this.className += ' active';
+                    
+                    // 更新内容区显示
+                    var contents = document.querySelectorAll('.tab-content');
+                    for (var k = 0; k < contents.length; k++) {
+                        contents[k].className = contents[k].className.replace(' active', '');
+                    }
+                    var targetContent = document.getElementById('tab-' + tabId);
+                    if (targetContent) {
+                        targetContent.className += ' active';
+                    }
+                };
+            }
 
-        // 论文切换
-        createCardSwitcher('.paper-card', 'prev-paper', 'next-paper', 'paper-indicator');
-        
-        // 思维模型切换
-        createCardSwitcher('.flashcard', 'prev-model', 'next-model', 'model-indicator');
-        
-        // 语录切换
-        createCardSwitcher('.quote-card', 'prev-quote', 'next-quote', 'quote-indicator');
-        
-        // 歌词切换（显示歌名）
-        const lyricsNames = ['Example'];
-        createCardSwitcher('.lyrics-card', 'prev-lyrics', 'next-lyrics', 'lyrics-indicator', true, lyricsNames);
-        
-        // 单词切换
-        createCardSwitcher('.word-card', 'prev-word', 'next-word', 'word-indicator');
+            // 论文切换
+            createCardSwitcher('.paper-card', 'prev-paper', 'next-paper', 'paper-indicator');
+            
+            // 思维模型切换
+            createCardSwitcher('.flashcard', 'prev-model', 'next-model', 'model-indicator');
+            
+            // 语录切换
+            createCardSwitcher('.quote-card', 'prev-quote', 'next-quote', 'quote-indicator');
+            
+            // 歌词切换
+            var lyricsNames = [
+                'Example'
+            ];
+            createCardSwitcher('.lyrics-card', 'prev-lyrics', 'next-lyrics', 'lyrics-indicator', true, lyricsNames);
+            
+            // 单词切换
+            createCardSwitcher('.word-card', 'prev-word', 'next-word', 'word-indicator');
+
+            // 移除加载提示
+            var loading = document.getElementById('loading-msg');
+            if (loading) {
+                loading.style.display = 'none';
+            }
+        })();
     </script>
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-01-06 18:36:57
+        生成于 2026-01-07 08:08:54
     </footer>
 </body>
 </html>

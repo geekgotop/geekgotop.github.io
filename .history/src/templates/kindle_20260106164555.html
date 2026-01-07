@@ -9,11 +9,6 @@
     </style>
 </head>
 <body>
-    <!-- ==================== 兼容性提示 ==================== -->
-    <div id="loading-msg" style="padding: 20px; font-size: 20px; font-weight: bold; background: white; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999;">
-        正在加载数据... (如果长时间停留在此，说明浏览器不支持当前脚本或 JS 报错)
-    </div>
-
     <!-- ==================== 主内容区 ==================== -->
     <main id="content">
         
@@ -224,97 +219,67 @@
         </button>
     </nav>
 
-    <!-- ==================== JavaScript 交互 (严格 ES5 标准) ==================== -->
-    <script type="text/javascript">
-        (function() {
-            // 通用卡片切换函数
-            function createCardSwitcher(containerSelector, prevBtnId, nextBtnId, indicatorId, isLyrics, lyricsData) {
-                var cards = document.querySelectorAll(containerSelector);
-                var indicator = document.getElementById(indicatorId);
-                var prevBtn = document.getElementById(prevBtnId);
-                var nextBtn = document.getElementById(nextBtnId);
-                var currentIndex = 0;
-                
-                function showCard(index) {
-                    for (var i = 0; i < cards.length; i++) {
-                        cards[i].className = cards[i].className.replace(' active', '');
+    <!-- ==================== JavaScript 交互 ==================== -->
+    <script>
+        // 通用卡片切换函数
+        function createCardSwitcher(containerSelector, prevBtnId, nextBtnId, indicatorId, isLyrics = false, lyricsData = []) {
+            const cards = document.querySelectorAll(containerSelector);
+            const indicator = document.getElementById(indicatorId);
+            let currentIndex = 0;
+            
+            function showCard(index) {
+                cards.forEach(c => c.classList.remove('active'));
+                cards[index]?.classList.add('active');
+                if (indicator) {
+                    if (isLyrics && lyricsData.length > 0) {
+                        indicator.textContent = lyricsData[index] || '';
+                    } else {
+                        indicator.textContent = `${index + 1} / ${cards.length}`;
                     }
-                    if (cards[index]) {
-                        cards[index].className += ' active';
-                    }
-                    
-                    if (indicator) {
-                        if (isLyrics && lyricsData && lyricsData.length > 0) {
-                            indicator.innerHTML = lyricsData[index] || '';
-                        } else {
-                            indicator.innerHTML = (index + 1) + ' / ' + cards.length;
-                        }
-                    }
-                }
-                
-                if (prevBtn) {
-                    prevBtn.onclick = function() {
-                        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-                        showCard(currentIndex);
-                    };
-                }
-                
-                if (nextBtn) {
-                    nextBtn.onclick = function() {
-                        currentIndex = (currentIndex + 1) % cards.length;
-                        showCard(currentIndex);
-                    };
                 }
             }
             
-            // Tab 切换
-            var tabBtns = document.querySelectorAll('.tab-btn');
-            for (var i = 0; i < tabBtns.length; i++) {
-                tabBtns[i].onclick = function() {
-                    var tabId = this.getAttribute('data-tab');
-                    
-                    // 更新 Tab 按钮状态
-                    for (var j = 0; j < tabBtns.length; j++) {
-                        tabBtns[j].className = tabBtns[j].className.replace(' active', '');
-                    }
-                    this.className += ' active';
-                    
-                    // 更新内容区显示
-                    var contents = document.querySelectorAll('.tab-content');
-                    for (var k = 0; k < contents.length; k++) {
-                        contents[k].className = contents[k].className.replace(' active', '');
-                    }
-                    var targetContent = document.getElementById('tab-' + tabId);
-                    if (targetContent) {
-                        targetContent.className += ' active';
-                    }
-                };
-            }
+            document.getElementById(prevBtnId)?.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+                showCard(currentIndex);
+            });
+            
+            document.getElementById(nextBtnId)?.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % cards.length;
+                showCard(currentIndex);
+            });
+        }
+        
+        // Tab 切换
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const tabId = this.dataset.tab;
+                
+                // 更新 Tab 按钮状态
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // 更新内容区显示
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                document.getElementById('tab-' + tabId).classList.add('active');
+            });
+        });
 
-            // 论文切换
-            createCardSwitcher('.paper-card', 'prev-paper', 'next-paper', 'paper-indicator');
-            
-            // 思维模型切换
-            createCardSwitcher('.flashcard', 'prev-model', 'next-model', 'model-indicator');
-            
-            // 语录切换
-            createCardSwitcher('.quote-card', 'prev-quote', 'next-quote', 'quote-indicator');
-            
-            // 歌词切换
-            var lyricsNames = [
-                {% for song in lyrics %}'{{ song.name }}'{% if not loop.last %}, {% endif %}{% endfor %}
-            ];
-            createCardSwitcher('.lyrics-card', 'prev-lyrics', 'next-lyrics', 'lyrics-indicator', true, lyricsNames);
-            
-            // 单词切换
-            createCardSwitcher('.word-card', 'prev-word', 'next-word', 'word-indicator');
-
-            // 移除加载提示
-            var loading = document.getElementById('loading-msg');
-            if (loading) {
-                loading.style.display = 'none';
-            }
-        })();
+        // 论文切换
+        createCardSwitcher('.paper-card', 'prev-paper', 'next-paper', 'paper-indicator');
+        
+        // 思维模型切换
+        createCardSwitcher('.flashcard', 'prev-model', 'next-model', 'model-indicator');
+        
+        // 语录切换
+        createCardSwitcher('.quote-card', 'prev-quote', 'next-quote', 'quote-indicator');
+        
+        // 歌词切换（显示歌名）
+        const lyricsNames = [{% for song in lyrics %}'{{ song.name }}'{% if not loop.last %}, {% endif %}{% endfor %}];
+        createCardSwitcher('.lyrics-card', 'prev-lyrics', 'next-lyrics', 'lyrics-indicator', true, lyricsNames);
+        
+        // 单词切换
+        createCardSwitcher('.word-card', 'prev-word', 'next-word', 'word-indicator');
     </script>
     
     <!-- 生成时间 -->
