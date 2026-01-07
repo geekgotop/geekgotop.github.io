@@ -6,10 +6,10 @@
     <title>Kindle Dash - 离线看板</title>
     <style>
 /**
- * Kindle-Dash 样式表 (Kindle E-ink 优化版)
+ * Kindle-Dash 样式表 (Kindle E-ink 极端兼容版 V2)
  * ==========================================
- * 专为 Kindle Voyage (1072x1448) 设计
- * 纯黑白配色，无灰度，大字体高对比度
+ * 专为 Kindle Voyage (1072x1448) 实验性浏览器设计
+ * 彻底放弃 Flexbox, calc(), Emoji，使用陈旧但稳定的布局技术
  */
 
 /* ==================== 全局重置 ==================== */
@@ -27,12 +27,11 @@ html, body {
     color: #000000;
     font-size: 18px;
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow: hidden; /* 防止滚轮 */
 }
 
 body {
     font-family: &#39;Songti SC&#39;, &#39;SimSun&#39;, &#39;STSong&#39;, serif;
-    padding-bottom: 80px; /* 为底部导航留空间 */
 }
 
 /* 英文字体 */
@@ -43,19 +42,21 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 /* ==================== 主内容区 ==================== */
 #content {
     padding: 20px;
-    height: calc(1448px - 80px);
+    height: 1368px; /* 1448px - 80px 固定值代替 calc */
     overflow-y: auto;
+    width: 100%;
+    position: relative;
 }
 
 /* Tab 内容切换 */
 .tab-content {
     display: none;
+    width: 100%;
     height: 100%;
 }
 
 .tab-content.active {
-    display: flex;
-    flex-direction: column;
+    display: block; /* 移除 flex */
 }
 
 /* ==================== 通用组件 ==================== */
@@ -99,61 +100,52 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     display: none !important;
 }
 
-/* ==================== 全屏卡片容器 ==================== */
+/* ==================== 容器布局（Legacy） ==================== */
 .fullscreen-card-container {
-    flex: 1;
-    overflow-y: auto;
+    height: auto;
     position: relative;
+    width: 100%;
 }
 
 .fullscreen-card-container.center-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding-top: 100px; /* 代替 flex 居中 */
 }
 
-/* ==================== 底部导航栏（模块内切换） ==================== */
+/* ==================== 导航条 ==================== */
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
     border-top: 2px solid #000000;
-    margin-top: auto;
     background: #FFFFFF;
+    padding: 16px 0;
+    width: 100%;
+    clear: both;
+    overflow: hidden; /* 清除浮动 */
 }
 
 .nav-btn {
-    display: inline-block;
-    padding: 16px 24px;
+    float: left; /* 改为浮动 */
+    width: 200px;
+    padding: 16px 0;
     font-size: 18px;
     font-weight: bold;
     background-color: #000000;
     color: #FFFFFF;
     border: none;
-    cursor: pointer;
-    min-width: 140px;
     text-align: center;
-}
-
-.nav-btn:active {
-    background-color: #FFFFFF;
-    color: #000000;
-    border: 2px solid #000000;
 }
 
 .nav-indicator {
+    float: left;
+    width: 632px; /* 1072 - 200*2 - 40 */
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    flex: 1;
+    line-height: 50px; /* 垂直对齐 */
 }
 
-/* ==================== Module A: 论文区块 - 单篇展示 ==================== */
+/* ==================== Module A: 论文区块 ==================== */
 .paper-card {
     display: none;
-    flex: 1;
-    overflow-y: auto;
     padding-bottom: 16px;
 }
 
@@ -168,7 +160,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     margin-bottom: 12px;
 }
 
-/* IPA 音标样式 */
 .paper-title .ipa {
     font-size: 11px;
     font-weight: normal;
@@ -181,12 +172,8 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     margin-bottom: 12px;
 }
 
-.paper-meta .authors {
-    font-style: italic;
-}
-
 .paper-meta .date {
-    margin-left: 12px;
+    margin-left: 20px;
 }
 
 .paper-abstract {
@@ -203,57 +190,41 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 }
 
 /* ==================== Module B: GitHub 仓库列表 ==================== */
-.repo-list {
-    list-style: none;
-    flex: 1;
-    overflow-y: auto;
-}
-
 .repo-item {
-    display: flex;
-    align-items: flex-start;
     padding: 14px 0;
     border-bottom: 1px solid #000000;
+    overflow: hidden;
 }
 
 .repo-stars {
-    flex-shrink: 0;
-    width: 70px;
+    float: left;
+    width: 80px;
     font-size: 16px;
     font-weight: bold;
-    text-align: right;
-    padding-right: 12px;
 }
 
 .repo-info {
-    flex: 1;
+    float: left;
+    width: 950px;
 }
 
 .repo-name {
     font-size: 18px;
-    display: block;
+    font-weight: bold;
     margin-bottom: 6px;
 }
 
-.repo-desc {
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-/* ==================== Module C: 思维模型闪卡 - 全屏 ==================== */
+/* ==================== Module C: 思维模型 ==================== */
 .flashcard {
     display: none;
     padding: 24px;
     border: 3px solid #000000;
     text-align: center;
-    height: 100%;
-    overflow-y: auto;
+    min-height: 600px;
 }
 
 .flashcard.active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
 }
 
 .model-name-en {
@@ -274,63 +245,26 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     text-align: left;
 }
 
-.model-example {
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: left;
-    padding: 16px;
-    border: 1px dashed #000000;
-    margin-bottom: 20px;
-}
-
-.model-source {
-    font-size: 14px;
-    text-align: right;
-}
-
-/* ==================== Module D: 语录 - 居中显示 ==================== */
+/* ==================== Module D: 语录 ==================== */
 .quote-card {
     display: none;
-    text-align: center;
     padding: 32px;
-    max-width: 900px;
 }
 
 .quote-card.active {
     display: block;
 }
 
-.quote-content-en {
+.quote-content-en, .quote-content-zh {
     font-size: 32px;
     font-weight: bold;
     line-height: 1.5;
     margin-bottom: 24px;
 }
 
-.quote-translation {
-    font-size: 24px;
-    line-height: 1.6;
-    margin-bottom: 24px;
-    color: #000000;
-}
-
-.quote-content-zh {
-    font-size: 36px;
-    line-height: 1.8;
-    margin-bottom: 24px;
-}
-
-.quote-author {
-    font-size: 20px;
-    font-style: italic;
-}
-
-/* ==================== Module E: 歌词本 - 单首显示 ==================== */
+/* ==================== Module E: 歌词 ==================== */
 .lyrics-card {
     display: none;
-    text-align: center;
-    padding: 16px;
-    overflow-y: auto;
 }
 
 .lyrics-card.active {
@@ -343,16 +277,12 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     margin-bottom: 24px;
     padding-bottom: 12px;
     border-bottom: 2px solid #000000;
+    text-align: center;
 }
 
 .lyrics-text {
-    font-family: &#39;Songti SC&#39;, &#39;Georgia&#39;, serif;
+    text-align: center;
     font-size: 18px;
-    line-height: 1.8;
-}
-
-.lyrics-text p {
-    margin-bottom: 6px;
 }
 
 /* ==================== Module F: 单词记忆 ==================== */
@@ -360,67 +290,34 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     display: none;
     padding: 24px;
     text-align: center;
-    height: 100%;
-    overflow-y: auto;
 }
 
 .word-card.active {
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 
 .word-text {
     font-size: 56px;
     font-weight: bold;
     margin-bottom: 8px;
-    letter-spacing: 2px;
-}
-
-.word-phonetic {
-    font-size: 22px;
-    font-family: &#39;Georgia&#39;, serif;
-    margin-bottom: 16px;
-    color: #000000;
 }
 
 .word-meaning {
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 32px;
-    padding-bottom: 16px;
+    margin-bottom: 24px;
     border-bottom: 2px solid #000000;
-}
-
-.word-sentences {
-    flex: 1;
-    text-align: left;
-    overflow-y: auto;
+    padding-bottom: 16px;
 }
 
 .sentence-item {
-    margin-bottom: 20px;
-    padding-bottom: 16px;
+    text-align: left;
+    margin-bottom: 15px;
     border-bottom: 1px dashed #000000;
+    padding-bottom: 10px;
 }
 
-.sentence-item:last-child {
-    border-bottom: none;
-}
-
-.sentence-en {
-    font-size: 18px;
-    font-family: &#39;Georgia&#39;, serif;
-    line-height: 1.6;
-    margin-bottom: 8px;
-}
-
-.sentence-zh {
-    font-size: 16px;
-    line-height: 1.6;
-    padding-left: 16px;
-}
-
-/* ==================== 底部导航栏（Tab 切换） ==================== */
+/* ==================== 底部固定导航栏 (Legacy) ==================== */
 #tab-bar {
     position: fixed;
     bottom: 0;
@@ -429,22 +326,18 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     height: 80px;
     background-color: #FFFFFF;
     border-top: 3px solid #000000;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    overflow: hidden;
 }
 
 .tab-btn {
-    flex: 1;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    float: left;
+    width: 178.6px; /* 1072 / 6 */
+    height: 80px;
     background: none;
     border: none;
-    cursor: pointer;
-    font-size: 12px;
+    border-right: 1px solid #EEEEEE;
+    text-align: center;
+    padding-top: 15px;
 }
 
 .tab-btn.active {
@@ -453,21 +346,24 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
 }
 
 .tab-icon {
-    font-size: 22px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
     margin-bottom: 2px;
 }
 
 .tab-label {
-    font-size: 12px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /* ==================== 页脚 ==================== */
 .generated-info {
-    position: fixed;
-    bottom: 85px;
+    position: absolute;
+    bottom: 90px;
     right: 20px;
     font-size: 11px;
-    color: #000000;
 }
 
     </style>
@@ -1059,35 +955,35 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
         
     </main>
 
-    <!-- ==================== 底部导航栏 ==================== -->
+    <!-- ==================== 底部导航栏 (移除 Emoji) ==================== -->
     <nav id="tab-bar">
         <button class="tab-btn active" data-tab="papers">
-            <span class="tab-icon">📄</span>
+            <span class="tab-icon">[ P ]</span>
             <span class="tab-label">论文</span>
         </button>
         <button class="tab-btn" data-tab="repos">
-            <span class="tab-icon">⭐</span>
+            <span class="tab-icon">[ G ]</span>
             <span class="tab-label">GitHub</span>
         </button>
         <button class="tab-btn" data-tab="models">
-            <span class="tab-icon">🧠</span>
+            <span class="tab-icon">[ M ]</span>
             <span class="tab-label">思维</span>
         </button>
         <button class="tab-btn" data-tab="focus">
-            <span class="tab-icon">💡</span>
+            <span class="tab-icon">[ Q ]</span>
             <span class="tab-label">语录</span>
         </button>
         <button class="tab-btn" data-tab="lyrics">
-            <span class="tab-icon">🎵</span>
+            <span class="tab-icon">[ L ]</span>
             <span class="tab-label">歌词</span>
         </button>
         <button class="tab-btn" data-tab="words">
-            <span class="tab-icon">📖</span>
+            <span class="tab-icon">[ W ]</span>
             <span class="tab-label">单词</span>
         </button>
     </nav>
 
-    <!-- ==================== JavaScript 交互 (严格 ES5 标准) ==================== -->
+    <!-- ==================== JavaScript 交互 (极端兼容版) ==================== -->
     <script type="text/javascript">
         (function() {
             // 通用卡片切换函数
@@ -1100,7 +996,8 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 
                 function showCard(index) {
                     for (var i = 0; i < cards.length; i++) {
-                        cards[i].className = cards[i].className.replace(' active', '');
+                        // 兼容性极高的 className 替换
+                        cards[i].className = cards[i].className.split(' active').join('');
                     }
                     if (cards[index]) {
                         cards[index].className += ' active';
@@ -1138,14 +1035,14 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     
                     // 更新 Tab 按钮状态
                     for (var j = 0; j < tabBtns.length; j++) {
-                        tabBtns[j].className = tabBtns[j].className.replace(' active', '');
+                        tabBtns[j].className = tabBtns[j].className.split(' active').join('');
                     }
                     this.className += ' active';
                     
                     // 更新内容区显示
                     var contents = document.querySelectorAll('.tab-content');
                     for (var k = 0; k < contents.length; k++) {
-                        contents[k].className = contents[k].className.replace(' active', '');
+                        contents[k].className = contents[k].className.split(' active').join('');
                     }
                     var targetContent = document.getElementById('tab-' + tabId);
                     if (targetContent) {
@@ -1164,9 +1061,11 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             createCardSwitcher('.quote-card', 'prev-quote', 'next-quote', 'quote-indicator');
             
             // 歌词切换
-            var lyricsNames = [
-                'Example'
-            ];
+            var lyricsNames = [];
+            
+            lyricsNames.push('Example');
+            
+            
             createCardSwitcher('.lyrics-card', 'prev-lyrics', 'next-lyrics', 'lyrics-indicator', true, lyricsNames);
             
             // 单词切换
@@ -1182,7 +1081,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-01-07 08:08:54
+        生成于 2026-01-07 08:13:22
     </footer>
 </body>
 </html>
