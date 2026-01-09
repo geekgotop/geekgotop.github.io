@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-01-08 22:18:52</span>
+        <span class="generated-time">更新于 2026-01-09 22:17:58</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,7 +846,58 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        <p class="empty-state">暂无论文数据</p>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">GDPO: Group reward-Decoupled<sup class='ipa'>/rewarddecoupled*/</sup> Normalization<sup class='ipa'>/ˌnɔrməlɪˈzeɪʃən/</sup> Policy Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> for Multi-reward<sup class='ipa'>/multireward*/</sup> RL Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Shih-Yang Liu, Xin Dong, Ximing Lu</span>
+                                <span class="date">2026-01-08</span>
+                                <span class="categories">cs.CL | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">As language models become increasingly capable, users expect them to provide not only accurate responses but also behaviors aligned with diverse human preferences across a variety of scenarios. To achieve this, Reinforcement learning (RL) pipelines have begun incorporating multiple rewards, each cap...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">随着语言模型的能力越来越强，用户期望它们不仅能够提供准确的响应，而且能够在各种场景中提供符合不同人类偏好的行为。为了实现这一目标，强化学习 (RL) 管道已开始整合多种奖励，每种奖励都捕获不同的偏好，以引导模型实现这些所需的行为。然而，最近的工作默认在多奖励设置下应用组相对策略优化（GRPO），而没有检查其适用性。在本文中，我们证明，直接应用 GRPO 来规范化不同的推出奖励组合会导致它们崩溃为相同的优势值，从而降低训练信号的分辨率，导致收敛不理想，在某些情况下，会导致早期训练失败。然后，我们引入了群体奖励解耦标准化策略优化（GDPO），这是一种新的策略优化方法，通过解耦个体奖励的标准化来解决这些问题，更忠实地保留它们的相对差异，并实现更准确的多奖励优化，同时显着提高训练稳定性。我们在三个任务上比较 GDPO 和 GRPO：工具调用、数学推理和编码推理，评估正确性指标（准确性、错误率）和约束遵守指标（格式、长度）。在所有设置中，GDPO 始终优于 GRPO，证明了其对于多奖励强化学习优化的有效性和普遍性。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2601.05242v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">RoboVIP: Multi-View<sup class='ipa'>/multiview*/</sup> Video Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> with Visual Identity<sup class='ipa'>/aɪˈdɛntəˌti/</sup> Prompting<sup class='ipa'>/ˈprɑmptɪŋ/</sup> Augments<sup class='ipa'>/augments*/</sup> Robot Manipulation<sup class='ipa'>/məˌnɪpjəˈleɪʃən/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Boyang Wang, Haoran Zhang, Shujie Zhang</span>
+                                <span class="date">2026-01-08</span>
+                                <span class="categories">cs.CV | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">The diversity, quantity, and quality of manipulation data are critical for training effective robot policies. However, due to hardware and physical setup constraints, collecting large-scale real-world manipulation data remains difficult to scale across diverse environments. Recent work uses text-pro...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">操纵数据的多样性、数量和质量对于训练有效的机器人策略至关重要。然而，由于硬件和物理设置的限制，收集大规模的现实世界操作数据仍然难以在不同的环境中扩展。最近的工作使用文本提示条件图像扩散模型，通过改变视觉观察中的背景和桌面对象来增强操作数据。然而，这些方法往往忽视了最先进的政策模型所需的多视角和时间连贯观察的实际需求。此外，仅靠文本提示无法可靠地指定场景设置。为了给扩散模型提供明确的视觉指导，我们引入了视觉识别提示，它提供示例图像作为条件输入，以指导生成所需的场景设置。为此，我们还构建了一个可扩展的管道，以从大型机器人数据集中管理视觉身份池。使用我们的增强操作数据来训练下游视觉语言动作和视觉运动策略模型，可以在模拟和真实机器人设置中产生一致的性能增益。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2601.05241v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Robust Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> as a Symmetry-Protected<sup class='ipa'>/symmetryprotected*/</sup> Topological<sup class='ipa'>/təpəˈlɑʤɪkəl/</sup> Phase</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Ilmo Sung</span>
+                                <span class="date">2026-01-08</span>
+                                <span class="categories">cs.LG | cond-mat.dis-nn</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Large language models suffer from &#34;hallucinations&#34;-logical inconsistencies induced by semantic noise. We propose that current architectures operate in a &#34;Metric Phase,&#34; where causal order is vulnerable to spontaneous symmetry breaking. Here, we identify robust inference as an effective Symmetry-Prot...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">大型语言模型会遭受“幻觉”——由语义噪声引起的逻辑不一致。我们建议当前的架构在“度量阶段”运行，其中因果顺序很容易受到自发对称性破坏的影响。在这里，我们将鲁棒推理确定为有效的对称保护拓扑阶段，其中逻辑运算在形式上同构于非阿贝尔任意子编织，用鲁棒拓扑不变量取代脆弱的几何插值。根据经验，我们展示了急剧的拓扑相变：虽然 Transformer 和 RNN 表现出无间隙衰减，但我们的完整网络却揭示了宏观的“质量间隙”，将不变保真度保持在临界噪声阈值以下。此外，在代表符号操作的 $S_{10}$ （$3.6 \times 10^6$ states）上的变量绑定任务中，我们证明了完整泛化：拓扑模型在训练之外保持完美的保真度外推 $100\times$ （$L=50 \to 5000$），与理论上不确定的因果范围一致，而 Transformers 失去了逻辑连贯性。消融研究表明，这种保护严格来自非阿贝尔规范对称性。这为逻辑推理的新普遍性类提供了强有力的证据，将因果稳定性与语义流形的拓扑联系起来。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2601.05240v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
                     
                 </div>
             </div>
@@ -866,6 +917,34 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
+                            <a href="https://github.com/lucidrains/torch-einops-utils" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">torch-einops-utils</span>
+                                    <span class="repo-stars">⭐ 17</span>
+                                </div>
+                                <p class="repo-desc">一些实用函数可以帮助我自己（或许还有其他人）更快地完成 ML/AI 工作</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-01-09</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/CyberSecurityUP/DeepNudeDetect" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">DeepNudeDetect</span>
+                                    <span class="repo-stars">⭐ 11</span>
+                                </div>
+                                <p class="repo-desc">全面防范 Deepfakes、Deepnudes 和有害内容</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-01-03</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/vitali-sialedchyk/stability-first-ai" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">stability-first-ai</span>
@@ -880,28 +959,14 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/CyberSecurityUP/DeepNudeDetect" target="_blank" class="repo-link">
+                            <a href="https://github.com/yogender-ai/knn-cat-dog-demo" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">DeepNudeDetect</span>
-                                    <span class="repo-stars">⭐ 10</span>
+                                    <span class="repo-name">knn-cat-dog-demo</span>
+                                    <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc">全面防范 Deepfakes、Deepnudes 和有害内容</p>
+                                <p class="repo-desc">使用 Python 从头开始​​进行猫与狗图像分类的 KNN 算法。机器学习、基于距离的分类和计算机视觉实验。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-01-03</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/g3deon4ent/g3deon-erp" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">g3deon-erp</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">使用 Next.js 构建的人工智能驱动的 ERP 管理前端。用于企业资源规划和业务管理的综合 SaaS 平台。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-lang">HTML</span>
                                     <span class="repo-date">2026-01-06</span>
                                 </div>
                             </a>
@@ -922,6 +987,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/g3deon4ent/g3deon-erp" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">g3deon-erp</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">使用 Next.js 构建的人工智能驱动的 ERP 管理前端。用于企业资源规划和业务管理的综合 SaaS 平台。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-01-06</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/collapseindex/collapseindex" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">collapseindex</span>
@@ -931,34 +1010,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
                                     <span class="repo-date">2026-01-04</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/yogender-ai/knn-cat-dog-demo" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">knn-cat-dog-demo</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">使用 Python 从头开始​​进行猫与狗图像分类的 KNN 算法。机器学习、基于距离的分类和计算机视觉实验。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">HTML</span>
-                                    <span class="repo-date">2026-01-06</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/KalyanM45/Synapse-Daily" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Synapse-Daily</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">该存储库包含精选的每周 AI 和 ML 新闻集合，经过提炼为清晰、可读的见解，并编译成干净、可共享的 PDF。它的重点是消除噪音，突出人工智能领域每周真正重要的事情。它是一个结构化的每周练习，用于理解和总结人工智能的发展。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-01-02</span>
                                 </div>
                             </a>
                         </li>
@@ -992,15 +1043,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/imadev26/awesome-ai-tools-2026" target="_blank" class="repo-link">
+                            <a href="https://github.com/RayanAIX/HCMS-Human-Cognition-Measurement-System" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">awesome-ai-tools-2026</span>
-                                    <span class="repo-stars">⭐ 2</span>
+                                    <span class="repo-name">HCMS-Human-Cognition-Measurement-System</span>
+                                    <span class="repo-stars">⭐ 1</span>
                                 </div>
-                                <p class="repo-desc">🤖 为开发者精心挑选的 2026 年最佳 AI 工具和资源列表</p>
+                                <p class="repo-desc">用于测量人类认知的端到端研究级人工智能系统。 HCMS 通过分析、推理、验证、鲁棒性测试和可解释性来模拟掌握程度、信心、学习稳定性和适应性——架起以人为本的人工智能研究和应用系统的桥梁。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-01-02</span>
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-01-03</span>
                                 </div>
                             </a>
                         </li>
