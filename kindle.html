@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">GDPO: Group reward-Decoupled<sup class='ipa'>/rewarddecoupled*/</sup> Normalization<sup class='ipa'>/ˌnɔrməlɪˈzeɪʃən/</sup> Policy Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> for Multi-reward<sup class='ipa'>/multireward*/</sup> RL Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup></h2>
+                    <h2 class="paper-title">AdaFuse: Adaptive<sup class='ipa'>/əˈdæptɪv/</sup> Ensemble<sup class='ipa'>/ɑnˈsɑmbəl/</sup> Decoding<sup class='ipa'>/dɪˈkoʊdɪŋ/</sup> with Test-Time<sup class='ipa'>/testtime*/</sup> Scaling for LLMs</h2>
                     <p class="paper-meta">
-                        <span class="authors">Shih-Yang Liu, Xin Dong, Ximing Lu</span>
-                        <span class="date">2026-01-08</span>
+                        <span class="authors">Chengming Cui, Tianxin Wei, Ziyi Chen</span>
+                        <span class="date">2026-01-09</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">As language models become increasingly capable, users expect them to provide not only accurate responses but also behaviors aligned with diverse human preferences across a variety of scenarios. To achieve this, Reinforcement learning (RL) pipelines have begun incorporating multiple rewards, each capturing a distinct preference, to guide models toward these desired behaviors. However, recent work has defaulted to apply Group Relative Policy Optimization (GRPO) under multi-reward setting without examining its suitability. In this paper, we demonstrate that directly applying GRPO to normalize distinct rollout reward combinations causes them to collapse into identical advantage values, reducing the resolution of the training signal and resulting in suboptimal convergence and, in some cases, early training failure. We then introduce Group reward-Decoupled Normalization Policy Optimization (GDPO), a new policy optimization method to resolve these issues by decoupling the normalization of individual rewards, more faithfully preserving their relative differences and enabling more accurate multi-reward optimization, along with substantially improved training stability. We compare GDPO with GRPO across three tasks: tool calling, math reasoning, and coding reasoning, evaluating both correctness metrics (accuracy, bug ratio) and constraint adherence metrics (format, length). Across all settings, GDPO consistently outperforms GRPO, demonstrating its effectiveness and generalizability for multi-reward reinforcement learning optimization.</p>
+                        <p class="abstract-en">Large language models (LLMs) exhibit complementary strengths arising from differences in pretraining data, model architectures, and decoding behaviors. Inference-time ensembling provides a practical way to combine these capabilities without retraining. However, existing ensemble approaches suffer from fundamental limitations. Most rely on fixed fusion granularity, which lacks the flexibility required for mid-generation adaptation and fails to adapt to different generation characteristics across tasks. To address these challenges, we propose AdaFuse, an adaptive ensemble decoding framework that dynamically selects semantically appropriate fusion units during generation. Rather than committing to a fixed granularity, AdaFuse adjusts fusion behavior on the fly based on the decoding context, with words serving as basic building blocks for alignment. To be specific, we introduce an uncertainty-based criterion to decide whether to apply ensembling at each decoding step. Under confident decoding states, the model continues generation directly. In less certain states, AdaFuse invokes a diversity-aware scaling strategy to explore alternative candidate continuations and inform ensemble decisions. This design establishes a synergistic interaction between adaptive ensembling and test-time scaling, where ensemble decisions guide targeted exploration, and the resulting diversity in turn strengthens ensemble quality. Experiments on open-domain question answering, arithmetic reasoning, and machine translation demonstrate that AdaFuse consistently outperforms strong ensemble baselines, achieving an average relative improvement of 6.88%. The code is available at https://github.com/CCM0111/AdaFuse.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">随着语言模型的能力越来越强，用户期望它们不仅能够提供准确的响应，而且能够在各种场景中提供符合不同人类偏好的行为。为了实现这一目标，强化学习 (RL) 管道已开始整合多种奖励，每种奖励都捕获不同的偏好，以引导模型实现这些所需的行为。然而，最近的工作默认在多奖励设置下应用组相对策略优化（GRPO），而没有检查其适用性。在本文中，我们证明，直接应用 GRPO 来规范化不同的推出奖励组合会导致它们崩溃为相同的优势值，从而降低训练信号的分辨率，导致收敛不理想，在某些情况下，会导致早期训练失败。然后，我们引入了群体奖励解耦标准化策略优化（GDPO），这是一种新的策略优化方法，通过解耦个体奖励的标准化来解决这些问题，更忠实地保留它们的相对差异，并实现更准确的多奖励优化，同时显着提高训练稳定性。我们在三个任务上比较 GDPO 和 GRPO：工具调用、数学推理和编码推理，评估正确性指标（准确性、错误率）和约束遵守指标（格式、长度）。在所有设置中，GDPO 始终优于 GRPO，证明了其对于多奖励强化学习优化的有效性和普遍性。</p>
+                        <p class="abstract-zh">大型语言模型 (LLM) 由于预训练数据、模型架构和解码行为的差异而表现出互补的优势。推理时间集成提供了一种无需重新训练即可组合这些功能的实用方法。然而，现有的集成方法存在根本性的局限性。大多数依赖于固定的融合粒度，缺乏中期适应所需的灵活性，无法适应跨任务的不同世代特征。为了应对这些挑战，我们提出了 AdaFuse，这是一种自适应集成解码框架，可在生成过程中动态选择语义上合适的融合单元。 AdaFuse 没有致力于固定的粒度，而是根据解码上下文动态调整融合行为，其中单词作为对齐的基本构建块。具体来说，我们引入了基于不确定性的标准来决定是否在每个解码步骤应用集成。在置信解码状态下，模型直接继续生成。在不太确定的状态下，AdaFuse 调用多样性感知扩展策略来探索替代候选延续并为整体决策提供信息。这种设计在自适应集成和测试时间缩放之间建立了协同相互作用，其中集成决策指导有针对性的探索，而由此产生的多样性反过来又增强了集成质量。开放域问答、算术推理和机器翻译的实验表明，AdaFuse 始终优于强大的集成基线，实现了 6.88% 的平均相对改进。该代码可在 https://github.com/CCM0111/AdaFuse 获取。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">RoboVIP: Multi-View<sup class='ipa'>/multiview*/</sup> Video Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> with Visual Identity<sup class='ipa'>/aɪˈdɛntəˌti/</sup> Prompting<sup class='ipa'>/ˈprɑmptɪŋ/</sup> Augments<sup class='ipa'>/augments*/</sup> Robot Manipulation<sup class='ipa'>/məˌnɪpjəˈleɪʃən/</sup></h2>
+                    <h2 class="paper-title">Chaining<sup class='ipa'>/ˈʧeɪnɪŋ/</sup> the Evidence:<sup class='ipa'>/ˈɛvədəns/</sup> Robust Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> for Deep Search Agents with Citation-Aware<sup class='ipa'>/citationaware*/</sup> Rubric Rewards</h2>
                     <p class="paper-meta">
-                        <span class="authors">Boyang Wang, Haoran Zhang, Shujie Zhang</span>
-                        <span class="date">2026-01-08</span>
+                        <span class="authors">Jiajie Zhang, Xin Lv, Ling Feng</span>
+                        <span class="date">2026-01-09</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">The diversity, quantity, and quality of manipulation data are critical for training effective robot policies. However, due to hardware and physical setup constraints, collecting large-scale real-world manipulation data remains difficult to scale across diverse environments. Recent work uses text-prompt conditioned image diffusion models to augment manipulation data by altering the backgrounds and tabletop objects in the visual observations. However, these approaches often overlook the practical need for multi-view and temporally coherent observations required by state-of-the-art policy models. Further, text prompts alone cannot reliably specify the scene setup. To provide the diffusion model with explicit visual guidance, we introduce visual identity prompting, which supplies exemplar images as conditioning inputs to guide the generation of the desired scene setup. To this end, we also build a scalable pipeline to curate a visual identity pool from large robotics datasets. Using our augmented manipulation data to train downstream vision-language-action and visuomotor policy models yields consistent performance gains in both simulation and real-robot settings.</p>
+                        <p class="abstract-en">Reinforcement learning (RL) has emerged as a critical technique for enhancing LLM-based deep search agents. However, existing approaches primarily rely on binary outcome rewards, which fail to capture the comprehensiveness and factuality of agents&#39; reasoning process, and often lead to undesirable behaviors such as shortcut exploitation and hallucinations. To address these limitations, we propose \textbf{Citation-aware Rubric Rewards (CaRR)}, a fine-grained reward framework for deep search agents that emphasizes reasoning comprehensiveness, factual grounding, and evidence connectivity. CaRR decomposes complex questions into verifiable single-hop rubrics and requires agents to satisfy these rubrics by explicitly identifying hidden entities, supporting them with correct citations, and constructing complete evidence chains that link to the predicted answer. We further introduce \textbf{Citation-aware Group Relative Policy Optimization (C-GRPO)}, which combines CaRR and outcome rewards for training robust deep search agents. Experiments show that C-GRPO consistently outperforms standard outcome-based RL baselines across multiple deep search benchmarks. Our analysis also validates that C-GRPO effectively discourages shortcut exploitation, promotes comprehensive, evidence-grounded reasoning, and exhibits strong generalization to open-ended deep research tasks. Our code and data are available at https://github.com/THUDM/CaRR.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">操纵数据的多样性、数量和质量对于训练有效的机器人策略至关重要。然而，由于硬件和物理设置的限制，收集大规模的现实世界操作数据仍然难以在不同的环境中扩展。最近的工作使用文本提示条件图像扩散模型，通过改变视觉观察中的背景和桌面对象来增强操作数据。然而，这些方法往往忽视了最先进的政策模型所需的多视角和时间连贯观察的实际需求。此外，仅靠文本提示无法可靠地指定场景设置。为了给扩散模型提供明确的视觉指导，我们引入了视觉识别提示，它提供示例图像作为条件输入，以指导生成所需的场景设置。为此，我们还构建了一个可扩展的管道，以从大型机器人数据集中管理视觉身份池。使用我们的增强操作数据来训练下游视觉语言动作和视觉运动策略模型，可以在模拟和真实机器人设置中产生一致的性能增益。</p>
+                        <p class="abstract-zh">强化学习 (RL) 已成为增强基于 LLM 的深度搜索代理的关键技术。然而，现有的方法主要依赖于二元结果奖励，无法捕捉智能体推理过程的全面性和真实性，并且常常导致不良行为，例如捷径利用和幻觉。为了解决这些限制，我们提出了 \textbf{Citation-aware Rubric Rewards (CaRR)}，这是一种针对深度搜索代理的细粒度奖励框架，强调推理的全面性、事实基础和证据连通性。 CaRR 将复杂的问题分解为可验证的单跳规则，并要求代理通过明确识别隐藏实体、用正确的引用支持它们以及构建链接到预测答案的完整证据链来满足这些规则。我们进一步引入\textbf{引文感知组相对策略优化（C-GRPO）}，它结合了 CaRR 和结果奖励来训练强大的深度搜索代理。实验表明，C-GRPO 在多个深度搜索基准测试中始终优于基于结果的标准 RL 基线。我们的分析还验证了 C-GRPO 有效地阻止了捷径利用，促进了全面的、基于证据的推理，并对开放式深度研究任务表现出强大的泛化能力。我们的代码和数据可在 https://github.com/THUDM/CaRR 上获取。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Robust Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> as a Symmetry-Protected<sup class='ipa'>/symmetryprotected*/</sup> Topological<sup class='ipa'>/təpəˈlɑʤɪkəl/</sup> Phase</h2>
+                    <h2 class="paper-title">Don't Break the Cache: An Evaluation<sup class='ipa'>/ɪˌvæljuˈeɪʃən/</sup> of Prompt Caching for Long-Horizon<sup class='ipa'>/longhorizon*/</sup> Agentic Tasks</h2>
                     <p class="paper-meta">
-                        <span class="authors">Ilmo Sung</span>
-                        <span class="date">2026-01-08</span>
+                        <span class="authors">Elias Lumer, Faheem Nizar, Akshaya Jangiti</span>
+                        <span class="date">2026-01-09</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Large language models suffer from &#34;hallucinations&#34;-logical inconsistencies induced by semantic noise. We propose that current architectures operate in a &#34;Metric Phase,&#34; where causal order is vulnerable to spontaneous symmetry breaking. Here, we identify robust inference as an effective Symmetry-Protected Topological phase, where logical operations are formally isomorphic to non-Abelian anyon braiding, replacing fragile geometric interpolation with robust topological invariants. Empirically, we demonstrate a sharp topological phase transition: while Transformers and RNNs exhibit gapless decay, our Holonomic Network reveals a macroscopic &#34;mass gap,&#34; maintaining invariant fidelity below a critical noise threshold. Furthermore, in a variable-binding task on $S_{10}$ ($3.6 \times 10^6$ states) representing symbolic manipulation, we demonstrate holonomic generalization: the topological model maintains perfect fidelity extrapolating $100\times$ beyond training ($L=50 \to 5000$), consistent with a theoretically indefinite causal horizon, whereas Transformers lose logical coherence. Ablation studies indicate this protection emerges strictly from non-Abelian gauge symmetry. This provides strong evidence for a new universality class for logical reasoning, linking causal stability to the topology of the semantic manifold.</p>
+                        <p class="abstract-en">Recent advancements in Large Language Model (LLM) agents have enabled complex multi-turn agentic tasks requiring extensive tool calling, where conversations can span dozens of API calls with increasingly large context windows. However, although major LLM providers offer prompt caching to reduce cost and latency, its benefits for agentic workloads remain underexplored in the research literature. To our knowledge, no prior work quantifies these cost savings or compares caching strategies for multi-turn agentic tasks. We present a comprehensive evaluation of prompt caching across three major LLM providers (OpenAI, Anthropic, and Google) and compare three caching strategies, including full context caching, system prompt only caching, and caching that excludes dynamic tool results. We evaluate on DeepResearchBench, a multi-turn agentic benchmark where agents autonomously execute real-world web search tool calls to answer complex research questions, measuring both API cost and time to first token (TTFT) across over 500 agent sessions with 10,000-token system prompts. Our results demonstrate that prompt caching reduces API costs by 45-80% and improves time to first token by 13-31% across providers. We find that strategic prompt cache block control, such as placing dynamic content at the end of the system prompt, avoiding dynamic traditional function calling, and excluding dynamic tool results, provides more consistent benefits than naive full-context caching, which can paradoxically increase latency. Our analysis reveals nuanced variations in caching behavior across providers, and we provide practical guidance for implementing prompt caching in production agentic systems.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">大型语言模型会遭受“幻觉”——由语义噪声引起的逻辑不一致。我们建议当前的架构在“度量阶段”运行，其中因果顺序很容易受到自发对称性破坏的影响。在这里，我们将鲁棒推理确定为有效的对称保护拓扑阶段，其中逻辑运算在形式上同构于非阿贝尔任意子编织，用鲁棒拓扑不变量取代脆弱的几何插值。根据经验，我们展示了急剧的拓扑相变：虽然 Transformer 和 RNN 表现出无间隙衰减，但我们的完整网络却揭示了宏观的“质量间隙”，将不变保真度保持在临界噪声阈值以下。此外，在代表符号操作的 $S_{10}$ （$3.6 \times 10^6$ states）上的变量绑定任务中，我们证明了完整泛化：拓扑模型在训练之外保持完美的保真度外推 $100\times$ （$L=50 \to 5000$），与理论上不确定的因果范围一致，而 Transformers 失去了逻辑连贯性。消融研究表明，这种保护严格来自非阿贝尔规范对称性。这为逻辑推理的新普遍性类提供了强有力的证据，将因果稳定性与语义流形的拓扑联系起来。</p>
+                        <p class="abstract-zh">大型语言模型 (LLM) 代理的最新进展实现了需要大量工具调用的复杂多轮代理任务，其中对话可以跨越数十个 API 调用，上下文窗口越来越大。然而，尽管主要的法学硕士提供商提供即时缓存以降低成本和延迟，但其对代理工作负载的好处在研究文献中仍未得到充分探索。据我们所知，之前的工作没有量化这些成本节省或比较多轮代理任务的缓存策略。我们对三个主要 LLM 提供商（OpenAI、Anthropic 和 Google）的提示缓存进行了全面评估，并比较了三种缓存策略，包括完整上下文缓存、仅系统提示缓存和排除动态工具结果的缓存。我们在 DeepResearchBench 上进行评估，这是一个多回合代理基准，代理可以自主执行现实世界的网络搜索工具调用来回答复杂的研究问题，通过 10,000 个令牌系统提示，在 500 多个代理会话中测量 API 成本和首次令牌时间 (TTFT)。我们的结果表明，即时缓存可将 API 成本降低 45-80%，并将各个提供商的第一个令牌的时间缩短 13-31%。我们发现，策略性的提示缓存块控制，例如将动态内容放在系统提示的末尾，避免动态传统函数调用，以及排除动态工具结果，比朴素的全上下文缓存提供了更一致的好处，而后者可能会增加延迟。我们的分析揭示了不同提供商之间的缓存行为的细微差别，并且我们为在生产代理系统中实现即时缓存提供了实用指导。</p>
                     </div>
                 </article>
                 
@@ -458,7 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 31</span>
+                        <span class="repo-stars">★ 35</span>
                         <div class="repo-info">
                             <strong class="repo-name">lucidrains/torch-einops-utils</strong>
                             <p class="repo-desc">一些实用函数可以帮助我自己（或许还有其他人）更快地完成 ML/AI 工作</p>
@@ -466,7 +466,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 7</span>
+                        <span class="repo-stars">★ 8</span>
                         <div class="repo-info">
                             <strong class="repo-name">SStarrySSky/Askit.</strong>
                             <p class="repo-desc">在一个实时交互的坐标系中和AI交互讨论问题，让思想的传输不再受语言限制，更敏锐的学习和理解新知识或者解决问题。软件内置强大的物理引擎Bullet物理并且具有独特定制的实时渲染引擎，让AI可以完全理解整个空间，AI的画图直觉已经被训练了AKCoT，并且采用了物理引擎时钟计算的混合架构。实时渲染采用manim改进的实时渲染引擎，具有美观的动画。当前尚未部署模型云服务，要获得最佳体验，需要使用24G显存以上的显卡在软件中本地点击部署按钮</p>
@@ -482,10 +482,10 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
+                        <span class="repo-stars">★ 6</span>
                         <div class="repo-info">
-                            <strong class="repo-name">dyneth02/SLIIT-AI-Engineer-Stage-I</strong>
-                            <p class="repo-desc">AI/ML 工程师 – 第 1 阶段提供创建专业人工智能工程师的基本构建模块。这一旅程从了解人工智能/机器学习的理论基础开始，这将使学习者了解如何在行业中使用每个专业领域。</p>
+                            <strong class="repo-name">N0vachr0n0/Infinity-Stack</strong>
+                            <p class="repo-desc">🚀 长达十年的 Dev、DevOps、Sysadmin Linux 和 Cyber​​Security 旅程的终极策划存储库。一个充满高价值资源、框架和久经考验的工具的活生生的“阿里巴巴洞穴”。 🏴‍☠️</p>
                         </div>
                     </li>
                 
@@ -500,16 +500,16 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 4</span>
                         <div class="repo-info">
-                            <strong class="repo-name">dyneth02/SLIIT-AI-Engineer-Stage-II</strong>
-                            <p class="repo-desc">AI/ML 工程师 – 第 2 阶段提供有关监督学习算法的深入知识，也称为监督机器学习，是机器学习和人工智能的一个子类别。它的定义是使用标记数据集来训练算法以对数据进行分类或准确预测结果。</p>
+                            <strong class="repo-name">dyneth02/SLIIT-AI-Engineer-Stage-I</strong>
+                            <p class="repo-desc">AI/ML 工程师 – 第 1 阶段提供创建专业人工智能工程师的基本构建模块。这一旅程从了解人工智能/机器学习的理论基础开始，这将使学习者了解如何在行业中使用每个专业领域。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
                         <span class="repo-stars">★ 4</span>
                         <div class="repo-info">
-                            <strong class="repo-name">N0vachr0n0/Infinity-Stack</strong>
-                            <p class="repo-desc">🚀 长达十年的 Dev、DevOps、Sysadmin Linux 和 Cyber​​Security 旅程的终极策划存储库。一个充满高价值资源、框架和久经考验的工具的活生生的“阿里巴巴洞穴”。 🏴‍☠️</p>
+                            <strong class="repo-name">dyneth02/SLIIT-AI-Engineer-Stage-II</strong>
+                            <p class="repo-desc">AI/ML 工程师 – 第 2 阶段提供有关监督学习算法的深入知识，也称为监督机器学习，是机器学习和人工智能的一个子类别。它的定义是使用标记数据集来训练算法以对数据进行分类或准确预测结果。</p>
                         </div>
                     </li>
                 
@@ -522,18 +522,18 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">mordiaky/LMD</strong>
-                            <p class="repo-desc">Living Memory Dynamics - 一种新颖的框架，用于通过创造性的飞跃来生成叙事记忆。具有 Joshua R. Thomas 记忆方程。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
                             <strong class="repo-name">Sarah111-AHM/StatML-Study-</strong>
                             <p class="repo-desc">协作策划的存储库编译和综合人工智能基础数学的讲座课程和文本，鼓励贡献者批判性地参与和完善材料</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 1</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">aravindvojjala/AI-Restaurant-Name-Generator</strong>
+                            <p class="repo-desc">使用 LangChain、LLM 和 Streamlit 的人工智能驱动的餐厅名称生成器。它展示了现实世界的法学硕士集成、即时工程和全栈人工智能开发。用户通过交互式用户界面根据菜系生成创意餐厅名称。招聘人员 AI 包括安全 API 密钥、Docker 化设置以及通过 Docker Hub 进行云就绪部署。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-01-11 22:16:33
+        生成于 2026-01-12 22:16:31
     </footer>
 </body>
 </html>
