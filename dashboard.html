@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-01-12 22:16:31</span>
+        <span class="generated-time">更新于 2026-01-13 22:18:50</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">AdaFuse: Adaptive<sup class='ipa'>/əˈdæptɪv/</sup> Ensemble<sup class='ipa'>/ɑnˈsɑmbəl/</sup> Decoding<sup class='ipa'>/dɪˈkoʊdɪŋ/</sup> with Test-Time<sup class='ipa'>/testtime*/</sup> Scaling for LLMs</h4>
+                            <h4 class="paper-title">MHLA: Restoring<sup class='ipa'>/rɪˈstɔrɪŋ/</sup> Expressivity<sup class='ipa'>/ˌɛksprəˈsɪvɪti/</sup> of Linear Attention<sup class='ipa'>/əˈtɛnʃən/</sup> via Token-Level<sup class='ipa'>/tokenlevel*/</sup> Multi-Head<sup class='ipa'>/multihead*/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Chengming Cui, Tianxin Wei, Ziyi Chen</span>
-                                <span class="date">2026-01-09</span>
-                                <span class="categories">cs.CL | cs.AI</span>
+                                <span class="authors">Kewei Zhang, Ye Huang, Yufan Deng</span>
+                                <span class="date">2026-01-12</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Large language models (LLMs) exhibit complementary strengths arising from differences in pretraining data, model architectures, and decoding behaviors. Inference-time ensembling provides a practical way to combine these capabilities without retraining. However, existing ensemble approaches suffer fr...</p>
+                                <p class="abstract-en">While the Transformer architecture dominates many fields, its quadratic self-attention complexity hinders its use in large-scale applications. Linear attention offers an efficient alternative, but its direct application often degrades performance, with existing fixes typically re-introducing computa...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">大型语言模型 (LLM) 由于预训练数据、模型架构和解码行为的差异而表现出互补的优势。推理时间集成提供了一种无需重新训练即可组合这些功能的实用方法。然而，现有的集成方法存在根本性的局限性。大多数依赖于固定的融合粒度，缺乏中期适应所需的灵活性，无法适应跨任务的不同世代特征。为了应对这些挑战，我们提出了 AdaFuse，这是一种自适应集成解码框架，可在生成过程中动态选择语义上合适的融合单元。 AdaFuse 没有致力于固定的粒度，而是根据解码上下文动态调整融合行为，其中单词作为对齐的基本构建块。具体来说，我们引入了基于不确定性的标准来决定是否在每个解码步骤应用集成。在置信解码状态下，模型直接继续生成。在不太确定的状态下，AdaFuse 调用多样性感知扩展策略来探索替代候选延续并为整体决策提供信息。这种设计在自适应集成和测试时间缩放之间建立了协同相互作用，其中集成决策指导有针对性的探索，而由此产生的多样性反过来又增强了集成质量。开放域问答、算术推理和机器翻译的实验表明，AdaFuse 始终优于强大的集成基线，实现了 6.88% 的平均相对改进。该代码可在 https://github.com/CCM0111/AdaFuse 获取。</p>
+                                    <p class="abstract-zh">虽然 Transformer 架构在许多领域占据主导地位，但其二次自注意力复杂性阻碍了其在大规模应用中的使用。线性注意力提供了一种有效的替代方案，但其直接应用通常会降低性能，现有的修复通常会通过额外的模块（例如深度可分离卷积）重新引入计算开销，从而违背了最初的目的。在这项工作中，我们确定了这些方法中的一个关键失败模式：全局上下文崩溃，其中模型失去了表征多样性。为了解决这个问题，我们提出了多头线性注意力（MHLA），它通过沿着令牌维度计算分割头内的注意力来保留这种多样性。我们证明 MHLA 保持了线性复杂度，同时恢复了 Softmax Attention 的大部分表达能力，并验证了其在多个领域的有效性，在相同时间复杂度下，在 ImageNet 分类上实现了 3.6\% 的改进，在 NLP 上实现了 6.3\% 的增益，在图像生成上实现了 12.6\% 的改进，在视频生成上实现了 41\% 的增强。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2601.06022v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2601.07832v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Chaining<sup class='ipa'>/ˈʧeɪnɪŋ/</sup> the Evidence:<sup class='ipa'>/ˈɛvədəns/</sup> Robust Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> for Deep Search Agents with Citation-Aware<sup class='ipa'>/citationaware*/</sup> Rubric Rewards</h4>
+                            <h4 class="paper-title">Failure-Aware<sup class='ipa'>/failureaware*/</sup> RL: Reliable<sup class='ipa'>/rɪˈlaɪəbəl/</sup> Offline-to-Online<sup class='ipa'>/offlinetoonline*/</sup> Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> with Self-Recovery<sup class='ipa'>/selfrecovery*/</sup> for Real-World<sup class='ipa'>/realworld*/</sup> Manipulation<sup class='ipa'>/məˌnɪpjəˈleɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Jiajie Zhang, Xin Lv, Ling Feng</span>
-                                <span class="date">2026-01-09</span>
-                                <span class="categories">cs.CL</span>
+                                <span class="authors">Huanyu Li, Kun Lei, Sheng Zang</span>
+                                <span class="date">2026-01-12</span>
+                                <span class="categories">cs.RO | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Reinforcement learning (RL) has emerged as a critical technique for enhancing LLM-based deep search agents. However, existing approaches primarily rely on binary outcome rewards, which fail to capture the comprehensiveness and factuality of agents&#39; reasoning process, and often lead to undesirable be...</p>
+                                <p class="abstract-en">Post-training algorithms based on deep reinforcement learning can push the limits of robotic models for specific objectives, such as generalizability, accuracy, and robustness. However, Intervention-requiring Failures (IR Failures) (e.g., a robot spilling water or breaking fragile glass) during real...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">强化学习 (RL) 已成为增强基于 LLM 的深度搜索代理的关键技术。然而，现有的方法主要依赖于二元结果奖励，无法捕捉智能体推理过程的全面性和真实性，并且常常导致不良行为，例如捷径利用和幻觉。为了解决这些限制，我们提出了 \textbf{Citation-aware Rubric Rewards (CaRR)}，这是一种针对深度搜索代理的细粒度奖励框架，强调推理的全面性、事实基础和证据连通性。 CaRR 将复杂的问题分解为可验证的单跳规则，并要求代理通过明确识别隐藏实体、用正确的引用支持它们以及构建链接到预测答案的完整证据链来满足这些规则。我们进一步引入\textbf{引文感知组相对策略优化（C-GRPO）}，它结合了 CaRR 和结果奖励来训练强大的深度搜索代理。实验表明，C-GRPO 在多个深度搜索基准测试中始终优于基于结果的标准 RL 基线。我们的分析还验证了 C-GRPO 有效地阻止了捷径利用，促进了全面的、基于证据的推理，并对开放式深度研究任务表现出强大的泛化能力。我们的代码和数据可在 https://github.com/THUDM/CaRR 上获取。</p>
+                                    <p class="abstract-zh">基于深度强化学习的后训练算法可以突破机器人模型针对特定目标的限制，例如通用性、准确性和鲁棒性。然而，在现实世界的探索过程中，需要干预的故障（IR 故障）（例如，机器人溅水或打碎易碎玻璃）不可避免地会发生，这阻碍了这种范例的实际部署。为了解决这个问题，我们引入了故障感知离线到在线强化学习（FARL），这是一种新的范式，可以最大限度地减少现实世界强化学习期间的故障。我们创建了 FailureBench，这是一个包含需要人工干预的常见故障场景的基准，并提出了一种算法，该算法集成了基于世界模型的安全批评家和离线训练的恢复策略，以防止在线探索期间出现故障。广泛的模拟和真实实验证明了 FARL 在显着减少 IR 故障方面的有效性，同时提高了在线强化学习训练后的性能和泛化能力。 FARL 将 IR 故障减少了 73.1%，同时在现实世界的 RL 训练后将性能平均提高了 11.3%。视频和代码可在 https://failure-aware-rl.github.io 上获取。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2601.06021v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2601.07821v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Don't Break the Cache: An Evaluation<sup class='ipa'>/ɪˌvæljuˈeɪʃən/</sup> of Prompt Caching for Long-Horizon<sup class='ipa'>/longhorizon*/</sup> Agentic Tasks</h4>
+                            <h4 class="paper-title">Reference<sup class='ipa'>/ˈrɛfərəns/</sup> Games as a Testbed for the Alignment<sup class='ipa'>/əˈlaɪnmənt/</sup> of Model Uncertainty<sup class='ipa'>/ənˈsərtənti/</sup> and Clarification<sup class='ipa'>/ˌklɛrəfəˈkeɪʃən/</sup> Requests<sup class='ipa'>/rɪkˈwɛsts/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Elias Lumer, Faheem Nizar, Akshaya Jangiti</span>
-                                <span class="date">2026-01-09</span>
+                                <span class="authors">Manar Ali, Judith Sieker, Sina Zarrieß</span>
+                                <span class="date">2026-01-12</span>
                                 <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Recent advancements in Large Language Model (LLM) agents have enabled complex multi-turn agentic tasks requiring extensive tool calling, where conversations can span dozens of API calls with increasingly large context windows. However, although major LLM providers offer prompt caching to reduce cost...</p>
+                                <p class="abstract-en">In human conversation, both interlocutors play an active role in maintaining mutual understanding. When addressees are uncertain about what speakers mean, for example, they can request clarification. It is an open question for language models whether they can assume a similar addressee role, recogni...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">大型语言模型 (LLM) 代理的最新进展实现了需要大量工具调用的复杂多轮代理任务，其中对话可以跨越数十个 API 调用，上下文窗口越来越大。然而，尽管主要的法学硕士提供商提供即时缓存以降低成本和延迟，但其对代理工作负载的好处在研究文献中仍未得到充分探索。据我们所知，之前的工作没有量化这些成本节省或比较多轮代理任务的缓存策略。我们对三个主要 LLM 提供商（OpenAI、Anthropic 和 Google）的提示缓存进行了全面评估，并比较了三种缓存策略，包括完整上下文缓存、仅系统提示缓存和排除动态工具结果的缓存。我们在 DeepResearchBench 上进行评估，这是一个多回合代理基准，代理可以自主执行现实世界的网络搜索工具调用来回答复杂的研究问题，通过 10,000 个令牌系统提示，在 500 多个代理会话中测量 API 成本和首次令牌时间 (TTFT)。我们的结果表明，即时缓存可将 API 成本降低 45-80%，并将各个提供商的第一个令牌的时间缩短 13-31%。我们发现，策略性的提示缓存块控制，例如将动态内容放在系统提示的末尾，避免动态传统函数调用，以及排除动态工具结果，比朴素的全上下文缓存提供了更一致的好处，而后者可能会增加延迟。我们的分析揭示了不同提供商之间的缓存行为的细微差别，并且我们为在生产代理系统中实现即时缓存提供了实用指导。</p>
+                                    <p class="abstract-zh">在人类对话中，对话双方在维持相互理解方面发挥着积极作用。例如，当收件人不确定说话者的意思时，他们可以要求澄清。对于语言模型来说，它们是否可以承担类似的收件人角色，通过澄清来识别和表达自己的不确定性，这是一个悬而未决的问题。我们认为参考游戏是解决这个问题的一个很好的测试平台，因为它们是受控的、独立的，并且使澄清需求明确且可衡量。为了测试这一点，我们评估了三个视觉语言模型，将基线参考解析任务与实验进行比较，在实验中模型被指示在不确定时请求澄清。结果表明，即使在如此简单的任务中，模型也常常难以识别内部不确定性并将其转化为充分的澄清行为。这证明了参考游戏作为（视觉和）语言模型交互质量测试平台的价值。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2601.06007v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2601.07820v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/lucidrains/torch-einops-utils" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">torch-einops-utils</span>
-                                    <span class="repo-stars">⭐ 35</span>
+                                    <span class="repo-stars">⭐ 37</span>
                                 </div>
                                 <p class="repo-desc">一些实用函数可以帮助我自己（或许还有其他人）更快地完成 ML/AI 工作</p>
                                 <div class="repo-meta">
@@ -973,20 +973,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/yogender-ai/knn-cat-dog-demo" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">knn-cat-dog-demo</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">使用 Python 从头开始​​进行猫与狗图像分类的 KNN 算法。机器学习、基于距离的分类和计算机视觉实验。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">HTML</span>
-                                    <span class="repo-date">2026-01-06</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/dyneth02/SLIIT-AI-Engineer-Stage-I" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">SLIIT-AI-Engineer-Stage-I</span>
@@ -1015,20 +1001,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/g3deon4ent/g3deon-erp" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">g3deon-erp</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">使用 Next.js 构建的人工智能驱动的 ERP 管理前端。用于企业资源规划和业务管理的综合 SaaS 平台。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-01-06</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/Sarah111-AHM/StatML-Study-" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">StatML-Study-</span>
@@ -1043,6 +1015,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/vaamonde/ai-networking" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ai-networking</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">NOVO CURSO - AI（人工智能 - IA Inteligência Artificial）与计算机（网络）</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-01-12</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/aravindvojjala/AI-Restaurant-Name-Generator" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">AI-Restaurant-Name-Generator</span>
@@ -1051,6 +1037,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="repo-desc">使用 LangChain、LLM 和 Streamlit 的人工智能驱动的餐厅名称生成器。它展示了现实世界的法学硕士集成、即时工程和全栈人工智能开发。用户通过交互式用户界面根据菜系生成创意餐厅名称。招聘人员 AI 包括安全 API 密钥、Docker 化设置以及通过 Docker Hub 进行云就绪部署。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Jupyter Notebook</span>
+                                    <span class="repo-date">2026-01-10</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/HoffmannAlex/Pirater-un-compte-GMail-Avec-IA" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Pirater-un-compte-GMail-Avec-IA</span>
+                                    <span class="repo-stars">⭐ 1</span>
+                                </div>
+                                <p class="repo-desc">我们以 IA 为基础对 Gmail 过去的安全进行研究和培训，探索并认识 Google 过去的盗版方法以及防御策略 - 严格保留使用自动独特性。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-01-10</span>
                                 </div>
                             </a>
