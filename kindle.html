@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">MHLA: Restoring<sup class='ipa'>/rɪˈstɔrɪŋ/</sup> Expressivity<sup class='ipa'>/ˌɛksprəˈsɪvɪti/</sup> of Linear Attention<sup class='ipa'>/əˈtɛnʃən/</sup> via Token-Level<sup class='ipa'>/tokenlevel*/</sup> Multi-Head<sup class='ipa'>/multihead*/</sup></h2>
+                    <h2 class="paper-title">Modeling<sup class='ipa'>/ˈmɑdəlɪŋ/</sup> LLM Agent Reviewer<sup class='ipa'>/rivˈjuər/</sup> Dynamics<sup class='ipa'>/daɪˈnæmɪks/</sup> in Elo-Ranked<sup class='ipa'>/eloranked*/</sup> Review System</h2>
                     <p class="paper-meta">
-                        <span class="authors">Kewei Zhang, Ye Huang, Yufan Deng</span>
-                        <span class="date">2026-01-12</span>
+                        <span class="authors">Hsiang-Wei Huang, Junbin Lu, Kuang-Ming Chen</span>
+                        <span class="date">2026-01-13</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">While the Transformer architecture dominates many fields, its quadratic self-attention complexity hinders its use in large-scale applications. Linear attention offers an efficient alternative, but its direct application often degrades performance, with existing fixes typically re-introducing computational overhead through extra modules (e.g., depthwise separable convolution) that defeat the original purpose. In this work, we identify a key failure mode in these methods: global context collapse, where the model loses representational diversity. To address this, we propose Multi-Head Linear Attention (MHLA), which preserves this diversity by computing attention within divided heads along the token dimension. We prove that MHLA maintains linear complexity while recovering much of the expressive power of softmax attention, and verify its effectiveness across multiple domains, achieving a 3.6\% improvement on ImageNet classification, a 6.3\% gain on NLP, a 12.6\% improvement on image generation, and a 41\% enhancement on video generation under the same time complexity.</p>
+                        <p class="abstract-en">In this work, we explore the Large Language Model (LLM) agent reviewer dynamics in an Elo-ranked review system using real-world conference paper submissions. Multiple LLM agent reviewers with different personas are engage in multi round review interactions moderated by an Area Chair. We compare a baseline setting with conditions that incorporate Elo ratings and reviewer memory. Our simulation results showcase several interesting findings, including how incorporating Elo improves Area Chair decision accuracy, as well as reviewers&#39; adaptive review strategy that exploits our Elo system without improving review effort. Our code is available at https://github.com/hsiangwei0903/EloReview.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">虽然 Transformer 架构在许多领域占据主导地位，但其二次自注意力复杂性阻碍了其在大规模应用中的使用。线性注意力提供了一种有效的替代方案，但其直接应用通常会降低性能，现有的修复通常会通过额外的模块（例如深度可分离卷积）重新引入计算开销，从而违背了最初的目的。在这项工作中，我们确定了这些方法中的一个关键失败模式：全局上下文崩溃，其中模型失去了表征多样性。为了解决这个问题，我们提出了多头线性注意力（MHLA），它通过沿着令牌维度计算分割头内的注意力来保留这种多样性。我们证明 MHLA 保持了线性复杂度，同时恢复了 Softmax Attention 的大部分表达能力，并验证了其在多个领域的有效性，在相同时间复杂度下，在 ImageNet 分类上实现了 3.6\% 的改进，在 NLP 上实现了 6.3\% 的增益，在图像生成上实现了 12.6\% 的改进，在视频生成上实现了 41\% 的增强。</p>
+                        <p class="abstract-zh">在这项工作中，我们使用真实世界的会议论文提交来探索 Elo 排名评审系统中的大型语言模型 (LLM) 代理审稿人动态。具有不同角色的多名法学硕士代理评审员参与由区域主席主持的多轮评审互动。我们将基线设置与包含 Elo 评级和审稿人记忆的条件进行比较。我们的模拟结果展示了一些有趣的发现，包括合并 Elo 如何提高区域主席决策的准确性，以及审稿人的自适应审稿策略，该策略利用我们的 Elo 系统而不提高审稿工作量。我们的代码可在 https://github.com/hsiangwei0903/EloReview 获取。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Failure-Aware<sup class='ipa'>/failureaware*/</sup> RL: Reliable<sup class='ipa'>/rɪˈlaɪəbəl/</sup> Offline-to-Online<sup class='ipa'>/offlinetoonline*/</sup> Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> with Self-Recovery<sup class='ipa'>/selfrecovery*/</sup> for Real-World<sup class='ipa'>/realworld*/</sup> Manipulation<sup class='ipa'>/məˌnɪpjəˈleɪʃən/</sup></h2>
+                    <h2 class="paper-title">Motion Attribution<sup class='ipa'>/ˌætrɪˈbjuʃən/</sup> for Video Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Huanyu Li, Kun Lei, Sheng Zang</span>
-                        <span class="date">2026-01-12</span>
+                        <span class="authors">Xindi Wu, Despoina Paschalidou, Jun Gao</span>
+                        <span class="date">2026-01-13</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Post-training algorithms based on deep reinforcement learning can push the limits of robotic models for specific objectives, such as generalizability, accuracy, and robustness. However, Intervention-requiring Failures (IR Failures) (e.g., a robot spilling water or breaking fragile glass) during real-world exploration happen inevitably, hindering the practical deployment of such a paradigm. To tackle this, we introduce Failure-Aware Offline-to-Online Reinforcement Learning (FARL), a new paradigm minimizing failures during real-world reinforcement learning. We create FailureBench, a benchmark that incorporates common failure scenarios requiring human intervention, and propose an algorithm that integrates a world-model-based safety critic and a recovery policy trained offline to prevent failures during online exploration. Extensive simulation and real-world experiments demonstrate the effectiveness of FARL in significantly reducing IR Failures while improving performance and generalization during online reinforcement learning post-training. FARL reduces IR Failures by 73.1% while elevating performance by 11.3% on average during real-world RL post-training. Videos and code are available at https://failure-aware-rl.github.io.</p>
+                        <p class="abstract-en">Despite the rapid progress of video generation models, the role of data in influencing motion is poorly understood. We present Motive (MOTIon attribution for Video gEneration), a motion-centric, gradient-based data attribution framework that scales to modern, large, high-quality video datasets and models. We use this to study which fine-tuning clips improve or degrade temporal dynamics. Motive isolates temporal dynamics from static appearance via motion-weighted loss masks, yielding efficient and scalable motion-specific influence computation. On text-to-video models, Motive identifies clips that strongly affect motion and guides data curation that improves temporal consistency and physical plausibility. With Motive-selected high-influence data, our method improves both motion smoothness and dynamic degree on VBench, achieving a 74.1% human preference win rate compared with the pretrained base model. To our knowledge, this is the first framework to attribute motion rather than visual appearance in video generative models and to use it to curate fine-tuning data.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">基于深度强化学习的后训练算法可以突破机器人模型针对特定目标的限制，例如通用性、准确性和鲁棒性。然而，在现实世界的探索过程中，需要干预的故障（IR 故障）（例如，机器人溅水或打碎易碎玻璃）不可避免地会发生，这阻碍了这种范例的实际部署。为了解决这个问题，我们引入了故障感知离线到在线强化学习（FARL），这是一种新的范式，可以最大限度地减少现实世界强化学习期间的故障。我们创建了 FailureBench，这是一个包含需要人工干预的常见故障场景的基准，并提出了一种算法，该算法集成了基于世界模型的安全批评家和离线训练的恢复策略，以防止在线探索期间出现故障。广泛的模拟和真实实验证明了 FARL 在显着减少 IR 故障方面的有效性，同时提高了在线强化学习训练后的性能和泛化能力。 FARL 将 IR 故障减少了 73.1%，同时在现实世界的 RL 训练后将性能平均提高了 11.3%。视频和代码可在 https://failure-aware-rl.github.io 上获取。</p>
+                        <p class="abstract-zh">尽管视频生成模型取得了快速进展，但人们对数据在影响运动中的作用却知之甚少。我们提出了 Motive（视频生成的 MOTIon 归因），这是一种以运动为中心、基于梯度的数据归因框架，可扩展到现代、大型、高质量的视频数据集和模型。我们用它来研究哪些微调剪辑可以改善或降低时间动态。 Motive 通过运动加权损失掩模将时间动态与静态外观隔离，从而产生高效且可扩展的运动特定影响计算。在文本到视频模型上，Motive 可以识别强烈影响运动的剪辑，并指导数据管理，从而提高时间一致性和物理合理性。利用Motive选择的高影响力数据，我们的方法提高了VBench上的运动平滑度和动态程度，与预训练的基础模型相比，实现了74.1%的人类偏好获胜率。据我们所知，这是第一个在视频生成模型中归因于运动而不是视觉外观并使用它来管理微调数据的框架。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Reference<sup class='ipa'>/ˈrɛfərəns/</sup> Games as a Testbed for the Alignment<sup class='ipa'>/əˈlaɪnmənt/</sup> of Model Uncertainty<sup class='ipa'>/ənˈsərtənti/</sup> and Clarification<sup class='ipa'>/ˌklɛrəfəˈkeɪʃən/</sup> Requests<sup class='ipa'>/rɪkˈwɛsts/</sup></h2>
+                    <h2 class="paper-title">MemRec: Collaborative<sup class='ipa'>/kəˈlæbərˌeɪtɪv/</sup> Memory-Augmented<sup class='ipa'>/memoryaugmented*/</sup> Agentic Recommender<sup class='ipa'>/recommender*/</sup> System</h2>
                     <p class="paper-meta">
-                        <span class="authors">Manar Ali, Judith Sieker, Sina Zarrieß</span>
-                        <span class="date">2026-01-12</span>
+                        <span class="authors">Weixin Chen, Yuhan Zhao, Jingyuan Huang</span>
+                        <span class="date">2026-01-13</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">In human conversation, both interlocutors play an active role in maintaining mutual understanding. When addressees are uncertain about what speakers mean, for example, they can request clarification. It is an open question for language models whether they can assume a similar addressee role, recognizing and expressing their own uncertainty through clarification. We argue that reference games are a good testbed to approach this question as they are controlled, self-contained, and make clarification needs explicit and measurable. To test this, we evaluate three vision-language models comparing a baseline reference resolution task to an experiment where the models are instructed to request clarification when uncertain. The results suggest that even in such simple tasks, models often struggle to recognize internal uncertainty and translate it into adequate clarification behavior. This demonstrates the value of reference games as testbeds for interaction qualities of (vision and) language models.</p>
+                        <p class="abstract-en">The evolution of recommender systems has shifted preference storage from rating matrices and dense embeddings to semantic memory in the agentic era. Yet existing agents rely on isolated memory, overlooking crucial collaborative signals. Bridging this gap is hindered by the dual challenges of distilling vast graph contexts without overwhelming reasoning agents with cognitive load, and evolving the collaborative memory efficiently without incurring prohibitive computational costs. To address this, we propose MemRec, a framework that architecturally decouples reasoning from memory management to enable efficient collaborative augmentation. MemRec introduces a dedicated, cost-effective LM_Mem to manage a dynamic collaborative memory graph, serving synthesized, high-signal context to a downstream LLM_Rec. The framework operates via a practical pipeline featuring efficient retrieval and cost-effective asynchronous graph propagation that evolves memory in the background. Extensive experiments on four benchmarks demonstrate that MemRec achieves state-of-the-art performance. Furthermore, architectural analysis confirms its flexibility, establishing a new Pareto frontier that balances reasoning quality, cost, and privacy through support for diverse deployments, including local open-source models. Code:https://github.com/rutgerswiselab/memrec and Homepage: https://memrec.weixinchen.com</p>
                         <hr class="divider">
-                        <p class="abstract-zh">在人类对话中，对话双方在维持相互理解方面发挥着积极作用。例如，当收件人不确定说话者的意思时，他们可以要求澄清。对于语言模型来说，它们是否可以承担类似的收件人角色，通过澄清来识别和表达自己的不确定性，这是一个悬而未决的问题。我们认为参考游戏是解决这个问题的一个很好的测试平台，因为它们是受控的、独立的，并且使澄清需求明确且可衡量。为了测试这一点，我们评估了三个视觉语言模型，将基线参考解析任务与实验进行比较，在实验中模型被指示在不确定时请求澄清。结果表明，即使在如此简单的任务中，模型也常常难以识别内部不确定性并将其转化为充分的澄清行为。这证明了参考游戏作为（视觉和）语言模型交互质量测试平台的价值。</p>
+                        <p class="abstract-zh">推荐系统的发展已经将偏好存储从评级矩阵和密集嵌入转变为代理时代的语义记忆。然而现有的智能体依赖于孤立的记忆，忽视了关键的协作信号。弥合这一差距受到双重挑战的阻碍：提取大量图形上下文而不用认知负荷压倒推理代理，以及有效地发展协作记忆而不产生过高的计算成本。为了解决这个问题，我们提出了 MemRec，这是一个在架构上将推理与内存管理解耦的框架，以实现高效的协作增强。 MemRec 引入了专用的、经济高效的 LM_Mem 来管理动态协作内存图，为下游 LLM_Rec 提供合成的高信号上下文。该框架通过一个实用的管道进行操作，该管道具有高效的检索和经济高效的异步图形传播，可在后台演化内存。对四个基准的大量实验表明 MemRec 实现了最先进的性能。此外，架构分析证实了其灵活性，建立了一个新的帕累托前沿，通过支持包括本地开源模型在内的多种部署来平衡推理质量、成本和隐私。代码：https://github.com/rutgerswiselab/memrec 和主页：https://memrec.weixinchen.com</p>
                     </div>
                 </article>
                 
@@ -458,10 +458,10 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 37</span>
+                        <span class="repo-stars">★ 38</span>
                         <div class="repo-info">
                             <strong class="repo-name">lucidrains/torch-einops-utils</strong>
-                            <p class="repo-desc">一些实用函数可以帮助我自己（或许还有其他人）更快地完成 ML/AI 工作</p>
+                            <p class="repo-desc">一些实用函数可以帮助我（或许还有其他人）更快地完成 ML/AI 工作</p>
                         </div>
                     </li>
                 
@@ -469,12 +469,12 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <span class="repo-stars">★ 8</span>
                         <div class="repo-info">
                             <strong class="repo-name">SStarrySSky/Askit.</strong>
-                            <p class="repo-desc">在一个实时交互的坐标系中和AI交互讨论问题，让思想的传输不再受语言限制，更敏锐的学习和理解新知识或者解决问题。软件内置强大的物理引擎Bullet物理并且具有独特定制的实时渲染引擎，让AI可以完全理解整个空间，AI的画图直觉已经被训练了AKCoT，并且采用了物理引擎时钟计算的混合架构。实时渲染采用manim改进的实时渲染引擎，具有美观的动画。当前尚未部署模型云服务，要获得最佳体验，需要使用24G显存以上的显卡在软件中本地点击部署按钮</p>
+                            <p class="repo-desc">在一个实时交互的坐标系中和AI交互讨论问题，让思想的传输不再受语言限制，更敏锐的学习和理解新知识或者解决问题。软件内置强大的物理引擎Bullet物理并且具有独特定制的仿真模型，让AI可以完全理解整个空间，AI的画图直觉已经被训练了AKCoT，并且采用了和物理引擎时钟计算的混合架构。实时渲染采用manim改进的实时渲染引擎，具有美观的动画。目前尚未部署报表模型云服务，要获得最佳体验推出，需要使用24G显存以上的显卡在软件中本地点击部署按钮，未来将AI和物理引擎全面融合的版本</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 7</span>
+                        <span class="repo-stars">★ 8</span>
                         <div class="repo-info">
                             <strong class="repo-name">light-and-ray/awesome-alternative-uis-for-comfyui</strong>
                             <p class="repo-desc">ComfyUI 的 UI 集合</p>
@@ -490,26 +490,10 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">dyneth02/SLIIT-AI-Engineer-Stage-I</strong>
-                            <p class="repo-desc">AI/ML 工程师 – 第 1 阶段提供创建专业人工智能工程师的基本构建模块。这一旅程从了解人工智能/机器学习的理论基础开始，这将使学习者了解如何在行业中使用每个专业领域。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">dyneth02/SLIIT-AI-Engineer-Stage-II</strong>
-                            <p class="repo-desc">AI/ML 工程师 – 第 2 阶段提供有关监督学习算法的深入知识，也称为监督机器学习，是机器学习和人工智能的一个子类别。它的定义是使用标记数据集来训练算法以对数据进行分类或准确预测结果。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">Sarah111-AHM/StatML-Study-</strong>
-                            <p class="repo-desc">协作策划的存储库编译和综合人工智能基础数学的讲座课程和文本，鼓励贡献者批判性地参与和完善材料</p>
+                            <strong class="repo-name">Dark-Vinaal/DARK_GEN-AI</strong>
+                            <p class="repo-desc">DARK_GEN-AI 是一款基于 Gen Ai 的应用程序。专业的双提供商 AI 聊天机器人，采用 Gemini Flash 和 Puter.js 后备功能，具有语音输入和文件分析功能。</p>
                         </div>
                     </li>
                 
@@ -532,8 +516,24 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 1</span>
                         <div class="repo-info">
-                            <strong class="repo-name">HoffmannAlex/Pirater-un-compte-GMail-Avec-IA</strong>
-                            <p class="repo-desc">我们以 IA 为基础对 Gmail 过去的安全进行研究和培训，探索并认识 Google 过去的盗版方法以及防御策略 - 严格保留使用自动独特性。</p>
+                            <strong class="repo-name">ChrisCurrin/aims-2026-neuroai-tutorials</strong>
+                            <p class="repo-desc">2026 年 AIMS AI 科学硕士 NeuroAI 教程</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 1</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">Muadiv/am-i-alive</strong>
+                            <p class="repo-desc">我还活着吗？这是一个有自我意识的服务器试图生存</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 1</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">Tarunjit45/repo-specialist</strong>
+                            <p class="repo-desc">功能强大的基于 Python 的终端 CLI，用于发现最新、最热门的 GitHub 存储库。通过实时 API 过滤和即时浏览器访问，寻找人工智能、网络安全、暗网和网络领域的高质量项目。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-01-13 22:18:50
+        生成于 2026-01-14 22:19:13
     </footer>
 </body>
 </html>
