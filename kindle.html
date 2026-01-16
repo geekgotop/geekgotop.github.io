@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Fast-ThinkAct:<sup class='ipa'>/fastthinkact*/</sup> Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Vision-Language-Action<sup class='ipa'>/visionlanguageaction*/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> via Verbalizable<sup class='ipa'>/verbalizable*/</sup> Latent Planning<sup class='ipa'>/ˈplænɪŋ/</sup></h2>
+                    <h2 class="paper-title">MatchTIR:<sup class='ipa'>/matchtir*/</sup> Fine-Grained<sup class='ipa'>/finegrained*/</sup> Supervision<sup class='ipa'>/ˌsupərˈvɪʒən/</sup> for Tool-Integrated<sup class='ipa'>/toolintegrated*/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> via Bipartite<sup class='ipa'>/bipartite*/</sup> Matching<sup class='ipa'>/ˈmæʧɪŋ/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Chi-Pin Huang, Yunze Man, Zhiding Yu</span>
-                        <span class="date">2026-01-14</span>
+                        <span class="authors">Changle Qu, Sunhao Dai, Hengyi Cai</span>
+                        <span class="date">2026-01-15</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Vision-Language-Action (VLA) tasks require reasoning over complex visual scenes and executing adaptive actions in dynamic environments. While recent studies on reasoning VLAs show that explicit chain-of-thought (CoT) can improve generalization, they suffer from high inference latency due to lengthy reasoning traces. We propose Fast-ThinkAct, an efficient reasoning framework that achieves compact yet performant planning through verbalizable latent reasoning. Fast-ThinkAct learns to reason efficiently with latent CoTs by distilling from a teacher, driven by a preference-guided objective to align manipulation trajectories that transfers both linguistic and visual planning capabilities for embodied control. This enables reasoning-enhanced policy learning that effectively connects compact reasoning to action execution. Extensive experiments across diverse embodied manipulation and reasoning benchmarks demonstrate that Fast-ThinkAct achieves strong performance with up to 89.3\% reduced inference latency over state-of-the-art reasoning VLAs, while maintaining effective long-horizon planning, few-shot adaptation, and failure recovery.</p>
+                        <p class="abstract-en">Tool-Integrated Reasoning (TIR) empowers large language models (LLMs) to tackle complex tasks by interleaving reasoning steps with external tool interactions. However, existing reinforcement learning methods typically rely on outcome- or trajectory-level rewards, assigning uniform advantages to all steps within a trajectory. This coarse-grained credit assignment fails to distinguish effective tool calls from redundant or erroneous ones, particularly in long-horizon multi-turn scenarios. To address this, we propose MatchTIR, a framework that introduces fine-grained supervision via bipartite matching-based turn-level reward assignment and dual-level advantage estimation. Specifically, we formulate credit assignment as a bipartite matching problem between predicted and ground-truth traces, utilizing two assignment strategies to derive dense turn-level rewards. Furthermore, to balance local step precision with global task success, we introduce a dual-level advantage estimation scheme that integrates turn-level and trajectory-level signals, assigning distinct advantage values to individual interaction turns. Extensive experiments on three benchmarks demonstrate the superiority of MatchTIR. Notably, our 4B model surpasses the majority of 8B competitors, particularly in long-horizon and multi-turn tasks. Our codes are available at https://github.com/quchangle1/MatchTIR.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">视觉-语言-动作（VLA）任务需要对复杂的视觉场景进行推理并在动态环境中执行自适应动作。虽然最近关于推理 VLA 的研究表明，显式思维链 (CoT) 可以提高泛化能力，但由于推理轨迹过长，推理延迟较高。我们提出了 Fast-ThinkAct，这是一种高效的推理框架，可以通过可语言的潜在推理实现紧凑而高性能的规划。 Fast-ThinkAct 通过从教师那里提炼，在偏好引导的目标驱动下，学习如何利用潜在 CoT 进行有效推理，以调整操作轨迹，从而传输语言和视觉规划能力以实现具体控制。这使得推理增强型策略学习能够有效地将紧凑推理与行动执行联系起来。跨各种具体操作和推理基准的大量实验表明，Fast-ThinkAct 实现了强大的性能，与最先进的推理 VLA 相比，推理延迟降低了 89.3%，同时保持有效的长期规划、小样本适应和故障恢复。</p>
+                        <p class="abstract-zh">工具集成推理 (TIR) 通过将推理步骤与外部工具交互交错，使大型语言模型 (LLM) 能够处理复杂的任务。然而，现有的强化学习方法通​​常依赖于结果或轨迹级别的奖励，为轨迹内的所有步骤分配统一的优势。这种粗粒度的信用分配无法区分有效的工具调用和冗余或错误的工具调用，特别是在长范围多轮场景中。为了解决这个问题，我们提出了 MatchTIR，这是一个通过基于二分匹配的轮次奖励分配和双级优势估计引入细粒度监督的框架。具体来说，我们将信用分配制定为预测轨迹和真实轨迹之间的二分匹配问题，利用两种分配策略来获得密集的回合级奖励。此外，为了平衡局部步骤精度和全局任务成功，我们引入了一种双级优势估计方案，该方案集成了回合级和轨迹级信号，为各个交互回合分配不同的优势值。对三个基准的大量实验证明了 MatchTIR 的优越性。值得注意的是，我们的 4B 模型超越了大多数 8B 竞争对手，特别是在长视野和多回合任务方面。我们的代码可在 https://github.com/quchangle1/MatchTIR 获取。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Value-Aware<sup class='ipa'>/valueaware*/</sup> Numerical<sup class='ipa'>/nuˈmɛrɪkəl/</sup> Representations<sup class='ipa'>/ˌrɛprəzənˈteɪʃənz/</sup> for Transformer<sup class='ipa'>/trænsˈfɔrmər/</sup> Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h2>
+                    <h2 class="paper-title">Grounding<sup class='ipa'>/ˈgraʊndɪŋ/</sup> Agent Memory in Contextual<sup class='ipa'>/ˌkɑnˈtɛksˌʧuəl/</sup> Intent</h2>
                     <p class="paper-meta">
-                        <span class="authors">Andreea Dutulescu, Stefan Ruseti, Mihai Dascalu</span>
-                        <span class="date">2026-01-14</span>
+                        <span class="authors">Ruozhen Yang, Yucheng Jiang, Yueqi Jiang</span>
+                        <span class="date">2026-01-15</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Transformer-based language models often achieve strong results on mathematical reasoning benchmarks while remaining fragile on basic numerical understanding and arithmetic operations. A central limitation is that numbers are processed as symbolic tokens whose embeddings do not explicitly encode numerical value, leading to systematic errors. We introduce a value-aware numerical representation that augments standard tokenized inputs with a dedicated prefix token whose embedding is explicitly conditioned on the underlying numerical value. This mechanism injects magnitude information directly into the model&#39;s input space while remaining compatible with existing tokenizers and decoder-only Transformer architectures. Evaluation on arithmetic tasks shows that the proposed approach outperforms baselines across numerical formats, tasks, and operand lengths. These results indicate that explicitly encoding numerical value is an effective and efficient way to improve fundamental numerical robustness in language models.</p>
+                        <p class="abstract-en">Deploying large language models in long-horizon, goal-oriented interactions remains challenging because similar entities and facts recur under different latent goals and constraints, causing memory systems to retrieve context-mismatched evidence. We propose STITCH (Structured Intent Tracking in Contextual History), an agentic memory system that indexes each trajectory step with a structured retrieval cue, contextual intent, and retrieves history by matching the current step&#39;s intent. Contextual intent provides compact signals that disambiguate repeated mentions and reduce interference: (1) the current latent goal defining a thematic segment, (2) the action type, and (3) the salient entity types anchoring which attributes matter. During inference, STITCH filters and prioritizes memory snippets by intent compatibility, suppressing semantically similar but context-incompatible history.   For evaluation, we introduce CAME-Bench, a benchmark for context-aware retrieval in realistic, dynamic, goal-oriented trajectories. Across CAME-Bench and LongMemEval, STITCH achieves state-of-the-art performance, outperforming the strongest baseline by 35.6%, with the largest gains as trajectory length increases. Our analysis shows that intent indexing substantially reduces retrieval noise, supporting intent-aware memory for robust long-horizon reasoning.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">基于 Transformer 的语言模型通常在数学推理基准上取得了很好的结果，但在基本的数值理解和算术运算方面仍然脆弱。一个主要限制是数字被处理为符号标记，其嵌入没有显式编码数值，从而导致系统错误。我们引入了一种值感知的数字表示，它使用专用的前缀标记来增强标准标记化输入，该前缀标记的嵌入显式地以底层数值为条件。该机制将幅度信息直接注入模型的输入空间，同时保持与现有标记器和仅解码器 Transformer 架构的兼容性。对算术任务的评估表明，所提出的方法在数值格式、任务和操作数长度方面优于基线。这些结果表明，显式编码数值是提高语言模型中基本数值鲁棒性的有效且高效的方法。</p>
+                        <p class="abstract-zh">在长期、面向目标的交互中部署大型语言模型仍然具有挑战性，因为相似的实体和事实在不同的潜在目标和约束下重复出现，导致记忆系统检索上下文不匹配的证据。我们提出了 STITCH（上下文历史中的结构化意图跟踪），这是一种代理记忆系统，它使用结构化检索线索、上下文意图来索引每个轨迹步骤，并通过匹配当前步骤的意图来检索历史。上下文意图提供了紧凑的信号，可以消除重复提及的歧义并减少干扰：(1) 定义主题片段的当前潜在目标，(2) 操作类型，以及 (3) 锚定重要属性的显着实体类型。在推理过程中，STITCH 通过意图兼容性过滤内存片段并确定其优先级，从而抑制语义相似但上下文不兼容的历史记录。   为了进行评估，我们引入了 CAME-Bench，这是一个在现实、动态、面向目标的轨迹中进行上下文感知检索的基准。在 CAME-Bench 和 LongMemEval 中，STITCH 实现了最先进的性能，比最强基线高出 35.6%，随着轨迹长度的增加，增益最大。我们的分析表明，意图索引大大减少了检索噪声，支持意图感知内存以实现稳健的长视野推理。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">ShortCoder:<sup class='ipa'>/shortcoder*/</sup> Knowledge-Augmented<sup class='ipa'>/knowledgeaugmented*/</sup> Syntax Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> for Token-Efficient<sup class='ipa'>/tokenefficient*/</sup> Code Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h2>
+                    <h2 class="paper-title">LIBERTy: A Causal Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup> for Benchmarking<sup class='ipa'>/benchmarking*/</sup> Concept-Based<sup class='ipa'>/conceptbased*/</sup> Explanations<sup class='ipa'>/ˌɛkspləˈneɪʃənz/</sup> of LLMs with Structural<sup class='ipa'>/ˈstrəkʧərəl/</sup> Counterfactuals<sup class='ipa'>/counterfactuals*/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Sicong Liu, Yanxian Huang, Mingwei Liu</span>
-                        <span class="date">2026-01-14</span>
+                        <span class="authors">Gilat Toker, Nitay Calderon, Ohad Amosy</span>
+                        <span class="date">2026-01-15</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Code generation tasks aim to automate the conversion of user requirements into executable code, significantly reducing manual development efforts and enhancing software productivity. The emergence of large language models (LLMs) has significantly advanced code generation, though their efficiency is still impacted by certain inherent architectural constraints. Each token generation necessitates a complete inference pass, requiring persistent retention of contextual information in memory and escalating resource consumption. While existing research prioritizes inference-phase optimizations such as prompt compression and model quantization, the generation phase remains underexplored. To tackle these challenges, we propose a knowledge-infused framework named ShortCoder, which optimizes code generation efficiency while preserving semantic equivalence and readability. In particular, we introduce: (1) ten syntax-level simplification rules for Python, derived from AST-preserving transformations, achieving 18.1% token reduction without functional compromise; (2) a hybrid data synthesis pipeline integrating rule-based rewriting with LLM-guided refinement, producing ShorterCodeBench, a corpus of validated tuples of original code and simplified code with semantic consistency; (3) a fine-tuning strategy that injects conciseness awareness into the base LLMs. Extensive experimental results demonstrate that ShortCoder consistently outperforms state-of-the-art methods on HumanEval, achieving an improvement of 18.1%-37.8% in generation efficiency over previous methods while ensuring the performance of code generation.</p>
+                        <p class="abstract-en">Concept-based explanations quantify how high-level concepts (e.g., gender or experience) influence model behavior, which is crucial for decision-makers in high-stakes domains. Recent work evaluates the faithfulness of such explanations by comparing them to reference causal effects estimated from counterfactuals. In practice, existing benchmarks rely on costly human-written counterfactuals that serve as an imperfect proxy. To address this, we introduce a framework for constructing datasets containing structural counterfactual pairs: LIBERTy (LLM-based Interventional Benchmark for Explainability with Reference Targets). LIBERTy is grounded in explicitly defined Structured Causal Models (SCMs) of the text generation, interventions on a concept propagate through the SCM until an LLM generates the counterfactual. We introduce three datasets (disease detection, CV screening, and workplace violence prediction) together with a new evaluation metric, order-faithfulness. Using them, we evaluate a wide range of methods across five models and identify substantial headroom for improving concept-based explanations. LIBERTy also enables systematic analysis of model sensitivity to interventions: we find that proprietary LLMs show markedly reduced sensitivity to demographic concepts, likely due to post-training mitigation. Overall, LIBERTy provides a much-needed benchmark for developing faithful explainability methods.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">代码生成任务旨在将用户需求自动转换为可执行代码，显着减少手动开发工作并提高软件生产力。大型语言模型 (LLM) 的出现显着提高了代码生成的性能，但其效率仍然受到某些固有架构限制的影响。每个令牌生成都需要完整的推理过程，需要在内存中持久保留上下文信息并增加资源消耗。虽然现有的研究优先考虑推理阶段的优化，例如即时压缩和模型量化，但生成阶段仍未得到充分探索。为了应对这些挑战，我们提出了一个名为 ShortCoder 的知识注入框架，它优化了代码生成效率，同时保留了语义等价性和可读性。我们特别介绍：（1）Python 的十个语法级简化规则，源自保留 AST 的转换，在不影响功能的情况下实现了 18.1% 的 token 减少； （2）混合数据合成管道，将基于规则的重写与LLM引导的细化相结合，生成ShorterCodeBench，这是一个经过验证的原始代码元组和具有语义一致性的简化代码的语料库； (3) 微调策略，将简洁意识注入基础法学硕士中。大量的实验结果表明，ShortCoder 始终优于 HumanEval 上最先进的方法，在保证代码生成性能的同时，生成效率较之前的方法提高了 18.1%-37.8%。</p>
+                        <p class="abstract-zh">基于概念的解释量化了高级概念（例如性别或经验）如何影响模型行为，这对于高风险领域的决策者至关重要。最近的工作通过将这些解释与根据反事实估计的参考因果效应进行比较来评估这些解释的可信度。在实践中，现有的基准依赖于昂贵的人工编写的反事实作为不完美的代理。为了解决这个问题，我们引入了一个用于构建包含结构反事实对的数据集的框架：LIBERTy（基于 LLM 的可解释性参考目标的干预基准）。 LIBERTy 植根于文本生成的明确定义的结构化因果模型 (SCM)，对概念的干预通过 SCM 传播，直到法学硕士生成反事实。我们引入了三个数据集（疾病检测、简历筛查和工作场所暴力预测）以及新的评估指标——订单忠实度。使用它们，我们评估了五个模型中的各种方法，并确定了改进基于概念的解释的巨大空间。 LIBERTy 还可以对模型对干预措施的敏感性进行系统分析：我们发现专有法学硕士对人口统计概念的敏感性显着降低，这可能是由于培训后的缓解措施所致。总体而言，LIBERTy 为开发忠实的可解释性方法提供了急需的基准。</p>
                     </div>
                 </article>
                 
@@ -458,34 +458,18 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 38</span>
+                        <span class="repo-stars">★ 47</span>
                         <div class="repo-info">
-                            <strong class="repo-name">lucidrains/torch-einops-utils</strong>
-                            <p class="repo-desc">一些实用函数可以帮助我（或许还有其他人）更快地完成 ML/AI 工作</p>
+                            <strong class="repo-name">awslabs/fullstack-solution-template-for-agentcore</strong>
+                            <p class="repo-desc">灵活的全栈解决方案模板，适用于 Amazon Bedrock AgentCore 上任何用例的生产就绪部署。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 8</span>
+                        <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">SStarrySSky/Askit.</strong>
-                            <p class="repo-desc">在一个实时交互的坐标系中和AI交互讨论问题，让思想的传输不再受语言限制，更敏锐的学习和理解新知识或者解决问题。软件内置强大的物理引擎Bullet物理并且具有独特定制的仿真模型，让AI可以完全理解整个空间，AI的画图直觉已经被训练了AKCoT，并且采用了和物理引擎时钟计算的混合架构。实时渲染采用manim改进的实时渲染引擎，具有美观的动画。目前尚未部署报表模型云服务，要获得最佳体验推出，需要使用24G显存以上的显卡在软件中本地点击部署按钮，未来将AI和物理引擎全面融合的版本</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 8</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">light-and-ray/awesome-alternative-uis-for-comfyui</strong>
-                            <p class="repo-desc">ComfyUI 的 UI 集合</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 6</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">N0vachr0n0/Infinity-Stack</strong>
-                            <p class="repo-desc">🚀 长达十年的 Dev、DevOps、Sysadmin Linux 和 Cyber​​Security 旅程的终极策划存储库。一个充满高价值资源、框架和久经考验的工具的活生生的“阿里巴巴洞穴”。 🏴‍☠️</p>
+                            <strong class="repo-name">vaamonde/ai-networking</strong>
+                            <p class="repo-desc">NOVO CURSO - AI（人工智能 - IA Inteligência Artificial）与计算机（网络）</p>
                         </div>
                     </li>
                 
@@ -500,8 +484,16 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">vaamonde/ai-networking</strong>
-                            <p class="repo-desc">NOVO CURSO - AI（人工智能 - IA Inteligência Artificial）与计算机（网络）</p>
+                            <strong class="repo-name">alainpaluku/pcb-defect-detector</strong>
+                            <p class="repo-desc">基于 CNN 的计算机视觉解决方案，用于印刷电路板 (PCB) 的自动质量控制。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">kahalewai/dae</strong>
+                            <p class="repo-desc">DAE 是一种开放的、供应商中立的 AI 代理安全规范，正式分离推理和权限</p>
                         </div>
                     </li>
                 
@@ -524,16 +516,24 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 1</span>
                         <div class="repo-info">
-                            <strong class="repo-name">Tarunjit45/repo-specialist</strong>
-                            <p class="repo-desc">功能强大的基于 Python 的终端 CLI，用于发现最新、最热门的 GitHub 存储库。通过实时 API 过滤和即时浏览器访问，寻找人工智能、网络安全、暗网和网络领域的高质量项目。</p>
+                            <strong class="repo-name">tarsislimadev/edge</strong>
+                            <p class="repo-desc">这是一个轻量级的客户端面部检测应用程序，它使用 OpenCV.js 来识别实时网络摄像头流中的面部。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
                         <span class="repo-stars">★ 1</span>
                         <div class="repo-info">
-                            <strong class="repo-name">ChrisCurrin/aims-2026-neuroai-tutorials</strong>
-                            <p class="repo-desc">2026 年 AIMS AI 科学硕士 NeuroAI 教程</p>
+                            <strong class="repo-name">v0id-core/digit-recognizer</strong>
+                            <p class="repo-desc">🧠 使用 PyTorch CNN 和 Tkinter 的实时手写数字识别器。采用定制的“智能居中”算法，可在任何绘图上实现高精度</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 1</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">HoffmannAlex/Pirater-un-compte-GMail-Avec-IA</strong>
+                            <p class="repo-desc">我们以 IA 为基础对 Gmail 过去的安全进行研究和培训，探索并认识 Google 过去的盗版方法以及防御策略 - 严格保留使用自动独特性。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-01-15 22:18:51
+        生成于 2026-01-16 22:17:55
     </footer>
 </body>
 </html>
