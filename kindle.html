@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Iterative<sup class='ipa'>/ˈɪtərˌeɪtɪv/</sup> Refinement<sup class='ipa'>/rəˈfaɪnmənt/</sup> Improves<sup class='ipa'>/ˌɪmˈpruvz/</sup> Compositional<sup class='ipa'>/ˌkɑmpəˈzɪʃənəl/</sup> Image Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h2>
+                    <h2 class="paper-title">Why Can't I Open My Drawer? Mitigating<sup class='ipa'>/ˈmɪtəˌgeɪtɪŋ/</sup> Object-Driven<sup class='ipa'>/objectdriven*/</sup> Shortcuts<sup class='ipa'>/ˈʃɔrtˌkəts/</sup> in Zero-Shot<sup class='ipa'>/zeroshot*/</sup> Compositional<sup class='ipa'>/ˌkɑmpəˈzɪʃənəl/</sup> Action Recognition<sup class='ipa'>/ˌrɛkɪgˈnɪʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Shantanu Jaiswal, Mihir Prabhudesai, Nikash Bhardwaj</span>
-                        <span class="date">2026-01-21</span>
+                        <span class="authors">Geo Ahn, Inwoong Lee, Taeoh Kim</span>
+                        <span class="date">2026-01-22</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Text-to-image (T2I) models have achieved remarkable progress, yet they continue to struggle with complex prompts that require simultaneously handling multiple objects, relations, and attributes. Existing inference-time strategies, such as parallel sampling with verifiers or simply increasing denoising steps, can improve prompt alignment but remain inadequate for richly compositional settings where many constraints must be satisfied. Inspired by the success of chain-of-thought reasoning in large language models, we propose an iterative test-time strategy in which a T2I model progressively refines its generations across multiple steps, guided by feedback from a vision-language model as the critic in the loop. Our approach is simple, requires no external tools or priors, and can be flexibly applied to a wide range of image generators and vision-language models. Empirically, we demonstrate consistent gains on image generation across benchmarks: a 16.9% improvement in all-correct rate on ConceptMix (k=7), a 13.8% improvement on T2I-CompBench (3D-Spatial category) and a 12.5% improvement on Visual Jenga scene decomposition compared to compute-matched parallel sampling. Beyond quantitative gains, iterative refinement produces more faithful generations by decomposing complex prompts into sequential corrections, with human evaluators preferring our method 58.7% of the time over 41.3% for the parallel baseline. Together, these findings highlight iterative self-correction as a broadly applicable principle for compositional image generation. Results and visualizations are available at https://iterative-img-gen.github.io/</p>
+                        <p class="abstract-en">We study Compositional Video Understanding (CVU), where models must recognize verbs and objects and compose them to generalize to unseen combinations. We find that existing Zero-Shot Compositional Action Recognition (ZS-CAR) models fail primarily due to an overlooked failure mode: object-driven verb shortcuts. Through systematic analysis, we show that this behavior arises from two intertwined factors: severe sparsity and skewness of compositional supervision, and the asymmetric learning difficulty between verbs and objects. As training progresses, the existing ZS-CAR model increasingly ignores visual evidence and overfits to co-occurrence statistics. Consequently, the existing model does not gain the benefit of compositional recognition in unseen verb-object compositions. To address this, we propose RCORE, a simple and effective framework that enforces temporally grounded verb learning. RCORE introduces (i) a composition-aware augmentation that diversifies verb-object combinations without corrupting motion cues, and (ii) a temporal order regularization loss that penalizes shortcut behaviors by explicitly modeling temporal structure. Across two benchmarks, Sth-com and our newly constructed EK100-com, RCORE significantly improves unseen composition accuracy, reduces reliance on co-occurrence bias, and achieves consistently positive compositional gaps. Our findings reveal object-driven shortcuts as a critical limiting factor in ZS-CAR and demonstrate that addressing them is essential for robust compositional video understanding.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">文本到图像 (T2I) 模型已经取得了显着的进步，但它们仍然在处理需要同时处理多个对象、关系和属性的复杂提示。现有的推理时间策略，例如与验证器的并行采样或简单地增加去噪步骤，可以改善即时对齐，但对于必须满足许多约束的丰富组合设置仍然不够。受到大型语言模型中思想链推理成功的启发，我们提出了一种迭代测试时间策略，其中 T2I 模型在作为循环批评者的视觉语言模型的反馈的指导下，跨多个步骤逐步完善其生成。我们的方法很简单，不需要外部工具或先验知识，并且可以灵活地应用于各种图像生成器和视觉语言模型。根据经验，我们展示了跨基准图像生成的一致收益：与计算匹配的并行采样相比，ConceptMix (k=7) 的正确率提高了 16.9%，T2I-CompBench（3D 空间类别）提高了 13.8%，Visual Jenga 场景分解提高了 12.5%。除了定量收益之外，迭代细化通过将复杂的提示分解为顺序修正来产生更忠实的生成，对于并行基线，人类评估者在 58.7% 的情况下更喜欢我们的方法，而不是 41.3% 的情况。总之，这些发现强调了迭代自我校正作为构图图像生成的广泛适用的原则。结果和可视化可在 https://iterative-img-gen.github.io/ 获得</p>
+                        <p class="abstract-zh">我们研究组合视频理解（CVU），其中模型必须识别动词和宾语并将它们组合起来以推广到看不见的组合。我们发现现有的零样本组合动作识别（ZS-CAR）模型失败主要是由于被忽视的失败模式：对象驱动的动词快捷方式。通过系统分析，我们表明这种行为是由两个相互交织的因素引起的：构图监督的严重稀疏和偏斜，以及动词和宾语之间的不对称学习难度。随着训练的进展，现有的 ZS-CAR 模型越来越忽视视觉证据并过度拟合共现统计数据。因此，现有模型无法从看不见的动词-宾语组合中获得组合识别的好处。为了解决这个问题，我们提出了 RCORE，这是一个简单而有效的框架，可以强制执行基于时间的动词学习。 RCORE 引入了（i）一种组合感知增强功能，可以在不破坏运动线索的情况下使动词-宾语组合多样化，以及（ii）一种时间顺序正则化损失，可以通过显式建模时间结构来惩罚快捷行为。在 Sth-com 和我们新构建的 EK100-com 这两个基准测试中，RCORE 显着提高了未见的合成准确性，减少了对共现偏差的依赖，并实现了一致的正合成差距。我们的研究结果表明，对象驱动的快捷方式是 ZS-CAR 的关键限制因素，并证明解决这些问题对于稳健的合成视频理解至关重要。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Rethinking<sup class='ipa'>/riˈθɪŋkɪŋ/</sup> Video Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> Model for the Embodied<sup class='ipa'>/ɪmˈbɑdid/</sup> World</h2>
+                    <h2 class="paper-title">PyraTok: Language-Aligned<sup class='ipa'>/languagealigned*/</sup> Pyramidal<sup class='ipa'>/pərˈæmədəl/</sup> Tokenizer<sup class='ipa'>/tokenizer*/</sup> for Video Understanding<sup class='ipa'>/ˌəndərˈstændɪŋ/</sup> and Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Yufan Deng, Zilin Pan, Hongyu Zhang</span>
-                        <span class="date">2026-01-21</span>
+                        <span class="authors">Onkar Susladkar, Tushar Prakash, Adheesh Juvekar</span>
+                        <span class="date">2026-01-22</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Video generation models have significantly advanced embodied intelligence, unlocking new possibilities for generating diverse robot data that capture perception, reasoning, and action in the physical world. However, synthesizing high-quality videos that accurately reflect real-world robotic interactions remains challenging, and the lack of a standardized benchmark limits fair comparisons and progress. To address this gap, we introduce a comprehensive robotics benchmark, RBench, designed to evaluate robot-oriented video generation across five task domains and four distinct embodiments. It assesses both task-level correctness and visual fidelity through reproducible sub-metrics, including structural consistency, physical plausibility, and action completeness. Evaluation of 25 representative models highlights significant deficiencies in generating physically realistic robot behaviors. Furthermore, the benchmark achieves a Spearman correlation coefficient of 0.96 with human evaluations, validating its effectiveness. While RBench provides the necessary lens to identify these deficiencies, achieving physical realism requires moving beyond evaluation to address the critical shortage of high-quality training data. Driven by these insights, we introduce a refined four-stage data pipeline, resulting in RoVid-X, the largest open-source robotic dataset for video generation with 4 million annotated video clips, covering thousands of tasks and enriched with comprehensive physical property annotations. Collectively, this synergistic ecosystem of evaluation and data establishes a robust foundation for rigorous assessment and scalable training of video models, accelerating the evolution of embodied AI toward general intelligence.</p>
+                        <p class="abstract-en">Discrete video VAEs underpin modern text-to-video generation and video understanding systems, yet existing tokenizers typically learn visual codebooks at a single scale with limited vocabularies and shallow language supervision, leading to poor cross-modal alignment and zero-shot transfer. We introduce PyraTok, a language-aligned pyramidal tokenizer that learns semantically structured discrete latents across multiple spatiotemporal resolutions. PyraTok builds on a pretrained video VAE and a novel Language aligned Pyramidal Quantization (LaPQ) module that discretizes encoder features at several depths using a shared large binary codebook, yielding compact yet expressive video token sequences. To tightly couple visual tokens with language, PyraTok jointly optimizes multi-scale text-guided quantization and a global autoregressive objective over the token hierarchy. Across ten benchmarks, PyraTok delivers state-of-the-art (SOTA) video reconstruction, consistently improves text-to-video quality, and sets new SOTA zero-shot performance on video segmentation, temporal action localization, and video understanding, scaling robustly to up to 4K/8K resolutions.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">视频生成模型具有显着先进的体现智能，解锁了生成各种机器人数据的新可能性，这些数据可以捕获物理世界中的感知、推理和动作。然而，合成准确反映现实世界机器人交互的高质量视频仍然具有挑战性，并且缺乏标准化基准限制了公平比较和进步。为了解决这一差距，我们引入了一个全面的机器人基准测试 RBench，旨在评估跨五个任务域和四个不同实施例的面向机器人的视频生成。它通过可重复的子指标评估任务级别的正确性和视觉保真度，包括结构一致性、物理合理性和动作完整性。对 25 个代表性模型的评估凸显了在生成物理真实机器人行为方面的重大缺陷。此外，该基准与人类评估的 Spearman 相关系数达到 0.96，验证了其有效性。虽然 RBench 提供了识别这些缺陷的必要视角，但实现物理真实感需要超越评估，以解决高质量训练数据的严重短缺问题。在这些见解的驱动下，我们引入了一个完善的四阶段数据管道，从而产生了 RoVid-X，这是最大的视频生成开源机器人数据集，包含 400 万个带注释的视频剪辑，涵盖数千个任务，并丰富了全面的物理属性注释。总的来说，这个评估和数据的协同生态系统为视频模型的严格评估和可扩展训练奠定了坚实的基础，加速了嵌入式人工智能向通用智能的发展。</p>
+                        <p class="abstract-zh">离散视频 VAE 是现代文本到视频生成和视频理解系统的基础，但现有的分词器通常在单一尺度上学习视觉码本，词汇量有限，语言监督浅层，导致跨模态对齐和零样本传输较差。我们引入了 PyraTok，一种与语言对齐的金字塔分词器，可以跨多个时空分辨率学习语义结构的离散潜在变量。 PyraTok 建立在预训练视频 VAE 和新颖的语言对齐金字塔量化 (LaPQ) 模块的基础上，该模块使用共享的大型二进制码本在多个深度上离散化编码器特征，从而产生紧凑但富有表现力的视频标记序列。为了将视觉标记与语言紧密结合，PyraTok 联合优化了标记层次结构上的多尺度文本引导量化和全局自回归目标。在十个基准测试中，PyraTok 提供了最先进的 (SOTA) 视频重建，持续提高文本到视频的质量，并在视频分割、时间动作定位和视频理解方面设置了新的 SOTA 零镜头性能，稳健地扩展到高达 4K/8K 分辨率。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">MolecularIQ:<sup class='ipa'>/moleculariq*/</sup> Characterizing<sup class='ipa'>/ˈkɛrɪktərˌaɪzɪŋ/</sup> Chemical<sup class='ipa'>/ˈkɛmɪkəl/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> Capabilities<sup class='ipa'>/ˌkeɪpəˈbɪlətiz/</sup> Through Symbolic<sup class='ipa'>/sɪmˈbɑlɪk/</sup> Verification<sup class='ipa'>/ˌvɛrəfəˈkeɪʃən/</sup> on Molecular<sup class='ipa'>/məˈlɛkjələr/</sup> Graphs</h2>
+                    <h2 class="paper-title">LLM-in-Sandbox<sup class='ipa'>/llminsandbox*/</sup> Elicits General Agentic Intelligence<sup class='ipa'>/ˌɪnˈtɛləʤəns/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Christoph Bartmann, Johannes Schimunek, Mykyta Ielanskyi</span>
-                        <span class="date">2026-01-21</span>
+                        <span class="authors">Daixuan Cheng, Shaohan Huang, Yuxian Gu</span>
+                        <span class="date">2026-01-22</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">A molecule&#39;s properties are fundamentally determined by its composition and structure encoded in its molecular graph. Thus, reasoning about molecular properties requires the ability to parse and understand the molecular graph. Large Language Models (LLMs) are increasingly applied to chemistry, tackling tasks such as molecular name conversion, captioning, text-guided generation, and property or reaction prediction. Most existing benchmarks emphasize general chemical knowledge, rely on literature or surrogate labels that risk leakage or bias, or reduce evaluation to multiple-choice questions. We introduce MolecularIQ, a molecular structure reasoning benchmark focused exclusively on symbolically verifiable tasks. MolecularIQ enables fine-grained evaluation of reasoning over molecular graphs and reveals capability patterns that localize model failures to specific tasks and molecular structures. This provides actionable insights into the strengths and limitations of current chemistry LLMs and guides the development of models that reason faithfully over molecular structure.</p>
+                        <p class="abstract-en">We introduce LLM-in-Sandbox, enabling LLMs to explore within a code sandbox (i.e., a virtual computer), to elicit general intelligence in non-code domains. We first demonstrate that strong LLMs, without additional training, exhibit generalization capabilities to leverage the code sandbox for non-code tasks. For example, LLMs spontaneously access external resources to acquire new knowledge, leverage the file system to handle long contexts, and execute scripts to satisfy formatting requirements. We further show that these agentic capabilities can be enhanced through LLM-in-Sandbox Reinforcement Learning (LLM-in-Sandbox-RL), which uses only non-agentic data to train models for sandbox exploration. Experiments demonstrate that LLM-in-Sandbox, in both training-free and post-trained settings, achieves robust generalization spanning mathematics, physics, chemistry, biomedicine, long-context understanding, and instruction following. Finally, we analyze LLM-in-Sandbox&#39;s efficiency from computational and system perspectives, and open-source it as a Python package to facilitate real-world deployment.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">分子的性质从根本上是由其分子图中编码的组成和结构决定的。因此，推理分子特性需要解析和理解分子图的能力。大型语言模型 (LLM) 越来越多地应用于化学，处理分子名称转换、字幕、文本引导生成以及性质或反应预测等任务。大多数现有基准强调一般化学知识，依赖于存在泄漏或偏见风险的文献或替代标签，或减少对多项选择题的评估。我们推出 MolecularIQ，一种分子结构推理基准，专门专注于符号可验证的任务。 MolecularIQ 能够对分子图推理进行细粒度评估，并揭示将模型故障定位到特定任务和分子结构的能力模式。这为当前化学法学硕士的优势和局限性提供了可行的见解，并指导了忠实推理分子结构的模型的开发。</p>
+                        <p class="abstract-zh">我们引入了 LLM-in-Sandbox，使 LLM 能够在代码沙箱（即虚拟计算机）中进行探索，以激发非代码领域的通用智能。我们首先证明，强大的法学硕士无需额外培训即可表现出利用代码沙箱执行非代码任务的泛化能力。例如，法学硕士自发访问外部资源以获取新知识，利用文件系统处理长上下文，并执行脚本以满足格式要求。我们进一步表明，这些代理能力可以通过LLM-in-Sandbox强化学习（LLM-in-Sandbox-RL）得到增强，该学习仅使用非代理数据来训练沙箱探索模型。实验表明，LLM-in-Sandbox 在免训练和训练后环境中都实现了涵盖数学、物理、化学、生物医学、长上下文理解和指令遵循的稳健泛化。最后，我们从计算和系统角度分析LLM-in-Sandbox的效率，并将其作为Python包开源以方便实际部署。</p>
                     </div>
                 </article>
                 
@@ -458,7 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 39</span>
+                        <span class="repo-stars">★ 40</span>
                         <div class="repo-info">
                             <strong class="repo-name">lucidrains/PoPE-pytorch</strong>
                             <p class="repo-desc">极坐标位置嵌入 (PoPE) 的有效实现（和探索）——来自 Gopalakrishnan 等人。在施米德胡贝尔领导下</p>
@@ -466,15 +466,15 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 11</span>
+                        <span class="repo-stars">★ 30</span>
                         <div class="repo-info">
-                            <strong class="repo-name">analyticalrohit/llms-from-scratch</strong>
-                            <p class="repo-desc">在 PyTorch 中从头开始构建像 LLM 一样的 ChatGPT，一步一步解释。</p>
+                            <strong class="repo-name">fangchenantek/Psychosis-of-AI</strong>
+                            <p class="repo-desc">一份来自2026年的AI精神病学诊断报告 / AI文明的病理诊断</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
+                        <span class="repo-stars">★ 5</span>
                         <div class="repo-info">
                             <strong class="repo-name">mrgehlot/iris-agent</strong>
                             <p class="repo-desc">Iris Agent 是一个轻量级、灵活的框架，用于在 Python 中构建 AI 代理。它简化了创建可以使用工具、管理内存以及与各种 LLM 提供商交互的代理的过程。</p>
@@ -498,10 +498,10 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
+                        <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">EugeneAnt/mcp-server-sdlxliff</strong>
-                            <p class="repo-desc">用于解析、读取和修改 SDLXLIFF 翻译文件 (SDL Trados Studio) 的 MCP 服务器。使 Claude Cowork 能够直接审阅和更正翻译。</p>
+                            <strong class="repo-name">atlas-php/atlas</strong>
+                            <p class="repo-desc">使用 Laravel 构建人工智能驱动的应用程序的统一界面</p>
                         </div>
                     </li>
                 
@@ -516,24 +516,24 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
+                            <strong class="repo-name">usestrix/benchmarks</strong>
+                            <p class="repo-desc">Strix 代理的评估工具</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">EugeneAnt/mcp-server-sdlxliff</strong>
+                            <p class="repo-desc">用于解析、读取和修改 SDLXLIFF 翻译文件 (SDL Trados Studio) 的 MCP 服务器。使 Claude Cowork 能够直接审阅和更正翻译。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
                             <strong class="repo-name">vixhal-baraiya/SuckCode</strong>
                             <p class="repo-desc">用 Python 编写的 Claude 代码的最小替代方案</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 1</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">Tarunjit45/DecisionTrace</strong>
-                            <p class="repo-desc">DecisionTrace 是一个简单而强大的工具，用于创建 AI 决策的审计跟踪。将其视为人工智能的飞行数据记录器。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 1</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">filiphaaland-haaland/White-Paper-The-Unified-Navigation-Formula-UNF-</strong>
-                            <p class="repo-desc">统一导航公式 (UNF)：一种数学框架，将意图 (I) 量化为每脉冲位数 (B/P)，以连接热力学、信息论和意识。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-01-22 22:19:19
+        生成于 2026-01-23 22:15:24
     </footer>
 </body>
 </html>
