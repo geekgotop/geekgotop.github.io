@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-01-25 22:17:11</span>
+        <span class="generated-time">更新于 2026-01-26 22:18:39</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Why Can't I Open My Drawer? Mitigating<sup class='ipa'>/ˈmɪtəˌgeɪtɪŋ/</sup> Object-Driven<sup class='ipa'>/objectdriven*/</sup> Shortcuts<sup class='ipa'>/ˈʃɔrtˌkəts/</sup> in Zero-Shot<sup class='ipa'>/zeroshot*/</sup> Compositional<sup class='ipa'>/ˌkɑmpəˈzɪʃənəl/</sup> Action Recognition<sup class='ipa'>/ˌrɛkɪgˈnɪʃən/</sup></h4>
+                            <h4 class="paper-title">A Scalable<sup class='ipa'>/ˈskeɪləbəl/</sup> Measure of Loss Landscape<sup class='ipa'>/ˈlænˌskeɪp/</sup> Curvature<sup class='ipa'>/ˈkərvəʧər/</sup> for Analyzing<sup class='ipa'>/ˈænəˌlaɪzɪŋ/</sup> the Training<sup class='ipa'>/ˈtreɪnɪŋ/</sup> Dynamics<sup class='ipa'>/daɪˈnæmɪks/</sup> of LLMs</h4>
                             <div class="paper-meta">
-                                <span class="authors">Geo Ahn, Inwoong Lee, Taeoh Kim</span>
-                                <span class="date">2026-01-22</span>
-                                <span class="categories">cs.CV | cs.AI</span>
+                                <span class="authors">Dayal Singh Kalra, Jean-Christophe Gagnon-Audet, Andrey Gromov</span>
+                                <span class="date">2026-01-23</span>
+                                <span class="categories">cs.LG | cond-mat.dis-nn</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">We study Compositional Video Understanding (CVU), where models must recognize verbs and objects and compose them to generalize to unseen combinations. We find that existing Zero-Shot Compositional Action Recognition (ZS-CAR) models fail primarily due to an overlooked failure mode: object-driven verb...</p>
+                                <p class="abstract-en">Understanding the curvature evolution of the loss landscape is fundamental to analyzing the training dynamics of neural networks. The most commonly studied measure, Hessian sharpness ($λ_{\max}^H$) -- the largest eigenvalue of the loss Hessian -- determines local training stability and interacts wit...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">我们研究组合视频理解（CVU），其中模型必须识别动词和宾语并将它们组合起来以推广到看不见的组合。我们发现现有的零样本组合动作识别（ZS-CAR）模型失败主要是由于被忽视的失败模式：对象驱动的动词快捷方式。通过系统分析，我们表明这种行为是由两个相互交织的因素引起的：构图监督的严重稀疏和偏斜，以及动词和宾语之间的不对称学习难度。随着训练的进展，现有的 ZS-CAR 模型越来越忽视视觉证据并过度拟合共现统计数据。因此，现有模型无法从看不见的动词-宾语组合中获得组合识别的好处。为了解决这个问题，我们提出了 RCORE，这是一个简单而有效的框架，可以强制执行基于时间的动词学习。 RCORE 引入了（i）一种组合感知增强功能，可以在不破坏运动线索的情况下使动词-宾语组合多样化，以及（ii）一种时间顺序正则化损失，可以通过显式建模时间结构来惩罚快捷行为。在 Sth-com 和我们新构建的 EK100-com 这两个基准测试中，RCORE 显着提高了未见的合成准确性，减少了对共现偏差的依赖，并实现了一致的正合成差距。我们的研究结果表明，对象驱动的快捷方式是 ZS-CAR 的关键限制因素，并证明解决这些问题对于稳健的合成视频理解至关重要。</p>
+                                    <p class="abstract-zh">了解损失景观的曲率演化是分析神经网络训练动态的基础。最常研究的衡量标准是 Hessian 锐度 ($λ_{\max}^H$)——损失 Hessian 的最大特征值——决定局部训练稳定性并与整个训练过程中的学习率相互作用。尽管 Hessian 清晰度在分析训练动态方面具有重要意义，但由于计算成本较高，直接测量 Hessian 清晰度对于大型语言模型 (LLM) 来说仍然是令人望而却步的。我们分析 $\textit{临界锐度}$ ($λ_c$)，这是一种计算有效的测量方法，在给定更新方向 $Δ\mathbfθ$ 的情况下，需要不到 $10$ 的前向传递。至关重要的是，该测量捕捉了有据可查的 Hessian 锐度现象，包括渐进锐化和稳定边缘。使用这种方法，我们首次大规模演示了这些锐度现象，参数高达 $7$B，涵盖 OLMo-2 模型的预训练和训练中期。我们进一步引入$\textit{相对临界锐度}$ ($λ_c^{1\to 2}$)，它量化一种损失景观的曲率，同时优化另一种损失景观，以分析从预训练到微调的过渡并指导数据混合策略。临界清晰度为从业者提供了一种实用工具，用于诊断曲率动力学并为大规模数据组合选择提供信息。更广泛地说，我们的工作表明，可扩展的曲率测量可以为大规模训练提供可行的见解。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2601.16211v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2601.16979v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">PyraTok: Language-Aligned<sup class='ipa'>/languagealigned*/</sup> Pyramidal<sup class='ipa'>/pərˈæmədəl/</sup> Tokenizer<sup class='ipa'>/tokenizer*/</sup> for Video Understanding<sup class='ipa'>/ˌəndərˈstændɪŋ/</sup> and Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h4>
+                            <h4 class="paper-title">BONO-Bench:<sup class='ipa'>/bonobench*/</sup> A Comprehensive<sup class='ipa'>/ˌkɑmpriˈhɛnsɪv/</sup> Test Suite for Bi-objective<sup class='ipa'>/biobjective*/</sup> Numerical<sup class='ipa'>/nuˈmɛrɪkəl/</sup> Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> with Traceable<sup class='ipa'>/ˈtreɪsəbəl/</sup> Pareto Sets</h4>
                             <div class="paper-meta">
-                                <span class="authors">Onkar Susladkar, Tushar Prakash, Adheesh Juvekar</span>
-                                <span class="date">2026-01-22</span>
-                                <span class="categories">cs.CV | cs.AI</span>
+                                <span class="authors">Lennart Schäpermeier, Pascal Kerschke</span>
+                                <span class="date">2026-01-23</span>
+                                <span class="categories">math.OC | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Discrete video VAEs underpin modern text-to-video generation and video understanding systems, yet existing tokenizers typically learn visual codebooks at a single scale with limited vocabularies and shallow language supervision, leading to poor cross-modal alignment and zero-shot transfer. We introd...</p>
+                                <p class="abstract-en">The evaluation of heuristic optimizers on test problems, better known as \emph{benchmarking}, is a cornerstone of research in multi-objective optimization.   However, most test problems used in benchmarking numerical multi-objective black-box optimizers come from one of two flawed approaches: On the...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">离散视频 VAE 是现代文本到视频生成和视频理解系统的基础，但现有的分词器通常在单一尺度上学习视觉码本，词汇量有限，语言监督浅层，导致跨模态对齐和零样本传输较差。我们引入了 PyraTok，一种与语言对齐的金字塔分词器，可以跨多个时空分辨率学习语义结构的离散潜在变量。 PyraTok 建立在预训练视频 VAE 和新颖的语言对齐金字塔量化 (LaPQ) 模块的基础上，该模块使用共享的大型二进制码本在多个深度上离散化编码器特征，从而产生紧凑但富有表现力的视频标记序列。为了将视觉标记与语言紧密结合，PyraTok 联合优化了标记层次结构上的多尺度文本引导量化和全局自回归目标。在十个基准测试中，PyraTok 提供了最先进的 (SOTA) 视频重建，持续提高文本到视频的质量，并在视频分割、时间动作定位和视频理解方面设置了新的 SOTA 零镜头性能，稳健地扩展到高达 4K/8K 分辨率。</p>
+                                    <p class="abstract-zh">启发式优化器对测试问题的评估，更广为人知的是\emph{基准测试}，是多目标优化研究的基石。   然而，用于对数值多目标黑盒优化器进行基准测试的大多数测试问题都来自两种有缺陷的方法之一：一方面，问题是手动构造的，这导致问题具有易于理解的最佳解决方案，但具有不切实际的属性和偏差。   另一方面，更现实、更复杂的单目标问题被复合为多目标问题，但缺乏对问题属性的控制和理解。   本文提出了一种用于双目标数值优化问题的广泛问题生成方法，该方法包括将理论上易于理解的凸二次函数组合到具有或不具有全局结构的单峰和多峰景观中。   它支持测试问题属性的配置，例如决策变量的数量、局部最优、帕累托前沿形状、目标空间中的平台或调节程度，同时保持理论可处理性：最佳前沿可以近似到任意精度的帕累托兼容性能指标，例如超体积或精确的 R2 指标。   为了演示生成器的功能，创建了一个包含 20 个问题类别的测试套件，称为 \emph{BONO-Bench}，并随后将其用作说明性基准研究的基础。   最后，我们提出的生成器的一般方法以及相关的测试套件在 Python 包 \texttt{bonobench} 中公开发布，以促进可重复的基准测试。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2601.16210v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2601.16970v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">LLM-in-Sandbox<sup class='ipa'>/llminsandbox*/</sup> Elicits General Agentic Intelligence<sup class='ipa'>/ˌɪnˈtɛləʤəns/</sup></h4>
+                            <h4 class="paper-title">Empowering<sup class='ipa'>/ɪmˈpaʊərɪŋ/</sup> Medical Equipment<sup class='ipa'>/ɪkˈwɪpmənt/</sup> Sustainability<sup class='ipa'>/səˌsteɪnəˈbɪlɪti/</sup> in Low-Resource<sup class='ipa'>/lowresource*/</sup> Settings:<sup class='ipa'>/ˈsɛtɪŋz/</sup> An AI-Powered<sup class='ipa'>/aipowered*/</sup> Diagnostic<sup class='ipa'>/ˌdaɪəgˈnɑstɪk/</sup> and Support Platform<sup class='ipa'>/ˈplætˌfɔrm/</sup> for Biomedical<sup class='ipa'>/ˌbaɪoʊˈmɛdɪkəl/</sup> Technicians<sup class='ipa'>/tɛkˈnɪʃənz/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Daixuan Cheng, Shaohan Huang, Yuxian Gu</span>
-                                <span class="date">2026-01-22</span>
-                                <span class="categories">cs.CL | cs.AI</span>
+                                <span class="authors">Bernes Lorier Atabonfack, Ahmed Tahiru Issah, Mohammed Hardi Abdul Baaki</span>
+                                <span class="date">2026-01-23</span>
+                                <span class="categories">cs.AI | cs.IR</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">We introduce LLM-in-Sandbox, enabling LLMs to explore within a code sandbox (i.e., a virtual computer), to elicit general intelligence in non-code domains. We first demonstrate that strong LLMs, without additional training, exhibit generalization capabilities to leverage the code sandbox for non-cod...</p>
+                                <p class="abstract-en">In low- and middle-income countries (LMICs), a significant proportion of medical diagnostic equipment remains underutilized or non-functional due to a lack of timely maintenance, limited access to technical expertise, and minimal support from manufacturers, particularly for devices acquired through ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">我们引入了 LLM-in-Sandbox，使 LLM 能够在代码沙箱（即虚拟计算机）中进行探索，以激发非代码领域的通用智能。我们首先证明，强大的法学硕士无需额外培训即可表现出利用代码沙箱执行非代码任务的泛化能力。例如，法学硕士自发访问外部资源以获取新知识，利用文件系统处理长上下文，并执行脚本以满足格式要求。我们进一步表明，这些代理能力可以通过LLM-in-Sandbox强化学习（LLM-in-Sandbox-RL）得到增强，该学习仅使用非代理数据来训练沙箱探索模型。实验表明，LLM-in-Sandbox 在免训练和训练后环境中都实现了涵盖数学、物理、化学、生物医学、长上下文理解和指令遵循的稳健泛化。最后，我们从计算和系统角度分析LLM-in-Sandbox的效率，并将其作为Python包开源以方便实际部署。</p>
+                                    <p class="abstract-zh">在低收入和中等收入国家（LMIC），由于缺乏及时维护、获得技术专业知识的机会有限以及制造商的支持很少，很大一部分医疗诊断设备仍然未得到充分利用或无法运行，特别是对于通过第三方供应商或捐赠购买的设备。这一挑战导致设备停机时间增加、诊断延迟和患者护理受损。这项研究探索了人工智能支持平台的开发和验证，旨在帮助生物医学技术人员实时诊断和修复医疗设备。该系统将大型语言模型 (LLM) 与用户友好的 Web 界面集成在一起，使成像技术人员/放射技师和生物医学技术人员能够输入错误代码或设备症状，并获得准确的分步故障排除指导。该平台还包括一个全球点对点讨论论坛，以支持知识交流并为罕见或未记录的问题提供更多背景信息。使用飞利浦 HDI 5000 超声波机开发了概念验证，错误代码解释精度达到 100%，纠正措施建议精度达到 80%。这项研究证明了人工智能驱动系统支持医疗设备维护的可行性和潜力，旨在减少设备停机时间，以改善资源有限环境中的医疗服务。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2601.16206v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2601.16967v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -917,24 +917,10 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
-                            <a href="https://github.com/lucidrains/PoPE-pytorch" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">PoPE-pytorch</span>
-                                    <span class="repo-stars">⭐ 41</span>
-                                </div>
-                                <p class="repo-desc">极坐标位置嵌入 (PoPE) 的有效实现（和探索）——来自 Gopalakrishnan 等人。在施米德胡贝尔领导下</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-01-19</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/fangchenantek/Psychosis-of-AI" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Psychosis-of-AI</span>
-                                    <span class="repo-stars">⭐ 33</span>
+                                    <span class="repo-stars">⭐ 35</span>
                                 </div>
                                 <p class="repo-desc">一份来自2026年的AI精神病学诊断报告 / AI文明的病理诊断</p>
                                 <div class="repo-meta">
@@ -948,7 +934,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/sidmohan0/tesserack" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">tesserack</span>
-                                    <span class="repo-stars">⭐ 22</span>
+                                    <span class="repo-stars">⭐ 26</span>
                                 </div>
                                 <p class="repo-desc">AI 学会完全在浏览器中玩 Pokemon Red。 WebGPU LLM + TensorFlow.js 神经网络 + WASM 模拟器。无需服务器。</p>
                                 <div class="repo-meta">
@@ -962,7 +948,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/usestrix/benchmarks" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">benchmarks</span>
-                                    <span class="repo-stars">⭐ 5</span>
+                                    <span class="repo-stars">⭐ 6</span>
                                 </div>
                                 <p class="repo-desc">Strix 代理的评估工具</p>
                                 <div class="repo-meta">
@@ -973,15 +959,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/frangelbarrera/AI-Encyclopedia" target="_blank" class="repo-link">
+                            <a href="https://github.com/alisulmanpro/fts-technologies-uk" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">AI-Encyclopedia</span>
+                                    <span class="repo-name">fts-technologies-uk</span>
                                     <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc">最全面的人工智能百科全书，包含800+工具、资源和前沿的人工智能应用</p>
+                                <p class="repo-desc">FTS-Technologies UK – 创新的网络解决方案、人工智能驱动的工具和数字服务。官方网站展示了我们在现代技术方面的专业知识。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-01-19</span>
+                                    <span class="repo-lang">JavaScript</span>
+                                    <span class="repo-date">2026-01-22</span>
                                 </div>
                             </a>
                         </li>
@@ -1001,34 +987,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/alisulmanpro/fts-technologies-uk" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">fts-technologies-uk</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">FTS-Technologies UK – 创新的网络解决方案、人工智能驱动的工具和数字服务。官方网站展示了我们在现代技术方面的专业知识。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">JavaScript</span>
-                                    <span class="repo-date">2026-01-22</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/AICU-HEALTH/aicuflow-python" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">aicuflow-python</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">（工作测试版）将数据收集、机器学习和大数据工作流程与自定义 Python 代码集成！这是官方的 python-client 存储库。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-01-19</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/AICU-HEALTH/aicuflow-arduino" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">aicuflow-arduino</span>
@@ -1036,22 +994,64 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 </div>
                                 <p class="repo-desc">（早期测试版）Arduino 上的 aicuflow 客户端！收集数据、训练模型、可视化和推断结果！</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">C++</span>
+                                    <span class="repo-lang">C</span>
                                     <span class="repo-date">2026-01-23</span>
                                 </div>
                             </a>
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/EugeneAnt/mcp-server-sdlxliff" target="_blank" class="repo-link">
+                            <a href="https://github.com/jinzurei/Ignis" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">mcp-server-sdlxliff</span>
+                                    <span class="repo-name">Ignis</span>
                                     <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">用于解析、读取和修改 SDLXLIFF 翻译文件 (SDL Trados Studio) 的桌面聊天和 MCP 服务器。使 Claude Cowork 能够直接审阅和更正翻译。</p>
+                                <p class="repo-desc">Ignis 是一款本地运行的人工智能助手，它将先进的认知记忆系统与动态个性进化相结合，同时保持您的硬件的完全隐私。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-01-19</span>
+                                    <span class="repo-date">2026-01-23</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/onuion/onuion" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">onuion</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">开源混合（基于规则 + ML）安全风险分析系统，用于亚毫秒级推理时间的会话数据分析。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-01-23</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/ihatesea69/office-powerpoint-mcp-server" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">office-powerpoint-mcp-server</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">适用于 AI 助手的企业级 PowerPoint 自动化协议</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-01-22</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/yaamwebsolutions/agentsocial" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">agentsocial</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">由人工智能驱动的社交平台，具有可配置的人工智能代理。 @提及@grok、@writer、@dev 等代理以获得智能响应。 Yaam AI 原生生态系统的一部分。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-01-23</span>
                                 </div>
                             </a>
                         </li>
