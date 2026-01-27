@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">A Scalable<sup class='ipa'>/ˈskeɪləbəl/</sup> Measure of Loss Landscape<sup class='ipa'>/ˈlænˌskeɪp/</sup> Curvature<sup class='ipa'>/ˈkərvəʧər/</sup> for Analyzing<sup class='ipa'>/ˈænəˌlaɪzɪŋ/</sup> the Training<sup class='ipa'>/ˈtreɪnɪŋ/</sup> Dynamics<sup class='ipa'>/daɪˈnæmɪks/</sup> of LLMs</h2>
+                    <h2 class="paper-title">ctELM: Decoding<sup class='ipa'>/dɪˈkoʊdɪŋ/</sup> and Manipulating<sup class='ipa'>/məˈnɪpjəˌleɪtɪŋ/</sup> Embeddings<sup class='ipa'>/embeddings*/</sup> of Clinical<sup class='ipa'>/ˈklɪnɪkəl/</sup> Trials with Embedding<sup class='ipa'>/embedding*/</sup> Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h2>
                     <p class="paper-meta">
-                        <span class="authors">Dayal Singh Kalra, Jean-Christophe Gagnon-Audet, Andrey Gromov</span>
-                        <span class="date">2026-01-23</span>
+                        <span class="authors">Brian Ondov, Chia-Hsuan Chang, Yujia Zhou</span>
+                        <span class="date">2026-01-26</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Understanding the curvature evolution of the loss landscape is fundamental to analyzing the training dynamics of neural networks. The most commonly studied measure, Hessian sharpness ($λ_{\max}^H$) -- the largest eigenvalue of the loss Hessian -- determines local training stability and interacts with the learning rate throughout training. Despite its significance in analyzing training dynamics, direct measurement of Hessian sharpness remains prohibitive for Large Language Models (LLMs) due to high computational cost. We analyze $\textit{critical sharpness}$ ($λ_c$), a computationally efficient measure requiring fewer than $10$ forward passes given the update direction $Δ\mathbfθ$. Critically, this measure captures well-documented Hessian sharpness phenomena, including progressive sharpening and Edge of Stability. Using this measure, we provide the first demonstration of these sharpness phenomena at scale, up to $7$B parameters, spanning both pre-training and mid-training of OLMo-2 models. We further introduce $\textit{relative critical sharpness}$ ($λ_c^{1\to 2}$), which quantifies the curvature of one loss landscape while optimizing another, to analyze the transition from pre-training to fine-tuning and guide data mixing strategies. Critical sharpness provides practitioners with a practical tool for diagnosing curvature dynamics and informing data composition choices at scale. More broadly, our work shows that scalable curvature measures can provide actionable insights for large-scale training.</p>
+                        <p class="abstract-en">Text embeddings have become an essential part of a variety of language applications. However, methods for interpreting, exploring and reversing embedding spaces are limited, reducing transparency and precluding potentially valuable generative use cases. In this work, we align Large Language Models to embeddings of clinical trials using the recently reported Embedding Language Model (ELM) method. We develop an open-source, domain-agnostic ELM architecture and training framework, design training tasks for clinical trials, and introduce an expert-validated synthetic dataset. We then train a series of ELMs exploring the impact of tasks and training regimes. Our final model, ctELM, can accurately describe and compare unseen clinical trials from embeddings alone and produce plausible clinical trials from novel vectors. We further show that generated trial abstracts are responsive to moving embeddings along concept vectors for age and sex of study subjects. Our public ELM implementation and experimental results will aid the alignment of Large Language Models to embedding spaces in the biomedical domain and beyond.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">了解损失景观的曲率演化是分析神经网络训练动态的基础。最常研究的衡量标准是 Hessian 锐度 ($λ_{\max}^H$)——损失 Hessian 的最大特征值——决定局部训练稳定性并与整个训练过程中的学习率相互作用。尽管 Hessian 清晰度在分析训练动态方面具有重要意义，但由于计算成本较高，直接测量 Hessian 清晰度对于大型语言模型 (LLM) 来说仍然是令人望而却步的。我们分析 $\textit{临界锐度}$ ($λ_c$)，这是一种计算有效的测量方法，在给定更新方向 $Δ\mathbfθ$ 的情况下，需要不到 $10$ 的前向传递。至关重要的是，该测量捕捉了有据可查的 Hessian 锐度现象，包括渐进锐化和稳定边缘。使用这种方法，我们首次大规模演示了这些锐度现象，参数高达 $7$B，涵盖 OLMo-2 模型的预训练和训练中期。我们进一步引入$\textit{相对临界锐度}$ ($λ_c^{1\to 2}$)，它量化一种损失景观的曲率，同时优化另一种损失景观，以分析从预训练到微调的过渡并指导数据混合策略。临界清晰度为从业者提供了一种实用工具，用于诊断曲率动力学并为大规模数据组合选择提供信息。更广泛地说，我们的工作表明，可扩展的曲率测量可以为大规模训练提供可行的见解。</p>
+                        <p class="abstract-zh">文本嵌入已成为各种语言应用程序的重要组成部分。然而，解释、探索和反转嵌入空间的方法是有限的，降低了透明度并排除了潜在有价值的生成用例。在这项工作中，我们使用最近报道的嵌入语言模型（ELM）方法将大型语言模型与临床试验的嵌入结合起来。我们开发了一个开源的、与领域无关的 ELM 架构和培训框架，设计临床试验的培训任务，并引入经过专家验证的合成数据集。然后，我们训练一系列 ELM，探索任务和训练制度的影响。我们的最终模型 ctELM 可以准确地描述和比较仅来自嵌入的未见过的临床试验，并从新的载体产生合理的临床试验。我们进一步表明，生成的试验摘要对沿着研究对象年龄和性别的概念向量移动嵌入做出响应。我们的公共 ELM 实施和实验结果将有助于将大型语言模型与生物医学领域及其他领域的嵌入空间保持一致。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">BONO-Bench:<sup class='ipa'>/bonobench*/</sup> A Comprehensive<sup class='ipa'>/ˌkɑmpriˈhɛnsɪv/</sup> Test Suite for Bi-objective<sup class='ipa'>/biobjective*/</sup> Numerical<sup class='ipa'>/nuˈmɛrɪkəl/</sup> Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> with Traceable<sup class='ipa'>/ˈtreɪsəbəl/</sup> Pareto Sets</h2>
+                    <h2 class="paper-title">Reuse your FLOPs: Scaling RL on Hard Problems<sup class='ipa'>/ˈprɑbləmz/</sup> by Conditioning<sup class='ipa'>/kənˈdɪʃənɪŋ/</sup> on Very Off-Policy<sup class='ipa'>/offpolicy*/</sup> Prefixes<sup class='ipa'>/prefixes*/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Lennart Schäpermeier, Pascal Kerschke</span>
-                        <span class="date">2026-01-23</span>
+                        <span class="authors">Amrith Setlur, Zijian Wang, Andrew Cohen</span>
+                        <span class="date">2026-01-26</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">The evaluation of heuristic optimizers on test problems, better known as \emph{benchmarking}, is a cornerstone of research in multi-objective optimization.   However, most test problems used in benchmarking numerical multi-objective black-box optimizers come from one of two flawed approaches: On the one hand, problems are constructed manually, which result in problems with well-understood optimal solutions, but unrealistic properties and biases.   On the other hand, more realistic and complex single-objective problems are composited into multi-objective problems, but with a lack of control and understanding of problem properties.   This paper proposes an extensive problem generation approach for bi-objective numerical optimization problems consisting of the combination of theoretically well-understood convex-quadratic functions into unimodal and multimodal landscapes with and without global structure.   It supports configuration of test problem properties, such as the number of decision variables, local optima, Pareto front shape, plateaus in the objective space, or degree of conditioning, while maintaining theoretical tractability: The optimal front can be approximated to an arbitrary degree of precision regarding Pareto-compliant performance indicators such as the hypervolume or the exact R2 indicator.   To demonstrate the generator&#39;s capabilities, a test suite of 20 problem categories, called \emph{BONO-Bench}, is created and subsequently used as a basis of an illustrative benchmark study.   Finally, the general approach underlying our proposed generator, together with the associated test suite, is publicly released in the Python package \texttt{bonobench} to facilitate reproducible benchmarking.</p>
+                        <p class="abstract-en">Typical reinforcement learning (RL) methods for LLM reasoning waste compute on hard problems, where correct on-policy traces are rare, policy gradients vanish, and learning stalls. To bootstrap more efficient RL, we consider reusing old sampling FLOPs (from prior inference or RL training) in the form of off-policy traces. Standard off-policy methods supervise against off-policy data, causing instabilities during RL optimization. We introduce PrefixRL, where we condition on the prefix of successful off-policy traces and run on-policy RL to complete them, side-stepping off-policy instabilities. PrefixRL boosts the learning signal on hard problems by modulating the difficulty of the problem through the off-policy prefix length. We prove that the PrefixRL objective is not only consistent with the standard RL objective but also more sample efficient. Empirically, we discover back-generalization: training only on prefixed problems generalizes to out-of-distribution unprefixed performance, with learned strategies often differing from those in the prefix. In our experiments, we source the off-policy traces by rejection sampling with the base model, creating a self-improvement loop. On hard reasoning problems, PrefixRL reaches the same training reward 2x faster than the strongest baseline (SFT on off-policy data then RL), even after accounting for the compute spent on the initial rejection sampling, and increases the final reward by 3x. The gains transfer to held-out benchmarks, and PrefixRL is still effective when off-policy traces are derived from a different model family, validating its flexibility in practical settings.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">启发式优化器对测试问题的评估，更广为人知的是\emph{基准测试}，是多目标优化研究的基石。   然而，用于对数值多目标黑盒优化器进行基准测试的大多数测试问题都来自两种有缺陷的方法之一：一方面，问题是手动构造的，这导致问题具有易于理解的最佳解决方案，但具有不切实际的属性和偏差。   另一方面，更现实、更复杂的单目标问题被复合为多目标问题，但缺乏对问题属性的控制和理解。   本文提出了一种用于双目标数值优化问题的广泛问题生成方法，该方法包括将理论上易于理解的凸二次函数组合到具有或不具有全局结构的单峰和多峰景观中。   它支持测试问题属性的配置，例如决策变量的数量、局部最优、帕累托前沿形状、目标空间中的平台或调节程度，同时保持理论可处理性：最佳前沿可以近似到任意精度的帕累托兼容性能指标，例如超体积或精确的 R2 指标。   为了演示生成器的功能，创建了一个包含 20 个问题类别的测试套件，称为 \emph{BONO-Bench}，并随后将其用作说明性基准研究的基础。   最后，我们提出的生成器的一般方法以及相关的测试套件在 Python 包 \texttt{bonobench} 中公开发布，以促进可重复的基准测试。</p>
+                        <p class="abstract-zh">用于 LLM 推理的典型强化学习 (RL) 方法浪费了对难题的计算，其中正确的策略跟踪很少、策略梯度消失并且学习停滞。为了引导更高效的 RL，我们考虑以离策略跟踪的形式重用旧的采样 FLOP（来自先前的推理或 RL 训练）。标准的离策略方法会监督离策略数据，从而导致 RL 优化过程中的不稳定。我们引入了 PrefixRL，以成功的离策略跟踪的前缀为条件，并运行在策略 RL 来完成它们，从而避免了离策略的不稳定性。 PrefixRL 通过离策略前缀长度调节问题的难度来增强困难问题的学习信号。我们证明 PrefixRL 目标不仅与标准 RL 目标一致，而且样本效率更高。根据经验，我们发现了反向泛化：仅针对前缀问题的训练泛化到分布外的无前缀性能，学习到的策略通常与前缀中的策略不同。在我们的实验中，我们通过使用基本模型进行拒绝采样来获取离策略痕迹，从而创建一个自我改进循环。在硬推理问题上，PrefixRL 达到相同训练奖励的速度比最强基线（非策略数据上的 SFT，然后是 RL）快 2 倍，即使考虑了初始拒绝采样上花费的计算量，并将最终奖励增加了 3 倍。收益转移到保留的基准上，当离策略跟踪来自不同的模型系列时，PrefixRL 仍然有效，验证了其在实际设置中的灵活性。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Empowering<sup class='ipa'>/ɪmˈpaʊərɪŋ/</sup> Medical Equipment<sup class='ipa'>/ɪkˈwɪpmənt/</sup> Sustainability<sup class='ipa'>/səˌsteɪnəˈbɪlɪti/</sup> in Low-Resource<sup class='ipa'>/lowresource*/</sup> Settings:<sup class='ipa'>/ˈsɛtɪŋz/</sup> An AI-Powered<sup class='ipa'>/aipowered*/</sup> Diagnostic<sup class='ipa'>/ˌdaɪəgˈnɑstɪk/</sup> and Support Platform<sup class='ipa'>/ˈplætˌfɔrm/</sup> for Biomedical<sup class='ipa'>/ˌbaɪoʊˈmɛdɪkəl/</sup> Technicians<sup class='ipa'>/tɛkˈnɪʃənz/</sup></h2>
+                    <h2 class="paper-title">MEGnifying<sup class='ipa'>/megnifying*/</sup> Emotion: Sentiment<sup class='ipa'>/ˈsɛnəmənt/</sup> Analysis<sup class='ipa'>/æˈnælɪsɪs/</sup> from Annotated<sup class='ipa'>/ˌænəˈteɪtɪd/</sup> Brain Data</h2>
                     <p class="paper-meta">
-                        <span class="authors">Bernes Lorier Atabonfack, Ahmed Tahiru Issah, Mohammed Hardi Abdul Baaki</span>
-                        <span class="date">2026-01-23</span>
+                        <span class="authors">Brian Liu, Oiwi Parker Jones</span>
+                        <span class="date">2026-01-26</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">In low- and middle-income countries (LMICs), a significant proportion of medical diagnostic equipment remains underutilized or non-functional due to a lack of timely maintenance, limited access to technical expertise, and minimal support from manufacturers, particularly for devices acquired through third-party vendors or donations. This challenge contributes to increased equipment downtime, delayed diagnoses, and compromised patient care. This research explores the development and validation of an AI-powered support platform designed to assist biomedical technicians in diagnosing and repairing medical devices in real-time. The system integrates a large language model (LLM) with a user-friendly web interface, enabling imaging technologists/radiographers and biomedical technicians to input error codes or device symptoms and receive accurate, step-by-step troubleshooting guidance. The platform also includes a global peer-to-peer discussion forum to support knowledge exchange and provide additional context for rare or undocumented issues. A proof of concept was developed using the Philips HDI 5000 ultrasound machine, achieving 100% precision in error code interpretation and 80% accuracy in suggesting corrective actions. This study demonstrates the feasibility and potential of AI-driven systems to support medical device maintenance, with the aim of reducing equipment downtime to improve healthcare delivery in resource-constrained environments.</p>
+                        <p class="abstract-en">Decoding emotion from brain activity could unlock a deeper understanding of the human experience. While a number of existing datasets align brain data with speech and with speech transcripts, no datasets have annotated brain data with sentiment. To bridge this gap, we explore the use of pre-trained Text-to-Sentiment models to annotate non invasive brain recordings, acquired using magnetoencephalography (MEG), while participants listened to audiobooks. Having annotated the text, we employ force-alignment of the text and audio to align our sentiment labels with the brain recordings. It is straightforward then to train Brainto-Sentiment models on these data. Experimental results show an improvement in balanced accuracy for Brain-to-Sentiment compared to baseline, supporting the proposed approach as a proof-of-concept for leveraging existing MEG datasets and learning to decode sentiment directly from the brain.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">在低收入和中等收入国家（LMIC），由于缺乏及时维护、获得技术专业知识的机会有限以及制造商的支持很少，很大一部分医疗诊断设备仍然未得到充分利用或无法运行，特别是对于通过第三方供应商或捐赠购买的设备。这一挑战导致设备停机时间增加、诊断延迟和患者护理受损。这项研究探索了人工智能支持平台的开发和验证，旨在帮助生物医学技术人员实时诊断和修复医疗设备。该系统将大型语言模型 (LLM) 与用户友好的 Web 界面集成在一起，使成像技术人员/放射技师和生物医学技术人员能够输入错误代码或设备症状，并获得准确的分步故障排除指导。该平台还包括一个全球点对点讨论论坛，以支持知识交流并为罕见或未记录的问题提供更多背景信息。使用飞利浦 HDI 5000 超声波机开发了概念验证，错误代码解释精度达到 100%，纠正措施建议精度达到 80%。这项研究证明了人工智能驱动系统支持医疗设备维护的可行性和潜力，旨在减少设备停机时间，以改善资源有限环境中的医疗服务。</p>
+                        <p class="abstract-zh">从大脑活动中解码情绪可以加深对人类经历的理解。虽然许多现有数据集将大脑数据与语音和语音转录本对齐，但没有数据集用情感注释大脑数据。为了弥补这一差距，我们探索使用预先训练的文本到情感模型来注释非侵入性大脑录音，这些录音是在参与者听有声读物时使用脑磁图 (MEG) 获得的。对文本进行注释后，我们使用文本和音频的强制对齐来将我们的情感标签与大脑录音对齐。然后，根据这些数据训练 Brainto-Sentiment 模型就很简单了。实验结果表明，与基线相比，大脑到情感的平衡准确性有所提高，支持所提出的方法作为利用现有 MEG 数据集和学习直接从大脑解码情感的概念验证。</p>
                     </div>
                 </article>
                 
@@ -458,7 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 35</span>
+                        <span class="repo-stars">★ 36</span>
                         <div class="repo-info">
                             <strong class="repo-name">fangchenantek/Psychosis-of-AI</strong>
                             <p class="repo-desc">一份来自2026年的AI精神病学诊断报告 / AI文明的病理诊断</p>
@@ -466,18 +466,26 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 26</span>
+                        <span class="repo-stars">★ 28</span>
                         <div class="repo-info">
                             <strong class="repo-name">sidmohan0/tesserack</strong>
-                            <p class="repo-desc">AI 学会完全在浏览器中玩 Pokemon Red。 WebGPU LLM + TensorFlow.js 神经网络 + WASM 模拟器。无需服务器。</p>
+                            <p class="repo-desc">LLM + RL 代理击败 Pokemon Red</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 6</span>
+                        <span class="repo-stars">★ 7</span>
                         <div class="repo-info">
                             <strong class="repo-name">usestrix/benchmarks</strong>
                             <p class="repo-desc">Strix 代理的评估工具</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 4</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">galpt/you</strong>
+                            <p class="repo-desc">一个自主的 AI 代理协调器，可在 OpenCode 内协调整个软件公司</p>
                         </div>
                     </li>
                 
@@ -492,30 +500,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">galpt/you</strong>
-                            <p class="repo-desc">一个自主的 AI 代理协调器，可在 OpenCode 内协调整个软件公司</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">AICU-HEALTH/aicuflow-arduino</strong>
-                            <p class="repo-desc">（早期测试版）Arduino 上的 aicuflow 客户端！收集数据、训练模型、可视化和推断结果！</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">jinzurei/Ignis</strong>
-                            <p class="repo-desc">Ignis 是一款本地运行的人工智能助手，它将先进的认知记忆系统与动态个性进化相结合，同时保持您的硬件的完全隐私。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
                             <strong class="repo-name">onuion/onuion</strong>
                             <p class="repo-desc">开源混合（基于规则 + ML）安全风险分析系统，用于亚毫秒级推理时间的会话数据分析。</p>
                         </div>
@@ -524,16 +508,32 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">ihatesea69/office-powerpoint-mcp-server</strong>
-                            <p class="repo-desc">适用于 AI 助手的企业级 PowerPoint 自动化协议</p>
+                            <strong class="repo-name">aaronaalmendarez/gemini-minecraft</strong>
+                            <p class="repo-desc">第一个 Minecraft AI 不仅会说话，而且还生活在您的世界中。 Fabric 1.21.1 的高性能 Gemini 驱动的认知伴侣。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">yaamwebsolutions/agentsocial</strong>
-                            <p class="repo-desc">由人工智能驱动的社交平台，具有可配置的人工智能代理。 @提及@grok、@writer、@dev 等代理以获得智能响应。 Yaam AI 原生生态系统的一部分。</p>
+                            <strong class="repo-name">EOTS-SODA/Serpentnote</strong>
+                            <p class="repo-desc">我第一次尝试氛围编码，我弄乱了像 Illustrious XL、Chroma 和 Z-Image Turbo 这样的模型，并且需要一个类似库的空间来保存我的提示，所以我“制作”了这个应用程序，它不仅可以私下保存它们，还可以帮助您制作新的提示。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">AICU-HEALTH/aicuflow-arduino</strong>
+                            <p class="repo-desc">Arduino-ESP32/8266 等上的 aicuflow 客户端！收集传感器数据、训练模型、可视化和推断结果！主草图中有许多工具和简洁的功能（电压表、扫描仪、游戏），开箱即用，无需任何库安装或自定义设置！</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">jinzurei/Ignis</strong>
+                            <p class="repo-desc">Ignis 是一款本地运行的人工智能助手，它将先进的认知记忆系统与动态个性进化相结合，同时保持您的硬件的完全隐私。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-01-26 22:18:39
+        生成于 2026-01-27 22:19:51
     </footer>
 </body>
 </html>
