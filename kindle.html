@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Evaluation<sup class='ipa'>/ɪˌvæljuˈeɪʃən/</sup> of Oncotimia:<sup class='ipa'>/oncotimia*/</sup> An LLM based system for supporting<sup class='ipa'>/səˈpɔrtɪŋ/</sup> tumour boards</h2>
+                    <h2 class="paper-title">Evolutionary<sup class='ipa'>/ˌɛvəˈluʃəˌnɛri/</sup> Strategies<sup class='ipa'>/ˈstrætəʤiz/</sup> lead to Catastrophic<sup class='ipa'>/ˌkætəˈstrɑfɪk/</sup> Forgetting<sup class='ipa'>/fərˈgɛtɪŋ/</sup> in LLMs</h2>
                     <p class="paper-meta">
-                        <span class="authors">Luis Lorenzo, Marcos Montana-Mendez, Sergio Figueiras</span>
-                        <span class="date">2026-01-27</span>
+                        <span class="authors">Immanuel Abdi, Akshat Gupta, Micah Mok</span>
+                        <span class="date">2026-01-28</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Multidisciplinary tumour boards (MDTBs) play a central role in oncology decision-making but require manual processes and structuring large volumes of heterogeneous clinical information, resulting in a substantial documentation burden. In this work, we present ONCOTIMIA, a modular and secure clinical tool designed to integrate generative artificial intelligence (GenAI) into oncology workflows and evaluate its application to the automatic completion of lung cancer tumour board forms using large language models (LLMs). The system combines a multi-layer data lake, hybrid relational and vector storage, retrieval-augmented generation (RAG) and a rule-driven adaptive form model to transform unstructured clinical documentation into structured and standardised tumour board records. We assess the performance of six LLMs deployed through AWS Bedrock on ten lung cancer cases, measuring both completion form accuracy and end-to-end latency. The results demonstrate high performance across models, with the best performing configuration achieving an 80% of correct field completion and clinically acceptable response time for most LLMs. Larger and more recent models exhibit best accuracies without incurring prohibitive latency. These findings provide empirical evidence that LLM- assisted autocompletion form is technically feasible and operationally viable in multidisciplinary lung cancer workflows and support its potential to significantly reduce documentation burden while preserving data quality.</p>
+                        <p class="abstract-en">One of the biggest missing capabilities in current AI systems is the ability to learn continuously after deployment. Implementing such continually learning systems have several challenges, one of which is the large memory requirement of gradient-based algorithms that are used to train state-of-the-art LLMs. Evolutionary Strategies (ES) have recently re-emerged as a gradient-free alternative to traditional learning algorithms and have shown encouraging performance on specific tasks in LLMs. In this paper, we perform a comprehensive analysis of ES and specifically evaluate its forgetting curves when training for an increasing number of update steps. We first find that ES is able to reach performance numbers close to GRPO for math and reasoning tasks with a comparable compute budget. However, and most importantly for continual learning, the performance gains in ES is accompanied by significant forgetting of prior abilities, limiting its applicability for training models online. We also explore the reason behind this behavior and show that the updates made using ES are much less sparse and have orders of magnitude larger $\ell_2$ norm compared to corresponding GRPO updates, explaining the contrasting forgetting curves between the two algorithms. With this study, we aim to highlight the issue of forgetting in gradient-free algorithms like ES and hope to inspire future work to mitigate these issues.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">多学科肿瘤委员会 (MDTB) 在肿瘤学决策中发挥着核心作用，但需要手动流程并构建大量异质临床信息，从而导致大量的文档负担。在这项工作中，我们推出了 ONCOTIMIA，这是一种模块化且安全的临床工具，旨在将生成人工智能 (GenAI) 集成到肿瘤学工作流程中，并评估其在使用大语言模型 (LLM) 自动完成肺癌肿瘤板表格中的应用。该系统结合了多层数据湖、混合关系和向量存储、检索增强生成（RAG）和规则驱动的自适应形式模型，将非结构化临床文档转换为结构化和标准化的肿瘤板记录。我们评估了通过 AWS Bedrock 部署的 6 位法学硕士在 10 个肺癌病例中的表现，测量了填写表格的准确性和端到端延迟。结果证明了跨模型的高性能，对于大多数法学硕士来说，性能最佳的配置可实现 80% 的正确现场完成率和临床可接受的响应时间。更大、更新的模型表现出最佳的精度，而不会产生令人望而却步的延迟。这些发现提供了经验证据，证明法学硕士辅助自动完成表格在多学科肺癌工作流程中在技术上和操作上都是可行的，并支持其在保持数据质量的同时显着减少文档负担的潜力。</p>
+                        <p class="abstract-zh">当前人工智能系统最大的缺失能力之一是部署后持续学习的能力。实现这种持续学习系统面临着几个挑战，其中之一是用于训练最先进的法学硕士的基于梯度的算法需要大量内存。进化策略（ES）最近作为传统学习算法的无梯度替代方案重新出现，并在法学硕士的特定任务上表现出了令人鼓舞的表现。在本文中，我们对 ES 进行了全面分析，并专门评估了其在训练越来越多的更新步骤时的遗忘曲线。我们首先发现，在计算预算相当的情况下，ES 能够在数学和推理任务中达到接近 GRPO 的性能数据。然而，对于持续学习来说最重要的是，ES 的性能提升伴随着对先前能力的严重遗忘，限制了其在线训练模型的适用性。我们还探讨了这种行为背后的原因，并表明与相应的 GRPO 更新相比，使用 ES 进行的更新稀疏程度要低得多，并且 $\ell_2$ 范数大几个数量级，这解释了两种算法之间对比的遗忘曲线。通过这项研究，我们的目的是强调 ES 等无梯度算法中的遗忘问题，并希望能够启发未来的工作来缓解这些问题。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Post-LayerNorm<sup class='ipa'>/postlayernorm*/</sup> Is Back: Stable, ExpressivE,<sup class='ipa'>/ɪkˈsprɛsɪv/</sup> and Deep</h2>
+                    <h2 class="paper-title">When Flores Bloomz Wrong: Cross-Direction<sup class='ipa'>/crossdirection*/</sup> Contamination<sup class='ipa'>/kənˌtæməˈneɪʃən/</sup> in Machine Translation<sup class='ipa'>/trænzˈleɪʃən/</sup> Evaluation<sup class='ipa'>/ɪˌvæljuˈeɪʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Chen Chen, Lai Wei</span>
-                        <span class="date">2026-01-27</span>
+                        <span class="authors">David Tan, Pinzhen Chen, Josef van Genabith</span>
+                        <span class="date">2026-01-28</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Large language model (LLM) scaling is hitting a wall. Widening models yields diminishing returns, and extending context length does not improve fundamental expressivity. In contrast, depth scaling offers theoretically superior expressivity, yet current Transformer architectures struggle to train reliably at extreme depths. We revisit the Post-LayerNorm (Post-LN) formulation, whose instability at scale caused its replacement by Pre-LN in modern LLMs. We show that the central failure mode of Post-LN arises from the ResNet-style residual pathway, which introduces gradient vanishing in deep networks. We present Keel, a Post-LN Transformer that replaces this residual path with a Highway-style connection. This modification preserves the gradient flow through the residual branch, preventing signal vanishing from the top layers to the bottom. Unlike prior methods, Keel enables stable training at extreme depths without requiring specialized initialization or complex optimization tricks. Keel trains robustly at depths exceeding 1000 layers and consistently improves perplexity and depth-scaling characteristics over Pre-LN. These findings indicate that Post-LN, when paired with a Highway-style connection, provides a simple and effective foundation for building deeply scalable LLMs, opening the possibility for future infinite-depth architectures.</p>
+                        <p class="abstract-en">Large language models (LLMs) can be benchmark-contaminated, resulting in inflated scores that mask memorization as generalization, and in multilingual settings, this memorization can even transfer to &#34;uncontaminated&#34; languages. Using the FLORES-200 translation benchmark as a diagnostic, we study two 7-8B instruction-tuned multilingual LLMs: Bloomz, which was trained on FLORES, and Llama as an uncontaminated control. We confirm Bloomz&#39;s FLORES contamination and demonstrate that machine translation contamination can be cross-directional, artificially boosting performance in unseen translation directions due to target-side memorization. Further analysis shows that recall of memorized references often persists despite various source-side perturbation efforts like paraphrasing and named entity replacement. However, replacing named entities leads to a consistent decrease in BLEU, suggesting an effective probing method for memorization in contaminated models.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">大型语言模型 (LLM) 扩展遇到了困难。加宽模型会产生收益递减，并且扩展上下文长度并不能提高基本表达能力。相比之下，深度缩放在理论上提供了卓越的表现力，但当前的 Transformer 架构很难在极端深度下进行可靠的训练。我们重新审视 Post-LayerNorm (Post-LN) 公式，其规模上的不稳定导致其在现代法学硕士中被 Pre-LN 取代。我们证明了 Post-LN 的中心失效模式源自 ResNet 式的残差路径，它在深度网络中引入了梯度消失。我们推出了 Keel，一种 Post-LN Transformer，它用高速公路式连接取代了这种剩余路径。这种修改保留了通过残余分支的梯度流，防止信号从顶层到底层消失。与之前的方法不同，Keel 可以在极深的深度进行稳定的训练，而不需要专门的初始化或复杂的优化技巧。 Keel 在超过 1000 层的深度上进行稳健训练，并持续改进 Pre-LN 的困惑度和深度缩放特性。这些发现表明，Post-LN 与高速公路式连接配合使用时，为构建深度可扩展的法学硕士提供了简单而有效的基础，为未来无限深度架构提供了可能性。</p>
+                        <p class="abstract-zh">大型语言模型（LLM）可能会受到基准污染，导致分数过高，从而将记忆掩盖为泛化，并且在多语言环境中，这种记忆甚至可以转移到“未受污染”的语言。使用 FLORES-200 翻译基准作为诊断，我们研究了两个 7-8B 指令调整的多语言 LLM：Bloomz（在 FLORES 上进行训练）和 Llama（作为未污染的对照）。我们确认了 Bloomz 的 FLORES 污染，并证明机器翻译污染可以是横向的，由于目标端记忆而人为地提高了看不见的翻译方向的性能。进一步的分析表明，尽管采取了各种源端扰动措施（例如释义和命名实体替换），但对记忆参考文献的回忆通常仍然存在。然而，替换命名实体会导致 BLEU 持续下降，这表明污染模型中记忆的有效探测方法。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">M-SGWR: Multiscale<sup class='ipa'>/multiscale*/</sup> Similarity<sup class='ipa'>/ˌsɪməˈlɛrəti/</sup> and Geographically<sup class='ipa'>/ˌʤiəˈgræfɪkəli/</sup> Weighted<sup class='ipa'>/ˈweɪtɪd/</sup> Regression<sup class='ipa'>/rəˈgrɛʃən/</sup></h2>
+                    <h2 class="paper-title">SokoBench:<sup class='ipa'>/sokobench*/</sup> Evaluating<sup class='ipa'>/ɪˈvæljuˌeɪtɪŋ/</sup> Long-Horizon<sup class='ipa'>/longhorizon*/</sup> Planning<sup class='ipa'>/ˈplænɪŋ/</sup> and Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> in Large Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h2>
                     <p class="paper-meta">
-                        <span class="authors">M. Naser Lessani, Zhenlong Li, Manzhu Yu</span>
-                        <span class="date">2026-01-27</span>
+                        <span class="authors">Sebastiano Monti, Carlo Nicolini, Gianni Pellegrini</span>
+                        <span class="date">2026-01-28</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">The first law of geography is a cornerstone of spatial analysis, emphasizing that nearby and related locations tend to be more similar, however, defining what constitutes &#34;near&#34; and &#34;related&#34; remains challenging, as different phenomena exhibit distinct spatial patterns. Traditional local regression models, such as Geographically Weighted Regression (GWR) and Multiscale GWR (MGWR), quantify spatial relationships solely through geographic proximity. In an era of globalization and digital connectivity, however, geographic proximity alone may be insufficient to capture how locations are interconnected. To address this limitation, we propose a new multiscale local regression framework, termed M-SGWR, which characterizes spatial interaction across two dimensions: geographic proximity and attribute (variable) similarity. For each predictor, geographic and attribute-based weight matrices are constructed separately and then combined using an optimized parameter, alpha, which governs their relative contribution to local model fitting. Analogous to variable-specific bandwidths in MGWR, the optimal alpha varies by predictor, allowing the model to flexibly account for geographic, mixed, or non-spatial (remote similarity) effects. Results from two simulation experiments and one empirical application demonstrate that M-SGWR consistently outperforms GWR, SGWR, and MGWR across all goodness-of-fit metrics.</p>
+                        <p class="abstract-en">Although the capabilities of large language models have been increasingly tested on complex reasoning tasks, their long-horizon planning abilities have not yet been extensively investigated. In this work, we provide a systematic assessment of the planning and long-horizon reasoning capabilities of state-of-the-art Large Reasoning Models (LRMs). We propose a novel benchmark based on Sokoban puzzles, intentionally simplified to isolate long-horizon planning from state persistence. Our findings reveal a consistent degradation in planning performance when more than 25 moves are required to reach the solution, suggesting a fundamental constraint on forward planning capacity. We show that equipping LRMs with Planning Domain Definition Language (PDDL) parsing, validation, and solving tools allows for modest improvements, suggesting inherent architectural limitations which might not be overcome by test-time scaling approaches alone.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">地理学第一定律是空间分析的基石，强调附近和相关的位置往往更加相似，然而，定义什么构成“附近”和“相关”仍然具有挑战性，因为不同的现象表现出不同的空间模式。传统的局部回归模型，例如地理加权回归 (GWR) 和多尺度 GWR (MGWR)，仅通过地理邻近度来量化空间关系。然而，在全球化和数字连接的时代，仅地理邻近性可能不足以反映地点之间的互连方式。为了解决这个限制，我们提出了一种新的多尺度局部回归框架，称为 M-SGWR，它描述了跨两个维度的空间交互：地理邻近性和属性（变量）相似性。对于每个预测变量，分别构建地理和基于属性的权重矩阵，然后使用优化参数 alpha 进行组合，该参数控制它们对局部模型拟合的相对贡献。与 MGWR 中的变量特定带宽类似，最佳 alpha 因预测变量而异，从而使模型能够灵活地考虑地理、混合或非空间（远程相似性）效应。两项模拟实验和一项实证应用的结果表明，M-SGWR 在所有拟合优度指标上始终优于 GWR、SGWR 和 MGWR。</p>
+                        <p class="abstract-zh">尽管大型语言模型的能力已经在复杂的推理任务上得到越来越多的测试，但它们的长期规划能力尚未得到广泛研究。在这项工作中，我们对最先进的大型推理模型（LRM）的规划和长期推理能力进行了系统评估。我们提出了一个基于推箱子谜题的新颖基准，有意简化以将长期规划与状态持久性分开。我们的研究结果表明，当需要超过 25 步才能找到解决方案时，规划性能会持续下降，这表明远期规划能力存在根本性限制。我们表明，为 LRM 配备规划域定义语言 (PDDL) 解析、验证和解决工具可以实现适度的改进，这表明固有的架构限制可能无法仅通过测试时间扩展方法来克服。</p>
                     </div>
                 </article>
                 
@@ -458,14 +458,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 36</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">fangchenantek/Psychosis-of-AI</strong>
-                            <p class="repo-desc">一份来自2026年的AI精神病学诊断报告 / AI文明的病理诊断</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
                         <span class="repo-stars">★ 7</span>
                         <div class="repo-info">
                             <strong class="repo-name">usestrix/benchmarks</strong>
@@ -474,18 +466,10 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
+                        <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">galpt/you</strong>
-                            <p class="repo-desc">一个自主的 AI 代理协调器，可在 OpenCode 内协调整个软件公司</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">alisulmanpro/fts-technologies-uk</strong>
-                            <p class="repo-desc">FTS-Technologies UK – 创新的网络解决方案、人工智能驱动的工具和数字服务。官方网站展示了我们在现代技术方面的专业知识。</p>
+                            <strong class="repo-name">ohnodev/obelisk-core</strong>
+                            <p class="repo-desc">方尖碑🧠的意识引擎</p>
                         </div>
                     </li>
                 
@@ -502,14 +486,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">aaronaalmendarez/gemini-minecraft</strong>
                             <p class="repo-desc">第一个 Minecraft AI 不仅会说话，而且还生活在您的世界中。 Fabric 1.21.1 的高性能 Gemini 驱动的认知伴侣。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">ohnodev/obelisk-core</strong>
-                            <p class="repo-desc">方尖碑🧠的意识引擎</p>
                         </div>
                     </li>
                 
@@ -534,6 +510,30 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">AICU-HEALTH/aicuflow-arduino</strong>
                             <p class="repo-desc">Arduino-ESP32/8266 等上的 aicuflow 客户端！收集传感器数据、训练模型、可视化和推断结果！主草图中有许多工具和简洁的功能（电压表、扫描仪、游戏），开箱即用，无需任何库安装或自定义设置！</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">jinzurei/Ignis</strong>
+                            <p class="repo-desc">Ignis 是一款本地运行的人工智能助手，它将先进的认知记忆系统与动态个性进化相结合，同时保持您的硬件的完全隐私。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">ScottT2-spec/autonomous-litter-collector-FSM</strong>
+                            <p class="repo-desc">模块化自主机器人系统，利用有限状态机 (FSM) 逻辑进行避障和实时环境遥测</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">wkusnierczyk/raku-mcp-sdk</strong>
+                            <p class="repo-desc">Raku MCP SDK</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-01-28 22:23:02
+        生成于 2026-01-29 22:24:03
     </footer>
 </body>
 </html>
