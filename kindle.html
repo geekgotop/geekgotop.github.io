@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">RedSage: A Cybersecurity<sup class='ipa'>/cybersecurity*/</sup> Generalist<sup class='ipa'>/ˈʤɛnərəlɪst/</sup> LLM</h2>
+                    <h2 class="paper-title">Reward-free<sup class='ipa'>/rewardfree*/</sup> Alignment<sup class='ipa'>/əˈlaɪnmənt/</sup> for Conflicting<sup class='ipa'>/kənˈflɪktɪŋ/</sup> Objectives<sup class='ipa'>/əˈbʤɛktɪvz/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Naufal Suryanto, Muzammal Naseer, Pengfei Li</span>
-                        <span class="date">2026-01-29</span>
+                        <span class="authors">Peter Chen, Xiaopeng Li, Xi Chen</span>
+                        <span class="date">2026-02-02</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Cybersecurity operations demand assistant LLMs that support diverse workflows without exposing sensitive data. Existing solutions either rely on proprietary APIs with privacy risks or on open models lacking domain adaptation. To bridge this gap, we curate 11.8B tokens of cybersecurity-focused continual pretraining data via large-scale web filtering and manual collection of high-quality resources, spanning 28.6K documents across frameworks, offensive techniques, and security tools. Building on this, we design an agentic augmentation pipeline that simulates expert workflows to generate 266K multi-turn cybersecurity samples for supervised fine-tuning. Combined with general open-source LLM data, these resources enable the training of RedSage, an open-source, locally deployable cybersecurity assistant with domain-aware pretraining and post-training. To rigorously evaluate the models, we introduce RedSage-Bench, a benchmark with 30K multiple-choice and 240 open-ended Q&amp;A items covering cybersecurity knowledge, skills, and tool expertise. RedSage is further evaluated on established cybersecurity benchmarks (e.g., CTI-Bench, CyberMetric, SECURE) and general LLM benchmarks to assess broader generalization. At the 8B scale, RedSage achieves consistently better results, surpassing the baseline models by up to +5.59 points on cybersecurity benchmarks and +5.05 points on Open LLM Leaderboard tasks. These findings demonstrate that domain-aware agentic augmentation and pre/post-training can not only enhance cybersecurity-specific expertise but also help to improve general reasoning and instruction-following. All models, datasets, and code are publicly available.</p>
+                        <p class="abstract-en">Direct alignment methods are increasingly used to align large language models (LLMs) with human preferences. However, many real-world alignment problems involve multiple conflicting objectives, where naive aggregation of preferences can lead to unstable training and poor trade-offs. In particular, weighted loss methods may fail to identify update directions that simultaneously improve all objectives, and existing multi-objective approaches often rely on explicit reward models, introducing additional complexity and distorting user-specified preferences. The contributions of this paper are two-fold. First, we propose a Reward-free Alignment framework for Conflicted Objectives (RACO) that directly leverages pairwise preference data and resolves gradient conflicts via a novel clipped variant of conflict-averse gradient descent. We provide convergence guarantees to Pareto-critical points that respect user-specified objective weights, and further show that clipping can strictly improve convergence rate in the two-objective setting. Second, we improve our method using some heuristics and conduct experiments to demonstrate the compatibility of the proposed framework for LLM alignment. Both qualitative and quantitative evaluations on multi-objective summarization and safety alignment tasks across multiple LLM families (Qwen 3, Llama 3, Gemma 3) show that our method consistently achieves better Pareto trade-offs compared to existing multi-objective alignment baselines.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">网络安全运营需要助理法学硕士来支持不同的工作流程而不暴露敏感数据。现有的解决方案要么依赖于存在隐私风险的专有 API，要么依赖于缺乏领域适应的开放模型。为了弥补这一差距，我们通过大规模网络过滤和手动收集高质量资源，整理了 11.8B 个以网络安全为中心的持续预训练数据，涵盖跨框架、攻击技术和安全工具的 28.6K 文档。在此基础上，我们设计了一个代理增强管道，可以模拟专家工作流程，生成 266K 多轮网络安全样本，以进行监督微调。与通用开源 LLM 数据相结合，这些资源支持 RedSage 的培训，RedSage 是一款开源、可本地部署的网络安全助手，具有领域感知预训练和训练后功能。为了严格评估模型，我们引入了 RedSage-Bench，这是一个包含 30K 多项选择和 240 个开放式问答项目的基准，涵盖网络安全知识、技能和工具专业知识。 RedSage 根据既定的网络安全基准（例如，CTI-Bench、Cyber​​Metric、SECURE）和一般 LLM 基准进行进一步评估，以评估更广泛的普遍性。在 8B 规模上，RedSage 始终取得更好的结果，在网络安全基准测试中超过基准模型高达 +5.59 分，在 Open LLM Leaderboard 任务上超过基准模型高达 +5.05 分。这些发现表明，领域感知代理增强和训练前/训练后不仅可以增强网络安全特定的专业知识，还有助于改善一般推理和指令遵循。所有模型、数据集和代码都是公开的。</p>
+                        <p class="abstract-zh">直接对齐方法越来越多地用于使大型语言模型 (LLM) 与人类偏好保持一致。然而，许多现实世界的协调问题涉及多个相互冲突的目标，其中天真的偏好聚合可能会导致不稳定的训练和糟糕的权衡。特别是，加权损失方法可能无法识别同时改进所有目标的更新方向，并且现有的多目标方法通常依赖于显式奖励模型，引入额外的复杂性并扭曲用户指定的偏好。本文的贡献有两个方面。首先，我们提出了一种针对冲突目标的无奖励对齐框架（RACO），该框架直接利用成对偏好数据，并通过一种新型的冲突厌恶梯度下降的剪裁变体来解决梯度冲突。我们为尊重用户指定的目标权重的帕累托临界点提供收敛保证，并进一步表明裁剪可以严格提高双目标设置中的收敛速度。其次，我们使用一些启发式方法改进我们的方法，并进行实验来证明所提出的 LLM 对齐框架的兼容性。对多个 LLM 系列（Qwen 3、Llama 3、Gemma 3）的多目标总结和安全对齐任务的定性和定量评估表明，与现有的多目标对齐基线相比，我们的方法始终实现更好的帕累托权衡。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Discovering<sup class='ipa'>/dɪˈskəvərɪŋ/</sup> Hidden Gems in Model Repositories<sup class='ipa'>/riˈpɑzəˌtɔriz/</sup></h2>
+                    <h2 class="paper-title">PixelGen:<sup class='ipa'>/pixelgen*/</sup> Pixel Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Beats Latent Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> with Perceptual<sup class='ipa'>/pərˈsɛpʧəwəl/</sup> Loss</h2>
                     <p class="paper-meta">
-                        <span class="authors">Jonathan Kahana, Eliahu Horwitz, Yedid Hoshen</span>
-                        <span class="date">2026-01-29</span>
+                        <span class="authors">Zehong Ma, Ruihan Xu, Shiliang Zhang</span>
+                        <span class="date">2026-02-02</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Public repositories host millions of fine-tuned models, yet community usage remains disproportionately concentrated on a small number of foundation checkpoints. We investigate whether this concentration reflects efficient market selection or if superior models are systematically overlooked. Through an extensive evaluation of over 2,000 models, we show the prevalence of &#34;hidden gems&#34;, unpopular fine-tunes that significantly outperform their popular counterparts. Notably, within the Llama-3.1-8B family, we find rarely downloaded checkpoints that improve math performance from 83.2% to 96.0% without increasing inference costs. However, discovering these models through exhaustive evaluation of every uploaded model is computationally infeasible. We therefore formulate model discovery as a Multi-Armed Bandit problem and accelerate the Sequential Halving search algorithm by using shared query sets and aggressive elimination schedules. Our method retrieves top models with as few as 50 queries per candidate, accelerating discovery by over 50x.</p>
+                        <p class="abstract-en">Pixel diffusion generates images directly in pixel space in an end-to-end manner, avoiding the artifacts and bottlenecks introduced by VAEs in two-stage latent diffusion. However, it is challenging to optimize high-dimensional pixel manifolds that contain many perceptually irrelevant signals, leaving existing pixel diffusion methods lagging behind latent diffusion models. We propose PixelGen, a simple pixel diffusion framework with perceptual supervision. Instead of modeling the full image manifold, PixelGen introduces two complementary perceptual losses to guide diffusion model towards learning a more meaningful perceptual manifold. An LPIPS loss facilitates learning better local patterns, while a DINO-based perceptual loss strengthens global semantics. With perceptual supervision, PixelGen surpasses strong latent diffusion baselines. It achieves an FID of 5.11 on ImageNet-256 without classifier-free guidance using only 80 training epochs, and demonstrates favorable scaling performance on large-scale text-to-image generation with a GenEval score of 0.79. PixelGen requires no VAEs, no latent representations, and no auxiliary stages, providing a simpler yet more powerful generative paradigm. Codes are publicly available at https://github.com/Zehong-Ma/PixelGen.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">公共存储库托管着数百万个经过微调的模型，但社区使用仍然不成比例地集中在少数基础检查点上。我们调查这种集中是否反映了有效的市场选择，或者是否系统性地忽视了优秀的模型。通过对 2,000 多个模型的广泛评估，我们展示了“隐藏的宝石”的流行，即不受欢迎的微调，但其性能明显优于流行的同行。值得注意的是，在 Llama-3.1-8B 系列中，我们发现很少下载的检查点可以将数学性能从 83.2% 提高到 96.0%，而不会增加推理成本。然而，通过对每个上传的模型进行详尽的评估来发现这些模型在计算上是不可行的。因此，我们将模型发现制定为多臂强盗问题，并通过使用共享查询集和积极的消除计划来加速顺序减半搜索算法。我们的方法检索顶级模型时，每个候选者只需 50 个查询，从而将发现速度提高了 50 倍以上。</p>
+                        <p class="abstract-zh">像素扩散以端到端的方式直接在像素空间中生成图像，避免了两阶段潜在扩散中 VAE 引入的伪影和瓶颈。然而，优化包含许多感知不相关信号的高维像素流形具有挑战性，使得现有的像素扩散方法落后于潜在扩散模型。我们提出 PixelGen，一个具有感知监督的简单像素扩散框架。 PixelGen 没有对完整图像流形进行建模，而是引入了两个互补的感知损失来引导扩散模型学习更有意义的感知流形。 LPIPS 损失有助于学习更好的局部模式，而基于 DINO 的感知损失则增强了全局语义。通过感知监督，PixelGen 超越了强大的潜在扩散基线。它在没有无分类器指导的情况下仅使用 80 个训练 epoch，在 ImageNet-256 上实现了 5.11 的 FID，并在大规模文本到图像生成方面展现了良好的扩展性能，GenEval 得分为 0.79。 PixelGen 不需要 VAE，不需要潜在表示，也不需要辅助阶段，提供了更简单但更强大的生成范式。代码可在 https://github.com/Zehong-Ma/PixelGen 上公开获取。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Hybrid Linear Attention<sup class='ipa'>/əˈtɛnʃən/</sup> Done Right: Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup> and Effective<sup class='ipa'>/ˈifɛktɪv/</sup> Architectures<sup class='ipa'>/ˈɑrkəˌtɛkʧərz/</sup> for Extremely<sup class='ipa'>/ɪkˈstrimli/</sup> Long Contexts<sup class='ipa'>/ˈkɑnˌtɛksts/</sup></h2>
+                    <h2 class="paper-title">RLAnything:<sup class='ipa'>/rlanything*/</sup> Forge Environment,<sup class='ipa'>/ɪnˈvaɪrənmənt/</sup> Policy, and Reward Model in Completely<sup class='ipa'>/kəmˈplitli/</sup> Dynamic RL System</h2>
                     <p class="paper-meta">
-                        <span class="authors">Yingfa Chen, Zhen Leng Thai, Zihan Zhou</span>
-                        <span class="date">2026-01-29</span>
+                        <span class="authors">Yinjie Wang, Tianbao Xie, Ke Shen</span>
+                        <span class="date">2026-02-02</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Hybrid Transformer architectures, which combine softmax attention blocks and recurrent neural networks (RNNs), have shown a desirable performance-throughput tradeoff for long-context modeling, but their adoption and studies are hindered by the prohibitive cost of large-scale pre-training from scratch. Some recent studies have shown that pre-trained softmax attention blocks can be converted into RNN blocks through parameter transfer and knowledge distillation. However, these transfer methods require substantial amounts of training data (more than 10B tokens), and the resulting hybrid models also exhibit poor long-context performance, which is the scenario where hybrid models enjoy significant inference speedups over Transformer-based models. In this paper, we present HALO (Hybrid Attention via Layer Optimization), a pipeline for distilling Transformer models into RNN-attention hybrid models. We then present HypeNet, a hybrid architecture with superior length generalization enabled by a novel position encoding scheme (named HyPE) and various architectural modifications. We convert the Qwen3 series into HypeNet using HALO, achieving performance comparable to the original Transformer models while enjoying superior long-context performance and efficiency. The conversion requires just 2.3B tokens, less than 0.01% of their pre-training data</p>
+                        <p class="abstract-en">We propose RLAnything, a reinforcement learning framework that dynamically forges environment, policy, and reward models through closed-loop optimization, amplifying learning signals and strengthening the overall RL system for any LLM or agentic scenarios. Specifically, the policy is trained with integrated feedback from step-wise and outcome signals, while the reward model is jointly optimized via consistency feedback, which in turn further improves policy training. Moreover, our theory-motivated automatic environment adaptation improves training for both the reward and policy models by leveraging critic feedback from each, enabling learning from experience. Empirically, each added component consistently improves the overall system, and RLAnything yields substantial gains across various representative LLM and agentic tasks, boosting Qwen3-VL-8B-Thinking by 9.1% on OSWorld and Qwen2.5-7B-Instruct by 18.7% and 11.9% on AlfWorld and LiveBench, respectively. We also that optimized reward-model signals outperform outcomes that rely on human labels. Code: https://github.com/Gen-Verse/Open-AgentRL</p>
                         <hr class="divider">
-                        <p class="abstract-zh">混合 Transformer 架构结合了 softmax 注意力模块和循环神经网络 (RNN)，在长上下文建模中表现出了理想的性能-吞吐量权衡，但它们的采用和研究却因从头开始进行大规模预训练的高昂成本而受到阻碍。最近的一些研究表明，预训练的 softmax 注意力块可以通过参数传递和知识蒸馏转换为 RNN 块。然而，这些传输方法需要大量的训练数据（超过 10B 个 token），并且由此产生的混合模型也表现出较差的长上下文性能，在这种情况下，混合模型比基于 Transformer 的模型享有显着的推理加速。在本文中，我们提出了 HALO（通过层优化的混合注意力），这是一种将 Transformer 模型提炼为 RNN-注意力混合模型的管道。然后，我们提出了 HypeNet，这是一种具有卓越长度泛化能力的混合架构，通过新颖的位置编码方案（称为 HyPE）和各种架构修改实现。我们使用 HALO 将 Qwen3 系列转换为 HypeNet，实现与原始 Transformer 模型相当的性能，同时享受卓越的长上下文性能和效率。转换仅需要 2.3B 代币，不到预训练数据的 0.01%</p>
+                        <p class="abstract-zh">我们提出了 RLAnything，这是一个强化学习框架，它通过闭环优化动态地构建环境、策略和奖励模型，放大学习信号并加强任何 LLM 或代理场景的整体 RL 系统。具体来说，策略通过逐步信号和结果信号的综合反馈进行训练，而奖励模型通过一致性反馈进行联合优化，从而进一步改善策略训练。此外，我们的理论驱动的自动环境适应通过利用每个模型的批评反馈来改进奖励模型和政策模型的训练，从而能够从经验中学习。根据经验，每个添加的组件都会持续改进整个系统，并且 RLAnything 在各种代表性 LLM 和代理任务中产生了巨大的收益，在 OSWorld 上将 Qwen3-VL-8B-Thinking 提高了 9.1%，在 AlfWorld 和 LiveBench 上将 Qwen2.5-7B-Instruct 分别提高了 18.7% 和 11.9%。我们还认为，优化的奖励模型信号优于依赖人类标签的结果。代码：https://github.com/Gen-Verse/Open-AgentRL</p>
                     </div>
                 </article>
                 
@@ -458,15 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 52</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">Stelteryz/Deep-Live-Cam-Multi-Camera-Object-Tracking-Webui</strong>
-                            <p class="repo-desc">使用 Deepfake 技术在实时网络摄像头检查期间实时模拟用户的面部，从而绕过 ID 验证和 2FA，通过逼真的面部模仿欺骗生物识别系统授予未经授权的访问权限。机器学习、网络摄像头、换脸、人工智能、深度伪造、2fa 绕过、身份盗窃、欺骗</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 9</span>
+                        <span class="repo-stars">★ 24</span>
                         <div class="repo-info">
                             <strong class="repo-name">lucidrains/sdft-pytorch</strong>
                             <p class="repo-desc">Shenfeld 等人对提出的 SDFT（自蒸馏实现持续学习）的探索。麻省理工学院</p>
@@ -474,7 +466,15 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 8</span>
+                        <span class="repo-stars">★ 19</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">justalittle180-max/Album</strong>
+                            <p class="repo-desc">专辑 |公式|艾|照片|人工智能|创意|工具|一代|</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 10</span>
                         <div class="repo-info">
                             <strong class="repo-name">jmbarrancoml/awesome-european-ai</strong>
                             <p class="repo-desc">欧洲人工智能公司、研究实验室、开源项目和资源的精选列表</p>
@@ -484,8 +484,8 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 7</span>
                         <div class="repo-info">
-                            <strong class="repo-name">leaxer-ai/leaxer-qwen3-tts</strong>
-                            <p class="repo-desc">在 ONNX 运行时之上运行的 Qwen3-TTS 的 C++ 实现。</p>
+                            <strong class="repo-name">LM-Kit/LynxTranscribe</strong>
+                            <p class="repo-desc">LynxTranscribe 是一款全面的专业级音频转录应用程序，使用 .NET MAUI 构建并由 LM-Kit.NET 提供支持。它利用最先进的深度学习，完全在设备上提供快速、准确的语音到文本的转换。你的人工智能。您的数据。在您的设备上。</p>
                         </div>
                     </li>
                 
@@ -508,32 +508,32 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">aaronaalmendarez/gemini-minecraft</strong>
-                            <p class="repo-desc">第一个 Minecraft AI 不仅会说话，而且还生活在您的世界中。 Fabric 1.21.1 的高性能 Gemini 驱动的认知伴侣。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
-                        <div class="repo-info">
                             <strong class="repo-name">ohnodev/obelisk-core</strong>
                             <p class="repo-desc">方尖碑🧠的意识引擎</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
+                        <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">EOTS-SODA/Serpentnote</strong>
-                            <p class="repo-desc">我第一次尝试氛围编码，我弄乱了像 Illustrious XL、Chroma 和 Z-Image Turbo 这样的模型，并且需要一个类似库的空间来保存我的提示，所以我“制作”了这个应用程序，它不仅可以私下保存它们，还可以帮助您制作新的提示。</p>
+                            <strong class="repo-name">jvdillon/configgle</strong>
+                            <p class="repo-desc">使用纯Python进行实验的分层配置。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">LM-Kit/LynxTranscribe</strong>
-                            <p class="repo-desc">LynxTranscribe 是一款全面的专业级音频转录应用程序，使用 .NET MAUI 构建并由 LM-Kit.NET 提供支持。它利用最先进的深度学习，完全在设备上提供快速、准确的语音到文本的转换。你的人工智能。您的数据。在您的设备上。</p>
+                            <strong class="repo-name">protocoldaemon-sec/ordo-assistant</strong>
+                            <p class="repo-desc">Ordo 是 Solana Mobile Seeker 原生数字助理，作为 OpenClaw 技能/扩展而构建。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">sh1esty1769/argus</strong>
+                            <p class="repo-desc">AI 代理的开源可观察性 - 以全视巨人的名字命名👁️</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-02-01 22:20:39
+        生成于 2026-02-03 22:26:13
     </footer>
 </body>
 </html>
