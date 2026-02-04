@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-02-03 22:26:13</span>
+        <span class="generated-time">更新于 2026-02-04 22:23:17</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Reward-free<sup class='ipa'>/rewardfree*/</sup> Alignment<sup class='ipa'>/əˈlaɪnmənt/</sup> for Conflicting<sup class='ipa'>/kənˈflɪktɪŋ/</sup> Objectives<sup class='ipa'>/əˈbʤɛktɪvz/</sup></h4>
+                            <h4 class="paper-title">PLATE: Plasticity-Tunable<sup class='ipa'>/plasticitytunable*/</sup> Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Adapters<sup class='ipa'>/əˈdæptərz/</sup> for Geometry-Aware<sup class='ipa'>/geometryaware*/</sup> Continual<sup class='ipa'>/kənˈtɪnjuəl/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Peter Chen, Xiaopeng Li, Xi Chen</span>
-                                <span class="date">2026-02-02</span>
-                                <span class="categories">cs.CL | cs.AI</span>
+                                <span class="authors">Romain Cosentino</span>
+                                <span class="date">2026-02-03</span>
+                                <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Direct alignment methods are increasingly used to align large language models (LLMs) with human preferences. However, many real-world alignment problems involve multiple conflicting objectives, where naive aggregation of preferences can lead to unstable training and poor trade-offs. In particular, w...</p>
+                                <p class="abstract-en">We develop a continual learning method for pretrained models that \emph{requires no access to old-task data}, addressing a practical barrier in foundation model adaptation where pretraining distributions are often unavailable. Our key observation is that pretrained networks exhibit substantial \emph...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">直接对齐方法越来越多地用于使大型语言模型 (LLM) 与人类偏好保持一致。然而，许多现实世界的协调问题涉及多个相互冲突的目标，其中天真的偏好聚合可能会导致不稳定的训练和糟糕的权衡。特别是，加权损失方法可能无法识别同时改进所有目标的更新方向，并且现有的多目标方法通常依赖于显式奖励模型，引入额外的复杂性并扭曲用户指定的偏好。本文的贡献有两个方面。首先，我们提出了一种针对冲突目标的无奖励对齐框架（RACO），该框架直接利用成对偏好数据，并通过一种新型的冲突厌恶梯度下降的剪裁变体来解决梯度冲突。我们为尊重用户指定的目标权重的帕累托临界点提供收敛保证，并进一步表明裁剪可以严格提高双目标设置中的收敛速度。其次，我们使用一些启发式方法改进我们的方法，并进行实验来证明所提出的 LLM 对齐框架的兼容性。对多个 LLM 系列（Qwen 3、Llama 3、Gemma 3）的多目标总结和安全对齐任务的定性和定量评估表明，与现有的多目标对齐基线相比，我们的方法始终实现更好的帕累托权衡。</p>
+                                    <p class="abstract-zh">我们为预训练模型开发了一种持续学习方法，\emph{不需要访问旧任务数据}，解决了基础模型适应中预训练分布通常不可用的实际障碍。我们的主要观察结果是，预训练网络表现出大量的 \emph{几何冗余}，并且可以通过两种互补的方式利用这种冗余。首先，冗余神经元为占主导地位的预训练时代特征方向提供了代理，从而能够直接从预训练权重构建近似受保护的更新子空间。其次，冗余为 emph{where} 提供了自然的可塑性偏差：通过限制对冗余神经元子集的更新并限制剩余的自由度，我们获得了更新系列，减少了旧数据分布的功能漂移并改善了最坏情况的保留保证。这些见解导致了 \textsc{PLATE} （\textbf{Pla}sticity-\textbf{T}unable \textbf{E}fficient Adapters），这是一种持续学习方法，不需要过去的任务数据，可以对可塑性-保留权衡提供明确的控制。 PLATE 使用结构化低秩更新 $ΔW = B A Q^\top$ 对每个层进行参数化，其中 $B$ 和 $Q$ 根据预训练权重计算一次并保持冻结，并且只有 $A$ 在新任务上进行训练。该代码可从 https://github.com/SalesforceAIResearch/PLATE 获取。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2602.02495v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2602.03846v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">PixelGen:<sup class='ipa'>/pixelgen*/</sup> Pixel Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Beats Latent Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> with Perceptual<sup class='ipa'>/pərˈsɛpʧəwəl/</sup> Loss</h4>
+                            <h4 class="paper-title">Parallel-Probe:<sup class='ipa'>/parallelprobe*/</sup> Towards Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Parallel<sup class='ipa'>/ˈpɛrəˌlɛl/</sup> Thinking<sup class='ipa'>/ˈθɪŋkɪŋ/</sup> via 2D Probing</h4>
                             <div class="paper-meta">
-                                <span class="authors">Zehong Ma, Ruihan Xu, Shiliang Zhang</span>
-                                <span class="date">2026-02-02</span>
-                                <span class="categories">cs.CV | cs.AI</span>
+                                <span class="authors">Tong Zheng, Chengsong Huang, Runpeng Dai</span>
+                                <span class="date">2026-02-03</span>
+                                <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Pixel diffusion generates images directly in pixel space in an end-to-end manner, avoiding the artifacts and bottlenecks introduced by VAEs in two-stage latent diffusion. However, it is challenging to optimize high-dimensional pixel manifolds that contain many perceptually irrelevant signals, leavin...</p>
+                                <p class="abstract-en">Parallel thinking has emerged as a promising paradigm for reasoning, yet it imposes significant computational burdens. Existing efficiency methods primarily rely on local, per-trajectory signals and lack principled mechanisms to exploit global dynamics across parallel branches. We introduce 2D probi...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">像素扩散以端到端的方式直接在像素空间中生成图像，避免了两阶段潜在扩散中 VAE 引入的伪影和瓶颈。然而，优化包含许多感知不相关信号的高维像素流形具有挑战性，使得现有的像素扩散方法落后于潜在扩散模型。我们提出 PixelGen，一个具有感知监督的简单像素扩散框架。 PixelGen 没有对完整图像流形进行建模，而是引入了两个互补的感知损失来引导扩散模型学习更有意义的感知流形。 LPIPS 损失有助于学习更好的局部模式，而基于 DINO 的感知损失则增强了全局语义。通过感知监督，PixelGen 超越了强大的潜在扩散基线。它在没有无分类器指导的情况下仅使用 80 个训练 epoch，在 ImageNet-256 上实现了 5.11 的 FID，并在大规模文本到图像生成方面展现了良好的扩展性能，GenEval 得分为 0.79。 PixelGen 不需要 VAE，不需要潜在表示，也不需要辅助阶段，提供了更简单但更强大的生成范式。代码可在 https://github.com/Zehong-Ma/PixelGen 上公开获取。</p>
+                                    <p class="abstract-zh">并行思维已成为一种有前途的推理范式，但它带来了巨大的计算负担。现有的效率方法主要依赖于局部的、每个轨迹的信号，缺乏利用并行分支的全局动态的原则机制。我们引入了 2D 探测，这是一个通过定期从所有分支中引出中间答案来揭示并行思维的宽度-深度动态的界面。我们的分析揭示了三个关键见解：跨宽度深度分配的非单调缩放、异构推理分支长度以及全球共识的早期稳定。在这些见解的指导下，我们推出了 $\textbf{Parallel-Probe}$，这是一种无需训练的控制器，旨在优化在线并行思维。 Parallel-Probe 采用基于共识的提前停止来调节推理深度，并采用基于偏差的分支剪枝来动态调整宽度。跨三个基准和多个模型的大量实验表明，Parallel-Probe 为测试时间缩放建立了优越的帕累托前沿。与标准多数投票相比，它可将顺序令牌减少高达 $\textbf{35.8}$%，并将总令牌成本减少超过 $\textbf{25.8}$%，同时保持有竞争力的准确性。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2602.02493v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2602.03845v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">RLAnything:<sup class='ipa'>/rlanything*/</sup> Forge Environment,<sup class='ipa'>/ɪnˈvaɪrənmənt/</sup> Policy, and Reward Model in Completely<sup class='ipa'>/kəmˈplitli/</sup> Dynamic RL System</h4>
+                            <h4 class="paper-title">PrevizWhiz:<sup class='ipa'>/previzwhiz*/</sup> Combining<sup class='ipa'>/kəmˈbaɪnɪŋ/</sup> Rough 3D Scenes and 2D Video to Guide Generative<sup class='ipa'>/ˈʤɛnərətɪv/</sup> Video Previsualization<sup class='ipa'>/previsualization*/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Yinjie Wang, Tianbao Xie, Ke Shen</span>
-                                <span class="date">2026-02-02</span>
-                                <span class="categories">cs.LG | cs.CL</span>
+                                <span class="authors">Erzhen Hu, Frederik Brudy, David Ledo</span>
+                                <span class="date">2026-02-03</span>
+                                <span class="categories">cs.HC | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">We propose RLAnything, a reinforcement learning framework that dynamically forges environment, policy, and reward models through closed-loop optimization, amplifying learning signals and strengthening the overall RL system for any LLM or agentic scenarios. Specifically, the policy is trained with in...</p>
+                                <p class="abstract-en">In pre-production, filmmakers and 3D animation experts must rapidly prototype ideas to explore a film&#39;s possibilities before fullscale production, yet conventional approaches involve trade-offs in efficiency and expressiveness. Hand-drawn storyboards often lack spatial precision needed for complex c...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">我们提出了 RLAnything，这是一个强化学习框架，它通过闭环优化动态地构建环境、策略和奖励模型，放大学习信号并加强任何 LLM 或代理场景的整体 RL 系统。具体来说，策略通过逐步信号和结果信号的综合反馈进行训练，而奖励模型通过一致性反馈进行联合优化，从而进一步改善策略训练。此外，我们的理论驱动的自动环境适应通过利用每个模型的批评反馈来改进奖励模型和政策模型的训练，从而能够从经验中学习。根据经验，每个添加的组件都会持续改进整个系统，并且 RLAnything 在各种代表性 LLM 和代理任务中产生了巨大的收益，在 OSWorld 上将 Qwen3-VL-8B-Thinking 提高了 9.1%，在 AlfWorld 和 LiveBench 上将 Qwen2.5-7B-Instruct 分别提高了 18.7% 和 11.9%。我们还认为，优化的奖励模型信号优于依赖人类标签的结果。代码：https://github.com/Gen-Verse/Open-AgentRL</p>
+                                    <p class="abstract-zh">在前期制作中，电影制作人和 3D 动画专家必须快速制作创意原型，以在全面制作之前探索电影的可能性，但传统方法涉及效率和表现力的权衡。手绘故事板通常缺乏复杂电影摄影所需的空间精度，而 3D 预可视化则需要专业知识和高质量的装备资产。为了解决这一差距，我们推出了 PrevizWhiz，这是一个利用粗糙 3D 场景与生成图像和视频模型相结合来创建风格化视频预览的系统。该工作流程将帧级图像重新设计与可调节相似度、通过运动路径或外部视频输入进行基于时间的编辑以及细化为高保真视频剪辑集成在一起。与电影制片人的一项研究表明，我们的系统降低了电影制片人的技术门槛，加速了创意迭代，有效弥合了沟通差距，同时也解决了人工智能辅助电影制作中的连续性、作者身份和道德考虑的挑战。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2602.02488v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2602.03838v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/lucidrains/sdft-pytorch" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">sdft-pytorch</span>
-                                    <span class="repo-stars">⭐ 24</span>
+                                    <span class="repo-stars">⭐ 25</span>
                                 </div>
                                 <p class="repo-desc">Shenfeld 等人对提出的 SDFT（自蒸馏实现持续学习）的探索。麻省理工学院</p>
                                 <div class="repo-meta">
@@ -936,7 +936,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">Album</span>
                                     <span class="repo-stars">⭐ 19</span>
                                 </div>
-                                <p class="repo-desc">专辑 |公式|艾|照片|人工智能|创意|工具|一代|</p>
+                                <p class="repo-desc">专辑 |公式|艾 |照片|人工智能|创意|工具|一代|</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
                                     <span class="repo-date">2026-02-03</span>
@@ -959,29 +959,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/LM-Kit/LynxTranscribe" target="_blank" class="repo-link">
+                            <a href="https://github.com/lucidrains/value-network" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">LynxTranscribe</span>
-                                    <span class="repo-stars">⭐ 7</span>
+                                    <span class="repo-name">value-network</span>
+                                    <span class="repo-stars">⭐ 10</span>
                                 </div>
-                                <p class="repo-desc">LynxTranscribe 是一款全面的专业级音频转录应用程序，使用 .NET MAUI 构建并由 LM-Kit.NET 提供支持。它利用最先进的深度学习，完全在设备上提供快速、准确的语音到文本的转换。你的人工智能。您的数据。在您的设备上。</p>
+                                <p class="repo-desc">围绕价值网络的一些新研究探索</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">C#</span>
-                                    <span class="repo-date">2026-01-28</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/WardLink/TrustLayer--Security-Control-Plane-For-LLM-AI" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">TrustLayer--Security-Control-Plane-For-LLM-AI</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">TrustLayer 是适用于 LLM 应用程序和 AI 代理的 API 优先安全控制平面。它可以保护生产系统免受即时注入、工具劫持和行为漂移的影响，并在检测到攻击时提供事件锁定。  专为快速集成、低延迟和实际生产使用而构建。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-01-28</span>
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-02-01</span>
                                 </div>
                             </a>
                         </li>
@@ -1001,26 +987,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/ohnodev/obelisk-core" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">obelisk-core</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">方尖碑🧠的意识引擎</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">JavaScript</span>
-                                    <span class="repo-date">2026-01-28</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/jvdillon/configgle" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">configgle</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">使用纯Python进行实验的分层配置。</p>
+                                <p class="repo-desc">使用纯 Python 数据类工厂进行分层实验配置和依赖项注入。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-02-02</span>
@@ -1043,6 +1015,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/Fuwn/supermemory-mcp-local" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">supermemory-mcp-local</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">🏠 超级内存 MCP，从头开始重写为最小本地进程</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-02-01</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/sh1esty1769/argus" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">argus</span>
@@ -1052,6 +1038,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-01-30</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/syhunt/CrossSpeak" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">CrossSpeak</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">CrossSpeak 是一个 Unicode 正字法转换框架，用于研究法学硕士如何在编码变化下解释文本以及人工智能介导的转换如何影响 Web 应用程序安全</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">HTML</span>
+                                    <span class="repo-date">2026-02-02</span>
                                 </div>
                             </a>
                         </li>
