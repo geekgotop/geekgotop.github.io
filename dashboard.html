@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-02-04 22:23:17</span>
+        <span class="generated-time">更新于 2026-02-05 22:22:59</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,58 +846,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">PLATE: Plasticity-Tunable<sup class='ipa'>/plasticitytunable*/</sup> Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Adapters<sup class='ipa'>/əˈdæptərz/</sup> for Geometry-Aware<sup class='ipa'>/geometryaware*/</sup> Continual<sup class='ipa'>/kənˈtɪnjuəl/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Romain Cosentino</span>
-                                <span class="date">2026-02-03</span>
-                                <span class="categories">cs.LG | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">We develop a continual learning method for pretrained models that \emph{requires no access to old-task data}, addressing a practical barrier in foundation model adaptation where pretraining distributions are often unavailable. Our key observation is that pretrained networks exhibit substantial \emph...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">我们为预训练模型开发了一种持续学习方法，\emph{不需要访问旧任务数据}，解决了基础模型适应中预训练分布通常不可用的实际障碍。我们的主要观察结果是，预训练网络表现出大量的 \emph{几何冗余}，并且可以通过两种互补的方式利用这种冗余。首先，冗余神经元为占主导地位的预训练时代特征方向提供了代理，从而能够直接从预训练权重构建近似受保护的更新子空间。其次，冗余为 emph{where} 提供了自然的可塑性偏差：通过限制对冗余神经元子集的更新并限制剩余的自由度，我们获得了更新系列，减少了旧数据分布的功能漂移并改善了最坏情况的保留保证。这些见解导致了 \textsc{PLATE} （\textbf{Pla}sticity-\textbf{T}unable \textbf{E}fficient Adapters），这是一种持续学习方法，不需要过去的任务数据，可以对可塑性-保留权衡提供明确的控制。 PLATE 使用结构化低秩更新 $ΔW = B A Q^\top$ 对每个层进行参数化，其中 $B$ 和 $Q$ 根据预训练权重计算一次并保持冻结，并且只有 $A$ 在新任务上进行训练。该代码可从 https://github.com/SalesforceAIResearch/PLATE 获取。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2602.03846v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Parallel-Probe:<sup class='ipa'>/parallelprobe*/</sup> Towards Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Parallel<sup class='ipa'>/ˈpɛrəˌlɛl/</sup> Thinking<sup class='ipa'>/ˈθɪŋkɪŋ/</sup> via 2D Probing</h4>
-                            <div class="paper-meta">
-                                <span class="authors">Tong Zheng, Chengsong Huang, Runpeng Dai</span>
-                                <span class="date">2026-02-03</span>
-                                <span class="categories">cs.CL</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Parallel thinking has emerged as a promising paradigm for reasoning, yet it imposes significant computational burdens. Existing efficiency methods primarily rely on local, per-trajectory signals and lack principled mechanisms to exploit global dynamics across parallel branches. We introduce 2D probi...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">并行思维已成为一种有前途的推理范式，但它带来了巨大的计算负担。现有的效率方法主要依赖于局部的、每个轨迹的信号，缺乏利用并行分支的全局动态的原则机制。我们引入了 2D 探测，这是一个通过定期从所有分支中引出中间答案来揭示并行思维的宽度-深度动态的界面。我们的分析揭示了三个关键见解：跨宽度深度分配的非单调缩放、异构推理分支长度以及全球共识的早期稳定。在这些见解的指导下，我们推出了 $\textbf{Parallel-Probe}$，这是一种无需训练的控制器，旨在优化在线并行思维。 Parallel-Probe 采用基于共识的提前停止来调节推理深度，并采用基于偏差的分支剪枝来动态调整宽度。跨三个基准和多个模型的大量实验表明，Parallel-Probe 为测试时间缩放建立了优越的帕累托前沿。与标准多数投票相比，它可将顺序令牌减少高达 $\textbf{35.8}$%，并将总令牌成本减少超过 $\textbf{25.8}$%，同时保持有竞争力的准确性。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2602.03845v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">PrevizWhiz:<sup class='ipa'>/previzwhiz*/</sup> Combining<sup class='ipa'>/kəmˈbaɪnɪŋ/</sup> Rough 3D Scenes and 2D Video to Guide Generative<sup class='ipa'>/ˈʤɛnərətɪv/</sup> Video Previsualization<sup class='ipa'>/previsualization*/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Erzhen Hu, Frederik Brudy, David Ledo</span>
-                                <span class="date">2026-02-03</span>
-                                <span class="categories">cs.HC | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">In pre-production, filmmakers and 3D animation experts must rapidly prototype ideas to explore a film&#39;s possibilities before fullscale production, yet conventional approaches involve trade-offs in efficiency and expressiveness. Hand-drawn storyboards often lack spatial precision needed for complex c...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">在前期制作中，电影制作人和 3D 动画专家必须快速制作创意原型，以在全面制作之前探索电影的可能性，但传统方法涉及效率和表现力的权衡。手绘故事板通常缺乏复杂电影摄影所需的空间精度，而 3D 预可视化则需要专业知识和高质量的装备资产。为了解决这一差距，我们推出了 PrevizWhiz，这是一个利用粗糙 3D 场景与生成图像和视频模型相结合来创建风格化视频预览的系统。该工作流程将帧级图像重新设计与可调节相似度、通过运动路径或外部视频输入进行基于时间的编辑以及细化为高保真视频剪辑集成在一起。与电影制片人的一项研究表明，我们的系统降低了电影制片人的技术门槛，加速了创意迭代，有效弥合了沟通差距，同时也解决了人工智能辅助电影制作中的连续性、作者身份和道德考虑的挑战。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2602.03838v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
+                        <p class="empty-state">暂无论文数据</p>
                     
                 </div>
             </div>
@@ -920,7 +869,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/lucidrains/sdft-pytorch" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">sdft-pytorch</span>
-                                    <span class="repo-stars">⭐ 25</span>
+                                    <span class="repo-stars">⭐ 27</span>
                                 </div>
                                 <p class="repo-desc">Shenfeld 等人对提出的 SDFT（自蒸馏实现持续学习）的探索。麻省理工学院</p>
                                 <div class="repo-meta">
@@ -931,15 +880,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/justalittle180-max/Album" target="_blank" class="repo-link">
+                            <a href="https://github.com/lucidrains/value-network" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Album</span>
-                                    <span class="repo-stars">⭐ 19</span>
+                                    <span class="repo-name">value-network</span>
+                                    <span class="repo-stars">⭐ 11</span>
                                 </div>
-                                <p class="repo-desc">专辑 |公式|艾 |照片|人工智能|创意|工具|一代|</p>
+                                <p class="repo-desc">围绕价值网络的一些新研究探索</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-02-03</span>
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-02-01</span>
                                 </div>
                             </a>
                         </li>
@@ -959,34 +908,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/lucidrains/value-network" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">value-network</span>
-                                    <span class="repo-stars">⭐ 10</span>
-                                </div>
-                                <p class="repo-desc">围绕价值网络的一些新研究探索</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-02-01</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/legendaryabhi/Trending-in-Artificial-Intelligence" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Trending-in-Artificial-Intelligence</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">该存储库跟踪趋势、其重要性以及其在人工智能生态系统中发生的位置。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-01-29</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/jvdillon/configgle" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">configgle</span>
@@ -996,6 +917,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-02-02</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/thiagogaia/ouroborus" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ouroborus</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">克劳德代码的自我进化持久内存。每个会话的结束都比开始时更明智。系统自行生成。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-02-04</span>
                                 </div>
                             </a>
                         </li>
@@ -1052,6 +987,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">HTML</span>
                                     <span class="repo-date">2026-02-02</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/yz9yt/P0G" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">P0G</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">项目 0 反重力代理开发商 Orquestator</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-02-01</span>
                                 </div>
                             </a>
                         </li>
