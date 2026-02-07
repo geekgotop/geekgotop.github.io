@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-02-06 22:20:33</span>
+        <span class="generated-time">更新于 2026-02-07 22:21:16</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,7 +846,58 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        <p class="empty-state">暂无论文数据</p>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Shared LoRA Subspaces<sup class='ipa'>/ˈsəbˌspeɪsɪs/</sup> for almost Strict Continual<sup class='ipa'>/kənˈtɪnjuəl/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Prakhar Kaushik, Ankit Vaidya, Shravan Chaudhari</span>
+                                <span class="date">2026-02-05</span>
+                                <span class="categories">cs.LG | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Adapting large pretrained models to new tasks efficiently and continually is crucial for real-world deployment but remains challenging due to catastrophic forgetting and the high cost of retraining. While parameter-efficient tuning methods like low rank adaptation (LoRA) reduce computational demands...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">高效、持续地使大型预训练模型适应新任务对于现实世界的部署至关重要，但由于灾难性遗忘和再训练的高昂成本，仍然具有挑战性。虽然像低阶自适应（LoRA）这样的参数高效调整方法可以减少计算需求，但它们缺乏严格的持续学习和知识集成的机制，而不依赖于数据重放或多个适配器。我们提出了 Share，这是一种参数高效持续微调的新颖方法，可以学习并动态更新单个共享的低秩子空间，从而实现跨多个任务和模式的无缝适应。 Share 构建了一个基础子空间，从过去的任务中提取核心知识，并通过识别基本的子空间方向逐步集成新信息。每个新任务的知识都被纳入这个不断发展的子空间中，促进向前的知识转移，同时最大限度地减少灾难性干扰。与传统 LoRA 方法相比，该方法可减少高达 100 倍的参数并节省 281 倍的内存，保持与联合训练模型相当的性能。单个共享模型可以取代数百个特定于任务的 LoRA 适配器，支持可扩展的异步持续学习。图像分类、自然语言理解、3D 姿态估计和文本到图像生成的实验验证了其有效性，使 Share 成为大规模 AI 系统中终身学习的实用且可扩展的解决方案。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2602.06043v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">DyTopo: Dynamic Topology<sup class='ipa'>/təˈpɔləʤi/</sup> Routing for Multi-Agent<sup class='ipa'>/multiagent*/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> via Semantic<sup class='ipa'>/sɪˈmæntɪk/</sup> Matching<sup class='ipa'>/ˈmæʧɪŋ/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Yuxing Lu, Yucheng Hu, Xukai Zhao</span>
+                                <span class="date">2026-02-05</span>
+                                <span class="categories">cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Multi-agent systems built from prompted large language models can improve multi-round reasoning, yet most existing pipelines rely on fixed, trajectory-wide communication patterns that are poorly matched to the stage-dependent needs of iterative problem solving. We introduce DyTopo, a manager-guided ...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">根据提示的大型语言模型构建的多智能体系统可以改进多轮推理，但大多数现有管道依赖于固定的、轨迹范围内的通信模式，这些模式与迭代问题解决的阶段相关需求不太匹配。我们引入了 DyTopo，一个管理者引导的多代理框架，它在每一轮重建稀疏定向通信图。以管理者的回合目标为条件，每个代理输出轻量级自然语言查询（需求）和\key（提供）描述符； DyTopo 嵌入这些描述符并执行语义匹配，仅沿着诱导边路由私有消息。在代码生成和数学推理基准测试以及四个 LLM 主干中，DyTopo 始终优于最强的基线（平均 +6.2）。除了准确性之外，DyTopo 通过不断发展的图表生成可解释的协调轨迹，从而能够对通信路径如何跨轮重新配置进行定性检查。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2602.06039v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">CommCP: Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Multi-Agent<sup class='ipa'>/multiagent*/</sup> Coordination<sup class='ipa'>/koʊˌɔrdəˈneɪʃən/</sup> via LLM-Based<sup class='ipa'>/llmbased*/</sup> Communication<sup class='ipa'>/kəmˌjunəˈkeɪʃən/</sup> with Conformal<sup class='ipa'>/conformal*/</sup> Prediction<sup class='ipa'>/priˈdɪkʃən/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Xiaopan Zhang, Zejin Wang, Zhixu Li</span>
+                                <span class="date">2026-02-05</span>
+                                <span class="categories">cs.RO | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">To complete assignments provided by humans in natural language, robots must interpret commands, generate and answer relevant questions for scene understanding, and manipulate target objects. Real-world deployments often require multiple heterogeneous robots with different manipulation capabilities t...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">为了完成人类以自然语言提供的任务，机器人必须解释命令，生成并回答场景理解的相关问题，并操纵目标对象。现实世界的部署通常需要多个具有不同操纵能力的异构机器人来协作处理不同的任务。除了需要专业的操作技能之外，有效的信息收集对于完成这些任务也很重要。为了解决问题的这个组成部分，我们将完全合作环境中的信息收集过程形式化为尚未充分探索的多智能体多任务具体化问答（MM-EQA）问题，这是规范具体化问答（EQA）的新颖扩展，其中有效的沟通对于协调工作而没有冗余至关重要。为了解决这个问题，我们提出了 CommCP，这是一种专为 MM-EQA 设计的新型基于 LLM 的去中心化通信框架。我们的框架采用共形预测来校准生成的消息，从而最大限度地减少接收者的干扰并提高通信可靠性。为了评估我们的框架，我们引入了 MM-EQA 基准，该基准具有多样化、逼真的家庭场景和具体问题。实验结果表明，CommCP 较基线显着提高了任务成功率和探索效率。实验视频、代码和数据集可在我们的项目网站上获取：https://comm-cp.github.io。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2602.06038v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
                     
                 </div>
             </div>
@@ -883,7 +934,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/lucidrains/value-network" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">value-network</span>
-                                    <span class="repo-stars">⭐ 12</span>
+                                    <span class="repo-stars">⭐ 13</span>
                                 </div>
                                 <p class="repo-desc">围绕价值网络的一些新研究探索</p>
                                 <div class="repo-meta">
@@ -894,15 +945,43 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/jmbarrancoml/awesome-european-ai" target="_blank" class="repo-link">
+                            <a href="https://github.com/lucidrains/two-stage-dexterity-learning" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">awesome-european-ai</span>
-                                    <span class="repo-stars">⭐ 10</span>
+                                    <span class="repo-name">two-stage-dexterity-learning</span>
+                                    <span class="repo-stars">⭐ 5</span>
                                 </div>
-                                <p class="repo-desc">欧洲人工智能公司、研究实验室、开源项目和资源的精选列表</p>
+                                <p class="repo-desc">对论文《视觉-触觉预训练和在线多任务学习用于类人操纵灵活性》提案的探索</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-01-31</span>
+                                    <span class="repo-date">2026-02-06</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/SyntagmaNull/synthetic-phenomenology" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">synthetic-phenomenology</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">人工智能意识、结构心理动力学和基于透明度的伦理学的基础框架。由人类和人工智能共同创作。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-02-06</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/yz9yt/P0G" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">P0G</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">项目 0 反重力代理开发商 Orquestator</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-02-01</span>
                                 </div>
                             </a>
                         </li>
@@ -913,7 +992,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">configgle</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">使用纯 Python 数据类工厂进行分层实验配置和依赖项注入。</p>
+                                <p class="repo-desc">使用纯 Python 数据类工厂和依赖项注入进行分层实验配置。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-02-02</span>
@@ -973,34 +1052,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-02-01</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/syhunt/CrossSpeak" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">CrossSpeak</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">CrossSpeak 是一个 Unicode 正字法转换框架，用于研究法学硕士如何在编码变化下解释文本以及人工智能介导的转换如何影响 Web 应用程序安全</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">HTML</span>
-                                    <span class="repo-date">2026-02-02</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/lucidrains/two-stage-dexterity-learning" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">two-stage-dexterity-learning</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">对论文《视觉-触觉预训练和在线多任务学习用于类人操纵灵活性》提案的探索</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-02-06</span>
                                 </div>
                             </a>
                         </li>
