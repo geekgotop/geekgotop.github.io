@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Robustness<sup class='ipa'>/roʊˈbəstnəs/</sup> Is a Function,<sup class='ipa'>/ˈfəŋkʃən/</sup> Not a Number: A Factorized<sup class='ipa'>/factorized*/</sup> Comprehensive<sup class='ipa'>/ˌkɑmpriˈhɛnsɪv/</sup> Study of OOD Robustness<sup class='ipa'>/roʊˈbəstnəs/</sup> in Vision-Based<sup class='ipa'>/visionbased*/</sup> Driving</h2>
+                    <h2 class="paper-title">Biases in the Blind Spot: Detecting<sup class='ipa'>/dɪˈtɛktɪŋ/</sup> What LLMs Fail to Mention</h2>
                     <p class="paper-meta">
-                        <span class="authors">Amir Mallak, Alaa Maalouf</span>
-                        <span class="date">2026-02-09</span>
+                        <span class="authors">Iván Arcuschin, David Chanin, Adrià Garriga-Alonso</span>
+                        <span class="date">2026-02-10</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Out of distribution (OOD) robustness in autonomous driving is often reduced to a single number, hiding what breaks a policy. We decompose environments along five axes: scene (rural/urban), season, weather, time (day/night), and agent mix; and measure performance under controlled $k$-factor perturbations ($k \in \{0,1,2,3\}$). Using closed loop control in VISTA, we benchmark FC, CNN, and ViT policies, train compact ViT heads on frozen foundation-model (FM) features, and vary ID support in scale, diversity, and temporal context. (1) ViT policies are markedly more OOD-robust than comparably sized CNN/FC, and FM features yield state-of-the-art success at a latency cost. (2) Naive temporal inputs (multi-frame) do not beat the best single-frame baseline. (3) The largest single factor drops are rural $\rightarrow$ urban and day $\rightarrow$ night ($\sim 31\%$ each); actor swaps $\sim 10\%$, moderate rain $\sim 7\%$; season shifts can be drastic, and combining a time flip with other changes further degrades performance. (4) FM-feature policies stay above $85\%$ under three simultaneous changes; non-FM single-frame policies take a large first-shift hit, and all no-FM models fall below $50\%$ by three changes. (5) Interactions are non-additive: some pairings partially offset, whereas season-time combinations are especially harmful. (6) Training on winter/snow is most robust to single-factor shifts, while a rural+summer baseline gives the best overall OOD performance. (7) Scaling traces/views improves robustness ($+11.8$ points from $5$ to $14$ traces), yet targeted exposure to hard conditions can substitute for scale. (8) Using multiple ID environments broadens coverage and strengthens weak cases (urban OOD $60.6\% \rightarrow 70.1\%$) with a small ID drop; single-ID preserves peak performance but in a narrow domain. These results yield actionable design rules for OOD-robust driving policies.</p>
+                        <p class="abstract-en">Large Language Models (LLMs) often provide chain-of-thought (CoT) reasoning traces that appear plausible, but may hide internal biases. We call these *unverbalized biases*. Monitoring models via their stated reasoning is therefore unreliable, and existing bias evaluations typically require predefined categories and hand-crafted datasets. In this work, we introduce a fully automated, black-box pipeline for detecting task-specific unverbalized biases. Given a task dataset, the pipeline uses LLM autoraters to generate candidate bias concepts. It then tests each concept on progressively larger input samples by generating positive and negative variations, and applies statistical techniques for multiple testing and early stopping. A concept is flagged as an unverbalized bias if it yields statistically significant performance differences while not being cited as justification in the model&#39;s CoTs. We evaluate our pipeline across six LLMs on three decision tasks (hiring, loan approval, and university admissions). Our technique automatically discovers previously unknown biases in these models (e.g., Spanish fluency, English proficiency, writing formality). In the same run, the pipeline also validates biases that were manually identified by prior work (gender, race, religion, ethnicity). More broadly, our proposed approach provides a practical, scalable path to automatic task-specific bias discovery.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">自动驾驶中的分布外 (OOD) 鲁棒性通常会简化为一个数字，从而隐藏了违反策略的内容。我们沿着五个轴分解环境：场景（农村/城市）、季节、天气、时间（白天/夜晚）和代理组合；并测量受控 $k$ 因子扰动下的性能 ($k \in \{0,1,2,3\}$)。使用 VISTA 中的闭环控制，我们对 FC、CNN 和 ViT 策略进行基准测试，在冻结的基础模型 (FM) 特征上训练紧凑的 ViT 头，并在规模、多样性和时间上下文中改变 ID 支持。 (1) ViT 策略明显比同等规模的 CNN/FC 更具有 OOD 鲁棒性，并且 FM 功能以延迟成本取得了最先进的成功。 (2) 朴素时间输入（多帧）无法击败最佳单帧基线。 （3）单因素下降最大的是农村$\rightarrow$城市和白天$\rightarrow$夜间（各$\sim 31\%$）；演员交换$\sim 10\%$，中雨$\sim 7\%$；季节变化可能会很剧烈，并且将时间翻转与其他变化结合起来会进一步降低性能。 (4) FM特色保单在三项同时变化下保持在$85\%$以上；非 FM 单帧策略受到较大的第一轮打击，所有非 FM 模型均通过三个变化跌至 50\%$ 以下。 (5) 相互作用是非累加性的：一些配对会部分抵消，而季节组合尤其有害。 (6) 冬季/雪地训练对于单因素变化最为稳健，而乡村+夏季基线则提供最佳的整体 OOD 性能。 (7) 缩放轨迹/视图可提高鲁棒性（从 5 美元到 14 美元轨迹，$+11.8 点），但有针对性地暴露在恶劣条件下可以替代缩放。 （8）使用多个ID环境扩大了覆盖范围并加强了弱案例（城市OOD $60.6\% \rightarrow 70.1\%$），ID下降幅度较小；单 ID 可以保持峰值性能，但范围很窄。这些结果为 OOD 稳健的驾驶策略提供了可行的设计规则。</p>
+                        <p class="abstract-zh">大型语言模型 (LLM) 通常提供看似合理的思想链 (CoT) 推理轨迹，但可能隐藏内部偏差。我们称这些为“非言语偏见”。因此，通过其陈述的推理来监控模型是不可靠的，现有的偏差评估通常需要预定义的类别和手工制作的数据集。在这项工作中，我们引入了一个完全自动化的黑盒管道，用于检测特定于任务的非语言偏见。给定任务数据集，管道使用 LLM 自动评分器来生成候选偏差概念。然后，它通过生成正向和负向变化，在逐渐增大的输入样本上测试每个概念，并应用统计技术进行多次测试和早期停止。如果一个概念产生统计上显着的性能差异，但没有在模型的 CoT 中被引用为合理性，则该概念被标记为非语言偏差。我们针对三项决策任务（招聘、贷款审批和大学招生）评估了六位法学硕士的渠道。我们的技术自动发现这些模型中以前未知的偏差（例如西班牙语流利程度、英语熟练程度、写作形式）。在同一运行中，该管道还验证了先前工作（性别、种族、宗教、民族）手动识别的偏见。更广泛地说，我们提出的方法为自动发现特定任务的偏差提供了一条实用的、可扩展的路径。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">CIC-Trap4Phish:<sup class='ipa'>/cictrapphish*/</sup> A Unified Multi-Format<sup class='ipa'>/multiformat*/</sup> Dataset for Phishing<sup class='ipa'>/ˈfɪʃɪŋ/</sup> and Quishing<sup class='ipa'>/quishing*/</sup> Attachment<sup class='ipa'>/əˈtæʧmənt/</sup> Detection<sup class='ipa'>/dɪˈtɛkʃən/</sup></h2>
+                    <h2 class="paper-title">Olaf-World:<sup class='ipa'>/olafworld*/</sup> Orienting<sup class='ipa'>/orienting*/</sup> Latent Actions for Video World Modeling<sup class='ipa'>/ˈmɑdəlɪŋ/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Fatemeh Nejati, Mahdi Rabbani, Mansur Mirani</span>
-                        <span class="date">2026-02-09</span>
+                        <span class="authors">Yuxin Jiang, Yuchao Gu, Ivor W. Tsang</span>
+                        <span class="date">2026-02-10</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Phishing attacks represents one of the primary attack methods which is used by cyber attackers. In many cases, attackers use deceptive emails along with malicious attachments to trick users into giving away sensitive information or installing malware while compromising entire systems. The flexibility of malicious email attachments makes them stand out as a preferred vector for attackers as they can embed harmful content such as malware or malicious URLs inside standard document formats. Although phishing email defenses have improved a lot, attackers continue to abuse attachments, enabling malicious content to bypass security measures. Moreover, another challenge that researches face in training advance models, is lack of an unified and comprehensive dataset that covers the most prevalent data types. To address this gap, we generated CIC-Trap4Phish, a multi-format dataset containing both malicious and benign samples across five categories commonly used in phishing campaigns: Microsoft Word documents, Excel spreadsheets, PDF files, HTML pages, and QR code images. For the first four file types, a set of execution-free static feature pipeline was proposed, designed to capture structural, lexical, and metadata-based indicators without the need to open or execute files. Feature selection was performed using a combination of SHAP analysis and feature importance, yielding compact, discriminative feature subsets for each file type. The selected features were evaluated by using lightweight machine learning models, including Random Forest, XGBoost, and Decision Tree. All models demonstrate high detection accuracy across formats. For QR code-based phishing (quishing), two complementary methods were implemented: image-based detection by employing Convolutional Neural Networks (CNNs) and lexical analysis of decoded URLs using recent lightweight language models.</p>
+                        <p class="abstract-en">Scaling action-controllable world models is limited by the scarcity of action labels. While latent action learning promises to extract control interfaces from unlabeled video, learned latents often fail to transfer across contexts: they entangle scene-specific cues and lack a shared coordinate system. This occurs because standard objectives operate only within each clip, providing no mechanism to align action semantics across contexts. Our key insight is that although actions are unobserved, their semantic effects are observable and can serve as a shared reference. We introduce Seq$Δ$-REPA, a sequence-level control-effect alignment objective that anchors integrated latent action to temporal feature differences from a frozen, self-supervised video encoder. Building on this, we present Olaf-World, a pipeline that pretrains action-conditioned video world models from large-scale passive video. Extensive experiments demonstrate that our method learns a more structured latent action space, leading to stronger zero-shot action transfer and more data-efficient adaptation to new control interfaces than state-of-the-art baselines.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">网络钓鱼攻击是网络攻击者使用的主要攻击方法之一。在许多情况下，攻击者使用欺骗性电子邮件和恶意附件来诱骗用户泄露敏感信息或安装恶意软件，同时危及整个系统。恶意电子邮件附件的灵活性使其成为攻击者的首选载体，因为它们可以在标准文档格式中嵌入有害内容，例如恶意软件或恶意 URL。尽管网络钓鱼电子邮件防御已经有了很大改进，但攻击者仍在继续滥用附件，使恶意内容能够绕过安全措施。此外，研究人员在训练高级模型时面临的另一个挑战是缺乏涵盖最流行数据类型的统一且全面的数据集。为了弥补这一差距，我们生成了 CIC-Trap4Phish，这是一个多格式数据集，其中包含网络钓鱼活动中常用的五个类别的恶意和良性样本：Microsoft Word 文档、Excel 电子表格、PDF 文件、HTML 页面和 QR 代码图像。对于前四种文件类型，提出了一组免执行静态特征管道，旨在捕获结构、词汇和基于元数据的指标，而无需打开或执行文件。结合 SHAP 分析和特征重要性来执行特征选择，为每种文件类型生成紧凑的、有区别的特征子集。使用轻量级机器学习模型（包括随机森林、XGBoost 和决策树）对所选特征进行评估。所有模型都表现出跨格式的高检测精度。对于基于 QR 码的网络钓鱼（quishing），实施了两种互补的方法：使用卷积神经网络 (CNN) 进行基于图像的检测，以及使用最新的轻量级语言模型对解码的 URL 进行词法分析。</p>
+                        <p class="abstract-zh">动作可控世界模型的扩展受到动作标签稀缺的限制。虽然潜在动作学习有望从未标记的视频中提取控制界面，但学习到的潜在动作通常无法跨上下文迁移：它们纠缠了特定于场景的线索并且缺乏共享的坐标系。发生这种情况是因为标准目标仅在每个剪辑内运行，没有提供跨上下文对齐动作语义的机制。我们的主要见解是，虽然动作是不可观察的，但它们的语义效果是可观察的并且可以作为共享参考。我们引入了 Seq$Δ$-REPA，这是一种序列级控制效果对齐目标，它将集成的潜在动作锚定到来自冻结的自监督视频编码器的时间特征差异。在此基础上，我们提出了 Olaf-World，这是一个从大规模被动视频中预训练动作条件视频世界模型的管道。大量的实验表明，我们的方法学习了一个更加结构化的潜在动作空间，与最先进的基线相比，可以实现更强的零样本动作转移和更高效的数据适应新的控制界面。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">ArcFlow: Unleashing<sup class='ipa'>/ənˈliʃɪŋ/</sup> 2-Step Text-to-Image<sup class='ipa'>/texttoimage*/</sup> Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> via High-Precision<sup class='ipa'>/highprecision*/</sup> Non-Linear<sup class='ipa'>/nɑnˈlɪˌniər/</sup> Flow Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup></h2>
+                    <h2 class="paper-title">Step-resolved<sup class='ipa'>/stepresolved*/</sup> data attribution<sup class='ipa'>/ˌætrɪˈbjuʃən/</sup> for looped transformers<sup class='ipa'>/trænsˈfɔrmərz/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Zihan Yang, Shuyuan Tu, Licheng Zhang</span>
-                        <span class="date">2026-02-09</span>
+                        <span class="authors">Georgios Kaissis, David Mildenberger, Juan Felipe Gomez</span>
+                        <span class="date">2026-02-10</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Diffusion models have achieved remarkable generation quality, but they suffer from significant inference cost due to their reliance on multiple sequential denoising steps, motivating recent efforts to distill this inference process into a few-step regime. However, existing distillation methods typically approximate the teacher trajectory by using linear shortcuts, which makes it difficult to match its constantly changing tangent directions as velocities evolve across timesteps, thereby leading to quality degradation. To address this limitation, we propose ArcFlow, a few-step distillation framework that explicitly employs non-linear flow trajectories to approximate pre-trained teacher trajectories. Concretely, ArcFlow parameterizes the velocity field underlying the inference trajectory as a mixture of continuous momentum processes. This enables ArcFlow to capture velocity evolution and extrapolate coherent velocities to form a continuous non-linear trajectory within each denoising step. Importantly, this parameterization admits an analytical integration of this non-linear trajectory, which circumvents numerical discretization errors and results in high-precision approximation of the teacher trajectory. To train this parameterization into a few-step generator, we implement ArcFlow via trajectory distillation on pre-trained teacher models using lightweight adapters. This strategy ensures fast, stable convergence while preserving generative diversity and quality. Built on large-scale models (Qwen-Image-20B and FLUX.1-dev), ArcFlow only fine-tunes on less than 5% of original parameters and achieves a 40x speedup with 2 NFEs over the original multi-step teachers without significant quality degradation. Experiments on benchmarks show the effectiveness of ArcFlow both qualitatively and quantitatively.</p>
+                        <p class="abstract-en">We study how individual training examples shape the internal computation of looped transformers, where a shared block is applied for $τ$ recurrent iterations to enable latent reasoning. Existing training-data influence estimators such as TracIn yield a single scalar score that aggregates over all loop iterations, obscuring when during the recurrent computation a training example matters. We introduce \textit{Step-Decomposed Influence (SDI)}, which decomposes TracIn into a length-$τ$ influence trajectory by unrolling the recurrent computation graph and attributing influence to specific loop iterations. To make SDI practical at transformer scale, we propose a TensorSketch implementation that never materialises per-example gradients. Experiments on looped GPT-style models and algorithmic reasoning tasks show that SDI scales excellently, matches full-gradient baselines with low error and supports a broad range of data attribution and interpretability tasks with per-step insights into the latent reasoning process.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">扩散模型已经实现了卓越的生成质量，但由于依赖多个连续的去噪步骤，它们的推理成本很高，这促使人们最近努力将这种推理过程提炼为几个步骤。然而，现有的蒸馏方法通常使用线性捷径来近似教师轨迹，这使得随着速度跨时间步长的变化而难以匹配其不断变化的切线方向，从而导致质量下降。为了解决这个限制，我们提出了 ArcFlow，这是一种分步蒸馏框架，它明确地采用非线性流动轨迹来近似预先训练的教师轨迹。具体来说，ArcFlow 将推理轨迹下的速度场参数化为连续动量过程的混合。这使得 ArcFlow 能够捕获速度演化并推断相干速度，以在每个去噪步骤内形成连续的非线性轨迹。重要的是，这种参数化允许对非线性轨迹进行分析积分，从而避免数值离散误差并导致教师轨迹的高精度近似。为了将这种参数化训练成几步生成器，我们使用轻量级适配器在预先训练的教师模型上通过轨迹蒸馏来实现 ArcFlow。该策略确保快速、稳定的收敛，同时保持生成多样性和质量。 ArcFlow 基于大型模型（Qwen-Image-20B 和 FLUX.1-dev）构建，仅对不到 5% 的原始参数进行微调，与原始多步教师相比，通过 2 个 NFE 实现了 40 倍的加速，而质量没有显着下降。基准实验从定性和定量两个方面证明了 ArcFlow 的有效性。</p>
+                        <p class="abstract-zh">我们研究单个训练示例如何塑造循环变压器的内部计算，其中共享块应用于 $τ$ 循环迭代以实现潜在推理。现有的训练数据影响估计器（例如 TracIn）会生成一个标量分数，该分数在所有循环迭代中进行聚合，从而在循环计算期间模糊训练示例的重要性。我们引入了 \textit{Step-Decomposed Influence (SDI)}，它通过展开循环计算图并将影响归因于特定的循环迭代，将 TracIn 分解为长度 $τ$ 影响轨迹。为了使 SDI 在变压器规模上实用，我们提出了一种 TensorSketch 实现，该实现永远不会实现每个示例的梯度。对循环 GPT 式模型和算法推理任务的实验表明，SDI 具有出色的扩展性，以低误差匹配全梯度基线，并支持广泛的数据归因和可解释性任务，并通过对潜在推理过程的每步洞察。</p>
                     </div>
                 </article>
                 
@@ -456,14 +456,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
             
                 <ul class="repo-list">
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 20</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">Anil-matcha/higgsfield-ai-scam</strong>
-                            <p class="repo-desc">Higgsfield AI 骗局曝光：欺诈、虚假无限计划、大规模禁令、掠夺性计费、未经同意的 Deepfake、Reddit 垃圾邮件、无偿创作者以及以 4.5 倍加价转售 Kling/Minimax 模型。希格斯菲尔德人工智能研究和证据。</p>
-                        </div>
-                    </li>
                 
                     <li class="repo-item">
                         <span class="repo-stars">★ 14</span>
@@ -492,6 +484,14 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 5</span>
                         <div class="repo-info">
+                            <strong class="repo-name">shreyanshjain05/modelviz</strong>
+                            <p class="repo-desc">将 PyTorch 和 Keras 神经网络可视化为 2D 图表和交互式 3D 模型。旨在帮助初学者理解深度学习架构。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 5</span>
+                        <div class="repo-info">
                             <strong class="repo-name">lucidrains/two-stage-dexterity-learning</strong>
                             <p class="repo-desc">对论文《视觉-触觉预训练和在线多任务学习用于类人操纵灵活性》提案的探索</p>
                         </div>
@@ -506,14 +506,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">xu-xiang/awesome-top-skills</strong>
-                            <p class="repo-desc">🚀 5,000 多种精确标记的 AI 技能。自动更新和代理就绪。 / 5000+精准AI技能，自动更新，智能体必备。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
                             <strong class="repo-name">kfrural/norman-compliance-engine</strong>
@@ -522,18 +514,26 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
+                        <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">damienos61/SynapSwap</strong>
-                            <p class="repo-desc">预测 VRAM 虚拟化引擎</p>
+                            <strong class="repo-name">salihelfatih/lexi</strong>
+                            <p class="repo-desc">混合人工智能系统，使用 OCR、ML 和 RAG 支持的法学硕士将法律文档转换为带有风险标记的简单英语解释。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
+                        <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">shreyanshjain05/modelviz</strong>
-                            <p class="repo-desc">将 PyTorch 和 Keras 神经网络可视化为 2D 图表和交互式 3D 模型。旨在帮助初学者理解深度学习架构。</p>
+                            <strong class="repo-name">marconae/speq-skill</strong>
+                            <p class="repo-desc">一个轻量级且简单的系统，用于使用 Claude Code 进行规范驱动的开发</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 1</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">hadiklodhi/Email-Spam-Classifier</strong>
+                            <p class="repo-desc">使用多项式朴素贝叶斯的电子邮件垃圾邮件分类器。实施 NLP 技术，包括文本预处理和 TF-IDF/词袋矢量化，以将电子邮件分类为垃圾邮件或正常邮件。使用准确性和精确度评估模型性能，证明有效的概率文本分类。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-02-10 22:36:16
+        生成于 2026-02-11 22:25:47
     </footer>
 </body>
 </html>
