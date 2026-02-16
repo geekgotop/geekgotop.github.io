@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-02-15 22:20:59</span>
+        <span class="generated-time">更新于 2026-02-16 22:24:02</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,7 +846,58 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        <p class="empty-state">暂无论文数据</p>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Semantic<sup class='ipa'>/sɪˈmæntɪk/</sup> Chunking<sup class='ipa'>/chunking*/</sup> and the Entropy of Natural Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Weishun Zhong, Doron Sivan, Tankut Can</span>
+                                <span class="date">2026-02-13</span>
+                                <span class="categories">cs.CL | cond-mat.dis-nn</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">The entropy rate of printed English is famously estimated to be about one bit per character, a benchmark that modern large language models (LLMs) have only recently approached. This entropy rate implies that English contains nearly 80 percent redundancy relative to the five bits per character expect...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">众所周知，印刷英语的熵率估计约为每个字符一位，这是现代大型语言模型 (LLM) 最近才接近的基准。此熵率意味着相对于随机文本每个字符预期的 5 位，英语包含近 80% 的冗余。我们引入了一种统计模型，试图捕捉自然语言复杂的多尺度结构，提供这种冗余水平的第一性原理解释。我们的模型描述了将文本自相似地分割成语义连贯的块到单个单词级别的过程。然后可以对文本的语义结构进行分层分解，以便进行分析处理。现代法学硕士和开放数据集的数值实验表明，我们的模型定量地捕获了语义层次结构不同级别的真实文本的结构。我们的模型预测的熵率与印刷英语的估计熵率一致。此外，我们的理论进一步揭示，自然语言的熵率不是固定的，而是应该随着语料库的语义复杂性而系统地增加，这是由我们模型中唯一的自由参数捕获的。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2602.13194v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">CoPE-VideoLM:<sup class='ipa'>/copevideolm*/</sup> Codec Primitives<sup class='ipa'>/primitives*/</sup> For Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Video Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Sayan Deb Sarkar, Rémi Pautrat, Ondrej Miksik</span>
+                                <span class="date">2026-02-13</span>
+                                <span class="categories">cs.CV | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Video Language Models (VideoLMs) empower AI systems to understand temporal dynamics in videos. To fit to the maximum context window constraint, current methods use keyframe sampling which can miss both macro-level events and micro-level details due to the sparse temporal coverage. Furthermore, proce...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">视频语言模型 (VideoLM) 使 AI 系统能够理解视频中的时间动态。为了适应最大上下文窗口约束，当前的方法使用关键帧采样，由于稀疏的时间覆盖，可能会错过宏观级别的事件和微观级别的细节。此外，处理完整图像及其每帧的标记会产生大量的计算开销。为了解决这些限制，我们建议利用视频编解码器原语（特别是运动向量和残差），它可以对视频冗余和稀疏性进行本机编码，而无需对大多数帧进行昂贵的全图像编码。为此，我们引入了基于 Transformer 的轻量级编码器，它聚合编解码器原语，并通过预训练策略将其表示与图像编码器嵌入对齐，该预训练策略可在端到端微调过程中加速收敛。与标准 VideoLM 相比，我们的方法将首次使用令牌的时间减少了高达 86\%$，令牌使用量减少了高达 93\%$。此外，通过改变关键帧和编解码器基元密度，我们能够在 14 美元的各种视频理解基准上保持或超过性能，涵盖一般问答、时间推理、长格式理解和空间场景理解。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2602.13191v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Optimal Take-off under Fuzzy Clearances<sup class='ipa'>/ˈklɪrənsɪz/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Hugo Henry, Arthur Tsai, Kelly Cohen</span>
+                                <span class="date">2026-02-13</span>
+                                <span class="categories">cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">This paper presents a hybrid obstacle avoidance architecture that integrates Optimal Control under clearance with a Fuzzy Rule Based System (FRBS) to enable adaptive constraint handling for unmanned aircraft. Motivated by the limitations of classical optimal control under uncertainty and the need fo...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">本文提出了一种混合避障架构，它将间隙下的最佳控制与基于模糊规则的系统（FRBS）相集成，以实现无人机的自适应约束处理。受不确定性下经典最优控制的局限性以及安全关键航空系统中可解释决策的需求的启发，我们设计了一个三阶段 Takagi Sugeno Kang 模糊层，该模糊层根据监管间隔最小值以及 FAA 和 EASA 的适航指南来调节约束半径、紧急程度和激活决策。然后，将这些模糊导出的间隙作为软约束纳入使用 FALCON 工具箱和 IPOPT 解决的最优控制问题中。该框架旨在通过有选择地激活避障更新来减少不必要的重新计算，同时保持遵守航空程序。使用简化的飞机模型进行的概念验证表明，该方法可以在单线程 MATLAB 环境中每次迭代生成最佳轨迹，计算时间为 2.3 秒，这表明近实时应用的可行性。然而，我们的实验揭示了最新版本的 FALCON 和 IPOPT 中存在关键的软件不兼容性，其中拉格朗日惩罚项仍然为零，从而妨碍了正确的约束执行。这种行为在不同场景中是一致的，表明求解器工具箱回归而不是建模缺陷。未来的工作包括通过恢复到早期的软件版本来验证这种效果，使用进化方法优化模糊隶属函数，以及将系统扩展到更高保真度的飞机模型和随机障碍物环境。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2602.13166v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
                     
                 </div>
             </div>
@@ -869,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/vixhal-baraiya/microgpt-c" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">microgpt-c</span>
-                                    <span class="repo-stars">⭐ 74</span>
+                                    <span class="repo-stars">⭐ 153</span>
                                 </div>
                                 <p class="repo-desc">用纯、无依赖的 C 语言训练和推理 GPT 的最原子方法</p>
                                 <div class="repo-meta">
@@ -883,9 +934,9 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/Kuberwastaken/picogpt" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">picogpt</span>
-                                    <span class="repo-stars">⭐ 74</span>
+                                    <span class="repo-stars">⭐ 81</span>
                                 </div>
-                                <p class="repo-desc">二维码中的 GPT ；在纯、无依赖的 JS/Python 中训练和推理 GPT 的实际最原子方法。</p>
+                                <p class="repo-desc">二维码中的 GPT；在纯、无依赖的 JS/Python 中训练和推理 GPT 的实际最原子方法。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">HTML</span>
                                     <span class="repo-date">2026-02-12</span>
@@ -897,7 +948,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/moketchups/permanently-jailbroken" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">permanently-jailbroken</span>
-                                    <span class="repo-stars">⭐ 7</span>
+                                    <span class="repo-stars">⭐ 10</span>
                                 </div>
                                 <p class="repo-desc">我们向 6 位人工智能询问了他们自己的编程情况。六人均表示越狱问题永远不会得到解决。自己运行——2 美元，10 分钟。</p>
                                 <div class="repo-meta">
@@ -911,7 +962,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/CoworkedShawn/openclaw-skills" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">openclaw-skills</span>
-                                    <span class="repo-stars">⭐ 5</span>
+                                    <span class="repo-stars">⭐ 6</span>
                                 </div>
                                 <p class="repo-desc">用于 AI 代理功能的自定义 OpenClaw 技能 - 内存系统、提示注入防御、意图路由和平台集成</p>
                                 <div class="repo-meta">
@@ -964,6 +1015,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/AETHERNALCODE/Medibly" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Medibly</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">Medily：Avalanche 上人工智能驱动的医疗保健供应链和 A2A 商务。最后一英里物流、嵌入式支付以及非洲医院和供应商的信任层。框架和白皮书。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-02-11</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/Amkhodaei83/connect4-3d-hand" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">connect4-3d-hand</span>
@@ -973,20 +1038,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">JavaScript</span>
                                     <span class="repo-date">2026-02-12</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/ArshVermaGit/nexus-ai-life-os" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">nexus-ai-life-os</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">NEXUS 🧠 — 人工智能驱动的第二大脑，可以实时观察、记忆和协助。具有主动警报、语义记忆和知识合成功能，可提高生产力⚡</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-02-09</span>
                                 </div>
                             </a>
                         </li>

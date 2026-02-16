@@ -397,7 +397,55 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             <p class="section-subtitle">ArXiv 最新论文精选</p>
             
             
-                <p class="empty-state">暂无论文数据</p>
+                
+                <article class="paper-card active" data-index="0">
+                    <h2 class="paper-title">Semantic<sup class='ipa'>/sɪˈmæntɪk/</sup> Chunking<sup class='ipa'>/chunking*/</sup> and the Entropy of Natural Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup></h2>
+                    <p class="paper-meta">
+                        <span class="authors">Weishun Zhong, Doron Sivan, Tankut Can</span>
+                        <span class="date">2026-02-13</span>
+                    </p>
+                    
+                    <div class="paper-abstract">
+                        <p class="abstract-en">The entropy rate of printed English is famously estimated to be about one bit per character, a benchmark that modern large language models (LLMs) have only recently approached. This entropy rate implies that English contains nearly 80 percent redundancy relative to the five bits per character expected for random text. We introduce a statistical model that attempts to capture the intricate multi-scale structure of natural language, providing a first-principles account of this redundancy level. Our model describes a procedure of self-similarly segmenting text into semantically coherent chunks down to the single-word level. The semantic structure of the text can then be hierarchically decomposed, allowing for analytical treatment. Numerical experiments with modern LLMs and open datasets suggest that our model quantitatively captures the structure of real texts at different levels of the semantic hierarchy. The entropy rate predicted by our model agrees with the estimated entropy rate of printed English. Moreover, our theory further reveals that the entropy rate of natural language is not fixed but should increase systematically with the semantic complexity of corpora, which are captured by the only free parameter in our model.</p>
+                        <hr class="divider">
+                        <p class="abstract-zh">众所周知，印刷英语的熵率估计约为每个字符一位，这是现代大型语言模型 (LLM) 最近才接近的基准。此熵率意味着相对于随机文本每个字符预期的 5 位，英语包含近 80% 的冗余。我们引入了一种统计模型，试图捕捉自然语言复杂的多尺度结构，提供这种冗余水平的第一性原理解释。我们的模型描述了将文本自相似地分割成语义连贯的块到单个单词级别的过程。然后可以对文本的语义结构进行分层分解，以便进行分析处理。现代法学硕士和开放数据集的数值实验表明，我们的模型定量地捕获了语义层次结构不同级别的真实文本的结构。我们的模型预测的熵率与印刷英语的估计熵率一致。此外，我们的理论进一步揭示，自然语言的熵率不是固定的，而是应该随着语料库的语义复杂性而系统地增加，这是由我们模型中唯一的自由参数捕获的。</p>
+                    </div>
+                </article>
+                
+                <article class="paper-card " data-index="1">
+                    <h2 class="paper-title">CoPE-VideoLM:<sup class='ipa'>/copevideolm*/</sup> Codec Primitives<sup class='ipa'>/primitives*/</sup> For Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Video Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h2>
+                    <p class="paper-meta">
+                        <span class="authors">Sayan Deb Sarkar, Rémi Pautrat, Ondrej Miksik</span>
+                        <span class="date">2026-02-13</span>
+                    </p>
+                    
+                    <div class="paper-abstract">
+                        <p class="abstract-en">Video Language Models (VideoLMs) empower AI systems to understand temporal dynamics in videos. To fit to the maximum context window constraint, current methods use keyframe sampling which can miss both macro-level events and micro-level details due to the sparse temporal coverage. Furthermore, processing full images and their tokens for each frame incurs substantial computational overhead. To address these limitations, we propose to leverage video codec primitives (specifically motion vectors and residuals) which natively encode video redundancy and sparsity without requiring expensive full-image encoding for most frames. To this end, we introduce lightweight transformer-based encoders that aggregate codec primitives and align their representations with image encoder embeddings through a pre-training strategy that accelerates convergence during end-to-end fine-tuning. Our approach reduces the time-to-first-token by up to $86\%$ and token usage by up to $93\%$ compared to standard VideoLMs. Moreover, by varying the keyframe and codec primitive densities we are able to maintain or exceed performance on $14$ diverse video understanding benchmarks spanning general question answering, temporal reasoning, long-form understanding, and spatial scene understanding.</p>
+                        <hr class="divider">
+                        <p class="abstract-zh">视频语言模型 (VideoLM) 使 AI 系统能够理解视频中的时间动态。为了适应最大上下文窗口约束，当前的方法使用关键帧采样，由于稀疏的时间覆盖，可能会错过宏观级别的事件和微观级别的细节。此外，处理完整图像及其每帧的标记会产生大量的计算开销。为了解决这些限制，我们建议利用视频编解码器原语（特别是运动向量和残差），它可以对视频冗余和稀疏性进行本机编码，而无需对大多数帧进行昂贵的全图像编码。为此，我们引入了基于 Transformer 的轻量级编码器，它聚合编解码器原语，并通过预训练策略将其表示与图像编码器嵌入对齐，该预训练策略可在端到端微调过程中加速收敛。与标准 VideoLM 相比，我们的方法将首次使用令牌的时间减少了高达 86\%$，令牌使用量减少了高达 93\%$。此外，通过改变关键帧和编解码器基元密度，我们能够在 14 美元的各种视频理解基准上保持或超过性能，涵盖一般问答、时间推理、长格式理解和空间场景理解。</p>
+                    </div>
+                </article>
+                
+                <article class="paper-card " data-index="2">
+                    <h2 class="paper-title">Optimal Take-off under Fuzzy Clearances<sup class='ipa'>/ˈklɪrənsɪz/</sup></h2>
+                    <p class="paper-meta">
+                        <span class="authors">Hugo Henry, Arthur Tsai, Kelly Cohen</span>
+                        <span class="date">2026-02-13</span>
+                    </p>
+                    
+                    <div class="paper-abstract">
+                        <p class="abstract-en">This paper presents a hybrid obstacle avoidance architecture that integrates Optimal Control under clearance with a Fuzzy Rule Based System (FRBS) to enable adaptive constraint handling for unmanned aircraft. Motivated by the limitations of classical optimal control under uncertainty and the need for interpretable decision making in safety critical aviation systems, we design a three stage Takagi Sugeno Kang fuzzy layer that modulates constraint radii, urgency levels, and activation decisions based on regulatory separation minima and airworthiness guidelines from FAA and EASA. These fuzzy-derived clearances are then incorporated as soft constraints into an optimal control problem solved using the FALCON toolbox and IPOPT. The framework aims to reduce unnecessary recomputations by selectively activating obstacle avoidance updates while maintaining compliance with aviation procedures. A proof of concept implementation using a simplified aircraft model demonstrates that the approach can generate optimal trajectories with computation times of 2,3 seconds per iteration in a single threaded MATLAB environment, suggesting feasibility for near real time applications. However, our experiments revealed a critical software incompatibility in the latest versions of FALCON and IPOPT, in which the Lagrangian penalty term remained identically zero, preventing proper constraint enforcement. This behavior was consistent across scenarios and indicates a solver toolbox regression rather than a modeling flaw. Future work includes validating this effect by reverting to earlier software versions, optimizing the fuzzy membership functions using evolutionary methods, and extending the system to higher fidelity aircraft models and stochastic obstacle environments.</p>
+                        <hr class="divider">
+                        <p class="abstract-zh">本文提出了一种混合避障架构，它将间隙下的最佳控制与基于模糊规则的系统（FRBS）相集成，以实现无人机的自适应约束处理。受不确定性下经典最优控制的局限性以及安全关键航空系统中可解释决策的需求的启发，我们设计了一个三阶段 Takagi Sugeno Kang 模糊层，该模糊层根据监管间隔最小值以及 FAA 和 EASA 的适航指南来调节约束半径、紧急程度和激活决策。然后，将这些模糊导出的间隙作为软约束纳入使用 FALCON 工具箱和 IPOPT 解决的最优控制问题中。该框架旨在通过有选择地激活避障更新来减少不必要的重新计算，同时保持遵守航空程序。使用简化的飞机模型进行的概念验证表明，该方法可以在单线程 MATLAB 环境中每次迭代生成最佳轨迹，计算时间为 2.3 秒，这表明近实时应用的可行性。然而，我们的实验揭示了最新版本的 FALCON 和 IPOPT 中存在关键的软件不兼容性，其中拉格朗日惩罚项仍然为零，从而妨碍了正确的约束执行。这种行为在不同场景中是一致的，表明求解器工具箱回归而不是建模缺陷。未来的工作包括通过恢复到早期的软件版本来验证这种效果，使用进化方法优化模糊隶属函数，以及将系统扩展到更高保真度的飞机模型和随机障碍物环境。</p>
+                    </div>
+                </article>
+                
+                
+                <div class="nav-bar">
+                    <button class="nav-btn" id="prev-paper">← 上一篇</button>
+                    <span class="nav-indicator" id="paper-indicator">1 / 3</span>
+                    <button class="nav-btn" id="next-paper">下一篇 →</button>
+                </div>
             
         </section>
         
@@ -410,7 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 74</span>
+                        <span class="repo-stars">★ 153</span>
                         <div class="repo-info">
                             <strong class="repo-name">vixhal-baraiya/microgpt-c</strong>
                             <p class="repo-desc">用纯、无依赖的 C 语言训练和推理 GPT 的最原子方法</p>
@@ -418,15 +466,15 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 74</span>
+                        <span class="repo-stars">★ 81</span>
                         <div class="repo-info">
                             <strong class="repo-name">Kuberwastaken/picogpt</strong>
-                            <p class="repo-desc">二维码中的 GPT ；在纯、无依赖的 JS/Python 中训练和推理 GPT 的实际最原子方法。</p>
+                            <p class="repo-desc">二维码中的 GPT；在纯、无依赖的 JS/Python 中训练和推理 GPT 的实际最原子方法。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 7</span>
+                        <span class="repo-stars">★ 10</span>
                         <div class="repo-info">
                             <strong class="repo-name">moketchups/permanently-jailbroken</strong>
                             <p class="repo-desc">我们向 6 位人工智能询问了他们自己的编程情况。六人均表示越狱问题永远不会得到解决。自己运行——2 美元，10 分钟。</p>
@@ -434,7 +482,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 5</span>
+                        <span class="repo-stars">★ 6</span>
                         <div class="repo-info">
                             <strong class="repo-name">CoworkedShawn/openclaw-skills</strong>
                             <p class="repo-desc">用于 AI 代理功能的自定义 OpenClaw 技能 - 内存系统、提示注入防御、意图路由和平台集成</p>
@@ -468,16 +516,16 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">Amkhodaei83/connect4-3d-hand</strong>
-                            <p class="repo-desc">使用 MediaPipe AI 通过手势控制的 3D 奇幻 Connect-4 游戏。</p>
+                            <strong class="repo-name">AETHERNALCODE/Medibly</strong>
+                            <p class="repo-desc">Medily：Avalanche 上人工智能驱动的医疗保健供应链和 A2A 商务。最后一英里物流、嵌入式支付以及非洲医院和供应商的信任层。框架和白皮书。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">ArshVermaGit/nexus-ai-life-os</strong>
-                            <p class="repo-desc">NEXUS 🧠 — 人工智能驱动的第二大脑，可以实时观察、记忆和协助。具有主动警报、语义记忆和知识合成功能，可提高生产力⚡</p>
+                            <strong class="repo-name">Amkhodaei83/connect4-3d-hand</strong>
+                            <p class="repo-desc">使用 MediaPipe AI 通过手势控制的 3D 奇幻 Connect-4 游戏。</p>
                         </div>
                     </li>
                 
@@ -1047,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-02-15 22:20:59
+        生成于 2026-02-16 22:24:02
     </footer>
 </body>
 </html>
