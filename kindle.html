@@ -397,55 +397,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             <p class="section-subtitle">ArXiv 最新论文精选</p>
             
             
-                
-                <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Perceptive<sup class='ipa'>/pərˈsɛptɪv/</sup> Humanoid<sup class='ipa'>/ˈhjuməˌnɔɪd/</sup> Parkour: Chaining<sup class='ipa'>/ˈʧeɪnɪŋ/</sup> Dynamic Human Skills via Motion Matching<sup class='ipa'>/ˈmæʧɪŋ/</sup></h2>
-                    <p class="paper-meta">
-                        <span class="authors">Zhen Wu, Xiaoyu Huang, Lujie Yang</span>
-                        <span class="date">2026-02-17</span>
-                    </p>
-                    
-                    <div class="paper-abstract">
-                        <p class="abstract-en">While recent advances in humanoid locomotion have achieved stable walking on varied terrains, capturing the agility and adaptivity of highly dynamic human motions remains an open challenge. In particular, agile parkour in complex environments demands not only low-level robustness, but also human-like motion expressiveness, long-horizon skill composition, and perception-driven decision-making. In this paper, we present Perceptive Humanoid Parkour (PHP), a modular framework that enables humanoid robots to autonomously perform long-horizon, vision-based parkour across challenging obstacle courses. Our approach first leverages motion matching, formulated as nearest-neighbor search in a feature space, to compose retargeted atomic human skills into long-horizon kinematic trajectories. This framework enables the flexible composition and smooth transition of complex skill chains while preserving the elegance and fluidity of dynamic human motions. Next, we train motion-tracking reinforcement learning (RL) expert policies for these composed motions, and distill them into a single depth-based, multi-skill student policy, using a combination of DAgger and RL. Crucially, the combination of perception and skill composition enables autonomous, context-aware decision-making: using only onboard depth sensing and a discrete 2D velocity command, the robot selects and executes whether to step over, climb onto, vault or roll off obstacles of varying geometries and heights. We validate our framework with extensive real-world experiments on a Unitree G1 humanoid robot, demonstrating highly dynamic parkour skills such as climbing tall obstacles up to 1.25m (96% robot height), as well as long-horizon multi-obstacle traversal with closed-loop adaptation to real-time obstacle perturbations.</p>
-                        <hr class="divider">
-                        <p class="abstract-zh">虽然人形运动的最新进展已经实现了在不同地形上的稳定行走，但捕捉高度动态的人体运动的敏捷性和适应性仍然是一个开放的挑战。特别是复杂环境下的敏捷跑酷，不仅需要低级的鲁棒性，还需要类人的动作表现力、长视界技能构成以及感知驱动的决策。在本文中，我们提出了感知人形跑酷（PHP），这是一个模块化框架，使人形机器人能够在具有挑战性的障碍路线上自主执行基于视觉的长视野跑酷。我们的方法首先利用运动匹配，将其表述为特征空间中的最近邻搜索，将重新定位的原子人类技能组合成长视野运动轨迹。该框架能够实现复杂技能链的灵活组合和平滑过渡，同时保留动态人体动作的优雅和流畅性。接下来，我们结合使用 DAgger 和 RL，为这些组合动作训练运动跟踪强化学习 (RL) 专家策略，并将它们提炼成单一的基于深度的多技能学生策略。至关重要的是，感知和技能组合的结合可以实现自主的、情境感知的决策：仅使用机载深度传感和离散的 2D 速度命令，机器人就可以选择并执行是否跨过、爬上、跳跃或滚下不同几何形状和高度的障碍物。我们在 Unitree G1 人形机器人上进行了广泛的真实世界实验来验证我们的框架，展示了高度动态的跑酷技能，例如攀爬高达 1.25m（机器人高度的 96%）的高障碍，以及对实时障碍物扰动进行闭环适应的长视野多障碍物穿越。</p>
-                    </div>
-                </article>
-                
-                <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">CrispEdit:<sup class='ipa'>/crispedit*/</sup> Low-Curvature<sup class='ipa'>/lowcurvature*/</sup> Projections<sup class='ipa'>/prɑˈʤɛkʃənz/</sup> for Scalable<sup class='ipa'>/ˈskeɪləbəl/</sup> Non-Destructive<sup class='ipa'>/nondestructive*/</sup> LLM Editing</h2>
-                    <p class="paper-meta">
-                        <span class="authors">Zarif Ikram, Arad Firouzkouhi, Stephen Tu</span>
-                        <span class="date">2026-02-17</span>
-                    </p>
-                    
-                    <div class="paper-abstract">
-                        <p class="abstract-en">A central challenge in large language model (LLM) editing is capability preservation: methods that successfully change targeted behavior can quietly game the editing proxy and corrupt general capabilities, producing degenerate behaviors reminiscent of proxy/reward hacking. We present CrispEdit, a scalable and principled second-order editing algorithm that treats capability preservation as an explicit constraint, unifying and generalizing several existing editing approaches. CrispEdit formulates editing as constrained optimization and enforces the constraint by projecting edit updates onto the low-curvature subspace of the capability-loss landscape. At the crux of CrispEdit is expressing capability constraint via Bregman divergence, whose quadratic form yields the Gauss-Newton Hessian exactly and even when the base model is not trained to convergence. We make this second-order procedure efficient at the LLM scale using Kronecker-factored approximate curvature (K-FAC) and a novel matrix-free projector that exploits Kronecker structure to avoid constructing massive projection matrices. Across standard model-editing benchmarks, CrispEdit achieves high edit success while keeping capability degradation below 1% on average across datasets, significantly improving over prior editors.</p>
-                        <hr class="divider">
-                        <p class="abstract-zh">大语言模型（LLM）编辑的一个核心挑战是能力保留：成功改变目标行为的方法可以悄悄地博弈编辑代理并破坏一般能力，产生让人想起代理/奖励黑客的退化行为。我们提出了 CrispEdit，一种可扩展且有原则的二阶编辑算法，它将能力保留视为显式约束，统一并概括了几种现有的编辑方法。 CrispEdit 将编辑制定为约束优化，并通过将编辑更新投影到能力损失景观的低曲率子空间上来强制执行约束。 CrispEdit 的关键是通过 Bregman 散度表达能力约束，即使基础模型未经过收敛训练，其二次形式也能准确生成高斯-牛顿 Hessian 矩阵。我们使用克罗内克因子近似曲率（K-FAC）和利用克罗内克结构避免构建大量投影矩阵的新型无矩阵投影仪，使这个二阶过程在法学硕士规模上变得高效。在标准模型编辑基准测试中，CrispEdit 取得了很高的编辑成功率，同时将整个数据集的能力下降平均控制在 1% 以下，与之前的编辑器相比有了显着改进。</p>
-                    </div>
-                </article>
-                
-                <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Developing<sup class='ipa'>/dɪˈvɛləpɪŋ/</sup> AI Agents with Simulated<sup class='ipa'>/ˈsɪmjəˌleɪtɪd/</sup> Data: Why, what, and how?</h2>
-                    <p class="paper-meta">
-                        <span class="authors">Xiaoran Liu, Istvan David</span>
-                        <span class="date">2026-02-17</span>
-                    </p>
-                    
-                    <div class="paper-abstract">
-                        <p class="abstract-en">As insufficient data volume and quality remain the key impediments to the adoption of modern subsymbolic AI, techniques of synthetic data generation are in high demand. Simulation offers an apt, systematic approach to generating diverse synthetic data. This chapter introduces the reader to the key concepts, benefits, and challenges of simulation-based synthetic data generation for AI training purposes, and to a reference framework to describe, design, and analyze digital twin-based AI simulation solutions.</p>
-                        <hr class="divider">
-                        <p class="abstract-zh">由于数据量和质量不足仍然是采用现代亚符号人工智能的主要障碍，因此对合成数据生成技术的需求很高。模拟提供了一种适当的、系统的方法来生成不同的合成数据。本章向读者介绍用于人工智能训练目的的基于仿真的合成数据生成的关键概念、优点和挑战，以及描述、设计和分析基于数字孪生的人工智能仿真解决方案的参考框架。</p>
-                    </div>
-                </article>
-                
-                
-                <div class="nav-bar">
-                    <button class="nav-btn" id="prev-paper">← 上一篇</button>
-                    <span class="nav-indicator" id="paper-indicator">1 / 3</span>
-                    <button class="nav-btn" id="next-paper">下一篇 →</button>
-                </div>
+                <p class="empty-state">暂无论文数据</p>
             
         </section>
         
@@ -458,7 +410,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 181</span>
+                        <span class="repo-stars">★ 192</span>
                         <div class="repo-info">
                             <strong class="repo-name">vixhal-baraiya/microgpt-c</strong>
                             <p class="repo-desc">用纯、无依赖的 C 语言训练和推理 GPT 的最原子方法</p>
@@ -466,15 +418,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 85</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">Kuberwastaken/picogpt</strong>
-                            <p class="repo-desc">二维码中的 GPT ；在纯、无依赖的 JS/Python 中训练和推理 GPT 的实际最原子方法。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 22</span>
+                        <span class="repo-stars">★ 42</span>
                         <div class="repo-info">
                             <strong class="repo-name">QwertyMcQwertz/monkeys-with-typewriters</strong>
                             <p class="repo-desc">3 美元微控制器上的完整人工智能平台。亚毫秒级推理。零幻觉。</p>
@@ -490,7 +434,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
+                        <span class="repo-stars">★ 4</span>
                         <div class="repo-info">
                             <strong class="repo-name">agent-wall/agent-wall</strong>
                             <p class="repo-desc">AI 代理的安全防火墙。拦截 MCP 工具调用、执行策略、阻止攻击</p>
@@ -502,14 +446,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">mostafaarafatt/laravel-ai-database</strong>
                             <p class="repo-desc">Laravel 的人工智能数据库查询助手 - 将自然语言转换为 SQL</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">Amkhodaei83/connect4-3d-hand</strong>
-                            <p class="repo-desc">使用 MediaPipe AI 通过手势控制的 3D 奇幻 Connect-4 游戏。</p>
                         </div>
                     </li>
                 
@@ -533,7 +469,23 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <span class="repo-stars">★ 1</span>
                         <div class="repo-info">
                             <strong class="repo-name">Software-Engineering-Arena/SWE-Model-Arena</strong>
-                            <p class="repo-desc">软件工程任务的模型舞台</p>
+                            <p class="repo-desc">通过 SE 任务的多轮评估，成对比较工具调用模型。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 1</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">Ramakm/GenAI-Projects</strong>
+                            <p class="repo-desc">这个存储库是您了解如何构建 Gen AI 产品所需的全部内容。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 1</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">labsisouleimen/AI-Heart-Guardian</strong>
+                            <p class="repo-desc">一款医疗人工智能桌面应用程序，具有定制训练的深度学习模型和自行管理的数据集，用于高精度心电图异常检测。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1047,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-02-18 22:28:47
+        生成于 2026-02-19 22:27:39
     </footer>
 </body>
 </html>

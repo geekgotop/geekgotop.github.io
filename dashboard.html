@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-02-18 22:28:47</span>
+        <span class="generated-time">更新于 2026-02-19 22:27:39</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,58 +846,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Perceptive<sup class='ipa'>/pərˈsɛptɪv/</sup> Humanoid<sup class='ipa'>/ˈhjuməˌnɔɪd/</sup> Parkour: Chaining<sup class='ipa'>/ˈʧeɪnɪŋ/</sup> Dynamic Human Skills via Motion Matching<sup class='ipa'>/ˈmæʧɪŋ/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Zhen Wu, Xiaoyu Huang, Lujie Yang</span>
-                                <span class="date">2026-02-17</span>
-                                <span class="categories">cs.RO | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">While recent advances in humanoid locomotion have achieved stable walking on varied terrains, capturing the agility and adaptivity of highly dynamic human motions remains an open challenge. In particular, agile parkour in complex environments demands not only low-level robustness, but also human-lik...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">虽然人形运动的最新进展已经实现了在不同地形上的稳定行走，但捕捉高度动态的人体运动的敏捷性和适应性仍然是一个开放的挑战。特别是复杂环境下的敏捷跑酷，不仅需要低级的鲁棒性，还需要类人的动作表现力、长视界技能构成以及感知驱动的决策。在本文中，我们提出了感知人形跑酷（PHP），这是一个模块化框架，使人形机器人能够在具有挑战性的障碍路线上自主执行基于视觉的长视野跑酷。我们的方法首先利用运动匹配，将其表述为特征空间中的最近邻搜索，将重新定位的原子人类技能组合成长视野运动轨迹。该框架能够实现复杂技能链的灵活组合和平滑过渡，同时保留动态人体动作的优雅和流畅性。接下来，我们结合使用 DAgger 和 RL，为这些组合动作训练运动跟踪强化学习 (RL) 专家策略，并将它们提炼成单一的基于深度的多技能学生策略。至关重要的是，感知和技能组合的结合可以实现自主的、情境感知的决策：仅使用机载深度传感和离散的 2D 速度命令，机器人就可以选择并执行是否跨过、爬上、跳跃或滚下不同几何形状和高度的障碍物。我们在 Unitree G1 人形机器人上进行了广泛的真实世界实验来验证我们的框架，展示了高度动态的跑酷技能，例如攀爬高达 1.25m（机器人高度的 96%）的高障碍，以及对实时障碍物扰动进行闭环适应的长视野多障碍物穿越。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2602.15827v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">CrispEdit:<sup class='ipa'>/crispedit*/</sup> Low-Curvature<sup class='ipa'>/lowcurvature*/</sup> Projections<sup class='ipa'>/prɑˈʤɛkʃənz/</sup> for Scalable<sup class='ipa'>/ˈskeɪləbəl/</sup> Non-Destructive<sup class='ipa'>/nondestructive*/</sup> LLM Editing</h4>
-                            <div class="paper-meta">
-                                <span class="authors">Zarif Ikram, Arad Firouzkouhi, Stephen Tu</span>
-                                <span class="date">2026-02-17</span>
-                                <span class="categories">cs.LG | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">A central challenge in large language model (LLM) editing is capability preservation: methods that successfully change targeted behavior can quietly game the editing proxy and corrupt general capabilities, producing degenerate behaviors reminiscent of proxy/reward hacking. We present CrispEdit, a sc...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">大语言模型（LLM）编辑的一个核心挑战是能力保留：成功改变目标行为的方法可以悄悄地博弈编辑代理并破坏一般能力，产生让人想起代理/奖励黑客的退化行为。我们提出了 CrispEdit，一种可扩展且有原则的二阶编辑算法，它将能力保留视为显式约束，统一并概括了几种现有的编辑方法。 CrispEdit 将编辑制定为约束优化，并通过将编辑更新投影到能力损失景观的低曲率子空间上来强制执行约束。 CrispEdit 的关键是通过 Bregman 散度表达能力约束，即使基础模型未经过收敛训练，其二次形式也能准确生成高斯-牛顿 Hessian 矩阵。我们使用克罗内克因子近似曲率（K-FAC）和利用克罗内克结构避免构建大量投影矩阵的新型无矩阵投影仪，使这个二阶过程在法学硕士规模上变得高效。在标准模型编辑基准测试中，CrispEdit 取得了很高的编辑成功率，同时将整个数据集的能力下降平均控制在 1% 以下，与之前的编辑器相比有了显着改进。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2602.15823v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Developing<sup class='ipa'>/dɪˈvɛləpɪŋ/</sup> AI Agents with Simulated<sup class='ipa'>/ˈsɪmjəˌleɪtɪd/</sup> Data: Why, what, and how?</h4>
-                            <div class="paper-meta">
-                                <span class="authors">Xiaoran Liu, Istvan David</span>
-                                <span class="date">2026-02-17</span>
-                                <span class="categories">cs.AI | cs.ET</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">As insufficient data volume and quality remain the key impediments to the adoption of modern subsymbolic AI, techniques of synthetic data generation are in high demand. Simulation offers an apt, systematic approach to generating diverse synthetic data. This chapter introduces the reader to the key c...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">由于数据量和质量不足仍然是采用现代亚符号人工智能的主要障碍，因此对合成数据生成技术的需求很高。模拟提供了一种适当的、系统的方法来生成不同的合成数据。本章向读者介绍用于人工智能训练目的的基于仿真的合成数据生成的关键概念、优点和挑战，以及描述、设计和分析基于数字孪生的人工智能仿真解决方案的参考框架。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2602.15816v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
+                        <p class="empty-state">暂无论文数据</p>
                     
                 </div>
             </div>
@@ -920,7 +869,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/vixhal-baraiya/microgpt-c" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">microgpt-c</span>
-                                    <span class="repo-stars">⭐ 181</span>
+                                    <span class="repo-stars">⭐ 192</span>
                                 </div>
                                 <p class="repo-desc">用纯、无依赖的 C 语言训练和推理 GPT 的最原子方法</p>
                                 <div class="repo-meta">
@@ -931,28 +880,14 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Kuberwastaken/picogpt" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">picogpt</span>
-                                    <span class="repo-stars">⭐ 85</span>
-                                </div>
-                                <p class="repo-desc">二维码中的 GPT ；在纯、无依赖的 JS/Python 中训练和推理 GPT 的实际最原子方法。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">HTML</span>
-                                    <span class="repo-date">2026-02-12</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/QwertyMcQwertz/monkeys-with-typewriters" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">monkeys-with-typewriters</span>
-                                    <span class="repo-stars">⭐ 22</span>
+                                    <span class="repo-stars">⭐ 42</span>
                                 </div>
                                 <p class="repo-desc">3 美元微控制器上的完整人工智能平台。亚毫秒级推理。零幻觉。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">HTML</span>
+                                    <span class="repo-lang">C++</span>
                                     <span class="repo-date">2026-02-18</span>
                                 </div>
                             </a>
@@ -976,7 +911,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/agent-wall/agent-wall" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">agent-wall</span>
-                                    <span class="repo-stars">⭐ 3</span>
+                                    <span class="repo-stars">⭐ 4</span>
                                 </div>
                                 <p class="repo-desc">AI 代理的安全防火墙。拦截 MCP 工具调用、执行策略、阻止攻击</p>
                                 <div class="repo-meta">
@@ -996,20 +931,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">PHP</span>
                                     <span class="repo-date">2026-02-18</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/Amkhodaei83/connect4-3d-hand" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">connect4-3d-hand</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">使用 MediaPipe AI 通过手势控制的 3D 奇幻 Connect-4 游戏。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">JavaScript</span>
-                                    <span class="repo-date">2026-02-12</span>
                                 </div>
                             </a>
                         </li>
@@ -1048,10 +969,38 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">SWE-Model-Arena</span>
                                     <span class="repo-stars">⭐ 1</span>
                                 </div>
-                                <p class="repo-desc">软件工程任务的模型舞台</p>
+                                <p class="repo-desc">通过 SE 任务的多轮评估，成对比较工具调用模型。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-02-15</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Ramakm/GenAI-Projects" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">GenAI-Projects</span>
+                                    <span class="repo-stars">⭐ 1</span>
+                                </div>
+                                <p class="repo-desc">这个存储库是您了解如何构建 Gen AI 产品所需的全部内容。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-02-14</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/labsisouleimen/AI-Heart-Guardian" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">AI-Heart-Guardian</span>
+                                    <span class="repo-stars">⭐ 1</span>
+                                </div>
+                                <p class="repo-desc">一款医疗人工智能桌面应用程序，具有定制训练的深度学习模型和自行管理的数据集，用于高精度心电图异常检测。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-02-13</span>
                                 </div>
                             </a>
                         </li>
