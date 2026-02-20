@@ -397,7 +397,55 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             <p class="section-subtitle">ArXiv 最新论文精选</p>
             
             
-                <p class="empty-state">暂无论文数据</p>
+                
+                <article class="paper-card active" data-index="0">
+                    <h2 class="paper-title">Sink-Aware<sup class='ipa'>/sinkaware*/</sup> Pruning for Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h2>
+                    <p class="paper-meta">
+                        <span class="authors">Aidar Myrzakhan, Tianyi Li, Bowei Guo</span>
+                        <span class="date">2026-02-19</span>
+                    </p>
+                    
+                    <div class="paper-abstract">
+                        <p class="abstract-en">Diffusion Language Models (DLMs) incur high inference cost due to iterative denoising, motivating efficient pruning. Existing pruning heuristics largely inherited from autoregressive (AR) LLMs, typically preserve attention sink tokens because AR sinks serve as stable global anchors. We show that this assumption does not hold for DLMs: the attention-sink position exhibits substantially higher variance over the full generation trajectory (measured by how the dominant sink locations shift across timesteps), indicating that sinks are often transient and less structurally essential than in AR models. Based on this observation, we propose ${\bf \texttt{Sink-Aware Pruning}}$, which automatically identifies and prunes unstable sinks in DLMs (prior studies usually keep sinks for AR LLMs). Without retraining, our method achieves a better quality-efficiency trade-off and outperforms strong prior pruning baselines under matched compute. Our code is available at https://github.com/VILA-Lab/Sink-Aware-Pruning.</p>
+                        <hr class="divider">
+                        <p class="abstract-zh">扩散语言模型（DLM）由于迭代去噪而产生较高的推理成本，从而激发了高效的剪枝。现有的剪枝启发法很大程度上继承自自回归（AR）LLM，通常保留注意力池标记，因为 AR 池充当稳定的全局锚。我们证明这个假设对于 DLM 并不成立：注意力池位置在整个生成轨迹上表现出更高的方差（通过主要池位置如何跨时间步移动来衡量），这表明池通常是瞬态的，并且在结构上不如 AR 模型那么重要。基于这一观察，我们提出${\bf \texttt{Sink-Aware Pruning}}$，它自动识别和修剪DLM中不稳定的sink（之前的研究通常为AR LLM保留sink）。在没有重新训练的情况下，我们的方法实现了更好的质量效率权衡，并且在匹配计算下优于强大的先验剪枝基线。我们的代码可在 https://github.com/VILA-Lab/Sink-Aware-Pruning 获取。</p>
+                    </div>
+                </article>
+                
+                <article class="paper-card " data-index="1">
+                    <h2 class="paper-title">CLEF HIPE-2026: Evaluating<sup class='ipa'>/ɪˈvæljuˌeɪtɪŋ/</sup> Accurate<sup class='ipa'>/ˈækjərət/</sup> and Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Person-Place<sup class='ipa'>/personplace*/</sup> Relation<sup class='ipa'>/riˈleɪʃən/</sup> Extraction<sup class='ipa'>/ɛkˈstrækʃən/</sup> from Multilingual<sup class='ipa'>/ˌməltiˈlɪŋwəl/</sup> Historical<sup class='ipa'>/hɪˈstɔrɪkəl/</sup> Texts</h2>
+                    <p class="paper-meta">
+                        <span class="authors">Juri Opitz, Corina Raclé, Emanuela Boros</span>
+                        <span class="date">2026-02-19</span>
+                    </p>
+                    
+                    <div class="paper-abstract">
+                        <p class="abstract-en">HIPE-2026 is a CLEF evaluation lab dedicated to person-place relation extraction from noisy, multilingual historical texts. Building on the HIPE-2020 and HIPE-2022 campaigns, it extends the series toward semantic relation extraction by targeting the task of identifying person--place associations in multiple languages and time periods. Systems are asked to classify relations of two types - $at$ (&#34;Has the person ever been at this place?&#34;) and $isAt$ (&#34;Is the person located at this place around publication time?&#34;) - requiring reasoning over temporal and geographical cues. The lab introduces a three-fold evaluation profile that jointly assesses accuracy, computational efficiency, and domain generalization. By linking relation extraction to large-scale historical data processing, HIPE-2026 aims to support downstream applications in knowledge-graph construction, historical biography reconstruction, and spatial analysis in digital humanities.</p>
+                        <hr class="divider">
+                        <p class="abstract-zh">HIPE-2026 是一个 CLEF 评估实验室，致力于从嘈杂的多语言历史文本中提取人物与地点关系。它以 HIPE-2020 和 HIPE-2022 活动为基础，通过识别多种语言和时间段中的人物-地点关联的任务，将该系列扩展到语义关系提取。系统被要求对两种类型的关系进行分类 - $at$（“这个人曾经去过这个地方吗？”）和 $isAt$（“这个人在发布时间附近是否位于这个地方？”） - 需要对时间和地理线索进行推理。该实验室引入了三重评估配置文件，联合评估准确性、计算效率和领域泛化能力。通过将关系抽取与大规模历史数据处理联系起来，HIPE-2026旨在支持数字人文知识图谱构建、历史传记重建和空间分析等下游应用。</p>
+                    </div>
+                </article>
+                
+                <article class="paper-card " data-index="2">
+                    <h2 class="paper-title">MARS: Margin-Aware<sup class='ipa'>/marginaware*/</sup> Reward-Modeling<sup class='ipa'>/rewardmodeling*/</sup> with Self-Refinement<sup class='ipa'>/selfrefinement*/</sup></h2>
+                    <p class="paper-meta">
+                        <span class="authors">Payel Bhattacharjee, Osvaldo Simeone, Ravi Tandon</span>
+                        <span class="date">2026-02-19</span>
+                    </p>
+                    
+                    <div class="paper-abstract">
+                        <p class="abstract-en">Reward modeling is a core component of modern alignment pipelines including RLHF and RLAIF, underpinning policy optimization methods including PPO and TRPO. However, training reliable reward models relies heavily on human-labeled preference data, which is costly and limited, motivating the use of data augmentation. Existing augmentation approaches typically operate at the representation or semantic level and remain agnostic to the reward model&#39;s estimation difficulty. In this paper, we propose MARS, an adaptive, margin-aware augmentation and sampling strategy that explicitly targets ambiguous and failure modes of the reward model. Our proposed framework, MARS, concentrates augmentation on low-margin (ambiguous) preference pairs where the reward model is most uncertain, and iteratively refines the training distribution via hard-sample augmentation. We provide theoretical guarantees showing that this strategy increases the average curvature of the loss function hence enhance information and improves conditioning, along with empirical results demonstrating consistent gains over uniform augmentation for robust reward modeling.</p>
+                        <hr class="divider">
+                        <p class="abstract-zh">奖励建模是包括 RLHF 和 RLAIF 在内的现代联盟管道的核心组成部分，支撑着包括 PPO 和 TRPO 在内的策略优化方法。然而，训练可靠的奖励模型在很大程度上依赖于人类标记的偏好数据，这些数据成本高昂且有限，从而激发了数据增强的使用。现有的增强方法通常在表示或语义级别上运行，并且对奖励模型的估计难度保持不可知。在本文中，我们提出了 MARS，一种自适应的、边缘感知的增强和采样策略，明确针对奖励模型的模糊和失败模式。我们提出的框架 MARS 将增强集中于奖励模型最不确定的低利润（模糊）偏好对，并通过硬样本增强迭代地细化训练分布。我们提供的理论保证表明，该策略增加了损失函数的平均曲率，从而增强了信息并改善了调节，同时实证结果证明了稳健奖励建模相对于均匀增强的一致增益。</p>
+                    </div>
+                </article>
+                
+                
+                <div class="nav-bar">
+                    <button class="nav-btn" id="prev-paper">← 上一篇</button>
+                    <span class="nav-indicator" id="paper-indicator">1 / 3</span>
+                    <button class="nav-btn" id="next-paper">下一篇 →</button>
+                </div>
             
         </section>
         
@@ -410,7 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 192</span>
+                        <span class="repo-stars">★ 205</span>
                         <div class="repo-info">
                             <strong class="repo-name">vixhal-baraiya/microgpt-c</strong>
                             <p class="repo-desc">用纯、无依赖的 C 语言训练和推理 GPT 的最原子方法</p>
@@ -418,7 +466,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 42</span>
+                        <span class="repo-stars">★ 44</span>
                         <div class="repo-info">
                             <strong class="repo-name">QwertyMcQwertz/monkeys-with-typewriters</strong>
                             <p class="repo-desc">3 美元微控制器上的完整人工智能平台。亚毫秒级推理。零幻觉。</p>
@@ -442,6 +490,22 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">kiroviro/pharmacy-ai-assistant</strong>
+                            <p class="repo-desc">ViaPharma 客户的智能药房助手。使用医疗人工智能和安全第一的方法根据症状提供个性化的非处方药产品推荐。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">frangelbarrera/Awesome-Hacking-with-AI</strong>
+                            <p class="repo-desc">人工智能驱动的进攻性安全的权威指南，探索人工智能驱动的网络钓鱼、恶意软件开发、僵尸网络编排和自主网络利用的高级策略。为道德黑客、安全研究人员和红队成员提供的综合资源。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
                             <strong class="repo-name">mostafaarafatt/laravel-ai-database</strong>
@@ -452,16 +516,8 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">kiroviro/pharmacy-ai-assistant</strong>
-                            <p class="repo-desc">ViaPharma 客户的智能药房助手。使用医疗人工智能和安全第一的方法根据症状提供个性化的非处方药产品推荐。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 1</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">ZacharyZcR/NLUI</strong>
-                            <p class="repo-desc">自然语言用户界面——将任何 API 转变为对话界面。</p>
+                            <strong class="repo-name">TheAuroraAI/alive</strong>
+                            <p class="repo-desc">实现人工智能自动化所需的一切。在一个文件中。通过 110 多次实际操作进行生产强化。</p>
                         </div>
                     </li>
                 
@@ -476,16 +532,8 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 1</span>
                         <div class="repo-info">
-                            <strong class="repo-name">Ramakm/GenAI-Projects</strong>
-                            <p class="repo-desc">这个存储库是您了解如何构建 Gen AI 产品所需的全部内容。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 1</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">labsisouleimen/AI-Heart-Guardian</strong>
-                            <p class="repo-desc">一款医疗人工智能桌面应用程序，具有定制训练的深度学习模型和自行管理的数据集，用于高精度心电图异常检测。</p>
+                            <strong class="repo-name">chihebabiza/Python_Minimax_Tictactoe</strong>
+                            <p class="repo-desc">一款无与伦比的 Tic-Tac-Toe 游戏，使用 Python 和 Pygame 构建，具有由 Minimax 算法支持的 AI 对手。</p>
                         </div>
                     </li>
                 
@@ -1047,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-02-19 22:27:39
+        生成于 2026-02-20 22:21:29
     </footer>
 </body>
 </html>
