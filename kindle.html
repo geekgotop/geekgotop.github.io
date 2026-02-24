@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">VIRAASAT:<sup class='ipa'>/viraasat*/</sup> Traversing<sup class='ipa'>/trəˈvərsɪŋ/</sup> Novel Paths for Indian Cultural<sup class='ipa'>/ˈkəlʧərəl/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h2>
+                    <h2 class="paper-title">A Very Big Video Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> Suite</h2>
                     <p class="paper-meta">
-                        <span class="authors">Harshul Raj Surana, Arijit Maji, Aryan Vats</span>
-                        <span class="date">2026-02-20</span>
+                        <span class="authors">Maijunxian Wang, Ruisi Wang, Juyi Lin</span>
+                        <span class="date">2026-02-23</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Large Language Models (LLMs) have made significant progress in reasoning tasks across various domains such as mathematics and coding. However, their performance deteriorates in tasks requiring rich socio-cultural knowledge and diverse local contexts, particularly those involving Indian Culture. Existing Cultural benchmarks are (i) Manually crafted, (ii) contain single-hop questions testing factual recall, and (iii) prohibitively costly to scale, leaving this deficiency largely unmeasured. To address this, we introduce VIRAASAT, a novel, semi-automated multi-hop approach for generating cultural specific multi-hop Question-Answering dataset for Indian culture. VIRAASAT leverages a Knowledge Graph comprising more than 700 expert-curated cultural artifacts, covering 13 key attributes of Indian culture (history, festivals, etc). VIRAASAT spans all 28 states and 8 Union Territories, yielding more than 3,200 multi-hop questions that necessitate chained cultural reasoning. We evaluate current State-of-the-Art (SOTA) LLMs on VIRAASAT and identify key limitations in reasoning wherein fine-tuning on Chain-of-Thought(CoT) traces fails to ground and synthesize low-probability facts. To bridge this gap, we propose a novel framework named Symbolic Chain-of-Manipulation (SCoM). Adapting the Chain-of-Manipulation paradigm, we train the model to simulate atomic Knowledge Graph manipulations internally. SCoM teaches the model to reliably traverse the topological structure of the graph. Experiments on Supervised Fine-Tuning (SFT) demonstrate that SCoM outperforms standard CoT baselines by up to 20%. We release the VIRAASAT dataset along with our findings, laying a strong foundation towards building Culturally Aware Reasoning Models.</p>
+                        <p class="abstract-en">Rapid progress in video models has largely focused on visual quality, leaving their reasoning capabilities underexplored. Video reasoning grounds intelligence in spatiotemporally consistent visual environments that go beyond what text can naturally capture, enabling intuitive reasoning over spatiotemporal structure such as continuity, interaction, and causality. However, systematically studying video reasoning and its scaling behavior is hindered by the lack of large-scale training data. To address this gap, we introduce the Very Big Video Reasoning (VBVR) Dataset, an unprecedentedly large-scale resource spanning 200 curated reasoning tasks following a principled taxonomy and over one million video clips, approximately three orders of magnitude larger than existing datasets. We further present VBVR-Bench, a verifiable evaluation framework that moves beyond model-based judging by incorporating rule-based, human-aligned scorers, enabling reproducible and interpretable diagnosis of video reasoning capabilities. Leveraging the VBVR suite, we conduct one of the first large-scale scaling studies of video reasoning and observe early signs of emergent generalization to unseen reasoning tasks. Together, VBVR lays a foundation for the next stage of research in generalizable video reasoning. The data, benchmark toolkit, and models are publicly available at https://video-reason.com/ .</p>
                         <hr class="divider">
-                        <p class="abstract-zh">大型语言模型 (LLM) 在数学和编码等各个领域的推理任务中取得了重大进展。然而，在需要丰富的社会文化知识和不同的当地背景的任务中，尤其是涉及印度文化的任务中，他们的表现却下降了。现有的文化基准是（i）手动制定的，（ii）包含测试事实回忆的单跳问题，以及（iii）扩展成本过高，导致这种缺陷在很大程度上无法衡量。为了解决这个问题，我们引入了 VIRAASAT，一种新颖的半自动多跳方法，用于生成印度文化特定文化的多跳问答数据集。 VIRAASAT 利用知识图谱，其中包含 700 多个专家策划的文化文物，涵盖印度文化的 13 个关键属性（历史、节日等）。 VIRAASAT 横跨所有 28 个州和 8 个联邦直辖区，产生超过 3,200 个需要链式文化推理的多跳问题。我们评估了 VIRAASAT 上当前最先进的 (SOTA) 法学硕士，并确定了推理中的关键局限性，其中思想链 (CoT) 轨迹的微调无法基础和合成低概率事实。为了弥补这一差距，我们提出了一种名为符号操作链（SCoM）的新颖框架。采用操作链范式，我们训练模型在内部模拟原子知识图操作。 SCoM 教导模型可靠地遍历图的拓扑结构。监督微调 (SFT) 实验表明，SCoM 的性能比标准 CoT 基线高出 20%。我们发布了 VIRAASAT 数据集以及我们的研究结果，为构建文化感知推理模型奠定了坚实的基础。</p>
+                        <p class="abstract-zh">视频模型的快速进步主要集中在视觉质量上，而其推理能力尚未得到充分开发。视频推理将智能建立在时空一致的视觉环境中，超越了文本可以自然捕获的范围，从而能够对时空结构（例如连续性、交互性和因果关系）进行直观推理。然而，由于缺乏大规模训练数据，系统地研究视频推理及其缩放行为受到阻碍。为了解决这一差距，我们引入了超大视频推理 (VBVR) 数据集，这是一个前所未有的大规模资源，涵盖 200 个遵循原则分类的策划推理任务和超过 100 万个视频剪辑，比现有数据集大约大三个数量级。我们进一步介绍了 VBVR-Bench，这是一个可验证的评估框架，它超越了基于模型的判断，结合了基于规则的、人性化的评分器，实现了视频推理能力的可重复和可解释的诊断。利用 VBVR 套件，我们进行了视频推理的首批大规模研究之一，并观察了对未见过的推理任务的新兴泛化的早期迹象。 VBVR 共同为下一阶段的泛化视频推理研究奠定了基础。数据、基准工具包和模型可在 https://video-reason.com/ 上公开获取。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">RVR: Retrieve-Verify-Retrieve<sup class='ipa'>/retrieveverifyretrieve*/</sup> for Comprehensive<sup class='ipa'>/ˌkɑmpriˈhɛnsɪv/</sup> Question<sup class='ipa'>/kˈwɛʃən/</sup> Answering<sup class='ipa'>/ˈænsərɪŋ/</sup></h2>
+                    <h2 class="paper-title">Behavior<sup class='ipa'>/bɪˈheɪvjər/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> (BL): Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> Hierarchical<sup class='ipa'>/ˌhaɪˈrɑrkəkəl/</sup> Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> Structures<sup class='ipa'>/ˈstrəkʧərz/</sup> from Data</h2>
                     <p class="paper-meta">
-                        <span class="authors">Deniz Qian, Hung-Ting Chen, Eunsol Choi</span>
-                        <span class="date">2026-02-20</span>
+                        <span class="authors">Zhenyao Ma, Yue Liang, Dongxu Li</span>
+                        <span class="date">2026-02-23</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Comprehensively retrieving diverse documents is crucial to address queries that admit a wide range of valid answers. We introduce retrieve-verify-retrieve (RVR), a multi-round retrieval framework designed to maximize answer coverage. Initially, a retriever takes the original query and returns a candidate document set, followed by a verifier that identifies a high-quality subset. For subsequent rounds, the query is augmented with previously verified documents to uncover answers that are not yet covered in previous rounds. RVR is effective even with off-the-shelf retrievers, and fine-tuning retrievers for our inference procedure brings further gains. Our method outperforms baselines, including agentic search approaches, achieving at least 10% relative and 3% absolute gain in complete recall percentage on a multi-answer retrieval dataset (QAMPARI). We also see consistent gains on two out-of-domain datasets (QUEST and WebQuestionsSP) across different base retrievers. Our work presents a promising iterative approach for comprehensive answer recall leveraging a verifier and adapting retrievers to a new inference scenario.</p>
+                        <p class="abstract-en">Inspired by behavioral science, we propose Behavior Learning (BL), a novel general-purpose machine learning framework that learns interpretable and identifiable optimization structures from data, ranging from single optimization problems to hierarchical compositions. It unifies predictive performance, intrinsic interpretability, and identifiability, with broad applicability to scientific domains involving optimization. BL parameterizes a compositional utility function built from intrinsically interpretable modular blocks, which induces a data distribution for prediction and generation. Each block represents and can be written in symbolic form as a utility maximization problem (UMP), a foundational paradigm in behavioral science and a universal framework of optimization. BL supports architectures ranging from a single UMP to hierarchical compositions, the latter modeling hierarchical optimization structures. Its smooth and monotone variant (IBL) guarantees identifiability. Theoretically, we establish the universal approximation property of BL, and analyze the M-estimation properties of IBL. Empirically, BL demonstrates strong predictive performance, intrinsic interpretability and scalability to high-dimensional data. Code: https://github.com/MoonYLiang/Behavior-Learning ; install via pip install blnetwork.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">全面检索不同的文档对于解决允许广泛有效答案的查询至关重要。我们引入检索-验证-检索（RVR），这是一种旨在最大化答案覆盖率的多轮检索框架。最初，检索器获取原始查询并返回候选文档集，然后由验证器识别高质量子集。对于后续轮次，查询将使用先前验证的文档进行扩充，以发现前轮次中尚未涵盖的答案。即使对于现成的检索器，RVR 也是有效的，并且针对我们的推理过程微调检索器会带来进一步的收益。我们的方法优于基线，包括代理搜索方法，在多答案检索数据集 (QAMPARI) 上的完全召回率方面实现了至少 10% 的相对增益和 3% 的绝对增益。我们还看到不同的基础检索器在两个域外数据集（QUEST 和 WebQuestionsSP）上取得了一致的收益。我们的工作提出了一种有前途的迭代方法，利用验证器并使检索器适应新的推理场景来进行全面的答案回忆。</p>
+                        <p class="abstract-zh">受行为科学的启发，我们提出了行为学习（BL），这是一种新颖的通用机器学习框架，可以从数据中学习可解释和可识别的优化结构，范围从单一优化问题到分层组合。它统一了预测性能、内在可解释性和可识别性，并且广泛适用于涉及优化的科学领域。 BL 参数化由本质上可解释的模块化块构建的组合实用函数，从而产生用于预测和生成的数据分布。每个块代表并可以用符号形式编写为效用最大化问题（UMP），行为科学的基本范式和通用优化框架。 BL 支持从单一 UMP 到分层组合的架构，后者对分层优化结构进行建模。其平滑单调变体（IBL）保证了可识别性。理论上建立了BL的万能逼近性质，并分析了IBL的M估计性质。根据经验，BL 对高维数据表现出强大的预测性能、内在的可解释性和可扩展性。代码：https://github.com/MoonYLiang/Behavior-Learning；通过 pip install blnetwork 安装。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">SPQ: An Ensemble<sup class='ipa'>/ɑnˈsɑmbəl/</sup> Technique<sup class='ipa'>/tɛkˈnik/</sup> for Large Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Model Compression<sup class='ipa'>/kəmˈprɛʃən/</sup></h2>
+                    <h2 class="paper-title">Agentic AI for Scalable<sup class='ipa'>/ˈskeɪləbəl/</sup> and Robust Optical Systems Control</h2>
                     <p class="paper-meta">
-                        <span class="authors">Jiamin Yao, Eren Gultepe</span>
-                        <span class="date">2026-02-20</span>
+                        <span class="authors">Zehao Wang, Mingzhe Han, Wei Cheng</span>
+                        <span class="date">2026-02-23</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">This study presents an ensemble technique, SPQ (SVD-Pruning-Quantization), for large language model (LLM) compression that combines variance-retained singular value decomposition (SVD), activation-based pruning, and post-training linear quantization. Each component targets a different source of inefficiency: i) pruning removes redundant neurons in MLP layers, ii) SVD reduces attention projections into compact low-rank factors, iii) and 8-bit quantization uniformly compresses all linear layers. At matched compression ratios, SPQ outperforms individual methods (SVD-only, pruning-only, or quantization-only) in perplexity, demonstrating the benefit of combining complementary techniques. Applied to LLaMA-2-7B, SPQ achieves up to 75% memory reduction while maintaining or improving perplexity (e.g., WikiText-2 5.47 to 4.91) and preserving accuracy on downstream benchmarks such as C4, TruthfulQA, and GSM8K. Compared to strong baselines like GPTQ and SparseGPT, SPQ offers competitive perplexity and accuracy while using less memory (6.86 GB vs. 7.16 GB for GPTQ). Moreover, SPQ improves inference throughput over GPTQ, achieving up to a 1.9x speedup, which further enhances its practicality for real-world deployment. The effectiveness of SPQ&#39;s robust compression through layer-aware and complementary compression techniques may provide practical deployment of LLMs in memory-constrained environments. Code is available at: https://github.com/JiaminYao/SPQ_LLM_Compression/</p>
+                        <p class="abstract-en">We present AgentOptics, an agentic AI framework for high-fidelity, autonomous optical system control built on the Model Context Protocol (MCP). AgentOptics interprets natural language tasks and executes protocol-compliant actions on heterogeneous optical devices through a structured tool abstraction layer. We implement 64 standardized MCP tools across 8 representative optical devices and construct a 410-task benchmark to evaluate request understanding, role-aware responses, multi-step coordination, robustness to linguistic variation, and error handling. We assess two deployment configurations--commercial online LLMs and locally hosted open-source LLMs--and compare them with LLM-based code generation baselines. AgentOptics achieves 87.7%--99.0% average task success rates, significantly outperforming code-generation approaches, which reach up to 50% success. We further demonstrate broader applicability through five case studies extending beyond device-level control to system orchestration, monitoring, and closed-loop optimization. These include DWDM link provisioning and coordinated monitoring of coherent 400 GbE and analog radio-over-fiber (ARoF) channels; autonomous characterization and bias optimization of a wideband ARoF link carrying 5G fronthaul traffic; multi-span channel provisioning with launch power optimization; closed-loop fiber polarization stabilization; and distributed acoustic sensing (DAS)-based fiber monitoring with LLM-assisted event detection. These results establish AgentOptics as a scalable, robust paradigm for autonomous control and orchestration of heterogeneous optical systems.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">本研究提出了一种用于大型语言模型 (LLM) 压缩的集成技术 SPQ（SVD-剪枝-量化），该技术结合了方差保留奇异值分解 (SVD)、基于激活的剪枝和训练后线性量化。每个组件针对不同的低效率来源：i) 剪枝去除 MLP 层中的冗余神经元，ii) SVD 将注意力投影减少为紧凑的低秩因子，iii) 和 8 位量化统一压缩所有线性层。在匹配的压缩比下，SPQ 在困惑度方面优于单个方法（仅 SVD、仅剪枝或仅量化），证明了结合互补技术的好处。应用于 LLaMA-2-7B 时，SPQ 可实现高达 75% 的内存减少，同时保持或改善复杂性（例如 WikiText-2 5.47 至 4.91）并保持下游基准（如 C4、TruthfulQA 和 GSM8K）的准确性。与 GPTQ 和 SparseGPT 等强大的基线相比，SPQ 提供了有竞争力的复杂性和准确性，同时使用更少的内存（GPTQ 为 6.86 GB 与 7.16 GB）。此外，SPQ 相对于 GPTQ 提高了推理吞吐量，实现了高达 1.9 倍的加速，这进一步增强了其实际部署的实用性。 SPQ 通过分层感知和互补压缩技术实现的稳健压缩的有效性可以在内存受限的环境中提供 LLM 的实际部署。代码位于：https://github.com/JiaminYao/SPQ_LLM_Compression/</p>
+                        <p class="abstract-zh">我们推出了 AgentOptics，这是一种基于模型上下文协议 (MCP) 的代理 AI 框架，用于高保真、自主光学系统控制。 AgentOptics 解释自然语言任务，并通过结构化工具抽象层在异构光学设备上执行符合协议的操作。我们在 8 个代表性光学设备上实施了 64 个标准化 MCP 工具，并构建了一个包含 410 个任务的基准来评估请求理解、角色感知响应、多步骤协调、对语言变化的鲁棒性和错误处理。我们评估两种部署配置——商业在线 LLM 和本地托管的开源 LLM——并将它们与基于 LLM 的代码生成基线进行比较。 AgentOptics 的平均任务成功率达到 87.7%--99.0%，明显优于代码生成方法，后者的成功率高达 50%。我们通过五个案例研究进一步证明了更广泛的适用性，从设备级控制扩展到系统编排、监控和闭环优化。其中包括 DWDM 链路配置以及相干 400 GbE 和模拟光纤无线电 (ARoF) 通道的协调监控；承载 5G 前传流量的宽带 ARoF 链路的自主表征和偏差优化；具有发射功率优化的多跨信道配置；闭环光纤偏振稳定；以及基于分布式声学传感 (DAS) 的光纤监测以及法学硕士辅助事件检测。这些结果将 AgentOptics 确立为一种可扩展、稳健的范例，用于异构光学系统的自主控制和编排。</p>
                     </div>
                 </article>
                 
@@ -458,23 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 45</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">QwertyMcQwertz/monkeys-with-typewriters</strong>
-                            <p class="repo-desc">3 美元微控制器上的完整人工智能平台。亚毫秒级推理。零幻觉。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 27</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">inollp7855/claude-skills-collection-2026</strong>
-                            <p class="repo-desc">2026 年 Claude 技能的完整集合。100 多种用于开发、生产力、研究和自动化的生产就绪技能。教育开源项目。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 18</span>
+                        <span class="repo-stars">★ 51</span>
                         <div class="repo-info">
                             <strong class="repo-name">AmrDab/clawd-cursor</strong>
                             <p class="repo-desc">AI 桌面代理 — 查看您的屏幕，控制您的光标，自主完成任务。</p>
@@ -482,10 +466,26 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
+                        <span class="repo-stars">★ 46</span>
                         <div class="repo-info">
-                            <strong class="repo-name">agent-wall/agent-wall</strong>
-                            <p class="repo-desc">AI 代理的安全防火墙。拦截 MCP 工具调用、执行策略、阻止攻击</p>
+                            <strong class="repo-name">QwertyMcQwertz/monkeys-with-typewriters</strong>
+                            <p class="repo-desc">3 美元微控制器上的完整人工智能平台。亚毫秒级推理。零幻觉。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 24</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">inollp7855/claude-skills-collection-2026</strong>
+                            <p class="repo-desc">2026 年 Claude 技能的完整集合。100 多种用于开发、生产力、研究和自动化的生产就绪技能。教育开源项目。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">morganrcu/awesome-eu-ai-act</strong>
+                            <p class="repo-desc">用于欧盟人工智能法案合规和人工智能治理的工具、框架、标准和资源的精选列表</p>
                         </div>
                     </li>
                 
@@ -508,8 +508,16 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">kiroviro/pharmacy-ai-assistant</strong>
-                            <p class="repo-desc">ViaPharma 客户的智能药房助手。使用医疗人工智能和安全第一的方法根据症状提供个性化的非处方药产品推荐。</p>
+                            <strong class="repo-name">Argus-Framework/argus-ai-debate</strong>
+                            <p class="repo-desc">多代理人工智能框架，法学硕士可以相互辩论以验证主张。贝叶斯推理、对抗性证据、校准判决和完整的审计跟踪。通过 Ollama 与 GPT-4、Claude、Gemini 和本地模型配合使用。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">hanlulong/awesome-ai-for-economists</strong>
+                            <p class="repo-desc">用于经济学研究、教学和政策分析的人工智能工具、图书馆和资源的精选列表。由 OpenEcon 团队维护。</p>
                         </div>
                     </li>
                 
@@ -526,14 +534,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">clanker-lover/eidolon-womb</strong>
                             <p class="repo-desc">培育数字生物的基础设施。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">geoseeer/GeoSeer</strong>
-                            <p class="repo-desc">GeoSeer 的官方 GitHub 存储库 (geoseeer.com)</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-02-23 22:36:51
+        生成于 2026-02-24 22:29:21
     </footer>
 </body>
 </html>
