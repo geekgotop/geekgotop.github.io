@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Recovered<sup class='ipa'>/rɪˈkəvərd/</sup> in Translation:<sup class='ipa'>/trænzˈleɪʃən/</sup> Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Pipeline<sup class='ipa'>/ˈpaɪˌplaɪn/</sup> for Automated<sup class='ipa'>/ˈɔtəˌmeɪtɪd/</sup> Translation<sup class='ipa'>/trænzˈleɪʃən/</sup> of Benchmarks<sup class='ipa'>/ˈbɛnʧˌmɑrks/</sup> and Datasets<sup class='ipa'>/datasets*/</sup></h2>
+                    <h2 class="paper-title">Model Agreement<sup class='ipa'>/əˈgrimənt/</sup> via Anchoring<sup class='ipa'>/ˈæŋkərɪŋ/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Hanna Yukhymenko, Anton Alexandrov, Martin Vechev</span>
-                        <span class="date">2026-02-25</span>
+                        <span class="authors">Eric Eaton, Surbhi Goel, Marcel Hussing</span>
+                        <span class="date">2026-02-26</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">The reliability of multilingual Large Language Model (LLM) evaluation is currently compromised by the inconsistent quality of translated benchmarks. Existing resources often suffer from semantic drift and context loss, which can lead to misleading performance metrics. In this work, we present a fully automated framework designed to address these challenges by enabling scalable, high-quality translation of datasets and benchmarks. We demonstrate that adapting test-time compute scaling strategies, specifically Universal Self-Improvement (USI) and our proposed multi-round ranking method, T-RANK, allows for significantly higher quality outputs compared to traditional pipelines. Our framework ensures that benchmarks preserve their original task structure and linguistic nuances during localization. We apply this approach to translate popular benchmarks and datasets into eight Eastern and Southern European languages (Ukrainian, Bulgarian, Slovak, Romanian, Lithuanian, Estonian, Turkish, Greek). Evaluations using both reference-based metrics and LLM-as-a-judge show that our translations surpass existing resources, resulting in more accurate downstream model assessment. We release both the framework and the improved benchmarks to facilitate robust and reproducible multilingual AI development.</p>
+                        <p class="abstract-en">Numerous lines of aim to control $\textit{model disagreement}$ -- the extent to which two machine learning models disagree in their predictions. We adopt a simple and standard notion of model disagreement in real-valued prediction problems, namely the expected squared difference in predictions between two models trained on independent samples, without any coordination of the training processes. We would like to be able to drive disagreement to zero with some natural parameter(s) of the training procedure using analyses that can be applied to existing training methodologies.   We develop a simple general technique for proving bounds on independent model disagreement based on $\textit{anchoring}$ to the average of two models within the analysis. We then apply this technique to prove disagreement bounds for four commonly used machine learning algorithms: (1) stacked aggregation over an arbitrary model class (where disagreement is driven to 0 with the number of models $k$ being stacked) (2) gradient boosting (where disagreement is driven to 0 with the number of iterations $k$) (3) neural network training with architecture search (where disagreement is driven to 0 with the size $n$ of the architecture being optimized over) and (4) regression tree training over all regression trees of fixed depth (where disagreement is driven to 0 with the depth $d$ of the tree architecture). For clarity, we work out our initial bounds in the setting of one-dimensional regression with squared error loss -- but then show that all of our results generalize to multi-dimensional regression with any strongly convex loss.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">目前，多语言大语言模型 (LLM) 评估的可靠性因翻译基准质量不一致而受到影响。现有资源经常遭受语义漂移和上下文丢失的影响，这可能导致误导性的性能指标。在这项工作中，我们提出了一个完全自动化的框架，旨在通过实现数据集和基准的可扩展、高质量转换来应对这些挑战。我们证明，与传统管道相比，调整测试时计算扩展策略，特别是通用自我改进（USI）和我们提出的多轮排名方法 T-RANK，可以显着提高质量输出。我们的框架确保基准测试在本地化过程中保留其原始任务结构和语言细微差别。我们应用这种方法将流行的基准和数据集翻译成八种东欧和南欧语言（乌克兰语、保加利亚语、斯洛伐克语、罗马尼亚语、立陶宛语、爱沙尼亚语、土耳其语、希腊语）。使用基于参考的指标和法学硕士作为法官进行的评估表明，我们的翻译超越了现有资源，从而实现了更准确的下游模型评估。我们发布了框架和改进的基准，以促进稳健且可重复的多语言人工智能开发。</p>
+                        <p class="abstract-zh">许多行的目标是控制$\textit{模型分歧}$——两个机器学习模型在预测中不一致的程度。我们在实值预测问题中采用了一个简单而标准的模型不一致概念，即在独立样本上训练的两个模型之间的预测的预期平方差，而没有任何训练过程的协调。我们希望能够使用可应用于现有训练方法的分析，将训练程序的某些自然参数的分歧降至零。   我们开发了一种简单的通用技术，用于证明独立模型分歧的界限，该技术基于 $\textit{anchoring}$ 到分析中两个模型的平均值。然后，我们应用此技术来证明四种常用机器学习算法的分歧界限：(1) 任意模型类上的堆叠聚合（其中，随着堆叠的模型数量 $k$，分歧被驱动到 0）（2）梯度提升（随着迭代次数 $k$，分歧被驱动到 0）（3）通过架构搜索进行神经网络训练（其中，随着被优化的架构的大小 $n$，分歧被驱动到 0）和 (4) 对所有回归进行回归树训练固定深度的树（其中与树结构的深度 $d$ 的不一致被驱动到 0）。为了清楚起见，我们在具有平方误差损失的一维回归设置中计算出初始边界，但随后表明我们所有的结果都可以推广到具有任何强凸损失的多维回归。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">SumTablets:<sup class='ipa'>/sumtablets*/</sup> A Transliteration<sup class='ipa'>/transliteration*/</sup> Dataset of Sumerian<sup class='ipa'>/sumerian*/</sup> Tablets</h2>
+                    <h2 class="paper-title">SeeThrough3D:<sup class='ipa'>/seethroughd*/</sup> Occlusion<sup class='ipa'>/əˈkluʒən/</sup> Aware 3D Control in Text-to-Image<sup class='ipa'>/texttoimage*/</sup> Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Cole Simmons, Richard Diehl Martinez, Dan Jurafsky</span>
-                        <span class="date">2026-02-25</span>
+                        <span class="authors">Vaibhav Agrawal, Rishubh Parihar, Pradhaan Bhat</span>
+                        <span class="date">2026-02-26</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Sumerian transliteration is a conventional system for representing a scholar&#39;s interpretation of a tablet in the Latin script. Thanks to visionary digital Assyriology projects such as ETCSL, CDLI, and Oracc, a large number of Sumerian transliterations have been published online, and these data are well-structured for a variety of search and analysis tasks. However, the absence of a comprehensive, accessible dataset pairing transliterations with a digital representation of the tablet&#39;s cuneiform glyphs has prevented the application of modern Natural Language Processing (NLP) methods to the task of Sumerian transliteration.   To address this gap, we present SumTablets, a dataset pairing Unicode representations of 91,606 Sumerian cuneiform tablets (totaling 6,970,407 glyphs) with the associated transliterations published by Oracc. We construct SumTablets by first preprocessing and standardizing the Oracc transliterations before mapping each reading back to the Unicode representation of the source glyph. Further, we retain parallel structural information (e.g., surfaces, newlines, broken segments) through the use of special tokens. We release SumTablets as a Hugging Face Dataset (CC BY 4.0) and open source data preparation code via GitHub.   Additionally, we leverage SumTablets to implement and evaluate two transliteration baselines: (1) weighted sampling from a glyph&#39;s possible readings, and (2) fine-tuning an autoregressive language model. Our fine-tuned language model achieves an average transliteration character-level F-score (chrF) of 97.55, demonstrating the immediate potential of transformer-based transliteration models in allowing experts to rapidly verify generated transliterations rather than manually transliterating tablets one-by-one.</p>
+                        <p class="abstract-en">We identify occlusion reasoning as a fundamental yet overlooked aspect for 3D layout-conditioned generation. It is essential for synthesizing partially occluded objects with depth-consistent geometry and scale. While existing methods can generate realistic scenes that follow input layouts, they often fail to model precise inter-object occlusions. We propose SeeThrough3D, a model for 3D layout conditioned generation that explicitly models occlusions. We introduce an occlusion-aware 3D scene representation (OSCR), where objects are depicted as translucent 3D boxes placed within a virtual environment and rendered from desired camera viewpoint. The transparency encodes hidden object regions, enabling the model to reason about occlusions, while the rendered viewpoint provides explicit camera control during generation. We condition a pretrained flow based text-to-image image generation model by introducing a set of visual tokens derived from our rendered 3D representation. Furthermore, we apply masked self-attention to accurately bind each object bounding box to its corresponding textual description, enabling accurate generation of multiple objects without object attribute mixing. To train the model, we construct a synthetic dataset with diverse multi-object scenes with strong inter-object occlusions. SeeThrough3D generalizes effectively to unseen object categories and enables precise 3D layout control with realistic occlusions and consistent camera control.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">苏美尔音译是一种传统系统，用于代表学者对拉丁文字板的解释。得益于 ETCSL、CDLI 和 Oracc 等富有远见的数字亚述学项目，大量苏美尔音译已在网上发布，这些数据结构良好，适合各种搜索和分析任务。然而，由于缺乏将音译与平板电脑楔形文字的数字表示配对的全面、可访问的数据集，阻碍了现代自然语言处理（NLP）方法在苏美尔音译任务中的应用。   为了解决这一差距，我们提出了 SumTablets，这是一个数据集，将 91,606 个苏美尔楔形文字板（总共 6,970,407 个字形）的 Unicode 表示与 Oracc 发布的相关音译配对。我们通过首先预处理和标准化 Oracc 音译来构建 SumTablets，然后将每个读数映射回源字形的 Unicode 表示形式。此外，我们通过使用特殊标记保留并行结构信息（例如，表面、换行符、断段）。我们将 SumTablets 作为 Hugging Face 数据集 (CC BY 4.0) 发布，并通过 GitHub 开源数据准备代码。   此外，我们利用 SumTablets 来实现和评估两个音译基线：(1) 从字形的可能读数中进行加权采样，以及 (2) 微调自回归语言模型。我们经过微调的语言模型实现了 97.55 的平均音译字符级 F 分数 (chrF)，这证明了基于 Transformer 的音译模型的直接潜力，使专家能够快速验证生成的音译，而不是逐一手动音译平板电脑。</p>
+                        <p class="abstract-zh">我们将遮挡推理视为 3D 布局条件生成的一个基本但被忽视的方面。它对于合成具有深度一致的几何形状和比例的部分遮挡的对象至关重要。虽然现有方法可以生成遵循输入布局的真实场景，但它们通常无法对精确的对象间遮挡进行建模。我们提出了 SeeThrough3D，这是一种用于 3D 布局条件生成的模型，可显式模拟遮挡。我们引入了遮挡感知 3D 场景表示 (OSCR)，其中对象被描绘为放置在虚拟环境中的半透明 3D 框，并从所需的摄像机视角进行渲染。透明度对隐藏对象区域进行编码，使模型能够推理遮挡，而渲染的视点在生成过程中提供显式的相机控制。我们通过引入一组从我们渲染的 3D 表示派生的视觉标记来调节基于预训练流的文本到图像图像生成模型。此外，我们应用屏蔽自注意力将每个对象边界框准确地绑定到其相应的文本描述，从而能够准确生成多个对象而无需对象属性混合。为了训练模型，我们构建了一个包含具有强对象间遮挡的多种多对象场景的合成数据集。 SeeThrough3D 可以有效地推广到看不见的对象类别，并通过逼真的遮挡和一致的相机控制实现精确的 3D 布局控制。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Off-The-Shelf<sup class='ipa'>/offtheshelf*/</sup> Image-to-Image<sup class='ipa'>/imagetoimage*/</sup> Models Are All You Need To Defeat Image Protection<sup class='ipa'>/prəˈtɛkʃən/</sup> Schemes</h2>
+                    <h2 class="paper-title">SOTAlign:<sup class='ipa'>/sotalign*/</sup> Semi-Supervised<sup class='ipa'>/semisupervised*/</sup> Alignment<sup class='ipa'>/əˈlaɪnmənt/</sup> of Unimodal<sup class='ipa'>/unimodal*/</sup> Vision and Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models via Optimal Transport<sup class='ipa'>/ˈtrænspɔrt/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Xavier Pleimling, Sifat Muhammad Abdullah, Gunjan Balde</span>
-                        <span class="date">2026-02-25</span>
+                        <span class="authors">Simon Roschmann, Paul Krzakala, Sonia Mazelet</span>
+                        <span class="date">2026-02-26</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Advances in Generative AI (GenAI) have led to the development of various protection strategies to prevent the unauthorized use of images. These methods rely on adding imperceptible protective perturbations to images to thwart misuse such as style mimicry or deepfake manipulations. Although previous attacks on these protections required specialized, purpose-built methods, we demonstrate that this is no longer necessary. We show that off-the-shelf image-to-image GenAI models can be repurposed as generic ``denoisers&#34; using a simple text prompt, effectively removing a wide range of protective perturbations. Across 8 case studies spanning 6 diverse protection schemes, our general-purpose attack not only circumvents these defenses but also outperforms existing specialized attacks while preserving the image&#39;s utility for the adversary. Our findings reveal a critical and widespread vulnerability in the current landscape of image protection, indicating that many schemes provide a false sense of security. We stress the urgent need to develop robust defenses and establish that any future protection mechanism must be benchmarked against attacks from off-the-shelf GenAI models. Code is available in this repository: https://github.com/mlsecviswanath/img2imgdenoiser</p>
+                        <p class="abstract-en">The Platonic Representation Hypothesis posits that neural networks trained on different modalities converge toward a shared statistical model of the world. Recent work exploits this convergence by aligning frozen pretrained vision and language models with lightweight alignment layers, but typically relies on contrastive losses and millions of paired samples. In this work, we ask whether meaningful alignment can be achieved with substantially less supervision. We introduce a semi-supervised setting in which pretrained unimodal encoders are aligned using a small number of image-text pairs together with large amounts of unpaired data. To address this challenge, we propose SOTAlign, a two-stage framework that first recovers a coarse shared geometry from limited paired data using a linear teacher, then refines the alignment on unpaired samples via an optimal-transport-based divergence that transfers relational structure without overconstraining the target space. Unlike existing semi-supervised methods, SOTAlign effectively leverages unpaired images and text, learning robust joint embeddings across datasets and encoder pairs, and significantly outperforming supervised and semi-supervised baselines.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">生成式人工智能 (GenAI) 的进步促进了各种保护策略的发展，以防止未经授权使用图像。这些方法依赖于向图像添加难以察觉的保护性扰动，以阻止滥用，例如风格模仿或深度伪造操作。尽管以前对这些保护的攻击需要专门的、专用的方法，但我们证明这不再是必要的。我们证明，现成的图像到图像 GenAI 模型可以使用简单的文本提示重新用作通用“降噪器”，从而有效地消除各种保护性扰动。在涵盖 6 种不同保护方案的 8 个案例研究中，我们的通用攻击不仅绕过了这些防御，而且在保留图像对对手的实用性的同时优于现有的专门攻击。我们的研究结果揭示了当前图像保护领域中一个关键且广泛的漏洞，表明许多我们强调迫切需要开发强大的防御措施，并确定任何未来的保护机制都必须针对现成的 GenAI 模型的攻击进行基准测试：https://github.com/mlsecviswanath/img2imgenoiser。</p>
+                        <p class="abstract-zh">柏拉图表示假说假设，经过不同模态训练的神经网络会趋向于一个共享的世界统计模型。最近的工作通过将冻结的预训练视觉和语言模型与轻量级对齐层对齐来利用这种融合，但通常依赖于对比损失和数百万个配对样本。在这项工作中，我们询问是否可以在大幅减少监督的情况下实现有意义的协调。我们引入了一种半监督设置，其中使用少量图像文本对和大量未配对数据来对齐预训练的单峰编码器。为了应对这一挑战，我们提出了 SOTAlign，这是一个两阶段框架，首先使用线性教师从有限的配对数据中恢复粗略的共享几何形状，然后通过基于最佳传输的发散来细化未配对样本的对齐，该发散在不过度约束目标空间的情况下传输关系结构。与现有的半监督方法不同，SOTAlign 有效地利用不成对的图像和文本，学习跨数据集和编码器对的鲁棒联合嵌入，并且显着优于监督和半监督基线。</p>
                     </div>
                 </article>
                 
@@ -466,7 +466,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 10</span>
+                        <span class="repo-stars">★ 11</span>
                         <div class="repo-info">
                             <strong class="repo-name">28naem-del/mnemosyne</strong>
                             <p class="repo-desc">适用于 AI 代理的认知内存操作系统 — 持久、自我改进、多代理内存</p>
@@ -474,7 +474,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 6</span>
+                        <span class="repo-stars">★ 7</span>
                         <div class="repo-info">
                             <strong class="repo-name">hanlulong/awesome-ai-for-economists</strong>
                             <p class="repo-desc">用于经济学研究、教学和政策分析的人工智能工具、图书馆和资源的精选列表。由 OpenEcon 团队维护。</p>
@@ -482,7 +482,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
+                        <span class="repo-stars">★ 5</span>
                         <div class="repo-info">
                             <strong class="repo-name">Mobile-Artificial-Intelligence/maise</strong>
                             <p class="repo-desc">Maise 是一款开源 Android 语音引擎，旨在为边缘语音合成提供强大而灵活的平台。</p>
@@ -508,6 +508,22 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
+                            <strong class="repo-name">one710/computermate</strong>
+                            <p class="repo-desc">ComputerMate 是一款功能强大的模型上下文协议 (MCP) 服务器，它使 AI 模型能够像人类一样与计算机交互。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">one710/recollect</strong>
+                            <p class="repo-desc">Recollect 是 AI 代理的内存层，可提供自动总结聊天历史记录。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
                             <strong class="repo-name">ayeshamaniyar26/EcoAI-Environmental-Intelligence-Agent</strong>
                             <p class="repo-desc">🌿 人工智能驱动的环境新闻聚合和分析平台，具有智能查询扩展、情绪平衡和实时洞察。</p>
                         </div>
@@ -516,24 +532,8 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">one710/consciousness</strong>
-                            <p class="repo-desc">功能强大的可插拔向量内存和模型上下文协议 (MCP) 服务器，用于本地语义搜索和长期记忆。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
-                        <div class="repo-info">
                             <strong class="repo-name">geoseeer/GeoSeer</strong>
                             <p class="repo-desc">GeoSeer 的官方 GitHub 存储库 (geoseeer.com)</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">clanker-lover/eidolon-womb</strong>
-                            <p class="repo-desc">培育数字生物的基础设施。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-02-26 22:29:19
+        生成于 2026-02-27 22:19:13
     </footer>
 </body>
 </html>
