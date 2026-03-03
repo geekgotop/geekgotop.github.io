@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-03-02 22:23:52</span>
+        <span class="generated-time">更新于 2026-03-03 22:24:23</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">DARE-bench:<sup class='ipa'>/darebench*/</sup> Evaluating<sup class='ipa'>/ɪˈvæljuˌeɪtɪŋ/</sup> Modeling<sup class='ipa'>/ˈmɑdəlɪŋ/</sup> and Instruction<sup class='ipa'>/ˌɪnˈstrəkʃən/</sup> Fidelity<sup class='ipa'>/ˌfaɪˈdɛləti/</sup> of LLMs in Data Science</h4>
+                            <h4 class="paper-title">Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> Core: A Scalable<sup class='ipa'>/ˈskeɪləbəl/</sup> Procedural<sup class='ipa'>/prəˈsiʤərəl/</sup> Data Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> Suite for Symbolic<sup class='ipa'>/sɪmˈbɑlɪk/</sup> Pre-training<sup class='ipa'>/pretraining*/</sup> and Post-Training<sup class='ipa'>/posttraining*/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Fan Shu, Yite Wang, Ruofan Wu</span>
-                                <span class="date">2026-02-27</span>
+                                <span class="authors">Valentin Lacombe, Valentin Quesnel, Damien Sileo</span>
+                                <span class="date">2026-03-02</span>
+                                <span class="categories">cs.CL</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Training on verifiable symbolic data is a promising way to expand the reasoning frontier of language models beyond what standard pre-training corpora provide. Yet existing procedural generators often rely on fixed puzzles or templates and do not deliver the distributional breadth needed at scale. We...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">对可验证符号数据进行训练是一种很有前途的方法，可以将语言模型的推理前沿扩展到标准预训练语料库之外。然而，现有的程序生成器通常依赖于固定的谜题或模板，并且无法提供大规模所需的分布广度。我们引入 Reasoning Core，这是一个可扩展套件，可以在程序上生成跨核心形式域的可验证符号推理数据：随机域上的 PDDL 规划、具有相等性的一阶逻辑、上下文无关语法解析和生成、随机贝叶斯网络上的因果推理以及方程组。每个任务都配有外部求解器进行严格验证，并允许课程设计的持续难度控制。示例可以选择包括求解器导出的推理轨迹，从而从最早的预训练阶段开始进行监督训练，并且相同的界面为强化学习提供可验证的奖励函数。我们的实验表明，将推理核心数据混合到预训练中可以改善下游推理，同时保留或略微提高语言建模质量。零样本评估证实这些任务对 GPT-5 等前沿模型提出了挑战。代码和数据在麻省理工学院许可下公开可用。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2603.02208v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Tool Verification<sup class='ipa'>/ˌvɛrəfəˈkeɪʃən/</sup> for Test-Time<sup class='ipa'>/testtime*/</sup> Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Ruotong Liao, Nikolai Röhrich, Xiaohan Wang</span>
+                                <span class="date">2026-03-02</span>
                                 <span class="categories">cs.AI | cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">The fast-growing demands in using Large Language Models (LLMs) to tackle complex multi-step data science tasks create an emergent need for accurate benchmarking. There are two major gaps in existing benchmarks: (i) the lack of standardized, process-aware evaluation that captures instruction adherenc...</p>
+                                <p class="abstract-en">Test-time reinforcement learning (TTRL) has emerged as a promising paradigm for self-evolving large reasoning models (LRMs), enabling online adaptation on unlabeled test inputs via self-induced rewards through majority voting. However, a spurious yet high-frequency unverified consensus can become a ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">使用大型语言模型 (LLM) 来处理复杂的多步骤数据科学任务的需求快速增长，迫切需要准确的基准测试。现有基准存在两个主要差距：(i) 缺乏标准化、流程感知的评估来捕获指令依从性和流程保真度，以及 (ii) 缺乏准确标记的培训数据。为了弥补这些差距，我们引入了 DARE-bench，这是一个专为机器学习建模和数据科学指令遵循而设计的基准。与许多依赖人类或基于模型的评判的现有基准不同，DARE-bench 中的所有任务都有可验证的基本事实，确保客观且可重复的评估。为了涵盖广泛的任务并支持代理工具，DARE-bench 由 6,300 个 Kaggle 衍生任务组成，并提供大规模训练数据和评估集。广泛的评估表明，即使是像 gpt-o4-mini 这样功能强大的模型也很难获得良好的性能，特别是在机器学习建模任务中。使用 DARE-bench 训练任务进行微调可以显着提高模型性能。例如，监督微调将 Qwen3-32B 的准确性提高了 1.83 倍，强化学习将 Qwen3-4B 的准确性提高了 8 倍以上。这些重大改进验证了 DARE-bench 作为准确评估基准和关键训练数据的重要性。</p>
+                                    <p class="abstract-zh">测试时强化学习 (TTRL) 已成为自我进化大型推理模型 (LRM) 的一个有前途的范例，通过多数投票的自我诱导奖励，实现对未标记测试输入的在线适应。然而，虚假但高频的未经验证的共识可能会成为有偏见和强化的奖励信号，导致不正确的模式崩溃。我们使用 T^3RL（测试时强化学习工具验证）来解决这种失败模式，它将测试时工具验证引入到奖励估计中。具体来说，验证者使用外部工具作为证据（例如，来自代码执行）来在验证感知投票中增加验证的推出，从而为训练生成更可靠的伪标签。在各种数学难度（MATH-500、AMC 和 AIME 2024）和不同的主干类型上，T^3RL 比 TTRL 有了显着的改进，在更困难的问题上有更大的进步。更广泛地说，T^3RL 可以被视为经过验证的在线数据合成，强调测试时工具验证是稳定自我进化的关键机制。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2602.24288v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2603.02203v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Do LLMs Benefit From Their Own Words?</h4>
+                            <h4 class="paper-title">Adaptive<sup class='ipa'>/əˈdæptɪv/</sup> Confidence<sup class='ipa'>/ˈkɑnfədɛns/</sup> Regularization<sup class='ipa'>/regularization*/</sup> for Multimodal<sup class='ipa'>/multimodal*/</sup> Failure Detection<sup class='ipa'>/dɪˈtɛkʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Jenny Y. Huang, Leshem Choshen, Ramon Astudillo</span>
-                                <span class="date">2026-02-27</span>
-                                <span class="categories">cs.CL | cs.AI</span>
+                                <span class="authors">Moru Liu, Hao Dong, Olga Fink</span>
+                                <span class="date">2026-03-02</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Multi-turn interactions with large language models typically retain the assistant&#39;s own past responses in the conversation history. In this work, we revisit this design choice by asking whether large language models benefit from conditioning on their own prior responses. Using in-the-wild, multi-tur...</p>
+                                <p class="abstract-en">The deployment of multimodal models in high-stakes domains, such as self-driving vehicles and medical diagnostics, demands not only strong predictive performance but also reliable mechanisms for detecting failures. In this work, we address the largely unexplored problem of failure detection in multi...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">与大型语言模型的多轮交互通常会在对话历史记录中保留助手自己过去的响应。在这项工作中，我们通过询问大型语言模型是否受益于它们自己先前的响应来重新审视这种设计选择。使用野外多回合对话，我们将标准（全上下文）提示与用户仅回合提示方法进行比较，该方法忽略了所有先前的助理响应，跨越三种开放推理模型和一种最先进的模型。令我们惊讶的是，我们发现删除先前的助理响应并不会影响大部分转弯的响应质量。省略助手端历史记录可以将累积上下文长度减少多达 10 倍。为了解释这个结果，我们发现多轮对话包含很大比例（36.4％）的独立提示，并且许多后续提示提供了足够的指令，仅使用当前用户轮次和先前用户轮次即可回答。在分析仅用户轮次提示明显优于完整上下文的情况时，我们识别了上下文污染的实例，其中模型对其先前的响应进行了过度调节，引入了错误、幻觉或跨轮次传播的风格伪像。受这些发现的启发，我们设计了一种上下文过滤方法，有选择地忽略助手端上下文。我们的研究结果表明，有选择地省略助理历史记录可以提高响应质量，同时减少内存消耗。</p>
+                                    <p class="abstract-zh">在自动驾驶汽车和医疗诊断等高风险领域部署多模式模型，不仅需要强大的预测性能，还需要可靠的故障检测机制。在这项工作中，我们解决了多模态环境中尚未探索的故障检测问题。我们提出了自适应置信正则化（ACR），这是一种专门为检测多模式故障而设计的新颖框架。我们的方法是由一个关键观察驱动的：在大多数失败情况下，多模态预测的置信度显着低于至少一个单模态分支的置信度，我们将这种现象称为置信度下降。为了缓解这种情况，我们引入了自适应置信度损失，以惩罚训练期间的此类降级。此外，我们提出了多模态特征交换，这是一种新颖的异常值合成技术，可以生成具有挑战性的、故障感知的训练示例。通过对这些综合故障进行训练，ACR 学会更有效地识别和拒绝不确定的预测，从而提高整体可靠性。跨四个数据集、三种模式和多种评估设置的广泛实验表明，ACR 实现了一致且稳健的收益。源代码可在 https://github.com/mona4399/ACR 获取。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2602.24287v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">CUDA Agent: Large-Scale<sup class='ipa'>/largescale*/</sup> Agentic RL for High-Performance<sup class='ipa'>/highperformance*/</sup> CUDA Kernel Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Weinan Dai, Hanlin Wu, Qiying Yu</span>
-                                <span class="date">2026-02-27</span>
-                                <span class="categories">cs.LG | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">GPU kernel optimization is fundamental to modern deep learning but remains a highly specialized task requiring deep hardware expertise. Despite strong performance in general programming, large language models (LLMs) remain uncompetitive with compiler-based systems such as torch.compile for CUDA kern...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">GPU 内核优化是现代深度学习的基础，但仍然是一项高度专业化的任务，需要深厚的硬件专业知识。尽管在通用编程方面具有强大的性能，但大型语言模型 (LLM) 与基于编译器的系统（例如用于 CUDA 内核生成的 torch.compile）相比仍然没有竞争力。现有的 CUDA 代码生成方法要么依赖于免训练细化，要么依赖于固定多轮执行反馈循环内的微调模型，但这两种范式都无法从根本上提高模型内在的 CUDA 优化能力，导致性能提升有限。我们推出了 CUDA Agent，这是一个大规模代理强化学习系统，它通过三个组件开发 CUDA 内核专业知识：可扩展的数据合成管道、具有自动验证和分析功能的技能增强 CUDA 开发环境，以提供可靠的奖励信号，以及支持稳定训练的强化学习算法技术。 CUDA Agent 在 KernelBench 上实现了最先进的结果，在 KernelBench Level-1、Level-2 和 Level-3 分割上比 torch.compile 速度快 100%、100% 和 92%，在最难的 Level-3 设置上比 Claude Opus 4.5 和 Gemini 3 Pro 等最强的专有模型高出约 40%。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2602.24286v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2603.02200v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -917,20 +917,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
-                            <a href="https://github.com/28naem-del/mnemosyne" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">mnemosyne</span>
-                                    <span class="repo-stars">⭐ 26</span>
-                                </div>
-                                <p class="repo-desc">适用于 AI 代理的认知内存操作系统 — 持久、自我改进、多代理内存</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-02-24</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/ErdemYavuz55/drug-review-sentiment-analysis" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">drug-review-sentiment-analysis</span>
@@ -940,6 +926,34 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Jupyter Notebook</span>
                                     <span class="repo-date">2026-03-01</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/mytechnotalent/pixelproof" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">pixelproof</span>
+                                    <span class="repo-stars">⭐ 7</span>
+                                </div>
+                                <p class="repo-desc">在几秒钟内检测假的、人工智能生成的和经过 Photoshop 处理的图像。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-02-28</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/SurceBeats/Planchette" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Planchette</span>
+                                    <span class="repo-stars">⭐ 6</span>
+                                </div>
+                                <p class="repo-desc">问一个问题，占卜板就会在棋盘上移动，拼出灵魂的答案。与经典的通灵板密切相关。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">JavaScript</span>
+                                    <span class="repo-date">2026-02-25</span>
                                 </div>
                             </a>
                         </li>
@@ -959,29 +973,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/mytechnotalent/pixelproof" target="_blank" class="repo-link">
+                            <a href="https://github.com/amanhij/Zikkaron" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">pixelproof</span>
-                                    <span class="repo-stars">⭐ 5</span>
-                                </div>
-                                <p class="repo-desc">在几秒钟内检测假的、人工智能生成的和经过 Photoshop 处理的图像。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-02-28</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/SurceBeats/Planchette" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Planchette</span>
+                                    <span class="repo-name">Zikkaron</span>
                                     <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc">问一个问题，占卜板就会在棋盘上移动，拼出灵魂的答案。与经典的通灵板密切相关。</p>
+                                <p class="repo-desc">Claude Code 的受生物学启发的持久内存引擎。 26 个认知子系统、18 个 MCP 工具、Hopfield 网络、预测编码、因果发现、后继表示，全部通过 SQLite 本地运行。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">JavaScript</span>
-                                    <span class="repo-date">2026-02-25</span>
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-03-02</span>
                                 </div>
                             </a>
                         </li>
@@ -1029,6 +1029,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/sup3rus3r/obsidian-networks" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">obsidian-networks</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">无需编写训练代码即可构建真正的 ML 模型上传数据集 + 描述您的目标 → AI 生成可立即训练的 TensorFlow/Keras 代码 + 模型 — 无需 ML 经验。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-03-03</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/bitscoper/Bitscoper_Visionscope" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Bitscoper_Visionscope</span>
@@ -1038,20 +1052,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-03-01</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/DatanoiseTV/aigateway" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">aigateway</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">自托管 AI API 网关，具有每个客户端提供程序配置（Gemini、OpenAI、Anthropic、Ollama、LM Studio）。速率限制、配额、模型白名单、实时仪表板。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Go</span>
-                                    <span class="repo-date">2026-02-25</span>
                                 </div>
                             </a>
                         </li>
