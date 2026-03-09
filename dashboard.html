@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-03-08 22:19:36</span>
+        <span class="generated-time">更新于 2026-03-09 22:24:40</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">RoboPocket:<sup class='ipa'>/robopocket*/</sup> Improve Robot Policies<sup class='ipa'>/ˈpɑləsiz/</sup> Instantly<sup class='ipa'>/ˈɪnstəntli/</sup> with Your Phone</h4>
+                            <h4 class="paper-title">BEVLM: Distilling<sup class='ipa'>/dɪˈstɪlɪŋ/</sup> Semantic<sup class='ipa'>/sɪˈmæntɪk/</sup> Knowledge<sup class='ipa'>/ˈnɑlɪʤ/</sup> from LLMs into Bird's-Eye<sup class='ipa'>/ˈbərdzaɪ/</sup> View Representations<sup class='ipa'>/ˌrɛprəzənˈteɪʃənz/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Junjie Fang, Wendi Chen, Han Xue</span>
-                                <span class="date">2026-03-05</span>
+                                <span class="authors">Thomas Monninger, Shaoyuan Xie, Qi Alfred Chen</span>
+                                <span class="date">2026-03-06</span>
+                                <span class="categories">cs.CV | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">The integration of Large Language Models (LLMs) into autonomous driving has attracted growing interest for their strong reasoning and semantic understanding abilities, which are essential for handling complex decision-making and long-tail scenarios. However, existing methods typically feed LLMs with...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">将大型语言模型（LLM）集成到自动驾驶中因其强大的推理和语义理解能力而引起了越来越多的兴趣，这对于处理复杂的决策和长尾场景至关重要。然而，现有的方法通常独立地向法学硕士提供来自多视图和多帧图像的标记，导致冗余计算和有限的空间一致性。视觉处理中的这种分离阻碍了准确的 3D 空间推理，并且无法保持视图之间的几何一致性。另一方面，从几何注释任务（例如对象检测）中学习的鸟瞰图（BEV）表示提供了空间结构，但缺乏基础视觉编码器的语义丰富性。为了弥补这一差距，我们提出了 BEVLM，这是一个将空间一致且语义提炼的 BEV 表示与 LLM 连接起来的框架。通过大量实验，我们表明，通过利用 BEV 特征作为统一输入，BEVLM 使法学硕士能够在跨视图驾驶场景中更有效地进行推理，将准确性提高 46%。此外，通过将 LLM 中的语义知识提炼为 BEV 表示，BEVLM 在安全关键场景中将闭环端到端驾驶性能显着提高了 29%。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2603.06576v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Fly360: Omnidirectional<sup class='ipa'>/omnidirectional*/</sup> Obstacle<sup class='ipa'>/ˈɑbstəkəl/</sup> Avoidance<sup class='ipa'>/əˈvɔɪdəns/</sup> within Drone View</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Xiangkai Zhang, Dizhe Zhang, WenZhuo Cao</span>
+                                <span class="date">2026-03-06</span>
                                 <span class="categories">cs.RO | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Scaling imitation learning is fundamentally constrained by the efficiency of data collection. While handheld interfaces have emerged as a scalable solution for in-the-wild data acquisition, they predominantly operate in an open-loop manner: operators blindly collect demonstrations without knowing th...</p>
+                                <p class="abstract-en">Obstacle avoidance in unmanned aerial vehicles (UAVs), as a fundamental capability, has gained increasing attention with the growing focus on spatial intelligence. However, current obstacle-avoidance methods mainly depend on limited field-of-view sensors and are ill-suited for UAV scenarios which re...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">模仿学习的规模化从根本上受到数据收集效率的限制。虽然手持界面已成为野外数据采集的可扩展解决方案，但它们主要以开环方式运行：操作员在不了解底层策略弱点的情况下盲目收集演示，导致关键状态分布的覆盖效率低下。相反，像 DAgger 这样的交互式方法可​​以有效地解决协变量偏移问题，但依赖于物理机器人执行，这种方法成本高昂且难以扩展。为了协调这种权衡，我们引入了 RoboPocket，这是一种便携式系统，可以使用单个消费者智能手机实现无机器人即时策略迭代。其核心创新是远程推理框架，通过增强现实 (AR) 视觉前瞻可视化政策的预测轨迹。这种身临其境的反馈使收集者能够主动识别潜在的故障，并将数据收集集中在策略的薄弱区域，而无需物理机器人。此外，我们还实现了一个异步在线微调管道，可以使用传入数据不断更新策略，从而在几分钟内有效地关闭学习循环。大量实验表明，RoboPocket遵循数据扩展规律，与离线扩展策略相比，数据效率提高了一倍，克服了长期存在的效率瓶颈。此外，我们的即时迭代循环还在分布式环境中将样本效率提高了高达 2$\times$，每人进行少量的交互式校正。项目页面和视频：https://robo-pocket.github.io。</p>
+                                    <p class="abstract-zh">随着人们对空间智能的日益关注，无人机（UAV）的避障作为一项基本能力越来越受到关注。然而，目前的避障方法主要依赖于有限视场传感器，不适合无人机在运动方向与航向不同时需要全空间感知的场景。这一限制促使我们探索全视角感知全景无人机的全向避障。我们首先研究一个尚未探索的问题设置，其中无人机必须在有任意方向障碍物的环境中产生无碰撞运动，然后构建一个由三个代表性飞行任务组成的基准。基于这样的设置，我们提出了 Fly360，一种具有固定随机偏航训练策略的两阶段感知决策管道。在感知阶段，输入全景 RGB 观测值并将其转换为深度图作为鲁棒的中间表示。对于策略网络来说，它是轻量级的，用于从深度输入输出身体框架速度命令。大量的仿真和真实实验表明，Fly360 可以实现稳定的全向避障，并且在所有任务中都优于前视基线。我们的模型可在 https://zxkai.github.io/fly360/ 获取</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2603.05504v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2603.06573v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">POET-X: Memory-efficient<sup class='ipa'>/memoryefficient*/</sup> LLM Training<sup class='ipa'>/ˈtreɪnɪŋ/</sup> by Scaling Orthogonal<sup class='ipa'>/ɔrˈθɔgənəl/</sup> Transformation<sup class='ipa'>/ˌtrænsfərˈmeɪʃən/</sup></h4>
+                            <h4 class="paper-title">SUREON: A Benchmark<sup class='ipa'>/ˈbɛnʧˌmɑrk/</sup> and Vision-Language-Model<sup class='ipa'>/visionlanguagemodel*/</sup> for Surgical<sup class='ipa'>/ˈsərʤɪkəl/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Zeju Qiu, Lixin Liu, Adrian Weller</span>
-                                <span class="date">2026-03-05</span>
-                                <span class="categories">cs.LG | cs.AI</span>
+                                <span class="authors">Alejandra Perez, Anita Rau, Lee White</span>
+                                <span class="date">2026-03-06</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Efficient and stable training of large language models (LLMs) remains a core challenge in modern machine learning systems. To address this challenge, Reparameterized Orthogonal Equivalence Training (POET), a spectrum-preserving framework that optimizes each weight matrix through orthogonal equivalen...</p>
+                                <p class="abstract-en">Surgeons don&#39;t just see -- they interpret. When an expert observes a surgical scene, they understand not only what instrument is being used, but why it was chosen, what risk it poses, and what comes next. Current surgical AI cannot answer such questions, largely because training data that explicitly...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">高效稳定的大型语言模型（LLM）训练仍然是现代机器学习系统的核心挑战。为了应对这一挑战，人们提出了重新参数化正交等价训练（POET），这是一种通过正交等价变换优化每个权重矩阵的频谱保留框架。尽管 POET 提供了强大的训练稳定性，但其原始实现由于密集的矩阵乘法而导致较高的内存消耗和计算开销。为了克服这些限制，我们引入了 POET-X，这是一种可扩展且内存高效的变体，可以执行正交等价变换，同时显着降低计算成本。 POET-X 保持了 POET 的通用性和稳定性优势，同时在吞吐量和内存效率方面实现了大幅改进。在我们的实验中，POET-X 可以在单个 Nvidia H100 GPU 上预训练十亿参数的 LLM，相比之下，AdamW 等标准优化器在相同设置下会耗尽内存。</p>
+                                    <p class="abstract-zh">外科医生不只是看，他们还解释。当专家观察手术场景时，他们不仅了解正在使用的仪器，还了解为什么选择它、它会带来什么风险以及接下来会发生什么。目前的外科人工智能无法回答这些问题，很大程度上是因为明确编码外科推理的训练数据很难大规模注释。然而，外科视频讲座已经包含了这一点——对意图、基本原理和预期的解释，由专家出于教学目的进行叙述。尽管这些叙述本质上是嘈杂且非结构化的，但它们编码了外科人工智能目前所缺乏的推理。我们引入了 SUREON，这是一个大型视频 QA 数据集，可以系统地从外科学术视频中收集训练信号。 SUREON 定义了 12 个问题类别，涵盖安全评估、决策原理和预测，并使用多智能体管道大规模提取和构建监督。 SUREON 跨越 134,700 个剪辑和 170 个程序类型，生成 206,800 个 QA 对和经过专家验证的 354 个示例基准。为了评估这种监督转化为手术推理能力的程度，我们引入了两个模型：SureonVLM，一种通过监督微调调整的视觉语言模型，以及 SureonVLM-R1，一种通过组相对策略优化训练的推理模型。这两种模型都可以回答有关手术的复杂问题，并且大大优于更大的通用域模型，在 SUREON 基准上的准确率超过 84%，同时在标准手术感知任务上优于通用域模型。 SureonVLM-R1 的定性分析揭示了明确的推理行为，例如从视觉上下文推断操作意图。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2603.05500v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">The Spike, the Sparse and the Sink: Anatomy of Massive Activations<sup class='ipa'>/activations*/</sup> and Attention<sup class='ipa'>/əˈtɛnʃən/</sup> Sinks</h4>
-                            <div class="paper-meta">
-                                <span class="authors">Shangwen Sun, Alfredo Canziani, Yann LeCun</span>
-                                <span class="date">2026-03-05</span>
-                                <span class="categories">cs.AI | cs.CL</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">We study two recurring phenomena in Transformer language models: massive activations, in which a small number of tokens exhibit extreme outliers in a few channels, and attention sinks, in which certain tokens attract disproportionate attention mass regardless of semantic relevance. Prior work observ...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">我们研究 Transformer 语言模型中的两种反复出现的现象：大规模激活（其中少量标记在少数通道中表现出极端异常值）和注意力沉降（其中某些标记无论语义相关性如何都会吸引不成比例的注意力）。先前的研究发现，这些现象经常同时发生，并且经常涉及相同的标记，但它们的功能作用和因果关系仍不清楚。通过系统的实验，我们表明，共现很大程度上是现代 Transformer 设计的建筑产物，并且这两种现象具有相关但不同的功能。大规模激活在全局范围内运行：它们引起跨层持续存在的近乎恒定的隐藏表示，有效地充当模型的隐式参数。注意力接收器在本地运行：它们调节各个头部的注意力输出，并使各个头部偏向于短程依赖性。我们将预规范配置确定为实现共现的关键选择，并表明消除它会导致两种现象解耦。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2603.05498v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2603.06570v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -917,29 +917,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
-                            <a href="https://github.com/caramaschiHG/awesome-ai-agents-2026" target="_blank" class="repo-link">
+                            <a href="https://github.com/Genius-apple/RusTorch" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">awesome-ai-agents-2026</span>
-                                    <span class="repo-stars">⭐ 19</span>
+                                    <span class="repo-name">RusTorch</span>
+                                    <span class="repo-stars">⭐ 43</span>
                                 </div>
-                                <p class="repo-desc">🤖 2026 年最全面的人工智能代理、框架和工具列表。 300 多个资源 · 20 多个类别 · 每月更新。</p>
+                                <p class="repo-desc">RusTorch 是一个用 Rust 重新构想的生产级深度学习框架。它将您喜爱的 PyTorch 的可用性与 Rust 的性能、安全性和并发保证结合在一起。告别 GIL 锁、GC 暂停和运行时错误。向 RusTorch 打个招呼。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-03-07</span>
+                                    <span class="repo-lang">Rust</span>
+                                    <span class="repo-date">2026-03-08</span>
                                 </div>
                             </a>
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/amanhij/Zikkaron" target="_blank" class="repo-link">
+                            <a href="https://github.com/caramaschiHG/awesome-ai-agents-2026" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Zikkaron</span>
-                                    <span class="repo-stars">⭐ 7</span>
+                                    <span class="repo-name">awesome-ai-agents-2026</span>
+                                    <span class="repo-stars">⭐ 31</span>
                                 </div>
-                                <p class="repo-desc">Claude Code 的受生物学启发的持久内存引擎。 26 个认知子系统、18 个 MCP 工具、Hopfield 网络、预测编码、因果发现、后继表示，全部通过 SQLite 本地运行。</p>
+                                <p class="repo-desc">🤖 2026 年最全面的人工智能代理、框架和工具列表。 300 多个资源 · 20 多个类别 · 每月更新。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-03-02</span>
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-03-07</span>
                                 </div>
                             </a>
                         </li>
@@ -959,6 +959,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/ginhooser-cyber/ai-agent-landscape" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ai-agent-landscape</span>
+                                    <span class="repo-stars">⭐ 6</span>
+                                </div>
+                                <p class="repo-desc">一个精心策划的、有观点的人工智能代理、代理框架和面向开发人员的代理工具的目录。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-03-08</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/DeepLumiere/ideaoverflow" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">ideaoverflow</span>
@@ -973,34 +987,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/ginhooser-cyber/ai-agent-landscape" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ai-agent-landscape</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">一个精心策划的、有观点的人工智能代理、代理框架和面向开发人员的代理工具的目录。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-03-08</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/SinhaRepo/nexus-ai-assistant" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">nexus-ai-assistant</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">一个基于 Raspberry Pi Zero W 和 Flask 后端构建的分布式 AI 语音助手。具有定制唤醒词检测、双 LLM 故障转移和硬件级系统自动化功能。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-03-02</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/AghahowaJeffrey/PathMind-Astar" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">PathMind-Astar</span>
@@ -1010,6 +996,34 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-03-06</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/daletoniris/alchemind" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">alchemind</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">从第一个人工神经元到自主防御系统——关于人工智能历史、神经网络、对抗性机器学习和 The Warden 架构的书籍 + 实验室 + 论文。作者：丹尼尔·迪塞尔。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-03-05</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Genesis1231/Eva01" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Eva01</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">Eva01 是一个人工智能生物，拥有自己的思想、感情和记忆。不是助手——她活着。适用于终端和 API、多模式、多语言、模块化设计。支持语音 ID、人脸识别和可配置工具。内置 Chatgpt、Claude、Deepseek、Gemini、Grok 和 Ollama。探索人机交互的可能性</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-03-04</span>
                                 </div>
                             </a>
                         </li>
@@ -1038,20 +1052,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Go</span>
                                     <span class="repo-date">2026-03-05</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/Genesis1231/Eva01" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Eva01</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">Eva01 是一个人工智能生物，拥有自己的思想、感情和记忆。不是助手——她活着。适用于终端和 API、多模式、多语言、模块化设计。支持语音 ID、人脸识别和可配置工具。内置 Chatgpt、Claude、Deepseek、Gemini、Grok 和 Ollama。探索人机交互的可能性</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-03-04</span>
                                 </div>
                             </a>
                         </li>
