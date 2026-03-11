@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Scale Space Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup></h2>
+                    <h2 class="paper-title">From Data Statistics<sup class='ipa'>/stəˈtɪstɪks/</sup> to Feature Geometry:<sup class='ipa'>/ʤiˈɑmətri/</sup> How Correlations<sup class='ipa'>/ˌkɔrəˈleɪʃənz/</sup> Shape Superposition<sup class='ipa'>/superposition*/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Soumik Mukhopadhyay, Prateksha Udhayanan, Abhinav Shrivastava</span>
-                        <span class="date">2026-03-09</span>
+                        <span class="authors">Lucas Prieto, Edward Stevinson, Melih Barsbey</span>
+                        <span class="date">2026-03-10</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Diffusion models degrade images through noise, and reversing this process reveals an information hierarchy across timesteps. Scale-space theory exhibits a similar hierarchy via low-pass filtering. We formalize this connection and show that highly noisy diffusion states contain no more information than small, downsampled images - raising the question of why they must be processed at full resolution. To address this, we fuse scale spaces into the diffusion process by formulating a family of diffusion models with generalized linear degradations and practical implementations. Using downsampling as the degradation yields our proposed Scale Space Diffusion. To support Scale Space Diffusion, we introduce Flexi-UNet, a UNet variant that performs resolution-preserving and resolution-increasing denoising using only the necessary parts of the network. We evaluate our framework on CelebA and ImageNet and analyze its scaling behavior across resolutions and network depths. Our project website ( https://prateksha.github.io/projects/scale-space-diffusion/ ) is available publicly.</p>
+                        <p class="abstract-en">A central idea in mechanistic interpretability is that neural networks represent more features than they have dimensions, arranging them in superposition to form an over-complete basis. This framing has been influential, motivating dictionary learning approaches such as sparse autoencoders. However, superposition has mostly been studied in idealized settings where features are sparse and uncorrelated. In these settings, superposition is typically understood as introducing interference that must be minimized geometrically and filtered out by non-linearities such as ReLUs, yielding local structures like regular polytopes. We show that this account is incomplete for realistic data by introducing Bag-of-Words Superposition (BOWS), a controlled setting to encode binary bag-of-words representations of internet text in superposition. Using BOWS, we find that when features are correlated, interference can be constructive rather than just noise to be filtered out. This is achieved by arranging features according to their co-activation patterns, making interference between active features constructive, while still using ReLUs to avoid false positives. We show that this kind of arrangement is more prevalent in models trained with weight decay and naturally gives rise to semantic clusters and cyclical structures which have been observed in real language models yet were not explained by the standard picture of superposition. Code for this paper can be found at https://github.com/LucasPrietoAl/correlations-feature-geometry.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">扩散模型通过噪声降低图像质量，并且逆转该过程揭示了跨时间步长的信息层次结构。尺度空间理论通过低通滤波表现出类似的层次结构。我们形式化了这种联系，并表明高噪声扩散状态所包含的信息并不比小型下采样图像多，这提出了为什么必须以全分辨率处理它们的问题。为了解决这个问题，我们通过制定一系列具有广义线性退化和实际实现的扩散模型，将尺度空间融合到扩散过程中。使用下采样作为降级产生我们提出的尺度空间扩散。为了支持尺度空间扩散，我们引入了 Flexi-UNet，这是一种 UNet 变体，它仅使用网络的必要部分来执行分辨率保持和分辨率增加去噪。我们在 CelebA 和 ImageNet 上评估我们的框架，并分析其在分辨率和网络深度上的扩展行为。我们的项目网站（https://prateksha.github.io/projects/scale-space-diffusion/）是公开的。</p>
+                        <p class="abstract-zh">机械可解释性的一个中心思想是，神经网络代表的特征多于其维度，将它们排列成叠加以形成超完备的基础。这种框架具有影响力，激发了稀疏自动编码器等字典学习方法的发展。然而，叠加主要在特征稀疏且不相关的理想化环境中进行研究。在这些设置中，叠加通常被理解为引入干扰，必须在几何上最小化干扰，并通过 ReLU 等非线性函数滤除干扰，从而产生规则多面体等局部结构。我们通过引入词袋叠加（BOWS）来证明这个解释对于现实数据来说是不完整的，这是一种对互联网文本的二进制词袋表示进行叠加编码的受控设置。使用 BOWS，我们发现当特征相关时，干扰可以是建设性的，而不仅仅是被滤除的噪音。这是通过根据特征的共激活模式排列特征、使活动特征之间的干扰具有建设性，同时仍然使用 ReLU 来避免误报来实现的。我们表明，这种排列在权重衰减训练的模型中更为普遍，并且自然地产生了语义簇和循环结构，这些语义簇和循环结构已在真实语言模型中观察到，但无法用标准叠加图来解释。本文的代码可以在 https://github.com/LucasPrietoAl/correlations-feature-geometry 找到。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Agentic Critical<sup class='ipa'>/ˈkrɪtɪkəl/</sup> Training<sup class='ipa'>/ˈtreɪnɪŋ/</sup></h2>
+                    <h2 class="paper-title">CREATE: Testing LLMs for Associative<sup class='ipa'>/associative*/</sup> Creativity<sup class='ipa'>/ˌkrieɪˈtɪvəti/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Weize Liu, Minghui Liu, Sy-Tuyen Ho</span>
-                        <span class="date">2026-03-09</span>
+                        <span class="authors">Manya Wadhwa, Tiasa Singha Roy, Harvey Lederman</span>
+                        <span class="date">2026-03-10</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Training large language models (LLMs) as autonomous agents often begins with imitation learning, but it only teaches agents what to do without understanding why: agents never contrast successful actions against suboptimal alternatives and thus lack awareness of action quality. Recent approaches attempt to address this by introducing self-reflection supervision derived from contrasts between expert and alternative actions. However, the training paradigm fundamentally remains imitation learning: the model imitates pre-constructed reflection text rather than learning to reason autonomously. We propose Agentic Critical Training (ACT), a reinforcement learning paradigm that trains agents to identify the better action among alternatives. By rewarding whether the model&#39;s judgment is correct, ACT drives the model to autonomously develop reasoning about action quality, producing genuine self-reflection rather than imitating it. Across three challenging agent benchmarks, ACT consistently improves agent performance when combined with different post-training methods. It achieves an average improvement of 5.07 points over imitation learning and 4.62 points over reinforcement learning. Compared to approaches that inject reflection capability through knowledge distillation, ACT also demonstrates clear advantages, yielding an average improvement of 2.42 points. Moreover, ACT enables strong out-of-distribution generalization on agentic benchmarks and improves performance on general reasoning benchmarks without any reasoning-specific training data, highlighting the value of our method. These results suggest that ACT is a promising path toward developing more reflective and capable LLM agents.</p>
+                        <p class="abstract-en">A key component of creativity is associative reasoning: the ability to draw novel yet meaningful connections between concepts. We introduce CREATE, a benchmark designed to evaluate models&#39; capacity for creative associative reasoning. CREATE requires models to generate sets of paths connecting concepts in a model&#39;s parametric knowledge. Paths should have high specificity (distinctiveness and closeness of the concept connection) and high diversity (dissimilarity from other paths), and models are scored more highly if they produce a larger set of strong, diverse paths. This task shares demands of real creativity tasks like hypothesis generation, including an extremely large search space, but enables collection of a sizable benchmark with objective answer grading. Evaluation of frontier models shows that the strongest models achieve higher creative utility than others, with the high multiplicity of answers and complexity of the search making benchmark saturation difficult to achieve. Furthermore, our results illustrate that thinking models are not always more effective on our task, even with high token budgets. Recent approaches for creative prompting give some but limited additional improvement. CREATE provides a sandbox for developing new methods to improve models&#39; capacity for associative creativity.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">将大型语言模型（LLM）训练为自主代理通常从模仿学习开始，但它只教代理做什么而不理解原因：代理从不将成功的行动与次优的替代方案进行比较，因此缺乏对行动质量的认识。最近的方法试图通过引入来自专家行动和替代行动之间对比的自我反思监督来解决这个问题。然而，训练范式从根本上仍然是模仿学习：模型模仿预先构建的反思文本，而不是学习自主推理。我们提出了智能体批判训练（ACT），这是一种强化学习范式，可以训练智能体在替代方案中识别出更好的行动。通过奖励模型的判断是否正确，ACT 驱动模型自主地发展关于行动质量的推理，产生真正的自我反思而不是模仿。在三个具有挑战性的智能体基准测试中，ACT 与不同的训练后方法相结合，不断提高智能体的性能。它比模仿学习平均提高了 5.07 分，比强化学习平均提高了 4.62 分。与通过知识蒸馏注入反射能力的方法相比，ACT 也表现出明显的优势，平均提高了 2.42 分。此外，ACT 能够在代理基准上实现强大的分布外泛化，并在没有任何特定于推理的训练数据的情况下提高通用推理基准的性能，这凸显了我们方法的价值。这些结果表明，ACT 是培养更具反思性和能力的法学硕士代理人的一条有前途的途径。</p>
+                        <p class="abstract-zh">创造力的一个关键组成部分是联想推理：在概念之间建立新颖而有意义的联系的能力。我们引入了 CREATE，这是一个旨在评估模型创造性联想推理能力的基准。 CREATE 要求模型生成连接模型参数知识中的概念的路径集。路径应该具有高特异性（概念联系的独特性和紧密性）和高多样性（与其他路径的不同性），如果模型产生更大的一组强大的、多样化的路径，则模型的得分更高。该任务与假设生成等真正的创造力任务有共同的需求，包括极大的搜索空间，但可以收集具有客观答案评分的相当大的基准。对前沿模型的评估表明，最强的模型比其他模型具有更高的创造性效用，答案的多样性和搜索的复杂性使得基准饱和难以实现。此外，我们的结果表明，即使代币预算很高，思维模型也并不总是对我们的任务更有效。最近的创造性提示方法提供了一些但有限的额外改进。 CREATE 提供了一个沙箱，用于开发新方法来提高模型的联想创造力能力。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Evaluating<sup class='ipa'>/ɪˈvæljuˌeɪtɪŋ/</sup> Financial<sup class='ipa'>/ˌfaɪˈnænʃəl/</sup> Intelligence<sup class='ipa'>/ˌɪnˈtɛləʤəns/</sup> in Large Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models: Benchmarking<sup class='ipa'>/benchmarking*/</sup> SuperInvesting<sup class='ipa'>/superinvesting*/</sup> AI with LLM Engines</h2>
+                    <h2 class="paper-title">Understanding<sup class='ipa'>/ˌəndərˈstændɪŋ/</sup> the Use of a Large Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Model-Powered<sup class='ipa'>/modelpowered*/</sup> Guide to Make Virtual Reality Accessible<sup class='ipa'>/ækˈsɛsəbəl/</sup> for Blind and Low Vision People</h2>
                     <p class="paper-meta">
-                        <span class="authors">Akshay Gulati, Kanha Singhania, Tushar Banga</span>
-                        <span class="date">2026-03-09</span>
+                        <span class="authors">Jazmin Collins, Sharon Y Lin, Tianqi Liu</span>
+                        <span class="date">2026-03-10</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Large language models are increasingly used for financial analysis and investment research, yet systematic evaluation of their financial reasoning capabilities remains limited. In this work, we introduce the AI Financial Intelligence Benchmark (AFIB), a multi-dimensional evaluation framework designed to assess financial analysis capabilities across five dimensions: factual accuracy, analytical completeness, data recency, model consistency, and failure patterns. We evaluate five AI systems: GPT, Gemini, Perplexity, Claude, and SuperInvesting, using a dataset of 95+ structured financial analysis questions derived from real-world equity research tasks. The results reveal substantial differences in performance across models. Within this benchmark setting, SuperInvesting achieves the highest aggregate performance, with an average factual accuracy score of 8.96/10 and the highest completeness score of 56.65/70, while also demonstrating the lowest hallucination rate among evaluated systems. Retrieval-oriented systems such as Perplexity perform strongly on data recency tasks due to live information access but exhibit weaker analytical synthesis and consistency. Overall, the results highlight that financial intelligence in large language models is inherently multi-dimensional, and systems that combine structured financial data access with analytical reasoning capabilities provide the most reliable performance for complex investment research workflows.</p>
+                        <p class="abstract-en">As social virtual reality (VR) grows more popular, addressing accessibility for blind and low vision (BLV) users is increasingly critical. Researchers have proposed an AI &#34;sighted guide&#34; to help users navigate VR and answer their questions, but it has not been studied with users. To address this gap, we developed a large language model (LLM)-powered guide and studied its use with 16 BLV participants in virtual environments with confederates posing as other users. We found that when alone, participants treated the guide as a tool, but treated it companionably around others, giving it nicknames, rationalizing its mistakes with its appearance, and encouraging confederate-guide interaction. Our work furthers understanding of guides as a versatile method for VR accessibility and presents design recommendations for future guides.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">大型语言模型越来越多地用于金融分析和投资研究，但对其金融推理能力的系统评估仍然有限。在这项工作中，我们引入了人工智能金融智能基准（AFIB），这是一个多维度的评估框架，旨在跨五个维度评估财务分析能力：事实准确性、分析完整性、数据新近度、模型一致性和失败模式。我们使用源自现实世界股票研究任务的 95 多个结构化金融分析问题的数据集评估了五个人工智能系统：GPT、Gemini、Perplexity、Claude 和 SuperInvesting。结果显示不同模型的性能存在显着差异。在此基准设置中，SuperInvesting 实现了最高的总体性能，平均事实准确性得分为 8.96/10，最高完整性得分为 56.65/70，同时在评估的系统中表现出最低的幻觉率。由于实时信息访问，诸如 Perplexity 之类的面向检索的系统在数据新近度任务上表现出色，但分析综合和一致性较弱。总体而言，结果强调，大型语言模型中的金融情报本质上是多维的，将结构化金融数据访问与分析推理功能相结合的系统为复杂的投资研究工作流程提供了最可靠的性能。</p>
+                        <p class="abstract-zh">随着社交虚拟现实 (VR) 越来越流行，解决盲人和低视力 (BLV) 用户的无障碍问题变得越来越重要。研究人员提出了一种人工智能“视力指南”来帮助用户导航 VR 并回答他们的问题，但尚未与用户进行研究。为了解决这一差距，我们开发了一个基于大型语言模型 (LLM) 的指南，并在虚拟环境中与 16 位 BLV 参与者一起研究了其使用情况，其中同盟者冒充其他用户。我们发现，当独自一人时，参与者将指南视为一种工具，但在其他人面前却友善地对待它，给它起绰号，用它的外观合理化它的错误，并鼓励同盟者与指南的互动。我们的工作进一步加深了对指南作为 VR 可访问性的多功能方法的理解，并为未来的指南提出了设计建议。</p>
                     </div>
                 </article>
                 
@@ -458,7 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 73</span>
+                        <span class="repo-stars">★ 84</span>
                         <div class="repo-info">
                             <strong class="repo-name">Genius-apple/RusTorch</strong>
                             <p class="repo-desc">RusTorch 是一个用 Rust 重新构想的生产级深度学习框架。它将您喜爱的 PyTorch 的可用性与 Rust 的性能、安全性和并发保证结合在一起。告别 GIL 锁、GC 暂停和运行时错误。向 RusTorch 打个招呼。</p>
@@ -466,10 +466,18 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 41</span>
+                        <span class="repo-stars">★ 47</span>
                         <div class="repo-info">
                             <strong class="repo-name">caramaschiHG/awesome-ai-agents-2026</strong>
                             <p class="repo-desc">🤖 2026 年最全面的人工智能代理、框架和工具列表。 300 多个资源 · 20 多个类别 · 每月更新。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 13</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">anmolksachan/LLMInjector</strong>
+                            <p class="repo-desc">用于 LLM 快速注入测试的 Burp Suite 扩展</p>
                         </div>
                     </li>
                 
@@ -492,8 +500,16 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 5</span>
                         <div class="repo-info">
-                            <strong class="repo-name">anmolksachan/LLMInjector</strong>
-                            <p class="repo-desc">用于 LLM 快速注入测试的 Burp Suite 扩展</p>
+                            <strong class="repo-name">Sherin-SEF-AI/OpsLens</strong>
+                            <p class="repo-desc">OpsLens：世界上第一个由 Notion MCP 提供支持的自主事件指挥中心。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">Elteclass/NovaCloud-AuraTech</strong>
+                            <p class="repo-desc">Plataforma SaaS B2B 旨在为 IA 中的文档智能预览提供安全保障。构建传统数据的无服务器罪孽基础。</p>
                         </div>
                     </li>
                 
@@ -518,22 +534,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">zachjxyz/jvn</strong>
                             <p class="repo-desc">使用 Claude Code 进行规范驱动的开发。以约翰·冯·诺依曼 (John von Neumann) 的名字命名，约翰·冯·诺依曼是计算定义规范的编写者。三个命令：/spec、/design、/build。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">Elteclass/NovaCloud-AuraTech</strong>
-                            <p class="repo-desc">Plataforma SaaS B2B 旨在为 IA 中的文档智能预览提供安全保障。构建传统数据的无服务器罪孽基础。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">daletoniris/alchemind</strong>
-                            <p class="repo-desc">从第一个人工神经元到自主防御系统——关于人工智能历史、神经网络、对抗性机器学习和 The Warden 架构的书籍 + 实验室 + 论文。作者：丹尼尔·迪塞尔。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-03-10 22:24:33
+        生成于 2026-03-11 22:23:42
     </footer>
 </body>
 </html>
