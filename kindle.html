@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">The Latent Color Subspace:<sup class='ipa'>/ˈsəbˌspeɪs/</sup> Emergent<sup class='ipa'>/ˈimərʤənt/</sup> Order in High-Dimensional<sup class='ipa'>/highdimensional*/</sup> Chaos</h2>
+                    <h2 class="paper-title">PhysMoDPO:<sup class='ipa'>/physmodpo*/</sup> Physically-Plausible<sup class='ipa'>/physicallyplausible*/</sup> Humanoid<sup class='ipa'>/ˈhjuməˌnɔɪd/</sup> Motion with Preference<sup class='ipa'>/ˈprɛfərəns/</sup> Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Mateusz Pach, Jessica Bader, Quentin Bouniot</span>
-                        <span class="date">2026-03-12</span>
+                        <span class="authors">Yangsong Zhang, Anujith Muraleedharan, Rikhat Akizhanov</span>
+                        <span class="date">2026-03-13</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Text-to-image generation models have advanced rapidly, yet achieving fine-grained control over generated images remains difficult, largely due to limited understanding of how semantic information is encoded. We develop an interpretation of the color representation in the Variational Autoencoder latent space of FLUX.1 [Dev], revealing a structure reflecting Hue, Saturation, and Lightness. We verify our Latent Color Subspace (LCS) interpretation by demonstrating that it can both predict and explicitly control color, introducing a fully training-free method in FLUX based solely on closed-form latent-space manipulation. Code is available at https://github.com/ExplainableML/LCS.</p>
+                        <p class="abstract-en">Recent progress in text-conditioned human motion generation has been largely driven by diffusion models trained on large-scale human motion data. Building on this progress, recent methods attempt to transfer such models for character animation and real robot control by applying a Whole-Body Controller (WBC) that converts diffusion-generated motions into executable trajectories. While WBC trajectories become compliant with physics, they may expose substantial deviations from original motion. To address this issue, we here propose PhysMoDPO, a Direct Preference Optimization framework. Unlike prior work that relies on hand-crafted physics-aware heuristics such as foot-sliding penalties, we integrate WBC into our training pipeline and optimize diffusion model such that the output of WBC becomes compliant both with physics and original text instructions. To train PhysMoDPO we deploy physics-based and task-specific rewards and use them to assign preference to synthesized trajectories. Our extensive experiments on text-to-motion and spatial control tasks demonstrate consistent improvements of PhysMoDPO in both physical realism and task-related metrics on simulated robots. Moreover, we demonstrate that PhysMoDPO results in significant improvements when applied to zero-shot motion transfer in simulation and for real-world deployment on a G1 humanoid robot.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">文本到图像生成模型发展迅速，但对生成的图像实现细粒度控制仍然很困难，这很大程度上是由于对语义信息编码方式的理解有限。我们对 FLUX.1 [Dev] 的变分自动编码器潜在空间中的颜色表示进行了解释，揭示了反映色调、饱和度和亮度的结构。我们验证了我们的潜在颜色子空间 (LCS) 解释，证明它既可以预测又可以显式控制颜色，并在 FLUX 中引入完全基于封闭形式潜在空间操作的完全免训练方法。代码可在 https://github.com/ExplainableML/LCS 获取。</p>
+                        <p class="abstract-zh">文本条件人体运动生成的最新进展很大程度上是由大规模人体运动数据训练的扩散模型驱动的。在此进展的基础上，最近的方法尝试通过应用全身控制器（WBC）将扩散生成的运动转换为可执行轨迹，将此类模型转移到角色动画和真实机器人控制中。虽然 WBC 轨迹变得符合物理原理，但它们可能会暴露出与原始运动的重大偏差。为了解决这个问题，我们在这里提出了 PhysMoDPO，一个直接偏好优化框架。与之前依赖手工设计的物理感知启发法（例如滑脚惩罚）的工作不同，我们将 WBC 集成到我们的训练管道中并优化扩散模型，以便 WBC 的输出符合物理和原始文本指令。为了训练 PhysMoDPO，我们部署基于物理和特定于任务的奖励，并使用它们来分配对合成轨迹的偏好。我们对文本到运动和空间控制任务的广泛实验证明了 PhysMoDPO 在模拟机器人的物理真实性和任务相关指标方面的持续改进。此外，我们还证明了 PhysMoDPO 在应用于模拟中的零次运动传输以及在 G1 人形机器人上的实际部署时会带来显着的改进。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">EndoCoT: Scaling Endogenous<sup class='ipa'>/ˌɛnˈdɔʤɛnəs/</sup> Chain-of-Thought<sup class='ipa'>/chainofthought*/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> in Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Models</h2>
+                    <h2 class="paper-title">Visual-ERM:<sup class='ipa'>/visualerm*/</sup> Reward Modeling<sup class='ipa'>/ˈmɑdəlɪŋ/</sup> for Visual Equivalence<sup class='ipa'>/ɪkˈwɪvələns/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Xuanlang Dai, Yujie Zhou, Long Xing</span>
-                        <span class="date">2026-03-12</span>
+                        <span class="authors">Ziyu Liu, Shengyuan Ding, Xinyu Fang</span>
+                        <span class="date">2026-03-13</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Recently, Multimodal Large Language Models (MLLMs) have been widely integrated into diffusion frameworks primarily as text encoders to tackle complex tasks such as spatial reasoning. However, this paradigm suffers from two critical limitations: (i) MLLMs text encoder exhibits insufficient reasoning depth. Single-step encoding fails to activate the Chain-of-Thought process, which is essential for MLLMs to provide accurate guidance for complex tasks. (ii) The guidance remains invariant during the decoding process. Invariant guidance during decoding prevents DiT from progressively decomposing complex instructions into actionable denoising steps, even with correct MLLM encodings. To this end, we propose Endogenous Chain-of-Thought (EndoCoT), a novel framework that first activates MLLMs&#39; reasoning potential by iteratively refining latent thought states through an iterative thought guidance module, and then bridges these states to the DiT&#39;s denoising process. Second, a terminal thought grounding module is applied to ensure the reasoning trajectory remains grounded in textual supervision by aligning the final state with ground-truth answers. With these two components, the MLLM text encoder delivers meticulously reasoned guidance, enabling the DiT to execute it progressively and ultimately solve complex tasks in a step-by-step manner. Extensive evaluations across diverse benchmarks (e.g., Maze, TSP, VSP, and Sudoku) achieve an average accuracy of 92.1%, outperforming the strongest baseline by 8.3 percentage points.</p>
+                        <p class="abstract-en">Vision-to-code tasks require models to reconstruct structured visual inputs, such as charts, tables, and SVGs, into executable or structured representations with high visual fidelity. While recent Large Vision Language Models (LVLMs) achieve strong results via supervised fine-tuning, reinforcement learning remains challenging due to misaligned reward signals. Existing rewards either rely on textual rules or coarse visual embedding similarity, both of which fail to capture fine-grained visual discrepancies and are vulnerable to reward hacking. We propose Visual Equivalence Reward Model (Visual-ERM), a multimodal generative reward model that provides fine-grained, interpretable, and task-agnostic feedback to evaluate vision-to-code quality directly in the rendered visual space. Integrated into RL, Visual-ERM improves Qwen3-VL-8B-Instruct by +8.4 on chart-to-code and yields consistent gains on table and SVG parsing (+2.7, +4.1 on average), and further strengthens test-time scaling via reflection and revision. We also introduce VisualCritic-RewardBench (VC-RewardBench), a benchmark for judging fine-grained image-to-image discrepancies on structured visual data, where Visual-ERM at 8B decisively outperforms Qwen3-VL-235B-Instruct and approaches leading closed-source models. Our results suggest that fine-grained visual reward supervision is both necessary and sufficient for vision-to-code RL, regardless of task specificity.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">最近，多模态大型语言模型（MLLM）已被广泛集成到扩散框架中，主要作为文本编码器来处理空间推理等复杂任务。然而，这种范式存在两个关键限制：(i) MLLM 文本编码器的推理深度不足。单步编码无法激活思想链过程，而思想链过程对于 MLLM 为复杂任务提供准确指导至关重要。 (ii) 指导在解码过程中保持不变。即使使用正确的 MLLM 编码，解码期间的不变指导也会阻止 DiT 逐步将复杂指令分解为可操作的去噪步骤。为此，我们提出了内生思维链（EndoCoT），这是一种新颖的框架，它首先通过迭代思维指导模块迭代地细化潜在思维状态，从而激活 MLLM 的推理潜力，然后将这些状态桥接到 DiT 的去噪过程。其次，应用终端思维基础模块，通过将最终状态与真实答案对齐来确保推理轨迹保持基于文本监督。借助这两个组件，MLLM 文本编码器提供经过精心推理的指导，使 DiT 能够逐步执行并最终逐步解决复杂的任务。跨不同基准（例如 Maze、TSP、VSP 和 Sudoku）的广泛评估实现了 92.1% 的平均准确度，比最强基准高出 8.3 个百分点。</p>
+                        <p class="abstract-zh">视觉到代码任务需要模型将结构化视觉输入（例如图表、表格和 SVG）重建为具有高视觉保真度的可执行或结构化表示。虽然最近的大视觉语言模型（LVLM）通过监督微调取得了很好的成果，但由于奖励信号不一致，强化学习仍然具有挑战性。现有的奖励要么依赖于文本规则，要么依赖于粗略的视觉嵌入相似性，这两者都无法捕获细粒度的视觉差异，并且容易受到奖励黑客的攻击。我们提出了视觉等效奖励模型（Visual-ERM），这是一种多模式生成奖励模型，可提供细粒度、可解释且与任务无关的反馈，以直接在渲染的视觉空间中评估视觉到代码的质量。 Visual-ERM 集成到 RL 中，将 Qwen3-VL-8B-Instruct 从图表到代码的性能提高了 +8.4，并在表格和 SVG 解析上产生一致的增益（平均 +2.7，平均 +4​​.1），并通过反思和修订进一步增强了测试时间扩展。我们还引入了 VisualCritic-RewardBench (VC-RewardBench)，这是一个用于判断结构化视觉数据上细粒度图像到图像差异的基准，其中 8B 的 Visual-ERM 明显优于 Qwen3-VL-235B-Instruct，并接近领先的闭源模型。我们的结果表明，无论任务的特殊性如何，细粒度的视觉奖励监督对于视觉到代码的强化学习来说都是必要且充分的。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">SciMDR: Benchmarking<sup class='ipa'>/benchmarking*/</sup> and Advancing<sup class='ipa'>/ədˈvænsɪŋ/</sup> Scientific<sup class='ipa'>/ˌsaɪənˈtɪfɪk/</sup> Multimodal<sup class='ipa'>/multimodal*/</sup> Document<sup class='ipa'>/ˈdɑkjəmɛnt/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h2>
+                    <h2 class="paper-title">Neuron-Aware<sup class='ipa'>/neuronaware*/</sup> Data Selection<sup class='ipa'>/səˈlɛkʃən/</sup> In Instruction<sup class='ipa'>/ˌɪnˈstrəkʃən/</sup> Tuning For Large Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h2>
                     <p class="paper-meta">
-                        <span class="authors">Ziyu Chen, Yilun Zhao, Chengye Wang</span>
-                        <span class="date">2026-03-12</span>
+                        <span class="authors">Xin Chen, Junchao Wu, Shu Yang</span>
+                        <span class="date">2026-03-13</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Constructing scientific multimodal document reasoning datasets for foundation model training involves an inherent trade-off among scale, faithfulness, and realism. To address this challenge, we introduce the synthesize-and-reground framework, a two-stage pipeline comprising: (1) Claim-Centric QA Synthesis, which generates faithful, isolated QA pairs and reasoning on focused segments, and (2) Document-Scale Regrounding, which programmatically re-embeds these pairs into full-document tasks to ensure realistic complexity. Using this framework, we construct SciMDR, a large-scale training dataset for cross-modal comprehension, comprising 300K QA pairs with explicit reasoning chains across 20K scientific papers. We further construct SciMDR-Eval, an expert-annotated benchmark to evaluate multimodal comprehension within full-length scientific workflows. Experiments demonstrate that models fine-tuned on SciMDR achieve significant improvements across multiple scientific QA benchmarks, particularly in those tasks requiring complex document-level reasoning.</p>
+                        <p class="abstract-en">Instruction Tuning (IT) has been proven to be an effective approach to unlock the powerful capabilities of large language models (LLMs). Recent studies indicate that excessive IT data can degrade LLMs performance, while carefully selecting a small subset of high-quality IT data can significantly enhance their capabilities. Therefore, identifying the most efficient subset data from the IT dataset to effectively develop either specific or general abilities in LLMs has become a critical challenge. To address this, we propose a novel and efficient framework called NAIT. NAIT evaluates the impact of IT data on LLMs performance by analyzing the similarity of neuron activation patterns between the IT dataset and the target domain capability. Specifically, NAIT captures neuron activation patterns from in-domain datasets of target domain capabilities to construct reusable and transferable neuron activation features. It then evaluates and selects optimal samples based on the similarity between candidate samples and the expected activation features of the target capabilities. Experimental results show that training on the 10\% Alpaca-GPT4 IT data subset selected by NAIT consistently outperforms methods that rely on external advanced models or uncertainty-based features across various tasks. Our findings also reveal the transferability of neuron activation features across different capabilities of LLMs. In particular, IT data with more logical reasoning and programmatic features possesses strong general transferability, enabling models to develop stronger capabilities across multiple tasks, while a stable core subset of data is sufficient to consistently activate fundamental model capabilities and universally improve performance across diverse tasks.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">构建用于基础模型训练的科学多模态文档推理数据集涉及规模、忠实性和现实性之间的固有权衡。为了应对这一挑战，我们引入了综合和重新基础框架，这是一个两阶段的管道，包括：(1) 以声明为中心的 QA 综合，它生成忠实、独立的 QA 对并在重点片段上进行推理；(2) 文档规模重新基础，它以编程方式将这些对重新嵌入到完整文档任务中，以确保现实的复杂性。使用这个框架，我们构建了 SciMDR，这是一个用于跨模式理解的大规模训练数据集，包含 30 万个 QA 对，以及 2 万篇科学论文中的明确推理链。我们进一步构建了 SciMDR-Eval，这是一个专家注释的基准，用于评估完整科学工作流程中的多模式理解。实验表明，在 SciMDR 上微调的模型在多个科学 QA 基准上取得了显着的改进，特别是在那些需要复杂文档级推理的任务中。</p>
+                        <p class="abstract-zh">指令调优 (IT) 已被证明是释放大型语言模型 (LLM) 强大功能的有效方法。最近的研究表明，过多的 IT 数据会降低法学硕士的绩效，而仔细选择一小部分高质量 IT 数据可以显着增强其能力。因此，从 IT 数据集中识别最有效的子集数据以有效培养法学硕士的特定或一般能力已成为一项关键挑战。为了解决这个问题，我们提出了一种新颖且高效的框架，称为 NAIT。 NAIT 通过分析 IT 数据集和目标域能力之间神经元激活模式的相似性来评估 IT 数据对 LLM 性能的影响。具体来说，NAIT 从目标域功能的域内数据集中捕获神经元激活模式，以构建可重用和可转移的神经元激活特征。然后根据候选样本与目标能力的预期激活特征之间的相似度来评估和选择最佳样本。实验结果表明，在 NAIT 选择的 10\% Alpaca-GPT4 IT 数据子集上进行的训练在各种任务中始终优于依赖外部高级模型或基于不确定性的特征的方法。我们的研究结果还揭示了神经元激活特征在法学硕士不同能力之间的可转移性。特别是，具有更多逻辑推理和编程特性的IT数据具有很强的通用可移植性，使模型能够在多个任务中开发出更强的能力，而稳定的核心数据子集足以持续激活模型的基础能力并普遍提高跨不同任务的性能。</p>
                     </div>
                 </article>
                 
@@ -458,7 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 104</span>
+                        <span class="repo-stars">★ 100</span>
                         <div class="repo-info">
                             <strong class="repo-name">asonglin/crypto-liquidity-ai-trading-bot</strong>
                             <p class="repo-desc">加密货币流动性检测和算法交易机器人。订单簿分析、止损集群、流动性清扫。多交易所（Binance、Bybit、Kraken、OKX）。交易信号、量化研究、市场微观结构。</p>
@@ -466,10 +466,26 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 25</span>
+                        <span class="repo-stars">★ 28</span>
                         <div class="repo-info">
                             <strong class="repo-name">anmolksachan/LLMInjector</strong>
                             <p class="repo-desc">用于 LLM 快速注入测试的 Burp Suite 扩展</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 6</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">tarulahsan/softchip-studio</strong>
+                            <p class="repo-desc">用于设计人工智能驱动的数据管道的视觉电路构建器。拖放软芯片来创建用于音频、文本和图像处理的芯片和工作流程，以及许多其他选项，甚至可以使用 GPT-4、Claude、Kimi、Qwen 进行电路设计。 60+芯片，10个模板，像n8n一样的工作流程自动化。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 6</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">houselearning/SafeAI-1</strong>
+                            <p class="repo-desc">利用开源的力量，尽我们所能。</p>
                         </div>
                     </li>
                 
@@ -492,48 +508,32 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">withkarann/aifoxx</strong>
-                            <p class="repo-desc">包含 1000 多个 AI 工具的开源目录，包含定价、合规性和访问元数据</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
                             <strong class="repo-name">PPPPanda/contentPipe</strong>
                             <p class="repo-desc">微信公众号 (微信公众号) 的人工智能驱动内容管道。侦察→研究→写作→直接→格式→发布。基于 OpenClaw 构建。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">withkarann/aifoxx</strong>
+                            <p class="repo-desc">包含 1000 多个 AI 工具的开源目录，包含定价、合规性和访问元数据</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
                             <strong class="repo-name">kimimgo/awesome-ai-cae</strong>
-                            <p class="repo-desc">用于计算机辅助工程的人工智能驱动工具的精选列表 - 模拟、可视化、设计和制造。</p>
+                            <p class="repo-desc">用于计算机辅助工程的 104 个 AI 就绪工具的精选列表 - 模拟、可视化、设计和制造。 MCP 服务器、Python API、神经运算符、PINN。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">SiddharthRiot/TrafficVision-AI</strong>
-                            <p class="repo-desc">由人工智能驱动的交通管理系统使用基于 YOLO 的计算机视觉来动态优化信号计时并创建紧急绿色走廊。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
+                        <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
                             <strong class="repo-name">Devanik21/FRAE</strong>
                             <p class="repo-desc">FRAE-S：流体共振优势估计 - 稳定的用于 Actor-Critic 强化学习的 Navier-Stokes 启发优势估计器</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">Hazrat-Ali9/Machine-Learning-Project-Jupeter_Notebook-Experiment</strong>
-                            <p class="repo-desc">🍏 机器 🍊学习 🍋 项目 🍎 Jupyter 🍑 笔记本 🌽 实验 🫒 是 🥬 🍅 🧅 🫑 机器 🍟 学习 🍔 实验 🍱 数据 🪣 科学 📔 工作流程 📕 模型 📗 探索📘使用📒测试📠不同的👔ML🧤算法🎒预处理🛍技术📟数据💎分析🏩方法🏡实现了📙</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-03-15 22:22:54
+        生成于 2026-03-16 22:28:48
     </footer>
 </body>
 </html>
