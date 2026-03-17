@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">PhysMoDPO:<sup class='ipa'>/physmodpo*/</sup> Physically-Plausible<sup class='ipa'>/physicallyplausible*/</sup> Humanoid<sup class='ipa'>/ˈhjuməˌnɔɪd/</sup> Motion with Preference<sup class='ipa'>/ˈprɛfərəns/</sup> Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup></h2>
+                    <h2 class="paper-title">Mixture-of-Depths<sup class='ipa'>/mixtureofdepths*/</sup> Attention<sup class='ipa'>/əˈtɛnʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Yangsong Zhang, Anujith Muraleedharan, Rikhat Akizhanov</span>
-                        <span class="date">2026-03-13</span>
+                        <span class="authors">Lianghui Zhu, Yuxin Fang, Bencheng Liao</span>
+                        <span class="date">2026-03-16</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Recent progress in text-conditioned human motion generation has been largely driven by diffusion models trained on large-scale human motion data. Building on this progress, recent methods attempt to transfer such models for character animation and real robot control by applying a Whole-Body Controller (WBC) that converts diffusion-generated motions into executable trajectories. While WBC trajectories become compliant with physics, they may expose substantial deviations from original motion. To address this issue, we here propose PhysMoDPO, a Direct Preference Optimization framework. Unlike prior work that relies on hand-crafted physics-aware heuristics such as foot-sliding penalties, we integrate WBC into our training pipeline and optimize diffusion model such that the output of WBC becomes compliant both with physics and original text instructions. To train PhysMoDPO we deploy physics-based and task-specific rewards and use them to assign preference to synthesized trajectories. Our extensive experiments on text-to-motion and spatial control tasks demonstrate consistent improvements of PhysMoDPO in both physical realism and task-related metrics on simulated robots. Moreover, we demonstrate that PhysMoDPO results in significant improvements when applied to zero-shot motion transfer in simulation and for real-world deployment on a G1 humanoid robot.</p>
+                        <p class="abstract-en">Scaling depth is a key driver for large language models (LLMs). Yet, as LLMs become deeper, they often suffer from signal degradation: informative features formed in shallow layers are gradually diluted by repeated residual updates, making them harder to recover in deeper layers. We introduce mixture-of-depths attention (MoDA), a mechanism that allows each attention head to attend to sequence KV pairs at the current layer and depth KV pairs from preceding layers. We further describe a hardware-efficient algorithm for MoDA that resolves non-contiguous memory-access patterns, achieving 97.3% of FlashAttention-2&#39;s efficiency at a sequence length of 64K. Experiments on 1.5B-parameter models demonstrate that MoDA consistently outperforms strong baselines. Notably, it improves average perplexity by 0.2 across 10 validation benchmarks and increases average performance by 2.11% on 10 downstream tasks, with a negligible 3.7% FLOPs computational overhead. We also find that combining MoDA with post-norm yields better performance than using it with pre-norm. These results suggest that MoDA is a promising primitive for depth scaling. Code is released at https://github.com/hustvl/MoDA .</p>
                         <hr class="divider">
-                        <p class="abstract-zh">文本条件人体运动生成的最新进展很大程度上是由大规模人体运动数据训练的扩散模型驱动的。在此进展的基础上，最近的方法尝试通过应用全身控制器（WBC）将扩散生成的运动转换为可执行轨迹，将此类模型转移到角色动画和真实机器人控制中。虽然 WBC 轨迹变得符合物理原理，但它们可能会暴露出与原始运动的重大偏差。为了解决这个问题，我们在这里提出了 PhysMoDPO，一个直接偏好优化框架。与之前依赖手工设计的物理感知启发法（例如滑脚惩罚）的工作不同，我们将 WBC 集成到我们的训练管道中并优化扩散模型，以便 WBC 的输出符合物理和原始文本指令。为了训练 PhysMoDPO，我们部署基于物理和特定于任务的奖励，并使用它们来分配对合成轨迹的偏好。我们对文本到运动和空间控制任务的广泛实验证明了 PhysMoDPO 在模拟机器人的物理真实性和任务相关指标方面的持续改进。此外，我们还证明了 PhysMoDPO 在应用于模拟中的零次运动传输以及在 G1 人形机器人上的实际部署时会带来显着的改进。</p>
+                        <p class="abstract-zh">扩展深度是大型语言模型 (LLM) 的关键驱动因素。然而，随着 LLM 变得更深，它们经常会遭受信号衰减的困扰：浅层中形成的信息特征会被重复的残余更新逐渐稀释，使得它们更难以在更深的层中恢复。我们引入了混合深度注意力（MoDA），这种机制允许每个注意力头关注当前层的序列 KV 对和前面层的深度 KV 对。我们进一步描述了一种用于 MoDA 的硬件高效算法，该算法解决了非连续内存访问模式，在 64K 序列长度下实现了 FlashAttention-2 97.3% 的效率。 1.5B 参数模型的实验表明，MoDA 始终优于强基线。值得注意的是，它在 10 个验证基准中将平均困惑度提高了 0.2，并将 10 个下游任务的平均性能提高了 2.11%，而 FLOPs 的计算开销可以忽略不计，达到了 3.7%。我们还发现，将 MoDA 与后规范相结合比将其与前规范结合使用会产生更好的性能。这些结果表明 MoDA 是一种有前途的深度缩放原语。代码发布于 https://github.com/hustvl/MoDA 。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Visual-ERM:<sup class='ipa'>/visualerm*/</sup> Reward Modeling<sup class='ipa'>/ˈmɑdəlɪŋ/</sup> for Visual Equivalence<sup class='ipa'>/ɪkˈwɪvələns/</sup></h2>
+                    <h2 class="paper-title">Mechanistic<sup class='ipa'>/ˌmɛkəˈnɪstɪk/</sup> Origin of Moral Indifference<sup class='ipa'>/ˌɪnˈdɪfərəns/</sup> in Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h2>
                     <p class="paper-meta">
-                        <span class="authors">Ziyu Liu, Shengyuan Ding, Xinyu Fang</span>
-                        <span class="date">2026-03-13</span>
+                        <span class="authors">Lingyu Li, Yan Teng, Yingchun Wang</span>
+                        <span class="date">2026-03-16</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Vision-to-code tasks require models to reconstruct structured visual inputs, such as charts, tables, and SVGs, into executable or structured representations with high visual fidelity. While recent Large Vision Language Models (LVLMs) achieve strong results via supervised fine-tuning, reinforcement learning remains challenging due to misaligned reward signals. Existing rewards either rely on textual rules or coarse visual embedding similarity, both of which fail to capture fine-grained visual discrepancies and are vulnerable to reward hacking. We propose Visual Equivalence Reward Model (Visual-ERM), a multimodal generative reward model that provides fine-grained, interpretable, and task-agnostic feedback to evaluate vision-to-code quality directly in the rendered visual space. Integrated into RL, Visual-ERM improves Qwen3-VL-8B-Instruct by +8.4 on chart-to-code and yields consistent gains on table and SVG parsing (+2.7, +4.1 on average), and further strengthens test-time scaling via reflection and revision. We also introduce VisualCritic-RewardBench (VC-RewardBench), a benchmark for judging fine-grained image-to-image discrepancies on structured visual data, where Visual-ERM at 8B decisively outperforms Qwen3-VL-235B-Instruct and approaches leading closed-source models. Our results suggest that fine-grained visual reward supervision is both necessary and sufficient for vision-to-code RL, regardless of task specificity.</p>
+                        <p class="abstract-en">Existing behavioral alignment techniques for Large Language Models (LLMs) often neglect the discrepancy between surface compliance and internal unaligned representations, leaving LLMs vulnerable to long-tail risks. More crucially, we posit that LLMs possess an inherent state of moral indifference due to compressing distinct moral concepts into uniform probability distributions. We verify and remedy this indifference in LLMs&#39; latent representations, utilizing 251k moral vectors constructed upon Prototype Theory and the Social-Chemistry-101 dataset. Firstly, our analysis across 23 models reveals that current LLMs fail to represent the distinction between opposed moral categories and fine-grained typicality gradients within these categories; notably, neither model scaling, architecture, nor explicit alignment reshapes this indifference. We then employ Sparse Autoencoders on Qwen3-8B, isolate mono-semantic moral features, and targetedly reconstruct their topological relationships to align with ground-truth moral vectors. This representational alignment naturally improves moral reasoning and granularity, achieving a 75% pairwise win-rate on the independent adversarial Flames benchmark. Finally, we elaborate on the remedial nature of current intervention methods from an experientialist philosophy, arguing that endogenously aligned AI might require a transformation from post-hoc corrections to proactive cultivation.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">视觉到代码任务需要模型将结构化视觉输入（例如图表、表格和 SVG）重建为具有高视觉保真度的可执行或结构化表示。虽然最近的大视觉语言模型（LVLM）通过监督微调取得了很好的成果，但由于奖励信号不一致，强化学习仍然具有挑战性。现有的奖励要么依赖于文本规则，要么依赖于粗略的视觉嵌入相似性，这两者都无法捕获细粒度的视觉差异，并且容易受到奖励黑客的攻击。我们提出了视觉等效奖励模型（Visual-ERM），这是一种多模式生成奖励模型，可提供细粒度、可解释且与任务无关的反馈，以直接在渲染的视觉空间中评估视觉到代码的质量。 Visual-ERM 集成到 RL 中，将 Qwen3-VL-8B-Instruct 从图表到代码的性能提高了 +8.4，并在表格和 SVG 解析上产生一致的增益（平均 +2.7，平均 +4​​.1），并通过反思和修订进一步增强了测试时间扩展。我们还引入了 VisualCritic-RewardBench (VC-RewardBench)，这是一个用于判断结构化视觉数据上细粒度图像到图像差异的基准，其中 8B 的 Visual-ERM 明显优于 Qwen3-VL-235B-Instruct，并接近领先的闭源模型。我们的结果表明，无论任务的特殊性如何，细粒度的视觉奖励监督对于视觉到代码的强化学习来说都是必要且充分的。</p>
+                        <p class="abstract-zh">现有的大型语言模型 (LLM) 行为对齐技术常常忽略表面合规性和内部未对齐表示之间的差异，使 LLM 容易受到长尾风险的影响。更重要的是，我们假设法学硕士由于将不同的道德概念压缩为均匀的概率分布而具有道德冷漠的内在状态。我们利用基于原型理论和 Social-Chemistry-101 数据集构建的 251k 个道德向量来验证并纠正 LLM 潜在表征中的这种冷漠。首先，我们对 23 个模型的分析表明，当前的法学硕士无法区分对立的道德类别和这些类别内的细粒度典型性梯度之间的区别；值得注意的是，模型缩放、架构或明确的对齐都无法重塑这种冷漠。然后，我们在 Qwen3-8B 上使用稀疏自动编码器，分离单语义道德特征，并有针对性地重建它们的拓扑关系以与真实道德向量对齐。这种表征对齐自然地提高了道德推理和粒度，在独立对抗性 Flames 基准上实现了 75% 的成对胜率。最后，我们从经验主义哲学角度阐述了当前干预方法的补救性质，认为内生一致的人工智能可能需要从事后纠正到主动培养的转变。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Neuron-Aware<sup class='ipa'>/neuronaware*/</sup> Data Selection<sup class='ipa'>/səˈlɛkʃən/</sup> In Instruction<sup class='ipa'>/ˌɪnˈstrəkʃən/</sup> Tuning For Large Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h2>
+                    <h2 class="paper-title">Code-A1: Adversarial<sup class='ipa'>/ˌædvərˈsɛriəl/</sup> Evolving<sup class='ipa'>/ɪˈvɑlvɪŋ/</sup> of Code LLM and Test LLM via Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Xin Chen, Junchao Wu, Shu Yang</span>
-                        <span class="date">2026-03-13</span>
+                        <span class="authors">Aozhe Wang, Yuchen Yan, Nan Zhou</span>
+                        <span class="date">2026-03-16</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Instruction Tuning (IT) has been proven to be an effective approach to unlock the powerful capabilities of large language models (LLMs). Recent studies indicate that excessive IT data can degrade LLMs performance, while carefully selecting a small subset of high-quality IT data can significantly enhance their capabilities. Therefore, identifying the most efficient subset data from the IT dataset to effectively develop either specific or general abilities in LLMs has become a critical challenge. To address this, we propose a novel and efficient framework called NAIT. NAIT evaluates the impact of IT data on LLMs performance by analyzing the similarity of neuron activation patterns between the IT dataset and the target domain capability. Specifically, NAIT captures neuron activation patterns from in-domain datasets of target domain capabilities to construct reusable and transferable neuron activation features. It then evaluates and selects optimal samples based on the similarity between candidate samples and the expected activation features of the target capabilities. Experimental results show that training on the 10\% Alpaca-GPT4 IT data subset selected by NAIT consistently outperforms methods that rely on external advanced models or uncertainty-based features across various tasks. Our findings also reveal the transferability of neuron activation features across different capabilities of LLMs. In particular, IT data with more logical reasoning and programmatic features possesses strong general transferability, enabling models to develop stronger capabilities across multiple tasks, while a stable core subset of data is sufficient to consistently activate fundamental model capabilities and universally improve performance across diverse tasks.</p>
+                        <p class="abstract-en">Reinforcement learning for code generation relies on verifiable rewards from unit test pass rates. Yet high-quality test suites are scarce, existing datasets offer limited coverage, and static rewards fail to adapt as models improve. Recent self-play methods unify code and test generation in a single model, but face a inherent dilemma: white-box access leads to self-collusion where the model produces trivial tests for easy rewards, yet black-box restriction yields generic tests that miss implementation-specific bugs. We introduce Code-A1, an adversarial co-evolution framework that jointly optimizes a Code LLM and a Test LLM with opposing objectives. The Code LLM is rewarded for passing more tests, while the Test LLM is rewarded for exposing more defects. This architectural separation eliminates self-collusion risks and safely enables white-box test generation, where the Test LLM can inspect candidate code to craft targeted adversarial tests. We further introduce a Mistake Book mechanism for experience replay and a composite reward balancing test validity with adversarial difficulty. Experiments on Qwen2.5-Coder models demonstrate that Code-A1 achieves code generation performance matching or exceeding models trained on human-annotated tests, while significantly improving test generation capability.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">指令调优 (IT) 已被证明是释放大型语言模型 (LLM) 强大功能的有效方法。最近的研究表明，过多的 IT 数据会降低法学硕士的绩效，而仔细选择一小部分高质量 IT 数据可以显着增强其能力。因此，从 IT 数据集中识别最有效的子集数据以有效培养法学硕士的特定或一般能力已成为一项关键挑战。为了解决这个问题，我们提出了一种新颖且高效的框架，称为 NAIT。 NAIT 通过分析 IT 数据集和目标域能力之间神经元激活模式的相似性来评估 IT 数据对 LLM 性能的影响。具体来说，NAIT 从目标域功能的域内数据集中捕获神经元激活模式，以构建可重用和可转移的神经元激活特征。然后根据候选样本与目标能力的预期激活特征之间的相似度来评估和选择最佳样本。实验结果表明，在 NAIT 选择的 10\% Alpaca-GPT4 IT 数据子集上进行的训练在各种任务中始终优于依赖外部高级模型或基于不确定性的特征的方法。我们的研究结果还揭示了神经元激活特征在法学硕士不同能力之间的可转移性。特别是，具有更多逻辑推理和编程特性的IT数据具有很强的通用可移植性，使模型能够在多个任务中开发出更强的能力，而稳定的核心数据子集足以持续激活模型的基础能力并普遍提高跨不同任务的性能。</p>
+                        <p class="abstract-zh">代码生成的强化学习依赖于单元测试通过率的可验证奖励。然而，高质量的测试套件稀缺，现有数据集的覆盖范围有限，并且静态奖励无法随着模型的改进而调整。最近的自我对弈方法将代码和测试生成统一在一个模型中，但面临着一个固有的困境：白盒访问会导致自共谋，模型会产生简单的测试以获得简单的奖励，而黑盒限制会产生通用测试，从而错过特定于实现的错误。我们引入了 Code-A1，这是一种对抗性共同进化框架，它联合优化具有相反目标的代码 LLM 和测试 LLM。代码法学硕士因通过更多测试而获得奖励，而测试法学硕士因暴露更多缺陷而获得奖励。这种架构分离消除了自我共谋风险，并安全地实现了白盒测试生成，其中测试法学硕士可以检查候选代码以制定有针对性的对抗性测试。我们进一步引入了用于经验回放的错误簿机制和平衡测试有效性与对抗难度的复合奖励。 Qwen2.5-Coder 模型上的实验表明，Code-A1 的代码生成性能可以匹配或超过人工注释测试训练的模型，同时显着提高测试生成能力。</p>
                     </div>
                 </article>
                 
@@ -458,18 +458,18 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 100</span>
+                        <span class="repo-stars">★ 84</span>
                         <div class="repo-info">
-                            <strong class="repo-name">asonglin/crypto-liquidity-ai-trading-bot</strong>
+                            <strong class="repo-name">aitradingbotspro/crypto-liquidity-ai-trading-bot</strong>
                             <p class="repo-desc">加密货币流动性检测和算法交易机器人。订单簿分析、止损集群、流动性清扫。多交易所（Binance、Bybit、Kraken、OKX）。交易信号、量化研究、市场微观结构。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 28</span>
+                        <span class="repo-stars">★ 6</span>
                         <div class="repo-info">
-                            <strong class="repo-name">anmolksachan/LLMInjector</strong>
-                            <p class="repo-desc">用于 LLM 快速注入测试的 Burp Suite 扩展</p>
+                            <strong class="repo-name">kimimgo/awesome-ai-cae</strong>
+                            <p class="repo-desc">用于计算机辅助工程的 104 个 AI 就绪工具的精选列表 - 模拟、可视化、设计和制造。 MCP 服务器、Python API、神经运算符、PINN。</p>
                         </div>
                     </li>
                 
@@ -490,10 +490,10 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
+                        <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">deswong/Openhab-MCP</strong>
-                            <p class="repo-desc">OpenHAB-MCP：通过模型上下文协议对 OpenHAB (v5+) 系统进行总命令。充分暴露项目、事物、规则、持久性和语义标签。</p>
+                            <strong class="repo-name">adc-trust-ai/whitebox-ai-syllabus</strong>
+                            <p class="repo-desc">掌握可解释机器学习的精心策划的教学大纲：从数学基础到生产级白盒模型。</p>
                         </div>
                     </li>
                 
@@ -508,8 +508,8 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">PPPPanda/contentPipe</strong>
-                            <p class="repo-desc">微信公众号 (微信公众号) 的人工智能驱动内容管道。侦察→研究→写作→直接→格式→发布。基于 OpenClaw 构建。</p>
+                            <strong class="repo-name">anurajsl/trace</strong>
+                            <p class="repo-desc">工件一致性和进化的可信注册表 - 人工智能增强软件系统的结构一致性工程。你的人工智能会写出很棒的代码。 TRACE 保持其连贯性。</p>
                         </div>
                     </li>
                 
@@ -524,16 +524,16 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">kimimgo/awesome-ai-cae</strong>
-                            <p class="repo-desc">用于计算机辅助工程的 104 个 AI 就绪工具的精选列表 - 模拟、可视化、设计和制造。 MCP 服务器、Python API、神经运算符、PINN。</p>
+                            <strong class="repo-name">mapleleaflatte03/meridian-intelligence</strong>
+                            <p class="repo-desc">Meridian Intelligence — 具有 7 个专业代理的自主 AI 情报服务、每日简报和通过 x402 协议进行 USDC 付款</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
+                        <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">Devanik21/FRAE</strong>
-                            <p class="repo-desc">FRAE-S：流体共振优势估计 - 稳定的用于 Actor-Critic 强化学习的 Navier-Stokes 启发优势估计器</p>
+                            <strong class="repo-name">SiddharthRiot/TrafficVision-AI</strong>
+                            <p class="repo-desc">由人工智能驱动的交通管理系统使用基于 YOLO 的计算机视觉来动态优化信号计时并创建紧急绿色走廊。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-03-16 22:28:48
+        生成于 2026-03-17 22:29:08
     </footer>
 </body>
 </html>
