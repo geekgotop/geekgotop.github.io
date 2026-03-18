@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Mixture-of-Depths<sup class='ipa'>/mixtureofdepths*/</sup> Attention<sup class='ipa'>/əˈtɛnʃən/</sup></h2>
+                    <h2 class="paper-title">Demystifing<sup class='ipa'>/demystifing*/</sup> Video Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Lianghui Zhu, Yuxin Fang, Bencheng Liao</span>
-                        <span class="date">2026-03-16</span>
+                        <span class="authors">Ruisi Wang, Zhongang Cai, Fanyi Pu</span>
+                        <span class="date">2026-03-17</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Scaling depth is a key driver for large language models (LLMs). Yet, as LLMs become deeper, they often suffer from signal degradation: informative features formed in shallow layers are gradually diluted by repeated residual updates, making them harder to recover in deeper layers. We introduce mixture-of-depths attention (MoDA), a mechanism that allows each attention head to attend to sequence KV pairs at the current layer and depth KV pairs from preceding layers. We further describe a hardware-efficient algorithm for MoDA that resolves non-contiguous memory-access patterns, achieving 97.3% of FlashAttention-2&#39;s efficiency at a sequence length of 64K. Experiments on 1.5B-parameter models demonstrate that MoDA consistently outperforms strong baselines. Notably, it improves average perplexity by 0.2 across 10 validation benchmarks and increases average performance by 2.11% on 10 downstream tasks, with a negligible 3.7% FLOPs computational overhead. We also find that combining MoDA with post-norm yields better performance than using it with pre-norm. These results suggest that MoDA is a promising primitive for depth scaling. Code is released at https://github.com/hustvl/MoDA .</p>
+                        <p class="abstract-en">Recent advances in video generation have revealed an unexpected phenomenon: diffusion-based video models exhibit non-trivial reasoning capabilities. Prior work attributes this to a Chain-of-Frames (CoF) mechanism, where reasoning is assumed to unfold sequentially across video frames. In this work, we challenge this assumption and uncover a fundamentally different mechanism. We show that reasoning in video models instead primarily emerges along the diffusion denoising steps. Through qualitative analysis and targeted probing experiments, we find that models explore multiple candidate solutions in early denoising steps and progressively converge to a final answer, a process we term Chain-of-Steps (CoS). Beyond this core mechanism, we identify several emergent reasoning behaviors critical to model performance: (1) working memory, enabling persistent reference; (2) self-correction and enhancement, allowing recovery from incorrect intermediate solutions; and (3) perception before action, where early steps establish semantic grounding and later steps perform structured manipulation. During a diffusion step, we further uncover self-evolved functional specialization within Diffusion Transformers, where early layers encode dense perceptual structure, middle layers execute reasoning, and later layers consolidate latent representations. Motivated by these insights, we present a simple training-free strategy as a proof-of-concept, demonstrating how reasoning can be improved by ensembling latent trajectories from identical models with different random seeds. Overall, our work provides a systematic understanding of how reasoning emerges in video generation models, offering a foundation to guide future research in better exploiting the inherent reasoning dynamics of video models as a new substrate for intelligence.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">扩展深度是大型语言模型 (LLM) 的关键驱动因素。然而，随着 LLM 变得更深，它们经常会遭受信号衰减的困扰：浅层中形成的信息特征会被重复的残余更新逐渐稀释，使得它们更难以在更深的层中恢复。我们引入了混合深度注意力（MoDA），这种机制允许每个注意力头关注当前层的序列 KV 对和前面层的深度 KV 对。我们进一步描述了一种用于 MoDA 的硬件高效算法，该算法解决了非连续内存访问模式，在 64K 序列长度下实现了 FlashAttention-2 97.3% 的效率。 1.5B 参数模型的实验表明，MoDA 始终优于强基线。值得注意的是，它在 10 个验证基准中将平均困惑度提高了 0.2，并将 10 个下游任务的平均性能提高了 2.11%，而 FLOPs 的计算开销可以忽略不计，达到了 3.7%。我们还发现，将 MoDA 与后规范相结合比将其与前规范结合使用会产生更好的性能。这些结果表明 MoDA 是一种有前途的深度缩放原语。代码发布于 https://github.com/hustvl/MoDA 。</p>
+                        <p class="abstract-zh">视频生成的最新进展揭示了一个意想不到的现象：基于扩散的视频模型表现出非凡的推理能力。先前的工作将此归因于帧链（CoF）机制，其中假设推理在视频帧中按顺序展开。在这项工作中，我们挑战了这一假设并揭示了一种根本不同的机制。我们表明，视频模型中的推理主要是沿着扩散去噪步骤出现的。通过定性分析和有针对性的探测实验，我们发现模型在早期去噪步骤中探索多个候选解决方案，并逐渐收敛到最终答案，我们将这个过程称为步骤链（CoS）。除了这个核心机制之外，我们还确定了几种对模型性能至关重要的紧急推理行为：（1）工作记忆，实现持久引用； (2)自我修正和增强，允许从错误的中间解决方案中恢复； (3) 行动之前的感知，其中早期步骤建立语义基础，后续步骤执行结构化操作。在扩散步骤中，我们进一步揭示了扩散变压器中自我进化的功能专业化，其中早期层编码密集的感知结构，中间层执行推理，后面的层巩固潜在表示。受这些见解的启发，我们提出了一种简单的免训练策略作为概念验证，展示了如何通过将具有不同随机种子的相同模型的潜在轨迹集成来改进推理。总体而言，我们的工作提供了对视频生成模型中推理如何出现的系统理解，为指导未来研究更好地利用视频模型的固有推理动态作为智能的新基础奠定了基础。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Mechanistic<sup class='ipa'>/ˌmɛkəˈnɪstɪk/</sup> Origin of Moral Indifference<sup class='ipa'>/ˌɪnˈdɪfərəns/</sup> in Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h2>
+                    <h2 class="paper-title">Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> on the Edge</h2>
                     <p class="paper-meta">
-                        <span class="authors">Lingyu Li, Yan Teng, Yingchun Wang</span>
-                        <span class="date">2026-03-16</span>
+                        <span class="authors">Yelysei Bondarenko, Thomas Hehn, Rob Hesselink</span>
+                        <span class="date">2026-03-17</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Existing behavioral alignment techniques for Large Language Models (LLMs) often neglect the discrepancy between surface compliance and internal unaligned representations, leaving LLMs vulnerable to long-tail risks. More crucially, we posit that LLMs possess an inherent state of moral indifference due to compressing distinct moral concepts into uniform probability distributions. We verify and remedy this indifference in LLMs&#39; latent representations, utilizing 251k moral vectors constructed upon Prototype Theory and the Social-Chemistry-101 dataset. Firstly, our analysis across 23 models reveals that current LLMs fail to represent the distinction between opposed moral categories and fine-grained typicality gradients within these categories; notably, neither model scaling, architecture, nor explicit alignment reshapes this indifference. We then employ Sparse Autoencoders on Qwen3-8B, isolate mono-semantic moral features, and targetedly reconstruct their topological relationships to align with ground-truth moral vectors. This representational alignment naturally improves moral reasoning and granularity, achieving a 75% pairwise win-rate on the independent adversarial Flames benchmark. Finally, we elaborate on the remedial nature of current intervention methods from an experientialist philosophy, arguing that endogenously aligned AI might require a transformation from post-hoc corrections to proactive cultivation.</p>
+                        <p class="abstract-en">Large language models (LLMs) with chain-of-thought reasoning achieve state-of-the-art performance across complex problem-solving tasks, but their verbose reasoning traces and large context requirements make them impractical for edge deployment. These challenges include high token generation costs, large KV-cache footprints, and inefficiencies when distilling reasoning capabilities into smaller models for mobile devices. Existing approaches often rely on distilling reasoning traces from larger models into smaller models, which are verbose and stylistically redundant, undesirable for on-device inference. In this work, we propose a lightweight approach to enable reasoning in small LLMs using LoRA adapters combined with supervised fine-tuning. We further introduce budget forcing via reinforcement learning on these adapters, significantly reducing response length with minimal accuracy loss. To address memory-bound decoding, we exploit parallel test-time scaling, improving accuracy at minor latency increase. Finally, we present a dynamic adapter-switching mechanism that activates reasoning only when needed and a KV-cache sharing strategy during prompt encoding, reducing time-to-first-token for on-device inference. Experiments on Qwen2.5-7B demonstrate that our method achieves efficient, accurate reasoning under strict resource constraints, making LLM reasoning practical for mobile scenarios. Videos demonstrating our solution running on mobile devices are available on our project page.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">现有的大型语言模型 (LLM) 行为对齐技术常常忽略表面合规性和内部未对齐表示之间的差异，使 LLM 容易受到长尾风险的影响。更重要的是，我们假设法学硕士由于将不同的道德概念压缩为均匀的概率分布而具有道德冷漠的内在状态。我们利用基于原型理论和 Social-Chemistry-101 数据集构建的 251k 个道德向量来验证并纠正 LLM 潜在表征中的这种冷漠。首先，我们对 23 个模型的分析表明，当前的法学硕士无法区分对立的道德类别和这些类别内的细粒度典型性梯度之间的区别；值得注意的是，模型缩放、架构或明确的对齐都无法重塑这种冷漠。然后，我们在 Qwen3-8B 上使用稀疏自动编码器，分离单语义道德特征，并有针对性地重建它们的拓扑关系以与真实道德向量对齐。这种表征对齐自然地提高了道德推理和粒度，在独立对抗性 Flames 基准上实现了 75% 的成对胜率。最后，我们从经验主义哲学角度阐述了当前干预方法的补救性质，认为内生一致的人工智能可能需要从事后纠正到主动培养的转变。</p>
+                        <p class="abstract-zh">具有思想链推理的大型语言模型 (LLM) 在复杂的问题解决任务中实现了最先进的性能，但其冗长的推理轨迹和大量的上下文要求使得它们对于边缘部署来说不切实际。这些挑战包括高令牌生成成本、大的 KV 缓存占用空间以及将推理功能提炼为移动设备的较小模型时的低效率。现有的方法通常依赖于将推理轨迹从较大的模型提取到较小的模型中，这既冗长又风格冗余，不利于设备上的推理。在这项工作中，我们提出了一种轻量级方法，使用 LoRA 适配器与监督微调相结合，在小型 LLM 中进行推理。我们通过对这些适配器的强化学习进一步引入预算强制，显着缩短响应长度，同时将准确性损失降至最低。为了解决内存限制解码问题，我们利用并行测试时间缩放，在轻微延迟增加的情况下提高准确性。最后，我们提出了一种动态适配器切换机制，仅在需要时才激活推理，并在提示编码期间提供 KV 缓存共享策略，从而减少设备上推理的首次令牌时间。在Qwen2.5-7B上的实验表明，我们的方法在严格的资源限制下实现了高效、准确的推理，使得LLM推理在移动场景下变得实用。我们的项目页面上提供了演示我们在移动设备上运行的解决方案的视频。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Code-A1: Adversarial<sup class='ipa'>/ˌædvərˈsɛriəl/</sup> Evolving<sup class='ipa'>/ɪˈvɑlvɪŋ/</sup> of Code LLM and Test LLM via Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h2>
+                    <h2 class="paper-title">MessyKitchens:<sup class='ipa'>/messykitchens*/</sup> Contact-rich<sup class='ipa'>/contactrich*/</sup> object-level<sup class='ipa'>/objectlevel*/</sup> 3D scene reconstruction<sup class='ipa'>/ˌrikənˈstrəkʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Aozhe Wang, Yuchen Yan, Nan Zhou</span>
-                        <span class="date">2026-03-16</span>
+                        <span class="authors">Junaid Ahmed Ansari, Ran Ding, Fabio Pizzati</span>
+                        <span class="date">2026-03-17</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Reinforcement learning for code generation relies on verifiable rewards from unit test pass rates. Yet high-quality test suites are scarce, existing datasets offer limited coverage, and static rewards fail to adapt as models improve. Recent self-play methods unify code and test generation in a single model, but face a inherent dilemma: white-box access leads to self-collusion where the model produces trivial tests for easy rewards, yet black-box restriction yields generic tests that miss implementation-specific bugs. We introduce Code-A1, an adversarial co-evolution framework that jointly optimizes a Code LLM and a Test LLM with opposing objectives. The Code LLM is rewarded for passing more tests, while the Test LLM is rewarded for exposing more defects. This architectural separation eliminates self-collusion risks and safely enables white-box test generation, where the Test LLM can inspect candidate code to craft targeted adversarial tests. We further introduce a Mistake Book mechanism for experience replay and a composite reward balancing test validity with adversarial difficulty. Experiments on Qwen2.5-Coder models demonstrate that Code-A1 achieves code generation performance matching or exceeding models trained on human-annotated tests, while significantly improving test generation capability.</p>
+                        <p class="abstract-en">Monocular 3D scene reconstruction has recently seen significant progress. Powered by the modern neural architectures and large-scale data, recent methods achieve high performance in depth estimation from a single image. Meanwhile, reconstructing and decomposing common scenes into individual 3D objects remains a hard challenge due to the large variety of objects, frequent occlusions and complex object relations. Notably, beyond shape and pose estimation of individual objects, applications in robotics and animation require physically-plausible scene reconstruction where objects obey physical principles of non-penetration and realistic contacts. In this work we advance object-level scene reconstruction along two directions. First, we introduceMessyKitchens, a new dataset with real-world scenes featuring cluttered environments and providing high-fidelity object-level ground truth in terms of 3D object shapes, poses and accurate object contacts. Second, we build on the recent SAM 3D approach for single-object reconstruction and extend it with Multi-Object Decoder (MOD) for joint object-level scene reconstruction. To validate our contributions, we demonstrate MessyKitchens to significantly improve previous datasets in registration accuracy and inter-object penetration. We also compare our multi-object reconstruction approach on three datasets and demonstrate consistent and significant improvements of MOD over the state of the art. Our new benchmark, code and pre-trained models will become publicly available on our project website: https://messykitchens.github.io/.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">代码生成的强化学习依赖于单元测试通过率的可验证奖励。然而，高质量的测试套件稀缺，现有数据集的覆盖范围有限，并且静态奖励无法随着模型的改进而调整。最近的自我对弈方法将代码和测试生成统一在一个模型中，但面临着一个固有的困境：白盒访问会导致自共谋，模型会产生简单的测试以获得简单的奖励，而黑盒限制会产生通用测试，从而错过特定于实现的错误。我们引入了 Code-A1，这是一种对抗性共同进化框架，它联合优化具有相反目标的代码 LLM 和测试 LLM。代码法学硕士因通过更多测试而获得奖励，而测试法学硕士因暴露更多缺陷而获得奖励。这种架构分离消除了自我共谋风险，并安全地实现了白盒测试生成，其中测试法学硕士可以检查候选代码以制定有针对性的对抗性测试。我们进一步引入了用于经验回放的错误簿机制和平衡测试有效性与对抗难度的复合奖励。 Qwen2.5-Coder 模型上的实验表明，Code-A1 的代码生成性能可以匹配或超过人工注释测试训练的模型，同时显着提高测试生成能力。</p>
+                        <p class="abstract-zh">单目 3D 场景重建最近取得了重大进展。在现代神经架构和大规模数据的支持下，最近的方法在单个图像的深度估计方面实现了高性能。同时，由于对象种类繁多、频繁遮挡和复杂的对象关系，将常见场景重建和分解为单独的 3D 对象仍然是一个艰巨的挑战。值得注意的是，除了单个物体的形状和姿势估计之外，机器人和动画中的应用还需要物理上合理的场景重建，其中物体遵循非穿透和真实接触的物理原理。在这项工作中，我们沿着两个方向推进对象级场景重建。首先，我们介绍 MessyKitchens，这是一个新的数据集，其中包含具有杂乱环境的真实场景，并在 3D 对象形状、姿势和准确的对象接触方面提供高保真对象级地面实况。其次，我们以最近用于单对象重建的 SAM 3D 方法为基础，并通过多对象解码器 (MOD) 对其进行扩展，以进行联合对象级场景重建。为了验证我们的贡献，我们演示了 MessyKitchens 显着改进了以前的数据集的配准准确性和对象间穿透性。我们还在三个数据集上比较了我们的多对象重建方法，并证明了 MOD 相对于现有技术的一致且显着的改进。我们的新基准、代码和预训练模型将在我们的项目网站上公开发布：https://messykitchens.github.io/。</p>
                     </div>
                 </article>
                 
@@ -500,6 +500,14 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
+                            <strong class="repo-name">anurajsl/trace</strong>
+                            <p class="repo-desc">工件一致性和进化的可信注册表 - 人工智能增强软件系统的结构一致性工程。你的人工智能会写出很棒的代码。 TRACE 保持其连贯性。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
                             <strong class="repo-name">Favrose/AI-Powered-Air-Quality-Command-Center-with-Syncfusion-WPF-Chart</strong>
                             <p class="repo-desc">使用 WPF 和 Syncfusion Charts 构建的强大的人工智能驱动的空气质量监测系统。该应用程序提供实时空气污染数据可视化、历史趋势和基于人工智能的预测，以提高环境意识和决策。</p>
                         </div>
@@ -508,8 +516,8 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">anurajsl/trace</strong>
-                            <p class="repo-desc">工件一致性和进化的可信注册表 - 人工智能增强软件系统的结构一致性工程。你的人工智能会写出很棒的代码。 TRACE 保持其连贯性。</p>
+                            <strong class="repo-name">quang-pham-dev/web-mcp-playground</strong>
+                            <p class="repo-desc">现代网络系统开发策略（2025-2027）的综合指南和技术游乐场。探索人工智能优先设计、面向代理的架构、边缘计算和 Web 模型上下文协议 (WebMCP) 的融合。</p>
                         </div>
                     </li>
                 
@@ -526,14 +534,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">mapleleaflatte03/meridian-intelligence</strong>
                             <p class="repo-desc">Meridian Intelligence — 具有 7 个专业代理的自主 AI 情报服务、每日简报和通过 x402 协议进行 USDC 付款</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">SiddharthRiot/TrafficVision-AI</strong>
-                            <p class="repo-desc">由人工智能驱动的交通管理系统使用基于 YOLO 的计算机视觉来动态优化信号计时并创建紧急绿色走廊。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-03-17 22:29:08
+        生成于 2026-03-18 22:28:38
     </footer>
 </body>
 </html>
