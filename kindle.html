@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Demystifing<sup class='ipa'>/demystifing*/</sup> Video Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h2>
+                    <h2 class="paper-title">Unified Spatio-Temporal<sup class='ipa'>/spatiotemporal*/</sup> Token Scoring for Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Video VLMs</h2>
                     <p class="paper-meta">
-                        <span class="authors">Ruisi Wang, Zhongang Cai, Fanyi Pu</span>
-                        <span class="date">2026-03-17</span>
+                        <span class="authors">Jianrui Zhang, Yue Yang, Rohun Tripathi</span>
+                        <span class="date">2026-03-18</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Recent advances in video generation have revealed an unexpected phenomenon: diffusion-based video models exhibit non-trivial reasoning capabilities. Prior work attributes this to a Chain-of-Frames (CoF) mechanism, where reasoning is assumed to unfold sequentially across video frames. In this work, we challenge this assumption and uncover a fundamentally different mechanism. We show that reasoning in video models instead primarily emerges along the diffusion denoising steps. Through qualitative analysis and targeted probing experiments, we find that models explore multiple candidate solutions in early denoising steps and progressively converge to a final answer, a process we term Chain-of-Steps (CoS). Beyond this core mechanism, we identify several emergent reasoning behaviors critical to model performance: (1) working memory, enabling persistent reference; (2) self-correction and enhancement, allowing recovery from incorrect intermediate solutions; and (3) perception before action, where early steps establish semantic grounding and later steps perform structured manipulation. During a diffusion step, we further uncover self-evolved functional specialization within Diffusion Transformers, where early layers encode dense perceptual structure, middle layers execute reasoning, and later layers consolidate latent representations. Motivated by these insights, we present a simple training-free strategy as a proof-of-concept, demonstrating how reasoning can be improved by ensembling latent trajectories from identical models with different random seeds. Overall, our work provides a systematic understanding of how reasoning emerges in video generation models, offering a foundation to guide future research in better exploiting the inherent reasoning dynamics of video models as a new substrate for intelligence.</p>
+                        <p class="abstract-en">Token pruning is essential for enhancing the computational efficiency of vision-language models (VLMs), particularly for video-based tasks where temporal redundancy is prevalent. Prior approaches typically prune tokens either (1) within the vision transformer (ViT) exclusively for unimodal perception tasks such as action recognition and object segmentation, without adapting to downstream vision-language tasks; or (2) only within the LLM while leaving the ViT output intact, often requiring complex text-conditioned token selection mechanisms. In this paper, we introduce Spatio-Temporal Token Scoring (STTS), a simple and lightweight module that prunes vision tokens across both the ViT and the LLM without text conditioning or token merging, and is fully compatible with end-to-end training. By learning how to score temporally via an auxiliary loss and spatially via LLM downstream gradients, aided by our efficient packing algorithm, STTS prunes 50% of vision tokens throughout the entire architecture, resulting in a 62% improvement in efficiency during both training and inference with only a 0.7% drop in average performance across 13 short and long video QA tasks. Efficiency gains increase with more sampled frames per video. Applying test-time scaling for long-video QA further yields performance gains of 0.5-1% compared to the baseline. Overall, STTS represents a novel, simple yet effective technique for unified, architecture-wide vision token pruning.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">视频生成的最新进展揭示了一个意想不到的现象：基于扩散的视频模型表现出非凡的推理能力。先前的工作将此归因于帧链（CoF）机制，其中假设推理在视频帧中按顺序展开。在这项工作中，我们挑战了这一假设并揭示了一种根本不同的机制。我们表明，视频模型中的推理主要是沿着扩散去噪步骤出现的。通过定性分析和有针对性的探测实验，我们发现模型在早期去噪步骤中探索多个候选解决方案，并逐渐收敛到最终答案，我们将这个过程称为步骤链（CoS）。除了这个核心机制之外，我们还确定了几种对模型性能至关重要的紧急推理行为：（1）工作记忆，实现持久引用； (2)自我修正和增强，允许从错误的中间解决方案中恢复； (3) 行动之前的感知，其中早期步骤建立语义基础，后续步骤执行结构化操作。在扩散步骤中，我们进一步揭示了扩散变压器中自我进化的功能专业化，其中早期层编码密集的感知结构，中间层执行推理，后面的层巩固潜在表示。受这些见解的启发，我们提出了一种简单的免训练策略作为概念验证，展示了如何通过将具有不同随机种子的相同模型的潜在轨迹集成来改进推理。总体而言，我们的工作提供了对视频生成模型中推理如何出现的系统理解，为指导未来研究更好地利用视频模型的固有推理动态作为智能的新基础奠定了基础。</p>
+                        <p class="abstract-zh">令牌修剪对于提高视觉语言模型（VLM）的计算效率至关重要，特别是对于普遍存在时间冗余的基于视频的任务。先前的方法通常会修剪（1）在视觉转换器（ViT）内专门用于单模态感知任务（例如动作识别和对象分割）的令牌，而不适应下游视觉语言任务； (2) 仅在 LLM 内，同时保持 ViT 输出完整，通常需要复杂的文本条件令牌选择机制。在本文中，我们介绍了时空令牌评分（STTS），这是一个简单而轻量级的模块，可以在 ViT 和 LLM 之间修剪视觉令牌，无需文本条件或令牌合并，并且与端到端训练完全兼容。通过学习如何通过辅助损失进行时间评分以及通过 LLM 下游梯度进行空间评分，在我们高效的打包算法的帮助下，STTS 在整个架构中修剪了 50% 的视觉标记，从而使训练和推理期间的效率提高了 62%，而 13 个短视频和长视频 QA 任务的平均性能仅下降了 0.7%。每个视频的采样帧数越多，效率就会越高。与基线相比，对长视频 QA 应用测试时间缩放可进一步提高 0.5-1% 的性能。总的来说，STTS 代表了一种新颖、简单但有效的技术，用于统一的、架构范围的视觉令牌修剪。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> on the Edge</h2>
+                    <h2 class="paper-title">Loc3R-VLM: Language-based<sup class='ipa'>/languagebased*/</sup> Localization<sup class='ipa'>/ˌloʊkələˈzeɪʃən/</sup> and 3D Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> with Vision-Language<sup class='ipa'>/visionlanguage*/</sup> Models</h2>
                     <p class="paper-meta">
-                        <span class="authors">Yelysei Bondarenko, Thomas Hehn, Rob Hesselink</span>
-                        <span class="date">2026-03-17</span>
+                        <span class="authors">Kevin Qu, Haozhe Qi, Mihai Dusmanu</span>
+                        <span class="date">2026-03-18</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Large language models (LLMs) with chain-of-thought reasoning achieve state-of-the-art performance across complex problem-solving tasks, but their verbose reasoning traces and large context requirements make them impractical for edge deployment. These challenges include high token generation costs, large KV-cache footprints, and inefficiencies when distilling reasoning capabilities into smaller models for mobile devices. Existing approaches often rely on distilling reasoning traces from larger models into smaller models, which are verbose and stylistically redundant, undesirable for on-device inference. In this work, we propose a lightweight approach to enable reasoning in small LLMs using LoRA adapters combined with supervised fine-tuning. We further introduce budget forcing via reinforcement learning on these adapters, significantly reducing response length with minimal accuracy loss. To address memory-bound decoding, we exploit parallel test-time scaling, improving accuracy at minor latency increase. Finally, we present a dynamic adapter-switching mechanism that activates reasoning only when needed and a KV-cache sharing strategy during prompt encoding, reducing time-to-first-token for on-device inference. Experiments on Qwen2.5-7B demonstrate that our method achieves efficient, accurate reasoning under strict resource constraints, making LLM reasoning practical for mobile scenarios. Videos demonstrating our solution running on mobile devices are available on our project page.</p>
+                        <p class="abstract-en">Multimodal Large Language Models (MLLMs) have made impressive progress in connecting vision and language, but they still struggle with spatial understanding and viewpoint-aware reasoning. Recent efforts aim to augment the input representations with geometric cues rather than explicitly teaching models to reason in 3D space. We introduce Loc3R-VLM, a framework that equips 2D Vision-Language Models with advanced 3D understanding capabilities from monocular video input. Inspired by human spatial cognition, Loc3R-VLM relies on two joint objectives: global layout reconstruction to build a holistic representation of the scene structure, and explicit situation modeling to anchor egocentric perspective. These objectives provide direct spatial supervision that grounds both perception and language in a 3D context. To ensure geometric consistency and metric-scale alignment, we leverage lightweight camera pose priors extracted from a pre-trained 3D foundation model. Loc3R-VLM achieves state-of-the-art performance in language-based localization and outperforms existing 2D- and video-based approaches on situated and general 3D question-answering benchmarks, demonstrating that our spatial supervision framework enables strong 3D understanding. Project page: https://kevinqu7.github.io/loc3r-vlm</p>
                         <hr class="divider">
-                        <p class="abstract-zh">具有思想链推理的大型语言模型 (LLM) 在复杂的问题解决任务中实现了最先进的性能，但其冗长的推理轨迹和大量的上下文要求使得它们对于边缘部署来说不切实际。这些挑战包括高令牌生成成本、大的 KV 缓存占用空间以及将推理功能提炼为移动设备的较小模型时的低效率。现有的方法通常依赖于将推理轨迹从较大的模型提取到较小的模型中，这既冗长又风格冗余，不利于设备上的推理。在这项工作中，我们提出了一种轻量级方法，使用 LoRA 适配器与监督微调相结合，在小型 LLM 中进行推理。我们通过对这些适配器的强化学习进一步引入预算强制，显着缩短响应长度，同时将准确性损失降至最低。为了解决内存限制解码问题，我们利用并行测试时间缩放，在轻微延迟增加的情况下提高准确性。最后，我们提出了一种动态适配器切换机制，仅在需要时才激活推理，并在提示编码期间提供 KV 缓存共享策略，从而减少设备上推理的首次令牌时间。在Qwen2.5-7B上的实验表明，我们的方法在严格的资源限制下实现了高效、准确的推理，使得LLM推理在移动场景下变得实用。我们的项目页面上提供了演示我们在移动设备上运行的解决方案的视频。</p>
+                        <p class="abstract-zh">多模态大语言模型（MLLM）在连接视觉和语言方面取得了令人瞩目的进展，但它们在空间理解和视点感知推理方面仍然存在困难。最近的努力旨在通过几何线索增强输入表示，而不是明确地教导模型在 3D 空间中进行推理。我们推出 Loc3R-VLM，这是一个为 2D 视觉语言模型配备单目视频输入的高级 3D 理解功能的框架。受人类空间认知的启发，Loc3R-VLM 依赖于两个共同目标：全局布局重建以构建场景结构的整体表示，以及显式情境建模以锚定自我中心视角。这些目标提供了直接的空间监督，将感知和语言建立在 3D 环境中。为了确保几何一致性和公制尺度对齐，我们利用从预训练的 3D 基础模型中提取的轻量级相机姿势先验。 Loc3R-VLM 在基于语言的本地化方面实现了最先进的性能，并且在情景和一般 3D 问答基准上优于现有的基于 2D 和视频的方法，这表明我们的空间监督框架能够实现强大的 3D 理解。项目页面：https://kevinqu7.github.io/loc3r-vlm</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">MessyKitchens:<sup class='ipa'>/messykitchens*/</sup> Contact-rich<sup class='ipa'>/contactrich*/</sup> object-level<sup class='ipa'>/objectlevel*/</sup> 3D scene reconstruction<sup class='ipa'>/ˌrikənˈstrəkʃən/</sup></h2>
+                    <h2 class="paper-title">AgentFactory:<sup class='ipa'>/agentfactory*/</sup> A Self-Evolving<sup class='ipa'>/selfevolving*/</sup> Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup> Through Executable<sup class='ipa'>/executable*/</sup> Subagent<sup class='ipa'>/subagent*/</sup> Accumulation<sup class='ipa'>/əˌkjumjəˈleɪʃən/</sup> and Reuse</h2>
                     <p class="paper-meta">
-                        <span class="authors">Junaid Ahmed Ansari, Ran Ding, Fabio Pizzati</span>
-                        <span class="date">2026-03-17</span>
+                        <span class="authors">Zhang Zhang, Shuqi Lu, Hongjin Qian</span>
+                        <span class="date">2026-03-18</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Monocular 3D scene reconstruction has recently seen significant progress. Powered by the modern neural architectures and large-scale data, recent methods achieve high performance in depth estimation from a single image. Meanwhile, reconstructing and decomposing common scenes into individual 3D objects remains a hard challenge due to the large variety of objects, frequent occlusions and complex object relations. Notably, beyond shape and pose estimation of individual objects, applications in robotics and animation require physically-plausible scene reconstruction where objects obey physical principles of non-penetration and realistic contacts. In this work we advance object-level scene reconstruction along two directions. First, we introduceMessyKitchens, a new dataset with real-world scenes featuring cluttered environments and providing high-fidelity object-level ground truth in terms of 3D object shapes, poses and accurate object contacts. Second, we build on the recent SAM 3D approach for single-object reconstruction and extend it with Multi-Object Decoder (MOD) for joint object-level scene reconstruction. To validate our contributions, we demonstrate MessyKitchens to significantly improve previous datasets in registration accuracy and inter-object penetration. We also compare our multi-object reconstruction approach on three datasets and demonstrate consistent and significant improvements of MOD over the state of the art. Our new benchmark, code and pre-trained models will become publicly available on our project website: https://messykitchens.github.io/.</p>
+                        <p class="abstract-en">Building LLM-based agents has become increasingly important. Recent works on LLM-based agent self-evolution primarily record successful experiences as textual prompts or reflections, which cannot reliably guarantee efficient task re-execution in complex scenarios. We propose AgentFactory, a new self-evolution paradigm that preserves successful task solutions as executable subagent code rather than textual experience. Crucially, these subagents are continuously refined based on execution feedback, becoming increasingly robust and efficient as more tasks are encountered. Saved subagents are pure Python code with standardized documentation, enabling portability across any Python-capable system. We demonstrate that AgentFactory enables continuous capability accumulation: its library of executable subagents grows and improves over time, progressively reducing the effort required for similar tasks without manual intervention. Our implementation is open-sourced at https://github.com/zzatpku/AgentFactory, and our demonstration video is available at https://youtu.be/iKSsuAXJHW0.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">单目 3D 场景重建最近取得了重大进展。在现代神经架构和大规模数据的支持下，最近的方法在单个图像的深度估计方面实现了高性能。同时，由于对象种类繁多、频繁遮挡和复杂的对象关系，将常见场景重建和分解为单独的 3D 对象仍然是一个艰巨的挑战。值得注意的是，除了单个物体的形状和姿势估计之外，机器人和动画中的应用还需要物理上合理的场景重建，其中物体遵循非穿透和真实接触的物理原理。在这项工作中，我们沿着两个方向推进对象级场景重建。首先，我们介绍 MessyKitchens，这是一个新的数据集，其中包含具有杂乱环境的真实场景，并在 3D 对象形状、姿势和准确的对象接触方面提供高保真对象级地面实况。其次，我们以最近用于单对象重建的 SAM 3D 方法为基础，并通过多对象解码器 (MOD) 对其进行扩展，以进行联合对象级场景重建。为了验证我们的贡献，我们演示了 MessyKitchens 显着改进了以前的数据集的配准准确性和对象间穿透性。我们还在三个数据集上比较了我们的多对象重建方法，并证明了 MOD 相对于现有技术的一致且显着的改进。我们的新基准、代码和预训练模型将在我们的项目网站上公开发布：https://messykitchens.github.io/。</p>
+                        <p class="abstract-zh">建立以法学硕士为基础的代理人变得越来越重要。最近基于LLM的智能体自进化工作主要将成功经验记录为文本提示或反射，这不能可靠地保证复杂场景下任务的高效重新执行。我们提出了 AgentFactory，这是一种新的自我进化范例，它将成功的任务解决方案保留为可执行的子代理代码而不是文本体验。至关重要的是，这些子代理根据执行反馈不断完善，随着遇到更多任务而变得越来越强大和高效。保存的子代理是带有标准化文档的纯 Python 代码，可跨任何支持 Python 的系统进行移植。我们证明 AgentFactory 能够实现持续的能力积累：其可执行子代理库会随着时间的推移而增长和改进，逐渐减少类似任务所需的工作量，而无需人工干预。我们的实现在 https://github.com/zzatp​​ku/AgentFactory 上开源，我们的演示视频可在 https://youtu.be/iKSsuAXJHW0 上获取。</p>
                     </div>
                 </article>
                 
@@ -458,15 +458,23 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 84</span>
+                        <span class="repo-stars">★ 82</span>
                         <div class="repo-info">
-                            <strong class="repo-name">aitradingbotspro/crypto-liquidity-ai-trading-bot</strong>
-                            <p class="repo-desc">加密货币流动性检测和算法交易机器人。订单簿分析、止损集群、流动性清扫。多交易所（Binance、Bybit、Kraken、OKX）。交易信号、量化研究、市场微观结构。</p>
+                            <strong class="repo-name">OpenRaiser/NanoResearch</strong>
+                            <p class="repo-desc">🦞+🔬：NanoResearch：自主人工智能研究助理</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 6</span>
+                        <span class="repo-stars">★ 40</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">taco-group/SparkVSR</strong>
+                            <p class="repo-desc">SparkVSR：通过稀疏关键帧传播实现交互式视频超分辨率</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 7</span>
                         <div class="repo-info">
                             <strong class="repo-name">kimimgo/awesome-ai-cae</strong>
                             <p class="repo-desc">用于计算机辅助工程的 104 个 AI 就绪工具的精选列表 - 模拟、可视化、设计和制造。 MCP 服务器、Python API、神经运算符、PINN。</p>
@@ -492,6 +500,14 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
+                            <strong class="repo-name">houselearning/SafeAI-Homework-Tutor-0.0.96</strong>
+                            <p class="repo-desc">SafeAI 作业导师（约 9600 万参数）</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
                             <strong class="repo-name">adc-trust-ai/whitebox-ai-syllabus</strong>
                             <p class="repo-desc">掌握可解释机器学习的精心策划的教学大纲：从数学基础到生产级白盒模型。</p>
                         </div>
@@ -506,15 +522,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">Favrose/AI-Powered-Air-Quality-Command-Center-with-Syncfusion-WPF-Chart</strong>
-                            <p class="repo-desc">使用 WPF 和 Syncfusion Charts 构建的强大的人工智能驱动的空气质量监测系统。该应用程序提供实时空气污染数据可视化、历史趋势和基于人工智能的预测，以提高环境意识和决策。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
+                        <span class="repo-stars">★ 4</span>
                         <div class="repo-info">
                             <strong class="repo-name">quang-pham-dev/web-mcp-playground</strong>
                             <p class="repo-desc">现代网络系统开发策略（2025-2027）的综合指南和技术游乐场。探索人工智能优先设计、面向代理的架构、边缘计算和 Web 模型上下文协议 (WebMCP) 的融合。</p>
@@ -526,14 +534,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">withkarann/aifoxx</strong>
                             <p class="repo-desc">包含 1000 多个 AI 工具的开源目录，包含定价、合规性和访问元数据</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">mapleleaflatte03/meridian-intelligence</strong>
-                            <p class="repo-desc">Meridian Intelligence — 具有 7 个专业代理的自主 AI 情报服务、每日简报和通过 x402 协议进行 USDC 付款</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-03-18 22:28:38
+        生成于 2026-03-19 22:24:00
     </footer>
 </body>
 </html>
