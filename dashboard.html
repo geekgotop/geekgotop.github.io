@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-03-22 22:21:30</span>
+        <span class="generated-time">更新于 2026-03-23 22:27:52</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">NavTrust:<sup class='ipa'>/navtrust*/</sup> Benchmarking<sup class='ipa'>/benchmarking*/</sup> Trustworthiness<sup class='ipa'>/ˈtrəstˌwərðinəs/</sup> for Embodied<sup class='ipa'>/ɪmˈbɑdid/</sup> Navigation<sup class='ipa'>/ˌnævəˈgeɪʃən/</sup></h4>
+                            <h4 class="paper-title">From Masks to Pixels and Meaning: A New Taxonomy,<sup class='ipa'>/taxonomy*/</sup> Benchmark,<sup class='ipa'>/ˈbɛnʧˌmɑrk/</sup> and Metrics for VLM Image Tampering<sup class='ipa'>/ˈtæmpərɪŋ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Huaide Jiang, Yash Chaudhary, Yuping Wang</span>
-                                <span class="date">2026-03-19</span>
-                                <span class="categories">cs.RO | cs.AI</span>
+                                <span class="authors">Xinyi Shang, Yi Tang, Jiacheng Cui</span>
+                                <span class="date">2026-03-20</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">There are two major categories of embodied navigation: Vision-Language Navigation (VLN), where agents navigate by following natural language instructions; and Object-Goal Navigation (OGN), where agents navigate to a specified target object. However, existing work primarily evaluates model performanc...</p>
+                                <p class="abstract-en">Existing tampering detection benchmarks largely rely on object masks, which severely misalign with the true edit signal: many pixels inside a mask are untouched or only trivially modified, while subtle yet consequential edits outside the mask are treated as natural. We reformulate VLM image tamperin...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">体现导航有两大类：视觉语言导航（VLN），智能体通过遵循自然语言指令进行导航；对象-目标导航 (OGN)，代理导航到指定的目标对象。然而，现有的工作主要评估名义条件下的模型性能，忽略了现实环境中出现的潜在损坏。为了解决这一差距，我们推出了 NavTrust，这是一个统一的基准测试，可以在现实场景中系统地破坏输入模式，包括 RGB、深度和指令，并评估它们对导航性能的影响。据我们所知，NavTrust 是第一个在统一框架中将具体导航代理暴露给不同 RGB 深度损坏和指令变化的基准测试。我们对七种最先进的方法进行了广泛的评估，揭示了在现实腐败情况下性能的大幅下降，这凸显了关键的鲁棒性差距，并为更值得信赖的嵌入式导航系统提供了路线图。此外，我们系统地评估了四种不同的缓解策略，以增强针对 RGB 深度和指令损坏的鲁棒性。我们的基本模型包括 Uni-NaVid 和 ETPNav。我们将它们部署在真实的移动机器人上，并观察到对损坏的鲁棒性有所提高。项目网站为：https://navtrust.github.io。</p>
+                                    <p class="abstract-zh">现有的篡改检测基准在很大程度上依赖于对象蒙版，这与真实的编辑信号严重不一致：蒙版内的许多像素未受影响或仅进行了微不足道的修改，而蒙版外微妙但重要的编辑则被视为自然。我们将 VLM 图像篡改从粗略的区域标签重新表述为基于像素的、意义和语言感知的任务。首先，我们介绍了跨越编辑基元（替换/删除/拼接/修复/属性/着色等）及其被篡改对象的语义类的分类法，将低级更改与高级理解联系起来。其次，我们发布了一个新的基准，其中包含每像素篡改图和配对类别监督，以评估统一协议中的检测和分类。第三，我们提出了一个训练框架和评估指标，通过定位来量化像素级正确性，以评估真实编辑强度的置信度或预测，并通过语义感知分类和预测区域的自然语言描述进一步测量篡改含义理解。我们还重新评估了最新强篡改检测器上现有的强分割/定位基线，并使用仅掩模指标揭示了严重的高分和低分，并暴露了微编辑和掩模外更改的故障模式。我们的框架推进了从掩模到像素、含义和语言描述的领域，为篡改定位、语义分类和描述建立了严格的标准。代码和基准数据可在 https://github.com/VILA-Lab/PIXAR 上获取。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2603.19229v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2603.20193v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">FinTradeBench:<sup class='ipa'>/fintradebench*/</sup> A Financial<sup class='ipa'>/ˌfaɪˈnænʃəl/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> Benchmark<sup class='ipa'>/ˈbɛnʧˌmɑrk/</sup> for LLMs</h4>
+                            <h4 class="paper-title">LumosX: Relate Any Identities<sup class='ipa'>/aɪˈdɛntɪˌtiz/</sup> with Their Attributes<sup class='ipa'>/əˈtrɪˌbjuts/</sup> for Personalized<sup class='ipa'>/ˈpərsənəˌlaɪzd/</sup> Video Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Yogesh Agrawal, Aniruddha Dutta, Md Mahadi Hasan</span>
-                                <span class="date">2026-03-19</span>
-                                <span class="categories">cs.CE | cs.AI</span>
+                                <span class="authors">Jiazheng Xing, Fei Du, Hangjie Yuan</span>
+                                <span class="date">2026-03-20</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Real-world financial decision-making is a challenging problem that requires reasoning over heterogeneous signals, including company fundamentals derived from regulatory filings and trading signals computed from price dynamics. Recently, with the advancement of Large Language Models (LLMs), financial...</p>
+                                <p class="abstract-en">Recent advances in diffusion models have significantly improved text-to-video generation, enabling personalized content creation with fine-grained control over both foreground and background elements. However, precise face-attribute alignment across subjects remains challenging, as existing methods ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">现实世界的金融决策是一个具有挑战性的问题，需要对异构信号进行推理，包括来自监管文件的公司基本面和根据价格动态计算的交易信号。最近，随着大型语言模型（LLM）的进步，金融分析师开始将它们用于金融决策任务。然而，现有的用于测试这些模型的财务问答基准主要集中在公司资产负债表数据上，很少评估公司股票如何在市场上交易或其与基本面相互作用的推理。为了利用这两种方法的优势，我们引入了 FinTradeBench，这是一个评估集成公司基本面和交易信号的财务推理的基准。 FinTradeBench 包含 1,400 个针对 NASDAQ-100 公司十年历史窗口的问题。该基准分为三个推理类别：以基本面为中心、以交易信号为中心以及需要交叉信号推理的混合问题。为了确保大规模的可靠性，我们采用了校准然后扩展框架，该框架结合了专家种子问题、多模型响应生成、模型内自过滤、数值审计和人类法学硕士法官对齐。我们在零样本提示和检索增强设置下评估了 14 名法学硕士，发现了明显的绩效差距。检索极大地改善了文本基础的推理，但对交易信号推理的好处有限。这些发现凸显了当前法学硕士在数值和时间序列推理方面的根本挑战，并激励了未来的金融情报研究。</p>
+                                    <p class="abstract-zh">扩散模型的最新进展显着改进了文本到视频的生成，通过对前景和背景元素的细粒度控制实现个性化内容创建。然而，跨对象的精确面部属性对齐仍然具有挑战性，因为现有方法缺乏明确的机制来确保组内一致性。解决这一差距需要明确的建模策略和面部属性感知数据资源。因此，我们提出了 LumosX，一个可以推进数据和模型设计的框架。在数据方面，定制的收集管道会协调来自独立视频的字幕和视觉提示，而多模态大语言模型 (MLLM) 则推断并分配特定于主题的依赖关系。这些提取的关系先验强加了更细粒度的结构，增强了个性化视频生成的表达控制，并能够构建全面的基准。在建模方面，关系自注意力和关系交叉注意力将位置感知嵌入与精致的注意力动态交织在一起，以记录明确的主题属性依赖关系，加强有纪律的组内凝聚力并放大不同主题集群之间的分离。对我们基准测试的综合评估表明，LumosX 在细粒度、身份一致和语义对齐的个性化多主题视频生成方面实现了最先进的性能。代码和模型可在 https://jiazheng-xing.github.io/lumosx-home/ 获取。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2603.19225v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2603.20192v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">F2LLM-v2: Inclusive,<sup class='ipa'>/ˌɪnˈklusɪv/</sup> Performant,<sup class='ipa'>/performant*/</sup> and Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Embeddings<sup class='ipa'>/embeddings*/</sup> for a Multilingual<sup class='ipa'>/ˌməltiˈlɪŋwəl/</sup> World</h4>
+                            <h4 class="paper-title">VideoSeek:<sup class='ipa'>/videoseek*/</sup> Long-Horizon<sup class='ipa'>/longhorizon*/</sup> Video Agent with Tool-Guided<sup class='ipa'>/toolguided*/</sup> Seeking</h4>
                             <div class="paper-meta">
-                                <span class="authors">Ziyin Zhang, Zihan Liao, Hang Yu</span>
-                                <span class="date">2026-03-19</span>
-                                <span class="categories">cs.CL | cs.AI</span>
+                                <span class="authors">Jingyang Lin, Jialian Wu, Jiang Liu</span>
+                                <span class="date">2026-03-20</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">We present F2LLM-v2, a new family of general-purpose, multilingual embedding models in 8 distinct sizes ranging from 80M to 14B. Trained on a newly curated composite of 60 million publicly available high-quality data samples, F2LLM-v2 supports more than 200 languages, with a particular emphasis on p...</p>
+                                <p class="abstract-en">Video agentic models have advanced challenging video-language tasks. However, most agentic approaches still heavily rely on greedy parsing over densely sampled video frames, resulting in high computational cost. We present VideoSeek, a long-horizon video agent that leverages video logic flow to acti...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">我们推出了 F2LLM-v2，这是一个新的通用、多语言嵌入模型系列，有 8 种不同的大小，范围从 80M 到 14B。 F2LLM-v2 基于新近整理的 6000 万个公开可用的高质量数据样本进行训练，支持 200 多种语言，特别强调以前服务不足的中低资源语言。通过将基于 LLM 的两阶段嵌入训练流程与俄罗斯套娃学习、模型剪枝和知识蒸馏技术相集成，我们提出的模型比以前的基于 LLM 的嵌入模型更加高效，同时保留了有竞争力的性能。广泛的评估证实，F2LLM-v2-14B 在 11 项 MTEB 基准测试中排名第一，而该系列中的较小型号也为资源受限的应用树立了新的技术水平。为了促进开源嵌入模型研究，我们发布了所有模型、数据、代码和中间检查点。</p>
+                                    <p class="abstract-zh">视频代理模型具有高级挑战性的视频语言任务。然而，大多数代理方法仍然严重依赖于对密集采样视频帧的贪婪解析，导致计算成本很高。我们推出了 VideoSeek，这是一种长视野视频代理，它利用视频逻辑流主动寻找关键答案证据，而不是详尽地解析整个视频。这种洞察力使模型能够使用更少的帧，同时保持甚至提高其视频理解能力。 VideoSeek 在“思考-行动-观察”循环中运行，具有精心设计的工具包，用于收集多粒度视频观察结果。这种设计能够对累积的观察结果进行查询感知探索，并支持实际的视频理解和推理。对四个具有挑战性的视频理解和推理基准的实验表明，VideoSeek 实现了很高的准确性，同时使用比以前的视频代理和独立 LMM 少得多的帧。值得注意的是，VideoSeek 在 LVBench 上比其基本模型 GPT-5 绝对提高了 10.2 分，同时使用的帧数减少了 93%。进一步的分析强调了利用视频逻辑流、强大的推理能力以及工具包设计的互补作用的重要性。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2603.19223v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2603.20185v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,26 +920,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/OpenRaiser/NanoResearch" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">NanoResearch</span>
-                                    <span class="repo-stars">⭐ 178</span>
+                                    <span class="repo-stars">⭐ 213</span>
                                 </div>
                                 <p class="repo-desc">🦞+🔬：NanoResearch：自主人工智能研究助理</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-03-17</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/taco-group/SparkVSR" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">SparkVSR</span>
-                                    <span class="repo-stars">⭐ 152</span>
-                                </div>
-                                <p class="repo-desc">SparkVSR：通过稀疏关键帧传播实现交互式视频超分辨率</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-03-16</span>
                                 </div>
                             </a>
                         </li>
@@ -976,7 +962,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/hanshiyingbing/numcraft" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">numcraft</span>
-                                    <span class="repo-stars">⭐ 12</span>
+                                    <span class="repo-stars">⭐ 15</span>
                                 </div>
                                 <p class="repo-desc">NumCraft - 用于智能 G 代码生成的多代理协作系统</p>
                                 <div class="repo-meta">
@@ -1001,26 +987,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/tarulahsan/softchip-studio" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">softchip-studio</span>
-                                    <span class="repo-stars">⭐ 6</span>
-                                </div>
-                                <p class="repo-desc">用于设计人工智能驱动的数据管道的视觉电路构建器。拖放软芯片来创建用于音频、文本和图像处理的芯片和工作流程，以及许多其他选项，甚至可以使用 GPT-4、Claude、Kimi、Qwen 进行电路设计。 60+芯片，10个模板，像n8n一样的工作流程自动化。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-03-16</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/quang-pham-dev/web-mcp-playground" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">web-mcp-playground</span>
                                     <span class="repo-stars">⭐ 5</span>
                                 </div>
-                                <p class="repo-desc">现代网络系统开发策略（2025-2027）的综合指南和技术游乐场。探索人工智能优先设计、面向代理的架构、边缘计算和 Web 模型上下文协议 (WebMCP) 的融合。</p>
+                                <p class="repo-desc">现代 Web 系统开发策略（2025-2027）的综合指南和技术游乐场。探索人工智能优先设计、面向代理的架构、边缘计算和 Web 模型上下文协议 (WebMCP) 的融合。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">HTML</span>
                                     <span class="repo-date">2026-03-17</span>
@@ -1029,29 +1001,57 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/mapleleaflatte03/meridian-intelligence" target="_blank" class="repo-link">
+                            <a href="https://github.com/Zentra-Core/zentra-core.github.io" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">meridian-intelligence</span>
-                                    <span class="repo-stars">⭐ 4</span>
+                                    <span class="repo-name">zentra-core.github.io</span>
+                                    <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">Meridian Intelligence — 具有 7 个专业代理、每日简报和通过 x402 协议进行 USDC 支付的自主 AI 情报服务</p>
+                                <p class="repo-desc">Zentra 核心项目</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-03-16</span>
+                                    <span class="repo-date">2026-03-19</span>
                                 </div>
                             </a>
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/isumitsoni/awesome-ai-pm" target="_blank" class="repo-link">
+                            <a href="https://github.com/brandonhimpfen/ai-contract-kit" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">awesome-ai-pm</span>
-                                    <span class="repo-stars">⭐ 3</span>
+                                    <span class="repo-name">ai-contract-kit</span>
+                                    <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">为产品经理打造人工智能时代的精心策划、固执己见的资源列表——工具、评估、学习资源和实用指南。由一位执业 AI PM 更新。</p>
+                                <p class="repo-desc">用于可靠人工智能系统的轻量级合约层。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-03-16</span>
+                                    <span class="repo-lang">JavaScript</span>
+                                    <span class="repo-date">2026-03-22</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Garrus800-stack/genesis-agent" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">genesis-agent</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">具有自适应 MCP 的自我意识、自我修复、自我进化的 AI 代理——唯一能够从 MCP 工具模式中学习并自动生成技能的代理</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">JavaScript</span>
+                                    <span class="repo-date">2026-03-21</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/stefafafan/skm" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">skm</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">AI 代理技能的包管理器。团队的可重复安装和一致命名。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-03-21</span>
                                 </div>
                             </a>
                         </li>
