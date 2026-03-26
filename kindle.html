@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">MedObvious:<sup class='ipa'>/medobvious*/</sup> Exposing<sup class='ipa'>/ɪkˈspoʊzɪŋ/</sup> the Medical Moravec's<sup class='ipa'>/moravecs*/</sup> Paradox in VLMs via Clinical<sup class='ipa'>/ˈklɪnɪkəl/</sup> Triage</h2>
+                    <h2 class="paper-title">Comparing<sup class='ipa'>/kəmˈpɛrɪŋ/</sup> Developer<sup class='ipa'>/dɪˈvɛləpər/</sup> and LLM Biases in Code Evaluation<sup class='ipa'>/ɪˌvæljuˈeɪʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Ufaq Khan, Umair Nawaz, L D M S S Teja</span>
-                        <span class="date">2026-03-24</span>
+                        <span class="authors">Aditya Mittal, Ryan Shar, Zichu Wu</span>
+                        <span class="date">2026-03-25</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Vision Language Models (VLMs) are increasingly used for tasks like medical report generation and visual question answering. However, fluent diagnostic text does not guarantee safe visual understanding. In clinical practice, interpretation begins with pre-diagnostic sanity checks: verifying that the input is valid to read (correct modality and anatomy, plausible viewpoint and orientation, and no obvious integrity violations). Existing benchmarks largely assume this step is solved, and therefore miss a critical failure mode: a model can produce plausible narratives even when the input is inconsistent or invalid. We introduce MedObvious, a 1,880-task benchmark that isolates input validation as a set-level consistency capability over small multi-panel image sets: the model must identify whether any panel violates expected coherence. MedObvious spans five progressive tiers, from basic orientation/modality mismatches to clinically motivated anatomy/viewpoint verification and triage-style cues, and includes five evaluation formats to test robustness across interfaces. Evaluating 17 different VLMs, we find that sanity checking remains unreliable: several models hallucinate anomalies on normal (negative-control) inputs, performance degrades when scaling to larger image sets, and measured accuracy varies substantially between multiple-choice and open-ended settings. These results show that pre-diagnostic verification remains unsolved for medical VLMs and should be treated as a distinct, safety-critical capability before deployment.</p>
+                        <p class="abstract-en">As LLMs are increasingly used as judges in code applications, they should be evaluated in realistic interactive settings that capture partial context and ambiguous intent. We present TRACE (Tool for Rubric Analysis in Code Evaluation), a framework that evaluates LLM judges&#39; ability to predict human preferences and automatically extracts rubric items to reveal systematic biases in how humans and models weigh each item. Across three modalities -- chat-based programming, IDE autocompletion, and instructed code editing -- we use TRACE to measure how well LLM judges align with developer preferences. Among 13 different models, the best judges underperform human annotators by 12-23%. TRACE identifies 35 significant sources of misalignment between humans and judges across interaction modalities, the majority of which correspond to existing software engineering code quality criteria. For example, in chat-based coding, judges are biased towards longer code explanations while humans prefer shorter ones. We find significant misalignment on the majority of existing code quality dimensions, showing alignment gaps between LLM judges and human preference in realistic coding applications.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">视觉语言模型 (VLM) 越来越多地用于医疗报告生成和视觉问答等任务。然而，流畅的诊断文本并不能保证安全的视觉理解。在临床实践中，解释从诊断前的健全性检查开始：验证输入的读取是否有效（正确的形态和解剖结构、合理的观点和方向，以及没有明显的完整性违规）。现有的基准在很大程度上假设这一步已经解决，因此错过了一个关键的失败模式：即使输入不一致或无效，模型也可以产生合理的叙述。我们引入了 MedObvious，这是一个包含 1,880 个任务的基准测试，它将输入验证隔离为小型多面板图像集的集级一致性功能：模型必须识别是否有任何面板违反了预期的一致性。 MedObvious 跨越五个渐进层，从基本方向/模态不匹配到临床动机的解剖/观点验证和分类式提示，并包括五种评估格式来测试跨界面的稳健性。通过评估 17 个不同的 VLM，我们发现健全性检查仍然不可靠：一些模型在正常（阴性对照）输入上出现异常，当缩放到更大的图像集时性能会下降，并且测量的准确性在多项选择和开放式设置之间存在很大差异。这些结果表明，医疗 VLM 的预诊断验证仍未解决，在部署前应将其视为一种独特的、安全关键的功能。</p>
+                        <p class="abstract-zh">随着法学硕士越来越多地在代码应用程序中用作法官，他们应该在现实的交互式环境中进行评估，以捕获部分上下文和模糊的意图。我们提出了TRACE（代码评估中的Rubric分析工具），这是一个框架，用于评估LLM法官预测人类偏好的能力，并自动提取Rubric项目以揭示人类和模型如何衡量每个项目的系统偏差。通过三种模式——基于聊天的编程、IDE 自动完成和指导代码编辑——我们使用 TRACE 来衡量 LLM 法官与开发人员偏好的一致性程度。在 13 个不同的模型中，最好的评判者的表现比人类注释者低 12-23%。 TRACE 确定了人类和法官之间交互方式中 35 个重要的不一致来源，其中大部分符合现有的软件工程代码质量标准。例如，在基于聊天的编码中，法官偏向于较长的代码解释，而人类则更喜欢较短的代码解释。我们发现大多数现有的代码质量维度存在显着的不一致，这表明法学硕士法官和人类在实际编码应用程序中的偏好之间存在一致性差距。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">VISion On Request: Enhanced<sup class='ipa'>/ɛnˈhænst/</sup> VLLM efficiency<sup class='ipa'>/ɪˈfɪʃənsi/</sup> with sparse, dynamically<sup class='ipa'>/dynamically*/</sup> selected,<sup class='ipa'>/səˈlɛktɪd/</sup> vision-language<sup class='ipa'>/visionlanguage*/</sup> interactions<sup class='ipa'>/ˌɪnərˈækʃənz/</sup></h2>
+                    <h2 class="paper-title">The Stochastic<sup class='ipa'>/stoʊˈkæstɪk/</sup> Gap: A Markovian<sup class='ipa'>/markovian*/</sup> Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup> for Pre-Deployment<sup class='ipa'>/predeployment*/</sup> Reliability<sup class='ipa'>/riˌlaɪəˈbɪləti/</sup> and Oversight-Cost<sup class='ipa'>/oversightcost*/</sup> Auditing<sup class='ipa'>/ˈɑdətɪŋ/</sup> in Agentic Artificial<sup class='ipa'>/ˌɑrtəˈfɪʃəl/</sup> Intelligence<sup class='ipa'>/ˌɪnˈtɛləʤəns/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Adrian Bulat, Alberto Baldrati, Ioannis Maniadis Metaxas</span>
-                        <span class="date">2026-03-24</span>
+                        <span class="authors">Biplab Pal, Santanu Bhattacharya</span>
+                        <span class="date">2026-03-25</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Existing approaches for improving the efficiency of Large Vision-Language Models (LVLMs) are largely based on the concept of visual token reduction. This approach, however, creates an information bottleneck that impairs performance, especially on challenging tasks that require fine-grained understanding and reasoning. In this work, we challenge this paradigm by introducing VISion On Request (VISOR), a method that reduces inference cost without discarding visual information. Instead of compressing the image, VISOR improves efficiency by sparsifying the interaction between image and text tokens. Specifically, the language model attends to the full set of high-resolution visual tokens through a small, strategically placed set of attention layers: general visual context is provided by efficient cross-attention between text-image, while a few well-placed and dynamically selected self-attention layers refine the visual representations themselves, enabling complex, high-resolution reasoning when needed. Based on this principle, we first train a single universal network on a range of computational budgets by varying the number of self-attention layers, and then introduce a lightweight policy mechanism that dynamically allocates visual computation based on per-sample complexity. Extensive experiments show that VISOR drastically reduces computational cost while matching or exceeding state-of-the-art results across a diverse suite of benchmarks, and excels in challenging tasks that require detailed visual understanding.</p>
+                        <p class="abstract-en">Agentic artificial intelligence (AI) in organizations is a sequential decision problem constrained by reliability and oversight cost. When deterministic workflows are replaced by stochastic policies over actions and tool calls, the key question is not whether a next step appears plausible, but whether the resulting trajectory remains statistically supported, locally unambiguous, and economically governable. We develop a measure-theoretic Markov framework for this setting. The core quantities are state blind-spot mass B_n(tau), state-action blind mass B^SA_{pi,n}(tau), an entropy-based human-in-the-loop escalation gate, and an expected oversight-cost identity over the workflow visitation measure.   We instantiate the framework on the Business Process Intelligence Challenge 2019 purchase-to-pay log (251,734 cases, 1,595,923 events, 42 distinct workflow actions) and construct a log-driven simulated agent from a chronological 80/20 split of the same process. The main empirical finding is that a large workflow can appear well supported at the state level while retaining substantial blind mass over next-step decisions: refining the operational state to include case context, economic magnitude, and actor class expands the state space from 42 to 668 and raises state-action blind mass from 0.0165 at tau=50 to 0.1253 at tau=1000. On the held-out split, m(s) = max_a pi-hat(a|s) tracks realized autonomous step accuracy within 3.4 percentage points on average.   The same quantities that delimit statistically credible autonomy also determine expected oversight burden. The framework is demonstrated on a large-scale enterprise procurement workflow and is designed for direct application to engineering processes for which operational event logs are available.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">提高大型视觉语言模型（LVLM）效率的现有方法很大程度上基于视觉标记缩减的概念。然而，这种方法会造成信息瓶颈，从而损害性能，尤其是在需要细粒度理解和推理的挑战性任务上。在这项工作中，我们通过引入 VISion On Request (VISOR) 来挑战这种范式，这是一种在不丢弃视觉信息的情况下降低推理成本的方法。 VISOR 不是压缩图像，而是通过稀疏图像和文本标记之间的交互来提高效率。具体来说，语言模型通过一组策略性放置的小型注意力层来处理全套高分辨率视觉标记：一般视觉上下文由文本-图像之间的有效交叉注意力提供，而一些放置良好且动态选择的自注意力层则细化视觉表示本身，从而在需要时实现复杂的高分辨率推理。基于这一原则，我们首先通过改变自注意力层的数量在一系列计算预算上训练单个通用网络，然后引​​入一种轻量级策略机制，根据每个样本的复杂性动态分配视觉计算。大量实验表明，VISOR 极大地降低了计算成本，同时在各种基准测试中达到或超过了最先进的结果，并且在需要详细视觉理解的挑战性任务中表现出色。</p>
+                        <p class="abstract-zh">组织中的代理人工智能（AI）是一个受可靠性和监督成本约束的顺序决策问题。当确定性工作流程被针对操作和工具调用的随机策略所取代时，关键问题不在于下一步是否看似合理，而在于所得到的轨迹是否保持统计支持、局部明确且经济上可治理。我们为此设置开发了一个测度理论马尔可夫框架。核心量是状态盲点质量 B_n(tau)、状态动作盲点质量 B^SA_{pi,n}(tau)、基于熵的人机循环升级门以及工作流访问度量上的预期监督成本恒等式。   我们在 2019 年业务流程智能挑战赛购买到付款日志（251,734 个案例、1,595,923 个事件、42 个不同的工作流操作）上实例化该框架，并根据同一流程的时间顺序 80/20 分割构建一个日志驱动的模拟代理。主要的实证发现是，大型工作流程可以在状态级别得到很好的支持，同时在下一步决策中保留大量的盲目质量：细化操作状态以包括案例背景、经济规模和参与者类别，将状态空间从 42 扩展到 668，并将状态操作盲目质量从 tau=50 时的 0.0165 提高到 tau=1000 时的 0.1253。在保留的分割中，m(s) = max_a pi-hat(a|s) 轨道实现了平均 3.4 个百分点的自主步进精度。   界定统计上可信的自治权的数量也决定了预期的监督负担。该框架在大型企业采购工作流程中进行了演示，旨在直接应用于可获取操作事件日志的工程流程。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Failure of contextual<sup class='ipa'>/ˌkɑnˈtɛksˌʧuəl/</sup> invariance<sup class='ipa'>/ˌɪnˈvɛriəns/</sup> in gender inference<sup class='ipa'>/ˈɪnfərəns/</sup> with large language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> models</h2>
+                    <h2 class="paper-title">Retrieval<sup class='ipa'>/rɪˈtrivəl/</sup> Improvements<sup class='ipa'>/ˌɪmˈpruvmənts/</sup> Do Not Guarantee<sup class='ipa'>/ˌgɛrənˈti/</sup> Better Answers: A Study of RAG for AI Policy QA</h2>
                     <p class="paper-meta">
-                        <span class="authors">Sagar Kumar, Ariel Flint, Luca Maria Aiello</span>
-                        <span class="date">2026-03-24</span>
+                        <span class="authors">Saahil Mathur, Ryan David Rittner, Vedant Ajit Thakur</span>
+                        <span class="date">2026-03-25</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Standard evaluation practices assume that large language model (LLM) outputs are stable under contextually equivalent formulations of a task. Here, we test this assumption in the setting of gender inference. Using a controlled pronoun selection task, we introduce minimal, theoretically uninformative discourse context and find that this induces large, systematic shifts in model outputs. Correlations with cultural gender stereotypes, present in decontextualized settings, weaken or disappear once context is introduced, while theoretically irrelevant features, such as the gender of a pronoun for an unrelated referent, become the most informative predictors of model behaviour. A Contextuality-by-Default analysis reveals that, in 19--52\% of cases across models, this dependence persists after accounting for all marginal effects of context on individual outputs and cannot be attributed to simple pronoun repetition. These findings show that LLM outputs violate contextual invariance even under near-identical syntactic formulations, with implications for bias benchmarking and deployment in high-stakes settings.</p>
+                        <p class="abstract-en">Retrieval-augmented generation (RAG) systems are increasingly used to analyze complex policy documents, but achieving sufficient reliability for expert usage remains challenging in domains characterized by dense legal language and evolving, overlapping regulatory frameworks. We study the application of RAG to AI governance and policy analysis using the AI Governance and Regulatory Archive (AGORA) corpus, a curated collection of 947 AI policy documents. Our system combines a ColBERT-based retriever fine-tuned with contrastive learning and a generator aligned to human preferences using Direct Preference Optimization (DPO). We construct synthetic queries and collect pairwise preferences to adapt the system to the policy domain. Through experiments evaluating retrieval quality, answer relevance, and faithfulness, we find that domain-specific fine-tuning improves retrieval metrics but does not consistently improve end-to-end question answering performance. In some cases, stronger retrieval counterintuitively leads to more confident hallucinations when relevant documents are absent from the corpus. These results highlight a key concern for those building policy-focused RAG systems: improvements to individual components do not necessarily translate to more reliable answers. Our findings provide practical insights for designing grounded question-answering systems over dynamic regulatory corpora.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">标准评估实践假设大语言模型 (LLM) 输出在任务的上下文等效表述下是稳定的。在这里，我们在性别推断的背景下测试这个假设。使用受控代词选择任务，我们引入了最少的、理论上无信息的话语上下文，并发现这会导致模型输出发生巨大的系统性变化。一旦引入语境，与文化性别刻板印象的相关性就会在脱离语境的环境中减弱或消失，而理论上不相关的特征，例如代表不相关所指对象的代词的性别，则成为模型行为最有信息性的预测因素。默认上下文分析表明，在模型中 19--52% 的情况下，在考虑了上下文对个体输出的所有边际影响后，这种依赖性仍然存在，并且不能归因于简单的代词重复。这些发现表明，即使在几乎相同的句法表述下，法学硕士的输出也违反了上下文不变性，这对高风险环境中的偏见基准测试和部署产生了影响。</p>
+                        <p class="abstract-zh">检索增强生成（RAG）系统越来越多地用于分析复杂的政策文件，但在以密集的法律语言和不断发展、重叠的监管框架为特征的领域中，为专家使用提供足够的可靠性仍然具有挑战性。我们使用 AI 治理和监管档案 (AGORA) 语料库（包含 947 个 AI 政策文档的精选集合）研究 RAG 在 AI 治理和政策分析中的应用。我们的系统结合了基于 ColBERT 的检索器和对比学习微调，以及使用直接偏好优化 (DPO) 来符合人类偏好的生成器。我们构建综合查询并收集成对偏好以使系统适应策略域。通过评估检索质量、答案相关性和可信度的实验，我们发现特定领域的微调可以提高检索指标，但并不能持续提高端到端的问答性能。在某些情况下，当语料库中缺少相关文档时，更强的检索会违反直觉地导致更自信的幻觉。这些结果凸显了那些构建以政策为中心的 RAG 系统的人所关心的一个关键问题：对各个组件的改进并不一定会转化为更可靠的答案。我们的研究结果为在动态监管语料库上设计扎根问答系统提供了实用的见解。</p>
                     </div>
                 </article>
                 
@@ -458,7 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 52</span>
+                        <span class="repo-stars">★ 942</span>
                         <div class="repo-info">
                             <strong class="repo-name">alvinunreal/awesome-opensource-ai</strong>
                             <p class="repo-desc">最佳真正开源人工智能项目、模型、工具和基础设施的精选列表。</p>
@@ -490,6 +490,14 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
+                        <span class="repo-stars">★ 19</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">lucidrains/fast-weight-attention</strong>
+                            <p class="repo-desc">快速权重注意力的实现</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
                         <span class="repo-stars">★ 15</span>
                         <div class="repo-info">
                             <strong class="repo-name">groovy-web/awesome-ai-agents</strong>
@@ -498,18 +506,18 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 9</span>
+                        <span class="repo-stars">★ 13</span>
                         <div class="repo-info">
-                            <strong class="repo-name">lucidrains/fast-weight-attention</strong>
-                            <p class="repo-desc">快速权重注意力的实现</p>
+                            <strong class="repo-name">lucidrains/RIM-pytorch</strong>
+                            <p class="repo-desc">Pytorch中循环独立机制的实现</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 7</span>
+                        <span class="repo-stars">★ 4</span>
                         <div class="repo-info">
-                            <strong class="repo-name">lucidrains/RIM-pytorch</strong>
-                            <p class="repo-desc">Pytorch中循环独立机制的实现</p>
+                            <strong class="repo-name">sparkorbit/sparkorbit</strong>
+                            <p class="repo-desc">AI 轨道监视器 — 论文、模型、基准测试、公司新闻尽在一个仪表板中。 30 多个来源、LMArena 排行榜、本地 LLM 摘要。</p>
                         </div>
                     </li>
                 
@@ -526,14 +534,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">stefafafan/skm</strong>
                             <p class="repo-desc">AI 代理技能的包管理器。团队的可重复安装和一致命名。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">Zentra-Core/zentra-core.github.io</strong>
-                            <p class="repo-desc">Zentra 核心项目</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-03-25 22:32:02
+        生成于 2026-03-26 22:25:23
     </footer>
 </body>
 </html>
