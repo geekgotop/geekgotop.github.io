@@ -397,55 +397,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             <p class="section-subtitle">ArXiv 最新论文精选</p>
             
             
-                
-                <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Vega: Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> to Drive with Natural Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Instructions<sup class='ipa'>/ˌɪnˈstrəkʃənz/</sup></h2>
-                    <p class="paper-meta">
-                        <span class="authors">Sicheng Zuo, Yuxuan Li, Wenzhao Zheng</span>
-                        <span class="date">2026-03-26</span>
-                    </p>
-                    
-                    <div class="paper-abstract">
-                        <p class="abstract-en">Vision-language-action models have reshaped autonomous driving to incorporate languages into the decision-making process. However, most existing pipelines only utilize the language modality for scene descriptions or reasoning and lack the flexibility to follow diverse user instructions for personalized driving. To address this, we first construct a large-scale driving dataset (InstructScene) containing around 100,000 scenes annotated with diverse driving instructions with the corresponding trajectories. We then propose a unified Vision-Language-World-Action model, Vega, for instruction-based generation and planning. We employ the autoregressive paradigm to process visual inputs (vision) and language instructions (language) and the diffusion paradigm to generate future predictions (world modeling) and trajectories (action). We perform joint attention to enable interactions between the modalities and use individual projection layers for different modalities for more capabilities. Extensive experiments demonstrate that our method not only achieves superior planning performance but also exhibits strong instruction-following abilities, paving the way for more intelligent and personalized driving systems.</p>
-                        <hr class="divider">
-                        <p class="abstract-zh">视觉-语言-动作模型重塑了自动驾驶，将语言纳入决策过程。然而，大多数现有管道仅利用语言模态进行场景描述或推理，缺乏遵循不同用户指令进行个性化驾驶的灵活性。为了解决这个问题，我们首先构建了一个大规模驾驶数据集（InstructScene），其中包含大约 100,000 个场景，并用不同的驾驶指令和相应的轨迹进行注释。然后，我们提出了一个统一的视觉-语言-世界-动作模型 Vega，用于基于指令的生成和规划。我们采用自回归范式来处理视觉输入（视觉）和语言指令（语言），并采用扩散范式来生成未来预测（世界建模）和轨迹（行动）。我们进行联合关注以实现模态之间的交互，并为不同模态使用单独的投影层以获得更多功能。大量的实验表明，我们的方法不仅实现了卓越的规划性能，而且表现出强大的指令跟踪能力，为更智能和个性化的驾驶系统铺平了道路。</p>
-                    </div>
-                </article>
-                
-                <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Drive My Way: Preference<sup class='ipa'>/ˈprɛfərəns/</sup> Alignment<sup class='ipa'>/əˈlaɪnmənt/</sup> of Vision-Language-Action<sup class='ipa'>/visionlanguageaction*/</sup> Model for Personalized<sup class='ipa'>/ˈpərsənəˌlaɪzd/</sup> Driving</h2>
-                    <p class="paper-meta">
-                        <span class="authors">Zehao Wang, Huaide Jiang, Shuaiwu Dong</span>
-                        <span class="date">2026-03-26</span>
-                    </p>
-                    
-                    <div class="paper-abstract">
-                        <p class="abstract-en">Human driving behavior is inherently personal, which is shaped by long-term habits and influenced by short-term intentions. Individuals differ in how they accelerate, brake, merge, yield, and overtake across diverse situations. However, existing end-to-end autonomous driving systems either optimize for generic objectives or rely on fixed driving modes, lacking the ability to adapt to individual preferences or interpret natural language intent. To address this gap, we propose Drive My Way (DMW), a personalized Vision-Language-Action (VLA) driving framework that aligns with users&#39; long-term driving habits and adapts to real-time user instructions. DMW learns a user embedding from our personalized driving dataset collected across multiple real drivers and conditions the policy on this embedding during planning, while natural language instructions provide additional short-term guidance. Closed-loop evaluation on the Bench2Drive benchmark demonstrates that DMW improves style instruction adaptation, and user studies show that its generated behaviors are recognizable as each driver&#39;s own style, highlighting personalization as a key capability for human-centered autonomous driving. Our data and code are available at https://dmw-cvpr.github.io/.</p>
-                        <hr class="divider">
-                        <p class="abstract-zh">人类的驾驶行为本质上是个人化的，它受到长期习惯的影响并受到短期意图的影响。每个人在不同情况下加速、刹车、并道、让行和超车的方式都不同。然而，现有的端到端自动驾驶系统要么针对通用目标进行优化，要么依赖固定的驾驶模式，缺乏适应个人偏好或解释自然语言意图的能力。为了解决这一差距，我们提出了Drive My Way（DMW），这是一种个性化的视觉-语言-行动（VLA）驾驶框架，符合用户的长期驾驶习惯并适应实时用户指令。 DMW 从我们在多个真实驾驶员中收集的个性化驾驶数据集中学习用户嵌入，并在规划过程中调整该嵌入的策略，而自然语言指令则提供额外的短期指导。 Bench2Drive 基准的闭环评估表明，DMW 提高了风格指令适应能力，用户研究表明，其生成的行为可以被识别为每个驾驶员自己的风格，凸显个性化作为以人为中心的自动驾驶的关键能力。我们的数据和代码可在 https://dmw-cvpr.github.io/ 获取。</p>
-                    </div>
-                </article>
-                
-                <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Training<sup class='ipa'>/ˈtreɪnɪŋ/</sup> the Knowledge<sup class='ipa'>/ˈnɑlɪʤ/</sup> Base through Evidence<sup class='ipa'>/ˈɛvədəns/</sup> Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup> and Write-Back<sup class='ipa'>/writeback*/</sup> Enrichment<sup class='ipa'>/ɪnˈrɪʧmənt/</sup></h2>
-                    <p class="paper-meta">
-                        <span class="authors">Yuxing Lu, Xukai Zhao, Wei Wu</span>
-                        <span class="date">2026-03-26</span>
-                    </p>
-                    
-                    <div class="paper-abstract">
-                        <p class="abstract-en">The knowledge base in a retrieval-augmented generation (RAG) system is typically assembled once and never revised, even though the facts a query requires are often fragmented across documents and buried in irrelevant content. We argue that the knowledge base should be treated as a trainable component and propose WriteBack-RAG, a framework that uses labeled examples to identify where retrieval succeeds, isolate the relevant documents, and distill them into compact knowledge units that are indexed alongside the original corpus. Because the method modifies only the corpus, it can be applied once as an offline preprocessing step and combined with any RAG pipeline. Across four RAG methods, six benchmarks, and two LLM backbones, WriteBack-RAG improves every evaluated setting, with gains averaging +2.14%. Cross-method transfer experiments further show that the distilled knowledge benefits RAG pipelines other than the one used to produce it, confirming that the improvement resides in the corpus itself.</p>
-                        <hr class="divider">
-                        <p class="abstract-zh">检索增强生成（RAG）系统中的知识库通常组装一次并且永远不会修改，即使查询所需的事实通常分散在文档中并隐藏在不相关的内容中。我们认为知识库应该被视为可训练的组件，并提出了 WriteBack-RAG，这是一个框架，它使用标记的示例来识别检索成功的位置，隔离相关文档，并将它们提炼成紧凑的知识单元，与原始语料库一起索引。由于该方法仅修改语料库，因此它可以作为离线预处理步骤应用一次，并与任何 RAG 管道结合使用。在四种 RAG 方法、六个基准测试和两个 LLM 主干中，WriteBack-RAG 改进了每个评估的设置，平均收益为 +2.14%。跨方法转移实验进一步表明，提炼出来的知识对 RAG 管道有好处，而不是用于生成它的管道，从而证实了改进在于语料库本身。</p>
-                    </div>
-                </article>
-                
-                
-                <div class="nav-bar">
-                    <button class="nav-btn" id="prev-paper">← 上一篇</button>
-                    <span class="nav-indicator" id="paper-indicator">1 / 3</span>
-                    <button class="nav-btn" id="next-paper">下一篇 →</button>
-                </div>
+                <p class="empty-state">暂无论文数据</p>
             
         </section>
         
@@ -458,7 +410,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 1436</span>
+                        <span class="repo-stars">★ 1712</span>
                         <div class="repo-info">
                             <strong class="repo-name">alvinunreal/awesome-opensource-ai</strong>
                             <p class="repo-desc">最佳真正开源人工智能项目、模型、工具和基础设施的精选列表。</p>
@@ -474,26 +426,18 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 39</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">deansorib70deer/ai-shorts-gen</strong>
-                            <p class="repo-desc">人工智能 | YouTube |短裤 |视频 |人工智能生成器 |短裤生成器 | 2026年</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 21</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">hanshiyingbing/numcraft</strong>
-                            <p class="repo-desc">NumCraft - 用于智能 G 代码生成的多代理协作系统</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 21</span>
+                        <span class="repo-stars">★ 22</span>
                         <div class="repo-info">
                             <strong class="repo-name">lucidrains/fast-weight-attention</strong>
                             <p class="repo-desc">快速权重注意力的实现</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 20</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">TensorCEO/TensorCEO</strong>
+                            <p class="repo-desc">计算机毕业设计、机器学习毕业设计、深度学习毕业设计、原创AI项目源码【+论文】</p>
                         </div>
                     </li>
                 
@@ -517,7 +461,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <span class="repo-stars">★ 14</span>
                         <div class="repo-info">
                             <strong class="repo-name">sparkorbit/sparkorbit</strong>
-                            <p class="repo-desc">AI 轨道监视器 — 论文、模型、基准测试、公司新闻尽在一个仪表板中。 30 多个来源、LMArena 排行榜、本地 LLM 摘要。</p>
+                            <p class="repo-desc">AI 轨道监视器 — 论文、模型、基准测试、公司新闻尽在一个仪表板中。 40 多个来源、LMArena 排行榜、本地 LLM 摘要。</p>
                         </div>
                     </li>
                 
@@ -532,8 +476,16 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 4</span>
                         <div class="repo-info">
-                            <strong class="repo-name">NicoGrassetto/Foundry-Agent-Service-Starter-Kit</strong>
-                            <p class="repo-desc">一个轻量级入门套件，用于使用 Microsoft Foundry Agent Service 构建和部署 AI 代理，具有 Azure 集成、Bicep 基础架构即代码和 azd 部署，可快速从原型过渡到生产。</p>
+                            <strong class="repo-name">convergence-human-technology/applied-ai-research</strong>
+                            <p class="repo-desc">研究和开发适用于日常生活和工业环境的执行人工智能系统。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 4</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">namerico/antigravity-education-kit</strong>
+                            <p class="repo-desc">🚀 IA 专业教育代理的模块化框架：辅导员、conteúdo 人员和革命或学习的知识分子。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1047,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-03-27 22:28:15
+        生成于 2026-03-28 22:25:08
     </footer>
 </body>
 </html>
