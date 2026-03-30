@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-03-29 22:27:53</span>
+        <span class="generated-time">更新于 2026-03-30 22:31:23</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,7 +846,58 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        <p class="empty-state">暂无论文数据</p>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> to Commit: Generating<sup class='ipa'>/ˈʤɛnərˌeɪtɪŋ/</sup> Organic Pull Requests<sup class='ipa'>/rɪkˈwɛsts/</sup> via Online Repository<sup class='ipa'>/riˈpɑzəˌtɔri/</sup> Memory</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Mo Li, L. H. Xu, Qitai Tan</span>
+                                <span class="date">2026-03-27</span>
+                                <span class="categories">cs.SE | cs.CL</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Large language model (LLM)-based coding agents achieve impressive results on controlled benchmarks yet routinely produce pull requests that real maintainers reject. The root cause is not functional incorrectness but a lack of organicity: generated code ignores project-specific conventions, duplicate...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">基于大型语言模型 (LLM) 的编码代理在受控基准上取得了令人印象深刻的结果，但经常产生实际维护人员拒绝的拉取请求。根本原因不是功能不正确，而是缺乏有机性：生成的代码忽略了特定于项目的约定，重复了内部 API 已经提供的功能，并且违反了多年开发中积累的隐式架构约束。仅仅将代理暴露给最新的存储库快照是不够的：快照揭示了代码库的最终状态，但没有揭示达到该状态的特定于存储库的更改模式。我们引入了 Learning to Commit，这是一个通过在线存储库内存弥补这一差距的框架。给定一个严格按时间顺序划分的存储库，代理对早期提交执行有监督的对比反射：它盲目地尝试解决每个历史问题，将其预测与预言机差异进行比较，并将差距提炼成一组不断增长的技能-可重用模式，捕获编码风格、内部 API 使用和架构不变量。当新的 PR 描述到达时，代理会根据这些积累的技能来调节其生成，从而根据项目自身的演变而不是通用的预训练先验来产生变化。评估是针对真正未来的、合并的拉取请求进行的，这些请求在技能构建阶段是不可能看到的，并且跨越多个维度，包括功能正确性、代码风格一致性、内部 API 重用率和修改区域的合理性。在专家维护的具有丰富提交历史的存储库上进行的实验表明，在线存储库内存有效地提高了未来任务的有机性分数。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2603.26664v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Weight Tying Biases Token Embeddings<sup class='ipa'>/embeddings*/</sup> Towards the Output Space</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Antonio Lopardo, Avyukth Harish, Catherine Arnett</span>
+                                <span class="date">2026-03-27</span>
+                                <span class="categories">cs.CL</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Weight tying, i.e. sharing parameters between input and output embedding matrices, is common practice in language model design, yet its impact on the learned embedding space remains poorly understood. In this paper, we show that tied embedding matrices align more closely with output (unembedding) ma...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">权重绑定，即在输入和输出嵌入矩阵之间共享参数，是语言模型设计中的常见做法，但它对学习嵌入空间的影响仍然知之甚少。在本文中，我们表明，绑定嵌入矩阵与输出（非嵌入）矩阵比与可比较的非绑定模型的输入嵌入更紧密地对齐，这表明共享矩阵的形状主要用于输出预测而不是输入表示。这种非嵌入偏差的出现是因为输出梯度在训练早期占主导地位。使用调谐透镜分析，我们表明这会对早期层计算产生负面影响，从而对残余流的贡献较小。在训练过程中缩放输入梯度可以减少这种偏差，为梯度不平衡的作用提供因果证据。这是权重绑定优化输出预测的嵌入矩阵的机械证据，损害了其在输入表示中的作用。这些结果有助于解释为什么权重绑定会大规模损害性能，并对训练较小的 LLM 产生影响，其中嵌入矩阵对总参数计数有很大贡献。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2603.26663v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Ruka-v2: Tendon Driven Open-Source<sup class='ipa'>/opensource*/</sup> Dexterous<sup class='ipa'>/dexterous*/</sup> Hand with Wrist and Abduction<sup class='ipa'>/əbˈdəkʃən/</sup> for Robot Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Xinqi, Liu, Ruoxi Hu</span>
+                                <span class="date">2026-03-27</span>
+                                <span class="categories">cs.RO | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Lack of accessible and dexterous robot hardware has been a significant bottleneck to achieving human-level dexterity in robots. Last year, we released Ruka, a fully open-sourced, tendon-driven humanoid hand with 11 degrees of freedom - 2 per finger and 3 at the thumb - buildable for under $1,300. It...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">缺乏可访问且灵巧的机器人硬件一直是机器人实现人类水平灵巧性的重大瓶颈。去年，我们发布了 Ruka，这是一款完全开源、肌腱驱动的人形手，具有 11 个自由度 - 每个手指 2 个自由度，拇指 3 个自由度 - 构建成本不到 1,300 美元。它是首批完全开源的人形手之一，并引入了一种新颖的数据驱动的手指控制方法，可以捕获控制系统内的肌腱动态。尽管做出了这些贡献，Ruka 仍缺乏密切模仿人类行为所必需的两个自由度：手腕移动性和手指内收/外展。在本文中，我们介绍了 Ruka-v2：一种完全开源、肌腱驱动的人形手，具有解耦的 2-DOF 平行手腕和手指外展/内收。平行手腕增加了平滑、独立的屈曲/伸展和桡骨/尺骨偏差，从而可以在橱柜等有限环境中进行操作。外展可以实现诸如抓握薄物体、手部旋转和书法等动作。我们介绍了 Ruka-v2 的设计，并通过远程操作任务的用户研究对其与 Ruka 进行了评估，发现完成时间缩短了 51.3%，成功率提高了 21.2%。我们进一步展示了其在机器人学习方面的全方位应用：针对 13 项灵巧任务的双手和单臂远程操作，以及针对 3 项任务的自主策略学习。所有 3D 打印文件、组装说明、控制器软件和视频均可在 https://ruka-hand-v2.github.io/ 上获取。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2603.26660v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
                     
                 </div>
             </div>
@@ -869,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/alvinunreal/awesome-opensource-ai" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">awesome-opensource-ai</span>
-                                    <span class="repo-stars">⭐ 1918</span>
+                                    <span class="repo-stars">⭐ 2048</span>
                                 </div>
                                 <p class="repo-desc">最佳真正开源人工智能项目、模型、工具和基础设施的精选列表。</p>
                                 <div class="repo-meta">
@@ -883,7 +934,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/TensorCEO/TensorCEO" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">TensorCEO</span>
-                                    <span class="repo-stars">⭐ 47</span>
+                                    <span class="repo-stars">⭐ 64</span>
                                 </div>
                                 <p class="repo-desc">计算机毕业设计、机器学习毕业设计、深度学习毕业设计、原创AI项目源码【+论文】</p>
                                 <div class="repo-meta">
@@ -936,34 +987,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/sparkorbit/sparkorbit" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">sparkorbit</span>
-                                    <span class="repo-stars">⭐ 15</span>
-                                </div>
-                                <p class="repo-desc">AI 轨道监视器 — 论文、模型、基准测试、公司新闻尽在一个仪表板中。 40 多个来源、LMArena 排行榜、本地 LLM 摘要。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-03-23</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/NicoGrassetto/Foundry-Agent-Service-Starter-Kit" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Foundry-Agent-Service-Starter-Kit</span>
-                                    <span class="repo-stars">⭐ 5</span>
-                                </div>
-                                <p class="repo-desc">一个轻量级入门套件，用于使用 Microsoft Foundry Agent Service 构建和部署 AI 代理，具有 Azure 集成、Bicep 基础架构即代码和 azd 部署，可快速从原型过渡到生产。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-03-23</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/namerico/antigravity-education-kit" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">antigravity-education-kit</span>
@@ -1001,6 +1024,34 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
                                     <span class="repo-date">2026-03-24</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/itcv-GmbH/cpp-mcp-sdk" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">cpp-mcp-sdk</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">第一个完全符合 MCP 2025-11-25 的 C++ SDK - 构建生产就绪的 MCP 服务器和客户端，并提供完整的协议支持，包括可流式 HTTP 传输和基于 OAuth 的授权。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">C++</span>
+                                    <span class="repo-date">2026-03-26</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/jhon-henao13/Jarvis-Llama-Context" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Jarvis-Llama-Context</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">受钢铁侠启发的先进人工智能语音助手。由 Llama 3.1 和 Groq 提供支持，具有上下文记忆和 Windows 自动化。由来自哥伦比亚卡利的 17 岁开发者创建。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-03-29</span>
                                 </div>
                             </a>
                         </li>
