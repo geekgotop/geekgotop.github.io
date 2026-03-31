@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> to Commit: Generating<sup class='ipa'>/ˈʤɛnərˌeɪtɪŋ/</sup> Organic Pull Requests<sup class='ipa'>/rɪkˈwɛsts/</sup> via Online Repository<sup class='ipa'>/riˈpɑzəˌtɔri/</sup> Memory</h2>
+                    <h2 class="paper-title">Adaptive<sup class='ipa'>/əˈdæptɪv/</sup> Block-Scaled<sup class='ipa'>/blockscaled*/</sup> Data Types</h2>
                     <p class="paper-meta">
-                        <span class="authors">Mo Li, L. H. Xu, Qitai Tan</span>
-                        <span class="date">2026-03-27</span>
+                        <span class="authors">Jack Cook, Hyemin S. Lee, Kathryn Le</span>
+                        <span class="date">2026-03-30</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Large language model (LLM)-based coding agents achieve impressive results on controlled benchmarks yet routinely produce pull requests that real maintainers reject. The root cause is not functional incorrectness but a lack of organicity: generated code ignores project-specific conventions, duplicates functionality already provided by internal APIs, and violates implicit architectural constraints accumulated over years of development. Simply exposing an agent to the latest repository snapshot is not enough: the snapshot reveals the final state of the codebase, but not the repository-specific change patterns by which that state was reached. We introduce Learning to Commit, a framework that closes this gap through Online Repository Memory. Given a repository with a strict chronological split, the agent performs supervised contrastive reflection on earlier commits: it blindly attempts to resolve each historical issue, compares its prediction against the oracle diff, and distils the gap into a continuously growing set of skills-reusable patterns capturing coding style, internal API usage, and architectural invariants. When a new PR description arrives, the agent conditions its generation on these accumulated skills, producing changes grounded in the project&#39;s own evolution rather than generic pretraining priors. Evaluation is conducted on genuinely future, merged pull requests that could not have been seen during the skill-building phase, and spans multiple dimensions including functional correctness, code-style consistency, internal API reuse rate, and modified-region plausibility. Experiments on an expert-maintained repository with rich commit history show that Online Repository Memory effectively improves organicity scores on held-out future tasks.</p>
+                        <p class="abstract-en">NVFP4 has grown increasingly popular as a 4-bit format for quantizing large language models due to its hardware support and its ability to retain useful information with relatively few bits per parameter. However, the format is not without limitations: recent work has shown that NVFP4 suffers from its error distribution, resulting in large amounts of quantization error on near-maximal values in each group of 16 values. In this work, we leverage this insight to design new Adaptive Block-Scaled Data Types that can adapt to the distribution of their input values. For four-bit quantization, our proposed IF4 (Int/Float 4) data type selects between FP4 and INT4 representations for each group of 16 values, which are then scaled by an E4M3 scale factor as is done with NVFP4. The selected data type is denoted using the scale factor&#39;s sign bit, which is currently unused in NVFP4, and we apply the same insight to design formats for other bit-widths, including IF3 and IF6. When used to quantize language models, we find that IF4 outperforms existing 4-bit block-scaled formats, achieving lower loss during quantized training and achieving higher accuracy on many tasks in post-training quantization. We additionally design and evaluate an IF4 Multiply-Accumulate (MAC) unit to demonstrate that IF4 can be implemented efficiently in next-generation hardware accelerators. Our code is available at https://github.com/mit-han-lab/fouroversix.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">基于大型语言模型 (LLM) 的编码代理在受控基准上取得了令人印象深刻的结果，但经常产生实际维护人员拒绝的拉取请求。根本原因不是功能不正确，而是缺乏有机性：生成的代码忽略了特定于项目的约定，重复了内部 API 已经提供的功能，并且违反了多年开发中积累的隐式架构约束。仅仅将代理暴露给最新的存储库快照是不够的：快照揭示了代码库的最终状态，但没有揭示达到该状态的特定于存储库的更改模式。我们引入了 Learning to Commit，这是一个通过在线存储库内存弥补这一差距的框架。给定一个严格按时间顺序划分的存储库，代理对早期提交执行有监督的对比反射：它盲目地尝试解决每个历史问题，将其预测与预言机差异进行比较，并将差距提炼成一组不断增长的技能-可重用模式，捕获编码风格、内部 API 使用和架构不变量。当新的 PR 描述到达时，代理会根据这些积累的技能来调节其生成，从而根据项目自身的演变而不是通用的预训练先验来产生变化。评估是针对真正未来的、合并的拉取请求进行的，这些请求在技能构建阶段是不可能看到的，并且跨越多个维度，包括功能正确性、代码风格一致性、内部 API 重用率和修改区域的合理性。在专家维护的具有丰富提交历史的存储库上进行的实验表明，在线存储库内存有效地提高了未来任务的有机性分数。</p>
+                        <p class="abstract-zh">由于其硬件支持以及能够以每个参数相对较少的位数保留有用信息的能力，NVFP4 作为一种用于量化大型语言模型的 4 位格式越来越受欢迎。然而，该格式并非没有限制：最近的工作表明，NVFP4 受到其误差分布的影响，导致每组 16 个值的接近最大值上存在大量量化误差。在这项工作中，我们利用这种洞察力来设计新的自适应块级数据类型，可以适应其输入值的分布。对于四位量化，我们建议的 IF4 (Int/Float 4) 数据类型为每组 16 个值在 FP4 和 INT4 表示之间进行选择，然后按 E4M3 比例因子进行缩放，就像使用 NVFP4 一样。所选数据类型使用比例因子的符号位表示，目前在 NVFP4 中未使用该符号位，并且我们将相同的见解应用于其他位宽（包括 IF3 和 IF6）的设计格式。当用于量化语言模型时，我们发现 IF4 优于现有的 4 位块缩放格式，在量化训练期间实现了更低的损失，并在训练后量化的许多任务中实现了更高的准确性。我们还设计并评估了 IF4 乘法累加 (MAC) 单元，以证明 IF4 可以在下一代硬件加速器中高效实现。我们的代码可在 https://github.com/mit-han-lab/fouroversix 获取。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Weight Tying Biases Token Embeddings<sup class='ipa'>/embeddings*/</sup> Towards the Output Space</h2>
+                    <h2 class="paper-title">Geometry-aware<sup class='ipa'>/geometryaware*/</sup> similarity<sup class='ipa'>/ˌsɪməˈlɛrəti/</sup> metrics for neural representations<sup class='ipa'>/ˌrɛprəzənˈteɪʃənz/</sup> on Riemannian<sup class='ipa'>/riemannian*/</sup> and statistical<sup class='ipa'>/stəˈtɪstɪkəl/</sup> manifolds<sup class='ipa'>/manifolds*/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Antonio Lopardo, Avyukth Harish, Catherine Arnett</span>
-                        <span class="date">2026-03-27</span>
+                        <span class="authors">N Alex Cayco Gajic, Arthur Pellegrino</span>
+                        <span class="date">2026-03-30</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Weight tying, i.e. sharing parameters between input and output embedding matrices, is common practice in language model design, yet its impact on the learned embedding space remains poorly understood. In this paper, we show that tied embedding matrices align more closely with output (unembedding) matrices than with input embeddings of comparable untied models, indicating that the shared matrix is shaped primarily for output prediction rather than input representation. This unembedding bias arises because output gradients dominate early in training. Using tuned lens analysis, we show this negatively affects early-layer computations, which contribute less effectively to the residual stream. Scaling input gradients during training reduces this bias, providing causal evidence for the role of gradient imbalance. This is mechanistic evidence that weight tying optimizes the embedding matrix for output prediction, compromising its role in input representation. These results help explain why weight tying can harm performance at scale and have implications for training smaller LLMs, where the embedding matrix contributes substantially to total parameter count.</p>
+                        <p class="abstract-en">Similarity measures are widely used to interpret the representational geometries used by neural networks to solve tasks. Yet, because existing methods compare the extrinsic geometry of representations in state space, rather than their intrinsic geometry, they may fail to capture subtle yet crucial distinctions between fundamentally different neural network solutions. Here, we introduce metric similarity analysis (MSA), a novel method which leverages tools from Riemannian geometry to compare the intrinsic geometry of neural representations under the manifold hypothesis. We show that MSA can be used to i) disentangle features of neural computations in deep networks with different learning regimes, ii) compare nonlinear dynamics, and iii) investigate diffusion models. Hence, we introduce a mathematically grounded and broadly applicable framework to understand the mechanisms behind neural computations by comparing their intrinsic geometries.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">权重绑定，即在输入和输出嵌入矩阵之间共享参数，是语言模型设计中的常见做法，但它对学习嵌入空间的影响仍然知之甚少。在本文中，我们表明，绑定嵌入矩阵与输出（非嵌入）矩阵比与可比较的非绑定模型的输入嵌入更紧密地对齐，这表明共享矩阵的形状主要用于输出预测而不是输入表示。这种非嵌入偏差的出现是因为输出梯度在训练早期占主导地位。使用调谐透镜分析，我们表明这会对早期层计算产生负面影响，从而对残余流的贡献较小。在训练过程中缩放输入梯度可以减少这种偏差，为梯度不平衡的作用提供因果证据。这是权重绑定优化输出预测的嵌入矩阵的机械证据，损害了其在输入表示中的作用。这些结果有助于解释为什么权重绑定会大规模损害性能，并对训练较小的 LLM 产生影响，其中嵌入矩阵对总参数计数有很大贡献。</p>
+                        <p class="abstract-zh">相似性度量广泛用于解释神经网络用于解决任务的表征几何。然而，由于现有方法比较状态空间中表示的外在几何形状，而不是其内在几何形状，因此它们可能无法捕捉根本不同的神经网络解决方案之间微妙但至关重要的区别。在这里，我们介绍度量相似性分析（MSA），这是一种利用黎曼几何工具来比较流形假设下神经表示的内在几何的新颖方法。我们证明 MSA 可用于 i) 解开具有不同学习机制的深度网络中神经计算的特征，ii) 比较非线性动力学，以及 iii) 研究扩散模型。因此，我们引入了一个以数学为基础且广泛适用的框架，通过比较神经计算的内在几何结构来理解神经计算背后的机制。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Ruka-v2: Tendon Driven Open-Source<sup class='ipa'>/opensource*/</sup> Dexterous<sup class='ipa'>/dexterous*/</sup> Hand with Wrist and Abduction<sup class='ipa'>/əbˈdəkʃən/</sup> for Robot Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h2>
+                    <h2 class="paper-title">On-the-fly<sup class='ipa'>/onthefly*/</sup> Repulsion<sup class='ipa'>/repulsion*/</sup> in the Contextual<sup class='ipa'>/ˌkɑnˈtɛksˌʧuəl/</sup> Space for Rich Diversity<sup class='ipa'>/dɪˈvərsɪti/</sup> in Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Transformers<sup class='ipa'>/trænsˈfɔrmərz/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Xinqi, Liu, Ruoxi Hu</span>
-                        <span class="date">2026-03-27</span>
+                        <span class="authors">Omer Dahary, Benaya Koren, Daniel Garibi</span>
+                        <span class="date">2026-03-30</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Lack of accessible and dexterous robot hardware has been a significant bottleneck to achieving human-level dexterity in robots. Last year, we released Ruka, a fully open-sourced, tendon-driven humanoid hand with 11 degrees of freedom - 2 per finger and 3 at the thumb - buildable for under $1,300. It was one of the first fully open-sourced humanoid hands, and introduced a novel data-driven approach to finger control that captures tendon dynamics within the control system. Despite these contributions, Ruka lacked two degrees of freedom essential for closely imitating human behavior: wrist mobility and finger adduction/abduction. In this paper, we introduce Ruka-v2: a fully open-sourced, tendon-driven humanoid hand featuring a decoupled 2-DOF parallel wrist and abduction/adduction at the fingers. The parallel wrist adds smooth, independent flexion/extension and radial/ulnar deviation, enabling manipulation in confined environments such as cabinets. Abduction enables motions such as grasping thin objects, in-hand rotation, and calligraphy. We present the design of Ruka-v2 and evaluate it against Ruka through user studies on teleoperated tasks, finding a 51.3% reduction in completion time and a 21.2% increase in success rate. We further demonstrate its full range of applications for robot learning: bimanual and single-arm teleoperation across 13 dexterous tasks, and autonomous policy learning on 3 tasks. All 3D print files, assembly instructions, controller software, and videos are available at https://ruka-hand-v2.github.io/ .</p>
+                        <p class="abstract-en">Modern Text-to-Image (T2I) diffusion models have achieved remarkable semantic alignment, yet they often suffer from a significant lack of variety, converging on a narrow set of visual solutions for any given prompt. This typicality bias presents a challenge for creative applications that require a wide range of generative outcomes. We identify a fundamental trade-off in current approaches to diversity: modifying model inputs requires costly optimization to incorporate feedback from the generative path. In contrast, acting on spatially-committed intermediate latents tends to disrupt the forming visual structure, leading to artifacts. In this work, we propose to apply repulsion in the Contextual Space as a novel framework for achieving rich diversity in Diffusion Transformers. By intervening in the multimodal attention channels, we apply on-the-fly repulsion during the transformer&#39;s forward pass, injecting the intervention between blocks where text conditioning is enriched with emergent image structure. This allows for redirecting the guidance trajectory after it is structurally informed but before the composition is fixed. Our results demonstrate that repulsion in the Contextual Space produces significantly richer diversity without sacrificing visual fidelity or semantic adherence. Furthermore, our method is uniquely efficient, imposing a small computational overhead while remaining effective even in modern &#34;Turbo&#34; and distilled models where traditional trajectory-based interventions typically fail.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">缺乏可访问且灵巧的机器人硬件一直是机器人实现人类水平灵巧性的重大瓶颈。去年，我们发布了 Ruka，这是一款完全开源、肌腱驱动的人形手，具有 11 个自由度 - 每个手指 2 个自由度，拇指 3 个自由度 - 构建成本不到 1,300 美元。它是首批完全开源的人形手之一，并引入了一种新颖的数据驱动的手指控制方法，可以捕获控制系统内的肌腱动态。尽管做出了这些贡献，Ruka 仍缺乏密切模仿人类行为所必需的两个自由度：手腕移动性和手指内收/外展。在本文中，我们介绍了 Ruka-v2：一种完全开源、肌腱驱动的人形手，具有解耦的 2-DOF 平行手腕和手指外展/内收。平行手腕增加了平滑、独立的屈曲/伸展和桡骨/尺骨偏差，从而可以在橱柜等有限环境中进行操作。外展可以实现诸如抓握薄物体、手部旋转和书法等动作。我们介绍了 Ruka-v2 的设计，并通过远程操作任务的用户研究对其与 Ruka 进行了评估，发现完成时间缩短了 51.3%，成功率提高了 21.2%。我们进一步展示了其在机器人学习方面的全方位应用：针对 13 项灵巧任务的双手和单臂远程操作，以及针对 3 项任务的自主策略学习。所有 3D 打印文件、组装说明、控制器软件和视频均可在 https://ruka-hand-v2.github.io/ 上获取。</p>
+                        <p class="abstract-zh">现代文本到图像（T2I）扩散模型已经实现了显着的语义对齐，但它们常常严重缺乏多样性，对于任何给定的提示都集中在一组狭窄的视觉解决方案上。这种典型性偏差给需要广泛生成结果的创意应用带来了挑战。我们确定了当前多样性方法的一个基本权衡：修改模型输入需要昂贵的优化才能纳入来自生成路径的反馈。相反，作用于空间上承诺的中间潜伏往往会破坏正在形成的视觉结构，导致伪影。在这项工作中，我们建议将上下文空间中的排斥力应用为一种新颖的框架，以实现扩散变压器的丰富多样性。通过干预多模态注意通道，我们在变压器的前向传递过程中应用即时排斥，在块之间注入干预，其中文本调节通过新兴图像结构得到丰富。这允许在结构上通知之后但在构图固定之前重定向引导轨迹。我们的结果表明，上下文空间中的排斥会产生更丰富的多样性，而不会牺牲视觉保真度或语义依从性。此外，我们的方法具有独特的高效性，即使在传统的基于轨迹的干预措施通常会失败的现代“涡轮”和蒸馏模型中，其计算开销也很小，同时仍然有效。</p>
                     </div>
                 </article>
                 
@@ -458,15 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 2048</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">alvinunreal/awesome-opensource-ai</strong>
-                            <p class="repo-desc">最佳真正开源人工智能项目、模型、工具和基础设施的精选列表。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 64</span>
+                        <span class="repo-stars">★ 85</span>
                         <div class="repo-info">
                             <strong class="repo-name">TensorCEO/TensorCEO</strong>
                             <p class="repo-desc">计算机毕业设计、机器学习毕业设计、深度学习毕业设计、原创AI项目源码【+论文】</p>
@@ -474,7 +466,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 22</span>
+                        <span class="repo-stars">★ 23</span>
                         <div class="repo-info">
                             <strong class="repo-name">lucidrains/fast-weight-attention</strong>
                             <p class="repo-desc">快速权重注意力的实现</p>
@@ -482,7 +474,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 16</span>
+                        <span class="repo-stars">★ 17</span>
                         <div class="repo-info">
                             <strong class="repo-name">lucidrains/RIM-pytorch</strong>
                             <p class="repo-desc">Pytorch中循环独立机制的实现</p>
@@ -490,18 +482,10 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 15</span>
+                        <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">groovy-web/awesome-ai-agents</strong>
-                            <p class="repo-desc">AI 代理框架、工具、平台和资源的精选列表</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">namerico/antigravity-education-kit</strong>
-                            <p class="repo-desc">🚀 IA 专业教育代理的模块化框架：辅导员、conteúdo 人员和革命或学习的知识分子。</p>
+                            <strong class="repo-name">Don-Youssef/ai-chatbot-colab</strong>
+                            <p class="repo-desc">使用 Google Colab、TensorFlow 和交互式霓虹灯矩阵界面从头开始构建您自己的 AI 聊天机器人。</p>
                         </div>
                     </li>
                 
@@ -516,8 +500,8 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">HENU-PlanetaryMapping/planetary-mapping-hub</strong>
-                            <p class="repo-desc">行星测绘研究协作学习中心，以行星摄影测量、遥感制图、C++/Python 编程、人工智能辅助编码、软件工程和科学写作为特色。</p>
+                            <strong class="repo-name">ciada-3301/AimNet</strong>
+                            <p class="repo-desc">一种基于深度学习的人工智能模型，从头开始学习弹丸运动，并学习通过调整射击角度来瞄准目标</p>
                         </div>
                     </li>
                 
@@ -534,6 +518,22 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">jhon-henao13/Jarvis-Llama-Context</strong>
                             <p class="repo-desc">受钢铁侠启发的先进人工智能语音助手。由 Llama 3.1 和 Groq 提供支持，具有上下文记忆和 Windows 自动化。由来自哥伦比亚卡利的 17 岁开发者创建。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 1</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">anedelkos/cortexguard</strong>
+                            <p class="repo-desc">适用于边缘系统的实时多模态异常检测和容错多智能体人工智能架构</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 1</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">JustForCodin/Centaurian_Architecture_Implementation</strong>
+                            <p class="repo-desc">用类似人类的认知构建我自己的人工智能。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-03-30 22:31:23
+        生成于 2026-03-31 22:30:44
     </footer>
 </body>
 </html>

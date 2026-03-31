@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-03-30 22:31:23</span>
+        <span class="generated-time">更新于 2026-03-31 22:30:44</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> to Commit: Generating<sup class='ipa'>/ˈʤɛnərˌeɪtɪŋ/</sup> Organic Pull Requests<sup class='ipa'>/rɪkˈwɛsts/</sup> via Online Repository<sup class='ipa'>/riˈpɑzəˌtɔri/</sup> Memory</h4>
+                            <h4 class="paper-title">Adaptive<sup class='ipa'>/əˈdæptɪv/</sup> Block-Scaled<sup class='ipa'>/blockscaled*/</sup> Data Types</h4>
                             <div class="paper-meta">
-                                <span class="authors">Mo Li, L. H. Xu, Qitai Tan</span>
-                                <span class="date">2026-03-27</span>
-                                <span class="categories">cs.SE | cs.CL</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Large language model (LLM)-based coding agents achieve impressive results on controlled benchmarks yet routinely produce pull requests that real maintainers reject. The root cause is not functional incorrectness but a lack of organicity: generated code ignores project-specific conventions, duplicate...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">基于大型语言模型 (LLM) 的编码代理在受控基准上取得了令人印象深刻的结果，但经常产生实际维护人员拒绝的拉取请求。根本原因不是功能不正确，而是缺乏有机性：生成的代码忽略了特定于项目的约定，重复了内部 API 已经提供的功能，并且违反了多年开发中积累的隐式架构约束。仅仅将代理暴露给最新的存储库快照是不够的：快照揭示了代码库的最终状态，但没有揭示达到该状态的特定于存储库的更改模式。我们引入了 Learning to Commit，这是一个通过在线存储库内存弥补这一差距的框架。给定一个严格按时间顺序划分的存储库，代理对早期提交执行有监督的对比反射：它盲目地尝试解决每个历史问题，将其预测与预言机差异进行比较，并将差距提炼成一组不断增长的技能-可重用模式，捕获编码风格、内部 API 使用和架构不变量。当新的 PR 描述到达时，代理会根据这些积累的技能来调节其生成，从而根据项目自身的演变而不是通用的预训练先验来产生变化。评估是针对真正未来的、合并的拉取请求进行的，这些请求在技能构建阶段是不可能看到的，并且跨越多个维度，包括功能正确性、代码风格一致性、内部 API 重用率和修改区域的合理性。在专家维护的具有丰富提交历史的存储库上进行的实验表明，在线存储库内存有效地提高了未来任务的有机性分数。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2603.26664v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Weight Tying Biases Token Embeddings<sup class='ipa'>/embeddings*/</sup> Towards the Output Space</h4>
-                            <div class="paper-meta">
-                                <span class="authors">Antonio Lopardo, Avyukth Harish, Catherine Arnett</span>
-                                <span class="date">2026-03-27</span>
+                                <span class="authors">Jack Cook, Hyemin S. Lee, Kathryn Le</span>
+                                <span class="date">2026-03-30</span>
                                 <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Weight tying, i.e. sharing parameters between input and output embedding matrices, is common practice in language model design, yet its impact on the learned embedding space remains poorly understood. In this paper, we show that tied embedding matrices align more closely with output (unembedding) ma...</p>
+                                <p class="abstract-en">NVFP4 has grown increasingly popular as a 4-bit format for quantizing large language models due to its hardware support and its ability to retain useful information with relatively few bits per parameter. However, the format is not without limitations: recent work has shown that NVFP4 suffers from i...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">权重绑定，即在输入和输出嵌入矩阵之间共享参数，是语言模型设计中的常见做法，但它对学习嵌入空间的影响仍然知之甚少。在本文中，我们表明，绑定嵌入矩阵与输出（非嵌入）矩阵比与可比较的非绑定模型的输入嵌入更紧密地对齐，这表明共享矩阵的形状主要用于输出预测而不是输入表示。这种非嵌入偏差的出现是因为输出梯度在训练早期占主导地位。使用调谐透镜分析，我们表明这会对早期层计算产生负面影响，从而对残余流的贡献较小。在训练过程中缩放输入梯度可以减少这种偏差，为梯度不平衡的作用提供因果证据。这是权重绑定优化输出预测的嵌入矩阵的机械证据，损害了其在输入表示中的作用。这些结果有助于解释为什么权重绑定会大规模损害性能，并对训练较小的 LLM 产生影响，其中嵌入矩阵对总参数计数有很大贡献。</p>
+                                    <p class="abstract-zh">由于其硬件支持以及能够以每个参数相对较少的位数保留有用信息的能力，NVFP4 作为一种用于量化大型语言模型的 4 位格式越来越受欢迎。然而，该格式并非没有限制：最近的工作表明，NVFP4 受到其误差分布的影响，导致每组 16 个值的接近最大值上存在大量量化误差。在这项工作中，我们利用这种洞察力来设计新的自适应块级数据类型，可以适应其输入值的分布。对于四位量化，我们建议的 IF4 (Int/Float 4) 数据类型为每组 16 个值在 FP4 和 INT4 表示之间进行选择，然后按 E4M3 比例因子进行缩放，就像使用 NVFP4 一样。所选数据类型使用比例因子的符号位表示，目前在 NVFP4 中未使用该符号位，并且我们将相同的见解应用于其他位宽（包括 IF3 和 IF6）的设计格式。当用于量化语言模型时，我们发现 IF4 优于现有的 4 位块缩放格式，在量化训练期间实现了更低的损失，并在训练后量化的许多任务中实现了更高的准确性。我们还设计并评估了 IF4 乘法累加 (MAC) 单元，以证明 IF4 可以在下一代硬件加速器中高效实现。我们的代码可在 https://github.com/mit-han-lab/fouroversix 获取。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2603.26663v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2603.28765v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Ruka-v2: Tendon Driven Open-Source<sup class='ipa'>/opensource*/</sup> Dexterous<sup class='ipa'>/dexterous*/</sup> Hand with Wrist and Abduction<sup class='ipa'>/əbˈdəkʃən/</sup> for Robot Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
+                            <h4 class="paper-title">Geometry-aware<sup class='ipa'>/geometryaware*/</sup> similarity<sup class='ipa'>/ˌsɪməˈlɛrəti/</sup> metrics for neural representations<sup class='ipa'>/ˌrɛprəzənˈteɪʃənz/</sup> on Riemannian<sup class='ipa'>/riemannian*/</sup> and statistical<sup class='ipa'>/stəˈtɪstɪkəl/</sup> manifolds<sup class='ipa'>/manifolds*/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Xinqi, Liu, Ruoxi Hu</span>
-                                <span class="date">2026-03-27</span>
-                                <span class="categories">cs.RO | cs.AI</span>
+                                <span class="authors">N Alex Cayco Gajic, Arthur Pellegrino</span>
+                                <span class="date">2026-03-30</span>
+                                <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Lack of accessible and dexterous robot hardware has been a significant bottleneck to achieving human-level dexterity in robots. Last year, we released Ruka, a fully open-sourced, tendon-driven humanoid hand with 11 degrees of freedom - 2 per finger and 3 at the thumb - buildable for under $1,300. It...</p>
+                                <p class="abstract-en">Similarity measures are widely used to interpret the representational geometries used by neural networks to solve tasks. Yet, because existing methods compare the extrinsic geometry of representations in state space, rather than their intrinsic geometry, they may fail to capture subtle yet crucial d...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">缺乏可访问且灵巧的机器人硬件一直是机器人实现人类水平灵巧性的重大瓶颈。去年，我们发布了 Ruka，这是一款完全开源、肌腱驱动的人形手，具有 11 个自由度 - 每个手指 2 个自由度，拇指 3 个自由度 - 构建成本不到 1,300 美元。它是首批完全开源的人形手之一，并引入了一种新颖的数据驱动的手指控制方法，可以捕获控制系统内的肌腱动态。尽管做出了这些贡献，Ruka 仍缺乏密切模仿人类行为所必需的两个自由度：手腕移动性和手指内收/外展。在本文中，我们介绍了 Ruka-v2：一种完全开源、肌腱驱动的人形手，具有解耦的 2-DOF 平行手腕和手指外展/内收。平行手腕增加了平滑、独立的屈曲/伸展和桡骨/尺骨偏差，从而可以在橱柜等有限环境中进行操作。外展可以实现诸如抓握薄物体、手部旋转和书法等动作。我们介绍了 Ruka-v2 的设计，并通过远程操作任务的用户研究对其与 Ruka 进行了评估，发现完成时间缩短了 51.3%，成功率提高了 21.2%。我们进一步展示了其在机器人学习方面的全方位应用：针对 13 项灵巧任务的双手和单臂远程操作，以及针对 3 项任务的自主策略学习。所有 3D 打印文件、组装说明、控制器软件和视频均可在 https://ruka-hand-v2.github.io/ 上获取。</p>
+                                    <p class="abstract-zh">相似性度量广泛用于解释神经网络用于解决任务的表征几何。然而，由于现有方法比较状态空间中表示的外在几何形状，而不是其内在几何形状，因此它们可能无法捕捉根本不同的神经网络解决方案之间微妙但至关重要的区别。在这里，我们介绍度量相似性分析（MSA），这是一种利用黎曼几何工具来比较流形假设下神经表示的内在几何的新颖方法。我们证明 MSA 可用于 i) 解开具有不同学习机制的深度网络中神经计算的特征，ii) 比较非线性动力学，以及 iii) 研究扩散模型。因此，我们引入了一个以数学为基础且广泛适用的框架，通过比较神经计算的内在几何结构来理解神经计算背后的机制。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2603.26660v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2603.28764v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">On-the-fly<sup class='ipa'>/onthefly*/</sup> Repulsion<sup class='ipa'>/repulsion*/</sup> in the Contextual<sup class='ipa'>/ˌkɑnˈtɛksˌʧuəl/</sup> Space for Rich Diversity<sup class='ipa'>/dɪˈvərsɪti/</sup> in Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Transformers<sup class='ipa'>/trænsˈfɔrmərz/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Omer Dahary, Benaya Koren, Daniel Garibi</span>
+                                <span class="date">2026-03-30</span>
+                                <span class="categories">cs.CV | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Modern Text-to-Image (T2I) diffusion models have achieved remarkable semantic alignment, yet they often suffer from a significant lack of variety, converging on a narrow set of visual solutions for any given prompt. This typicality bias presents a challenge for creative applications that require a w...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">现代文本到图像（T2I）扩散模型已经实现了显着的语义对齐，但它们常常严重缺乏多样性，对于任何给定的提示都集中在一组狭窄的视觉解决方案上。这种典型性偏差给需要广泛生成结果的创意应用带来了挑战。我们确定了当前多样性方法的一个基本权衡：修改模型输入需要昂贵的优化才能纳入来自生成路径的反馈。相反，作用于空间上承诺的中间潜伏往往会破坏正在形成的视觉结构，导致伪影。在这项工作中，我们建议将上下文空间中的排斥力应用为一种新颖的框架，以实现扩散变压器的丰富多样性。通过干预多模态注意通道，我们在变压器的前向传递过程中应用即时排斥，在块之间注入干预，其中文本调节通过新兴图像结构得到丰富。这允许在结构上通知之后但在构图固定之前重定向引导轨迹。我们的结果表明，上下文空间中的排斥会产生更丰富的多样性，而不会牺牲视觉保真度或语义依从性。此外，我们的方法具有独特的高效性，即使在传统的基于轨迹的干预措施通常会失败的现代“涡轮”和蒸馏模型中，其计算开销也很小，同时仍然有效。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2603.28762v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -917,24 +917,10 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
-                            <a href="https://github.com/alvinunreal/awesome-opensource-ai" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">awesome-opensource-ai</span>
-                                    <span class="repo-stars">⭐ 2048</span>
-                                </div>
-                                <p class="repo-desc">最佳真正开源人工智能项目、模型、工具和基础设施的精选列表。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-03-24</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/TensorCEO/TensorCEO" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">TensorCEO</span>
-                                    <span class="repo-stars">⭐ 64</span>
+                                    <span class="repo-stars">⭐ 85</span>
                                 </div>
                                 <p class="repo-desc">计算机毕业设计、机器学习毕业设计、深度学习毕业设计、原创AI项目源码【+论文】</p>
                                 <div class="repo-meta">
@@ -948,7 +934,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/lucidrains/fast-weight-attention" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">fast-weight-attention</span>
-                                    <span class="repo-stars">⭐ 22</span>
+                                    <span class="repo-stars">⭐ 23</span>
                                 </div>
                                 <p class="repo-desc">快速权重注意力的实现</p>
                                 <div class="repo-meta">
@@ -962,7 +948,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/lucidrains/RIM-pytorch" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">RIM-pytorch</span>
-                                    <span class="repo-stars">⭐ 16</span>
+                                    <span class="repo-stars">⭐ 17</span>
                                 </div>
                                 <p class="repo-desc">Pytorch中循环独立机制的实现</p>
                                 <div class="repo-meta">
@@ -973,29 +959,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/groovy-web/awesome-ai-agents" target="_blank" class="repo-link">
+                            <a href="https://github.com/Don-Youssef/ai-chatbot-colab" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">awesome-ai-agents</span>
-                                    <span class="repo-stars">⭐ 15</span>
+                                    <span class="repo-name">ai-chatbot-colab</span>
+                                    <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">AI 代理框架、工具、平台和资源的精选列表</p>
+                                <p class="repo-desc">使用 Google Colab、TensorFlow 和交互式霓虹灯矩阵界面从头开始构建您自己的 AI 聊天机器人。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-03-24</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/namerico/antigravity-education-kit" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">antigravity-education-kit</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">🚀 IA 专业教育代理的模块化框架：辅导员、conteúdo 人员和革命或学习的知识分子。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-03-24</span>
+                                    <span class="repo-lang">Jupyter Notebook</span>
+                                    <span class="repo-date">2026-03-28</span>
                                 </div>
                             </a>
                         </li>
@@ -1015,15 +987,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/HENU-PlanetaryMapping/planetary-mapping-hub" target="_blank" class="repo-link">
+                            <a href="https://github.com/ciada-3301/AimNet" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">planetary-mapping-hub</span>
+                                    <span class="repo-name">AimNet</span>
                                     <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">行星测绘研究协作学习中心，以行星摄影测量、遥感制图、C++/Python 编程、人工智能辅助编码、软件工程和科学写作为特色。</p>
+                                <p class="repo-desc">一种基于深度学习的人工智能模型，从头开始学习弹丸运动，并学习通过调整射击角度来瞄准目标</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-03-24</span>
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-03-26</span>
                                 </div>
                             </a>
                         </li>
@@ -1052,6 +1024,34 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-03-29</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/anedelkos/cortexguard" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">cortexguard</span>
+                                    <span class="repo-stars">⭐ 1</span>
+                                </div>
+                                <p class="repo-desc">适用于边缘系统的实时多模态异常检测和容错多智能体人工智能架构</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-03-26</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/JustForCodin/Centaurian_Architecture_Implementation" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Centaurian_Architecture_Implementation</span>
+                                    <span class="repo-stars">⭐ 1</span>
+                                </div>
+                                <p class="repo-desc">用类似人类的认知构建我自己的人工智能。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Jupyter Notebook</span>
+                                    <span class="repo-date">2026-03-27</span>
                                 </div>
                             </a>
                         </li>
