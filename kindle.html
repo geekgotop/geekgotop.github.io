@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">HippoCamp:<sup class='ipa'>/hippocamp*/</sup> Benchmarking<sup class='ipa'>/benchmarking*/</sup> Contextual<sup class='ipa'>/ˌkɑnˈtɛksˌʧuəl/</sup> Agents on Personal<sup class='ipa'>/ˈpərsɪnəl/</sup> Computers<sup class='ipa'>/kəmˈpjutərz/</sup></h2>
+                    <h2 class="paper-title">ActionParty:<sup class='ipa'>/actionparty*/</sup> Multi-Subject<sup class='ipa'>/multisubject*/</sup> Action Binding in Generative<sup class='ipa'>/ˈʤɛnərətɪv/</sup> Video Games</h2>
                     <p class="paper-meta">
-                        <span class="authors">Zhe Yang, Shulin Tian, Kairui Hu</span>
-                        <span class="date">2026-04-01</span>
+                        <span class="authors">Alexander Pondaven, Ziyi Wu, Igor Gilitschenski</span>
+                        <span class="date">2026-04-02</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">We present HippoCamp, a new benchmark designed to evaluate agents&#39; capabilities on multimodal file management. Unlike existing agent benchmarks that focus on tasks like web interaction, tool use, or software automation in generic settings, HippoCamp evaluates agents in user-centric environments to model individual user profiles and search massive personal files for context-aware reasoning. Our benchmark instantiates device-scale file systems over real-world profiles spanning diverse modalities, comprising 42.4 GB of data across over 2K real-world files. Building upon the raw files, we construct 581 QA pairs to assess agents&#39; capabilities in search, evidence perception, and multi-step reasoning. To facilitate fine-grained analysis, we provide 46.1K densely annotated structured trajectories for step-wise failure diagnosis. We evaluate a wide range of state-of-the-art multimodal large language models (MLLMs) and agentic methods on HippoCamp. Our comprehensive experiments reveal a significant performance gap: even the most advanced commercial models achieve only 48.3% accuracy in user profiling, struggling particularly with long-horizon retrieval and cross-modal reasoning within dense personal file systems. Furthermore, our step-wise failure diagnosis identifies multimodal perception and evidence grounding as the primary bottlenecks. Ultimately, HippoCamp exposes the critical limitations of current agents in realistic, user-centric environments and provides a robust foundation for developing next-generation personal AI assistants.</p>
+                        <p class="abstract-en">Recent advances in video diffusion have enabled the development of &#34;world models&#34; capable of simulating interactive environments. However, these models are largely restricted to single-agent settings, failing to control multiple agents simultaneously in a scene. In this work, we tackle a fundamental issue of action binding in existing video diffusion models, which struggle to associate specific actions with their corresponding subjects. For this purpose, we propose ActionParty, an action controllable multi-subject world model for generative video games. It introduces subject state tokens, i.e. latent variables that persistently capture the state of each subject in the scene. By jointly modeling state tokens and video latents with a spatial biasing mechanism, we disentangle global video frame rendering from individual action-controlled subject updates. We evaluate ActionParty on the Melting Pot benchmark, demonstrating the first video world model capable of controlling up to seven players simultaneously across 46 diverse environments. Our results show significant improvements in action-following accuracy and identity consistency, while enabling robust autoregressive tracking of subjects through complex interactions.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">我们推出了 HippoCamp，这是一个新的基准，旨在评估代理的多模式文件管理能力。与现有的代理基准测试侧重于一般设置中的 Web 交互、工具使用或软件自动化等任务不同，HippoCamp 在以用户为中心的环境中评估代理，以对个人用户配置文件进行建模并搜索大量个人文件以进行上下文感知推理。我们的基准测试在跨越多种模式的真实世界配置文件上实例化设备规模文件系统，包括跨 2K 多个真实世界文件的 42.4 GB 数据。基于原始文件，我们构建了 581 个 QA 对来评估智能体在搜索、证据感知和多步骤推理方面的能力。为了便于细粒度分析，我们提供了 46.1K 个密集注释的结构化轨迹，用于逐步故障诊断。我们在 HippoCamp 上评估了各种最先进的多模式大语言模型 (MLLM) 和代理方法。我们的综合实验揭示了显着的性能差距：即使是最先进的商业模型在用户分析方面也只能达到 48.3% 的准确度，尤其是在密集个人文件系统中的长视野检索和跨模式推理方面。此外，我们的逐步故障诊断将多模式感知和证据基础确定为主要瓶颈。最终，HippoCamp 暴露了当前代理在现实、以用户为中心的环境中的关键局限性，并为开发下一代个人人工智能助理提供了坚实的基础。</p>
+                        <p class="abstract-zh">视频传播的最新进展使得能够模拟交互环境的“世界模型”得以发展。然而，这些模型很大程度上仅限于单代理设置，无法在场景中同时控制多个代理。在这项工作中，我们解决了现有视频传播模型中动作绑定的基本问题，该模型很难将特定动作与其相应的主题相关联。为此，我们提出了 ActionParty，一种用于生成视频游戏的动作可控多主体世界模型。它引入了主体状态标记，即持续捕获场景中每个主体状态的潜在变量。通过使用空间偏置机制对状态标记和视频潜伏进行联合建模，我们将全局视频帧渲染与单个动作控制的主题更新分开。我们根据 Melting Pot 基准评估 ActionParty，展示了第一个能够在 46 个不同环境中同时控制最多 7 名玩家的视频世界模型。我们的结果表明，行动跟踪准确性和身份一致性有了显着提高，同时通过复杂的交互实现了对受试者的稳健自回归跟踪。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Universal<sup class='ipa'>/ˌjunəˈvərsəl/</sup> YOCO for Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Depth Scaling</h2>
+                    <h2 class="paper-title">Steerable<sup class='ipa'>/steerable*/</sup> Visual Representations<sup class='ipa'>/ˌrɛprəzənˈteɪʃənz/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Yutao Sun, Li Dong, Tianzhu Ye</span>
-                        <span class="date">2026-04-01</span>
+                        <span class="authors">Jona Ruthardt, Manu Gaur, Deva Ramanan</span>
+                        <span class="date">2026-04-02</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">The rise of test-time scaling has remarkably boosted the reasoning and agentic proficiency of Large Language Models (LLMs). Yet, standard Transformers struggle to scale inference-time compute efficiently, as conventional looping strategies suffer from high computational overhead and a KV cache that inflates alongside model depth. We present Universal YOCO (YOCO-U), which combines the YOCO decoder-decoder architecture with recursive computation to achieve a synergistic effect greater than either alone. Built on the YOCO framework, YOCO-U implements a Universal Self-Decoder that performs multiple iterations via parameter sharing, while confining the iterative process to shallow, efficient-attention layers. This combination yields a favorable capability-efficiency tradeoff that neither YOCO nor recursion achieves independently. The YOCO architecture provides a constant global KV cache and linear pre-filling, while partial recursion enhances representational depth with limited overhead. Together, YOCO-U improves token utility and scaling behavior while maintaining efficient inference. Empirical results confirm that YOCO-U remains highly competitive in general and long-context benchmarks, demonstrating that the integration of efficient-attention architectures and recursive computation is a promising direction for scalable LLMs.</p>
+                        <p class="abstract-en">Pretrained Vision Transformers (ViTs) such as DINOv2 and MAE provide generic image features that can be applied to a variety of downstream tasks such as retrieval, classification, and segmentation. However, such representations tend to focus on the most salient visual cues in the image, with no way to direct them toward less prominent concepts of interest. In contrast, Multimodal LLMs can be guided with textual prompts, but the resulting representations tend to be language-centric and lose their effectiveness for generic visual tasks. To address this, we introduce Steerable Visual Representations, a new class of visual representations, whose global and local features can be steered with natural language. While most vision-language models (e.g., CLIP) fuse text with visual features after encoding (late fusion), we inject text directly into the layers of the visual encoder (early fusion) via lightweight cross-attention. We introduce benchmarks for measuring representational steerability, and demonstrate that our steerable visual features can focus on any desired objects in an image while preserving the underlying representation quality. Our method also matches or outperforms dedicated approaches on anomaly detection and personalized object discrimination, exhibiting zero-shot generalization to out-of-distribution tasks.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">测试时间扩展的兴起显着提高了大型语言模型（LLM）的推理和代理能力。然而，标准 Transformer 很难有效地扩展推理时间计算，因为传统的循环策略面临高计算开销和随模型深度膨胀的 KV 缓存。我们提出了通用 YOCO（YOCO-U），它将 YOCO 解码器-解码器架构与递归计算相结合，以实现比单独使用任何一种都更大的协同效应。 YOCO-U 基于 YOCO 框架构建，实现了通用自解码器，通过参数共享执行多次迭代，同时将迭代过程限制在浅层、高效的注意力层。这种组合产生了有利的能力-效率权衡，YOCO 和递归都无法独立实现。 YOCO架构提供了恒定的全局KV缓存和线性预填充，而部分递归以有限的开销增强了表示深度。 YOCO-U 共同提高了代币效用和扩展行为，同时保持高效推理。实证结果证实，YOCO-U 在一般和长上下文基准测试中仍然具有高度竞争力，表明高效注意力架构和递归计算的集成是可扩展的法学硕士的一个有前途的方向。</p>
+                        <p class="abstract-zh">DINOv2 和 MAE 等预训练视觉变换器 (ViT) 提供通用图像特征，可应用于各种下游任务，例如检索、分类和分割。然而，这种表示往往集中在图像中最显着的视觉线索上，而无法将它们引导到不太显着的感兴趣概念上。相比之下，多模式法学硕士可以用文本提示进行指导，但所得的表示往往以语言为中心，并且失去了对通用视觉任务的有效性。为了解决这个问题，我们引入了可操纵视觉表示，这是一类新的视觉表示，其全局和局部特征可以用自然语言来控制。虽然大多数视觉语言模型（例如 CLIP）在编码后将文本与视觉特征融合（后期融合），但我们通过轻量级交叉注意力将文本直接注入到视觉编码器的层中（早期融合）。我们引入了测量表征可操纵性的基准，并证明我们的可操纵视觉特征可以专注于图像中的任何所需对象，同时保持底层的表征质量。我们的方法还匹配或优于异常检测和个性化对象区分的专用方法，表现出对分布外任务的零样本泛化。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">LAtent Phase Inference<sup class='ipa'>/ˈɪnfərəns/</sup> from Short time sequences<sup class='ipa'>/ˈsikwənsɪz/</sup> using SHallow REcurrent<sup class='ipa'>/rɪˈkərənt/</sup> Decoders<sup class='ipa'>/dɪˈkoʊdərz/</sup> (LAPIS-SHRED)<sup class='ipa'>/lapisshred*/</sup></h2>
+                    <h2 class="paper-title">Grounded<sup class='ipa'>/ˈgraʊndɪd/</sup> Token Initialization<sup class='ipa'>/initialization*/</sup> for New Vocabulary<sup class='ipa'>/voʊˈkæbjəˌlɛri/</sup> in LMs for Generative<sup class='ipa'>/ˈʤɛnərətɪv/</sup> Recommendation<sup class='ipa'>/ˌrɛkəmənˈdeɪʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Yuxuan Bao, Xingyue Zhang, J. Nathan Kutz</span>
-                        <span class="date">2026-04-01</span>
+                        <span class="authors">Daiwei Chen, Zhoutong Fu, Chengming Jiang</span>
+                        <span class="date">2026-04-02</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Reconstructing full spatio-temporal dynamics from sparse observations in both space and time remains a central challenge in complex systems, as measurements can be spatially incomplete and can be also limited to narrow temporal windows. Yet approximating the complete spatio-temporal trajectory is essential for mechanistic insight and understanding, model calibration, and operational decision-making. We introduce LAPIS-SHRED (LAtent Phase Inference from Short time sequence using SHallow REcurrent Decoders), a modular architecture that reconstructs and/or forecasts complete spatiotemporal dynamics from sparse sensor observations confined to short temporal windows. LAPIS-SHRED operates through a three-stage pipeline: (i) a SHRED model is pre-trained entirely on simulation data to map sensor time-histories into a structured latent space, (ii) a temporal sequence model, trained on simulation-derived latent trajectories, learns to propagate latent states forward or backward in time to span unobserved temporal regions from short observational time windows, and (iii) at deployment, only a short observation window of hyper-sparse sensor measurements from the true system is provided, from which the frozen SHRED model and the temporal model jointly reconstruct or forecast the complete spatiotemporal trajectory. The framework supports bidirectional inference, inherits data assimilation and multiscale reconstruction capabilities from its modular structure, and accommodates extreme observational constraints including single-frame terminal inputs. We evaluate LAPIS-SHRED on six experiments spanning complex spatio-temporal physics: turbulent flows, multiscale propulsion physics, volatile combustion transients, and satellite-derived environmental fields, highlighting a lightweight, modular architecture suited for operational settings where observation is constrained by physical or logistical limitations.</p>
+                        <p class="abstract-en">Language models (LMs) are increasingly extended with new learnable vocabulary tokens for domain-specific tasks, such as Semantic-ID tokens in generative recommendation. The standard practice initializes these new tokens as the mean of existing vocabulary embeddings, then relies on supervised fine-tuning to learn their representations. We present a systematic analysis of this strategy: through spectral and geometric diagnostics, we show that mean initialization collapses all new tokens into a degenerate subspace, erasing inter-token distinctions that subsequent fine-tuning struggles to fully recover. These findings suggest that \emph{token initialization} is a key bottleneck when extending LMs with new vocabularies. Motivated by this diagnosis, we propose the \emph{Grounded Token Initialization Hypothesis}: linguistically grounding novel tokens in the pretrained embedding space before fine-tuning better enables the model to leverage its general-purpose knowledge for novel-token domains. We operationalize this hypothesis as GTI (Grounded Token Initialization), a lightweight grounding stage that, prior to fine-tuning, maps new tokens to distinct, semantically meaningful locations in the pretrained embedding space using only paired linguistic supervision. Despite its simplicity, GTI outperforms both mean initialization and existing auxiliary-task adaptation methods in the majority of evaluation settings across multiple generative recommendation benchmarks, including industry-scale and public datasets. Further analyses show that grounded embeddings produce richer inter-token structure that persists through fine-tuning, corroborating the hypothesis that initialization quality is a key bottleneck in vocabulary extension.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">从空间和时间的稀疏观测中重建完整的时空动力学仍然是复杂系统中的一个核心挑战，因为测量可能在空间上不完整，并且也可能仅限于狭窄的时间窗口。然而，近似完整的时空轨迹对于机械洞察和理解、模型校准和操作决策至关重要。我们引入了 LAPIS-SHRED（使用浅循环解码器从短时间序列进行潜在相位推断），这是一种模块化架构，可以从仅限于短时间窗口的稀疏传感器观测中重建和/或预测完整的时空动态。 LAPIS-SHRED 通过三阶段管道进行操作：(i) SHRED 模型完全基于模拟数据进行预训练，以将传感器时间历史映射到结构化潜在空间中，(ii) 时间序列模型，根据模拟导出的潜在轨迹进行训练，学习在时间上向前或向后传播潜在状态，以跨越短观测时间窗口中未观察到的时间区域，以及 (iii) 在部署时，只有来自真实系统的超稀疏传感器测量的短观察窗口提供的，冻结的SHRED模型和时间模型共同重建或预测完整的时空轨迹。该框架支持双向推理，继承了其模块化结构的数据同化和多尺度重建能力，并适应包括单帧终端输入在内的极端观测约束。我们通过涵盖复杂时空物理的六项实验对 LAPIS-SHRED 进行了评估：湍流、多尺度推进物理、挥发性燃烧瞬态和卫星衍生的环境场，强调了一种轻量级、模块化的架构，适合观测受到物理或后勤限制的操作环境。</p>
+                        <p class="abstract-zh">语言模型 (LM) 越来越多地通过用于特定领域任务的新的可学习词汇标记进行扩展，例如生成推荐中的语义 ID 标记。标准实践将这些新标记初始化为现有词汇嵌入的平均值，然后依靠监督微调来学习它们的表示。我们对该策略进行了系统分析：通过光谱和几何诊断，我们表明均值初始化将所有新标记折叠到退化子空间中，消除了后续微调难以完全恢复的标记间区别。这些发现表明，当使用新词汇表扩展 LM 时，\emph{token初始化} 是一个关键瓶颈。受此诊断的启发，我们提出了\emph{接地令牌初始化假设}：在微调之前，在预训练的嵌入空间中以语言为基础的新颖令牌使模型能够利用其针对新颖令牌领域的通用知识。我们将这一假设运作为 GTI（接地令牌初始化），这是一个轻量级的接地阶段，在微调之前，仅使用配对语言监督将新令牌映射到预训练嵌入空间中不同的、语义上有意义的位置。尽管很简单，但 GTI 在多个生成推荐基准（包括行业规模和公共数据集）的大多数评估设置中都优于均值初始化和现有的辅助任务适应方法。进一步的分析表明，扎根嵌入产生更丰富的令牌间结构，该结构通过微调而持续存在，证实了初始化质量是词汇扩展的关键瓶颈的假设。</p>
                     </div>
                 </article>
                 
@@ -458,18 +458,18 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 100</span>
+                        <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">TensorCEO/TensorCEO</strong>
-                            <p class="repo-desc">计算机毕业设计、机器学习毕业设计、深度学习毕业设计、原创AI项目源码【+论文】</p>
+                            <strong class="repo-name">Don-Youssef/ai-chatbot-colab</strong>
+                            <p class="repo-desc">使用 Google Colab、TensorFlow 和交互式霓虹灯矩阵界面从头开始构建您自己的 AI 聊天机器人。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">Don-Youssef/ai-chatbot-colab</strong>
-                            <p class="repo-desc">使用 Google Colab、TensorFlow 和交互式霓虹灯矩阵界面从头开始构建您自己的 AI 聊天机器人。</p>
+                            <strong class="repo-name">EimanTahir071/Probability-and-Statistics-for-Machine-Learning-and-Artificial-Intelligence</strong>
+                            <p class="repo-desc">概率和统计学构成了机器学习的数学基础，有助于量化数据和模型中的不确定性。它们支持推理、估计、假设检验和贝叶斯学习等关键任务。它们共同将随机性转化为可测量的置信度，从而实现更可靠的预测。</p>
                         </div>
                     </li>
                 
@@ -516,14 +516,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 1</span>
                         <div class="repo-info">
-                            <strong class="repo-name">JustForCodin/Centaurian_Architecture_Implementation</strong>
-                            <p class="repo-desc">用类似人类的认知构建我自己的人工智能。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 1</span>
-                        <div class="repo-info">
                             <strong class="repo-name">viniciusfinger/fhir-terminology-server-mcp-wrapper</strong>
                             <p class="repo-desc">MCP 服务器将 FHIR 术语服务公开为结构化、AI 和 LLM 友好的工具，旨在无缝连接到现有术语服务器。</p>
                         </div>
@@ -532,8 +524,16 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 1</span>
                         <div class="repo-info">
-                            <strong class="repo-name">craigm26/energy-ai-education</strong>
-                            <p class="repo-desc">能源 AI 教育中心 — 采用 EA-DX 交换格式为能源行业策划 ML/AI 学习材料</p>
+                            <strong class="repo-name">Giants-Ware/NexusAI-Production-Ready-AI-SaaS-Boilerplate</strong>
+                            <p class="repo-desc">在几天而不是几个月内推出您的人工智能产品。全面的开源 SaaS 样板，具有多模型 AI 支持、身份验证、多租户、计费和管理仪表板。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 1</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">majflower/ai-network-observer</strong>
+                            <p class="repo-desc">AI 支持的网络安全监控 - 通过 LLM 分析进行实时威胁检测</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-04-02 22:27:47
+        生成于 2026-04-03 22:28:47
     </footer>
 </body>
 </html>
