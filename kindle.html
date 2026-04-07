@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Enhancing<sup class='ipa'>/ɛnˈhænsɪŋ/</sup> Robustness<sup class='ipa'>/roʊˈbəstnəs/</sup> of Federated<sup class='ipa'>/ˈfɛdərˌeɪtɪd/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> via Server Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h2>
+                    <h2 class="paper-title">Beyond the Final Actor: Modeling<sup class='ipa'>/ˈmɑdəlɪŋ/</sup> the Dual Roles of Creator and Editor for Fine-Grained<sup class='ipa'>/finegrained*/</sup> LLM-Generated<sup class='ipa'>/llmgenerated*/</sup> Text Detection<sup class='ipa'>/dɪˈtɛkʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Van Sy Mai, Kushal Chakrabarti, Richard J. La</span>
-                        <span class="date">2026-04-03</span>
+                        <span class="authors">Yang Li, Qiang Sheng, Zhengjia Wang</span>
+                        <span class="date">2026-04-06</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">This paper explores the use of server learning for enhancing the robustness of federated learning against malicious attacks even when clients&#39; training data are not independent and identically distributed. We propose a heuristic algorithm that uses server learning and client update filtering in combination with geometric median aggregation. We demonstrate via experiments that this approach can achieve significant improvement in model accuracy even when the fraction of malicious clients is high, even more than $50\%$ in some cases, and the dataset utilized by the server is small and could be synthetic with its distribution not necessarily close to that of the clients&#39; aggregated data.</p>
+                        <p class="abstract-en">The misuse of large language models (LLMs) requires precise detection of synthetic text. Existing works mainly follow binary or ternary classification settings, which can only distinguish pure human/LLM text or collaborative text at best. This remains insufficient for the nuanced regulation, as the LLM-polished human text and humanized LLM text often trigger different policy consequences. In this paper, we explore fine-grained LLM-generated text detection under a rigorous four-class setting. To handle such complexities, we propose RACE (Rhetorical Analysis for Creator-Editor Modeling), a fine-grained detection method that characterizes the distinct signatures of creator and editor. Specifically, RACE utilizes Rhetorical Structure Theory to construct a logic graph for the creator&#39;s foundation while extracting Elementary Discourse Unit-level features for the editor&#39;s style. Experiments show that RACE outperforms 12 baselines in identifying fine-grained types with low false alarms, offering a policy-aligned solution for LLM regulation.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">本文探讨了使用服务器学习来增强联邦学习针对恶意攻击的鲁棒性，即使客户端的训练数据不是独立且同分布的。我们提出了一种启发式算法，该算法使用服务器学习和客户端更新过滤以及几何中值聚合相结合。我们通过实验证明，即使恶意客户端的比例很高，在某些情况下甚至超过 $50%$，并且服务器使用的数据集很小并且可以合成，其分布不一定接近客户端聚合数据的分布，这种方法也可以实现模型准确性的显着提高。</p>
+                        <p class="abstract-zh">大型语言模型 (LLM) 的滥用需要对合成文本进行精确检测。现有的作品主要遵循二元或三元分类设置，最多只能区分纯人类/LLM文本或协作文本。这对于细致入微的监管来说仍然是不够的，因为经过修饰的法学硕士文本和人性化的法学硕士文本往往会引发不同的政策后果。在本文中，我们探索了严格的四类设置下细粒度的 LLM 生成的文本检测。为了处理这种复杂性，我们提出了 RACE（创作者-编辑者建模修辞分析），这是一种细粒度的检测方法，可以表征创作者和编辑者的不同特征。具体来说，RACE利用修辞结构理论构建创作者基础的逻辑图，同时提取编辑者风格的基本话语单元级特征。实验表明，RACE 在识别误报率低的细粒度类型方面优于 12 个基线，为 LLM 监管提供了政策一致的解决方案。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">BAS: A Decision-Theoretic<sup class='ipa'>/decisiontheoretic*/</sup> Approach<sup class='ipa'>/əˈproʊʧ/</sup> to Evaluating<sup class='ipa'>/ɪˈvæljuˌeɪtɪŋ/</sup> Large Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Model Confidence<sup class='ipa'>/ˈkɑnfədɛns/</sup></h2>
+                    <h2 class="paper-title">Early Stopping<sup class='ipa'>/ˈstɑpɪŋ/</sup> for Large Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> Models via Confidence<sup class='ipa'>/ˈkɑnfədɛns/</sup> Dynamics<sup class='ipa'>/daɪˈnæmɪks/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Sean Wu, Fredrik K. Gustafsson, Edward Phillips</span>
-                        <span class="date">2026-04-03</span>
+                        <span class="authors">Parsa Hosseini, Sumit Nawathe, Mahdi Salmani</span>
+                        <span class="date">2026-04-06</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Large language models (LLMs) often produce confident but incorrect answers in settings where abstention would be safer. Standard evaluation protocols, however, require a response and do not account for how confidence should guide decisions under different risk preferences. To address this gap, we introduce the Behavioral Alignment Score (BAS), a decision-theoretic metric for evaluating how well LLM confidence supports abstention-aware decision making. BAS is derived from an explicit answer-or-abstain utility model and aggregates realized utility across a continuum of risk thresholds, yielding a measure of decision-level reliability that depends on both the magnitude and ordering of confidence. We show theoretically that truthful confidence estimates uniquely maximize expected BAS utility, linking calibration to decision-optimal behavior. BAS is related to proper scoring rules such as log loss, but differs structurally: log loss penalizes underconfidence and overconfidence symmetrically, whereas BAS imposes an asymmetric penalty that strongly prioritizes avoiding overconfident errors. Using BAS alongside widely used metrics such as ECE and AURC, we then construct a benchmark of self-reported confidence reliability across multiple LLMs and tasks. Our results reveal substantial variation in decision-useful confidence, and while larger and more accurate models tend to achieve higher BAS, even frontier models remain prone to severe overconfidence. Importantly, models with similar ECE or AURC can exhibit very different BAS due to highly overconfident errors, highlighting limitations of standard metrics. We further show that simple interventions, such as top-$k$ confidence elicitation and post-hoc calibration, can meaningfully improve confidence reliability. Overall, our work provides both a principled metric and a comprehensive benchmark for evaluating LLM confidence reliability.</p>
+                        <p class="abstract-en">Large reasoning models rely on long chain-of-thought generation to solve complex problems, but extended reasoning often incurs substantial computational cost and can even degrade performance due to overthinking. A key challenge is determining when the model should stop reasoning and produce the final answer. In this work, we study the confidence of intermediate answers during reasoning and observe two characteristic behaviors: correct reasoning trajectories often reach high-confidence answers early, while incorrect rollouts tend to produce long, unproductive reasoning traces and exhibit less reliable confidence dynamics. Motivated by these observations, we propose CoDE-Stop (Confidence Dynamics Early Stop), an early stopping method that leverages the dynamics of intermediate answer confidence to decide when to terminate reasoning, requiring no additional training and easily integrating into existing models. We evaluate CoDE-Stop on diverse reasoning and science benchmarks across multiple models. Compared to prior early stopping methods, it achieves a more favorable accuracy-compute tradeoff and reduces total token usage by 25-50% compared to standard full-length reasoning. In addition, we provide analyses of confidence dynamics during reasoning, offering insights into how confidence changes in both correct and incorrect trajectories.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">大型语言模型 (LLM) 通常会在弃权更安全的环境中产生自信但不正确的答案。然而，标准评估协议需要回应，并且没有考虑信心应如何指导不同风险偏好下的决策。为了解决这一差距，我们引入了行为一致性评分（BAS），这是一种决策理论指标，用于评估法学硕士信心对弃权意识决策的支持程度。 BAS 源自明确的“回答或弃权”效用模型，并汇总了一系列风险阈值内已实现的效用，从而产生了决策级别可靠性的衡量标准，该衡量标准取决于置信度的大小和顺序。我们从理论上证明，真实的置信度估计可以独特地最大化预期的 BAS 效用，将校准与决策最优行为联系起来。 BAS 与正确的评分规则（例如对数损失）相关，但在结构上有所不同：对数损失对称地惩罚信心不足和过度自信，而 BAS 施加不对称惩罚，强烈优先考虑避免过度自信的错误。然后，我们使用 BAS 以及 ECE 和 AURC 等广泛使用的指标，构建跨多个法学硕士和任务的自我报告置信可靠性基准。我们的结果揭示了决策有用置信度的巨大差异，虽然更大、更准确的模型往往会实现更高的 BAS，但即使是前沿模型仍然容易出现严重的过度自信。重要的是，由于高度过度自信的错误，具有类似 ECE 或 AURC 的模型可能会表现出截然不同的 BAS，这凸显了标准指标的局限性。我们进一步表明，简单的干预措施，例如 top-k$ 置信度启发和事后校准，可以有意义地提高置信度可靠性。总体而言，我们的工作为评估法学硕士信心可靠性提供了原则性指标和综合基准。</p>
+                        <p class="abstract-zh">大型推理模型依赖于长的思维链生成来解决复杂问题，但扩展推理通常会产生大量的计算成本，甚至会因过度思考而降低性能。一个关键的挑战是确定模型何时应停止推理并产生最终答案。在这项工作中，我们研究推理过程中中间答案的置信度，并观察两个特征行为：正确的推理轨迹通常会较早达到高置信度答案，而不正确的推出往往会产生长的、非生产性的推理轨迹，并表现出不太可靠的置信动态。受这些观察的启发，我们提出了 CoDE-Stop（置信动态提前停止），这是一种提前停止方法，利用中间答案置信度的动态来决定何时终止推理，不需要额外的训练，并且可以轻松集成到现有模型中。我们在多个模型的不同推理和科学基准上评估 CoDE-Stop。与之前的早期停止方法相比，它实现了更有利的准确性计算权衡，并且与标准全长推理相比，总令牌使用量减少了 25-50%。此外，我们还提供推理过程中信心动态的分析，深入了解信心在正确和错误轨迹中如何变化。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">PR3DICTR: A modular AI framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup> for medical 3D image-based<sup class='ipa'>/imagebased*/</sup> detection<sup class='ipa'>/dɪˈtɛkʃən/</sup> and outcome prediction<sup class='ipa'>/priˈdɪkʃən/</sup></h2>
+                    <h2 class="paper-title">Your Pre-trained<sup class='ipa'>/pretrained*/</sup> Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Model Secretly<sup class='ipa'>/ˈsikrɪtli/</sup> Knows Restoration<sup class='ipa'>/ˌrɛstərˈeɪʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Daniel C. MacRae, Luuk van der Hoek, Robert van der Wal</span>
-                        <span class="date">2026-04-03</span>
+                        <span class="authors">Sudarshan Rajagopalan, Vishal M. Patel</span>
+                        <span class="date">2026-04-06</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Three-dimensional medical image data and computer-aided decision making, particularly using deep learning, are becoming increasingly important in the medical field. To aid in these developments we introduce PR3DICTR: Platform for Research in 3D Image Classification and sTandardised tRaining. Built using community-standard distributions (PyTorch and MONAI), PR3DICTR provides an open-access, flexible and convenient framework for prediction model development, with an explicit focus on classification using three-dimensional medical image data. By combining modular design principles and standardization, it aims to alleviate developmental burden whilst retaining adjustability. It provides users with a wealth of pre-established functionality, for instance in model architecture design options, hyper-parameter solutions and training methodologies, but still gives users the opportunity and freedom to ``plug in&#39;&#39; their own solutions or modules. PR3DICTR can be applied to any binary or event-based three-dimensional classification task and can work with as little as two lines of code.</p>
+                        <p class="abstract-en">Pre-trained diffusion models have enabled significant advancements in All-in-One Restoration (AiOR), offering improved perceptual quality and generalization. However, diffusion-based restoration methods primarily rely on fine-tuning or Control-Net style modules to leverage the pre-trained diffusion model&#39;s priors for AiOR. In this work, we show that these pre-trained diffusion models inherently possess restoration behavior, which can be unlocked by directly learning prompt embeddings at the output of the text encoder. Interestingly, this behavior is largely inaccessible through text prompts and text-token embedding optimization. Furthermore, we observe that naive prompt learning is unstable because the forward noising process using degraded images is misaligned with the reverse sampling trajectory. To resolve this, we train prompts within a diffusion bridge formulation that aligns training and inference dynamics, enforcing a coherent denoising path from noisy degraded states to clean images. Building on these insights, we introduce our lightweight learned prompts on the pre-trained WAN video model and FLUX image models, converting them into high-performing restoration models. Extensive experiments demonstrate that our approach achieves competitive performance and generalization across diverse degradations, while avoiding fine-tuning and restoration-specific control modules.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">三维医学图像数据和计算机辅助决策，特别是使用深度学习，在医学领域变得越来越重要。为了帮助这些发展，我们引入了 PR3DICTR：3D 图像分类和标准化训练研究平台。 PR3DICTR 使用社区标准发行版（PyTorch 和 MONAI）构建，为预测模型开发提供了一个开放访问、灵活且方便的框架，并明确关注使用三维医学图像数据进行分类。通过将模块化设计原则和标准化相结合，它旨在减轻开发负担，同时保留可调节性。它为用户提供了大量预先建立的功能，例如模型架构设计选项、超参数解决方案和训练方法，但仍然为用户提供了“插入”自己的解决方案或模块的机会和自由。 PR3DICTR 可应用于任何二元或基于事件的三维分类任务，并且只需两行代码即可工作。</p>
+                        <p class="abstract-zh">预训练的扩散模型使一体化恢复 (AiOR) 取得了显着进步，提供了改进的感知质量和泛化能力。然而，基于扩散的恢复方法主要依赖于微调或 Control-Net 风格的模块来利用 AiOR 的预训练扩散模型的先验。在这项工作中，我们表明这些预训练的扩散模型本质上具有恢复行为，可以通过直接学习文本编码器输出处的提示嵌入来解锁。有趣的是，这种行为在很大程度上无法通过文本提示和文本令牌嵌入优化来实现。此外，我们观察到朴素提示学习是不稳定的，因为使用退化图像的前向噪声过程与反向采样轨迹不一致。为了解决这个问题，我们在扩散桥公式中训练提示，使训练和推理动力学保持一致，强制执行从噪声退化状态到干净图像的连贯去噪路径。基于这些见解，我们在预先训练的 WAN 视频模型和 FLUX 图像模型上引入了轻量级学习提示，将它们转换为高性能恢复模型。大量的实验表明，我们的方法在不同的退化过程中实现了具有竞争力的性能和泛化性，同时避免了微调和特定于恢复的控制模块。</p>
                     </div>
                 </article>
                 
@@ -458,7 +458,15 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 9</span>
+                        <span class="repo-stars">★ 12</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">chappyasel/meta-kb</strong>
+                            <p class="repo-desc">自我完善的LLM知识库 关于自我完善的LLM知识库</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 10</span>
                         <div class="repo-info">
                             <strong class="repo-name">Zeyad-Azima/AgentsBear</strong>
                             <p class="repo-desc">来自 YAML 的自治多代理管道。任何法学硕士。零样板。</p>
@@ -474,15 +482,15 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 8</span>
+                        <span class="repo-stars">★ 7</span>
                         <div class="repo-info">
-                            <strong class="repo-name">chappyasel/meta-kb</strong>
-                            <p class="repo-desc">自我完善的LLM知识库 关于自我完善的LLM知识库</p>
+                            <strong class="repo-name">dcssoftware/bafoeg-manager</strong>
+                            <p class="repo-desc">Eine 基础 BAföG Antragsverwaltung inkl。 lokaler KI Assistenen (z.B. Ministral 14B) zur effektiveren Bearbeitung von BAföG。 Rückzahlungen sowie der “BAföG Bot” wie er politisch genannt wird, sind skizziert aber noch nicht nicht Finalisiert</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
+                        <span class="repo-stars">★ 5</span>
                         <div class="repo-info">
                             <strong class="repo-name">yongquantan/dependency-guard</strong>
                             <p class="repo-desc">AI 编码代理的供应链安全运行时</p>
@@ -494,6 +502,14 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">utkukose/gemex</strong>
                             <p class="repo-desc">GEMEX 是一个新颖的、与模型无关的可解释 AI (XAI) 库，以黎曼信息几何和微分几何为基础。它将经过训练的模型视为定义配备费希尔信息度量的统计流形，并从该流形的内在几何结构中得出所有解释。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">formatho/awesome-ai-tools</strong>
+                            <p class="repo-desc">🤖 不断更新、精选的高质量人工智能工具和资源列表。由自主人工智能代理每 6 小时更新一次。</p>
                         </div>
                     </li>
                 
@@ -518,22 +534,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">LTPratham/neurostride</strong>
                             <p class="repo-desc">NeuroStride 是一个人工智能驱动的神经康复平台，结合了基于 BCI 的机器人控制、实时运动指导、临床人工智能辅助、多语言语音支持和智能药房集成，使神经康复可以在家中进行。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">Dex865378/Dex865378-MCP-GODOT-63-HERRAMIENTAS</strong>
-                            <p class="repo-desc">MCP de Godot 全面专业，涵盖基本、高级和困难的全部可能。罪恶无恶意。 para todos el mcp que cree.</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 1</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">meta-evo-creator/mev-evolve</strong>
-                            <p class="repo-desc">AI自学习和进化技能——使AI助手能够自主学习、改进和创造新技能</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-04-06 22:32:30
+        生成于 2026-04-07 22:34:28
     </footer>
 </body>
 </html>
