@@ -397,7 +397,55 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             <p class="section-subtitle">ArXiv 最新论文精选</p>
             
             
-                <p class="empty-state">暂无论文数据</p>
+                
+                <article class="paper-card active" data-index="0">
+                    <h2 class="paper-title">Act Wisely: Cultivating<sup class='ipa'>/ˈkəltɪˌveɪtɪŋ/</sup> Meta-Cognitive<sup class='ipa'>/metacognitive*/</sup> Tool Use in Agentic Multimodal<sup class='ipa'>/multimodal*/</sup> Models</h2>
+                    <p class="paper-meta">
+                        <span class="authors">Shilin Yan, Jintao Tong, Hongwei Xue</span>
+                        <span class="date">2026-04-09</span>
+                    </p>
+                    
+                    <div class="paper-abstract">
+                        <p class="abstract-en">The advent of agentic multimodal models has empowered systems to actively interact with external environments. However, current agents suffer from a profound meta-cognitive deficit: they struggle to arbitrate between leveraging internal knowledge and querying external utilities. Consequently, they frequently fall prey to blind tool invocation, resorting to reflexive tool execution even when queries are resolvable from the raw visual context. This pathological behavior precipitates severe latency bottlenecks and injects extraneous noise that derails sound reasoning. Existing reinforcement learning protocols attempt to mitigate this via a scalarized reward that penalizes tool usage. Yet, this coupled formulation creates an irreconcilable optimization dilemma: an aggressive penalty suppresses essential tool use, whereas a mild penalty is entirely subsumed by the variance of the accuracy reward during advantage normalization, rendering it impotent against tool overuse. To transcend this bottleneck, we propose HDPO, a framework that reframes tool efficiency from a competing scalar objective to a strictly conditional one. By eschewing reward scalarization, HDPO maintains two orthogonal optimization channels: an accuracy channel that maximizes task correctness, and an efficiency channel that enforces execution economy exclusively within accurate trajectories via conditional advantage estimation. This decoupled architecture naturally induces a cognitive curriculum-compelling the agent to first master task resolution before refining its self-reliance. Extensive evaluations demonstrate that our resulting model, Metis, reduces tool invocations by orders of magnitude while simultaneously elevating reasoning accuracy.</p>
+                        <hr class="divider">
+                        <p class="abstract-zh">代理多模式模型的出现使系统能够主动与外部环境交互。然而，当前的智能体存在严重的元认知缺陷：他们很难在利用内部知识和查询外部实用程序之间进行仲裁。因此，它们经常成为盲目工具调用的牺牲品，即使可以从原始视觉上下文解析查询，也会诉诸自反工具执行。这种病态行为会导致严重的延迟瓶颈，并注入额外的噪声，从而扰乱声音推理。现有的强化学习协议试图通过惩罚工具使用的分级奖励来缓解这种情况。然而，这种耦合的公式造成了一个不可调和的优化困境：激进的惩罚会抑制必要的工具使用，而温和的惩罚则完全被优势归一化过程中准确度奖励的方差所包含，从而使其对工具过度使用无能为力。为了突破这一瓶颈，我们提出了 HDPO，这是一种将工具效率从竞争标量目标重新构建为严格条件目标的框架。通过避免奖励缩放，HDPO 维护了两个正交优化通道：一个最大化任务正确性的准确性通道，以及一个通过条件优势估计在精确轨迹内强制执行经济的效率通道。这种解耦的架构自然会引发认知课程——迫使智能体在完善其自力更生之前首先掌握任务解决方案。广泛的评估表明，我们生成的模型 Metis 将工具调用减少了几个数量级，同时提高了推理准确性。</p>
+                    </div>
+                </article>
+                
+                <article class="paper-card " data-index="1">
+                    <h2 class="paper-title">SIM1: Physics-Aligned<sup class='ipa'>/physicsaligned*/</sup> Simulator<sup class='ipa'>/ˈsɪmjəˌleɪtər/</sup> as Zero-Shot<sup class='ipa'>/zeroshot*/</sup> Data Scaler in Deformable<sup class='ipa'>/deformable*/</sup> Worlds</h2>
+                    <p class="paper-meta">
+                        <span class="authors">Yunsong Zhou, Hangxu Liu, Xuekun Jiang</span>
+                        <span class="date">2026-04-09</span>
+                    </p>
+                    
+                    <div class="paper-abstract">
+                        <p class="abstract-en">Robotic manipulation with deformable objects represents a data-intensive regime in embodied learning, where shape, contact, and topology co-evolve in ways that far exceed the variability of rigids. Although simulation promises relief from the cost of real-world data acquisition, prevailing sim-to-real pipelines remain rooted in rigid-body abstractions, producing mismatched geometry, fragile soft dynamics, and motion primitives poorly suited for cloth interaction. We posit that simulation fails not for being synthetic, but for being ungrounded. To address this, we introduce SIM1, a physics-aligned real-to-sim-to-real data engine that grounds simulation in the physical world. Given limited demonstrations, the system digitizes scenes into metric-consistent twins, calibrates deformable dynamics through elastic modeling, and expands behaviors via diffusion-based trajectory generation with quality filtering. This pipeline transforms sparse observations into scaled synthetic supervision with near-demonstration fidelity. Experiments show that policies trained on purely synthetic data achieve parity with real-data baselines at a 1:15 equivalence ratio, while delivering 90% zero-shot success and 50% generalization gains in real-world deployment. These results validate physics-aligned simulation as scalable supervision for deformable manipulation and a practical pathway for data-efficient policy learning.</p>
+                        <hr class="divider">
+                        <p class="abstract-zh">对可变形物体的机器人操纵代表了体现学习中的数据密集型机制，其中形状、接触和拓扑以远远超过刚体可变性的方式共同演化。尽管模拟有望减轻现实世界数据采集的成本，但流行的模拟到真实管道仍然植根于刚体抽象，产生不匹配的几何形状、脆弱的软动力学和不适合布料交互的运动基元。我们认为模拟之所以失败，不是因为它是综合性的，而是因为它没有根据。为了解决这个问题，我们引入了 SIM1，这是一种物理一致的真实到模拟到真实的数据引擎，它为物理世界中的模拟奠定了基础。在有限的演示下，该系统将场景数字化为度量一致的双胞胎，通过弹性建模校准可变形动力学，并通过基于扩散的轨迹生成和质量过滤来扩展行为。该管道将​​稀疏观察结果转化为具有接近演示保真度的规模化综合监督。实验表明，基于纯合成数据训练的策略以 1:15 的等比实现了与真实数据基线的同等水平，同时在实际部署中实现了 90% 的零样本成功率和 50% 的泛化收益。这些结果验证了物理对齐模拟作为可变形操纵的可扩展监督和数据高效政策学习的实用途径。</p>
+                    </div>
+                </article>
+                
+                <article class="paper-card " data-index="2">
+                    <h2 class="paper-title">Seeing but Not Thinking:<sup class='ipa'>/ˈθɪŋkɪŋ/</sup> Routing Distraction<sup class='ipa'>/dɪˈstrækʃən/</sup> in Multimodal<sup class='ipa'>/multimodal*/</sup> Mixture-of-Experts<sup class='ipa'>/mixtureofexperts*/</sup></h2>
+                    <p class="paper-meta">
+                        <span class="authors">Haolei Xu, Haiwen Hong, Hongxing Li</span>
+                        <span class="date">2026-04-09</span>
+                    </p>
+                    
+                    <div class="paper-abstract">
+                        <p class="abstract-en">Multimodal Mixture-of-Experts (MoE) models have achieved remarkable performance on vision-language tasks. However, we identify a puzzling phenomenon termed Seeing but Not Thinking: models accurately perceive image content yet fail in subsequent reasoning, while correctly solving identical problems presented as pure text. Through systematic analysis, we first verify that cross-modal semantic sharing exists in MoE architectures, ruling out semantic alignment failure as the sole explanation. We then reveal that visual experts and domain experts exhibit layer-wise separation, with image inputs inducing significant routing divergence from text inputs in middle layers where domain experts concentrate. Based on these findings, we propose the Routing Distraction hypothesis: when processing visual inputs, the routing mechanism fails to adequately activate task-relevant reasoning experts. To validate this hypothesis, we design a routing-guided intervention method that enhances domain expert activation. Experiments on three multimodal MoE models across six benchmarks demonstrate consistent improvements, with gains of up to 3.17% on complex visual reasoning tasks. Our analysis further reveals that domain expert identification locates cognitive functions rather than sample-specific solutions, enabling effective transfer across tasks with different information structures.</p>
+                        <hr class="divider">
+                        <p class="abstract-zh">多模态专家混合 (MoE) 模型在视觉语言任务上取得了显着的性能。然而，我们发现了一个令人费解的现象，称为“见而不思”：模型准确地感知图像内容，但在后续推理中失败，同时正确地解决以纯文本形式呈现的相同问题。通过系统分析，我们首先验证了 MoE 架构中存在跨模态语义共享，排除了语义对齐失败作为唯一的解释。然后，我们发现视觉专家和领域专家表现出分层分离，图像输入导致领域专家集中的中间层中的文本输入与文本输入存在显着的路由差异。基于这些发现，我们提出了路由干扰假设：在处理视觉输入时，路由机制无法充分激活与任务相关的推理专家。为了验证这一假设，我们设计了一种路由引导的干预方法，可以增强领域专家的激活。对六个基准的三个多模态 MoE 模型进行的实验显示出持续的改进，在复杂的视觉推理任务上的增益高达 3.17%。我们的分析进一步表明，领域专家识别定位的是认知功能，而不是特定于样本的解决方案，从而能够在具有不同信息结构的任务之间进行有效转移。</p>
+                    </div>
+                </article>
+                
+                
+                <div class="nav-bar">
+                    <button class="nav-btn" id="prev-paper">← 上一篇</button>
+                    <span class="nav-indicator" id="paper-indicator">1 / 3</span>
+                    <button class="nav-btn" id="next-paper">下一篇 →</button>
+                </div>
             
         </section>
         
@@ -410,26 +458,10 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 22</span>
+                        <span class="repo-stars">★ 25</span>
                         <div class="repo-info">
                             <strong class="repo-name">kklt92/awesome-ai-extensions</strong>
                             <p class="repo-desc">由人工智能驱动的浏览器扩展、插件和附加组件的精选列表。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 19</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">chappyasel/meta-kb</strong>
-                            <p class="repo-desc">关于LLM代理基础设施的自我完善知识库</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 18</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">jegly/OfflineLLM</strong>
-                            <p class="repo-desc">一款隐私优先的 Android 聊天应用程序，完全在设备上运行大型语言模型。没有互联网，没有云，没有跟踪。使用 Kotlin、Jetpack Compose 和 llama.cpp 构建，并具有优化的 ARM NEON/SVE 推理。</p>
                         </div>
                     </li>
                 
@@ -438,14 +470,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">7WaySecurity/ai_osint</strong>
                             <p class="repo-desc">🤖 精心策划的 AI OSINT 资源 — Google dorks、Shodan 查询、GitHub dorks 以及发现暴露的 LLM 端点、泄露的 AI API 密钥、配置错误的向量数据库和不受保护的 AI 代理的技术</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 10</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">Zeyad-Azima/AgentsBear</strong>
-                            <p class="repo-desc">来自 YAML 的自治多代理管道。任何法学硕士。零样板。</p>
                         </div>
                     </li>
                 
@@ -466,10 +490,10 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 7</span>
+                        <span class="repo-stars">★ 8</span>
                         <div class="repo-info">
-                            <strong class="repo-name">fs0ci5ty/Artificial-Intelligence-Learning-Resources-Collection</strong>
-                            <p class="repo-desc">来自大学、公司和行业专家的免费 AI/ML 学习材料的开源汇编。</p>
+                            <strong class="repo-name">lucidrains/env-ssl-wrapper</strong>
+                            <p class="repo-desc">环境的包装器将负责自动提供自我监督学习的表示</p>
                         </div>
                     </li>
                 
@@ -482,10 +506,34 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 6</span>
+                        <span class="repo-stars">★ 4</span>
                         <div class="repo-info">
-                            <strong class="repo-name">lucidrains/env-ssl-wrapper</strong>
-                            <p class="repo-desc">环境的包装器将负责自动提供自我监督学习的表示</p>
+                            <strong class="repo-name">Sunil56224972/Skin-Tone-Detector</strong>
+                            <p class="repo-desc">肤色检测器 - 由人工智能驱动的计算机视觉项目，可分析图像以使用图像处理和机器学习来检测和分类人类肤色。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">mahadillahm4di-cyber/mh-gdpr-ai.eu-s-plus</strong>
+                            <p class="repo-desc">切换 GPT ↔ Claude ↔ Llama，永远不会失去上下文。您的 AI 大脑就像 3D 星星。 100% 本地——你的记忆属于你，而不是 OpenAI。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 4</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">zaber-dev/ai-prompt-simulation</strong>
+                            <p class="repo-desc">一个专业的 Python 框架，用于测试提示强度、质量和真正的自主代理有效性。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 1</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">LTPratham/neurostride</strong>
+                            <p class="repo-desc">NeuroStride 是一个人工智能驱动的神经康复平台，结合了基于 BCI 的机器人控制、实时运动指导、临床人工智能辅助、多语言语音支持和智能药房集成，使神经康复可以在家中进行。</p>
                         </div>
                     </li>
                 
@@ -1047,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-04-10 22:33:37
+        生成于 2026-04-11 22:27:54
     </footer>
 </body>
 </html>
