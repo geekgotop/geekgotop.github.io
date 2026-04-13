@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Act Wisely: Cultivating<sup class='ipa'>/ˈkəltɪˌveɪtɪŋ/</sup> Meta-Cognitive<sup class='ipa'>/metacognitive*/</sup> Tool Use in Agentic Multimodal<sup class='ipa'>/multimodal*/</sup> Models</h2>
+                    <h2 class="paper-title">Large Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models Generate<sup class='ipa'>/ˈʤɛnərˌeɪt/</sup> Harmful Content Using a Distinct,<sup class='ipa'>/dɪˈstɪŋkt/</sup> Unified Mechanism<sup class='ipa'>/ˈmɛkəˌnɪzəm/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Shilin Yan, Jintao Tong, Hongwei Xue</span>
-                        <span class="date">2026-04-09</span>
+                        <span class="authors">Hadas Orgad, Boyi Wei, Kaden Zheng</span>
+                        <span class="date">2026-04-10</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">The advent of agentic multimodal models has empowered systems to actively interact with external environments. However, current agents suffer from a profound meta-cognitive deficit: they struggle to arbitrate between leveraging internal knowledge and querying external utilities. Consequently, they frequently fall prey to blind tool invocation, resorting to reflexive tool execution even when queries are resolvable from the raw visual context. This pathological behavior precipitates severe latency bottlenecks and injects extraneous noise that derails sound reasoning. Existing reinforcement learning protocols attempt to mitigate this via a scalarized reward that penalizes tool usage. Yet, this coupled formulation creates an irreconcilable optimization dilemma: an aggressive penalty suppresses essential tool use, whereas a mild penalty is entirely subsumed by the variance of the accuracy reward during advantage normalization, rendering it impotent against tool overuse. To transcend this bottleneck, we propose HDPO, a framework that reframes tool efficiency from a competing scalar objective to a strictly conditional one. By eschewing reward scalarization, HDPO maintains two orthogonal optimization channels: an accuracy channel that maximizes task correctness, and an efficiency channel that enforces execution economy exclusively within accurate trajectories via conditional advantage estimation. This decoupled architecture naturally induces a cognitive curriculum-compelling the agent to first master task resolution before refining its self-reliance. Extensive evaluations demonstrate that our resulting model, Metis, reduces tool invocations by orders of magnitude while simultaneously elevating reasoning accuracy.</p>
+                        <p class="abstract-en">Large language models (LLMs) undergo alignment training to avoid harmful behaviors, yet the resulting safeguards remain brittle: jailbreaks routinely bypass them, and fine-tuning on narrow domains can induce ``emergent misalignment&#39;&#39; that generalizes broadly. Whether this brittleness reflects a fundamental lack of coherent internal organization for harmfulness remains unclear. Here we use targeted weight pruning as a causal intervention to probe the internal organization of harmfulness in LLMs. We find that harmful content generation depends on a compact set of weights that are general across harm types and distinct from benign capabilities. Aligned models exhibit a greater compression of harm generation weights than unaligned counterparts, indicating that alignment reshapes harmful representations internally--despite the brittleness of safety guardrails at the surface level. This compression explains emergent misalignment: if weights of harmful capabilities are compressed, fine-tuning that engages these weights in one domain can trigger broad misalignment. Consistent with this, pruning harm generation weights in a narrow domain substantially reduces emergent misalignment. Notably, LLMs harmful generation capability is dissociated from how they recognize and explain such content. Together, these results reveal a coherent internal structure for harmfulness in LLMs that may serve as a foundation for more principled approaches to safety.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">代理多模式模型的出现使系统能够主动与外部环境交互。然而，当前的智能体存在严重的元认知缺陷：他们很难在利用内部知识和查询外部实用程序之间进行仲裁。因此，它们经常成为盲目工具调用的牺牲品，即使可以从原始视觉上下文解析查询，也会诉诸自反工具执行。这种病态行为会导致严重的延迟瓶颈，并注入额外的噪声，从而扰乱声音推理。现有的强化学习协议试图通过惩罚工具使用的分级奖励来缓解这种情况。然而，这种耦合的公式造成了一个不可调和的优化困境：激进的惩罚会抑制必要的工具使用，而温和的惩罚则完全被优势归一化过程中准确度奖励的方差所包含，从而使其对工具过度使用无能为力。为了突破这一瓶颈，我们提出了 HDPO，这是一种将工具效率从竞争标量目标重新构建为严格条件目标的框架。通过避免奖励缩放，HDPO 维护了两个正交优化通道：一个最大化任务正确性的准确性通道，以及一个通过条件优势估计在精确轨迹内强制执行经济的效率通道。这种解耦的架构自然会引发认知课程——迫使智能体在完善其自力更生之前首先掌握任务解决方案。广泛的评估表明，我们生成的模型 Metis 将工具调用减少了几个数量级，同时提高了推理准确性。</p>
+                        <p class="abstract-zh">大型语言模型（LLM）经过对齐训练以避免有害行为，但由此产生的保护措施仍然脆弱：越狱通常会绕过它们，而在狭窄领域的微调可能会导致广泛推广的“紧急失调”。这种脆性是否反映了内部组织根本上缺乏连贯的危害性，目前尚不清楚。在这里，我们使用有针对性的权重修剪作为因果干预措施来探讨法学硕士有害性的内部组织。我们发现有害内容的生成取决于一组紧凑的权重，这些权重在各种危害类型中都是通用的，并且与良性功能不同。对齐的模型比未对齐的模型表现出更大的伤害生成权重压缩，这表明对齐在内部重塑了有害的表征——尽管安全护栏在表面上很脆弱。这种压缩解释了出现的失调：如果有害能力的权重被压缩，那么在一个领域中对这些权重进行微调可能会引发广泛的失调。与此一致的是，在狭窄的域中修剪损害生成权重可以大大减少紧急的错位。值得注意的是，法学硕士的有害生成能力与他们如何识别和解释此类内容无关。总之，这些结果揭示了法学硕士有害性的连贯内部结构，这可以作为更有原则的安全方法的基础。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">SIM1: Physics-Aligned<sup class='ipa'>/physicsaligned*/</sup> Simulator<sup class='ipa'>/ˈsɪmjəˌleɪtər/</sup> as Zero-Shot<sup class='ipa'>/zeroshot*/</sup> Data Scaler in Deformable<sup class='ipa'>/deformable*/</sup> Worlds</h2>
+                    <h2 class="paper-title">Case-Grounded<sup class='ipa'>/casegrounded*/</sup> Evidence<sup class='ipa'>/ˈɛvədəns/</sup> Verification:<sup class='ipa'>/ˌvɛrəfəˈkeɪʃən/</sup> A Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup> for Constructing<sup class='ipa'>/kənˈstrəktɪŋ/</sup> Evidence-Sensitive<sup class='ipa'>/evidencesensitive*/</sup> Supervision<sup class='ipa'>/ˌsupərˈvɪʒən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Yunsong Zhou, Hangxu Liu, Xuekun Jiang</span>
-                        <span class="date">2026-04-09</span>
+                        <span class="authors">Soroosh Tayebi Arasteh, Mehdi Joodaki, Mahshad Lotfinia</span>
+                        <span class="date">2026-04-10</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Robotic manipulation with deformable objects represents a data-intensive regime in embodied learning, where shape, contact, and topology co-evolve in ways that far exceed the variability of rigids. Although simulation promises relief from the cost of real-world data acquisition, prevailing sim-to-real pipelines remain rooted in rigid-body abstractions, producing mismatched geometry, fragile soft dynamics, and motion primitives poorly suited for cloth interaction. We posit that simulation fails not for being synthetic, but for being ungrounded. To address this, we introduce SIM1, a physics-aligned real-to-sim-to-real data engine that grounds simulation in the physical world. Given limited demonstrations, the system digitizes scenes into metric-consistent twins, calibrates deformable dynamics through elastic modeling, and expands behaviors via diffusion-based trajectory generation with quality filtering. This pipeline transforms sparse observations into scaled synthetic supervision with near-demonstration fidelity. Experiments show that policies trained on purely synthetic data achieve parity with real-data baselines at a 1:15 equivalence ratio, while delivering 90% zero-shot success and 50% generalization gains in real-world deployment. These results validate physics-aligned simulation as scalable supervision for deformable manipulation and a practical pathway for data-efficient policy learning.</p>
+                        <p class="abstract-en">Evidence-grounded reasoning requires more than attaching retrieved text to a prediction: a model should make decisions that depend on whether the provided evidence supports the target claim. In practice, this often fails because supervision is weak, evidence is only loosely tied to the claim, and evaluation does not test evidence dependence directly. We introduce case-grounded evidence verification, a general framework in which a model receives a local case context, external evidence, and a structured claim, and must decide whether the evidence supports the claim for that case. Our key contribution is a supervision construction procedure that generates explicit support examples together with semantically controlled non-support examples, including counterfactual wrong-state and topic-related negatives, without manual evidence annotation. We instantiate the framework in radiology and train a standard verifier on the resulting support task. The learned verifier substantially outperforms both case-only and evidence-only baselines, remains strong under correct evidence, and collapses when evidence is removed or swapped, indicating genuine evidence dependence. This behavior transfers across unseen evidence articles and an external case distribution, though performance degrades under evidence-source shift and remains sensitive to backbone choice. Overall, the results suggest that a major bottleneck in evidence grounding is not only model capacity, but the lack of supervision that encodes the causal role of evidence.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">对可变形物体的机器人操纵代表了体现学习中的数据密集型机制，其中形状、接触和拓扑以远远超过刚体可变性的方式共同演化。尽管模拟有望减轻现实世界数据采集的成本，但流行的模拟到真实管道仍然植根于刚体抽象，产生不匹配的几何形状、脆弱的软动力学和不适合布料交互的运动基元。我们认为模拟之所以失败，不是因为它是综合性的，而是因为它没有根据。为了解决这个问题，我们引入了 SIM1，这是一种物理一致的真实到模拟到真实的数据引擎，它为物理世界中的模拟奠定了基础。在有限的演示下，该系统将场景数字化为度量一致的双胞胎，通过弹性建模校准可变形动力学，并通过基于扩散的轨迹生成和质量过滤来扩展行为。该管道将​​稀疏观察结果转化为具有接近演示保真度的规模化综合监督。实验表明，基于纯合成数据训练的策略以 1:15 的等比实现了与真实数据基线的同等水平，同时在实际部署中实现了 90% 的零样本成功率和 50% 的泛化收益。这些结果验证了物理对齐模拟作为可变形操纵的可扩展监督和数据高效政策学习的实用途径。</p>
+                        <p class="abstract-zh">基于证据的推理需要的不仅仅是将检索到的文本附加到预测中：模型应该根据所提供的证据是否支持目标主张来做出决策。在实践中，这常常会失败，因为监督薄弱，证据与主张的联系松散，并且评估并不直接测试证据依赖性。我们引入了基于案例的证据验证，这是一个通用框架，其中模型接收本地案例背景、外部证据和结构化主张，并且必须确定证据是否支持该案例的主张。我们的主要贡献是一个监督构建过程，它生成显式的支持示例以及语义控制的非支持示例，包括反事实的错误状态和与主题相关的否定，而无需手动证据注释。我们在放射学中实例化该框架，并针对所产生的支持任务训练标准验证者。学习验证器的性能大大优于仅案例基线和仅证据基线，在正确的证据下保持强大，并在证据被删除或交换时崩溃，表明真正的证据依赖。这种行为在看不见的证据文章和外部案例分布之间转移，尽管在证据源转移的情况下性能会下降，并且对主干选择仍然敏感。总体而言，结果表明证据基础的主要瓶颈不仅是模型能力，而且缺乏对证据因果作用进行编码的监督。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Seeing but Not Thinking:<sup class='ipa'>/ˈθɪŋkɪŋ/</sup> Routing Distraction<sup class='ipa'>/dɪˈstrækʃən/</sup> in Multimodal<sup class='ipa'>/multimodal*/</sup> Mixture-of-Experts<sup class='ipa'>/mixtureofexperts*/</sup></h2>
+                    <h2 class="paper-title">Seeing is Believing:<sup class='ipa'>/bɪˈlivɪŋ/</sup> Robust Vision-Guided<sup class='ipa'>/visionguided*/</sup> Cross-Modal<sup class='ipa'>/crossmodal*/</sup> Prompt Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> under Label Noise</h2>
                     <p class="paper-meta">
-                        <span class="authors">Haolei Xu, Haiwen Hong, Hongxing Li</span>
-                        <span class="date">2026-04-09</span>
+                        <span class="authors">Zibin Geng, Xuefeng Jiang, Jia Li</span>
+                        <span class="date">2026-04-10</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Multimodal Mixture-of-Experts (MoE) models have achieved remarkable performance on vision-language tasks. However, we identify a puzzling phenomenon termed Seeing but Not Thinking: models accurately perceive image content yet fail in subsequent reasoning, while correctly solving identical problems presented as pure text. Through systematic analysis, we first verify that cross-modal semantic sharing exists in MoE architectures, ruling out semantic alignment failure as the sole explanation. We then reveal that visual experts and domain experts exhibit layer-wise separation, with image inputs inducing significant routing divergence from text inputs in middle layers where domain experts concentrate. Based on these findings, we propose the Routing Distraction hypothesis: when processing visual inputs, the routing mechanism fails to adequately activate task-relevant reasoning experts. To validate this hypothesis, we design a routing-guided intervention method that enhances domain expert activation. Experiments on three multimodal MoE models across six benchmarks demonstrate consistent improvements, with gains of up to 3.17% on complex visual reasoning tasks. Our analysis further reveals that domain expert identification locates cognitive functions rather than sample-specific solutions, enabling effective transfer across tasks with different information structures.</p>
+                        <p class="abstract-en">Prompt learning is a parameter-efficient approach for vision-language models, yet its robustness under label noise is less investigated. Visual content contains richer and more reliable semantic information, which remains more robust under label noise. However, the prompt itself is highly susceptible to label noise. Motivated by this intuition, we propose VisPrompt, a lightweight and robust vision-guided prompt learning framework for noisy-label settings. Specifically, we exploit a cross-modal attention mechanism to reversely inject visual semantics into prompt representations. This enables the prompt tokens to selectively aggregate visual information relevant to the current sample, thereby improving robustness by anchoring prompt learning to stable instance-level visual evidence and reducing the influence of noisy supervision. To address the instability caused by using the same way of injecting visual information for all samples, despite differences in the quality of their visual cues, we further introduce a lightweight conditional modulation mechanism to adaptively control the strength of visual information injection, which strikes a more robust balance between text-side semantic priors and image-side instance evidence. The proposed framework effectively suppresses the noise-induced disturbances, reduce instability in prompt updates, and alleviate memorization of mislabeled samples. VisPrompt significantly improves robustness while keeping the pretrained VLM backbone frozen and introducing only a small amount of additional trainable parameters. Extensive experiments under synthetic and real-world label noise demonstrate that VisPrompt generally outperforms existing baselines on seven benchmark datasets and achieves stronger robustness. Our code is publicly available at https://github.com/gezbww/Vis_Prompt.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">多模态专家混合 (MoE) 模型在视觉语言任务上取得了显着的性能。然而，我们发现了一个令人费解的现象，称为“见而不思”：模型准确地感知图像内容，但在后续推理中失败，同时正确地解决以纯文本形式呈现的相同问题。通过系统分析，我们首先验证了 MoE 架构中存在跨模态语义共享，排除了语义对齐失败作为唯一的解释。然后，我们发现视觉专家和领域专家表现出分层分离，图像输入导致领域专家集中的中间层中的文本输入与文本输入存在显着的路由差异。基于这些发现，我们提出了路由干扰假设：在处理视觉输入时，路由机制无法充分激活与任务相关的推理专家。为了验证这一假设，我们设计了一种路由引导的干预方法，可以增强领域专家的激活。对六个基准的三个多模态 MoE 模型进行的实验显示出持续的改进，在复杂的视觉推理任务上的增益高达 3.17%。我们的分析进一步表明，领域专家识别定位的是认知功能，而不是特定于样本的解决方案，从而能够在具有不同信息结构的任务之间进行有效转移。</p>
+                        <p class="abstract-zh">即时学习是视觉语言模型的一种参数有效的方法，但其在标签噪声下的鲁棒性研究较少。视觉内容包含更丰富、更可靠的语义信息，在标签噪声下仍然更加稳健。然而，提示本身很容易受到标签噪音的影响。受这种直觉的启发，我们提出了 VisPrompt，这是一种轻量级且强大的视觉引导提示学习框架，适用于噪声标签设置。具体来说，我们利用跨模式注意机制将视觉语义反向注入提示表示中。这使得提示标记能够选择性地聚合与当前样本相关的视觉信息，从而通过将提示学习锚定到稳定的实例级视觉证据并减少噪声监督的影响来提高鲁棒性。为了解决所有样本使用相同的方式注入视觉信息而造成的不稳定，尽管其视觉线索的质量存在差异，我们进一步引入了一种轻量级条件调制机制来自适应控制视觉信息注入的强度，这在文本侧语义先验和图像侧实例证据之间取得了更稳健的平衡。所提出的框架有效地抑制了噪声引起的干扰，减少了及时更新的不稳定性，并减轻了错误标记样本的记忆。 VisPrompt 显着提高了鲁棒性，同时保持预训练的 VLM 主干冻结并仅引入少量额外的可训练参数。在合成和真实世界标签噪声下进行的大量实验表明，VisPrompt 在七个基准数据集上总体上优于现有基线，并实现了更强的鲁棒性。我们的代码可在 https://github.com/gezbww/Vis_Prompt 上公开获取。</p>
                     </div>
                 </article>
                 
@@ -458,7 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 30</span>
+                        <span class="repo-stars">★ 48</span>
                         <div class="repo-info">
                             <strong class="repo-name">kklt92/awesome-ai-extensions</strong>
                             <p class="repo-desc">由人工智能驱动的浏览器扩展、插件和附加组件的精选列表。</p>
@@ -474,10 +474,10 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 9</span>
+                        <span class="repo-stars">★ 11</span>
                         <div class="repo-info">
-                            <strong class="repo-name">dcssoftware/bafoeg-manager</strong>
-                            <p class="repo-desc">Eine 基础 BAföG Antragsverwaltung inkl。 lokaler KI Assistenen (z.B. Ministral 14B) zur effektiveren Bearbeitung von BAföG。 Rückzahlungen sowie der “BAföG Bot” wie er politisch genannt wird, sind skizziert aber noch nicht nicht Finalisiert</p>
+                            <strong class="repo-name">JohnCrickett/MScArtificialIntelligence</strong>
+                            <p class="repo-desc">人工智能理学硕士提供者注意事项</p>
                         </div>
                     </li>
                 
@@ -492,24 +492,8 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 8</span>
                         <div class="repo-info">
-                            <strong class="repo-name">JohnCrickett/MScArtificialIntelligence</strong>
-                            <p class="repo-desc">人工智能理学硕士提供者注意事项</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 8</span>
-                        <div class="repo-info">
                             <strong class="repo-name">rwightman/kidschat</strong>
                             <p class="repo-desc">适合儿童的人工智能聊天演示</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 8</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">lucidrains/env-ssl-wrapper</strong>
-                            <p class="repo-desc">环境的包装器将负责自动提供自我监督学习的表示</p>
                         </div>
                     </li>
                 
@@ -522,18 +506,34 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
+                        <span class="repo-stars">★ 6</span>
                         <div class="repo-info">
-                            <strong class="repo-name">Sunil56224972/Skin-Tone-Detector</strong>
-                            <p class="repo-desc">肤色检测器 - 由人工智能驱动的计算机视觉项目，可分析图像以使用图像处理和机器学习来检测和分类人类肤色。</p>
+                            <strong class="repo-name">zaber-dev/ai-prompt-simulation</strong>
+                            <p class="repo-desc">一个专业的 Python 框架，用于测试提示强度、质量和真实的自主代理有效性。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 5</span>
+                        <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">zaber-dev/ai-prompt-simulation</strong>
-                            <p class="repo-desc">一个专业的 Python 框架，用于测试提示强度、质量和真实的自主代理有效性。</p>
+                            <strong class="repo-name">web3guru888/asi-build</strong>
+                            <p class="repo-desc">人工智能的统一框架 — 29 个模块、4,355 多个测试、215K LOC。意识·认知黑板·ZK桥·知识图谱·因果推理·联邦学习·脑机接口·脉冲神经网络·量子混合</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">oakeighty5/awesome-ai-agents</strong>
+                            <p class="repo-desc">AI 代理框架、平台、工具和资源的精选列表</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">mahadillahm4di-cyber/mh-gdpr-ai.eu-s-plus</strong>
+                            <p class="repo-desc">切换 GPT ↔ Claude ↔ Llama，永远不会失去上下文。您的 AI 大脑就像 3D 星星。 100% 本地——你的记忆属于你，而不是 OpenAI。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-04-12 22:29:17
+        生成于 2026-04-13 22:39:45
     </footer>
 </body>
 </html>
