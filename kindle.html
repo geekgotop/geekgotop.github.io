@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Large Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models Generate<sup class='ipa'>/ˈʤɛnərˌeɪt/</sup> Harmful Content Using a Distinct,<sup class='ipa'>/dɪˈstɪŋkt/</sup> Unified Mechanism<sup class='ipa'>/ˈmɛkəˌnɪzəm/</sup></h2>
+                    <h2 class="paper-title">Physics-Informed<sup class='ipa'>/physicsinformed*/</sup> State Space Models for Reliable<sup class='ipa'>/rɪˈlaɪəbəl/</sup> Solar Irradiance<sup class='ipa'>/irradiance*/</sup> Forecasting<sup class='ipa'>/ˈfɔrˌkæstɪŋ/</sup> in Off-Grid Systems</h2>
                     <p class="paper-meta">
-                        <span class="authors">Hadas Orgad, Boyi Wei, Kaden Zheng</span>
-                        <span class="date">2026-04-10</span>
+                        <span class="authors">Mohammed Ezzaldin Babiker Abdullah</span>
+                        <span class="date">2026-04-13</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Large language models (LLMs) undergo alignment training to avoid harmful behaviors, yet the resulting safeguards remain brittle: jailbreaks routinely bypass them, and fine-tuning on narrow domains can induce ``emergent misalignment&#39;&#39; that generalizes broadly. Whether this brittleness reflects a fundamental lack of coherent internal organization for harmfulness remains unclear. Here we use targeted weight pruning as a causal intervention to probe the internal organization of harmfulness in LLMs. We find that harmful content generation depends on a compact set of weights that are general across harm types and distinct from benign capabilities. Aligned models exhibit a greater compression of harm generation weights than unaligned counterparts, indicating that alignment reshapes harmful representations internally--despite the brittleness of safety guardrails at the surface level. This compression explains emergent misalignment: if weights of harmful capabilities are compressed, fine-tuning that engages these weights in one domain can trigger broad misalignment. Consistent with this, pruning harm generation weights in a narrow domain substantially reduces emergent misalignment. Notably, LLMs harmful generation capability is dissociated from how they recognize and explain such content. Together, these results reveal a coherent internal structure for harmfulness in LLMs that may serve as a foundation for more principled approaches to safety.</p>
+                        <p class="abstract-en">The stable operation of autonomous off-grid photovoltaic systems dictates reliance on solar forecasting algorithms that respect atmospheric thermodynamics. Contemporary deep learning models consistently exhibit critical anomalies, primarily severe temporal phase lags during cloud transients and physically impossible nocturnal power generation. To resolve this divergence between data-driven modeling and deterministic celestial mechanics, this research introduces the Thermodynamic Liquid Manifold Network. The proposed methodology projects 15 meteorological and geometric variables into a Koopman-linearized Riemannian manifold to systematically map complex climatic dynamics. The architecture integrates a Spectral Calibration unit and a multiplicative Thermodynamic Alpha-Gate. This system synthesizes real-time atmospheric opacity with theoretical clear-sky boundary models, structurally enforcing strict celestial geometry compliance. This completely neutralizes phantom nocturnal generation while maintaining zero-lag synchronization during rapid weather shifts. Validated against a rigorous five-year testing horizon in a severe semi-arid climate, the framework achieves an RMSE of 18.31 Wh/m2 and a Pearson correlation of 0.988. The model strictly maintains a zero-magnitude nocturnal error across all 1826 testing days and exhibits a sub-30-minute phase response during high-frequency transients. Comprising exactly 63,458 trainable parameters, this ultra-lightweight design establishes a robust, thermodynamically consistent standard for edge-deployable microgrid controllers.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">大型语言模型（LLM）经过对齐训练以避免有害行为，但由此产生的保护措施仍然脆弱：越狱通常会绕过它们，而在狭窄领域的微调可能会导致广泛推广的“紧急失调”。这种脆性是否反映了内部组织根本上缺乏连贯的危害性，目前尚不清楚。在这里，我们使用有针对性的权重修剪作为因果干预措施来探讨法学硕士有害性的内部组织。我们发现有害内容的生成取决于一组紧凑的权重，这些权重在各种危害类型中都是通用的，并且与良性功能不同。对齐的模型比未对齐的模型表现出更大的伤害生成权重压缩，这表明对齐在内部重塑了有害的表征——尽管安全护栏在表面上很脆弱。这种压缩解释了出现的失调：如果有害能力的权重被压缩，那么在一个领域中对这些权重进行微调可能会引发广泛的失调。与此一致的是，在狭窄的域中修剪损害生成权重可以大大减少紧急的错位。值得注意的是，法学硕士的有害生成能力与他们如何识别和解释此类内容无关。总之，这些结果揭示了法学硕士有害性的连贯内部结构，这可以作为更有原则的安全方法的基础。</p>
+                        <p class="abstract-zh">自主离网光伏系统的稳定运行决定了对尊重大气热力学的太阳预报算法的依赖。当代深度学习模型始终表现出严重的异常现象，主要是云瞬变期间严重的时间相位滞后和物理上不可能的夜间发电。为了解决数据驱动建模和确定性天体力学之间的分歧，本研究引入了热力学液体流形网络。所提出的方法将 15 个气象和几何变量投影到库普曼线性黎曼流形中，以系统地绘制复杂的气候动态。该架构集成了光谱校准单元和乘法热力学 Alpha 门。该系统将实时大气不透明度与理论晴空边界模型相结合，从结构上强制执行严格的天体几何合规性。这完全消除了幻影夜间产生，同时在天气快速变化期间保持零滞后同步。该框架在严重的半干旱气候下进行了为期五年的严格测试，其 RMSE 为 18.31 Wh/m2，皮尔逊相关系数为 0.988。该模型在所有 1826 个测试日中严格保持零幅度夜间误差，并在高频瞬态期间表现出 30 分钟内的相位响应。这种超轻量级设计恰好包含 63,458 个可训练参数，为边缘部署微电网控制器建立了稳健、热力学一致的标准。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Case-Grounded<sup class='ipa'>/casegrounded*/</sup> Evidence<sup class='ipa'>/ˈɛvədəns/</sup> Verification:<sup class='ipa'>/ˌvɛrəfəˈkeɪʃən/</sup> A Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup> for Constructing<sup class='ipa'>/kənˈstrəktɪŋ/</sup> Evidence-Sensitive<sup class='ipa'>/evidencesensitive*/</sup> Supervision<sup class='ipa'>/ˌsupərˈvɪʒən/</sup></h2>
+                    <h2 class="paper-title">Detecting<sup class='ipa'>/dɪˈtɛktɪŋ/</sup> Safety Violations<sup class='ipa'>/vaɪəˈleɪʃənz/</sup> Across Many Agent Traces</h2>
                     <p class="paper-meta">
-                        <span class="authors">Soroosh Tayebi Arasteh, Mehdi Joodaki, Mahshad Lotfinia</span>
-                        <span class="date">2026-04-10</span>
+                        <span class="authors">Adam Stein, Davis Brown, Hamed Hassani</span>
+                        <span class="date">2026-04-13</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Evidence-grounded reasoning requires more than attaching retrieved text to a prediction: a model should make decisions that depend on whether the provided evidence supports the target claim. In practice, this often fails because supervision is weak, evidence is only loosely tied to the claim, and evaluation does not test evidence dependence directly. We introduce case-grounded evidence verification, a general framework in which a model receives a local case context, external evidence, and a structured claim, and must decide whether the evidence supports the claim for that case. Our key contribution is a supervision construction procedure that generates explicit support examples together with semantically controlled non-support examples, including counterfactual wrong-state and topic-related negatives, without manual evidence annotation. We instantiate the framework in radiology and train a standard verifier on the resulting support task. The learned verifier substantially outperforms both case-only and evidence-only baselines, remains strong under correct evidence, and collapses when evidence is removed or swapped, indicating genuine evidence dependence. This behavior transfers across unseen evidence articles and an external case distribution, though performance degrades under evidence-source shift and remains sensitive to backbone choice. Overall, the results suggest that a major bottleneck in evidence grounding is not only model capacity, but the lack of supervision that encodes the causal role of evidence.</p>
+                        <p class="abstract-en">To identify safety violations, auditors often search over large sets of agent traces. This search is difficult because failures are often rare, complex, and sometimes even adversarially hidden and only detectable when multiple traces are analyzed together. These challenges arise in diverse settings such as misuse campaigns, covert sabotage, reward hacking, and prompt injection. Existing approaches struggle here for several reasons. Per-trace judges miss failures that only become visible across traces, naive agentic auditing does not scale to large trace collections, and fixed monitors are brittle to unanticipated behaviors. We introduce Meerkat, which combines clustering with agentic search to uncover violations specified in natural language. Through structured search and adaptive investigation of promising regions, Meerkat finds sparse failures without relying on seed scenarios, fixed workflows, or exhaustive enumeration. Across misuse, misalignment, and task gaming settings, Meerkat significantly improves detection of safety violations over baseline monitors, discovers widespread developer cheating on a top agent benchmark, and finds nearly 4x more examples of reward hacking on CyBench than previous audits.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">基于证据的推理需要的不仅仅是将检索到的文本附加到预测中：模型应该根据所提供的证据是否支持目标主张来做出决策。在实践中，这常常会失败，因为监督薄弱，证据与主张的联系松散，并且评估并不直接测试证据依赖性。我们引入了基于案例的证据验证，这是一个通用框架，其中模型接收本地案例背景、外部证据和结构化主张，并且必须确定证据是否支持该案例的主张。我们的主要贡献是一个监督构建过程，它生成显式的支持示例以及语义控制的非支持示例，包括反事实的错误状态和与主题相关的否定，而无需手动证据注释。我们在放射学中实例化该框架，并针对所产生的支持任务训练标准验证者。学习验证器的性能大大优于仅案例基线和仅证据基线，在正确的证据下保持强大，并在证据被删除或交换时崩溃，表明真正的证据依赖。这种行为在看不见的证据文章和外部案例分布之间转移，尽管在证据源转移的情况下性能会下降，并且对主干选择仍然敏感。总体而言，结果表明证据基础的主要瓶颈不仅是模型能力，而且缺乏对证据因果作用进行编码的监督。</p>
+                        <p class="abstract-zh">为了识别安全违规行为，审核员经常搜索大量代理痕迹。这种搜索很困难，因为故障通常很少见、复杂，有时甚至是敌对性隐藏的，并且只有在一起分析多个痕迹时才能检测到。这些挑战出现在不同的环境中，例如滥用活动、秘密破坏、奖励黑客和即时注入。现有的方法在这里遇到困难有几个原因。每个跟踪判断会错过仅在跟踪中可见的故障，幼稚的代理审计无法扩展到大型跟踪集合，并且固定监视器对于意外行为很脆弱。我们引入了 Meerkat，它将聚类与代理搜索相结合，以发现自然语言中指定的违规行为。通过对有希望的区域进行结构化搜索和自适应调查，Meerkat 可以发现稀疏的故障，而无需依赖种子场景、固定工作流程或详尽的枚举。在滥用、错位和任务游戏设置方面，Meerkat 显着改进了对基线监视器的安全违规检测，发现了开发人员在顶级代理基准测试中普遍存在的作弊行为，并在 CyBench 上发现的奖励黑客示例比之前的审计多了近 4 倍。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Seeing is Believing:<sup class='ipa'>/bɪˈlivɪŋ/</sup> Robust Vision-Guided<sup class='ipa'>/visionguided*/</sup> Cross-Modal<sup class='ipa'>/crossmodal*/</sup> Prompt Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> under Label Noise</h2>
+                    <h2 class="paper-title">Solving Physics Olympiad<sup class='ipa'>/oʊˈlɪmpiˌæd/</sup> via Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> on Physics Simulators<sup class='ipa'>/ˈsɪmjəˌleɪtərz/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Zibin Geng, Xuefeng Jiang, Jia Li</span>
-                        <span class="date">2026-04-10</span>
+                        <span class="authors">Mihir Prabhudesai, Aryan Satpathy, Yangmin Li</span>
+                        <span class="date">2026-04-13</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Prompt learning is a parameter-efficient approach for vision-language models, yet its robustness under label noise is less investigated. Visual content contains richer and more reliable semantic information, which remains more robust under label noise. However, the prompt itself is highly susceptible to label noise. Motivated by this intuition, we propose VisPrompt, a lightweight and robust vision-guided prompt learning framework for noisy-label settings. Specifically, we exploit a cross-modal attention mechanism to reversely inject visual semantics into prompt representations. This enables the prompt tokens to selectively aggregate visual information relevant to the current sample, thereby improving robustness by anchoring prompt learning to stable instance-level visual evidence and reducing the influence of noisy supervision. To address the instability caused by using the same way of injecting visual information for all samples, despite differences in the quality of their visual cues, we further introduce a lightweight conditional modulation mechanism to adaptively control the strength of visual information injection, which strikes a more robust balance between text-side semantic priors and image-side instance evidence. The proposed framework effectively suppresses the noise-induced disturbances, reduce instability in prompt updates, and alleviate memorization of mislabeled samples. VisPrompt significantly improves robustness while keeping the pretrained VLM backbone frozen and introducing only a small amount of additional trainable parameters. Extensive experiments under synthetic and real-world label noise demonstrate that VisPrompt generally outperforms existing baselines on seven benchmark datasets and achieves stronger robustness. Our code is publicly available at https://github.com/gezbww/Vis_Prompt.</p>
+                        <p class="abstract-en">We have witnessed remarkable advances in LLM reasoning capabilities with the advent of DeepSeek-R1. However, much of this progress has been fueled by the abundance of internet question-answer (QA) pairs, a major bottleneck going forward, since such data is limited in scale and concentrated mainly in domains like mathematics. In contrast, other sciences such as physics lack large-scale QA datasets to effectively train reasoning-capable models. In this work, we show that physics simulators can serve as a powerful alternative source of supervision for training LLMs for physical reasoning. We generate random scenes in physics engines, create synthetic question-answer pairs from simulated interactions, and train LLMs using reinforcement learning on this synthetic data. Our models exhibit zero-shot sim-to-real transfer to real-world physics benchmarks: for example, training solely on synthetic simulated data improves performance on IPhO (International Physics Olympiad) problems by 5-10 percentage points across model sizes. These results demonstrate that physics simulators can act as scalable data generators, enabling LLMs to acquire deep physical reasoning skills beyond the limitations of internet-scale QA data. Code available at: https://sim2reason.github.io/.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">即时学习是视觉语言模型的一种参数有效的方法，但其在标签噪声下的鲁棒性研究较少。视觉内容包含更丰富、更可靠的语义信息，在标签噪声下仍然更加稳健。然而，提示本身很容易受到标签噪音的影响。受这种直觉的启发，我们提出了 VisPrompt，这是一种轻量级且强大的视觉引导提示学习框架，适用于噪声标签设置。具体来说，我们利用跨模式注意机制将视觉语义反向注入提示表示中。这使得提示标记能够选择性地聚合与当前样本相关的视觉信息，从而通过将提示学习锚定到稳定的实例级视觉证据并减少噪声监督的影响来提高鲁棒性。为了解决所有样本使用相同的方式注入视觉信息而造成的不稳定，尽管其视觉线索的质量存在差异，我们进一步引入了一种轻量级条件调制机制来自适应控制视觉信息注入的强度，这在文本侧语义先验和图像侧实例证据之间取得了更稳健的平衡。所提出的框架有效地抑制了噪声引起的干扰，减少了及时更新的不稳定性，并减轻了错误标记样本的记忆。 VisPrompt 显着提高了鲁棒性，同时保持预训练的 VLM 主干冻结并仅引入少量额外的可训练参数。在合成和真实世界标签噪声下进行的大量实验表明，VisPrompt 在七个基准数据集上总体上优于现有基线，并实现了更强的鲁棒性。我们的代码可在 https://github.com/gezbww/Vis_Prompt 上公开获取。</p>
+                        <p class="abstract-zh">随着 DeepSeek-R1 的出现，我们见证了 LLM 推理能力的显着进步。然而，这一进步在很大程度上是由大量的互联网问答（QA）对推动的，这是未来的一个主要瓶颈，因为此类数据规模有限，并且主要集中在数学等领域。相比之下，物理学等其他科学缺乏大规模的 QA 数据集来有效训练具有推理能力的模型。在这项工作中，我们证明物理模拟器可以作为训练法学硕士物理推理的强大替代监督来源。我们在物理引擎中生成随机场景，从模拟交互中创建合成问答对，并在这些合成数据上使用强化学习来训练法学硕士。我们的模型展示了从零样本模拟到现实世界物理基准的迁移：例如，仅对合成模拟数据进行训练就可以将不同模型大小的 IPhO（国际物理奥林匹克）问题的性能提高 5-10 个百分点。这些结果表明，物理模拟器可以充当可扩展的数据生成器，使法学硕士能够超越互联网规模的 QA 数据的限制，获得深入的物理推理技能。代码位于：https://sim2reason.github.io/。</p>
                     </div>
                 </article>
                 
@@ -458,7 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 48</span>
+                        <span class="repo-stars">★ 60</span>
                         <div class="repo-info">
                             <strong class="repo-name">kklt92/awesome-ai-extensions</strong>
                             <p class="repo-desc">由人工智能驱动的浏览器扩展、插件和附加组件的精选列表。</p>
@@ -469,12 +469,12 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <span class="repo-stars">★ 14</span>
                         <div class="repo-info">
                             <strong class="repo-name">7WaySecurity/ai_osint</strong>
-                            <p class="repo-desc">🤖 精心策划的 AI OSINT 资源 — Google dorks、Shodan 查询、GitHub dorks 以及发现暴露的 LLM 端点、泄露的 AI API 密钥、配置错误的矢量数据库和不受保护的 AI 代理的技术</p>
+                            <p class="repo-desc">🤖 精心策划的 AI OSINT 资源 — Google dorks、Shodan 查询、GitHub dorks 以及发现暴露的 LLM 端点、泄露的 AI API 密钥、配置错误的向量数据库和不受保护的 AI 代理的技术</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 11</span>
+                        <span class="repo-stars">★ 13</span>
                         <div class="repo-info">
                             <strong class="repo-name">JohnCrickett/MScArtificialIntelligence</strong>
                             <p class="repo-desc">人工智能理学硕士提供者注意事项</p>
@@ -482,18 +482,26 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 9</span>
+                        <span class="repo-stars">★ 10</span>
                         <div class="repo-info">
-                            <strong class="repo-name">aaravriyer193/TED</strong>
-                            <p class="repo-desc">一个开源的自主人工智能代理，拥有一个 Linux 盒子并做任何它想做的事。</p>
+                            <strong class="repo-name">FareedKhan-dev/claude-code-staff-engineer</strong>
+                            <p class="repo-desc">在 Claude Code 中构建具有子代理团队的高级工程师</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 8</span>
+                        <span class="repo-stars">★ 9</span>
                         <div class="repo-info">
-                            <strong class="repo-name">rwightman/kidschat</strong>
-                            <p class="repo-desc">适合儿童的人工智能聊天演示</p>
+                            <strong class="repo-name">aaravriyer193/TED</strong>
+                            <p class="repo-desc">一个开源的自主人工智能代理，拥有一个 Linux 盒子并可以做任何它想做的事情。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 7</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">aveloxis/aveloxis</strong>
+                            <p class="repo-desc">Aveloxis 意味着“鸟”（数据或结果）已经在高速移动。</p>
                         </div>
                     </li>
                 
@@ -526,14 +534,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">oakeighty5/awesome-ai-agents</strong>
                             <p class="repo-desc">AI 代理框架、平台、工具和资源的精选列表</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">mahadillahm4di-cyber/mh-gdpr-ai.eu-s-plus</strong>
-                            <p class="repo-desc">切换 GPT ↔ Claude ↔ Llama，永远不会失去上下文。您的 AI 大脑就像 3D 星星。 100% 本地——你的记忆属于你，而不是 OpenAI。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-04-13 22:39:45
+        生成于 2026-04-14 22:41:22
     </footer>
 </body>
 </html>
