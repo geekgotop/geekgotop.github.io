@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Physics-Informed<sup class='ipa'>/physicsinformed*/</sup> State Space Models for Reliable<sup class='ipa'>/rɪˈlaɪəbəl/</sup> Solar Irradiance<sup class='ipa'>/irradiance*/</sup> Forecasting<sup class='ipa'>/ˈfɔrˌkæstɪŋ/</sup> in Off-Grid Systems</h2>
+                    <h2 class="paper-title">SceneCritic:<sup class='ipa'>/scenecritic*/</sup> A Symbolic<sup class='ipa'>/sɪmˈbɑlɪk/</sup> Evaluator<sup class='ipa'>/evaluator*/</sup> for 3D Indoor Scene Synthesis<sup class='ipa'>/ˈsɪnθəsəs/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Mohammed Ezzaldin Babiker Abdullah</span>
-                        <span class="date">2026-04-13</span>
+                        <span class="authors">Kathakoli Sengupta, Kai Ao, Paola Cascante-Bonilla</span>
+                        <span class="date">2026-04-14</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">The stable operation of autonomous off-grid photovoltaic systems dictates reliance on solar forecasting algorithms that respect atmospheric thermodynamics. Contemporary deep learning models consistently exhibit critical anomalies, primarily severe temporal phase lags during cloud transients and physically impossible nocturnal power generation. To resolve this divergence between data-driven modeling and deterministic celestial mechanics, this research introduces the Thermodynamic Liquid Manifold Network. The proposed methodology projects 15 meteorological and geometric variables into a Koopman-linearized Riemannian manifold to systematically map complex climatic dynamics. The architecture integrates a Spectral Calibration unit and a multiplicative Thermodynamic Alpha-Gate. This system synthesizes real-time atmospheric opacity with theoretical clear-sky boundary models, structurally enforcing strict celestial geometry compliance. This completely neutralizes phantom nocturnal generation while maintaining zero-lag synchronization during rapid weather shifts. Validated against a rigorous five-year testing horizon in a severe semi-arid climate, the framework achieves an RMSE of 18.31 Wh/m2 and a Pearson correlation of 0.988. The model strictly maintains a zero-magnitude nocturnal error across all 1826 testing days and exhibits a sub-30-minute phase response during high-frequency transients. Comprising exactly 63,458 trainable parameters, this ultra-lightweight design establishes a robust, thermodynamically consistent standard for edge-deployable microgrid controllers.</p>
+                        <p class="abstract-en">Large Language Models (LLMs) and Vision-Language Models (VLMs) increasingly generate indoor scenes through intermediate structures such as layouts and scene graphs, yet evaluation still relies on LLM or VLM judges that score rendered views, making judgments sensitive to viewpoint, prompt phrasing, and hallucination. When the evaluator is unstable, it becomes difficult to determine whether a model has produced a spatially plausible scene or whether the output score reflects the choice of viewpoint, rendering, or prompt. We introduce SceneCritic, a symbolic evaluator for floor-plan-level layouts. SceneCritic&#39;s constraints are grounded in SceneOnto, a structured spatial ontology we construct by aggregating indoor scene priors from 3D-FRONT, ScanNet, and Visual Genome. SceneOnto traverses this ontology to jointly verify semantic, orientation, and geometric coherence across object relationships, providing object-level and relationship-level assessments that identify specific violations and successful placements. Furthermore, we pair SceneCritic with an iterative refinement test bed that probes how models build and revise spatial structure under different critic modalities: a rule-based critic using collision constraints as feedback, an LLM critic operating on the layout as text, and a VLM critic operating on rendered observations. Through extensive experiments, we show that (a) SceneCritic aligns substantially better with human judgments than VLM-based evaluators, (b) text-only LLMs can outperform VLMs on semantic layout quality, and (c) image-based VLM refinement is the most effective critic modality for semantic and orientation correction.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">自主离网光伏系统的稳定运行决定了对尊重大气热力学的太阳预报算法的依赖。当代深度学习模型始终表现出严重的异常现象，主要是云瞬变期间严重的时间相位滞后和物理上不可能的夜间发电。为了解决数据驱动建模和确定性天体力学之间的分歧，本研究引入了热力学液体流形网络。所提出的方法将 15 个气象和几何变量投影到库普曼线性黎曼流形中，以系统地绘制复杂的气候动态。该架构集成了光谱校准单元和乘法热力学 Alpha 门。该系统将实时大气不透明度与理论晴空边界模型相结合，从结构上强制执行严格的天体几何合规性。这完全消除了幻影夜间产生，同时在天气快速变化期间保持零滞后同步。该框架在严重的半干旱气候下进行了为期五年的严格测试，其 RMSE 为 18.31 Wh/m2，皮尔逊相关系数为 0.988。该模型在所有 1826 个测试日中严格保持零幅度夜间误差，并在高频瞬态期间表现出 30 分钟内的相位响应。这种超轻量级设计恰好包含 63,458 个可训练参数，为边缘部署微电网控制器建立了稳健、热力学一致的标准。</p>
+                        <p class="abstract-zh">大型语言模型 (LLM) 和视觉语言模型 (VLM) 越来越多地通过布局和场景图等中间结构生成室内场景，但评估仍然依赖于对渲染视图进行评分的 LLM 或 VLM 评委，使判断对观点、提示措辞和幻觉敏感。当评估器不稳定时，就很难确定模型是否生成了空间上合理的场景，或者输出分数是否反映了视点、渲染或提示的选择。我们引入了 SceneCritic，一个用于平面图级别布局的符号评估器。 SceneCritic 的约束基于 SceneOnto，这是我们通过聚合来自 3D-FRONT、ScanNet 和 Visual Genome 的室内场景先验构建的结构化空间本体。 SceneOnto 遍历此本体，共同验证对象关系之间的语义、方向和几何一致性，提供对象级和关系级评估，以识别特定违规和成功放置。此外，我们将 SceneCritic 与迭代细化测试床配对，探索模型如何在不同批评模式下构建和修改空间结构：使用碰撞约束作为反馈的基于规则的批评家、对布局作为文本进行操作的 LLM 批评家以及对渲染观察进行操作的 VLM 批评家。通过大量实验，我们表明（a）SceneCritic 比基于 VLM 的评估器更符合人类判断，（b）纯文本 LLM 在语义布局质量上可以优于 VLM，以及（c）基于图像的 VLM 细化是语义和方向校正的最有效的批评模式。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Detecting<sup class='ipa'>/dɪˈtɛktɪŋ/</sup> Safety Violations<sup class='ipa'>/vaɪəˈleɪʃənz/</sup> Across Many Agent Traces</h2>
+                    <h2 class="paper-title">Visual Preference<sup class='ipa'>/ˈprɛfərəns/</sup> Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> with Rubric Rewards</h2>
                     <p class="paper-meta">
-                        <span class="authors">Adam Stein, Davis Brown, Hamed Hassani</span>
-                        <span class="date">2026-04-13</span>
+                        <span class="authors">Ya-Qi Yu, Fangyu Hong, Xiangyang Qu</span>
+                        <span class="date">2026-04-14</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">To identify safety violations, auditors often search over large sets of agent traces. This search is difficult because failures are often rare, complex, and sometimes even adversarially hidden and only detectable when multiple traces are analyzed together. These challenges arise in diverse settings such as misuse campaigns, covert sabotage, reward hacking, and prompt injection. Existing approaches struggle here for several reasons. Per-trace judges miss failures that only become visible across traces, naive agentic auditing does not scale to large trace collections, and fixed monitors are brittle to unanticipated behaviors. We introduce Meerkat, which combines clustering with agentic search to uncover violations specified in natural language. Through structured search and adaptive investigation of promising regions, Meerkat finds sparse failures without relying on seed scenarios, fixed workflows, or exhaustive enumeration. Across misuse, misalignment, and task gaming settings, Meerkat significantly improves detection of safety violations over baseline monitors, discovers widespread developer cheating on a top agent benchmark, and finds nearly 4x more examples of reward hacking on CyBench than previous audits.</p>
+                        <p class="abstract-en">The effectiveness of Direct Preference Optimization (DPO) depends on preference data that reflect the quality differences that matter in multimodal tasks. Existing pipelines often rely on off-policy perturbations or coarse outcome-based signals, which are not well suited to fine-grained visual reasoning. We propose rDPO, a preference optimization framework based on instance-specific rubrics. For each image-instruction pair, we create a checklist-style rubric of essential and additional criteria to score responses from any possible policies. The instruction-rubric pool is built offline and reused during the construction of on-policy data. On public reward modeling benchmarks, rubric-based prompting massively improves a 30B-A3B judge and brings it close to GPT-5.4. On public downstream benchmarks, rubric-based filtering raises the macro average to 82.69, whereas outcome-based filtering drops it to 75.82 from 81.14. When evaluating scalability on a comprehensive benchmark, rDPO achieves 61.01, markedly outperforming the style-constrained baseline (52.36) and surpassing the 59.48 base model. Together, these results show that visual preference optimization benefits from combining on-policy data construction with instance-specific criterion-level feedback.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">为了识别安全违规行为，审核员经常搜索大量代理痕迹。这种搜索很困难，因为故障通常很少见、复杂，有时甚至是敌对性隐藏的，并且只有在一起分析多个痕迹时才能检测到。这些挑战出现在不同的环境中，例如滥用活动、秘密破坏、奖励黑客和即时注入。现有的方法在这里遇到困难有几个原因。每个跟踪判断会错过仅在跟踪中可见的故障，幼稚的代理审计无法扩展到大型跟踪集合，并且固定监视器对于意外行为很脆弱。我们引入了 Meerkat，它将聚类与代理搜索相结合，以发现自然语言中指定的违规行为。通过对有希望的区域进行结构化搜索和自适应调查，Meerkat 可以发现稀疏的故障，而无需依赖种子场景、固定工作流程或详尽的枚举。在滥用、错位和任务游戏设置方面，Meerkat 显着改进了对基线监视器的安全违规检测，发现了开发人员在顶级代理基准测试中普遍存在的作弊行为，并在 CyBench 上发现的奖励黑客示例比之前的审计多了近 4 倍。</p>
+                        <p class="abstract-zh">直接偏好优化 (DPO) 的有效性取决于反映多模式任务中重要的质量差异的偏好数据。现有的管道通常依赖于离策略扰动或基于粗略结果的信号，这不太适合细粒度的视觉推理。我们提出了 rDPO，一种基于特定于实例的规则的偏好优化框架。对于每个图像指令对，我们创建了一个清单式的基本标准和附加标准的标题，以对任何可能的策略的响应进行评分。指令标题池是离线构建的，并在构建在线策略数据期间重复使用。在公共奖励建模基准上，基于标题的提示极大地提高了 30B-A3B 的判断，使其接近 GPT-5.4。在公共下游基准上，基于标题的过滤将宏观平均值提高至 82.69，而基于结果的过滤则将其从 81.14 降至 75.82。在综合基准上评估可扩展性时，rDPO 达到了 61.01，明显优于风格受限的基线 (52.36)，并超过了基础模型的 59.48。总之，这些结果表明，视觉偏好优化受益于将策略数据构建与特定于实例的标准级反馈相结合。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Solving Physics Olympiad<sup class='ipa'>/oʊˈlɪmpiˌæd/</sup> via Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> on Physics Simulators<sup class='ipa'>/ˈsɪmjəˌleɪtərz/</sup></h2>
+                    <h2 class="paper-title">Representation<sup class='ipa'>/ˌrɛprəzɛnˈteɪʃən/</sup> geometry<sup class='ipa'>/ʤiˈɑmətri/</sup> shapes task performance<sup class='ipa'>/pərˈfɔrməns/</sup> in vision-language<sup class='ipa'>/visionlanguage*/</sup> modeling<sup class='ipa'>/ˈmɑdəlɪŋ/</sup> for CT enterography<sup class='ipa'>/enterography*/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Mihir Prabhudesai, Aryan Satpathy, Yangmin Li</span>
-                        <span class="date">2026-04-13</span>
+                        <span class="authors">Cristian Minoccheri, Emily Wittrup, Kayvan Najarian</span>
+                        <span class="date">2026-04-14</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">We have witnessed remarkable advances in LLM reasoning capabilities with the advent of DeepSeek-R1. However, much of this progress has been fueled by the abundance of internet question-answer (QA) pairs, a major bottleneck going forward, since such data is limited in scale and concentrated mainly in domains like mathematics. In contrast, other sciences such as physics lack large-scale QA datasets to effectively train reasoning-capable models. In this work, we show that physics simulators can serve as a powerful alternative source of supervision for training LLMs for physical reasoning. We generate random scenes in physics engines, create synthetic question-answer pairs from simulated interactions, and train LLMs using reinforcement learning on this synthetic data. Our models exhibit zero-shot sim-to-real transfer to real-world physics benchmarks: for example, training solely on synthetic simulated data improves performance on IPhO (International Physics Olympiad) problems by 5-10 percentage points across model sizes. These results demonstrate that physics simulators can act as scalable data generators, enabling LLMs to acquire deep physical reasoning skills beyond the limitations of internet-scale QA data. Code available at: https://sim2reason.github.io/.</p>
+                        <p class="abstract-en">Computed tomography (CT) enterography is a primary imaging modality for assessing inflammatory bowel disease (IBD), yet the representational choices that best support automated analysis of this modality are unknown. We present the first study of vision-language transfer learning on abdominal CT enterography and identify two main findings. First, mean pooling of slice embeddings gives better categorical disease assessment (59.2\% three-class accuracy), whereas attention pooling gives better cross-modal retrieval (0.235 text-to-image MRR). This pattern holds across all LoRA configurations tested and suggests that the two aggregators emphasize different properties of the learned representation. Second, per-slice tissue contrast matters more than broader spatial coverage: multi-window RGB encoding, which maps complementary Hounsfield Unit windows to RGB channels, outperforms all strategies that increase spatial coverage through multiplanar sampling, and in this setting adding coronal and sagittal views reduces classification performance. For report generation, fine-tuning without retrieval context yields within-1 severity accuracy at the prevalence-matched chance level (70.4\% vs.\ 71\% random), suggesting little learned ordering beyond the class distribution. Retrieval-augmented generation (RAG) improves this across all configurations, scoring 7--14 percentage points above the chance baseline and improving ordinal MAE from 0.98 to 0.80--0.89. A three-teacher pseudolabel framework enables all comparisons without expert annotations. Together, these findings provide the first baselines for this underexplored modality and offer practical guidance for building vision-language systems for volumetric medical imaging.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">随着 DeepSeek-R1 的出现，我们见证了 LLM 推理能力的显着进步。然而，这一进步在很大程度上是由大量的互联网问答（QA）对推动的，这是未来的一个主要瓶颈，因为此类数据规模有限，并且主要集中在数学等领域。相比之下，物理学等其他科学缺乏大规模的 QA 数据集来有效训练具有推理能力的模型。在这项工作中，我们证明物理模拟器可以作为训练法学硕士物理推理的强大替代监督来源。我们在物理引擎中生成随机场景，从模拟交互中创建合成问答对，并在这些合成数据上使用强化学习来训练法学硕士。我们的模型展示了从零样本模拟到现实世界物理基准的迁移：例如，仅对合成模拟数据进行训练就可以将不同模型大小的 IPhO（国际物理奥林匹克）问题的性能提高 5-10 个百分点。这些结果表明，物理模拟器可以充当可扩展的数据生成器，使法学硕士能够超越互联网规模的 QA 数据的限制，获得深入的物理推理技能。代码位于：https://sim2reason.github.io/。</p>
+                        <p class="abstract-zh">计算机断层扫描 (CT) 小肠造影是评估炎症性肠病 (IBD) 的主要成像方式，但最能支持该方式自动分析的代表性选择尚不清楚。我们提出了第一项关于腹部 CT 小肠造影视觉语言迁移学习的研究，并确定了两个主要发现。首先，切片嵌入的平均池化提供了更好的分类疾病评估（59.2% 三级准确度），而注意力池化提供了更好的跨模态检索（0.235 文本到图像 MRR）。这种模式适用于所有测试的 LoRA 配置，表明两个聚合器强调学习表示的不同属性。其次，每切片组织对比度比更广泛的空间覆盖范围更重要：多窗口 RGB 编码（将互补的亨斯菲尔德单位窗口映射到 RGB 通道）优于通过多平面采样增加空间覆盖范围的所有策略，并且在这种设置中添加冠状和矢状视图会降低分类性能。对于报告生成，在没有检索上下文的情况下进行微调，在患病率匹配的机会水平上产生了 1 以内的严重性准确度（70.4% vs. 71% 随机），这表明除了类别分布之外几乎没有学习到排序。检索增强生成 (RAG) 在所有配置中都改进了这一点，得分比机会基线高出 7--14 个百分点，并将有序 MAE 从 0.98 改进到 0.80--0.89。三教师伪标签框架可以在没有专家注释的情况下进行所有比较。总之，这些发现为这种尚未充分探索的模式提供了第一个基线，并为构建立体医学成像视觉语言系统提供了实用指导。</p>
                     </div>
                 </article>
                 
@@ -458,31 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 60</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">kklt92/awesome-ai-extensions</strong>
-                            <p class="repo-desc">由人工智能驱动的浏览器扩展、插件和附加组件的精选列表。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 14</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">7WaySecurity/ai_osint</strong>
-                            <p class="repo-desc">🤖 精心策划的 AI OSINT 资源 — Google dorks、Shodan 查询、GitHub dorks 以及发现暴露的 LLM 端点、泄露的 AI API 密钥、配置错误的向量数据库和不受保护的 AI 代理的技术</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 13</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">JohnCrickett/MScArtificialIntelligence</strong>
-                            <p class="repo-desc">人工智能理学硕士提供者注意事项</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 10</span>
+                        <span class="repo-stars">★ 12</span>
                         <div class="repo-info">
                             <strong class="repo-name">FareedKhan-dev/claude-code-staff-engineer</strong>
                             <p class="repo-desc">在 Claude Code 中构建具有子代理团队的高级工程师</p>
@@ -506,22 +482,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 6</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">antarr/mysql_genius</strong>
-                            <p class="repo-desc"></p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 6</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">zaber-dev/ai-prompt-simulation</strong>
-                            <p class="repo-desc">一个专业的 Python 框架，用于测试提示强度、质量和真实的自主代理有效性。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
                             <strong class="repo-name">web3guru888/asi-build</strong>
@@ -534,6 +494,46 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                         <div class="repo-info">
                             <strong class="repo-name">oakeighty5/awesome-ai-agents</strong>
                             <p class="repo-desc">AI 代理框架、平台、工具和资源的精选列表</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">adainstarks/CMB-Bubble-Collision-Detection</strong>
+                            <p class="repo-desc">基于 Feeney 等人的工作，使用 Planck 2018 全天空版本检测宇宙微波背景数据中的气泡碰撞特征的深度学习管道。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">galpt/kilocode-agents</strong>
+                            <p class="repo-desc">Kilocode 中更强大的多代理工作流程的提示和代理预设</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">adops-tool/awesome-lead-generation</strong>
+                            <p class="repo-desc">用于潜在客户开发、数据丰富、冷外展和社交聆听的动力工具的精选目录。探索现代增长堆栈来自动化销售流程、验证电子邮件并分析客户意图。给这个存储库加注星标以跟踪新的更新。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">Ankit-Uniyal/iso-42001-ai-governance-toolkit</strong>
+                            <p class="repo-desc">ISO/IEC 42001:2023 人工智能管理系统的实用实施工具包 — 差距评估清单、风险登记模板、控制映射以及面向 GRC 专业人员和人工智能治理从业者的实施路线图。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">praneethepical/AI-Resume-Builder</strong>
+                            <p class="repo-desc">AI Resume Builder 是一款智能工具，可帮助您在几秒钟内创建专业、量身定制的简历。只需粘贴职位描述，人工智能就会生成优化的内容，突出您的技能和经验。非常适合想要快速、有效且适合 ATS 的简历的求职者。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-04-14 22:41:22
+        生成于 2026-04-15 22:38:09
     </footer>
 </body>
 </html>
