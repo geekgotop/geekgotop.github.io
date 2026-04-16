@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">SceneCritic:<sup class='ipa'>/scenecritic*/</sup> A Symbolic<sup class='ipa'>/sɪmˈbɑlɪk/</sup> Evaluator<sup class='ipa'>/evaluator*/</sup> for 3D Indoor Scene Synthesis<sup class='ipa'>/ˈsɪnθəsəs/</sup></h2>
+                    <h2 class="paper-title">SpatialEvo:<sup class='ipa'>/spatialevo*/</sup> Self-Evolving<sup class='ipa'>/selfevolving*/</sup> Spatial Intelligence<sup class='ipa'>/ˌɪnˈtɛləʤəns/</sup> via Deterministic<sup class='ipa'>/dɪˌtərməˈnɪstɪk/</sup> Geometric<sup class='ipa'>/ˌʤiəˈmɛtrɪk/</sup> Environments<sup class='ipa'>/ɪnˈvaɪrənmənts/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Kathakoli Sengupta, Kai Ao, Paola Cascante-Bonilla</span>
-                        <span class="date">2026-04-14</span>
+                        <span class="authors">Dinging Li, Yingxiu Zhao, Xinrui Cheng</span>
+                        <span class="date">2026-04-15</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Large Language Models (LLMs) and Vision-Language Models (VLMs) increasingly generate indoor scenes through intermediate structures such as layouts and scene graphs, yet evaluation still relies on LLM or VLM judges that score rendered views, making judgments sensitive to viewpoint, prompt phrasing, and hallucination. When the evaluator is unstable, it becomes difficult to determine whether a model has produced a spatially plausible scene or whether the output score reflects the choice of viewpoint, rendering, or prompt. We introduce SceneCritic, a symbolic evaluator for floor-plan-level layouts. SceneCritic&#39;s constraints are grounded in SceneOnto, a structured spatial ontology we construct by aggregating indoor scene priors from 3D-FRONT, ScanNet, and Visual Genome. SceneOnto traverses this ontology to jointly verify semantic, orientation, and geometric coherence across object relationships, providing object-level and relationship-level assessments that identify specific violations and successful placements. Furthermore, we pair SceneCritic with an iterative refinement test bed that probes how models build and revise spatial structure under different critic modalities: a rule-based critic using collision constraints as feedback, an LLM critic operating on the layout as text, and a VLM critic operating on rendered observations. Through extensive experiments, we show that (a) SceneCritic aligns substantially better with human judgments than VLM-based evaluators, (b) text-only LLMs can outperform VLMs on semantic layout quality, and (c) image-based VLM refinement is the most effective critic modality for semantic and orientation correction.</p>
+                        <p class="abstract-en">Spatial reasoning over three-dimensional scenes is a core capability for embodied intelligence, yet continuous model improvement remains bottlenecked by the cost of geometric annotation. The self-evolving paradigm offers a promising path, but its reliance on model consensus to construct pseudo-labels causes training to reinforce rather than correct the model&#39;s own geometric errors. We identify a property unique to 3D spatial reasoning that circumvents this limitation: ground truth is a deterministic consequence of the underlying geometry, computable exactly from point clouds and camera poses without any model involvement. Building on this insight, we present SpatialEvo, a self-evolving framework for 3D spatial reasoning, centered on the Deterministic Geometric Environment (DGE). The DGE formalizes 16 spatial reasoning task categories under explicit geometric validation rules and converts unannotated 3D scenes into zero-noise interactive oracles, replacing model consensus with objective physical feedback. A single shared-parameter policy co-evolves across questioner and solver roles under DGE constraints: the questioner generates physically valid spatial questions grounded in scene observations, while the solver derives precise answers against DGE-verified ground truth. A task-adaptive scheduler endogenously concentrates training on the model&#39;s weakest categories, producing a dynamic curriculum without manual design. Experiments across nine benchmarks demonstrate that SpatialEvo achieves the highest average score at both 3B and 7B scales, with consistent gains on spatial reasoning benchmarks and no degradation on general visual understanding.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">大型语言模型 (LLM) 和视觉语言模型 (VLM) 越来越多地通过布局和场景图等中间结构生成室内场景，但评估仍然依赖于对渲染视图进行评分的 LLM 或 VLM 评委，使判断对观点、提示措辞和幻觉敏感。当评估器不稳定时，就很难确定模型是否生成了空间上合理的场景，或者输出分数是否反映了视点、渲染或提示的选择。我们引入了 SceneCritic，一个用于平面图级别布局的符号评估器。 SceneCritic 的约束基于 SceneOnto，这是我们通过聚合来自 3D-FRONT、ScanNet 和 Visual Genome 的室内场景先验构建的结构化空间本体。 SceneOnto 遍历此本体，共同验证对象关系之间的语义、方向和几何一致性，提供对象级和关系级评估，以识别特定违规和成功放置。此外，我们将 SceneCritic 与迭代细化测试床配对，探索模型如何在不同批评模式下构建和修改空间结构：使用碰撞约束作为反馈的基于规则的批评家、对布局作为文本进行操作的 LLM 批评家以及对渲染观察进行操作的 VLM 批评家。通过大量实验，我们表明（a）SceneCritic 比基于 VLM 的评估器更符合人类判断，（b）纯文本 LLM 在语义布局质量上可以优于 VLM，以及（c）基于图像的 VLM 细化是语义和方向校正的最有效的批评模式。</p>
+                        <p class="abstract-zh">三维场景的空间推理是体现智能的核心能力，但持续的模型改进仍然受到几何注释成本的瓶颈。自我进化范式提供了一条有希望的道路，但它依赖模型共识来构建伪标签，导致训练强化而不是纠正模型自身的几何错误。我们确定了 3D 空间推理独有的属性，可以规避这一限制：地面实况是基础几何的确定性结果，可以从点云和相机姿势精确计算，无需任何模型参与。基于这一见解，我们提出了 SpatialEvo，这是一个以确定性几何环境 (DGE) 为中心的 3D 空间推理自我演化框架。 DGE 在显式几何验证规则下形式化了 16 个空间推理任务类别，并将未注释的 3D 场景转换为零噪声交互式预言机，用客观的物理反馈取代了模型共识。在 DGE 约束下，单个共享参数策略在提问者和求解者角色之间共同演化：提问者基于场景观察生成物理上有效的空间问题，而求解者根据 DGE 验证的地面事实得出精确答案。任务自适应调度程序将训练集中在模型最弱的类别上，无需手动设计即可生成动态课程。九个基准测试的实验表明，SpatialEvo 在 3B 和 7B 尺度上均取得了最高的平均分数，在空间推理基准测试中取得了一致的收益，并且一般视觉理解没有下降。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Visual Preference<sup class='ipa'>/ˈprɛfərəns/</sup> Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> with Rubric Rewards</h2>
+                    <h2 class="paper-title">From $P(y|x)$ to $P(y)$: Investigating<sup class='ipa'>/ˌɪnˈvɛstəˌgeɪtɪŋ/</sup> Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> in Pre-train<sup class='ipa'>/pretrain*/</sup> Space</h2>
                     <p class="paper-meta">
-                        <span class="authors">Ya-Qi Yu, Fangyu Hong, Xiangyang Qu</span>
-                        <span class="date">2026-04-14</span>
+                        <span class="authors">Yuqiao Tan, Minzheng Wang, Bo Liu</span>
+                        <span class="date">2026-04-15</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">The effectiveness of Direct Preference Optimization (DPO) depends on preference data that reflect the quality differences that matter in multimodal tasks. Existing pipelines often rely on off-policy perturbations or coarse outcome-based signals, which are not well suited to fine-grained visual reasoning. We propose rDPO, a preference optimization framework based on instance-specific rubrics. For each image-instruction pair, we create a checklist-style rubric of essential and additional criteria to score responses from any possible policies. The instruction-rubric pool is built offline and reused during the construction of on-policy data. On public reward modeling benchmarks, rubric-based prompting massively improves a 30B-A3B judge and brings it close to GPT-5.4. On public downstream benchmarks, rubric-based filtering raises the macro average to 82.69, whereas outcome-based filtering drops it to 75.82 from 81.14. When evaluating scalability on a comprehensive benchmark, rDPO achieves 61.01, markedly outperforming the style-constrained baseline (52.36) and surpassing the 59.48 base model. Together, these results show that visual preference optimization benefits from combining on-policy data construction with instance-specific criterion-level feedback.</p>
+                        <p class="abstract-en">While reinforcement learning with verifiable rewards (RLVR) significantly enhances LLM reasoning by optimizing the conditional distribution P(y|x), its potential is fundamentally bounded by the base model&#39;s existing output distribution. Optimizing the marginal distribution P(y) in the Pre-train Space addresses this bottleneck by encoding reasoning ability and preserving broad exploration capacity. Yet, conventional pre-training relies on static corpora for passive learning, leading to a distribution shift that hinders targeted reasoning enhancement. In this paper, we introduce PreRL (Pre-train Space RL), which applies reward-driven online updates directly to P(y). We theoretically and empirically validate the strong gradient alignment between log P(y) and log P(y|x), establishing PreRL as a viable surrogate for standard RL. Furthermore, we uncover a critical mechanism: Negative Sample Reinforcement (NSR) within PreRL serves as an exceptionally effective driver for reasoning. NSR-PreRL rapidly prunes incorrect reasoning spaces while stimulating endogenous reflective behaviors, increasing transition and reflection thoughts by 14.89x and 6.54x, respectively. Leveraging these insights, we propose Dual Space RL (DSRL), a Policy Reincarnation strategy that initializes models with NSR-PreRL to expand the reasoning horizon before transitioning to standard RL for fine-grained optimization. Extensive experiments demonstrate that DSRL consistently outperforms strong baselines, proving that pre-train space pruning effectively steers the policy toward a refined correct reasoning subspace.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">直接偏好优化 (DPO) 的有效性取决于反映多模式任务中重要的质量差异的偏好数据。现有的管道通常依赖于离策略扰动或基于粗略结果的信号，这不太适合细粒度的视觉推理。我们提出了 rDPO，一种基于特定于实例的规则的偏好优化框架。对于每个图像指令对，我们创建了一个清单式的基本标准和附加标准的标题，以对任何可能的策略的响应进行评分。指令标题池是离线构建的，并在构建在线策略数据期间重复使用。在公共奖励建模基准上，基于标题的提示极大地提高了 30B-A3B 的判断，使其接近 GPT-5.4。在公共下游基准上，基于标题的过滤将宏观平均值提高至 82.69，而基于结果的过滤则将其从 81.14 降至 75.82。在综合基准上评估可扩展性时，rDPO 达到了 61.01，明显优于风格受限的基线 (52.36)，并超过了基础模型的 59.48。总之，这些结果表明，视觉偏好优化受益于将策略数据构建与特定于实例的标准级反馈相结合。</p>
+                        <p class="abstract-zh">虽然具有可验证奖励的强化学习 (RLVR) 通过优化条件分布 P(y|x) 显着增强了 LLM 推理，但其潜力从根本上受到基础模型现有输出分布的限制。优化预训练空间中的边际分布 P(y) 通过编码推理能力和保留广泛的探索能力来解决这一瓶颈。然而，传统的预训练依赖于静态语料库进行被动学习，导致分布变化，阻碍了有针对性的推理增强。在本文中，我们介绍了 PreRL（预训练空间 RL），它将奖励驱动的在线更新直接应用于 P(y)。我们从理论上和经验上验证了 log P(y) 和 log P(y|x) 之间的强梯度对齐，将 PreRL 确立为标准 RL 的可行替代品。此外，我们还发现了一个关键机制：PreRL 中的负样本强化 (NSR) 是异常有效的推理驱动器。 NSR-PreRL 快速修剪不正确的推理空间，同时刺激内源性反思行为，将转换和反思思维分别增加 14.89 倍和 6.54 倍。利用这些见解，我们提出了双空间 RL (DSRL)，这是一种策略轮回策略，它使用 NSR-PreRL 初始化模型以扩展推理范围，然后再过渡到标准 RL 进行细粒度优化。大量实验表明，DSRL 始终优于强大的基线，证明训练前空间修剪有效地引导策略走向精细的正确推理子空间。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Representation<sup class='ipa'>/ˌrɛprəzɛnˈteɪʃən/</sup> geometry<sup class='ipa'>/ʤiˈɑmətri/</sup> shapes task performance<sup class='ipa'>/pərˈfɔrməns/</sup> in vision-language<sup class='ipa'>/visionlanguage*/</sup> modeling<sup class='ipa'>/ˈmɑdəlɪŋ/</sup> for CT enterography<sup class='ipa'>/enterography*/</sup></h2>
+                    <h2 class="paper-title">LongCoT: Benchmarking<sup class='ipa'>/benchmarking*/</sup> Long-Horizon<sup class='ipa'>/longhorizon*/</sup> Chain-of-Thought<sup class='ipa'>/chainofthought*/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Cristian Minoccheri, Emily Wittrup, Kayvan Najarian</span>
-                        <span class="date">2026-04-14</span>
+                        <span class="authors">Sumeet Ramesh Motwani, Daniel Nichols, Charles London</span>
+                        <span class="date">2026-04-15</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Computed tomography (CT) enterography is a primary imaging modality for assessing inflammatory bowel disease (IBD), yet the representational choices that best support automated analysis of this modality are unknown. We present the first study of vision-language transfer learning on abdominal CT enterography and identify two main findings. First, mean pooling of slice embeddings gives better categorical disease assessment (59.2\% three-class accuracy), whereas attention pooling gives better cross-modal retrieval (0.235 text-to-image MRR). This pattern holds across all LoRA configurations tested and suggests that the two aggregators emphasize different properties of the learned representation. Second, per-slice tissue contrast matters more than broader spatial coverage: multi-window RGB encoding, which maps complementary Hounsfield Unit windows to RGB channels, outperforms all strategies that increase spatial coverage through multiplanar sampling, and in this setting adding coronal and sagittal views reduces classification performance. For report generation, fine-tuning without retrieval context yields within-1 severity accuracy at the prevalence-matched chance level (70.4\% vs.\ 71\% random), suggesting little learned ordering beyond the class distribution. Retrieval-augmented generation (RAG) improves this across all configurations, scoring 7--14 percentage points above the chance baseline and improving ordinal MAE from 0.98 to 0.80--0.89. A three-teacher pseudolabel framework enables all comparisons without expert annotations. Together, these findings provide the first baselines for this underexplored modality and offer practical guidance for building vision-language systems for volumetric medical imaging.</p>
+                        <p class="abstract-en">As language models are increasingly deployed for complex autonomous tasks, their ability to reason accurately over longer horizons becomes critical. An essential component of this ability is planning and managing a long, complex chain-of-thought (CoT). We introduce LongCoT, a scalable benchmark of 2,500 expert-designed problems spanning chemistry, mathematics, computer science, chess, and logic to isolate and directly measure the long-horizon CoT reasoning capabilities of frontier models. Problems consist of a short input with a verifiable answer; solving them requires navigating a graph of interdependent steps that span tens to hundreds of thousands of reasoning tokens. Each local step is individually tractable for frontier models, so failures reflect long-horizon reasoning limitations. At release, the best models achieve &lt;10% accuracy (GPT 5.2: 9.8%; Gemini 3 Pro: 6.1%) on LongCoT, revealing a substantial gap in current capabilities. Overall, LongCoT provides a rigorous measure of long-horizon reasoning, tracking the ability of frontier models to reason reliably over extended periods.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">计算机断层扫描 (CT) 小肠造影是评估炎症性肠病 (IBD) 的主要成像方式，但最能支持该方式自动分析的代表性选择尚不清楚。我们提出了第一项关于腹部 CT 小肠造影视觉语言迁移学习的研究，并确定了两个主要发现。首先，切片嵌入的平均池化提供了更好的分类疾病评估（59.2% 三级准确度），而注意力池化提供了更好的跨模态检索（0.235 文本到图像 MRR）。这种模式适用于所有测试的 LoRA 配置，表明两个聚合器强调学习表示的不同属性。其次，每切片组织对比度比更广泛的空间覆盖范围更重要：多窗口 RGB 编码（将互补的亨斯菲尔德单位窗口映射到 RGB 通道）优于通过多平面采样增加空间覆盖范围的所有策略，并且在这种设置中添加冠状和矢状视图会降低分类性能。对于报告生成，在没有检索上下文的情况下进行微调，在患病率匹配的机会水平上产生了 1 以内的严重性准确度（70.4% vs. 71% 随机），这表明除了类别分布之外几乎没有学习到排序。检索增强生成 (RAG) 在所有配置中都改进了这一点，得分比机会基线高出 7--14 个百分点，并将有序 MAE 从 0.98 改进到 0.80--0.89。三教师伪标签框架可以在没有专家注释的情况下进行所有比较。总之，这些发现为这种尚未充分探索的模式提供了第一个基线，并为构建立体医学成像视觉语言系统提供了实用指导。</p>
+                        <p class="abstract-zh">随着语言模型越来越多地部署用于复杂的自主任务，它们在更长的时间内准确推理的能力变得至关重要。这种能力的一个重要组成部分是规划和管理一个漫长而复杂的思想链（CoT）。我们推出了 LongCoT，这是一个可扩展的基准，包含 2,500 个专家设计的问题，涵盖化学、数学、计算机科学、国际象棋和逻辑，用于隔离和直接测量前沿模型的长期 CoT 推理能力。问题包括简短的输入和可验证的答案；解决这些问题需要浏览一张包含数万到数十万个推理标记的相互依赖步骤的图表。对于前沿模型来说，每个局部步骤都是单独可处理的，因此失败反映了长期推理的局限性。发布时，最好的模型在 LongCoT 上实现了 &lt;10% 的准确率（GPT 5.2：9.8%；Gemini 3 Pro：6.1%），揭示了当前能力的巨大差距。总体而言，LongCoT 提供了长期推理的严格衡量标准，跟踪前沿模型在较长时间内可靠推理的能力。</p>
                     </div>
                 </article>
                 
@@ -458,10 +458,26 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 12</span>
+                        <span class="repo-stars">★ 18</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">bluegalaxy111/awesome-vibe-coding</strong>
+                            <p class="repo-desc">精选的 300 多个工具、平台和资源列表，用于通过与 AI 对话进行氛围编码和构建软件</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 14</span>
                         <div class="repo-info">
                             <strong class="repo-name">FareedKhan-dev/claude-code-staff-engineer</strong>
                             <p class="repo-desc">在 Claude Code 中构建具有子代理团队的高级工程师</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 11</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">pengrambo3-tech/zueshammer</strong>
+                            <p class="repo-desc">⚡ ZuesHammer 雷神之锤 - 众神的力量 | AI超级特工|融合ClaudeCode+OpenClaw+Hermes</p>
                         </div>
                     </li>
                 
@@ -506,15 +522,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">galpt/kilocode-agents</strong>
-                            <p class="repo-desc">Kilocode 中更强大的多代理工作流程的提示和代理预设</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
+                        <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
                             <strong class="repo-name">adops-tool/awesome-lead-generation</strong>
                             <p class="repo-desc">用于潜在客户开发、数据丰富、冷外展和社交聆听的动力工具的精选目录。探索现代增长堆栈来自动化销售流程、验证电子邮件并分析客户意图。给这个存储库加注星标以跟踪新的更新。</p>
@@ -522,18 +530,10 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
+                        <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
                             <strong class="repo-name">Ankit-Uniyal/iso-42001-ai-governance-toolkit</strong>
                             <p class="repo-desc">ISO/IEC 42001:2023 人工智能管理系统的实用实施工具包 — 差距评估清单、风险登记模板、控制映射以及面向 GRC 专业人员和人工智能治理从业者的实施路线图。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">praneethepical/AI-Resume-Builder</strong>
-                            <p class="repo-desc">AI Resume Builder 是一款智能工具，可帮助您在几秒钟内创建专业、量身定制的简历。只需粘贴职位描述，人工智能就会生成优化的内容，突出您的技能和经验。非常适合想要快速、有效且适合 ATS 的简历的求职者。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-04-15 22:38:09
+        生成于 2026-04-16 22:35:52
     </footer>
 </body>
 </html>
