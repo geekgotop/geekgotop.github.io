@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">SpatialEvo:<sup class='ipa'>/spatialevo*/</sup> Self-Evolving<sup class='ipa'>/selfevolving*/</sup> Spatial Intelligence<sup class='ipa'>/ˌɪnˈtɛləʤəns/</sup> via Deterministic<sup class='ipa'>/dɪˌtərməˈnɪstɪk/</sup> Geometric<sup class='ipa'>/ˌʤiəˈmɛtrɪk/</sup> Environments<sup class='ipa'>/ɪnˈvaɪrənmənts/</sup></h2>
+                    <h2 class="paper-title">MM-WebAgent:<sup class='ipa'>/mmwebagent*/</sup> A Hierarchical<sup class='ipa'>/ˌhaɪˈrɑrkəkəl/</sup> Multimodal<sup class='ipa'>/multimodal*/</sup> Web Agent for Webpage Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Dinging Li, Yingxiu Zhao, Xinrui Cheng</span>
-                        <span class="date">2026-04-15</span>
+                        <span class="authors">Yan Li, Zezi Zeng, Yifan Yang</span>
+                        <span class="date">2026-04-16</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Spatial reasoning over three-dimensional scenes is a core capability for embodied intelligence, yet continuous model improvement remains bottlenecked by the cost of geometric annotation. The self-evolving paradigm offers a promising path, but its reliance on model consensus to construct pseudo-labels causes training to reinforce rather than correct the model&#39;s own geometric errors. We identify a property unique to 3D spatial reasoning that circumvents this limitation: ground truth is a deterministic consequence of the underlying geometry, computable exactly from point clouds and camera poses without any model involvement. Building on this insight, we present SpatialEvo, a self-evolving framework for 3D spatial reasoning, centered on the Deterministic Geometric Environment (DGE). The DGE formalizes 16 spatial reasoning task categories under explicit geometric validation rules and converts unannotated 3D scenes into zero-noise interactive oracles, replacing model consensus with objective physical feedback. A single shared-parameter policy co-evolves across questioner and solver roles under DGE constraints: the questioner generates physically valid spatial questions grounded in scene observations, while the solver derives precise answers against DGE-verified ground truth. A task-adaptive scheduler endogenously concentrates training on the model&#39;s weakest categories, producing a dynamic curriculum without manual design. Experiments across nine benchmarks demonstrate that SpatialEvo achieves the highest average score at both 3B and 7B scales, with consistent gains on spatial reasoning benchmarks and no degradation on general visual understanding.</p>
+                        <p class="abstract-en">The rapid progress of Artificial Intelligence Generated Content (AIGC) tools enables images, videos, and visualizations to be created on demand for webpage design, offering a flexible and increasingly adopted paradigm for modern UI/UX. However, directly integrating such tools into automated webpage generation often leads to style inconsistency and poor global coherence, as elements are generated in isolation. We propose MM-WebAgent, a hierarchical agentic framework for multimodal webpage generation that coordinates AIGC-based element generation through hierarchical planning and iterative self-reflection. MM-WebAgent jointly optimizes global layout, local multimodal content, and their integration, producing coherent and visually consistent webpages. We further introduce a benchmark for multimodal webpage generation and a multi-level evaluation protocol for systematic assessment. Experiments demonstrate that MM-WebAgent outperforms code-generation and agent-based baselines, especially on multimodal element generation and integration. Code &amp; Data: https://aka.ms/mm-webagent.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">三维场景的空间推理是体现智能的核心能力，但持续的模型改进仍然受到几何注释成本的瓶颈。自我进化范式提供了一条有希望的道路，但它依赖模型共识来构建伪标签，导致训练强化而不是纠正模型自身的几何错误。我们确定了 3D 空间推理独有的属性，可以规避这一限制：地面实况是基础几何的确定性结果，可以从点云和相机姿势精确计算，无需任何模型参与。基于这一见解，我们提出了 SpatialEvo，这是一个以确定性几何环境 (DGE) 为中心的 3D 空间推理自我演化框架。 DGE 在显式几何验证规则下形式化了 16 个空间推理任务类别，并将未注释的 3D 场景转换为零噪声交互式预言机，用客观的物理反馈取代了模型共识。在 DGE 约束下，单个共享参数策略在提问者和求解者角色之间共同演化：提问者基于场景观察生成物理上有效的空间问题，而求解者根据 DGE 验证的地面事实得出精确答案。任务自适应调度程序将训练集中在模型最弱的类别上，无需手动设计即可生成动态课程。九个基准测试的实验表明，SpatialEvo 在 3B 和 7B 尺度上均取得了最高的平均分数，在空间推理基准测试中取得了一致的收益，并且一般视觉理解没有下降。</p>
+                        <p class="abstract-zh">人工智能生成内容 (AIGC) 工具的快速发展使得可以根据网页设计的需求创建图像、视频和可视化，为现代 UI/UX 提供了灵活且日益采用的范例。然而，直接将这些工具集成到自动化网页生成中通常会导致风格不一致和全局一致性差，因为元素是孤立生成的。我们提出了 MM-WebAgent，这是一种用于多模式网页生成的分层代理框架，它通过分层规划和迭代自我反思来协调基于 AIGC 的元素生成。 MM-WebAgent 共同优化全局布局、本地多模式内容及其集成，生成连贯且视觉一致的网页。我们进一步引入了多模式网页生成的基准和用于系统评估的多级评估协议。实验表明，MM-WebAgent 的性能优于代码生成和基于代理的基线，尤其是在多模式元素生成和集成方面。代码和数据：https://aka.ms/mm-webagent。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">From $P(y|x)$ to $P(y)$: Investigating<sup class='ipa'>/ˌɪnˈvɛstəˌgeɪtɪŋ/</sup> Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> in Pre-train<sup class='ipa'>/pretrain*/</sup> Space</h2>
+                    <h2 class="paper-title">Generalization<sup class='ipa'>/ˌʤɛnərəlɪˈzeɪʃən/</sup> in LLM Problem Solving: The Case of the Shortest<sup class='ipa'>/ˈʃɔrtɪst/</sup> Path</h2>
                     <p class="paper-meta">
-                        <span class="authors">Yuqiao Tan, Minzheng Wang, Bo Liu</span>
-                        <span class="date">2026-04-15</span>
+                        <span class="authors">Yao Tong, Jiayuan Ye, Anastasia Borovykh</span>
+                        <span class="date">2026-04-16</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">While reinforcement learning with verifiable rewards (RLVR) significantly enhances LLM reasoning by optimizing the conditional distribution P(y|x), its potential is fundamentally bounded by the base model&#39;s existing output distribution. Optimizing the marginal distribution P(y) in the Pre-train Space addresses this bottleneck by encoding reasoning ability and preserving broad exploration capacity. Yet, conventional pre-training relies on static corpora for passive learning, leading to a distribution shift that hinders targeted reasoning enhancement. In this paper, we introduce PreRL (Pre-train Space RL), which applies reward-driven online updates directly to P(y). We theoretically and empirically validate the strong gradient alignment between log P(y) and log P(y|x), establishing PreRL as a viable surrogate for standard RL. Furthermore, we uncover a critical mechanism: Negative Sample Reinforcement (NSR) within PreRL serves as an exceptionally effective driver for reasoning. NSR-PreRL rapidly prunes incorrect reasoning spaces while stimulating endogenous reflective behaviors, increasing transition and reflection thoughts by 14.89x and 6.54x, respectively. Leveraging these insights, we propose Dual Space RL (DSRL), a Policy Reincarnation strategy that initializes models with NSR-PreRL to expand the reasoning horizon before transitioning to standard RL for fine-grained optimization. Extensive experiments demonstrate that DSRL consistently outperforms strong baselines, proving that pre-train space pruning effectively steers the policy toward a refined correct reasoning subspace.</p>
+                        <p class="abstract-en">Whether language models can systematically generalize remains actively debated. Yet empirical performance is jointly shaped by multiple factors such as training data, training paradigms, and inference-time strategies, making failures difficult to interpret. We introduce a controlled synthetic environment based on shortest-path planning, a canonical composable sequential optimization problem. The setup enables clean separation of these factors and supports two orthogonal axes of generalization: spatial transfer to unseen maps and length scaling to longer-horizon problems. We find that models exhibit strong spatial transfer but consistently fail under length scaling due to recursive instability. We further analyze how distinct stages of the learning pipeline influence systematic problem-solving: for example, data coverage sets capability limits; reinforcement learning improves training stability but does not expand those limits; and inference-time scaling enhances performance but cannot rescue length-scaling failures.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">虽然具有可验证奖励的强化学习 (RLVR) 通过优化条件分布 P(y|x) 显着增强了 LLM 推理，但其潜力从根本上受到基础模型现有输出分布的限制。优化预训练空间中的边际分布 P(y) 通过编码推理能力和保留广泛的探索能力来解决这一瓶颈。然而，传统的预训练依赖于静态语料库进行被动学习，导致分布变化，阻碍了有针对性的推理增强。在本文中，我们介绍了 PreRL（预训练空间 RL），它将奖励驱动的在线更新直接应用于 P(y)。我们从理论上和经验上验证了 log P(y) 和 log P(y|x) 之间的强梯度对齐，将 PreRL 确立为标准 RL 的可行替代品。此外，我们还发现了一个关键机制：PreRL 中的负样本强化 (NSR) 是异常有效的推理驱动器。 NSR-PreRL 快速修剪不正确的推理空间，同时刺激内源性反思行为，将转换和反思思维分别增加 14.89 倍和 6.54 倍。利用这些见解，我们提出了双空间 RL (DSRL)，这是一种策略轮回策略，它使用 NSR-PreRL 初始化模型以扩展推理范围，然后再过渡到标准 RL 进行细粒度优化。大量实验表明，DSRL 始终优于强大的基线，证明训练前空间修剪有效地引导策略走向精细的正确推理子空间。</p>
+                        <p class="abstract-zh">语言模型是否可以系统地泛化仍然存在激烈争论。然而，经验表现是由训练数据、训练范式和推理时间策略等多种因素共同决定的，这使得失败难以解释。我们引入了基于最短路径规划的受控合成环境，这是一个典型的可组合顺序优化问题。该设置可以清楚地分离这些因素，并支持两个正交轴的概括：空间转移到看不见的地图和长度缩放到更长的视野问题。我们发现模型表现出很强的空间转移，但由于递归不稳定而在长度缩放下始终失败。我们进一步分析学习管道的不同阶段如何影响系统问题的解决：例如，数据覆盖范围设置了能力限制；强化学习提高了训练的稳定性，但并没有扩大这些限制；推理时间缩放可以提高性能，但无法挽救长度缩放失败。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">LongCoT: Benchmarking<sup class='ipa'>/benchmarking*/</sup> Long-Horizon<sup class='ipa'>/longhorizon*/</sup> Chain-of-Thought<sup class='ipa'>/chainofthought*/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h2>
+                    <h2 class="paper-title">Diagnosing<sup class='ipa'>/ˌdaɪəgˈnoʊsɪŋ/</sup> LLM Judge Reliability:<sup class='ipa'>/riˌlaɪəˈbɪləti/</sup> Conformal<sup class='ipa'>/conformal*/</sup> Prediction<sup class='ipa'>/priˈdɪkʃən/</sup> Sets and Transitivity<sup class='ipa'>/transitivity*/</sup> Violations<sup class='ipa'>/vaɪəˈleɪʃənz/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Sumeet Ramesh Motwani, Daniel Nichols, Charles London</span>
-                        <span class="date">2026-04-15</span>
+                        <span class="authors">Manan Gupta, Dhruv Kumar</span>
+                        <span class="date">2026-04-16</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">As language models are increasingly deployed for complex autonomous tasks, their ability to reason accurately over longer horizons becomes critical. An essential component of this ability is planning and managing a long, complex chain-of-thought (CoT). We introduce LongCoT, a scalable benchmark of 2,500 expert-designed problems spanning chemistry, mathematics, computer science, chess, and logic to isolate and directly measure the long-horizon CoT reasoning capabilities of frontier models. Problems consist of a short input with a verifiable answer; solving them requires navigating a graph of interdependent steps that span tens to hundreds of thousands of reasoning tokens. Each local step is individually tractable for frontier models, so failures reflect long-horizon reasoning limitations. At release, the best models achieve &lt;10% accuracy (GPT 5.2: 9.8%; Gemini 3 Pro: 6.1%) on LongCoT, revealing a substantial gap in current capabilities. Overall, LongCoT provides a rigorous measure of long-horizon reasoning, tracking the ability of frontier models to reason reliably over extended periods.</p>
+                        <p class="abstract-en">LLM-as-judge frameworks are increasingly used for automatic NLG evaluation, yet their per-instance reliability remains poorly understood. We present a two-pronged diagnostic toolkit applied to SummEval: $\textbf{(1)}$ a transitivity analysis that reveals widespread per-input inconsistency masked by low aggregate violation rates ($\barρ = 0.8$-$4.1\%$), with $33$-$67\%$ of documents exhibiting at least one directed 3-cycle; and $\textbf{(2)}$ split conformal prediction sets over 1-5 Likert scores providing theoretically-guaranteed $\geq(1{-}α)$ coverage, with set width serving as a per-instance reliability indicator ($r_s = {+}0.576$, $N{=}1{,}918$, $p &lt; 10^{-100}$, pooled across all judges). Critically, prediction set width shows consistent cross-judge agreement ($\bar{r} = 0.32$-$0.38$), demonstrating it captures document-level difficulty rather than judge-specific noise. Across four judges and four criteria, both diagnostics converge: criterion matters more than judge, with relevance judged most reliably (avg. set size $\approx 3.0$) and coherence moderately so (avg. set size $\approx 3.9$), while fluency and consistency remain unreliable (avg. set size $\approx 4.9$). We release all code, prompts, and cached results.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">随着语言模型越来越多地部署用于复杂的自主任务，它们在更长的时间内准确推理的能力变得至关重要。这种能力的一个重要组成部分是规划和管理一个漫长而复杂的思想链（CoT）。我们推出了 LongCoT，这是一个可扩展的基准，包含 2,500 个专家设计的问题，涵盖化学、数学、计算机科学、国际象棋和逻辑，用于隔离和直接测量前沿模型的长期 CoT 推理能力。问题包括简短的输入和可验证的答案；解决这些问题需要浏览一张包含数万到数十万个推理标记的相互依赖步骤的图表。对于前沿模型来说，每个局部步骤都是单独可处理的，因此失败反映了长期推理的局限性。发布时，最好的模型在 LongCoT 上实现了 &lt;10% 的准确率（GPT 5.2：9.8%；Gemini 3 Pro：6.1%），揭示了当前能力的巨大差距。总体而言，LongCoT 提供了长期推理的严格衡量标准，跟踪前沿模型在较长时间内可靠推理的能力。</p>
+                        <p class="abstract-zh">LLM 作为法官的框架越来越多地用于自动 NLG 评估，但它们的每个实例的可靠性仍然知之甚少。我们提出了一个应用于 SummEval 的双管齐下的诊断工具包：$\textbf{(1)}$ 一种传递性分析，揭示了被低总违规率掩盖的广泛的每个输入不一致性（$\barρ = 0.8$-$4.1\%$），其中 $33$-$67\%$ 的文档至少显示一个定向 3 周期； $\textbf{(2)}$ 将共形预测集分割为 1-5 个 Likert 分数，提供理论上保证的 $\geq(1{-}α)$ 覆盖范围，并将集合宽度用作每个实例的可靠性指标（$r_s = {+}0.576$、$N{=}1{,}918$、$p &lt; 10^{-100}$，汇集所有法官）。至关重要的是，预测集宽度显示出一致的跨评判一致性（$\bar{r} = 0.32$-$0.38$），表明它捕获了文档级别的难度，而不是评判特定的噪音。在四位法官和四个标准中，两种诊断都趋于一致：标准比判断更重要，相关性判断最可靠（平均集合大小$\约3.0$），连贯性中等（平均集合大小$\约3.9$），而流畅性和一致性仍然不可靠（平均集合大小$\约4.9$）。我们发布所有代码、提示和缓存结果。</p>
                     </div>
                 </article>
                 
@@ -458,7 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 18</span>
+                        <span class="repo-stars">★ 24</span>
                         <div class="repo-info">
                             <strong class="repo-name">bluegalaxy111/awesome-vibe-coding</strong>
                             <p class="repo-desc">精选的 300 多个工具、平台和资源列表，用于通过与 AI 对话进行氛围编码和构建软件</p>
@@ -466,7 +466,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 14</span>
+                        <span class="repo-stars">★ 19</span>
                         <div class="repo-info">
                             <strong class="repo-name">FareedKhan-dev/claude-code-staff-engineer</strong>
                             <p class="repo-desc">在 Claude Code 中构建具有子代理团队的高级工程师</p>
@@ -474,26 +474,10 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 11</span>
+                        <span class="repo-stars">★ 13</span>
                         <div class="repo-info">
                             <strong class="repo-name">pengrambo3-tech/zueshammer</strong>
                             <p class="repo-desc">⚡ ZuesHammer 雷神之锤 - 众神的力量 | AI超级特工|融合ClaudeCode+OpenClaw+Hermes</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 9</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">aaravriyer193/TED</strong>
-                            <p class="repo-desc">一个开源的自主人工智能代理，拥有一个 Linux 盒子并可以做任何它想做的事情。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 7</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">aveloxis/aveloxis</strong>
-                            <p class="repo-desc">Aveloxis 意味着“鸟”（数据或结果）已经在高速移动。</p>
                         </div>
                     </li>
                 
@@ -530,10 +514,26 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
+                        <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">Ankit-Uniyal/iso-42001-ai-governance-toolkit</strong>
-                            <p class="repo-desc">ISO/IEC 42001:2023 人工智能管理系统的实用实施工具包 — 差距评估清单、风险登记模板、控制映射以及面向 GRC 专业人员和人工智能治理从业者的实施路线图。</p>
+                            <strong class="repo-name">abbosaliboev/free-ai-bible</strong>
+                            <p class="repo-desc">🧠 2026 年开发人员免费 AI API 和工具的终极目录 — 免费 LLM API、图像生成、模型托管、本地 AI。没有信用卡。没有付费专区。 700 多个资源。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">KomalSrinivasan/ai-universe</strong>
+                            <p class="repo-desc">为开发人员提供最全面的 AI 工具、框架和资源集合。 16 个类别的 110 多个经过验证的开源项目。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 2</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">MatthewK78/Rose</strong>
+                            <p class="repo-desc">🌹 Rose：切片范围平衡 PyTorch 优化器。通过范围归一化梯度更新进行无状态优化。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-04-16 22:35:52
+        生成于 2026-04-17 22:34:35
     </footer>
 </body>
 </html>
