@@ -436,7 +436,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <div class="paper-abstract">
                         <p class="abstract-en">LLM-as-judge frameworks are increasingly used for automatic NLG evaluation, yet their per-instance reliability remains poorly understood. We present a two-pronged diagnostic toolkit applied to SummEval: $\textbf{(1)}$ a transitivity analysis that reveals widespread per-input inconsistency masked by low aggregate violation rates ($\barρ = 0.8$-$4.1\%$), with $33$-$67\%$ of documents exhibiting at least one directed 3-cycle; and $\textbf{(2)}$ split conformal prediction sets over 1-5 Likert scores providing theoretically-guaranteed $\geq(1{-}α)$ coverage, with set width serving as a per-instance reliability indicator ($r_s = {+}0.576$, $N{=}1{,}918$, $p &lt; 10^{-100}$, pooled across all judges). Critically, prediction set width shows consistent cross-judge agreement ($\bar{r} = 0.32$-$0.38$), demonstrating it captures document-level difficulty rather than judge-specific noise. Across four judges and four criteria, both diagnostics converge: criterion matters more than judge, with relevance judged most reliably (avg. set size $\approx 3.0$) and coherence moderately so (avg. set size $\approx 3.9$), while fluency and consistency remain unreliable (avg. set size $\approx 4.9$). We release all code, prompts, and cached results.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">LLM 作为法官的框架越来越多地用于自动 NLG 评估，但它们的每个实例的可靠性仍然知之甚少。我们提出了一个应用于 SummEval 的双管齐下的诊断工具包：$\textbf{(1)}$ 一种传递性分析，揭示了被低总违规率掩盖的广泛的每个输入不一致性（$\barρ = 0.8$-$4.1\%$），其中 $33$-$67\%$ 的文档至少显示一个定向 3 周期； $\textbf{(2)}$ 将共形预测集分割为 1-5 个 Likert 分数，提供理论上保证的 $\geq(1{-}α)$ 覆盖范围，并将集合宽度用作每个实例的可靠性指标（$r_s = {+}0.576$、$N{=}1{,}918$、$p &lt; 10^{-100}$，汇集所有法官）。至关重要的是，预测集宽度显示出一致的跨评判一致性（$\bar{r} = 0.32$-$0.38$），表明它捕获了文档级别的难度，而不是评判特定的噪音。在四位法官和四个标准中，两种诊断都趋于一致：标准比判断更重要，相关性判断最可靠（平均集合大小$\约3.0$），连贯性中等（平均集合大小$\约3.9$），而流畅性和一致性仍然不可靠（平均集合大小$\约4.9$）。我们发布所有代码、提示和缓存结果。</p>
+                        <p class="abstract-zh">LLM 作为法官的框架越来越多地用于自动 NLG 评估，但它们的每个实例的可靠性仍然知之甚少。我们提出了一个应用于 SummEval 的双管齐下的诊断工具包：$\textbf{(1)}$ 一种传递性分析，揭示了被低总违规率掩盖的广泛的每个输入不一致性（$\barρ = 0.8$-$4.1\%$），其中 $33$-$67\%$ 的文档至少显示一个定向 3 周期； $\textbf{(2)}$ 将共形预测集分割为 1-5 个 Likert 分数，提供理论上保证的 $\geq(1{-}α)$ 覆盖范围，并将集合宽度用作每个实例的可靠性指标（$r_s = {+}0.576$、$N{=}1{,}918$、$p &lt; 10^{-100}$，汇集所有法官）。至关重要的是，预测集宽度显示了一致的跨评判一致性（$\bar{r} = 0.32$-$0.38$），表明它捕获了文档级别的难度，而不是评判特定的噪音。在四位法官和四个标准中，两种诊断都趋于一致：标准比判断更重要，相关性判断最可靠（平均集合大小$\约3.0$），连贯性中等（平均集合大小$\约3.9$），而流畅性和一致性仍然不可靠（平均集合大小$\约4.9$）。我们发布所有代码、提示和缓存结果。</p>
                     </div>
                 </article>
                 
@@ -466,10 +466,18 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 19</span>
+                        <span class="repo-stars">★ 23</span>
                         <div class="repo-info">
                             <strong class="repo-name">FareedKhan-dev/claude-code-staff-engineer</strong>
                             <p class="repo-desc">在 Claude Code 中构建具有子代理团队的高级工程师</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 19</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">MatthewK78/Rose</strong>
+                            <p class="repo-desc">🌹 Rose：切片范围平衡 PyTorch 优化器。通过范围归一化梯度更新进行无状态优化。</p>
                         </div>
                     </li>
                 
@@ -484,16 +492,8 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 3</span>
                         <div class="repo-info">
-                            <strong class="repo-name">web3guru888/asi-build</strong>
-                            <p class="repo-desc">人工智能的统一框架 — 29 个模块、4,355 多个测试、215K LOC。意识·认知黑板·ZK桥·知识图谱·因果推理·联邦学习·脑机接口·脉冲神经网络·量子混合</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">oakeighty5/awesome-ai-agents</strong>
-                            <p class="repo-desc">AI 代理框架、平台、工具和资源的精选列表</p>
+                            <strong class="repo-name">abbosaliboev/free-ai-bible</strong>
+                            <p class="repo-desc">🧠 2026 年开发人员免费 AI API 和工具的终极目录 — 免费 LLM API、图像生成、模型托管、本地 AI。没有信用卡。没有付费专区。 700 多个资源。</p>
                         </div>
                     </li>
                 
@@ -516,24 +516,24 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     <li class="repo-item">
                         <span class="repo-stars">★ 2</span>
                         <div class="repo-info">
-                            <strong class="repo-name">abbosaliboev/free-ai-bible</strong>
-                            <p class="repo-desc">🧠 2026 年开发人员免费 AI API 和工具的终极目录 — 免费 LLM API、图像生成、模型托管、本地 AI。没有信用卡。没有付费专区。 700 多个资源。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
                             <strong class="repo-name">KomalSrinivasan/ai-universe</strong>
                             <p class="repo-desc">为开发人员提供最全面的 AI 工具、框架和资源集合。 16 个类别的 110 多个经过验证的开源项目。</p>
                         </div>
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
+                        <span class="repo-stars">★ 1</span>
                         <div class="repo-info">
-                            <strong class="repo-name">MatthewK78/Rose</strong>
-                            <p class="repo-desc">🌹 Rose：切片范围平衡 PyTorch 优化器。通过范围归一化梯度更新进行无状态优化。</p>
+                            <strong class="repo-name">LuizOsti/AIDocumentAnalyzer</strong>
+                            <p class="repo-desc">.NET 8 中的 REST API 使用 GPT-4.1 对任何 JSON 文档执行结构化风险分析</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 1</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">Marktechpost/Machine-learning-Data-science-Tutorials</strong>
+                            <p class="repo-desc">经典机器学习、特征工程、管道</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-04-17 22:34:35
+        生成于 2026-04-18 22:30:03
     </footer>
 </body>
 </html>
