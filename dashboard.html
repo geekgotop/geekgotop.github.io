@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-04-21 22:34:43</span>
+        <span class="generated-time">更新于 2026-04-22 22:43:00</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">MathNet: a Global Multimodal<sup class='ipa'>/multimodal*/</sup> Benchmark<sup class='ipa'>/ˈbɛnʧˌmɑrk/</sup> for Mathematical<sup class='ipa'>/ˌmæθəˈmætɪkəl/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> and Retrieval<sup class='ipa'>/rɪˈtrivəl/</sup></h4>
+                            <h4 class="paper-title">Generalization<sup class='ipa'>/ˌʤɛnərəlɪˈzeɪʃən/</sup> at the Edge of Stability<sup class='ipa'>/stəˈbɪlɪti/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Shaden Alshammari, Kevin Wen, Abrar Zainal</span>
-                                <span class="date">2026-04-20</span>
-                                <span class="categories">cs.AI | cs.DL</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Mathematical problem solving remains a challenging test of reasoning for large language and multimodal models, yet existing benchmarks are limited in size, language coverage, and task diversity. We introduce MathNet, a high-quality, large-scale, multimodal, and multilingual dataset of Olympiad-level...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">数学问题解决仍然是对大型语言和多模态模型的推理的一项具有挑战性的测试，但现有基准在规模、语言覆盖范围和任务多样性方面受到限制。我们介绍了 MathNet，这是一个高质量、大规模、多模式和多语言的奥林匹克级数学问题数据集，以及用于评估生成模型中的数学推理和基于嵌入的系统中的数学检索的基准。 MathNet 跨越 47 个国家、17 种语言和二十年的竞赛，包含 30,676 个专家撰写的问题以及跨不同领域的解决方案。除了核心数据集之外，我们还构建了一个检索基准，该基准由人类专家策划的数学上等效且结构相似的问题对组成。   MathNet 支持三种任务：(i) 问题解决，(ii) 数学感知检索，以及 (iii) 检索增强问题解决。实验结果表明，即使是最先进的推理模型（Gemini-3.1-Pro 为 78.4%，GPT-5 为 69.3%）仍然面临挑战，而嵌入模型则难以检索同等问题。我们进一步表明，检索增强生成性能对检索质量高度敏感；例如，DeepSeek-V3.2-Speciale 的增益高达 12%，在基准测试中获得最高分。 MathNet 提供了最大的高质量奥林匹克数据集以及用于评估数学问题检索的第一个基准，我们在 https://mathnet.mit.edu 公开发布了数据集和基准。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2604.18584v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Sessa: Selective<sup class='ipa'>/səˈlɛktɪv/</sup> State Space Attention<sup class='ipa'>/əˈtɛnʃən/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Liubomyr Horbatko</span>
-                                <span class="date">2026-04-20</span>
+                                <span class="authors">Mario Tuci, Caner Korkmaz, Umut Şimşekli</span>
+                                <span class="date">2026-04-21</span>
                                 <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Modern sequence models are dominated by Transformers, where self-attention mixes information from the visible context in an input-dependent way. However, when retrieval is not sharp and attention remains diffuse over an effective support $S_{\mathrm{eff}}(t)$, the influence of any individual token i...</p>
+                                <p class="abstract-en">Training modern neural networks often relies on large learning rates, operating at the edge of stability, where the optimization dynamics exhibit oscillatory and chaotic behavior. Empirically, this regime often yields improved generalization performance, yet the underlying mechanism remains poorly u...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">现代序列模型以 Transformer 为主，其中自注意力以依赖于输入的方式混合来自可见上下文的信息。然而，当检索不敏锐并且注意力仍然分散在有效支持 $S_{\mathrm{eff}}(t)$ 上时，任何单个令牌的影响都会被稀释，通常缩放为 $O(1/S_{\mathrm{eff}}(t))$ 并在完整前缀设置中达到 $O(1/\ell)$ 旧令牌。结构化状态空间模型通过显式反馈路径循环处理序列；像 Mamba 这样的选择性变体使得这种反馈依赖于输入，但是当冻结时间不能长时间持续时，它们的远程灵敏度会随着滞后呈指数衰减。因此，现有架构要么在单次读取中检索过去，要么通过单个反馈链传播信息。我们引入了 Sessa，一种将注意力放在反馈路径内的解码器，从而实现层内的循环多路径聚合。在规定的假设下，Sessa 承认存在幂律记忆尾部，其滞后 $\ell$ 的阶数为 $O(\ell^{-β})$，$0&lt;β&lt;1$，渐近地慢于 $1/\ell$；此外，在影响为 $θ(\ell^{-β})$ 的显式扩散均匀路由设置中，该速率很紧。在相同条件下，比较模型类中只有Sessa实现了灵活的选择性检索，包括非衰减剖面。根据经验，在匹配的架构和训练预算下，Sessa 在我们的长上下文基准上实现了最强的性能，同时在短上下文语言建模上与 Transformer 和 Mamba 风格基准保持竞争力。</p>
+                                    <p class="abstract-zh">训练现代神经网络通常依赖于大学习率，在稳定边缘运行，其中优化动态表现出振荡和混沌行为。根据经验，这种机制通常会提高泛化性能，但其基本机制仍然知之甚少。在这项工作中，我们将随机优化器表示为随机动力系统，它通常收敛到具有较小内在维数的分形吸引子集（而不是一个点）。基于这种联系并受到李亚普诺夫维数理论的启发，我们引入了一种新颖的维数概念，创造了“锐度维数”，并证明了基于该维数的泛化界限。我们的结果表明，混沌体系中的泛化取决于完整的 Hessian 谱及其部分行列式的结构，突出了先前工作中考虑的迹或谱范数无法捕获的复杂性。各种 MLP 和 Transformer 的实验验证了我们的理论，同时也为最近观察到的 grokking 现象提供了新的见解。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2604.18580v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2604.19740v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Bounded Ratio Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
+                            <h4 class="paper-title">UniT: Toward a Unified Physical<sup class='ipa'>/ˈfɪzɪkəl/</sup> Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> for Human-to-Humanoid<sup class='ipa'>/humantohumanoid*/</sup> Policy Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> and World Modeling<sup class='ipa'>/ˈmɑdəlɪŋ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Yunke Ao, Le Chen, Bruce D. Lee</span>
-                                <span class="date">2026-04-20</span>
+                                <span class="authors">Boyu Chen, Yi Chen, Lu Qiu</span>
+                                <span class="date">2026-04-21</span>
+                                <span class="categories">cs.RO | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Scaling humanoid foundation models is bottlenecked by the scarcity of robotic data. While massive egocentric human data offers a scalable alternative, bridging the cross-embodiment chasm remains a fundamental challenge due to kinematic mismatches. We introduce UniT (Unified Latent Action Tokenizer v...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">机器人数据的稀缺阻碍了人形基础模型的扩展。虽然大量以自我为中心的人类数据提供了可扩展的替代方案，但由于运动学不匹配，弥合跨实体鸿沟仍然是一个根本挑战。我们引入了 UniT（通过视觉锚定的统一潜在动作分词器），这是一个为人与人之间的传输建立统一物理语言的框架。基于异构运动学共享普遍视觉后果的理念，UnitT 采用了三分支交叉重建机制：动作预测视觉，将运动学锚定到物理结果，而视觉重建动作，以过滤掉不相关的视觉混杂因素。同时，融合分支将这些纯化的模态协同作用到与实施例无关的物理意图的共享离散潜在空间中。我们通过两种范式验证 UnitT：1）策略学习（VLA-UnitT）：通过预测这些统一的令牌，它有效地利用不同的人类数据，在人形模拟基准和实际部署上实现最先进的数据效率和强大的分布外（OOD）泛化，特别是展示了零样本任务转移。 2）世界建模（WM-UniT）：通过统一令牌作为条件来调整跨实体动态，实现直接的人与人之间的动作转移。这种对齐确保人类数据无缝转化为人形视频生成的增强动作可控性。最终，通过引入高度一致的跨实体表示（通过 t-SNE 可视化进行经验验证，揭示人类和类人特征融合到共享流形中），UnitT 提供了一条可扩展的路径，将大量人类知识提炼为通用类人功能。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2604.19734v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">FASTER: Value-Guided<sup class='ipa'>/valueguided*/</sup> Sampling<sup class='ipa'>/ˈsæmplɪŋ/</sup> for Fast RL</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Perry Dong, Alexander Swerdlow, Dorsa Sadigh</span>
+                                <span class="date">2026-04-21</span>
                                 <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Proximal Policy Optimization (PPO) has become the predominant algorithm for on-policy reinforcement learning due to its scalability and empirical robustness across domains. However, there is a significant disconnect between the underlying foundations of trust region methods and the heuristic clipped...</p>
+                                <p class="abstract-en">Some of the most performant reinforcement learning algorithms today can be prohibitively expensive as they use test-time scaling methods such as sampling multiple action candidates and selecting the best one. In this work, we propose FASTER, a method for getting the benefits of sampling-based test-t...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">近端策略优化（PPO）由于其跨领域的可扩展性和经验鲁棒性，已成为策略强化学习的主要算法。然而，信任域方法的底层基础与 PPO 中使用的启发式裁剪目标之间存在显着脱节。在本文中，我们通过引入有界比率强化学习（BRRL）框架来弥补这一差距。我们提出了一个新颖的正则化和约束策略优化问题，并推导出其解析最优解。我们证明该解决方案可确保单调性能提升。为了处理参数化策略类，我们开发了一种称为有界策略优化 (BPO) 的策略优化算法，该算法可以最大限度地减少策略与 BRRL 的分析最优解决方案之间的优势加权差异。我们进一步根据 BPO 损失函数确定最终政策的预期绩效下限。值得注意的是，我们的框架还提供了一个新的理论视角来解释 PPO 损失的成功，并将信任域策略优化和交叉熵方法（CEM）联系起来。我们还将 BPO 扩展到与集团相关的 BPO (GBPO)，以进行 LLM 微调。对 MuJoCo、Atari 和复杂 IsaacLab 环境（例如人形运动）的 BPO 以及 LLM 微调任务的 GBPO 进行的实证评估表明，BPO 和 GBPO 在稳定性和最终性能方面通常与 PPO 和 GRPO 匹配或优于 PPO 和 GRPO。</p>
+                                    <p class="abstract-zh">当今一些性能最好的强化学习算法可能非常昂贵，因为它们使用测试时间缩放方法，例如对多个候选动作进行采样并选择最佳的一个。在这项工作中，我们提出了 FASTER，一种通过将动作样本的性能增益追溯到去噪过程的早期来获得基于扩散的策略的基于采样的测试时间缩放的好处，而无需计算成本。我们的主要见解是，我们可以对多个候选动作的去噪进行建模，并选择最好的一个作为马尔可夫决策过程（MDP），其目标是在去噪完成之前逐步过滤候选动作。通过这个 MDP，我们可以学习去噪空间中的策略和价值函数，该函数可以预测去噪过程中候选动作的下游价值，并在最大化回报的同时对其进行过滤。结果是一种轻量级的方法，可以插入现有的生成强化学习算法中。在在线和批量在线强化学习中具有挑战性的长视野操作任务中，FASTER 不断改进底层策略，并在比较方法中实现最佳的整体性能。应用于预训练的 VLA 时，FASTER 可以实现相同的性能，同时大幅降低训练和推理计算要求。代码可在 https://github.com/alexanderswerdlow/faster 获取。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2604.18578v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2604.19730v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -917,6 +917,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
+                            <a href="https://github.com/MatthewK78/Rose" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Rose</span>
+                                    <span class="repo-stars">⭐ 29</span>
+                                </div>
+                                <p class="repo-desc">🌹 Rose：切片范围平衡 PyTorch 优化器。通过范围归一化梯度更新进行无状态优化。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-04-17</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/bluegalaxy111/awesome-vibe-coding" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">awesome-vibe-coding</span>
@@ -931,54 +945,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/MatthewK78/Rose" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Rose</span>
-                                    <span class="repo-stars">⭐ 24</span>
-                                </div>
-                                <p class="repo-desc">🌹 Rose：切片范围平衡 PyTorch 优化器。通过范围归一化梯度更新进行无状态优化。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-04-17</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/abbosaliboev/free-ai-bible" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">free-ai-bible</span>
-                                    <span class="repo-stars">⭐ 12</span>
+                                    <span class="repo-stars">⭐ 17</span>
                                 </div>
                                 <p class="repo-desc">🧠 2026 年开发人员免费 AI API 和工具的终极目录 — 免费 LLM API、图像生成、模型托管、本地 AI。没有信用卡。没有付费专区。 700 多个资源。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-04-17</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/theihtisham/agent-shadow-brain" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">agent-shadow-brain</span>
-                                    <span class="repo-stars">⭐ 10</span>
-                                </div>
-                                <p class="repo-desc">🧠 AI 驱动的后台代码分析代理 — 神经网格网络、模式记忆、预测引擎、对抗性防御。可与 Claude Code、VS Code、任何 IDE 配合使用。 npm install @theihtisham/agent-shadow-brain</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-04-15</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/xcc6219/Auto-Read-Paper" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Auto-Read-Paper</span>
-                                    <span class="repo-stars">⭐ 6</span>
-                                </div>
-                                <p class="repo-desc">自动搜索论文和自动阅读论文。利用AI每天获取最新的研究方向论文，对每篇论文进行总结归纳，并自动将几篇最有价值的论文发送到邮箱。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-04-17</span>
@@ -990,7 +962,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/EimanTahir027/Python-Programming-Basics-For-Artificial-Intelligence" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Python-Programming-Basics-For-Artificial-Intelligence</span>
-                                    <span class="repo-stars">⭐ 7</span>
+                                    <span class="repo-stars">⭐ 8</span>
                                 </div>
                                 <p class="repo-desc">这个 Python 文件夹是一个结构化的学习工作区，记录了我通过日常实践项目从初学者到更高级的编程概念的进展。</p>
                                 <div class="repo-meta">
@@ -1015,14 +987,14 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/abderrahmanefrt/Fish-Species-Classification-DNN" target="_blank" class="repo-link">
+                            <a href="https://github.com/xcc6219/Auto-Read-Paper" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Fish-Species-Classification-DNN</span>
-                                    <span class="repo-stars">⭐ 3</span>
+                                    <span class="repo-name">Auto-Read-Paper</span>
+                                    <span class="repo-stars">⭐ 6</span>
                                 </div>
-                                <p class="repo-desc">一个深度学习项目，使用 TensorFlow/Keras 实现自定义深度神经网络 (DNN)，以使用图像数据增强对 9 种不同的鱼类进行分类。</p>
+                                <p class="repo-desc">自动搜索论文和自动阅读论文。利用AI每天获取最新的研究方向论文，对每篇论文进行总结归纳，并自动将几篇最有价值的论文发送到邮箱。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Jupyter Notebook</span>
+                                    <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-04-17</span>
                                 </div>
                             </a>
@@ -1043,15 +1015,43 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Agentic-Intelligence-Lab/Never" target="_blank" class="repo-link">
+                            <a href="https://github.com/redictor/Free-AI-Tools" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Never</span>
-                                    <span class="repo-stars">⭐ 2</span>
+                                    <span class="repo-name">Free-AI-Tools</span>
+                                    <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc">HKU AIL 的持续学习研究系列。</p>
+                                <p class="repo-desc">精心挑选的 50 个真正有用的免费 AI 工具，可用于写作、设计、编码、研究和提高生产力。干净、实用、定期更新</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-04-22</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/abderrahmanefrt/Fish-Species-Classification-DNN" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Fish-Species-Classification-DNN</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">一个深度学习项目，使用 TensorFlow/Keras 实现自定义深度神经网络 (DNN)，以使用图像数据增强对 9 种不同的鱼类进行分类。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Jupyter Notebook</span>
                                     <span class="repo-date">2026-04-17</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/KomalSrinivasan/ai-universe" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ai-universe</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">为开发人员提供最全面的 AI 工具、框架和资源集合。 16 个类别的 110 多个经过验证的开源项目。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Shell</span>
+                                    <span class="repo-date">2026-04-16</span>
                                 </div>
                             </a>
                         </li>
