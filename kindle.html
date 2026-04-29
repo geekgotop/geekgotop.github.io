@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Personalized<sup class='ipa'>/ˈpərsənəˌlaɪzd/</sup> Worked Example Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> from Student Code Submissions<sup class='ipa'>/səbˈmɪʃənz/</sup> using Pattern-based<sup class='ipa'>/patternbased*/</sup> Knowledge<sup class='ipa'>/ˈnɑlɪʤ/</sup> Components<sup class='ipa'>/kəmˈpoʊnənts/</sup></h2>
+                    <h2 class="paper-title">Recursive<sup class='ipa'>/recursive*/</sup> Multi-Agent<sup class='ipa'>/multiagent*/</sup> Systems</h2>
                     <p class="paper-meta">
-                        <span class="authors">Griffin Pitts, Muntasir Hoq, Peter Brusilovsky</span>
-                        <span class="date">2026-04-27</span>
+                        <span class="authors">Xiyuan Yang, Jiaru Zou, Rui Pan</span>
+                        <span class="date">2026-04-28</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Adaptive programming practice often relies on fixed libraries of worked examples and practice problems, which require substantial authoring effort and may not correspond well to the logical errors and partial solutions students produce while writing code. As a result, students may receive learning content that does not directly address the concepts they are working to understand, while instructors must either invest additional effort in expanding content libraries or accept a coarse level of personalization. We present an approach for knowledge-component (KC) guided educational content generation using pattern-based KCs extracted from student code. Given a problem statement and student submissions, our pipeline extracts recurring structural KC patterns from students&#39; code through AST-based analysis and uses them to condition a generative model. In this study, we apply this approach to worked example generation, and compare baseline and KC-conditioned outputs through expert evaluation. Results suggest that KC-conditioned generation improves topical focus and relevance to learners&#39; underlying logical errors, providing evidence that KC-based steering of generative models can support personalized learning at scale.</p>
+                        <p class="abstract-en">Recursive or looped language models have recently emerged as a new scaling axis by iteratively refining the same model computation over latent states to deepen reasoning. We extend such scaling principle from a single model to multi-agent systems, and ask: Can agent collaboration itself be scaled through recursion? To this end, we introduce RecursiveMAS, a recursive multi-agent framework that casts the entire system as a unified latent-space recursive computation. RecursiveMAS connects heterogeneous agents as a collaboration loop through the lightweight RecursiveLink module, enabling in-distribution latent thoughts generation and cross-agent latent state transfer. To optimize our framework, we develop an inner-outer loop learning algorithm for iterative whole-system co-optimization through shared gradient-based credit assignment across recursion rounds. Theoretical analyses of runtime complexity and learning dynamics establish that RecursiveMAS is more efficient than standard text-based MAS and maintains stable gradients during recursive training. Empirically, we instantiate RecursiveMAS under 4 representative agent collaboration patterns and evaluate across 9 benchmarks spanning mathematics, science, medicine, search, and code generation. In comparison with advanced single/multi-agent and recursive computation baselines, RecursiveMAS consistently delivers an average accuracy improvement of 8.3%, together with 1.2$\times$-2.4$\times$ end-to-end inference speedup, and 34.6%-75.6% token usage reduction. Code and Data are provided in https://recursivemas.github.io.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">自适应编程实践通常依赖于固定的工作示例和实践问题库，这需要大量的创作工作，并且可能无法很好地对应学生在编写代码时产生的逻辑错误和部分解决方案。因此，学生收到的学习内容可能并不直接涉及他们正在努力理解的概念，而教师必须投入额外的精力来扩展内容库，或者接受粗略的个性化水平。我们提出了一种使用从学生代码中提取的基于模式的 KC 来生成知识组件 (KC) 引导的教育内容的方法。给定问题陈述和学生提交的内容，我们的管道通过基于 AST 的分析从学生的代码中提取重复的结构 KC 模式，并使用它们来调节生成模型。在本研究中，我们将此方法应用于工作示例生成，并通过专家评估比较基线和 KC 条件输出。结果表明，KC 条件生成提高了主题焦点以及与学习者潜在逻辑错误的相关性，提供了基于 KC 的生成模型指导可以支持大规模个性化学习的证据。</p>
+                        <p class="abstract-zh">递归或循环语言模型最近已成为新的缩放轴，通过迭代地改进潜在状态上的相同模型计算来加深推理。我们将这种扩展原则从单一模型扩展到多代理系统，并问：代理协作本身可以通过递归进行扩展吗？为此，我们引入了 RecursiveMAS，一个递归多智能体框架，它将整个系统视为一个统一的潜在空间递归计算。 RecursiveMAS 通过轻量级 RecursiveLink 模块将异构代理连接为协作循环，从而实现分布内潜在思想生成和跨代理潜在状态传输。为了优化我们的框架，我们开发了一种内外循环学习算法，通过跨递归轮次共享基于梯度的信用分配来迭代整个系统协同优化。对运行时复杂性和学习动态的理论分析表明，RecursiveMAS 比标准的基于文本的 MAS 更高效，并且在递归训练期间保持稳定的梯度。根据经验，我们在 4 种代表性代理协作模式下实例化 RecursiveMAS，并评估涵盖数学、科学、医学、搜索和代码生成的 9 个基准。与先进的单/多智能体和递归计算基线相比，RecursiveMAS 的平均准确度始终提高了 8.3%，端到端推理速度提高了 1.2$\times$-2.4$\times$，令牌使用量减少了 34.6%-75.6%。 https://recursivemas.github.io 中提供了代码和数据。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> to Think from Multiple<sup class='ipa'>/ˈməltəpəl/</sup> Thinkers<sup class='ipa'>/ˈθɪŋkərz/</sup></h2>
+                    <h2 class="paper-title">DV-World: Benchmarking<sup class='ipa'>/benchmarking*/</sup> Data Visualization<sup class='ipa'>/ˌvɪʒwələˈzeɪʃən/</sup> Agents in Real-World<sup class='ipa'>/realworld*/</sup> Scenarios<sup class='ipa'>/sɪˈnɛrioʊz/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Nirmit Joshi, Roey Magen, Nathan Srebro</span>
-                        <span class="date">2026-04-27</span>
+                        <span class="authors">Jinxiang Meng, Shaoping Huang, Fangyu Lei</span>
+                        <span class="date">2026-04-28</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">We study learning with Chain-of-Thought (CoT) supervision from multiple thinkers, all of whom provide correct but possibly systematically different solutions, e.g., step-by-step solutions to math problems written by different thinkers, or step-by-step execution traces of different programs solving the same problem.   We consider classes that are computationally easy to learn using CoT supervision from a single thinker, but hard to learn with only end-result supervision, i.e., without CoT (Joshi et al. 2025). We establish that, under cryptographic assumptions, learning can be hard from CoT supervision provided by two or a few different thinkers, in passive data-collection settings.   On the other hand, we provide a generic computationally efficient active learning algorithm that learns with a small amount of CoT data per thinker that is completely independent of the target accuracy $\varepsilon$, a moderate number of thinkers that scales as $\log \frac{1}{\varepsilon}\log \log \frac{1}{\varepsilon}$, and sufficient passive end-result data that scales as $\frac{1}{\varepsilon}\cdot poly\log\frac{1}{\varepsilon}$.</p>
+                        <p class="abstract-en">Real-world data visualization (DV) requires native environmental grounding, cross-platform evolution, and proactive intent alignment. Yet, existing benchmarks often suffer from code-sandbox confinement, single-language creation-only tasks, and assumption of perfect intent. To bridge these gaps, we introduce DV-World, a benchmark of 260 tasks designed to evaluate DV agents across real-world professional lifecycles. DV-World spans three domains: DV-Sheet for native spreadsheet manipulation including chart and dashboard creation as well as diagnostic repair; DV-Evolution for adapting and restructuring reference visual artifacts to fit new data across diverse programming paradigms and DV-Interact for proactive intent alignment with a user simulator that mimics real-world ambiguous requirements. Our hybrid evaluation framework integrates Table-value Alignment for numerical precision and MLLM-as-a-Judge with rubrics for semantic-visual assessment. Experiments reveal that state-of-the-art models achieve less than 50% overall performance, exposing critical deficits in handling the complex challenges of real-world data visualization. DV-World provides a realistic testbed to steer development toward the versatile expertise required in enterprise workflows. Our data and code are available at \href{https://github.com/DA-Open/DV-World}{this project page}.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">我们通过多个思想家的思想链（CoT）监督来研究学习，所有思想家都提供正确但可能系统上不同的解决方案，例如，不同思想家编写的数学问题的逐步解决方案，或者解决同一问题的不同程序的逐步执行轨迹。   我们认为使用单个思考者的 CoT 监督在计算上很容易学习的类，但仅使用最终结果监督（即没有 CoT）很难学习（Joshi 等人，2025）。我们发现，在密码学假设下，在被动数据收集环境中，从两个或几个不同思想家提供的 CoT 监督中学习可能很困难。   另一方面，我们提供了一种通用的计算高效的主动学习算法，该算法使用每个思考者的少量CoT数据进行学习，该数据完全独立于目标精度$\varepsilon$，适量的思考者规模为$\log \frac{1}{\varepsilon}\log \log \frac{1}{\varepsilon}$，以及足够的被动最终结果数据，规模为$\frac{1}{\varepsilon}\cdot poly\log\frac{1}{\varepsilon}$.</p>
+                        <p class="abstract-zh">现实世界的数据可视化 (DV) 需要本地环境基础、跨平台演进和主动意图对齐。然而，现有的基准测试经常受到代码沙箱限制、仅限于单语言创建的任务以及完美意图的假设的影响。为了弥补这些差距，我们引入了 DV-World，这是一个包含 260 项任务的基准，旨在评估现实世界职业生命周期中的 DV 代理。 DV-World 跨越三个领域： DV-Sheet，用于本机电子表格操作，包括图表和仪表板创建以及诊断修复； DV-Evolution 用于调整和重构参考视觉工件，以适应不同编程范式的新数据，而 DV-Interact 用于与模仿现实世界模糊要求的用户模拟器主动进行意图对齐。我们的混合评估框架将用于数值精度的表值对齐和用于语义视觉评估的 MLLM-as-a-Judge 与规则集成。实验表明，最先进的模型总体性能不到 50%，暴露出在处理现实世界数据可视化的复杂挑战方面的严重缺陷。 DV-World 提供了一个现实的测试平台，可引导开发转向企业工作流程所需的多功能专业知识。我们的数据和代码可在\href{https://github.com/DA-Open/DV-World}{此项目页面}获取。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Sentiment<sup class='ipa'>/ˈsɛnəmənt/</sup> and Emotion Classification<sup class='ipa'>/ˌklæsəfəˈkeɪʃən/</sup> of Indonesian<sup class='ipa'>/ˌɪndoʊˈniʒən/</sup> E-Commerce<sup class='ipa'>/ecommerce*/</sup> Reviews via Multi-Task<sup class='ipa'>/ˈməltiˌtæsk/</sup> BiLSTM and AutoML Benchmarking<sup class='ipa'>/benchmarking*/</sup></h2>
+                    <h2 class="paper-title">How Fast Should a Model Commit to Supervision?<sup class='ipa'>/ˌsupərˈvɪʒən/</sup> Training<sup class='ipa'>/ˈtreɪnɪŋ/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> Models on the Tsallis Loss Continuum<sup class='ipa'>/kənˈtɪnjuəm/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Hermawan Manurung, Ibrahim Al-Kahfi, Ahmad Rizqi</span>
-                        <span class="date">2026-04-27</span>
+                        <span class="authors">Chu-Cheng Lin, Eugene Ie</span>
+                        <span class="date">2026-04-28</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Indonesian marketplace reviews mix standard vocabulary with slang, regional loanwords, numeric shorthands, and emoji, making lexicon-based sentiment tools unreliable in practice. This paper describes a two-track classification pipeline applied to the PRDECT-ID dataset, which contains 5,400 product reviews from 29 Indonesian e-commerce categories, each labeled for binary sentiment (Positive/Negative) and five-class emotion (Happy, Sad, Fear, Love, Anger). The first track applies TF-IDF vectorization with a PyCaret AutoML sweep across standard classifiers. The second track is a PyTorch Bidirectional Long Short-Term Memory (BiLSTM) network with a shared encoder and two task-specific output heads. A preprocessing module applies 14 sequential cleaning steps, including a 140-entry slang dictionary assembled from marketplace corpora. Four configurations are benchmarked: BiLSTM Baseline, BiLSTM Improved, BiLSTM Large, and TextCNN. Training uses class-weighted cross-entropy loss, ReduceLROnPlateau scheduling, and early stopping. Both tracks are deployed as Gradio applications on Hugging Face Spaces. Source code is publicly available at https://github.com/ikii-sd/pba2026-crazyrichteam.</p>
+                        <p class="abstract-en">Adapting reasoning models to new tasks during post-training with only output-level supervision stalls under reinforcement learning from verifiable rewards (RLVR) when the initial success probability $p_0$ is small. Using the Tsallis $q$-logarithm, we define a loss family $J_Q$ that interpolates between RLVR (at $q{=}0$, the exploitation pole) and the log-marginal-likelihood over latent trajectories (at $q{=}1$, the density-estimation pole). All members share the same per-example gradient direction, differing only by a scalar amplification $P_{θ^{-q}}$ that reweights each instance independently of the learning rate. This amplification is the mechanism that addresses cold-start stalling: under gradient flow, the exploitation pole requires $Ω(\frac{1}{p_0})$ time to escape cold start, while the density-estimation pole escapes in $Θ\big(\log(\frac{1}{p_0})\big)$; intermediate $q$ trades escape speed against noise memorization. Because $P_θ$ is intractable, we derive two Monte Carlo estimators from the two factorizations of the gradient: Gradient-Amplified RL (GARL) samples from the prior and amplifies the RL gradient, and Posterior-Attenuated Fine-Tuning (PAFT) importance-resamples from the posterior and runs standard SFT. Both have bias $O\big(\frac{q}{M P_θ^{q+1}}\big)$; GARL has lower variance, PAFT has semantically coherent gradients. On FinQA, HotPotQA, and MuSiQue, GARL at $q{=}0.75$ substantially mitigates cold-start stalling, escaping cold start where GRPO fails entirely. In warm start, GARL at low $q$ dominates FinQA where training is stable; on HotPotQA and MuSiQue, GARL destabilizes during training, and PAFT at $q{=}0.75$ provides stable gradients (best overall on HotPotQA at 47.9 maj@16, $+14.4$ over GRPO).</p>
                         <hr class="divider">
-                        <p class="abstract-zh">印度尼西亚市场评论将标准词汇与俚语、地区借词、数字速记和表情符号混合在一起，使得基于词典的情感工具在实践中并不可靠。本文描述了应用于 PRDECT-ID 数据集的双轨分类管道，该数据集包含来自 29 个印度尼西亚电子商务类别的 5,400 条产品评论，每个评论都标记为二元情感（积极/消极）和五类情感（快乐、悲伤、恐惧、爱、愤怒）。第一个轨道通过 PyCaret AutoML 扫描跨标准分类器应用 TF-IDF 矢量化。第二条轨道是 PyTorch 双向长短期记忆 (BiLSTM) 网络，具有共享编码器和两个特定于任务的输出头。预处理模块应用 14 个连续的清理步骤，包括从市场语料库组装的 140 个条目的俚语词典。对四种配置进行了基准测试：BiLSTM Baseline、BiLSTM Improved、BiLSTM Large 和 TextCNN。训练使用类加权交叉熵损失、ReduceLROnPlateau 调度和早期停止。两条轨道都作为 Gradio 应用程序部署在 Hugging Face Spaces 上。源代码可在 https://github.com/ikii-sd/pba2026-crazyrichteam 公开获取。</p>
+                        <p class="abstract-zh">当初始成功概率 $p_0$ 很小时，在训练后仅使用输出级监督使推理模型适应新任务时，在可验证奖励的强化学习 (RLVR) 下会停滞不前。使用 Tsallis $q$ 对数，我们定义了一个损失族 $J_Q$，它在 RLVR（在 $q{=}0$ 处，利用极点）和潜在轨迹上的对数边际似然（在 $q{=}1$ 处，密度估计极点）之间进行插值。所有成员共享相同的每个示例梯度方向，仅在标量放大 $P_{θ^{-q}}$ 上有所不同，该标量放大与学习率无关地重新加权每个实例。这种放大是解决冷启动失速的机制：在梯度流下，利用极点需要 $Ω(\frac{1}{p_0})$ 时间来逃脱冷启动，而密度估计极点则需要 $θ\big(\log(\frac{1}{p_0})\big)$ 来逃脱；中间$q$用逃逸速度和噪音记忆来交换。因为 $P_θ$ 很棘手，所以我们从梯度的两个分解中得出两个蒙特卡罗估计量：梯度放大 RL (GARL) 从先验中采样并放大 RL 梯度，后验衰减微调 (PAFT) 从后验中进行重要性重采样并运行标准 SFT。两者都有偏差 $O\big(\frac{q}{M P_θ^{q+1}}\big)$； GARL 具有较低的方差，PAFT 具有语义一致的梯度。在 FinQA、HotPotQA 和 MuSiQue 上，$q{=}0.75$ 的 GARL 大大缓解了冷启动停滞，避免了 GRPO 完全失败的冷启动。在热启动中，低 $q$ 的 GARL 在训练稳定的 FinQA 中占主导地位；在 HotPotQA 和 MuSiQue 上，GARL 在训练期间不稳定，而 $q{=}0.75$ 的 PAFT 提供稳定的梯度（HotPotQA 上总体最佳，为 47.9 maj@16，比 GRPO 多 $+14.4$）。</p>
                     </div>
                 </article>
                 
@@ -455,7 +455,89 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             <p class="section-subtitle">近期 AI 热门项目</p>
             
             
-                <p class="empty-state">暂无仓库数据</p>
+                <ul class="repo-list">
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 161</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">Udacity-ai/pumpfun-ai-trading-bot</strong>
+                            <p class="repo-desc">Solana 上由 OpenAI 支持的 Pump.fun 评论自动化。线程参与、代理支持、钱包模式和本地 data.json 评论库。国际标准委员会。人工智能交易机器人，pumpfun交易机器人，交易机器人，pumfun ai交易机器人，ai交易机器人，pumpfun交易机器人，交易机器人，pumfun ai交易机器人，ai交易机器人，pumpfun交易机器人，交易机器人，pumfun交易</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 44</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">6551-Team/ai-auto-trading</strong>
+                            <p class="repo-desc">VoltAgent 上人工智能驱动的多策略加密货币交易。 Gate.io &amp; Binance, 自适应风险, 人工智能自动交易, 交易机器人, 人工智能交易机器人, binance, coinbase, 人工智能交易, 人工智能交易机器人, 人工智能交易机器人, 人工智能交易机器人, 人工智能机器人, binance, coinbase, hyperliquid, VoltAgent 上人工智能驱动的多策略加密货币交易。 Gate.io &amp; Binance、自适应风险、人工智能汽车</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 35</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">Udacity-ai/crypto-liquidity-ai-trading-bot</strong>
+                            <p class="repo-desc">人工智能交易机器人：流动性检测、订单簿缺口、隐藏墙和扫描。宽客、公司和算法/人工智能执行的信号。麻省理工学院。订单簿微观结构焦点。人工智能交易机器人，加密流动性人工智能交易机器人，交易机器人，人工智能交易机器人，加密流动性人工智能交易机器人，交易机器人，人工智能交易机器人，加密流动性人工智能交易机器人</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 9</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">Yashasm18/Fair-Grade</strong>
+                            <p class="repo-desc">⚖️ 一个人工智能驱动的多代理评估引擎，旨在检测和减轻隐性评分偏差。具有多模式 OCR、内存中 PII 编辑和安全的人机交互 (HITL) 架构。专为联合国可持续发展目标 4 打造。🚀</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 7</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">fevziegeyurtsevenler/LLM-Security-Nedir</strong>
+                            <p class="repo-desc">Fevzi Ege Yurtsevenler tarafından hazırlanan，土耳其人，法学硕士，Güvenliği giriş rehberi。 Yapay zeka güvenliğinin temellerini ve Yeni saldırı yüzeylerini keşfedin。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 7</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">NasirMalik/agentgate</strong>
+                            <p class="repo-desc">代理原生 Web 协议 — 将您的后端直接暴露给 AI 代理，无需 HTML 解析</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 4</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">NovaCode37/IMed-Helix</strong>
+                            <p class="repo-desc">AI驱动的医疗预约预诊亭系统——神经网络分诊（准确率85%）、30秒二维码预约、线下优先部署、门诊排程优化。秋明工业大学的研发项目。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 4</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">Ryanditko/ai-context-guide</strong>
+                            <p class="repo-desc">针对人工智能辅助开发工作流程的精选软件工程指南集合。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 4</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">FootballGPT/football-model</strong>
+                            <p class="repo-desc">人工智能驱动的足球预测引擎 | XGBoost + 神经网络 | 8 联赛 |分析了 500K+ 场比赛事件</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">professor-conifer/PsyMew</strong>
+                            <p class="repo-desc">使用克劳德或双子座的人工智能驱动的口袋妖怪对决战斗机器人！该项目正在积极进行中。</p>
+                        </div>
+                    </li>
+                
+                </ul>
             
         </section>
         
@@ -1013,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-04-28 22:53:35
+        生成于 2026-04-29 22:53:24
     </footer>
 </body>
 </html>
