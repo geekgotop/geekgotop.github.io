@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">Turning the TIDE: Cross-Architecture<sup class='ipa'>/crossarchitecture*/</sup> Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup> for Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Large Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h2>
+                    <h2 class="paper-title">Computing<sup class='ipa'>/kəmˈpjutɪŋ/</sup> Equilibrium<sup class='ipa'>/ˌikwəˈlɪbriəm/</sup> beyond Unilateral<sup class='ipa'>/ˌjunəˈlætərəl/</sup> Deviation<sup class='ipa'>/ˌdiviˈeɪʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Gongbo Zhang, Wen Wang, Ye Tian</span>
-                        <span class="date">2026-04-29</span>
+                        <span class="authors">Mingyang Liu, Gabriele Farina, Asuman Ozdaglar</span>
+                        <span class="date">2026-04-30</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference steps within a single architecture, none address cross-architecture knowledge transfer, in which the teacher and student differ in architecture, attention mechanism, and tokenizer. We present TIDE, the first framework for cross-architecture dLLM distillation, comprising three modular components: (1) TIDAL, which jointly modulates distillation strength across training progress and diffusion timestep to account for the teacher&#39;s noise-dependent reliability; (2) CompDemo, which enriches the teacher&#39;s context via complementary mask splitting to improve predictions under heavy masking; and (3) Reverse CALM, a cross-tokenizer objective that inverts chunk-level likelihood matching, yielding bounded gradients and dual-end noise filtering. Distilling 8B dense and 16B MoE teachers into a 0.6B student via two heterogeneous pipelines outperforms the baseline by an average of 1.53 points across eight benchmarks, yielding notable gains in code generation, where HumanEval scores reach 48.78 compared to 32.3 for the AR baseline.</p>
+                        <p class="abstract-en">Most familiar equilibrium concepts, such as Nash and correlated equilibrium, guarantee only that no single player can improve their utility by deviating unilaterally. They offer no guarantees against profitable coordinated deviations by coalitions. Although the literature proposes solution concepts that provide stability against multilateral deviations (\emph{e.g.}, strong Nash and coalition-proof equilibrium), these generally fail to exist. In this paper, we study an alternative solution concept that minimizes coalitional deviation incentives, rather than requiring them to vanish, and is therefore guaranteed to exist. Specifically, we focus on minimizing the average gain of a deviating coalition, and extend the framework to weighted-average and maximum-within-coalition gains. In contrast, the minimum-gain analogue is shown to be computationally intractable. For the average-gain and maximum-gain objectives, we prove a lower bound on the complexity of computing such an equilibrium and present an algorithm that matches this bound. Finally, we use our framework to solve the \emph{Exploitability Welfare Frontier} (EWF), the maximum attainable social welfare subject to a given exploitability (the maximum gain over all unilateral deviations).</p>
                         <hr class="divider">
-                        <p class="abstract-zh">扩散大语言模型 (dLLM) 提供并行解码和双向上下文，但最先进的 dLLM 需要数十亿个参数才能获得竞争性能。虽然 dLLM 的现有蒸馏方法减少了单一架构内的推理步骤，但没有一个解决跨架构知识转移，其中教师和学生在架构、注意力机制和分词器方面存在差异。我们提出了 TIDE，第一个跨架构 dLLM 蒸馏的框架，由三个模块化组件组成：（1）TIDAL，它在训练进度和扩散时间步长之间联合调节蒸馏强度，以考虑教师的噪声依赖性可靠性； (2) CompDemo，通过互补掩模分割来丰富教师的上下文，以改进重掩模下的预测； (3) 反向 CALM，一种交叉分词器目标，可反转块级似然匹配，产生有界梯度和双端噪声过滤。通过两个异构管道将 8B 密集教师和 16B MoE 教师提炼为 0.6B 学生，在八个基准测试中平均优于基线 1.53 分，在代码生成方面产生显着收益，其中 HumanEval 分数达到 48.78，而 AR 基线为 32.3。</p>
+                        <p class="abstract-zh">大多数熟悉的均衡概念，例如纳什和相关均衡，只能保证没有一个参与者可以通过单方面偏离来提高其效用。他们不保证联盟不会出现有利可图的协调偏差。尽管文献提出了针对多边偏差提供稳定性的解决方案概念（例如，强纳什均衡和防联盟均衡），但这些通常不存在。在本文中，我们研究了一种替代解决方案概念，该概念可以最大限度地减少联盟偏差激励，而不是要求它们消失，因此保证存在。具体来说，我们专注于最小化偏离联盟的平均增益，并将框架扩展到加权平均和最大联盟内增益。相比之下，最小增益类似物在计算上很困难。对于平均增益和最大增益目标，我们证明了计算这种平衡的复杂性的下限，并提出了匹配该界限的算法。最后，我们使用我们的框架来解决\emph{可利用性福利前沿}（EWF），即在给定可利用性的情况下可实现的最大社会福利（所有单方面偏差的最大收益）。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Select to Think: Unlocking<sup class='ipa'>/ənˈlɑkɪŋ/</sup> SLM Potential<sup class='ipa'>/pəˈtɛnʃəl/</sup> with Local Sufficiency<sup class='ipa'>/səˈfɪʃənsi/</sup></h2>
+                    <h2 class="paper-title">Exploration<sup class='ipa'>/ˌɛksplərˈeɪʃən/</sup> Hacking: Can LLMs Learn to Resist RL Training?<sup class='ipa'>/ˈtreɪnɪŋ/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Wenxuan Ye, Yangyang Zhang, Xueli An</span>
-                        <span class="date">2026-04-29</span>
+                        <span class="authors">Eyon Jang, Damon Falck, Joschka Braun</span>
+                        <span class="date">2026-04-30</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to generate tokens at points of reasoning divergence, but these external calls introduce substantial latency and costs. Alternatively, standard distillation is often hindered by the capacity limitation, as SLMs struggle to accurately mimic the LLM&#39;s complex generative distribution. We address this dilemma by identifying local sufficiency: at divergence points, the LLM&#39;s preferred token consistently resides within the SLM&#39;s top-K next-token predictions, even when failing to emerge as the SLM top-1 choice. We therefore propose SELECT TO THINK (S2T), which reframes the LLM&#39;s role from open-ended generation to selection among the SLM&#39;s proposals, simplifying the supervision signal to discrete candidate rankings. Leveraging this, we introduce S2T-LOCAL, which distills the selection logic into the SLM, empowering it to perform autonomous re-ranking without inference-time LLM dependency. Empirically, we demonstrate that a 1.5B SLM&#39;s top-8 candidates capture the 32B LLM&#39;s choice with 95% hit rate. Translating this potential into performance, S2T-LOCAL improves greedy decoding by 24.1% on average across benchmarks, effectively matching the efficacy of 8-path self-consistency while operating with single-trajectory efficiency.</p>
+                        <p class="abstract-en">Reinforcement learning (RL) has become essential to the post-training of large language models (LLMs) for reasoning, agentic capabilities and alignment. Successful RL relies on sufficient exploration of diverse actions by the model during training, which creates a potential failure mode: a model could strategically alter its exploration during training to influence the subsequent training outcome. In this paper we study this behavior, called exploration hacking. First, we create model organisms of selective RL resistance by fine-tuning LLMs to follow specific underperformance strategies; these models can successfully resist our RL-based capability elicitation in agentic biosecurity and AI R&amp;D environments while maintaining performance on related tasks. We then use our model organisms to evaluate detection and mitigation strategies, including monitoring, weight noising, and SFT-based elicitation. Finally, we show that current frontier models can exhibit explicit reasoning about suppressing their exploration when provided with sufficient information about their training context, with higher rates when this information is acquired indirectly through the environment. Together, our results suggest exploration hacking is a possible failure mode of RL on sufficiently capable LLMs.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">小语言模型 (SLM) 为可扩展部署提供了计算效率，但它们往往达不到大型语言模型 (LLM) 所表现出的推理能力。为了缩小这一差距，当前的方法调用 LLM 在推理分歧点生成令牌，但这些外部调用会带来大量的延迟和成本。另外，标准蒸馏通常会受到容量限制的阻碍，因为 SLM 很难准确模仿 LLM 复杂的生成分布。我们通过识别局部充分性来解决这个困境：在分歧点，LLM 的首选令牌始终位于 SLM 的前 K 个下一个令牌预测内，即使未能成为 SLM 的前 1 个选择。因此，我们提出“SELECT TO THINK”（S2T），它将 LLM 的角色从开放式生成重新定义为在 SLM 提案中进行选择，从而将监督信号简化为离散的候选人排名。利用这一点，我们引入了 S2T-LOCAL，它将选择逻辑提炼到 SLM 中，使其能够执行自主重新排名，而无需依赖推理时间 LLM。根据经验，我们证明 1.5B SLM 的前 8 名候选人以 95% 的命中率捕获了 32B LLM 的选择。将这种潜力转化为性能，S2T-LOCAL 在基准测试中将贪婪解码平均提高了 24.1%，有效匹配 8 路径自一致性的功效，同时以单轨迹效率运行。</p>
+                        <p class="abstract-zh">强化学习 (RL) 已成为大型语言模型 (LLM) 推理、代理能力和对齐的后训练的关键。成功的强化学习依赖于模型在训练期间对各种行为的充分探索，这会产生潜在的失败模式：模型可以在训练期间策略性地改变其探索，从而影响后续的训练结果。在本文中，我们研究了这种称为探索黑客的行为。首先，我们通过微调 LLM 来遵循特定的表现不佳策略，创建选择性 RL 抵抗的模型生物；这些模型可以成功地抵抗我们在代理生物安全和人工智能研发环境中基于强化学习的能力启发，同时保持相关任务的性能。然后，我们使用模型生物来评估检测和缓解策略，包括监测、重量噪声和基于 SFT 的启发。最后，我们表明，当提供有关训练环境的足够信息时，当前的前沿模型可以表现出抑制探索的明确推理，而当通过环境间接获取这些信息时，抑制率更高。总之，我们的结果表明，在能力足够强的法学硕士上，探索黑客攻击是强化学习的一种可能失败模式。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">ClassEval-Pro:<sup class='ipa'>/classevalpro*/</sup> A Cross-Domain<sup class='ipa'>/crossdomain*/</sup> Benchmark<sup class='ipa'>/ˈbɛnʧˌmɑrk/</sup> for Class-Level<sup class='ipa'>/classlevel*/</sup> Code Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h2>
+                    <h2 class="paper-title">Synthetic<sup class='ipa'>/sɪnˈθɛtɪk/</sup> Computers<sup class='ipa'>/kəmˈpjutərz/</sup> at Scale for Long-Horizon<sup class='ipa'>/longhorizon*/</sup> Productivity<sup class='ipa'>/ˌproʊdəkˈtɪvɪti/</sup> Simulation<sup class='ipa'>/ˌsɪmjəˈleɪʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Yeheng Chen, Chaoxiang Xie, Yuling Shi</span>
-                        <span class="date">2026-04-29</span>
+                        <span class="authors">Tao Ge, Baolin Peng, Hao Cheng</span>
+                        <span class="date">2026-04-30</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">LLMs have achieved strong results on both function-level code synthesis and repository-level code modification, yet a capability that falls between these two extremes -- compositional code creation, i.e., building a complete, internally structured class from a specification -- remains underserved. Current evaluations are either confined to isolated functions or rely on manually curated class-level tasks that are expensive to scale and increasingly susceptible to data contamination. We introduce ClassEval-Pro, a benchmark of 300 class-level tasks spanning 11 domains, constructed through an automated three-stage pipeline that combines complexity enhancement, cross-domain class composition, and integration of real-world GitHub code contributed after January 2025. Every task is validated by an LLM Judge Ensemble and must pass test suites with over 90% line coverage. We evaluate five frontier LLMs under five generation strategies. The best model achieves only 45.6% class-level Pass@1, with a 17.7-point gap between the strongest and weakest models, confirming the benchmark&#39;s discriminative power. Strategy choice strongly interacts with model capability: structured approaches such as bottom-up improve weaker models by up to 9.4 percentage points, while compositional generation collapses to as low as 1.3%. Error analysis over 500 manually annotated failures reveals that logic errors (56.2%) and dependency errors (38.0%) dominate, identifying cross-method coordination as the core bottleneck.</p>
+                        <p class="abstract-en">Realistic long-horizon productivity work is strongly conditioned on user-specific computer environments, where much of the work context is stored and organized through directory structures and content-rich artifacts. To scale synthetic data creation for such productivity scenarios, we introduce Synthetic Computers at Scale, a scalable methodology for creating such environments with realistic folder hierarchies and content-rich artifacts (e.g., documents, spreadsheets, and presentations). Conditioned on each synthetic computer, we run long-horizon simulations: one agent creates productivity objectives that are specific to the computer&#39;s user and require multiple professional deliverables and about a month of human work; another agent then acts as that user and keeps working across the computer -- for example, navigating the filesystem for grounding, coordinating with simulated collaborators, and producing professional artifacts -- until these objectives are completed.   In preliminary experiments, we create 1,000 synthetic computers and run long-horizon simulations on them; each run requires over 8 hours of agent runtime and spans more than 2,000 turns on average. These simulations produce rich experiential learning signals, whose effectiveness is validated by significant improvements in agent performance on both in-domain and out-of-domain productivity evaluations. Given that personas are abundant at billion scale, this methodology can in principle scale to millions or even billions of synthetic user worlds with sufficient compute, enabling broader coverage of diverse professions, roles, contexts, environments, and productivity needs. We argue that scalable synthetic computer creation, together with at-scale simulations, is highly promising as a foundational substrate for agent self-improvement and agentic reinforcement learning in long-horizon productivity scenarios.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">法学硕士在函数级代码综合和存储库级代码修改方面都取得了很好的成果，但是介于这两个极端之间的能力——组合代码创建，即根据规范构建完整的内部结构化类——仍然没有得到充分服务。当前的评估要么仅限于孤立的功能，要么依赖于手动策划的类级任务，这些任务的扩展成本很高，并且越来越容易受到数据污染的影响。我们推出了 ClassEval-Pro，这是跨越 11 个领域的 300 个类级任务的基准，通过自动化的三阶段管道构建，结合了复杂性增强、跨域类组合以及 2025 年 1 月后贡献的实际 GitHub 代码的集成。每项任务均由 LLM Judge Ensemble 进行验证，并且必须通过行覆盖率超过 90% 的测试套件。我们评估了五代策略下的五个前沿法学硕士。最好的模型仅达到 45.6% 的类级别 Pass@1，最强模型和最弱模型之间存在 17.7 分的差距，证实了基准测试的判别能力。策略选择与模型能力密切相关：自下而上等结构化方法将较弱的模型提高了高达 9.4 个百分点，而组合生成则下降至低至 1.3%。对 500 多个手动注释的故障进行的错误分析表明，逻辑错误 (56.2%) 和依赖错误 (38.0%) 占主导地位，将跨方法协调确定为核心瓶颈。</p>
+                        <p class="abstract-zh">现实的长期生产力工作很大程度上取决于特定于用户的计算机环境，其中大部分工作上下文是通过目录结构和内容丰富的工件来存储和组织的。为了扩展此类生产力场景的合成数据创建，我们引入了大规模合成计算机，这是一种可扩展的方法，用于创建具有真实文件夹层次结构和内容丰富的工件（例如文档、电子表格和演示文稿）的此类环境。以每台合成计算机为条件，我们运行长期模拟：一个代理创建特定于计算机用户的生产力目标，需要多个专业交付成果和大约一个月的人工工作；然后，另一个代理充当该用户并继续在计算机上工作——例如，导航文件系统以进行接地、与模拟协作者协调以及生成专业工件——直到完成这些目标。   在初步实验中，我们创建了 1,000 台合成计算机并对它们进行长期模拟；每次运行需要超过 8 个小时的代理运行时间，平均跨越 2,000 多个回合。这些模拟产生了丰富的体验式学习信号，其有效性通过域内和域外生产力评估的代理性能的显着改进得到了验证。鉴于人物角色在数十亿规模上非常丰富，这种方法原则上可以扩展到数百万甚至数十亿个具有足够计算能力的合成用户世界，从而更广泛地覆盖不同的职业、角色、背景、环境和生产力需求。我们认为，可扩展的合成计算机创建与大规模模拟一起，作为长期生产力场景中智能体自我改进和智能体强化学习的基础，非常有前景。</p>
                     </div>
                 </article>
                 
@@ -458,7 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 151</span>
+                        <span class="repo-stars">★ 144</span>
                         <div class="repo-info">
                             <strong class="repo-name">Udacity-ai/pumpfun-ai-trading-bot</strong>
                             <p class="repo-desc">Solana 上由 OpenAI 支持的 Pump.fun 评论自动化。线程参与、代理支持、钱包模式和本地 data.json 评论库。国际标准委员会。人工智能交易机器人，pumpfun交易机器人，交易机器人，pumfun ai交易机器人，ai交易机器人，pumpfun交易机器人，交易机器人，pumfun ai交易机器人，ai交易机器人，pumpfun交易机器人，交易机器人，pumfun交易</p>
@@ -466,7 +466,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 41</span>
+                        <span class="repo-stars">★ 39</span>
                         <div class="repo-info">
                             <strong class="repo-name">6551-Team/ai-auto-trading</strong>
                             <p class="repo-desc">VoltAgent 上人工智能驱动的多策略加密货币交易。 Gate.io &amp; Binance, 自适应风险, 人工智能自动交易, 交易机器人, 人工智能交易机器人, binance, coinbase, 人工智能交易, 人工智能交易机器人, 人工智能交易机器人, 人工智能交易机器人, 人工智能机器人, binance, coinbase, hyperliquid, VoltAgent 上人工智能驱动的多策略加密货币交易。 Gate.io &amp; Binance、自适应风险、人工智能汽车</p>
@@ -474,7 +474,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 25</span>
+                        <span class="repo-stars">★ 22</span>
                         <div class="repo-info">
                             <strong class="repo-name">Udacity-ai/crypto-liquidity-ai-trading-bot</strong>
                             <p class="repo-desc">人工智能交易机器人：流动性检测、订单簿缺口、隐藏墙和扫描。宽客、公司和算法/人工智能执行的信号。麻省理工学院。订单簿微观结构焦点。人工智能交易机器人，加密流动性人工智能交易机器人，交易机器人，人工智能交易机器人，加密流动性人工智能交易机器人，交易机器人，人工智能交易机器人，加密流动性人工智能交易机器人</p>
@@ -482,7 +482,23 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 7</span>
+                        <span class="repo-stars">★ 13</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">jingyaogong/minimind-o</strong>
+                            <p class="repo-desc">🌏 0.1B级开源Omni模型 🌏0.1B级开源Omni模型</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 9</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">jmerelnyc/ai-practice-examples</strong>
+                            <p class="repo-desc">课程示例展示了人工智能与行业最佳实践的实施</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 8</span>
                         <div class="repo-info">
                             <strong class="repo-name">fevziegeyurtsevenler/LLM-Security-Nedir</strong>
                             <p class="repo-desc">Fevzi Ege Yurtsevenler tarafından hazırlanan，土耳其人，法学硕士，Güvenliği giriş rehberi。 Yapay zeka güvenliğinin temellerini ve Yeni saldırı yüzeylerini keşfedin。</p>
@@ -498,42 +514,26 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
+                        <span class="repo-stars">★ 6</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">IrtezaAsadRizvi/ai-megalist</strong>
+                            <p class="repo-desc">一切 AI 巨型列表 — 180 多种工具按用例排序（编码、研究、图像、视频、语音、代理、设计、生产力、本地法学硕士等）。策划时间为 2026 年。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 5</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">jovbcorreia/joai-chatbot</strong>
+                            <p class="repo-desc"></p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
                         <span class="repo-stars">★ 4</span>
                         <div class="repo-info">
                             <strong class="repo-name">NovaCode37/IMed-Helix</strong>
                             <p class="repo-desc">AI驱动的医疗预约预诊亭系统——神经网络分诊（准确率85%）、30秒二维码预约、线下优先部署、门诊排程优化。秋明工业大学的研发项目。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">Ryanditko/ai-context-guide</strong>
-                            <p class="repo-desc">针对人工智能辅助开发工作流程的精选软件工程指南集合。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">FootballGPT/football-model</strong>
-                            <p class="repo-desc">人工智能驱动的足球预测引擎 | XGBoost + 神经网络 | 8 联赛 |分析了 500K+ 场比赛事件</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 3</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">professor-conifer/PsyMew</strong>
-                            <p class="repo-desc">使用克劳德或双子座的人工智能驱动的口袋妖怪对决战斗机器人！该项目正在积极进行中。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
-                        <span class="repo-stars">★ 2</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">shakirdmr/ai-prompt-library</strong>
-                            <p class="repo-desc">ChatGPT、Midjourney、Claude &amp; Gemini 的 200 多个免费复制粘贴人工智能提示 — 图像生成、简历撰写、求职、薪资谈判等。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-04-30 22:50:26
+        生成于 2026-05-01 22:44:24
     </footer>
 </body>
 </html>
