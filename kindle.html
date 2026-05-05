@@ -399,44 +399,44 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
             
                 
                 <article class="paper-card active" data-index="0">
-                    <h2 class="paper-title">When LLMs Stop Following<sup class='ipa'>/ˈfɑloʊɪŋ/</sup> Steps: A Diagnostic<sup class='ipa'>/ˌdaɪəgˈnɑstɪk/</sup> Study of Procedural<sup class='ipa'>/prəˈsiʤərəl/</sup> Execution<sup class='ipa'>/ˌɛksəˈkjuʃən/</sup> in Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h2>
+                    <h2 class="paper-title">SpecKV: Adaptive<sup class='ipa'>/əˈdæptɪv/</sup> Speculative<sup class='ipa'>/ˈspɛkjələtɪv/</sup> Decoding<sup class='ipa'>/dɪˈkoʊdɪŋ/</sup> with Compression-Aware<sup class='ipa'>/compressionaware*/</sup> Gamma Selection<sup class='ipa'>/səˈlɛkʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Sailesh Panda, Pritam Kadasi, Abhishek Upperwal</span>
-                        <span class="date">2026-05-01</span>
+                        <span class="authors">Shikhar Shukla</span>
+                        <span class="date">2026-05-04</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Large language models (LLMs) often achieve strong performance on reasoning benchmarks, but final-answer accuracy alone does not show whether they faithfully execute the procedure specified in a prompt. We study this question through a controlled diagnostic benchmark for procedural execution, where models are given a step-wise arithmetic algorithm and two numeric inputs, and must return the final computed value. The benchmark uses simple arithmetic operations but increases complexity through algorithm length and look-back dependencies over intermediate variables. Across 14 models and 55 datasets, average first-answer accuracy drops from 61% on 5-step procedures to 20% on 95-step procedures. Generation-level analysis shows that failures often involve missing answers, premature answers, self-correction after an initial error, under-executed traces, and hallucinated extra steps. These findings suggest that apparent reasoning ability can mask substantial weaknesses in faithful instruction execution.</p>
+                        <p class="abstract-en">Speculative decoding accelerates large language model (LLM) inference by using a small draft model to propose candidate tokens that a larger target model verifies. A critical hyperparameter in this process is the speculation length~$γ$, which determines how many tokens the draft model proposes per step. Nearly all existing systems use a fixed~$γ$ (typically~4), yet empirical evidence suggests that the optimal value varies across task types and, crucially, depends on the compression level applied to the target model. In this paper, we present \textbf{SpecKV}, a lightweight adaptive controller that selects~$γ$ per speculation step using signals extracted from the draft model itself. We profile speculative decoding across 4~task categories, 4~speculation lengths, and 3~compression levels (FP16, INT8, NF4), collecting 5,112 step-level records with per-step acceptance rates, draft entropy, and draft confidence. We demonstrate that the optimal~$γ$ shifts across compression regimes and that draft model confidence and entropy are strong predictors of acceptance rate (correlation~$\approx 0.56$). SpecKV uses a small MLP trained on these signals to maximize expected tokens per speculation step, achieving a 56.0\% improvement over the fixed-$γ$=4 baseline with only 0.34\,ms overhead per decision ($&lt;$0.5\% of step time). The improvement is statistically significant ($p &lt; 0.001$, paired bootstrap test). We release all profiling data, trained models, and notebooks as open-source artifacts.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">大型语言模型（LLM）通常在推理基准测试中表现出色，但仅最终答案的准确性并不能表明它们是否忠实地执行了提示中指定的过程。我们通过程序执行的受控诊断基准来研究这个问题，其中模型被赋予逐步算术算法和两个数字输入，并且必须返回最终计算值。该基准测试使用简单的算术运算，但通过算法长度和对中间变量的回顾依赖性增加了复杂性。在 14 个模型和 55 个数据集中，平均首次答案准确率从 5 步程序的 61% 下降到 95 步程序的 20%。生成级分析表明，失败通常涉及缺失答案、过早答案、初始错误后的自我纠正、执行不足的跟踪以及幻觉的额外步骤。这些发现表明，表面的推理能力可以掩盖忠实指令执行方面的重大弱点。</p>
+                        <p class="abstract-zh">推测性解码通过使用小型草稿模型提出供较大目标模型验证的候选标记来加速大型语言模型 (LLM) 推理。此过程中的一个关键超参数是推测长度~$γ$，它决定草稿模型每一步提出多少个令牌。几乎所有现有系统都使用固定的~$γ$（通常~4），但经验证据表明，最佳值因任务类型而异，最重要的是，取决于应用于目标模型的压缩级别。在本文中，我们提出了 \textbf{SpecKV}，一种轻量级自适应控制器，它使用从草稿模型本身提取的信号在每个推测步骤中选择~$γ$。我们分析了 4 个任务类别、4 个推测长度和 3 个压缩级别（FP16、INT8、NF4）的推测解码，收集了 5,112 个步骤级记录以及每步接受率、草稿熵和草稿置信度。我们证明了最优~$γ$ 在压缩机制中发生变化，并且草稿模型置信度和熵是接受率的有力预测因子（相关性~$\约 0.56$）。 SpecKV 使用在这些信号上训练的小型 MLP 来最大化每个推测步骤的预期标记，与固定 $γ$=4 基线相比实现了 56.0\% 的改进，每个决策仅需 0.34\,ms 开销（$&lt;$0.5\% 的步骤时间）。该改进具有统计显着性（$p &lt; 0.001$，配对引导测试）。我们将所有分析数据、经过训练的模型和笔记本作为开源工件发布。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="1">
-                    <h2 class="paper-title">Persistent<sup class='ipa'>/pərˈsɪstənt/</sup> Visual Memory: Sustaining<sup class='ipa'>/səˈsteɪnɪŋ/</sup> Perception<sup class='ipa'>/pərˈsɛpʃən/</sup> for Deep Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> in LVLMs</h2>
+                    <h2 class="paper-title">Enhancing<sup class='ipa'>/ɛnˈhænsɪŋ/</sup> RL Generalizability<sup class='ipa'>/generalizability*/</sup> in Robotics<sup class='ipa'>/ˌroʊˈbɑtɪks/</sup> through SHAP Analysis<sup class='ipa'>/æˈnælɪsɪs/</sup> of Algorithms<sup class='ipa'>/ˈælgərˌɪðəmz/</sup> and Hyperparameters<sup class='ipa'>/hyperparameters*/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Siyuan Huang, Xiaoye Qu, Yafu Li</span>
-                        <span class="date">2026-05-01</span>
+                        <span class="authors">Lingxiao Kong, Cong Yang, Oya Deniz Beyan</span>
+                        <span class="date">2026-05-04</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">While autoregressive Large Vision-Language Models (LVLMs) demonstrate remarkable proficiency in multimodal tasks, they face a &#34;Visual Signal Dilution&#34; phenomenon, where the accumulation of textual history expands the attention partition function, causing visual attention to decay inversely with generated sequence length. To counteract this, we propose Persistent Visual Memory (PVM), a lightweight learnable module designed to ensure sustained, on-demand visual perception. Integrated as a parallel branch alongside the Feed-Forward Network (FFN) in LVLMs, PVM establishes a distance-agnostic retrieval pathway that directly provides visual embeddings for precise visual perception, thereby structurally mitigating the signal suppression inherent to deep generation. Extensive experiments on Qwen3-VL models demonstrate that PVM brings notable improvements with negligible parameter overhead, delivering consistent average accuracy gains across both 4B and 8B scales, particularly in complex reasoning tasks that demand persistent visual perception. Furthermore, in-depth analysis reveals that PVM can resist length-induced signal decay and accelerate internal prediction convergence.</p>
+                        <p class="abstract-en">Despite significant advances in Reinforcement Learning (RL), model performance remains highly sensitive to algorithm and hyperparameter configurations, while generalization gaps across environments complicate real-world deployment. Although prior work has studied RL generalization, the relative contribution of specific configurations to the generalization gap has not been quantitatively decomposed and systematically leveraged for configuration selection. To address this limitation, we propose an explainable framework that evaluates RL performance across robotic environments using SHapley Additive exPlanations (SHAP) to quantify configuration impacts. We establish a theoretical foundation connecting Shapley values to generalizability, empirically analyze configuration impact patterns, and introduce SHAP-guided configuration selection to enhance generalization. Our results reveal distinct patterns across algorithms and hyperparameters, with consistent configuration impacts across diverse tasks and environments. By applying these insights to configuration selection, we achieve improved RL generalizability and provide actionable guidance for practitioners.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">虽然自回归大型视觉语言模型（LVLM）在多模态任务中表现出出色的熟练程度，但它们面临着“视觉信号稀释”现象，即文本历史的积累扩大了注意力分配函数，导致视觉注意力与生成的序列长度成反比衰减。为了解决这个问题，我们提出了持久视觉记忆（PVM），这是一种轻量级的可学习模块，旨在确保持续的、按需的视觉感知。 PVM 作为并行分支与 LVLM 中的前馈网络 (FFN) 集成，建立了一个与距离无关的检索路径，直接提供视觉嵌入以实现精确的视觉感知，从而从结构上减轻深度生成固有的信号抑制。对 Qwen3-VL 模型的大量实验表明，PVM 在参数开销可忽略不计的情况下带来了显着的改进，在 4B 和 8B 尺度上提供一致的平均准确度增益，特别是在需要持续视觉感知的复杂推理任务中。此外，深入分析表明，PVM 可以抵抗长度引起的信号衰减并加速内部预测收敛。</p>
+                        <p class="abstract-zh">尽管强化学习 (RL) 取得了重大进展，但模型性能仍然对算法和超参数配置高度敏感，而跨环境的泛化差距使实际部署变得复杂。尽管之前的工作已经研究了 RL 泛化，但特定配置对泛化差距的相对贡献尚未被定量分解和系统地用于配置选择。为了解决这一限制，我们提出了一个可解释的框架，该框架使用 SHapley Additive exPlanations (SHAP) 来评估机器人环境中的 RL 性能，以量化配置影响。我们建立了将 Shapley 值与泛化性联系起来的理论基础，实证分析配置影响模式，并引入 SHAP 引导的配置选择来增强泛化性。我们的结果揭示了跨算法和超参数的不同模式，以及跨不同任务和环境的一致配置影响。通过将这些见解应用于配置选择，我们提高了强化学习的普遍性，并为从业者提供了可行的指导。</p>
                     </div>
                 </article>
                 
                 <article class="paper-card " data-index="2">
-                    <h2 class="paper-title">Can Coding Agents Reproduce<sup class='ipa'>/ˌriprəˈdus/</sup> Findings<sup class='ipa'>/ˈfaɪndɪŋz/</sup> in Computational<sup class='ipa'>/ˌkɑmpjuˈteɪʃənəl/</sup> Materials<sup class='ipa'>/məˈtɪriəlz/</sup> Science?</h2>
+                    <h2 class="paper-title">Standing<sup class='ipa'>/ˈstændɪŋ/</sup> on the Shoulders<sup class='ipa'>/ˈʃoʊldərz/</sup> of Giants: Stabilized<sup class='ipa'>/ˈsteɪbəˌlaɪzd/</sup> Knowledge<sup class='ipa'>/ˈnɑlɪʤ/</sup> Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup> for Cross--Language<sup class='ipa'>/crosslanguage*/</sup> Code Clone Detection<sup class='ipa'>/dɪˈtɛkʃən/</sup></h2>
                     <p class="paper-meta">
-                        <span class="authors">Ziyang Huang, Yi Cao, Ali K. Shargh</span>
-                        <span class="date">2026-05-01</span>
+                        <span class="authors">Mohamad Khajezade, Fatemeh H. Fard, Mohamed Sami Shehata</span>
+                        <span class="date">2026-05-04</span>
                     </p>
                     
                     <div class="paper-abstract">
-                        <p class="abstract-en">Large language models are increasingly deployed as autonomous coding agents and have achieved remarkably strong performance on software engineering benchmarks. However, it is unclear whether such success transfers to computational scientific workflows, where tasks require not only strong coding ability, but also the ability to navigate complex, domain-specific procedures and to interpret results in the context of scientific claims. To address this question, we present AutoMat, a benchmark for evaluating LLM-based agents&#39; ability to reproduce claims from computational materials science. AutoMat poses three interrelated challenges: recovering underspecified computational procedures, navigating specialized toolchains, and determining whether the resulting evidence supports a claim. By working closely with subject matter experts, we curate a set of claims from real materials science papers to test whether coding agents can recover and execute the end-to-end workflow needed to support (or undermine) such claims. We then evaluate multiple representative coding agent settings across several foundation models. Our results show that current LLM-based agents obtain low overall success rates on AutoMat, with the best-performing setting achieving a success rate of only 54.1%. Error analysis further reveals that agents perform worst when workflows must be reconstructed from paper text alone and that they fail primarily due to incomplete procedures, methodological deviations, and execution fragility. Taken together, these findings position AutoMat as both a benchmark for computational scientific reproducibility and a tool for diagnosing the current limitations of agentic systems in AI-for-science settings.</p>
+                        <p class="abstract-en">Cross-language code clone detection (X-CCD) is challenging because semantically equivalent programs written in different languages often share little surface similarity. Although large language models (LLMs) have shown promise for semantic clone detection, their use as black-box systems raises concerns about cost, reproducibility, privacy, and unreliable output formatting. In particular, compact open-source models often struggle to follow reasoning-oriented prompts and to produce outputs that can be consistently mapped to binary clone labels.   To address these limitations, we propose a knowledge distillation framework that transfers reasoning capabilities from DeepSeek-R1 into compact open-source student models for X-CCD. Using cross-language code pairs derived from Project CodeNet, we construct reasoning-oriented synthetic training data and fine-tune Phi3 and Qwen-Coder with LoRA adapters. We further introduce response stabilization methods, including forced conclusion prompting, a binary classification head, and a contrastive classification head, and evaluate model behavior using both predictive metrics and response rate.   Experiments on Python--Java, Rust--Java, Rust--Python, and Rust--Ruby show that knowledge distillation consistently improves the reliability of compact models and often improves predictive performance, especially under distribution shift. In addition, classification-head variants substantially reduce inference time compared to generation-based inference. Overall, our results show that reasoning-oriented distillation combined with response stabilization makes compact open-source models more practical and reliable for X-CCD detection.</p>
                         <hr class="divider">
-                        <p class="abstract-zh">大型语言模型越来越多地被部署为自主编码代理，并在软件工程基准测试中取得了非常强大的性能。然而，目前尚不清楚这种成功是否会转移到计算科学工作流程中，其中的任务不仅需要强大的编码能力，还需要能够导航复杂的、特定领域的程序以及在科学主张的背景下解释结果的能力。为了解决这个问题，我们提出了 AutoMat，这是一个评估基于 LLM 的代理重现计算材料科学主张的能力的基准。 AutoMat 提出了三个相互关联的挑战：恢复未指定的计算程序、导航专用工具链以及确定结果证据是否支持主张。通过与主题专家密切合作，我们从真实的材料科学论文中策划了一组声明，以测试编码代理是否可以恢复并执行支持（或破坏）此类声明所需的端到端工作流程。然后，我们评估多个基础模型中的多个代表性编码代理设置。我们的结果表明，当前基于 LLM 的代理在 AutoMat 上的总体成功率较低，表现最好的设置仅实现 54.1% 的成功率。错误分析进一步表明，当必须仅从纸质文本重建工作流程时，代理的表现最差，并且它们的失败主要是由于程序不完整、方法偏差和执行脆弱性。总而言之，这些发现使 AutoMat 既成为计算科学再现性的基准，又成为诊断人工智能科学环境中代理系统当前局限性的工具。</p>
+                        <p class="abstract-zh">跨语言代码克隆检测 (X-CCD) 具有挑战性，因为用不同语言编写的语义等效程序通常几乎没有表面相似性。尽管大型语言模型 (LLM) 在语义克隆检测方面表现出了良好的前景，但它们作为黑盒系统的使用引起了人们对成本、可重复性、隐私和不可靠的输出格式的担忧。特别是，紧凑的开源模型通常很难遵循面向推理的提示并生成可以一致映射到二进制克隆标签的输出。   为了解决这些限制，我们提出了一个知识蒸馏框架，将 DeepSeek-R1 的推理能力转移到 X-CCD 的紧凑开源学生模型中。使用源自 CodeNet 项目的跨语言代码对，我们构建面向推理的综合训练数据，并使用 LoRA 适配器对 Phi3 和 Qwen-Coder 进行微调。我们进一步介绍了响应稳定方法，包括强制结论提示、二元分类头和对比分类头，并使用预测指标和响应率来评估模型行为。   Python-Java、Rust--Java、Rust--Python 和 Rust--Ruby 上的实验表明，知识蒸馏能够持续提高紧凑模型的可靠性，并且通常会提高预测性能，尤其是在分布偏移的情况下。此外，与基于生成的推理相比，分类头变体大大减少了推理时间。总的来说，我们的结果表明，面向推理的蒸馏与响应稳定相结合使得紧凑的开源模型对于 X-CCD 检测更加实用和可靠。</p>
                     </div>
                 </article>
                 
@@ -458,7 +458,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                 <ul class="repo-list">
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 59</span>
+                        <span class="repo-stars">★ 60</span>
                         <div class="repo-info">
                             <strong class="repo-name">DevelopersGlobal/ai-agent-skills</strong>
                             <p class="repo-desc">适用于生产级应用的 AI 代理技能</p>
@@ -466,7 +466,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 25</span>
+                        <span class="repo-stars">★ 28</span>
                         <div class="repo-info">
                             <strong class="repo-name">jingyaogong/minimind-o</strong>
                             <p class="repo-desc">🌏 0.1B级开源Omni模型 🌏0.1B级开源Omni模型</p>
@@ -474,7 +474,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 13</span>
+                        <span class="repo-stars">★ 17</span>
                         <div class="repo-info">
                             <strong class="repo-name">IrtezaAsadRizvi/ai-megalist</strong>
                             <p class="repo-desc">200 多个 AI 工具的精选索引，每个工具一篇带有实践的文章。涵盖编码、设计、研究、视频、语音、代理、音乐、本地法学硕士。比较替代方案，查看实际价格，找到适合工作的工具。</p>
@@ -498,7 +498,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 7</span>
+                        <span class="repo-stars">★ 8</span>
                         <div class="repo-info">
                             <strong class="repo-name">Jamessdevops/micracode</strong>
                             <p class="repo-desc">Lovable、v0、Bolt、Replit、Emergent 的开源替代方案。 🌟喜欢就Star吧！</p>
@@ -514,14 +514,6 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 6</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">ahmedbutt2015/spine</strong>
-                            <p class="repo-desc">为任何代码库生成个性化的阅读之旅和经过验证的架构主干。</p>
-                        </div>
-                    </li>
-                
-                    <li class="repo-item">
                         <span class="repo-stars">★ 5</span>
                         <div class="repo-info">
                             <strong class="repo-name">brandonhimpfen/optimization-kernels</strong>
@@ -530,10 +522,18 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
                     </li>
                 
                     <li class="repo-item">
-                        <span class="repo-stars">★ 4</span>
+                        <span class="repo-stars">★ 5</span>
                         <div class="repo-info">
                             <strong class="repo-name">phantomx39/Scraper</strong>
                             <p class="repo-desc">一个强大的、本地优先的智能应用程序，用于抓取和分析暗网数据。</p>
+                        </div>
+                    </li>
+                
+                    <li class="repo-item">
+                        <span class="repo-stars">★ 3</span>
+                        <div class="repo-info">
+                            <strong class="repo-name">brandonhimpfen/notebooks-gallery</strong>
+                            <p class="repo-desc">一本精选的实用 ML、LLM、RAG、评估和 AI 系统笔记本的食谱。</p>
                         </div>
                     </li>
                 
@@ -1095,7 +1095,7 @@ h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
     
     <!-- 生成时间 -->
     <footer class="generated-info">
-        生成于 2026-05-04 22:54:29
+        生成于 2026-05-05 22:51:58
     </footer>
 </body>
 </html>
