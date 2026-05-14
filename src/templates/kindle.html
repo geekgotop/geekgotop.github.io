@@ -8,15 +8,126 @@
 {{ kindle_css }}
     </style>
 </head>
-<body>
-    <!-- ==================== 兼容性提示 ==================== -->
-    <div id="loading-msg" style="padding: 20px; font-size: 20px; font-weight: bold; background: white; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999;">
-        正在加载数据... (如果长时间停留在此，说明浏览器不支持当前脚本或 JS 报错)
-    </div>
+<body class="no-js">
+    <noscript>
+        <div class="compatibility-notice">当前为无脚本模式：页面已切换为顺序阅读版。</div>
+    </noscript>
 
     <!-- ==================== 主内容区 ==================== -->
     <main id="content">
-        
+        <header class="kindle-index">
+            <h1 class="section-title">Kindle Dash</h1>
+            <p class="section-subtitle">离线学习顺序阅读模式（JS 可用时自动切换为标签模式）</p>
+            <ul class="index-list">
+                <li><a href="#zone-quick">Quick · 快速输入</a></li>
+                <li><a href="#zone-study">Study · 英语学习</a></li>
+                <li><a href="#zone-deep">Deep · AI/ML 深读</a></li>
+                <li><a href="#zone-archive">Archive · 回顾归档</a></li>
+            </ul>
+        </header>
+
+        <section id="zone-quick" class="zone-block">
+            <h2 class="zone-title">Quick</h2>
+            <p class="zone-subtitle">2-5 分钟快速输入</p>
+            <div class="quick-cards">
+                <article class="quick-card">
+                    <h3 class="quick-title">今日一句</h3>
+                    {% if featured.quote %}
+                        <p class="quick-main">
+                            {{ featured.quote.content }}
+                        </p>
+                        <p class="quick-meta">— {{ featured.quote.author }}</p>
+                    {% else %}
+                        <p class="quick-empty">暂无语录数据</p>
+                    {% endif %}
+                </article>
+                <article class="quick-card">
+                    <h3 class="quick-title">今日热仓</h3>
+                    {% if featured.repo %}
+                        <p class="quick-main">{{ featured.repo.name }}</p>
+                        <p class="quick-meta">★ {{ featured.repo.stars }}</p>
+                        <p class="quick-note">{{ featured.repo.why_read }}</p>
+                    {% else %}
+                        <p class="quick-empty">暂无仓库数据</p>
+                    {% endif %}
+                </article>
+                <article class="quick-card">
+                    <h3 class="quick-title">今日学习计划</h3>
+                    {% if daily_plan %}
+                    <ol class="quick-plan-list">
+                        {% for item in daily_plan %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ol>
+                    {% else %}
+                    <p class="quick-empty">暂无学习计划</p>
+                    {% endif %}
+                </article>
+            </div>
+            <ul class="zone-links">
+                <li><a href="#tab-focus">进入语录模块</a></li>
+                <li><a href="#tab-repos">进入 GitHub 热门模块</a></li>
+            </ul>
+        </section>
+
+        <section id="zone-study" class="zone-block">
+            <h2 class="zone-title">Study</h2>
+            <p class="zone-subtitle">英语词汇和语感训练</p>
+            <div class="study-preview">
+                {% if featured.word %}
+                    <p class="study-word">{{ featured.word.word }} <span>{{ featured.word.phonetic }}</span></p>
+                    <p class="study-meaning">{{ featured.word.meaning }}</p>
+                    {% if featured.word.sentences %}
+                    <p class="study-sentence">{{ featured.word.sentences[0].en }}</p>
+                    {% endif %}
+                    {% if featured.word.memory_tip %}
+                    <p class="study-tip">学习建议：{{ featured.word.memory_tip }}</p>
+                    {% endif %}
+                {% else %}
+                    <p class="quick-empty">暂无单词数据</p>
+                {% endif %}
+            </div>
+            <ul class="zone-links">
+                <li><a href="#tab-words">进入单词模块</a></li>
+                <li><a href="#tab-lyrics">进入歌词模块</a></li>
+            </ul>
+        </section>
+
+        <section id="zone-deep" class="zone-block">
+            <h2 class="zone-title">Deep</h2>
+            <p class="zone-subtitle">AI/ML 深度学习输入</p>
+            <div class="deep-preview">
+                {% if featured.paper %}
+                    <p class="deep-title">{{ featured.paper.title_en }}</p>
+                    <p class="deep-abstract">{{ featured.paper.abstract_zh or featured.paper.abstract_en }}</p>
+                    {% if featured.paper.takeaway %}
+                    <p class="deep-takeaway">要点：{{ featured.paper.takeaway }}</p>
+                    {% endif %}
+                    <p class="deep-meta">预计阅读 {{ featured.paper.reading_minutes }} 分钟</p>
+                {% else %}
+                    <p class="quick-empty">暂无论文数据</p>
+                {% endif %}
+            </div>
+            <ul class="zone-links">
+                <li><a href="#tab-papers">进入论文模块</a></li>
+                <li><a href="#tab-models">进入思维模型模块</a></li>
+            </ul>
+        </section>
+
+        <section id="zone-archive" class="zone-block">
+            <h2 class="zone-title">Archive</h2>
+            <p class="zone-subtitle">复盘与回顾入口</p>
+            <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
+            <ul class="archive-stats">
+                <li>论文：{{ papers | length }}</li>
+                <li>仓库：{{ repos | length }}</li>
+                <li>思维模型：{{ models | length }}</li>
+                <li>语录：{{ quotes | length }}</li>
+                <li>歌词：{{ lyrics | length }}</li>
+                <li>单词：{{ words | length }}</li>
+            </ul>
+        </section>
+
         <!-- Module A: Deep Tech (ArXiv 论文) - 单篇展示 -->
         <section id="tab-papers" class="tab-content active">
             <h1 class="section-title">Deep Tech</h1>
@@ -227,6 +338,12 @@
     <!-- ==================== JavaScript 交互 (极端兼容版) ==================== -->
     <script type="text/javascript">
         (function() {
+            var body = document.body;
+            if (body) {
+                body.className = body.className.split(' no-js').join('');
+                body.className += ' js-enabled';
+            }
+
             // 通用卡片切换函数
             function createCardSwitcher(containerSelector, prevBtnId, nextBtnId, indicatorId, isLyrics, lyricsData) {
                 var cards = document.querySelectorAll(containerSelector);
@@ -312,11 +429,6 @@
             // 单词切换
             createCardSwitcher('.word-card', 'prev-word', 'next-word', 'word-indicator');
 
-            // 移除加载提示
-            var loading = document.getElementById('loading-msg');
-            if (loading) {
-                loading.style.display = 'none';
-            }
         })();
     </script>
     

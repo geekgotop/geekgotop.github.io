@@ -35,6 +35,7 @@ LYRICS_DIR = DATA_DIR / "lyrics"
 MODELS_FILE = DATA_DIR / "models.json"
 QUOTES_FILE = DATA_DIR / "quotes.json"
 WORDS_FILE = DATA_DIR / "words.json"
+KINDLE_STRATEGY_FILE = DATA_DIR / "kindle_strategy.json"
 
 # 模板和静态资源目录
 TEMPLATES_DIR = BASE_DIR / "templates"
@@ -189,6 +190,30 @@ def fetch_arxiv_papers(categories: list = None, max_results: int = 3) -> list:
     return papers
 
 
+def extract_takeaway(text: str, limit: int = 120) -> str:
+    """
+    提取一条适合 Kindle 快读的要点文本。
+    """
+    if not text:
+        return ""
+    cleaned = text.replace('\n', ' ').strip()
+    if len(cleaned) <= limit:
+        return cleaned
+    return cleaned[:limit].rstrip() + "..."
+
+
+def estimate_reading_minutes(text: str) -> int:
+    """
+    粗略估算阅读时长（分钟）。
+    """
+    if not text:
+        return 1
+    # 英文约 220 wpm，中文按字符粗略折算，做保守估计
+    length = len(text)
+    minutes = max(1, length // 700)
+    return minutes
+
+
 # ==================== Module B: GitHub Trending AI ====================
 
 def fetch_github_trending(days: int = 7, topic: str = 'artificial-intelligence', max_results: int = 10) -> list:
@@ -253,6 +278,57 @@ def fetch_github_trending(days: int = 7, topic: str = 'artificial-intelligence',
         print(f"[Module B] 处理 GitHub 数据失败: {e}")
     
     return repos
+
+
+def enrich_papers_for_kindle(papers: list) -> list:
+    """
+    补充 Kindle 深读所需的简要字段。
+    """
+    enriched = []
+    for paper in papers:
+        item = dict(paper)
+        src_text = item.get('abstract_zh') or item.get('abstract_en', '')
+        item['takeaway'] = extract_takeaway(src_text, limit=160)
+        item['reading_minutes'] = estimate_reading_minutes(item.get('abstract_en', ''))
+        enriched.append(item)
+    return enriched
+
+
+def enrich_repos_for_kindle(repos: list) -> list:
+    """
+    为仓库增加“为什么值得看”的提示。
+    """
+    enriched = []
+    for repo in repos:
+        item = dict(repo)
+        lang = item.get('language', 'Unknown')
+        stars = item.get('stars', 0)
+        if stars >= 2000:
+            reason = "高热度项目，适合跟进技术趋势。"
+        elif stars >= 500:
+            reason = "中高热度项目，适合挑选性深入。"
+        else:
+            reason = "新兴项目，适合早期观察。"
+        item['why_read'] = f"{reason} 语言: {lang}"
+        enriched.append(item)
+    return enriched
+
+
+def enrich_words_for_kindle(words: list) -> list:
+    """
+    为单词增加简短记忆提示。
+    """
+    enriched = []
+    for word in words:
+        item = dict(word)
+        sentence_count = len(item.get('sentences', []))
+        if sentence_count >= 2:
+            tip = "先读例句再回看释义，强化语境记忆。"
+        else:
+            tip = "建议配合口头复述一次例句。"
+        item['memory_tip'] = tip
+        enriched.append(item)
+    return enriched
 
 
 # ==================== Module C: Mental Models (思维模型) ====================
@@ -413,6 +489,137 @@ def load_words() -> list:
     return words
 
 
+def load_kindle_strategy() -> dict:
+    """
+    加载 Kindle 首页精选策略配置。
+
+    Returns:
+        策略字典
+    """
+    default_strategy = {
+        'quote': 'daily',
+        'repo': 'max_stars',
+        'paper': 'newest',
+        'word': 'daily',
+        'quote_index': 0,
+        'repo_index': 0,
+        'paper_index': 0,
+        'word_index': 0
+    }
+
+    if not KINDLE_STRATEGY_FILE.exists():
+        return default_strategy
+
+    try:
+        with open(KINDLE_STRATEGY_FILE, 'r', encoding='utf-8') as f:
+            custom = json.load(f)
+            if isinstance(custom, dict):
+                default_strategy.update(custom)
+    except Exception as e:
+        print(f"[策略] 加载 kindle_strategy.json 失败，使用默认策略: {e}")
+
+    return default_strategy
+
+
+def pick_featured_item(items: list, mode: str, key: str = '', index: int = 0):
+    """
+    按策略从列表中选择一条精选内容。
+    """
+    if not items:
+        return None
+
+    if mode == 'first':
+        return items[0]
+
+    if mode == 'daily':
+        daily_seed = sum(ord(ch) for ch in datetime.now().strftime('%Y-%m-%d'))
+        return items[daily_seed % len(items)]
+
+    if mode == 'random':
+        random_seed = sum(ord(ch) for ch in datetime.now().strftime('%Y-%m-%d-%H'))
+        return items[random_seed % len(items)]
+
+    if mode == 'index':
+        if len(items) == 0:
+            return None
+        normalized_index = index % len(items)
+        return items[normalized_index]
+
+    if mode == 'newest':
+        if key:
+            sorted_items = sorted(items, key=lambda x: x.get(key, ''), reverse=True)
+            return sorted_items[0]
+        return items[0]
+
+    if mode == 'max_stars':
+        sorted_items = sorted(items, key=lambda x: x.get('stars', 0), reverse=True)
+        return sorted_items[0]
+
+    return items[0]
+
+
+def select_featured_content(context: dict) -> dict:
+    """
+    基于策略为 Kindle 首页选出每日精选内容。
+    """
+    strategy = load_kindle_strategy()
+
+    featured = {
+        'quote': pick_featured_item(
+            context.get('quotes', []),
+            strategy.get('quote', 'daily'),
+            index=int(strategy.get('quote_index', 0))
+        ),
+        'repo': pick_featured_item(
+            context.get('repos', []),
+            strategy.get('repo', 'max_stars'),
+            index=int(strategy.get('repo_index', 0))
+        ),
+        'paper': pick_featured_item(
+            context.get('papers', []),
+            strategy.get('paper', 'newest'),
+            key='published',
+            index=int(strategy.get('paper_index', 0))
+        ),
+        'word': pick_featured_item(
+            context.get('words', []),
+            strategy.get('word', 'daily'),
+            index=int(strategy.get('word_index', 0))
+        )
+    }
+
+    print(
+        f"[策略] 已应用精选策略 quote={strategy.get('quote')} "
+        f"repo={strategy.get('repo')} paper={strategy.get('paper')} word={strategy.get('word')}"
+    )
+
+    return featured
+
+
+def build_daily_plan(featured: dict) -> list:
+    """
+    基于当日精选生成 3 条可执行学习计划。
+    """
+    plan = []
+
+    word = featured.get('word')
+    if word and word.get('word'):
+        plan.append(f"词汇: 朗读并复述 {word.get('word')}，再口述其含义一次。")
+
+    repo = featured.get('repo')
+    if repo and repo.get('name'):
+        plan.append(f"趋势: 浏览 {repo.get('name')}，记录 1 个可借鉴实现点。")
+
+    paper = featured.get('paper')
+    if paper and paper.get('title_en'):
+        plan.append(f"深读: 阅读论文《{paper.get('title_en')}》摘要并写 2 句总结。")
+
+    if not plan:
+        plan = ["今日计划暂不可用：等待下次构建拉取内容。"]
+
+    return plan
+
+
 # ==================== 模板渲染与生成 ====================
 
 def render_templates(context: dict) -> None:
@@ -487,12 +694,16 @@ def main():
     print()
     
     # 收集所有模块数据
+    raw_papers = fetch_arxiv_papers()
+    raw_repos = fetch_github_trending()
+    raw_words = load_words()
+
     context = {
         # Module A: Deep Tech (ArXiv 论文)
-        'papers': fetch_arxiv_papers(),
+        'papers': enrich_papers_for_kindle(raw_papers),
         
         # Module B: GitHub Trending AI
-        'repos': fetch_github_trending(),
+        'repos': enrich_repos_for_kindle(raw_repos),
         
         # Module C: Mental Models
         'models': load_mental_models(),
@@ -504,8 +715,12 @@ def main():
         'lyrics': load_lyrics(),
         
         # Module F: Words (单词记忆)
-        'words': load_words(),
+        'words': enrich_words_for_kindle(raw_words),
     }
+
+    # Kindle 首页精选（可配置策略）
+    context['featured'] = select_featured_content(context)
+    context['daily_plan'] = build_daily_plan(context['featured'])
     
     print()
     print("-" * 60)
