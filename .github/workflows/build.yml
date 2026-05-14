@@ -13,14 +13,17 @@ on:
   # 手动触发
   workflow_dispatch:
 
-  # 推送到 main 分支时触发
-  push:
-    paths:
-      - "src/**"
+permissions:
+  contents: write
+
+concurrency:
+  group: kindle-dash-build
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       # 1. 检出代码
@@ -50,6 +53,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          git pull --rebase origin main
           git add index.html dashboard.html kindle.html
-          git diff --staged --quiet || git commit -m "🤖 Auto-build: Update website $(date +'%Y-%m-%d %H:%M')"
+          git diff --staged --quiet || git commit -m "Auto-build: Update website $(date +'%Y-%m-%d %H:%M')"
           git push
