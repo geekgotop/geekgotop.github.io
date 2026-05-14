@@ -3,95 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1072, height=1448, initial-scale=1.0, user-scalable=no">
-    <title>Kindle Dash - 离线看板</title>
+    <title>Kindle Dash - Kindle 学习页</title>
     <style>
-/**
- * Kindle-Dash 样式表 (Kindle E-ink 极端兼容版 V2)
- * ==========================================
- * 专为 Kindle Voyage (1072x1448) 实验性浏览器设计
- * 彻底放弃 Flexbox, calc(), Emoji，使用陈旧但稳定的布局技术
- */
-
-/* ==================== 全局重置 ==================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ==================== 基础样式 ==================== */
 html, body {
     width: 1072px;
-    height: 1448px;
-    background-color: #FFFFFF;
+    min-height: 1448px;
+    background: #FFFFFF;
     color: #000000;
-    font-size: 26px; /* 上调 18-&gt;26 */
+    font-family: &#34;Songti SC&#34;, &#34;SimSun&#34;, &#34;STSong&#34;, serif;
+    font-size: 26px;
     line-height: 1.6;
-    overflow: hidden; /* 防止滚轮 */
 }
 
-body {
-    font-family: &#39;Songti SC&#39;, &#39;SimSun&#39;, &#39;STSong&#39;, serif;
-}
-
-.compatibility-notice {
-    padding: 14px 20px;
-    border-bottom: 2px solid #000000;
-    font-size: 20px;
-    background-color: #FFFFFF;
-}
-
-/* 英文字体 */
-h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
-    font-family: &#39;Bookerly&#39;, &#39;Georgia&#39;, &#39;Times New Roman&#39;, serif;
-}
-
-/* ==================== 主内容区 ==================== */
 #content {
-    padding: 30px;
-    height: 1288px; /* 1448 - 80 - 80 (为两个固定的 bar 留出空间) */
-    overflow-y: auto;
-    width: 100%;
-    position: relative;
-    padding-bottom: 100px; /* 额外底部间距 */
+    padding: 24px 26px 40px;
 }
 
-/* Tab 内容切换 */
-.tab-content {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 36px;
-    border-bottom: 2px solid #000000;
-    padding-bottom: 20px;
-}
-
-body.js-enabled .tab-content {
-    display: none;
-    height: 100%;
-    margin-bottom: 0;
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-body.js-enabled .tab-content.active {
-    display: block; /* 移除 flex */
-}
-
-.kindle-index {
-    margin-bottom: 28px;
-    border: 2px solid #000000;
+.hero {
+    border: 3px solid #000000;
     padding: 18px 20px;
+    margin-bottom: 22px;
+}
+
+.hero-title {
+    font-size: 52px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    margin-top: 4px;
+}
+
+.hero-meta {
+    font-size: 18px;
+    margin-top: 8px;
+    border-top: 1px dashed #000000;
+    padding-top: 6px;
 }
 
 .index-list {
-    margin-top: 14px;
+    margin-top: 10px;
     margin-left: 24px;
 }
 
 .index-list li {
     font-size: 22px;
-    line-height: 1.7;
 }
 
 .index-list a {
@@ -102,96 +65,103 @@ body.js-enabled .tab-content.active {
 
 .zone-block {
     border: 2px solid #000000;
-    padding: 16px 18px;
     margin-bottom: 20px;
-    background-color: #FFFFFF;
+    padding: 14px 16px;
 }
 
 .zone-title {
-    font-size: 34px;
-    font-weight: bold;
-    margin-bottom: 6px;
+    font-size: 38px;
+    line-height: 1.2;
 }
 
 .zone-subtitle {
-    font-size: 21px;
-    margin-bottom: 10px;
-}
-
-.zone-links {
-    margin-left: 20px;
-}
-
-.zone-links li {
-    line-height: 1.7;
     font-size: 22px;
+    margin-top: 2px;
+    margin-bottom: 12px;
 }
 
-.zone-links a {
-    color: #000000;
-    text-decoration: none;
-    border-bottom: 1px dashed #000000;
-}
-
-.archive-tip {
-    font-size: 22px;
-    line-height: 1.6;
-}
-
-.quick-cards {
-    margin-bottom: 10px;
-}
-
-.quick-card {
+.quick-card,
+.study-preview,
+.deep-preview,
+.study-list,
+.deep-list,
+.archive-list {
     border: 1px dashed #000000;
     padding: 10px 12px;
     margin-bottom: 10px;
 }
 
-.quick-title {
+.theme-card {
+    border: 2px solid #000000;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    background: #FAFAFA;
+}
+
+.theme-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.theme-focus,
+.theme-trigger {
+    font-size: 19px;
+    margin-top: 4px;
+}
+
+.quick-title,
+.block-title {
     font-size: 24px;
     margin-bottom: 6px;
 }
 
-.quick-main {
-    font-size: 22px;
-    line-height: 1.5;
+.quick-main,
+.study-meaning,
+.deep-title {
+    font-size: 23px;
 }
 
-.quick-meta {
-    font-size: 20px;
-    margin-top: 4px;
-}
-
-.quick-note {
+.quick-meta,
+.quick-note,
+.study-sentence,
+.study-sentence-zh,
+.study-tip,
+.deep-abstract,
+.deep-takeaway,
+.deep-meta,
+.archive-tip {
     font-size: 19px;
     margin-top: 6px;
-    line-height: 1.5;
 }
 
 .quick-empty {
     font-size: 21px;
 }
 
-.quick-plan-list {
+.quick-plan-list,
+.study-list ul,
+.deep-list ul,
+.archive-stats,
+.archive-list ul {
     margin-left: 22px;
 }
 
-.quick-plan-list li {
+.quick-plan-list li,
+.study-list li,
+.deep-list li,
+.archive-stats li,
+.archive-list li {
     font-size: 20px;
-    line-height: 1.6;
     margin-bottom: 4px;
 }
 
-.study-preview,
-.deep-preview {
-    border: 1px dashed #000000;
-    padding: 10px 12px;
-    margin-bottom: 10px;
+.deep-list p {
+    margin-top: 2px;
+    font-size: 18px;
 }
 
 .study-word {
-    font-size: 30px;
+    font-size: 34px;
     font-weight: bold;
 }
 
@@ -200,490 +170,46 @@ body.js-enabled .tab-content.active {
     font-weight: normal;
 }
 
-.study-meaning {
-    font-size: 24px;
-    margin-top: 6px;
-}
-
-.study-sentence {
-    font-size: 20px;
-    margin-top: 6px;
-}
-
-.study-tip {
-    font-size: 19px;
-    margin-top: 8px;
-    border-top: 1px dashed #000000;
-    padding-top: 6px;
-}
-
-.deep-title {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.deep-abstract {
-    font-size: 20px;
-    line-height: 1.6;
-    margin-top: 6px;
-}
-
-.deep-takeaway {
-    font-size: 19px;
-    margin-top: 8px;
-    line-height: 1.6;
-}
-
-.deep-meta {
-    font-size: 18px;
-    margin-top: 6px;
-}
-
-.archive-stats {
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.archive-stats li {
-    font-size: 21px;
-    line-height: 1.7;
-}
-
-/* ==================== 通用组件 ==================== */
-
-/* 标题 */
-.section-title {
-    font-size: 48px; /* 32-&gt;48 */
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 8px;
-    letter-spacing: 2px;
-}
-
-.section-subtitle {
-    font-size: 20px; /* 14-&gt;20 */
-    text-align: center;
-    color: #000000;
-    margin-bottom: 24px;
-    padding-bottom: 16px;
-    border-bottom: 3px solid #000000;
-}
-
-/* 分隔线 */
-.divider {
-    border: none;
-    border-top: 2px dashed #000000;
-    margin: 24px 0;
-}
-
-/* 空状态 */
-.empty-state {
-    text-align: center;
-    font-size: 24px;
-    padding: 48px;
-    border: 3px dashed #000000;
-    margin: 24px 0;
-}
-
-/* 隐藏元素 */
-.hidden {
-    display: none !important;
-}
-
-/* ==================== 容器布局（Legacy） ==================== */
-.fullscreen-card-container {
-    height: auto;
-    position: relative;
-    width: 100%;
-}
-
-.fullscreen-card-container.center-content {
-    text-align: center;
-    padding-top: 150px; /* 增加边距 */
-}
-
-/* ==================== 模块导航条 (固定在底部) ==================== */
-.nav-bar {
-    position: static;
-    width: 100%;
-    height: auto;
-    border-top: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    background: #F7F7F7;
-    margin-top: 18px;
-    clear: both;
-    overflow: hidden;
-    padding: 8px 0;
-}
-
-.nav-btn {
-    float: left;
-    width: 250px; /* 调宽按钮以适配大字号 */
-    height: 66px;
-    line-height: 66px;
-    font-size: 24px; /* 18-&gt;24 */
-    font-weight: bold;
-    background-color: #000000;
-    color: #FFFFFF;
-    border: none;
-    text-align: center;
-}
-
-.nav-indicator {
-    float: left;
-    width: 572px; /* 1072 - 250*2 */
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 66px;
-}
-
-body.js-enabled .nav-bar {
-    position: fixed;
-    bottom: 83px; /* 高于底部 tab-bar (80px + 3px border) */
-    left: 0;
-    width: 1072px;
-    height: 80px;
-    border-top: 2px solid #000000;
-    border-bottom: none;
-    background: #FFFFFF;
-    margin-top: 0;
-    padding: 0;
-    z-index: 100;
-}
-
-body.js-enabled .nav-btn {
-    height: 80px;
-    line-height: 80px;
-}
-
-body.js-enabled .nav-indicator {
-    line-height: 80px;
-}
-
-/* ==================== Module A: 论文区块 ==================== */
-.paper-card {
-    display: block;
-    padding-bottom: 20px;
-    margin-bottom: 18px;
-    border-bottom: 1px dashed #000000;
-}
-
-body.js-enabled .paper-card {
-    display: none;
-    margin-bottom: 0;
-    border-bottom: none;
-}
-
-body.js-enabled .paper-card.active {
-    display: block;
-}
-
-.paper-title {
-    font-size: 36px; /* 22-&gt;36 */
-    font-weight: bold;
-    line-height: 1.4;
-    margin-bottom: 16px;
-}
-
-.paper-title .ipa {
-    font-size: 16px; /* 11-&gt;16 */
-    font-weight: normal;
-    color: #000000;
-    vertical-align: super;
-}
-
-.paper-meta {
-    font-size: 18px; /* 13-&gt;18 */
-    margin-bottom: 16px;
-}
-
-.paper-meta .date {
-    margin-left: 20px;
-}
-
-.paper-abstract {
-    font-size: 24px; /* 15-&gt;24 */
-    line-height: 1.6;
-}
-
-.abstract-en {
-    margin-bottom: 20px;
-    color: #333333;
-}
-
-.abstract-zh {
-    font-size: 28px; /* 摘要中文更大 */
-    font-weight: normal;
-}
-
-/* ==================== Module B: GitHub 仓库列表 ==================== */
-.repo-item {
-    padding: 24px 0;
-    border-bottom: 2px solid #000000;
-    overflow: hidden;
-}
-
-.repo-stars {
-    float: left;
-    width: 100px;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.repo-info {
-    float: left;
-    width: 930px;
-}
-
-.repo-name {
-    font-size: 28px; /* 18-&gt;28 */
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.repo-desc {
-    font-size: 22px;
-    line-height: 1.5;
-}
-
-/* ==================== Module C: 思维模型 ==================== */
-.flashcard {
-    display: block;
-    padding: 30px;
-    border: 4px solid #000000;
-    text-align: center;
-    min-height: 380px;
-    margin-bottom: 18px;
-}
-
-body.js-enabled .flashcard {
-    display: none;
-    min-height: 700px;
-    margin-bottom: 0;
-}
-
-body.js-enabled .flashcard.active {
-    display: block;
-}
-
-.model-name-en {
-    font-size: 48px; /* 36-&gt;48 */
-    font-weight: bold;
-    margin-bottom: 12px;
-}
-
-.model-name-zh {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.model-desc {
-    font-size: 28px; /* 20-&gt;28 */
-    line-height: 1.8;
-    margin-bottom: 30px;
-    text-align: left;
-}
-
-/* ==================== Module D: 语录 ==================== */
-.quote-card {
-    display: block;
-    padding: 32px;
-    margin-bottom: 18px;
-    border-bottom: 1px dashed #000000;
-}
-
-body.js-enabled .quote-card {
-    display: none;
-    margin-bottom: 0;
-    border-bottom: none;
-}
-
-body.js-enabled .quote-card.active {
-    display: block;
-}
-
-.quote-content-en, .quote-content-zh {
-    font-size: 44px; /* 32-&gt;44 */
-    font-weight: bold;
-    line-height: 1.5;
-    margin-bottom: 24px;
-}
-
-/* ==================== Module E: 歌词 ==================== */
-.lyrics-card {
-    display: block;
-    margin-bottom: 18px;
-    border-bottom: 1px dashed #000000;
-}
-
-body.js-enabled .lyrics-card {
-    display: none;
-    margin-bottom: 0;
-    border-bottom: none;
-}
-
-body.js-enabled .lyrics-card.active {
-    display: block;
-}
-
-.song-title {
-    font-size: 40px; /* 28-&gt;40 */
-    font-weight: bold;
-    margin-bottom: 24px;
-    padding-bottom: 12px;
-    border-bottom: 3px solid #000000;
-    text-align: center;
-}
-
-.lyrics-text {
-    text-align: center;
-    font-size: 26px; /* 18-&gt;26 */
-}
-
-/* ==================== Module F: 单词记忆 ==================== */
-.word-card {
-    display: block;
-    padding: 24px;
-    text-align: center;
-    margin-bottom: 18px;
-    border-bottom: 1px dashed #000000;
-}
-
-body.js-enabled .word-card {
-    display: none;
-    margin-bottom: 0;
-    border-bottom: none;
-}
-
-body.js-enabled .word-card.active {
-    display: block;
-}
-
-.word-text {
-    font-size: 72px; /* 56-&gt;72 */
-    font-weight: bold;
-    margin-bottom: 12px;
-}
-
-.word-meaning {
-    font-size: 40px; /* 28-&gt;40 */
-    font-weight: bold;
-    margin-bottom: 24px;
-    border-bottom: 3px solid #000000;
-    padding-bottom: 16px;
-}
-
-.sentence-item {
-    text-align: left;
-    margin-bottom: 20px;
-    border-bottom: 2px dashed #000000;
-    padding-bottom: 15px;
-}
-
-/* ==================== 底部固定导航栏 (Legacy) ==================== */
-#tab-bar {
-    position: static;
-    width: 100%;
-    height: 72px;
-    background-color: #FFFFFF;
-    border-top: 3px solid #000000;
-    overflow: hidden;
-    z-index: 200;
-    margin-top: 14px;
-}
-
-.tab-btn {
-    float: left;
-    width: 178px; /* 1072 / 6 ≈ 178.6 */
-    height: 80px;
-    background: none;
-    border: none;
-    border-right: 1px solid #EEEEEE;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.tab-btn.active {
-    background-color: #000000;
-    color: #FFFFFF;
-}
-
-.tab-icon {
-    display: block;
-    font-size: 24px; /* 18-&gt;24 */
-    font-weight: bold;
-    margin-bottom: 2px;
-}
-
-.tab-label {
-    display: block;
-    font-size: 20px; /* 16-&gt;20 */
-    font-weight: bold;
-}
-
-/* ==================== 页脚 ==================== */
-.generated-info {
-    position: static;
-    margin: 20px 0 30px 0;
-    text-align: right;
-    font-size: 14px;
-}
-
-body.js-enabled #tab-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 1072px;
-    height: 80px;
-    margin-top: 0;
-}
-
-body.js-enabled .generated-info {
-    position: absolute;
-    bottom: 180px; /* 两个 bar 之上 */
-    right: 30px;
-    margin: 0;
-    text-align: left;
-}
-
     </style>
 </head>
-<body class="no-js">
-    <noscript>
-        <div class="compatibility-notice">当前为无脚本模式：页面已切换为顺序阅读版。</div>
-    </noscript>
-
-    <!-- ==================== 主内容区 ==================== -->
+<body>
     <main id="content">
-        <header class="kindle-index">
-            <h1 class="section-title">Kindle Dash</h1>
-            <p class="section-subtitle">离线学习顺序阅读模式（JS 可用时自动切换为标签模式）</p>
+        <header class="hero">
+            <h1 class="hero-title">Kindle Dash</h1>
+            <p class="hero-subtitle">离线优先的个人学习主页</p>
+            <p class="hero-meta">构建时间：2026-05-14 16:51:08</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
                 <li><a href="#zone-deep">Deep · AI/ML 深读</a></li>
-                <li><a href="#zone-archive">Archive · 回顾归档</a></li>
+                <li><a href="#zone-archive">Archive · 复盘归档</a></li>
             </ul>
         </header>
 
         <section id="zone-quick" class="zone-block">
             <h2 class="zone-title">Quick</h2>
             <p class="zone-subtitle">2-5 分钟快速输入</p>
+            
+            <div class="theme-card">
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
+            </div>
+            
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">
-                            博观而约取，厚积而薄发。
-                        </p>
+                        <p class="quick-main">博观而约取，厚积而薄发。</p>
                         <p class="quick-meta">— 苏轼</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-empty">暂无仓库数据</p>
+                        <p class="quick-main">lucidrains/d4rt</p>
+                        <p class="quick-meta">★ 57</p>
+                        <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
                 <article class="quick-card">
@@ -693,14 +219,12 @@ body.js-enabled .generated-info {
                         
                         <li>词汇: 朗读并复述 inheritance，再口述其含义一次。</li>
                         
+                        <li>趋势: 浏览 lucidrains/d4rt，记录 1 个可借鉴实现点。</li>
+                        
                     </ol>
                     
                 </article>
             </div>
-            <ul class="zone-links">
-                <li><a href="#tab-focus">进入语录模块</a></li>
-                <li><a href="#tab-repos">进入 GitHub 热门模块</a></li>
-            </ul>
         </section>
 
         <section id="zone-study" class="zone-block">
@@ -712,16 +236,31 @@ body.js-enabled .generated-info {
                     <p class="study-meaning">n. 继承；遗传</p>
                     
                     <p class="study-sentence">Inheritance enables new classes to receive the properties of existing classes.</p>
+                    <p class="study-sentence-zh">继承使新类能够接收现有类的属性。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
                     
                 
             </div>
-            <ul class="zone-links">
-                <li><a href="#tab-words">进入单词模块</a></li>
-                <li><a href="#tab-lyrics">进入歌词模块</a></li>
-            </ul>
+            
+            <div class="study-list">
+                <h3 class="block-title">本次词汇清单</h3>
+                <ul>
+                    
+                    <li>algorithm - n. 算法；运算法则</li>
+                    
+                    <li>recursion - n. 递归；循环</li>
+                    
+                    <li>encapsulation - n. 封装；包装</li>
+                    
+                    <li>polymorphism - n. 多态性</li>
+                    
+                    <li>inheritance - n. 继承；遗传</li>
+                    
+                </ul>
+            </div>
+            
         </section>
 
         <section id="zone-deep" class="zone-block">
@@ -732,10 +271,39 @@ body.js-enabled .generated-info {
                     <p class="quick-empty">暂无论文数据</p>
                 
             </div>
-            <ul class="zone-links">
-                <li><a href="#tab-papers">进入论文模块</a></li>
-                <li><a href="#tab-models">进入思维模型模块</a></li>
-            </ul>
+            
+            <div class="deep-list">
+                <h3 class="block-title">热门项目速览</h3>
+                <ul>
+                    
+                    <li>
+                        <strong>lucidrains/d4rt</strong> (★ 57)
+                        <p>Deepmind 的 D4RT 实现，高效重建动态场景</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Thiago-code-lab/aws-certified-ai-practitioner-brasil</strong> (★ 29)
+                        <p>AWS Certified AI Practitioner (AIF-C01) 证书研究的葡萄牙语 (PT-BR) 存储库</p>
+                    </li>
+                    
+                    <li>
+                        <strong>ddcoty-svg/axon</strong> (★ 20)
+                        <p>轴突</p>
+                    </li>
+                    
+                    <li>
+                        <strong>snktibor/Nectar-TP-AI-Hackathon</strong> (★ 9)
+                        <p>领域专业化、RAG-alapú 多代理预审核交接文件传输 (TP) elemzésére。 🏆 7. helyezés 2026 年普华永道匈牙利人工智能黑客马拉松。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>RajdeepChoudhury/FaceMatch-AI</strong> (★ 5)
+                        <p>FaceMatch AI 是一个智能面部比较平台，可分析两张上传的照片，通过先进的人工智能识别功能检测面部相似度。它通过现代化的交互式用户体验提供详细的比赛洞察、视觉人脸分析、置信度评估和实时比较结果。</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
         </section>
 
         <section id="zone-archive" class="zone-block">
@@ -744,584 +312,23 @@ body.js-enabled .generated-info {
             <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
             <ul class="archive-stats">
                 <li>论文：0</li>
-                <li>仓库：0</li>
+                <li>仓库：10</li>
                 <li>思维模型：3</li>
                 <li>语录：5</li>
                 <li>歌词：1</li>
                 <li>单词：10</li>
             </ul>
-        </section>
-
-        <!-- Module A: Deep Tech (ArXiv 论文) - 单篇展示 -->
-        <section id="tab-papers" class="tab-content active">
-            <h1 class="section-title">Deep Tech</h1>
-            <p class="section-subtitle">ArXiv 最新论文精选</p>
             
-            
-                <p class="empty-state">暂无论文数据</p>
-            
-        </section>
-        
-        <!-- Module B: GitHub Trending AI -->
-        <section id="tab-repos" class="tab-content">
-            <h1 class="section-title">GitHub Trending</h1>
-            <p class="section-subtitle">近期 AI 热门项目</p>
-            
-            
-                <p class="empty-state">暂无仓库数据</p>
-            
-        </section>
-        
-        <!-- Module C: Mental Models (思维模型) - 全屏闪卡 -->
-        <section id="tab-models" class="tab-content">
-            <div class="fullscreen-card-container">
-                
+            <div class="archive-list">
+                <h3 class="block-title">歌词复读</h3>
+                <ul>
                     
-                    <div class="flashcard active" data-index="0">
-                        <h2 class="model-name-en">First Principles Thinking</h2>
-                        <h3 class="model-name-zh">第一性原理</h3>
-                        <hr class="divider">
-                        <p class="model-desc">将复杂问题分解为最基本的元素，然后从头开始重建解决方案。不依赖类比或既有经验，而是从根本真理出发进行推理。</p>
-                        <div class="model-example">
-                            <strong>实例：</strong>埃隆·马斯克在制造电池时，不接受&#39;电池就是很贵&#39;的假设，而是分析电池的原材料成本，发现可以大幅降低成本。
-                        </div>
-                        <p class="model-source">— 亚里士多德 / 伊隆·马斯克</p>
-                    </div>
+                    <li>Example</li>
                     
-                    <div class="flashcard " data-index="1">
-                        <h2 class="model-name-en">Occam&#39;s Razor</h2>
-                        <h3 class="model-name-zh">奥卡姆剃刀</h3>
-                        <hr class="divider">
-                        <p class="model-desc">如无必要，勿增实体。在多个假设中，选择假设最少、最简洁的那个。复杂的解释往往隐藏着错误。</p>
-                        <div class="model-example">
-                            <strong>实例：</strong>当你听到马蹄声时，先想到马，而不是斑马。除非有明确证据表明是更罕见的情况。
-                        </div>
-                        <p class="model-source">— 威廉·奥卡姆 (14世纪)</p>
-                    </div>
-                    
-                    <div class="flashcard " data-index="2">
-                        <h2 class="model-name-en">Second-Order Thinking</h2>
-                        <h3 class="model-name-zh">二阶思维</h3>
-                        <hr class="divider">
-                        <p class="model-desc">不仅考虑行动的直接后果，还要思考这些后果带来的连锁反应。问自己：&#39;然后呢？再然后呢？&#39;</p>
-                        <div class="model-example">
-                            <strong>实例：</strong>降价促销会增加短期销量（一阶效应），但可能损害品牌形象并引发价格战（二阶效应）。
-                        </div>
-                        <p class="model-source">— 霍华德·马克斯</p>
-                    </div>
-                    
-                
-            </div>
-            
-            
-            <div class="nav-bar">
-                <button class="nav-btn" id="prev-model">← 上一张</button>
-                <span class="nav-indicator" id="model-indicator">1 / 3</span>
-                <button class="nav-btn" id="next-model">下一张 →</button>
+                </ul>
             </div>
             
         </section>
-        
-        <!-- Module D: Focus & Quotes (语录) - 居中显示 -->
-        <section id="tab-focus" class="tab-content">
-            <div class="fullscreen-card-container center-content">
-                
-                    
-                    <div class="quote-card active" data-index="0">
-                        
-                            <p class="quote-content-en">The only way to do great work is to love what you do.</p>
-                            
-                        
-                        <p class="quote-author">— Steve Jobs</p>
-                    </div>
-                    
-                    <div class="quote-card " data-index="1">
-                        
-                            <p class="quote-content-en">In the middle of difficulty lies opportunity.</p>
-                            
-                        
-                        <p class="quote-author">— Albert Einstein</p>
-                    </div>
-                    
-                    <div class="quote-card " data-index="2">
-                        
-                            <p class="quote-content-en">The best time to plant a tree was 20 years ago. The second best time is now.</p>
-                            
-                        
-                        <p class="quote-author">— Chinese Proverb</p>
-                    </div>
-                    
-                    <div class="quote-card " data-index="3">
-                        
-                            <p class="quote-content-zh">不积跬步，无以至千里；不积小流，无以成江海。</p>
-                        
-                        <p class="quote-author">— 荀子</p>
-                    </div>
-                    
-                    <div class="quote-card " data-index="4">
-                        
-                            <p class="quote-content-zh">博观而约取，厚积而薄发。</p>
-                        
-                        <p class="quote-author">— 苏轼</p>
-                    </div>
-                    
-                
-            </div>
-            
-            
-            <div class="nav-bar">
-                <button class="nav-btn" id="prev-quote">← 上一条</button>
-                <span class="nav-indicator" id="quote-indicator">1 / 5</span>
-                <button class="nav-btn" id="next-quote">下一条 →</button>
-            </div>
-            
-        </section>
-        
-        <!-- Module E: Lyrics (歌词本) - 单首显示 -->
-        <section id="tab-lyrics" class="tab-content">
-            <div class="fullscreen-card-container">
-                
-                    
-                    <div class="lyrics-card active" data-index="0">
-                        <h2 class="song-title">Example</h2>
-                        <div class="lyrics-text">
-                            
-                            <p>Stay hungry, stay foolish</p>
-                            
-                            <p>保持饥饿，保持愚昧</p>
-                            
-                            <p></p>
-                            
-                            <p>The people who are crazy enough to think</p>
-                            
-                            <p>那些疯狂到认为自己</p>
-                            
-                            <p>they can change the world</p>
-                            
-                            <p>能够改变世界的人</p>
-                            
-                            <p>are the ones who do</p>
-                            
-                            <p>往往正是那些真正改变世界的人</p>
-                            
-                            <p></p>
-                            
-                            <p>Here&#39;s to the crazy ones</p>
-                            
-                            <p>致那些疯狂的人</p>
-                            
-                            <p>The misfits, the rebels</p>
-                            
-                            <p>那些格格不入的人，那些叛逆者</p>
-                            
-                            <p>The troublemakers</p>
-                            
-                            <p>那些惹是生非的人</p>
-                            
-                            <p>The round pegs in the square holes</p>
-                            
-                            <p>方孔中的圆钉</p>
-                            
-                            <p></p>
-                            
-                            <p>They&#39;re not fond of rules</p>
-                            
-                            <p>他们不喜欢循规蹈矩</p>
-                            
-                            <p>And they have no respect for the status quo</p>
-                            
-                            <p>他们也不尊重现状</p>
-                            
-                            <p></p>
-                            
-                            <p>You can quote them, disagree with them</p>
-                            
-                            <p>你可以引用他们，反对他们</p>
-                            
-                            <p>Glorify or vilify them</p>
-                            
-                            <p>颂扬或诋毁他们</p>
-                            
-                            <p>But the only thing you can&#39;t do</p>
-                            
-                            <p>但唯独不能忽视他们</p>
-                            
-                            <p>is ignore them</p>
-                            
-                            <p></p>
-                            
-                            <p>Because they change things</p>
-                            
-                            <p>因为他们改变了事物</p>
-                            
-                            <p>They push the human race forward</p>
-                            
-                            <p>他们推动了人类前进</p>
-                            
-                            <p></p>
-                            
-                        </div>
-                    </div>
-                    
-                
-            </div>
-            
-            
-            <div class="nav-bar">
-                <button class="nav-btn" id="prev-lyrics">← 上一首</button>
-                <span class="nav-indicator" id="lyrics-indicator">Example</span>
-                <button class="nav-btn" id="next-lyrics">下一首 →</button>
-            </div>
-            
-        </section>
-        
-        <!-- Module F: Words (单词记忆) -->
-        <section id="tab-words" class="tab-content">
-            <div class="fullscreen-card-container">
-                
-                    
-                    <div class="word-card active" data-index="0">
-                        <h1 class="word-text">algorithm</h1>
-                        <p class="word-phonetic">/ˈælɡəˌrɪðəm/</p>
-                        <p class="word-meaning">n. 算法；运算法则</p>
-                        
-                        <div class="word-sentences">
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">The sorting algorithm runs in O(n log n) time complexity.</p>
-                                <p class="sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
-                            </div>
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">We need to optimize this algorithm for better performance.</p>
-                                <p class="sentence-zh">我们需要优化这个算法以获得更好的性能。</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="word-card " data-index="1">
-                        <h1 class="word-text">recursion</h1>
-                        <p class="word-phonetic">/rɪˈkɜːrʒn/</p>
-                        <p class="word-meaning">n. 递归；循环</p>
-                        
-                        <div class="word-sentences">
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Recursion is a method where the solution depends on solutions to smaller instances.</p>
-                                <p class="sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
-                            </div>
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Be careful with recursion to avoid stack overflow.</p>
-                                <p class="sentence-zh">使用递归时要小心避免栈溢出。</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="word-card " data-index="2">
-                        <h1 class="word-text">encapsulation</h1>
-                        <p class="word-phonetic">/ɪnˌkæpsjuˈleɪʃn/</p>
-                        <p class="word-meaning">n. 封装；包装</p>
-                        
-                        <div class="word-sentences">
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Encapsulation hides the internal state of an object from the outside.</p>
-                                <p class="sentence-zh">封装将对象的内部状态对外部隐藏。</p>
-                            </div>
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Good encapsulation leads to more maintainable code.</p>
-                                <p class="sentence-zh">良好的封装能带来更易维护的代码。</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="word-card " data-index="3">
-                        <h1 class="word-text">polymorphism</h1>
-                        <p class="word-phonetic">/ˌpɒliˈmɔːfɪzəm/</p>
-                        <p class="word-meaning">n. 多态性</p>
-                        
-                        <div class="word-sentences">
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Polymorphism allows objects of different classes to be treated as objects of a common superclass.</p>
-                                <p class="sentence-zh">多态性允许不同类的对象被当作共同父类的对象来处理。</p>
-                            </div>
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Method overriding is a common way to implement polymorphism.</p>
-                                <p class="sentence-zh">方法重写是实现多态性的常见方式。</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="word-card " data-index="4">
-                        <h1 class="word-text">inheritance</h1>
-                        <p class="word-phonetic">/ɪnˈherɪtəns/</p>
-                        <p class="word-meaning">n. 继承；遗传</p>
-                        
-                        <div class="word-sentences">
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Inheritance enables new classes to receive the properties of existing classes.</p>
-                                <p class="sentence-zh">继承使新类能够接收现有类的属性。</p>
-                            </div>
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Multiple inheritance can lead to the diamond problem.</p>
-                                <p class="sentence-zh">多重继承可能导致菱形继承问题。</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="word-card " data-index="5">
-                        <h1 class="word-text">abstraction</h1>
-                        <p class="word-phonetic">/æbˈstrækʃn/</p>
-                        <p class="word-meaning">n. 抽象；提取</p>
-                        
-                        <div class="word-sentences">
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Abstraction reduces complexity by hiding unnecessary details.</p>
-                                <p class="sentence-zh">抽象通过隐藏不必要的细节来降低复杂性。</p>
-                            </div>
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">An abstract class cannot be instantiated directly.</p>
-                                <p class="sentence-zh">抽象类不能被直接实例化。</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="word-card " data-index="6">
-                        <h1 class="word-text">concurrency</h1>
-                        <p class="word-phonetic">/kənˈkʌrənsi/</p>
-                        <p class="word-meaning">n. 并发；并发性</p>
-                        
-                        <div class="word-sentences">
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Concurrency allows multiple tasks to run in overlapping time periods.</p>
-                                <p class="sentence-zh">并发允许多个任务在重叠的时间段内运行。</p>
-                            </div>
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Handling concurrency correctly is crucial for multi-threaded applications.</p>
-                                <p class="sentence-zh">正确处理并发对多线程应用程序至关重要。</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="word-card " data-index="7">
-                        <h1 class="word-text">serialization</h1>
-                        <p class="word-phonetic">/ˌsɪəriəlaɪˈzeɪʃn/</p>
-                        <p class="word-meaning">n. 序列化</p>
-                        
-                        <div class="word-sentences">
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Serialization converts an object into a stream of bytes for storage.</p>
-                                <p class="sentence-zh">序列化将对象转换为字节流以便存储。</p>
-                            </div>
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">JSON is a popular format for data serialization.</p>
-                                <p class="sentence-zh">JSON 是一种流行的数据序列化格式。</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="word-card " data-index="8">
-                        <h1 class="word-text">asynchronous</h1>
-                        <p class="word-phonetic">/eɪˈsɪŋkrənəs/</p>
-                        <p class="word-meaning">adj. 异步的</p>
-                        
-                        <div class="word-sentences">
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Asynchronous programming allows the program to continue executing while waiting for I/O.</p>
-                                <p class="sentence-zh">异步编程允许程序在等待 I/O 时继续执行。</p>
-                            </div>
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Use async/await syntax for cleaner asynchronous code.</p>
-                                <p class="sentence-zh">使用 async/await 语法可以获得更简洁的异步代码。</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="word-card " data-index="9">
-                        <h1 class="word-text">deprecated</h1>
-                        <p class="word-phonetic">/ˈdeprəkeɪtɪd/</p>
-                        <p class="word-meaning">adj. 已弃用的；不推荐的</p>
-                        
-                        <div class="word-sentences">
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">This method is deprecated and will be removed in the next version.</p>
-                                <p class="sentence-zh">此方法已弃用，将在下一版本中移除。</p>
-                            </div>
-                            
-                            <div class="sentence-item">
-                                <p class="sentence-en">Avoid using deprecated APIs in new projects.</p>
-                                <p class="sentence-zh">避免在新项目中使用已弃用的 API。</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                
-            </div>
-            
-            
-            <div class="nav-bar">
-                <button class="nav-btn" id="prev-word">← 上一个</button>
-                <span class="nav-indicator" id="word-indicator">1 / 10</span>
-                <button class="nav-btn" id="next-word">下一个 →</button>
-            </div>
-            
-        </section>
-        
     </main>
-
-    <!-- ==================== 底部导航栏 (移除 Emoji) ==================== -->
-    <nav id="tab-bar">
-        <button class="tab-btn active" data-tab="papers">
-            <span class="tab-icon">[ P ]</span>
-            <span class="tab-label">论文</span>
-        </button>
-        <button class="tab-btn" data-tab="repos">
-            <span class="tab-icon">[ G ]</span>
-            <span class="tab-label">GitHub</span>
-        </button>
-        <button class="tab-btn" data-tab="models">
-            <span class="tab-icon">[ M ]</span>
-            <span class="tab-label">思维</span>
-        </button>
-        <button class="tab-btn" data-tab="focus">
-            <span class="tab-icon">[ Q ]</span>
-            <span class="tab-label">语录</span>
-        </button>
-        <button class="tab-btn" data-tab="lyrics">
-            <span class="tab-icon">[ L ]</span>
-            <span class="tab-label">歌词</span>
-        </button>
-        <button class="tab-btn" data-tab="words">
-            <span class="tab-icon">[ W ]</span>
-            <span class="tab-label">单词</span>
-        </button>
-    </nav>
-
-    <!-- ==================== JavaScript 交互 (极端兼容版) ==================== -->
-    <script type="text/javascript">
-        (function() {
-            var body = document.body;
-            if (body) {
-                body.className = body.className.split(' no-js').join('');
-                body.className += ' js-enabled';
-            }
-
-            // 通用卡片切换函数
-            function createCardSwitcher(containerSelector, prevBtnId, nextBtnId, indicatorId, isLyrics, lyricsData) {
-                var cards = document.querySelectorAll(containerSelector);
-                var indicator = document.getElementById(indicatorId);
-                var prevBtn = document.getElementById(prevBtnId);
-                var nextBtn = document.getElementById(nextBtnId);
-                var currentIndex = 0;
-                
-                function showCard(index) {
-                    for (var i = 0; i < cards.length; i++) {
-                        // 兼容性极高的 className 替换
-                        cards[i].className = cards[i].className.split(' active').join('');
-                    }
-                    if (cards[index]) {
-                        cards[index].className += ' active';
-                    }
-                    
-                    if (indicator) {
-                        if (isLyrics && lyricsData && lyricsData.length > 0) {
-                            indicator.innerHTML = lyricsData[index] || '';
-                        } else {
-                            indicator.innerHTML = (index + 1) + ' / ' + cards.length;
-                        }
-                    }
-                }
-                
-                if (prevBtn) {
-                    prevBtn.onclick = function() {
-                        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-                        showCard(currentIndex);
-                    };
-                }
-                
-                if (nextBtn) {
-                    nextBtn.onclick = function() {
-                        currentIndex = (currentIndex + 1) % cards.length;
-                        showCard(currentIndex);
-                    };
-                }
-            }
-            
-            // Tab 切换
-            var tabBtns = document.querySelectorAll('.tab-btn');
-            for (var i = 0; i < tabBtns.length; i++) {
-                tabBtns[i].onclick = function() {
-                    var tabId = this.getAttribute('data-tab');
-                    
-                    // 更新 Tab 按钮状态
-                    for (var j = 0; j < tabBtns.length; j++) {
-                        tabBtns[j].className = tabBtns[j].className.split(' active').join('');
-                    }
-                    this.className += ' active';
-                    
-                    // 更新内容区显示
-                    var contents = document.querySelectorAll('.tab-content');
-                    for (var k = 0; k < contents.length; k++) {
-                        contents[k].className = contents[k].className.split(' active').join('');
-                    }
-                    var targetContent = document.getElementById('tab-' + tabId);
-                    if (targetContent) {
-                        targetContent.className += ' active';
-                    }
-                };
-            }
-
-            // 论文切换
-            createCardSwitcher('.paper-card', 'prev-paper', 'next-paper', 'paper-indicator');
-            
-            // 思维模型切换
-            createCardSwitcher('.flashcard', 'prev-model', 'next-model', 'model-indicator');
-            
-            // 语录切换
-            createCardSwitcher('.quote-card', 'prev-quote', 'next-quote', 'quote-indicator');
-            
-            // 歌词切换
-            var lyricsNames = [];
-            
-            lyricsNames.push('Example');
-            
-            
-            createCardSwitcher('.lyrics-card', 'prev-lyrics', 'next-lyrics', 'lyrics-indicator', true, lyricsNames);
-            
-            // 单词切换
-            createCardSwitcher('.word-card', 'prev-word', 'next-word', 'word-indicator');
-
-        })();
-    </script>
-    
-    <!-- 生成时间 -->
-    <footer class="generated-info">
-        生成于 2026-05-14 16:23:47
-    </footer>
 </body>
 </html>

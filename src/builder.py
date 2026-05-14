@@ -620,6 +620,32 @@ def build_daily_plan(featured: dict) -> list:
     return plan
 
 
+def build_daily_theme(featured: dict) -> dict:
+    """
+    生成今日学习主题与聚焦建议。
+    """
+    weekday = datetime.now().weekday()
+    # 0-6: Mon-Sun
+    if weekday in [0, 2, 4]:
+        name = "AI工程日"
+        focus = "优先看 Deep 区：论文要点 + 热门项目实现。"
+    elif weekday in [1, 3]:
+        name = "英语强化日"
+        focus = "优先看 Study 区：词汇、例句和复述练习。"
+    else:
+        name = "复盘整理日"
+        focus = "优先看 Archive 区：回顾本周输入并做摘要。"
+
+    quote = featured.get('quote')
+    trigger = quote.get('content', '')[:36] + "..." if quote and quote.get('content') else "保持稳定输入，持续迭代。"
+
+    return {
+        'name': name,
+        'focus': focus,
+        'trigger': trigger
+    }
+
+
 # ==================== 模板渲染与生成 ====================
 
 def render_templates(context: dict) -> None:
@@ -721,6 +747,7 @@ def main():
     # Kindle 首页精选（可配置策略）
     context['featured'] = select_featured_content(context)
     context['daily_plan'] = build_daily_plan(context['featured'])
+    context['daily_theme'] = build_daily_theme(context['featured'])
     
     print()
     print("-" * 60)

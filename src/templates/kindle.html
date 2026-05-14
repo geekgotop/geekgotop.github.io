@@ -3,39 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1072, height=1448, initial-scale=1.0, user-scalable=no">
-    <title>Kindle Dash - 离线看板</title>
+    <title>Kindle Dash - Kindle 学习页</title>
     <style>
 {{ kindle_css }}
     </style>
 </head>
-<body class="no-js">
-    <noscript>
-        <div class="compatibility-notice">当前为无脚本模式：页面已切换为顺序阅读版。</div>
-    </noscript>
-
-    <!-- ==================== 主内容区 ==================== -->
+<body>
     <main id="content">
-        <header class="kindle-index">
-            <h1 class="section-title">Kindle Dash</h1>
-            <p class="section-subtitle">离线学习顺序阅读模式（JS 可用时自动切换为标签模式）</p>
+        <header class="hero">
+            <h1 class="hero-title">Kindle Dash</h1>
+            <p class="hero-subtitle">离线优先的个人学习主页</p>
+            <p class="hero-meta">构建时间：{{ generated_at }}</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
                 <li><a href="#zone-deep">Deep · AI/ML 深读</a></li>
-                <li><a href="#zone-archive">Archive · 回顾归档</a></li>
+                <li><a href="#zone-archive">Archive · 复盘归档</a></li>
             </ul>
         </header>
 
         <section id="zone-quick" class="zone-block">
             <h2 class="zone-title">Quick</h2>
             <p class="zone-subtitle">2-5 分钟快速输入</p>
+            {% if daily_theme %}
+            <div class="theme-card">
+                <p class="theme-name">今日主题：{{ daily_theme.name }}</p>
+                <p class="theme-focus">{{ daily_theme.focus }}</p>
+                <p class="theme-trigger">触发句：{{ daily_theme.trigger }}</p>
+            </div>
+            {% endif %}
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     {% if featured.quote %}
-                        <p class="quick-main">
-                            {{ featured.quote.content }}
-                        </p>
+                        <p class="quick-main">{{ featured.quote.content }}</p>
                         <p class="quick-meta">— {{ featured.quote.author }}</p>
                     {% else %}
                         <p class="quick-empty">暂无语录数据</p>
@@ -64,10 +65,6 @@
                     {% endif %}
                 </article>
             </div>
-            <ul class="zone-links">
-                <li><a href="#tab-focus">进入语录模块</a></li>
-                <li><a href="#tab-repos">进入 GitHub 热门模块</a></li>
-            </ul>
         </section>
 
         <section id="zone-study" class="zone-block">
@@ -79,6 +76,7 @@
                     <p class="study-meaning">{{ featured.word.meaning }}</p>
                     {% if featured.word.sentences %}
                     <p class="study-sentence">{{ featured.word.sentences[0].en }}</p>
+                    <p class="study-sentence-zh">{{ featured.word.sentences[0].zh }}</p>
                     {% endif %}
                     {% if featured.word.memory_tip %}
                     <p class="study-tip">学习建议：{{ featured.word.memory_tip }}</p>
@@ -87,10 +85,16 @@
                     <p class="quick-empty">暂无单词数据</p>
                 {% endif %}
             </div>
-            <ul class="zone-links">
-                <li><a href="#tab-words">进入单词模块</a></li>
-                <li><a href="#tab-lyrics">进入歌词模块</a></li>
-            </ul>
+            {% if words %}
+            <div class="study-list">
+                <h3 class="block-title">本次词汇清单</h3>
+                <ul>
+                    {% for word in words[:5] %}
+                    <li>{{ word.word }} - {{ word.meaning }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
         </section>
 
         <section id="zone-deep" class="zone-block">
@@ -108,10 +112,19 @@
                     <p class="quick-empty">暂无论文数据</p>
                 {% endif %}
             </div>
-            <ul class="zone-links">
-                <li><a href="#tab-papers">进入论文模块</a></li>
-                <li><a href="#tab-models">进入思维模型模块</a></li>
-            </ul>
+            {% if repos %}
+            <div class="deep-list">
+                <h3 class="block-title">热门项目速览</h3>
+                <ul>
+                    {% for repo in repos[:5] %}
+                    <li>
+                        <strong>{{ repo.name }}</strong> (★ {{ repo.stars }})
+                        <p>{{ repo.description_zh or repo.description_en }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
         </section>
 
         <section id="zone-archive" class="zone-block">
@@ -126,315 +139,17 @@
                 <li>歌词：{{ lyrics | length }}</li>
                 <li>单词：{{ words | length }}</li>
             </ul>
-        </section>
-
-        <!-- Module A: Deep Tech (ArXiv 论文) - 单篇展示 -->
-        <section id="tab-papers" class="tab-content active">
-            <h1 class="section-title">Deep Tech</h1>
-            <p class="section-subtitle">ArXiv 最新论文精选</p>
-            
-            {% if papers %}
-                {% for paper in papers %}
-                <article class="paper-card {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
-                    <h2 class="paper-title">{{ paper.title_with_ipa | safe }}</h2>
-                    <p class="paper-meta">
-                        <span class="authors">{{ paper.authors | join(', ') }}</span>
-                        <span class="date">{{ paper.published }}</span>
-                    </p>
-                    
-                    <div class="paper-abstract">
-                        <p class="abstract-en">{{ paper.abstract_en }}</p>
-                        <hr class="divider">
-                        <p class="abstract-zh">{{ paper.abstract_zh }}</p>
-                    </div>
-                </article>
-                {% endfor %}
-                
-                <div class="nav-bar">
-                    <button class="nav-btn" id="prev-paper">← 上一篇</button>
-                    <span class="nav-indicator" id="paper-indicator">1 / {{ papers | length }}</span>
-                    <button class="nav-btn" id="next-paper">下一篇 →</button>
-                </div>
-            {% else %}
-                <p class="empty-state">暂无论文数据</p>
-            {% endif %}
-        </section>
-        
-        <!-- Module B: GitHub Trending AI -->
-        <section id="tab-repos" class="tab-content">
-            <h1 class="section-title">GitHub Trending</h1>
-            <p class="section-subtitle">近期 AI 热门项目</p>
-            
-            {% if repos %}
-                <ul class="repo-list">
-                {% for repo in repos %}
-                    <li class="repo-item">
-                        <span class="repo-stars">★ {{ repo.stars }}</span>
-                        <div class="repo-info">
-                            <strong class="repo-name">{{ repo.name }}</strong>
-                            <p class="repo-desc">{{ repo.description_zh or repo.description_en }}</p>
-                        </div>
-                    </li>
-                {% endfor %}
-                </ul>
-            {% else %}
-                <p class="empty-state">暂无仓库数据</p>
-            {% endif %}
-        </section>
-        
-        <!-- Module C: Mental Models (思维模型) - 全屏闪卡 -->
-        <section id="tab-models" class="tab-content">
-            <div class="fullscreen-card-container">
-                {% if models %}
-                    {% for model in models %}
-                    <div class="flashcard {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
-                        <h2 class="model-name-en">{{ model.name_en }}</h2>
-                        <h3 class="model-name-zh">{{ model.name_zh }}</h3>
-                        <hr class="divider">
-                        <p class="model-desc">{{ model.description_zh }}</p>
-                        <div class="model-example">
-                            <strong>实例：</strong>{{ model.example }}
-                        </div>
-                        <p class="model-source">— {{ model.source }}</p>
-                    </div>
-                    {% endfor %}
-                {% else %}
-                    <p class="empty-state">暂无思维模型数据</p>
-                {% endif %}
-            </div>
-            
-            {% if models %}
-            <div class="nav-bar">
-                <button class="nav-btn" id="prev-model">← 上一张</button>
-                <span class="nav-indicator" id="model-indicator">1 / {{ models | length }}</span>
-                <button class="nav-btn" id="next-model">下一张 →</button>
-            </div>
-            {% endif %}
-        </section>
-        
-        <!-- Module D: Focus & Quotes (语录) - 居中显示 -->
-        <section id="tab-focus" class="tab-content">
-            <div class="fullscreen-card-container center-content">
-                {% if quotes %}
-                    {% for quote in quotes %}
-                    <div class="quote-card {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
-                        {% if quote.language == 'zh' %}
-                            <p class="quote-content-zh">{{ quote.content }}</p>
-                        {% else %}
-                            <p class="quote-content-en">{{ quote.content }}</p>
-                            {% if quote.translation %}
-                            <p class="quote-translation">{{ quote.translation }}</p>
-                            {% endif %}
-                        {% endif %}
-                        <p class="quote-author">— {{ quote.author }}</p>
-                    </div>
-                    {% endfor %}
-                {% else %}
-                    <p class="empty-state">暂无语录数据</p>
-                {% endif %}
-            </div>
-            
-            {% if quotes %}
-            <div class="nav-bar">
-                <button class="nav-btn" id="prev-quote">← 上一条</button>
-                <span class="nav-indicator" id="quote-indicator">1 / {{ quotes | length }}</span>
-                <button class="nav-btn" id="next-quote">下一条 →</button>
-            </div>
-            {% endif %}
-        </section>
-        
-        <!-- Module E: Lyrics (歌词本) - 单首显示 -->
-        <section id="tab-lyrics" class="tab-content">
-            <div class="fullscreen-card-container">
-                {% if lyrics %}
-                    {% for song in lyrics %}
-                    <div class="lyrics-card {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
-                        <h2 class="song-title">{{ song.name }}</h2>
-                        <div class="lyrics-text">
-                            {% for line in song.lines %}
-                            <p>{{ line }}</p>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    {% endfor %}
-                {% else %}
-                    <p class="empty-state">暂无歌词数据</p>
-                {% endif %}
-            </div>
-            
             {% if lyrics %}
-            <div class="nav-bar">
-                <button class="nav-btn" id="prev-lyrics">← 上一首</button>
-                <span class="nav-indicator" id="lyrics-indicator">{{ lyrics[0].name if lyrics else '' }}</span>
-                <button class="nav-btn" id="next-lyrics">下一首 →</button>
-            </div>
-            {% endif %}
-        </section>
-        
-        <!-- Module F: Words (单词记忆) -->
-        <section id="tab-words" class="tab-content">
-            <div class="fullscreen-card-container">
-                {% if words %}
-                    {% for word in words %}
-                    <div class="word-card {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
-                        <h1 class="word-text">{{ word.word }}</h1>
-                        <p class="word-phonetic">{{ word.phonetic }}</p>
-                        <p class="word-meaning">{{ word.meaning }}</p>
-                        
-                        <div class="word-sentences">
-                            {% for sentence in word.sentences %}
-                            <div class="sentence-item">
-                                <p class="sentence-en">{{ sentence.en }}</p>
-                                <p class="sentence-zh">{{ sentence.zh }}</p>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
+            <div class="archive-list">
+                <h3 class="block-title">歌词复读</h3>
+                <ul>
+                    {% for song in lyrics %}
+                    <li>{{ song.name }}</li>
                     {% endfor %}
-                {% else %}
-                    <p class="empty-state">暂无单词数据</p>
-                {% endif %}
-            </div>
-            
-            {% if words %}
-            <div class="nav-bar">
-                <button class="nav-btn" id="prev-word">← 上一个</button>
-                <span class="nav-indicator" id="word-indicator">1 / {{ words | length }}</span>
-                <button class="nav-btn" id="next-word">下一个 →</button>
+                </ul>
             </div>
             {% endif %}
         </section>
-        
     </main>
-
-    <!-- ==================== 底部导航栏 (移除 Emoji) ==================== -->
-    <nav id="tab-bar">
-        <button class="tab-btn active" data-tab="papers">
-            <span class="tab-icon">[ P ]</span>
-            <span class="tab-label">论文</span>
-        </button>
-        <button class="tab-btn" data-tab="repos">
-            <span class="tab-icon">[ G ]</span>
-            <span class="tab-label">GitHub</span>
-        </button>
-        <button class="tab-btn" data-tab="models">
-            <span class="tab-icon">[ M ]</span>
-            <span class="tab-label">思维</span>
-        </button>
-        <button class="tab-btn" data-tab="focus">
-            <span class="tab-icon">[ Q ]</span>
-            <span class="tab-label">语录</span>
-        </button>
-        <button class="tab-btn" data-tab="lyrics">
-            <span class="tab-icon">[ L ]</span>
-            <span class="tab-label">歌词</span>
-        </button>
-        <button class="tab-btn" data-tab="words">
-            <span class="tab-icon">[ W ]</span>
-            <span class="tab-label">单词</span>
-        </button>
-    </nav>
-
-    <!-- ==================== JavaScript 交互 (极端兼容版) ==================== -->
-    <script type="text/javascript">
-        (function() {
-            var body = document.body;
-            if (body) {
-                body.className = body.className.split(' no-js').join('');
-                body.className += ' js-enabled';
-            }
-
-            // 通用卡片切换函数
-            function createCardSwitcher(containerSelector, prevBtnId, nextBtnId, indicatorId, isLyrics, lyricsData) {
-                var cards = document.querySelectorAll(containerSelector);
-                var indicator = document.getElementById(indicatorId);
-                var prevBtn = document.getElementById(prevBtnId);
-                var nextBtn = document.getElementById(nextBtnId);
-                var currentIndex = 0;
-                
-                function showCard(index) {
-                    for (var i = 0; i < cards.length; i++) {
-                        // 兼容性极高的 className 替换
-                        cards[i].className = cards[i].className.split(' active').join('');
-                    }
-                    if (cards[index]) {
-                        cards[index].className += ' active';
-                    }
-                    
-                    if (indicator) {
-                        if (isLyrics && lyricsData && lyricsData.length > 0) {
-                            indicator.innerHTML = lyricsData[index] || '';
-                        } else {
-                            indicator.innerHTML = (index + 1) + ' / ' + cards.length;
-                        }
-                    }
-                }
-                
-                if (prevBtn) {
-                    prevBtn.onclick = function() {
-                        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-                        showCard(currentIndex);
-                    };
-                }
-                
-                if (nextBtn) {
-                    nextBtn.onclick = function() {
-                        currentIndex = (currentIndex + 1) % cards.length;
-                        showCard(currentIndex);
-                    };
-                }
-            }
-            
-            // Tab 切换
-            var tabBtns = document.querySelectorAll('.tab-btn');
-            for (var i = 0; i < tabBtns.length; i++) {
-                tabBtns[i].onclick = function() {
-                    var tabId = this.getAttribute('data-tab');
-                    
-                    // 更新 Tab 按钮状态
-                    for (var j = 0; j < tabBtns.length; j++) {
-                        tabBtns[j].className = tabBtns[j].className.split(' active').join('');
-                    }
-                    this.className += ' active';
-                    
-                    // 更新内容区显示
-                    var contents = document.querySelectorAll('.tab-content');
-                    for (var k = 0; k < contents.length; k++) {
-                        contents[k].className = contents[k].className.split(' active').join('');
-                    }
-                    var targetContent = document.getElementById('tab-' + tabId);
-                    if (targetContent) {
-                        targetContent.className += ' active';
-                    }
-                };
-            }
-
-            // 论文切换
-            createCardSwitcher('.paper-card', 'prev-paper', 'next-paper', 'paper-indicator');
-            
-            // 思维模型切换
-            createCardSwitcher('.flashcard', 'prev-model', 'next-model', 'model-indicator');
-            
-            // 语录切换
-            createCardSwitcher('.quote-card', 'prev-quote', 'next-quote', 'quote-indicator');
-            
-            // 歌词切换
-            var lyricsNames = [];
-            {% for song in lyrics %}
-            lyricsNames.push('{{ song.name }}');
-            {% endfor %}
-            
-            createCardSwitcher('.lyrics-card', 'prev-lyrics', 'next-lyrics', 'lyrics-indicator', true, lyricsNames);
-            
-            // 单词切换
-            createCardSwitcher('.word-card', 'prev-word', 'next-word', 'word-indicator');
-
-        })();
-    </script>
-    
-    <!-- 生成时间 -->
-    <footer class="generated-info">
-        生成于 {{ generated_at }}
-    </footer>
 </body>
 </html>

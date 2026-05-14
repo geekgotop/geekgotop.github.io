@@ -1,90 +1,53 @@
-/**
- * Kindle-Dash 样式表 (Kindle E-ink 极端兼容版 V2)
- * ==========================================
- * 专为 Kindle Voyage (1072x1448) 实验性浏览器设计
- * 彻底放弃 Flexbox, calc(), Emoji，使用陈旧但稳定的布局技术
- */
-
-/* ==================== 全局重置 ==================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ==================== 基础样式 ==================== */
 html, body {
     width: 1072px;
-    height: 1448px;
-    background-color: #FFFFFF;
+    min-height: 1448px;
+    background: #FFFFFF;
     color: #000000;
-    font-size: 26px; /* 上调 18->26 */
+    font-family: "Songti SC", "SimSun", "STSong", serif;
+    font-size: 26px;
     line-height: 1.6;
-    overflow: hidden; /* 防止滚轮 */
 }
 
-body {
-    font-family: 'Songti SC', 'SimSun', 'STSong', serif;
-}
-
-.compatibility-notice {
-    padding: 14px 20px;
-    border-bottom: 2px solid #000000;
-    font-size: 20px;
-    background-color: #FFFFFF;
-}
-
-/* 英文字体 */
-h1, h2, h3, .paper-title, .model-name-en, .quote-content-en, .word-text {
-    font-family: 'Bookerly', 'Georgia', 'Times New Roman', serif;
-}
-
-/* ==================== 主内容区 ==================== */
 #content {
-    padding: 30px;
-    height: 1288px; /* 1448 - 80 - 80 (为两个固定的 bar 留出空间) */
-    overflow-y: auto;
-    width: 100%;
-    position: relative;
-    padding-bottom: 100px; /* 额外底部间距 */
+    padding: 24px 26px 40px;
 }
 
-/* Tab 内容切换 */
-.tab-content {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 36px;
-    border-bottom: 2px solid #000000;
-    padding-bottom: 20px;
-}
-
-body.js-enabled .tab-content {
-    display: none;
-    height: 100%;
-    margin-bottom: 0;
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-body.js-enabled .tab-content.active {
-    display: block; /* 移除 flex */
-}
-
-.kindle-index {
-    margin-bottom: 28px;
-    border: 2px solid #000000;
+.hero {
+    border: 3px solid #000000;
     padding: 18px 20px;
+    margin-bottom: 22px;
+}
+
+.hero-title {
+    font-size: 52px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    margin-top: 4px;
+}
+
+.hero-meta {
+    font-size: 18px;
+    margin-top: 8px;
+    border-top: 1px dashed #000000;
+    padding-top: 6px;
 }
 
 .index-list {
-    margin-top: 14px;
+    margin-top: 10px;
     margin-left: 24px;
 }
 
 .index-list li {
     font-size: 22px;
-    line-height: 1.7;
 }
 
 .index-list a {
@@ -95,547 +58,107 @@ body.js-enabled .tab-content.active {
 
 .zone-block {
     border: 2px solid #000000;
-    padding: 16px 18px;
     margin-bottom: 20px;
-    background-color: #FFFFFF;
+    padding: 14px 16px;
 }
 
 .zone-title {
-    font-size: 34px;
-    font-weight: bold;
-    margin-bottom: 6px;
+    font-size: 38px;
+    line-height: 1.2;
 }
 
 .zone-subtitle {
-    font-size: 21px;
-    margin-bottom: 10px;
-}
-
-.zone-links {
-    margin-left: 20px;
-}
-
-.zone-links li {
-    line-height: 1.7;
     font-size: 22px;
+    margin-top: 2px;
+    margin-bottom: 12px;
 }
 
-.zone-links a {
-    color: #000000;
-    text-decoration: none;
-    border-bottom: 1px dashed #000000;
-}
-
-.archive-tip {
-    font-size: 22px;
-    line-height: 1.6;
-}
-
-.quick-cards {
-    margin-bottom: 10px;
-}
-
-.quick-card {
+.quick-card,
+.study-preview,
+.deep-preview,
+.study-list,
+.deep-list,
+.archive-list {
     border: 1px dashed #000000;
     padding: 10px 12px;
     margin-bottom: 10px;
 }
 
-.quick-title {
+.theme-card {
+    border: 2px solid #000000;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    background: #FAFAFA;
+}
+
+.theme-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.theme-focus,
+.theme-trigger {
+    font-size: 19px;
+    margin-top: 4px;
+}
+
+.quick-title,
+.block-title {
     font-size: 24px;
     margin-bottom: 6px;
 }
 
-.quick-main {
-    font-size: 22px;
-    line-height: 1.5;
+.quick-main,
+.study-meaning,
+.deep-title {
+    font-size: 23px;
 }
 
-.quick-meta {
-    font-size: 20px;
-    margin-top: 4px;
-}
-
-.quick-note {
+.quick-meta,
+.quick-note,
+.study-sentence,
+.study-sentence-zh,
+.study-tip,
+.deep-abstract,
+.deep-takeaway,
+.deep-meta,
+.archive-tip {
     font-size: 19px;
     margin-top: 6px;
-    line-height: 1.5;
 }
 
 .quick-empty {
     font-size: 21px;
 }
 
-.quick-plan-list {
+.quick-plan-list,
+.study-list ul,
+.deep-list ul,
+.archive-stats,
+.archive-list ul {
     margin-left: 22px;
 }
 
-.quick-plan-list li {
+.quick-plan-list li,
+.study-list li,
+.deep-list li,
+.archive-stats li,
+.archive-list li {
     font-size: 20px;
-    line-height: 1.6;
     margin-bottom: 4px;
 }
 
-.study-preview,
-.deep-preview {
-    border: 1px dashed #000000;
-    padding: 10px 12px;
-    margin-bottom: 10px;
+.deep-list p {
+    margin-top: 2px;
+    font-size: 18px;
 }
 
 .study-word {
-    font-size: 30px;
+    font-size: 34px;
     font-weight: bold;
 }
 
 .study-word span {
     font-size: 20px;
     font-weight: normal;
-}
-
-.study-meaning {
-    font-size: 24px;
-    margin-top: 6px;
-}
-
-.study-sentence {
-    font-size: 20px;
-    margin-top: 6px;
-}
-
-.study-tip {
-    font-size: 19px;
-    margin-top: 8px;
-    border-top: 1px dashed #000000;
-    padding-top: 6px;
-}
-
-.deep-title {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.deep-abstract {
-    font-size: 20px;
-    line-height: 1.6;
-    margin-top: 6px;
-}
-
-.deep-takeaway {
-    font-size: 19px;
-    margin-top: 8px;
-    line-height: 1.6;
-}
-
-.deep-meta {
-    font-size: 18px;
-    margin-top: 6px;
-}
-
-.archive-stats {
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.archive-stats li {
-    font-size: 21px;
-    line-height: 1.7;
-}
-
-/* ==================== 通用组件 ==================== */
-
-/* 标题 */
-.section-title {
-    font-size: 48px; /* 32->48 */
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 8px;
-    letter-spacing: 2px;
-}
-
-.section-subtitle {
-    font-size: 20px; /* 14->20 */
-    text-align: center;
-    color: #000000;
-    margin-bottom: 24px;
-    padding-bottom: 16px;
-    border-bottom: 3px solid #000000;
-}
-
-/* 分隔线 */
-.divider {
-    border: none;
-    border-top: 2px dashed #000000;
-    margin: 24px 0;
-}
-
-/* 空状态 */
-.empty-state {
-    text-align: center;
-    font-size: 24px;
-    padding: 48px;
-    border: 3px dashed #000000;
-    margin: 24px 0;
-}
-
-/* 隐藏元素 */
-.hidden {
-    display: none !important;
-}
-
-/* ==================== 容器布局（Legacy） ==================== */
-.fullscreen-card-container {
-    height: auto;
-    position: relative;
-    width: 100%;
-}
-
-.fullscreen-card-container.center-content {
-    text-align: center;
-    padding-top: 150px; /* 增加边距 */
-}
-
-/* ==================== 模块导航条 (固定在底部) ==================== */
-.nav-bar {
-    position: static;
-    width: 100%;
-    height: auto;
-    border-top: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    background: #F7F7F7;
-    margin-top: 18px;
-    clear: both;
-    overflow: hidden;
-    padding: 8px 0;
-}
-
-.nav-btn {
-    float: left;
-    width: 250px; /* 调宽按钮以适配大字号 */
-    height: 66px;
-    line-height: 66px;
-    font-size: 24px; /* 18->24 */
-    font-weight: bold;
-    background-color: #000000;
-    color: #FFFFFF;
-    border: none;
-    text-align: center;
-}
-
-.nav-indicator {
-    float: left;
-    width: 572px; /* 1072 - 250*2 */
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 66px;
-}
-
-body.js-enabled .nav-bar {
-    position: fixed;
-    bottom: 83px; /* 高于底部 tab-bar (80px + 3px border) */
-    left: 0;
-    width: 1072px;
-    height: 80px;
-    border-top: 2px solid #000000;
-    border-bottom: none;
-    background: #FFFFFF;
-    margin-top: 0;
-    padding: 0;
-    z-index: 100;
-}
-
-body.js-enabled .nav-btn {
-    height: 80px;
-    line-height: 80px;
-}
-
-body.js-enabled .nav-indicator {
-    line-height: 80px;
-}
-
-/* ==================== Module A: 论文区块 ==================== */
-.paper-card {
-    display: block;
-    padding-bottom: 20px;
-    margin-bottom: 18px;
-    border-bottom: 1px dashed #000000;
-}
-
-body.js-enabled .paper-card {
-    display: none;
-    margin-bottom: 0;
-    border-bottom: none;
-}
-
-body.js-enabled .paper-card.active {
-    display: block;
-}
-
-.paper-title {
-    font-size: 36px; /* 22->36 */
-    font-weight: bold;
-    line-height: 1.4;
-    margin-bottom: 16px;
-}
-
-.paper-title .ipa {
-    font-size: 16px; /* 11->16 */
-    font-weight: normal;
-    color: #000000;
-    vertical-align: super;
-}
-
-.paper-meta {
-    font-size: 18px; /* 13->18 */
-    margin-bottom: 16px;
-}
-
-.paper-meta .date {
-    margin-left: 20px;
-}
-
-.paper-abstract {
-    font-size: 24px; /* 15->24 */
-    line-height: 1.6;
-}
-
-.abstract-en {
-    margin-bottom: 20px;
-    color: #333333;
-}
-
-.abstract-zh {
-    font-size: 28px; /* 摘要中文更大 */
-    font-weight: normal;
-}
-
-/* ==================== Module B: GitHub 仓库列表 ==================== */
-.repo-item {
-    padding: 24px 0;
-    border-bottom: 2px solid #000000;
-    overflow: hidden;
-}
-
-.repo-stars {
-    float: left;
-    width: 100px;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.repo-info {
-    float: left;
-    width: 930px;
-}
-
-.repo-name {
-    font-size: 28px; /* 18->28 */
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.repo-desc {
-    font-size: 22px;
-    line-height: 1.5;
-}
-
-/* ==================== Module C: 思维模型 ==================== */
-.flashcard {
-    display: block;
-    padding: 30px;
-    border: 4px solid #000000;
-    text-align: center;
-    min-height: 380px;
-    margin-bottom: 18px;
-}
-
-body.js-enabled .flashcard {
-    display: none;
-    min-height: 700px;
-    margin-bottom: 0;
-}
-
-body.js-enabled .flashcard.active {
-    display: block;
-}
-
-.model-name-en {
-    font-size: 48px; /* 36->48 */
-    font-weight: bold;
-    margin-bottom: 12px;
-}
-
-.model-name-zh {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.model-desc {
-    font-size: 28px; /* 20->28 */
-    line-height: 1.8;
-    margin-bottom: 30px;
-    text-align: left;
-}
-
-/* ==================== Module D: 语录 ==================== */
-.quote-card {
-    display: block;
-    padding: 32px;
-    margin-bottom: 18px;
-    border-bottom: 1px dashed #000000;
-}
-
-body.js-enabled .quote-card {
-    display: none;
-    margin-bottom: 0;
-    border-bottom: none;
-}
-
-body.js-enabled .quote-card.active {
-    display: block;
-}
-
-.quote-content-en, .quote-content-zh {
-    font-size: 44px; /* 32->44 */
-    font-weight: bold;
-    line-height: 1.5;
-    margin-bottom: 24px;
-}
-
-/* ==================== Module E: 歌词 ==================== */
-.lyrics-card {
-    display: block;
-    margin-bottom: 18px;
-    border-bottom: 1px dashed #000000;
-}
-
-body.js-enabled .lyrics-card {
-    display: none;
-    margin-bottom: 0;
-    border-bottom: none;
-}
-
-body.js-enabled .lyrics-card.active {
-    display: block;
-}
-
-.song-title {
-    font-size: 40px; /* 28->40 */
-    font-weight: bold;
-    margin-bottom: 24px;
-    padding-bottom: 12px;
-    border-bottom: 3px solid #000000;
-    text-align: center;
-}
-
-.lyrics-text {
-    text-align: center;
-    font-size: 26px; /* 18->26 */
-}
-
-/* ==================== Module F: 单词记忆 ==================== */
-.word-card {
-    display: block;
-    padding: 24px;
-    text-align: center;
-    margin-bottom: 18px;
-    border-bottom: 1px dashed #000000;
-}
-
-body.js-enabled .word-card {
-    display: none;
-    margin-bottom: 0;
-    border-bottom: none;
-}
-
-body.js-enabled .word-card.active {
-    display: block;
-}
-
-.word-text {
-    font-size: 72px; /* 56->72 */
-    font-weight: bold;
-    margin-bottom: 12px;
-}
-
-.word-meaning {
-    font-size: 40px; /* 28->40 */
-    font-weight: bold;
-    margin-bottom: 24px;
-    border-bottom: 3px solid #000000;
-    padding-bottom: 16px;
-}
-
-.sentence-item {
-    text-align: left;
-    margin-bottom: 20px;
-    border-bottom: 2px dashed #000000;
-    padding-bottom: 15px;
-}
-
-/* ==================== 底部固定导航栏 (Legacy) ==================== */
-#tab-bar {
-    position: static;
-    width: 100%;
-    height: 72px;
-    background-color: #FFFFFF;
-    border-top: 3px solid #000000;
-    overflow: hidden;
-    z-index: 200;
-    margin-top: 14px;
-}
-
-.tab-btn {
-    float: left;
-    width: 178px; /* 1072 / 6 ≈ 178.6 */
-    height: 80px;
-    background: none;
-    border: none;
-    border-right: 1px solid #EEEEEE;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.tab-btn.active {
-    background-color: #000000;
-    color: #FFFFFF;
-}
-
-.tab-icon {
-    display: block;
-    font-size: 24px; /* 18->24 */
-    font-weight: bold;
-    margin-bottom: 2px;
-}
-
-.tab-label {
-    display: block;
-    font-size: 20px; /* 16->20 */
-    font-weight: bold;
-}
-
-/* ==================== 页脚 ==================== */
-.generated-info {
-    position: static;
-    margin: 20px 0 30px 0;
-    text-align: right;
-    font-size: 14px;
-}
-
-body.js-enabled #tab-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 1072px;
-    height: 80px;
-    margin-top: 0;
-}
-
-body.js-enabled .generated-info {
-    position: absolute;
-    bottom: 180px; /* 两个 bar 之上 */
-    right: 30px;
-    margin: 0;
-    text-align: left;
 }
