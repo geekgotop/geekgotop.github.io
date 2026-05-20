@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-05-19 22:59:42</span>
+        <span class="generated-time">更新于 2026-05-20 23:08:58</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">DashAttention:<sup class='ipa'>/dashattention*/</sup> Differentiable<sup class='ipa'>/differentiable*/</sup> and Adaptive<sup class='ipa'>/əˈdæptɪv/</sup> Sparse Hierarchical<sup class='ipa'>/ˌhaɪˈrɑrkəkəl/</sup> Attention<sup class='ipa'>/əˈtɛnʃən/</sup></h4>
+                            <h4 class="paper-title">Atoms of Thought: Universal<sup class='ipa'>/ˌjunəˈvərsəl/</sup> EEG Representation<sup class='ipa'>/ˌrɛprəzɛnˈteɪʃən/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> with Microstates<sup class='ipa'>/microstates*/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Yuxiang Huang, Nuno M. T. Gonçalves, Federico Alvetreti</span>
-                                <span class="date">2026-05-18</span>
-                                <span class="categories">cs.CL | cs.AI</span>
+                                <span class="authors">Xinyang Tian, Ruitao Liu, Ziyi Ye</span>
+                                <span class="date">2026-05-19</span>
+                                <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Current hierarchical attention methods, such as NSA and InfLLMv2, select the top-k relevant key-value (KV) blocks based on coarse attention scores and subsequently apply fine-grained softmax attention on the selected tokens. However, the top-k operation assumes the number of relevant tokens for any ...</p>
+                                <p class="abstract-en">Learning universal representations from electroencephalogram (EEG) signals is a cutting-edge approach in the field of neuroinformatics and brain-computer interfaces (BCIs). Conventionally, EEG is treated as a multivariate temporal signal, where time- or frequency-domain features are extracted for re...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">当前的分层注意力方法，例如 NSA 和 InfLLMv2，根据粗略注意力分数选择前 k 个相关键值 (KV) 块，然后对所选标记应用细粒度的 softmax 注意力。然而，top-k 操作假设任何查询的相关标记的数量是固定的，并且它排除了稀疏阶段和密集阶段之间的梯度流。在这项工作中，我们提出了 DashAttention (Differentiable and Adaptive Sparse Hierarchical Attention)，它利用自适应稀疏 $α$-entmax 变换在第一阶段根据当前查询选择可变数量的块。这反过来又为第二阶段的 softmax 注意力提供了先验，保持整个层次结构完全可微。与其他分层注意力方法相反，我们证明了 DashAttention 是非分散的，这意味着更好的长上下文建模能力。大型语言模型 (LLM) 的实验表明，与 NSA 和 InfLLMv2 相比，DashAttention 的准确性与完全注意力相当，稀疏度为 75%，并且具有更好的帕累托前沿，尤其是在高稀疏度情况下。我们还在 Triton 中提供了一种高效的、GPU 感知的 DashAttention 实现，它在推理时实现了超过 FlashAttention-3 的加速。总体而言，DashAttention 提供了一种经济有效的策略来对长上下文进行建模。</p>
+                                    <p class="abstract-zh">从脑电图 (EEG) 信号中学习通用表示是神经信息学和脑机接口 (BCI) 领域的一种前沿方法。传统上，脑电图被视为多元时间信号，其中提取时域或频域特征用于表示学习。本文研究了一种简单而有效的脑电图表示，即微观状态。微观状态代表了微观时间尺度上大脑活动模式的构建模块。我们通过将连续脑电图信号聚类成离散微状态序列，从大型医学脑电图数据集构建通用微状态标记器。然后，微状态分词器被广泛应用于一系列下游任务，包括睡眠分期、情绪识别和运动想象分类。实验结果表明，在不同模型和不同任务下，微状态脑电表示学习优于传统时域和频域特征。进一步的分析表明，微观状态提供了更大的可解释性和可扩展性，从而开辟了认知神经科学和临床研究的应用。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2605.18753v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2605.20182v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Code as Agent Harness</h4>
+                            <h4 class="paper-title">TIDE: Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> and Lossless<sup class='ipa'>/lossless*/</sup> MoE Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> LLM Inference<sup class='ipa'>/ˈɪnfərəns/</sup> with I/O-aware Expert Offload</h4>
                             <div class="paper-meta">
-                                <span class="authors">Xuying Ning, Katherine Tieu, Dongqi Fu</span>
-                                <span class="date">2026-05-18</span>
-                                <span class="categories">cs.CL | cs.AI</span>
+                                <span class="authors">Zhiben Chen, Youpeng Zhao, Yang Sui</span>
+                                <span class="date">2026-05-19</span>
+                                <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Recent large language models (LLMs) have demonstrated strong capabilities in understanding and generating code, from competitive programming to repository-level software engineering. In emerging agentic systems, code is no longer only a target output. It increasingly serves as an operational substra...</p>
+                                <p class="abstract-en">Diffusion Large Language Models (dLLMs) have emerged as a competitive alternative to autoregressive (AR) models, offering better hardware utilization and bidirectional context through parallel block-level decoding. However, as dLLMs continue to scale up with mixture-of-experts (MoE) architectures, t...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">最近的大型语言模型（LLM）在理解和生成代码方面表现出了强大的能力，从竞争性编程到存储库级软件工程。在新兴的代理系统中，代码不再只是目标输出。它越来越多地充当代理推理、行动、环境建模和基于执行的验证的操作基础。我们通过代理工具的视角来构建这一转变，并将代码引入代理工具：一种将代码作为代理基础设施基础的统一视图。为了系统地研究这一观点，我们围绕三个相互关联的层面组织调查。首先，我们研究线束接口，其中代码将代理连接到推理、动作和环境建模。其次，我们检查线束机制：用于长期执行的规划、内存和工具使用，以及反馈驱动的控制和优化，使线束可靠且具有适应性。第三，我们讨论将工具从单代理系统扩展到多代理设置，其中共享代码工件支持多代理协调、审查和验证。在这些层面上，我们总结了代码作为代理工具的代表性方法和实际应用，涵盖编码助手、GUI/OS 自动化、具体代理、科学发现、个性化和推荐、DevOps 和企业工作流程。我们进一步概述了线束工程的开放挑战，包括最终任务成功之外的评估、不完整反馈下的验证、无回归线束改进、多个代理之间一致的共享状态、对安全关键操作的人工监督以及多模式环境的扩展。通过将代码作为代理人工智能的工具，这项调查为可执行、可验证和有状态的人工智能代理系统提供了统一的路线图。</p>
+                                    <p class="abstract-zh">扩散大型语言模型 (dLLM) 已成为自回归 (AR) 模型的竞争替代品，通过并行块级解码提供更好的硬件利用率和双向上下文。然而，随着 dLLM 继续通过混合专家 (MoE) 架构进行扩展，它们在资源受限的设备上的部署仍然是一个开放的挑战。现有的基于 AR 的方法通常会产生过高的 I/O 开销或严重的计算瓶颈。在这项工作中，我们提出了 TIDE，一种新颖的资源高效推理系统，它在块内的扩散过程中利用专家激活的时间稳定性。具体来说，我们在块内的扩散过程中利用专家激活的时间稳定性，并引入基于间隔的专家刷新策略，以 I/O 感知的方式更新专家放置。为了确保最佳性能，我们将推理调度制定为数学规划问题，求解最小化 I/O 流量和 CPU 计算的最佳间隔。最重要的是，TIDE 是一种无损优化，无需模型训练，为 dLLM 推理提供了“免费午餐”加速。在单个 GPU-CPU 系统中，我们证明 TIDE 在 LLaDA2.0-mini 和 LLaDA2.0-flash 模型上的吞吐量分别比之前的基准提高了 1.4$\times$ 和 1.5$\times$。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2605.18747v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2605.20179v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">ESI-Bench:<sup class='ipa'>/esibench*/</sup> Towards Embodied<sup class='ipa'>/ɪmˈbɑdid/</sup> Spatial Intelligence<sup class='ipa'>/ˌɪnˈtɛləʤəns/</sup> that Closes the Perception-Action<sup class='ipa'>/perceptionaction*/</sup> Loop</h4>
+                            <h4 class="paper-title">From Seeing to Thinking:<sup class='ipa'>/ˈθɪŋkɪŋ/</sup> Decoupling<sup class='ipa'>/diˈkəplɪŋ/</sup> Perception<sup class='ipa'>/pərˈsɛpʃən/</sup> and Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> Improves<sup class='ipa'>/ˌɪmˈpruvz/</sup> Post-Training<sup class='ipa'>/posttraining*/</sup> of Vision-Language<sup class='ipa'>/visionlanguage*/</sup> Models</h4>
                             <div class="paper-meta">
-                                <span class="authors">Yining Hong, Jiageng Liu, Han Yin</span>
-                                <span class="date">2026-05-18</span>
-                                <span class="categories">cs.CV | cs.AI</span>
+                                <span class="authors">Juncheng Wu, Hardy Chen, Haoqin Tu</span>
+                                <span class="date">2026-05-19</span>
+                                <span class="categories">cs.CL | cs.CV</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Spatial intelligence unfolds through a perception-action loop: agents act to acquire observations, and reason about how observations vary as a function of action. Rather than passively processing what is seen, they actively uncover what is unseen - occluded structure, dynamics, containment, and func...</p>
+                                <p class="abstract-en">Recent advances in vision-language models (VLMs) emphasize long chain-of-thought reasoning; yet, we find that their performance on visual tasks is primarily limited by a lack of visual perception as opposed to reasoning itself. In this work, we systematically study the interplay between perception a...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">空间智能通过感知-行动循环展开：智能体采取行动来获取观察结果，并推理观察结果如何随着行动而变化。他们不是被动地处理所见的东西，而是主动地揭示看不见的东西——仅通过被动传感无法解决的被遮挡的结构、动力学、遏制和功能。通过将观察者重新塑造为行动者，我们超越了先前假设神谕观察的空间智能表述。我们介绍 ESI-BENCH，这是一个基于 OmniGibson 构建的体现空间智能的综合基准，涵盖 10 个任务类别和 29 个子类别，以 Spelke 的核心知识系统为基础。特工必须决定部署哪些能力——感知、运动和操纵——以及如何对它们进行排序以积极积累与任务相关的证据。我们对最先进的 MLLM 进行了广泛的实验，发现主动探索大大优于被动探索，智能体在没有明确指令的情况下自发发现紧急空间策略，而随机多视图通常会增加噪声而不是信号，尽管消耗了更多的图像。大多数失败不是源于薄弱的感知，而是源于行动的盲目性：糟糕的行动选择导致糟糕的观察，进而导致级联错误。虽然显式 3D 基础可以稳定深度敏感任务的推理，但事实证明，不完美的 3D 表示会扭曲空间关系，从而比 2D 基线更有害。人类研究进一步表明，与在矛盾下寻求证伪观点和修正信念的人类不同，无论证据质量如何，模型都会过早地以高置信度做出承诺，暴露出元认知差距，而单靠更好的感知和更具体的互动都无法弥补这一差距。</p>
+                                    <p class="abstract-zh">视觉语言模型（VLM）的最新进展强调长链思维推理；然而，我们发现他们在视觉任务上的表现主要受到缺乏视觉感知而不是推理本身的限制。在这项工作中，我们系统地研究了 VLM 训练后感知和推理之间的相互作用，将其能力分解为三个独立的训练阶段：视觉感知、视觉推理和文本推理，并结合专门的训练数据。我们证明视觉感知 (a) 需要使用专门数据进行有针对性的优化； (b) 作为一个基本支架，在完善视觉推理之前应通过分阶段训练来巩固； (c) 通过 RL 学习比基于字幕的 SFT 更有效。我们在多个 VLM 上进行的实验表明，与合并训练相比，分阶段训练能够持续提高视觉感知和推理性能。值得注意的是，使用我们的方法训练的模型的推理精度提高了 1.5%，推理轨迹缩短了 20.8%，这表明卓越的感知减少了过度推理的需要。此外，我们表明，这种基于能力的分期代表了与传统的基于难度的课程正交的新课程维度，并且将两者结合起来会产生进一步的附加收益。我们的分阶段训练模型在开放权重 VLM 中实现了卓越的性能，与基础对应模型相比，在多项视觉数学和感知任务上取得了先进的结果（例如，WeMath 上 +5.2%，RealWorldQA 上 +3.7%）任务。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2605.18746v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2605.20177v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -917,6 +917,76 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
+                            <a href="https://github.com/wdnmd1265/ai-flow-architect" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ai-flow-architect</span>
+                                    <span class="repo-stars">⭐ 15</span>
+                                </div>
+                                <p class="repo-desc">具有内置质量仲裁的多模型人工智能工作流引擎。计划→批准→执行→审核管道。双脑设计：大脑#1（计划者）+大脑#2（仲裁者，不同型号）阻止幻觉泄漏。零配置令牌保存。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-05-18</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/lucidrains/rigidformer" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">rigidformer</span>
+                                    <span class="repo-stars">⭐ 12</span>
+                                </div>
+                                <p class="repo-desc">RigidFormer 的实现，使用 Transformers 学习刚性动力学</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-05-19</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/lucidrains/worldparticle" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">worldparticle</span>
+                                    <span class="repo-stars">⭐ 11</span>
+                                </div>
+                                <p class="repo-desc">WorldParticle 的实现，通过 Transformer 拉格朗日粒子动力学的统一世界模拟</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-05-19</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/2aronS/llm-cli" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">llm-cli</span>
+                                    <span class="repo-stars">⭐ 11</span>
+                                </div>
+                                <p class="repo-desc">用于查询大型语言模型的命令行界面</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-05-19</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/2aronS/agi-socialbot" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">agi-socialbot</span>
+                                    <span class="repo-stars">⭐ 8</span>
+                                </div>
+                                <p class="repo-desc">由 AGI 驱动的社交网络机器人，用于自动交互</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-05-19</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/kebula-it/nemantix" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">nemantix</span>
@@ -931,34 +1001,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/wdnmd1265/ai-flow-architect" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ai-flow-architect</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">具有内置质量仲裁的多模型人工智能工作流引擎。计划→批准→执行→审核管道。双脑设计：大脑#1（计划者）+大脑#2（仲裁者，不同型号）阻止幻觉泄漏。零配置令牌保存。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-18</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/crystal70916/voice-to-text" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">voice-to-text</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">翻译声音合成 - 克隆声音并以另一种语言输出语音</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-13</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/skiLLM-Labs/skiLL.Md" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">skiLL.Md</span>
@@ -967,20 +1009,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="repo-desc">skiLL.Md 是可重用、独立的 Markdown 模块的结构化开源集合，描述如何执行特定的软件工程任务。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Rust</span>
-                                    <span class="repo-date">2026-05-15</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/MusaIslamFahad/newssense-ai" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">newssense-ai</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">智能新闻理解系统，将任何新闻标题或文章分为 10 个类别，检测情绪，并使用最先进的 NLP 提取命名实体。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-05-15</span>
                                 </div>
                             </a>
@@ -1001,6 +1029,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/MusaIslamFahad/newssense-ai" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">newssense-ai</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">智能新闻理解系统，将任何新闻标题或文章分为 10 个类别，检测情绪，并使用最先进的 NLP 提取命名实体。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-05-15</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/kagesyntax/dino-game-ai" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">dino-game-ai</span>
@@ -1009,48 +1051,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="repo-desc">Chrome Dinosaur Game 在 Rust 中克隆，并进行遗传算法 AI 训练 — 100 个智能体通过不断发展的神经网络（Burn 框架）学习玩游戏。具有人类游戏、具有实时大脑可视化的人工智能训练以及人类与人工智能模式。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Rust</span>
-                                    <span class="repo-date">2026-05-14</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/lucidrains/rigidformer" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">rigidformer</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">RigidFormer 的实现，使用 Transformers 学习刚性动力学</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-05-19</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/DebDM10/AI-Tutor" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">AI-Tutor</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">一个人工智能驱动的辅导平台，旨在提供个性化的学习帮助和互动教育支持。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">JavaScript</span>
-                                    <span class="repo-date">2026-05-15</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/uk-ai-compliance-os/iso42001-uk-eu-rapid-compliance" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">iso42001-uk-eu-rapid-compliance</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">适用于英国人工智能公司的 ISO 42001 实施工具包和欧盟人工智能法案合规模板。 2026 年 8 月截止日期已准备好。开源 AIMS 架构。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-05-14</span>
                                 </div>
                             </a>
