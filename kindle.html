@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-05-20 23:08:58</p>
+            <p class="hero-meta">构建时间：2026-05-21 22:59:35</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
-                        <p class="quick-meta">— Albert Einstein</p>
+                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                        <p class="quick-meta">— Chinese Proverb</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">wdnmd1265/ai-flow-architect</p>
-                        <p class="quick-meta">★ 15</p>
+                        <p class="quick-meta">★ 25</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 encapsulation，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 wdnmd1265/ai-flow-architect，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Atoms of Thought: Universal EEG Representation Learning with Microstates》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Variance Reduction for Expectations with Diffusion Teachers》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
-                    <p class="study-meaning">n. 递归；循环</p>
+                    <p class="study-word">encapsulation <span>/ɪnˌkæpsjuˈleɪʃn/</span></p>
+                    <p class="study-meaning">n. 封装；包装</p>
                     
-                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
-                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
+                    <p class="study-sentence">Encapsulation hides the internal state of an object from the outside.</p>
+                    <p class="study-sentence-zh">封装将对象的内部状态对外部隐藏。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Atoms of Thought: Universal EEG Representation Learning with Microstates</p>
-                    <p class="deep-abstract">从脑电图 (EEG) 信号中学习通用表示是神经信息学和脑机接口 (BCI) 领域的一种前沿方法。传统上，脑电图被视为多元时间信号，其中提取时域或频域特征用于表示学习。本文研究了一种简单而有效的脑电图表示，即微观状态。微观状态代表了微观时间尺度上大脑活动模式的构建模块。我们通过将连续脑电图信号聚类成离散微状态序列，从大型医学脑电图数据集构建通用微状态标记器。然后，微状态分词器被广泛应用于一系列下游任务，包括睡眠分期、情绪识别和运动想象分类。实验结果表明，在不同模型和不同任务下，微状态脑电表示学习优于传统时域和频域特征。进一步的分析表明，微观状态提供了更大的可解释性和可扩展性，从而开辟了认知神经科学和临床研究的应用。</p>
+                    <p class="deep-title">Variance Reduction for Expectations with Diffusion Teachers</p>
+                    <p class="deep-abstract">预训练的扩散模型充当冻结教师，为下游管道（例如文本转 3D、单步蒸馏和数据归因）提供支持。这些管道消耗的教师梯度是对噪声水平和高斯噪声样本的蒙特卡罗（MC）期望；他们的估计方差主导着计算成本，因为每次绘制都需要昂贵的上游工作（渲染、模拟、编码）。我们引入了 CARV，一种计算感知的方差会计框架，它激发了分层 MC 估计器：将昂贵的上游计算分摊到廉价的扩散噪声重采样上，并通过时间步重要性采样和分层逆 CDF 构造进行锐化。在我们的文本到 3D 蒸馏和归因实验中，CARV 在不改变目标的情况下提供了 2-3 倍的有效计算乘数（大部分来自摊销重用；约 25% 的额外来自 IS+分层）；在单步蒸馏中，相同的技术将梯度方差降低了一个数量级，但没有改善下游 FID，这标志着 MC 方差不再是瓶颈。</p>
                     
-                    <p class="deep-takeaway">要点：从脑电图 (EEG) 信号中学习通用表示是神经信息学和脑机接口 (BCI) 领域的一种前沿方法。传统上，脑电图被视为多元时间信号，其中提取时域或频域特征用于表示学习。本文研究了一种简单而有效的脑电图表示，即微观状态。微观状态代表了微观时间尺度上大脑活动模式的构建模块。我们通过将连续脑电图信号聚类成离散微状态序列，从大型...</p>
+                    <p class="deep-takeaway">要点：预训练的扩散模型充当冻结教师，为下游管道（例如文本转 3D、单步蒸馏和数据归因）提供支持。这些管道消耗的教师梯度是对噪声水平和高斯噪声样本的蒙特卡罗（MC）期望；他们的估计方差主导着计算成本，因为每次绘制都需要昂贵的上游工作（渲染、模拟、编码）。我们引入了 CARV，一种计算感知的方差会计框架，它激发了分层 MC 估计...</p>
                     
                     <p class="deep-meta">预计阅读 1 分钟</p>
                 
@@ -284,18 +284,18 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>wdnmd1265/ai-flow-architect</strong> (★ 15)
+                        <strong>wdnmd1265/ai-flow-architect</strong> (★ 25)
                         <p>具有内置质量仲裁的多模型人工智能工作流引擎。计划→批准→执行→审核管道。双脑设计：大脑#1（计划者）+大脑#2（仲裁者，不同型号）阻止幻觉泄漏。零配置令牌保存。</p>
                     </li>
                     
                     <li>
-                        <strong>lucidrains/rigidformer</strong> (★ 12)
-                        <p>RigidFormer 的实现，使用 Transformers 学习刚性动力学</p>
+                        <strong>lucidrains/worldparticle</strong> (★ 15)
+                        <p>WorldParticle 的实现，通过 Transformer 拉格朗日粒子动力学的统一世界模拟</p>
                     </li>
                     
                     <li>
-                        <strong>lucidrains/worldparticle</strong> (★ 11)
-                        <p>WorldParticle 的实现，通过 Transformer 拉格朗日粒子动力学的统一世界模拟</p>
+                        <strong>lucidrains/rigidformer</strong> (★ 13)
+                        <p>RigidFormer 的实现，使用 Transformers 学习刚性动力学</p>
                     </li>
                     
                     <li>
