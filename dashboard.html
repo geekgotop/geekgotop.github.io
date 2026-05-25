@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-05-24 22:54:24</span>
+        <span class="generated-time">更新于 2026-05-25 22:56:44</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -737,6 +737,8 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <blockquote>
                                 <p class="quote-text">In the middle of difficulty lies opportunity.</p>
                                 
+                                <p class="quote-translation">困难之中蕴藏着机遇。</p>
+                                
                             </blockquote>
                             <cite class="quote-author">— Albert Einstein</cite>
                         </div>
@@ -744,8 +746,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         <div class="quote-slide ">
                             <blockquote>
                                 <p class="quote-text">The best time to plant a tree was 20 years ago. The second best time is now.</p>
-                                
-                                <p class="quote-translation">种一棵树最好的时间是20年前。第二个最好的时间是现在。</p>
                                 
                             </blockquote>
                             <cite class="quote-author">— Chinese Proverb</cite>
@@ -846,54 +846,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Tokenisation<sup class='ipa'>/tokenisation*/</sup> via Convex Relaxations<sup class='ipa'>/relaxations*/</sup></h4>
+                            <h4 class="paper-title">SkillOpt:<sup class='ipa'>/skillopt*/</sup> Executive<sup class='ipa'>/ɪgˈzɛkjətɪv/</sup> Strategy<sup class='ipa'>/ˈstrætəʤi/</sup> for Self-Evolving<sup class='ipa'>/selfevolving*/</sup> Agent Skills</h4>
                             <div class="paper-meta">
-                                <span class="authors">Jan Tempus, Philip Whittington, Craig W. Schmidt</span>
-                                <span class="date">2026-05-21</span>
-                                <span class="categories">cs.CL | cs.LG</span>
+                                <span class="authors">Yifan Yang, Ziyang Gong, Weiquan Huang</span>
+                                <span class="date">2026-05-22</span>
+                                <span class="categories">cs.AI | cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Tokenisation is an integral part of the current NLP pipeline. Current tokenisation algorithms such as BPE and Unigram are greedy algorithms -- they make locally optimal decisions without considering the resulting vocabulary as a whole. We instead formulate tokeniser construction as a linear program ...</p>
+                                <p class="abstract-en">Agent skills today are hand-crafted, generated one-shot, or evolved through loosely controlled self-revision, none of which behaves like a deep-learning optimizer for the skill, and none of which reliably improves over its starting point under feedback. We argue the skill should instead be trained a...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">标记化是当前 NLP 流程不可或缺的一部分。当前的标记化算法（例如 BPE 和 Unigram）是贪婪算法——它们做出局部最优决策，而不考虑整个词汇表。相反，我们将分词器构造制定为线性程序，并使用凸优化工具对其进行求解，从而产生了一种我们称为 ConvexTok 的新算法。我们发现 ConvexTok 持续改进了内在标记化指标以及语言模型实现的每字节位数 (BpB)；它还可以提高下游任务的性能，但一致性较差。此外，ConvexTok 允许用户通过下限来证明他们的标记器相对于某个目标与最优的距离有多远，并且我们根据经验发现它在常见词汇量下的最优值的 1% 以内。</p>
+                                    <p class="abstract-zh">今天的代理技能是手工制作的、一次性生成的，或者是通过松散控制的自我修订而演变的，其中没有一个表现得像技能的深度学习优化器，也没有一个在反馈下可靠地改进了其起点。我们认为，该技能应该作为冻结代理的外部状态进行训练，并采用与权重空间优化可重复的相同规则。据我们所知，SkillOpt 是第一个用于代理技能的系统可控文本空间优化器：一个单独的优化器模型将评分推出转化为对单个技能文档的有界添加/删除/替换编辑，并且只有在严格提高保留的验证分数时才接受编辑。文本学习率预算、拒绝编辑缓冲区和逐年缓慢/元更新使技能训练稳定，同时在部署时添加零推理时间模型调用。在六个基准、七个目标模型和三个执行工具（直接聊天、Codex、Claude Code）中，SkillOpt 在所有 52 个评估（模型、基准、工具）单元中表现最好或并列，并且击败了人类一次性 LLM、Trace2Skill、TextGrad、GEPA 和 EvoSkill 技能中的每一个单元竞争对手。在 GPT-5.5 上，它在直接聊天中将平均无技能准确度提高了 +23.5 点，在 Codex 代理循环内提高了 +24.8 点，在 Claude Code 内提高了 +19.1 点。转移实验进一步表明，优化的技能工件在跨模型规模、Codex 和 Claude Code 执行环境之间转移以及转移到附近的数学基准时保留价值，而无需进一步优化。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2605.22821v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2605.23904v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Vector Policy Optimization:<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> Training<sup class='ipa'>/ˈtreɪnɪŋ/</sup> for Diversity<sup class='ipa'>/dɪˈvərsɪti/</sup> Improves<sup class='ipa'>/ˌɪmˈpruvz/</sup> Test-Time<sup class='ipa'>/testtime*/</sup> Search</h4>
+                            <h4 class="paper-title">LLMs as Noisy Channels:<sup class='ipa'>/ˈʧænəlz/</sup> A Shannon Perspective<sup class='ipa'>/pərˈspɛktɪv/</sup> on Model Capacity<sup class='ipa'>/kəˈpæsɪti/</sup> and Scaling Laws</h4>
                             <div class="paper-meta">
-                                <span class="authors">Ryan Bahlous-Boldi, Isha Puri, Idan Shenfeld</span>
-                                <span class="date">2026-05-21</span>
+                                <span class="authors">Xu Ouyang, Deyi Liu, Yuhang Cai</span>
+                                <span class="date">2026-05-22</span>
                                 <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Language models must now generalize out of the box to novel environments and work inside inference-scaling search procedures, such as AlphaEvolve, that select rollouts with a variety of task-specific reward functions. Unfortunately, the standard paradigm of LLM post-training optimizes a pre-specifie...</p>
+                                <p class="abstract-en">Existing scaling laws for Large Language Models (LLMs), predominantly monotonic power laws, fail to explain emerging non-monotonic phenomena such as catastrophic overtraining and quantization-induced degradation, where performance deteriorates despite increased compute.   We propose the Shannon Scal...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">语言模型现在必须开箱即用地推广到新的环境，并在推理扩展搜索程序（例如 AlphaEvolve）中工作，该程序选择具有各种特定于任务的奖励函数的推出。不幸的是，LLM 后训练的标准范例优化了预先指定的标量奖励，通常导致当前的 LLM 产生低熵响应分布，从而难以显示推理时间搜索所需的多样性。我们提出了向量策略优化（VPO），这是一种 RL 算法，可以明确地训练策略来预测不同的下游奖励函数并产生不同的解决方案。 VPO 利用的奖励在实践中通常是向量值的，例如代码生成中每个测试用例的正确性，或者多个不同的用户角色或奖励模型。 VPO 本质上是 GRPO 优势估计器的直接替代品，但它训练 LLM 输出一组解决方案，其中各个解决方案专门针对向量奖励空间中的不同权衡。在四个任务中，VPO 在测试时搜索中匹配或击败了最强的标量 RL 基线（例如 pass@k 和 best@k），并且随着搜索预算的增长，差距不断扩大。对于进化搜索，VPO 模型解决了 GRPO 模型根本无法解决的问题。随着测试时搜索变得更加标准化，多样性优化可能需要成为默认的训练后目标。</p>
+                                    <p class="abstract-zh">大型语言模型 (LLM) 的现有缩放定律（主要是单调幂定律）无法解释新兴的非单调现象，例如灾难性过度训练和量化引起的退化，尽管计算量增加，但性能仍会恶化。   我们提出了香农缩放定律，这是一个统一的理论框架，将 LLM 训练建模为噪声通道上的信息传输，以香农-哈特利定理为基础。通过将模型参数映射到通道带宽并将训练标记映射到信号功率，我们的公式明确地捕获了学习信号和固有噪声之间的相互作用。这一观点揭示了法学硕士的基本香农能力：在不保留足够的信噪比（SNR）的情况下缩放模型大小或数据不可避免地会放大噪声，从而导致从单调改进过渡到 U 形性能下降。   我们通过在 Pythia 和 OLMo2 上进行扰动实验来验证我们的理论，这些扰动包括高斯噪声、量化以及数学、QA 和代码任务的监督微调。香农缩放定律始终优于经典缩放定律和最近的扰动感知定律，实现了强大的 $R^2$ 分数，并准确捕获了先前方法遗漏的损失盆地。它还推断：在具有 $\leq$180B 代币的 $\leq$6.9B Pythia 模型上进行拟合，它预测未见过的 12B 模型在池化 $R^2{=}0.847$ 时最多有 307B 个代币，同时单调基线崩溃。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2605.22817v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2605.23901v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">The Matching<sup class='ipa'>/ˈmæʧɪŋ/</sup> Principle:<sup class='ipa'>/ˈprɪnsəpəl/</sup> A Geometric<sup class='ipa'>/ˌʤiəˈmɛtrɪk/</sup> Theory of Loss Functions<sup class='ipa'>/ˈfəŋkʃənz/</sup> for Nuisance-Robust<sup class='ipa'>/nuisancerobust*/</sup> Representation<sup class='ipa'>/ˌrɛprəzɛnˈteɪʃən/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
+                            <h4 class="paper-title">From Raw Experience<sup class='ipa'>/ɪkˈspɪriəns/</sup> to Skill Consumption:<sup class='ipa'>/kənˈsəmʃən/</sup> A Systematic<sup class='ipa'>/ˌsɪstəˈmætɪk/</sup> Study of Model-Generated<sup class='ipa'>/modelgenerated*/</sup> Agent Skills</h4>
                             <div class="paper-meta">
-                                <span class="authors">Vishal Rajput</span>
-                                <span class="date">2026-05-21</span>
-                                <span class="categories">cs.LG | cs.AI</span>
+                                <span class="authors">Zisu Huang, Jingwen Xu, Yifan Yang</span>
+                                <span class="date">2026-05-22</span>
+                                <span class="categories">cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Robustness, domain adaptation, photometric and occlusion invariance, compositional generalisation, temporal robustness, alignment safety, and classical anisotropic regularisation are usually treated as separate problems with separate method families. This paper argues that much of their shared struc...</p>
+                                <p class="abstract-en">Language agents increasingly improve by reusing \emph{skills} -- structured procedural artifacts distilled from past experience. In particular, \emph{domain-level} and \emph{model-generated} skills are especially promising. They offer fast adaptation within a domain by encoding domain-specific recur...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">鲁棒性、域适应、光度和遮挡不变性、组合泛化、时间鲁棒性、对齐安全性和经典各向异性正则化通常被视为具有不同方法系列的单独问题。本文认为，它们的大部分共享结构是一个统计问题：估计标签保留部署麻烦的协方差，然后沿着范围覆盖该协方差的矩阵对编码器雅可比行列式进行正则化（匹配原理）。 CORAL、对抗性训练、IRM、增强、度量学习、雅可比惩罚和对齐式约束是该对象的不同估计器，而不是独立的鲁棒性技巧。   在线性高斯模型中，我们证明了闭式最优性（定理 A），包括匹配范围内的立方根注水；二次雅可比罚值范围覆盖的必要性（定理 G）；深度全局最小值处的相同范围二分法；两个证伪控制（引理 C；推论 E），以及七个条件一致性引理（D1-D7），用于在标准可识别性假设下进行估计。   我们引入了轨迹偏差指数（TDI），这是一种当任务准确性或雅可比弗罗贝尼乌斯范数不足时嵌入灵敏度的无标记探针。   从经典 ML 到 Qwen2.5-7B 的 13 个预注册块测试了几何和部署漂移的预测匹配、各向同性、错误 W 排序；十二次通过，唯一的例外（Office-31）是在运行之前命名的特征间隙故障。在 7B 规模上，匹配的样式-PMH 提高了选择性诚实性，并保留了样式 TDI，而标准 DPO 却降低了它的性能。   贡献在于命名部署滋扰协方差，说明正则化器必须做什么，并在识别该对象后提供封闭形式的可证伪理论，而不是每个排行榜上的普遍性。</p>
+                                    <p class="abstract-zh">语言代理通过重用\emph{技能}（从过去的经验中提取的结构化程序工件）不断改进。特别是，\emph{领域级}和\emph{模型生成}技能特别有前途。它们通过编码特定领域的重复过程来提供领域内的快速适应，并且它们的规模超越了劳动密集型的手工制作。然而，虽然提取方法不断激增，但理解仍然有限，没有涵盖整个技能生命周期的全面研究——\textbf{经验生成}、\textbf{技能提取}和\textbf{技能消耗}——来询问这些技能是否真正有效、何时有效以及是什么导致它们成功或失败。为了弥补这一差距，我们构建了一个基于实用程序的评估框架，该框架提供跨提取器和目标代理的系统实验结果，涵盖五个不同的代理任务领域。我们发现模型生成的技能平均而言是有益的，但表现出不平凡的负迁移，并且提取器和目标的行为都不一致。模型可以是强提取器，但也是弱消费者，反之亦然，其技能效用独立于模型规模或基线任务强度。为了解释这些模式，我们深入剖析每个生命周期阶段，分析经验构成如何塑造技能质量、有用技能的特征是什么，以及相同技能如何在不同消费者之间转移。最后，我们将这些发现转化为具体的\emph{元技能}，指导技能提取与实际效用相关的特征，从而持续提高跨领域的技能质量并大幅减少负迁移。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2605.22800v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2605.23899v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -915,15 +915,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
-                            <a href="https://github.com/wdnmd1265/ai-flow-architect" target="_blank" class="repo-link">
+                            <a href="https://github.com/deppse100-lgtm/Easy-LocalAI" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">ai-flow-architect</span>
-                                    <span class="repo-stars">⭐ 35</span>
+                                    <span class="repo-name">Easy-LocalAI</span>
+                                    <span class="repo-stars">⭐ 26</span>
                                 </div>
-                                <p class="repo-desc">具有内置质量仲裁的多模型人工智能工作流引擎。计划→批准→执行→审核管道。双脑设计：大脑#1（计划者）+大脑#2（仲裁者，不同型号）阻止幻觉泄漏。零配置令牌保存。</p>
+                                <p class="repo-desc">LocalAI 的非官方 Windows GUI 启动器 — 通过简单的按钮界面运行 LLM、视觉和语音。原始引擎由 @mudler 提供。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-18</span>
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-05-22</span>
                                 </div>
                             </a>
                         </li>
@@ -946,7 +946,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/lucidrains/rigidformer" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">rigidformer</span>
-                                    <span class="repo-stars">⭐ 15</span>
+                                    <span class="repo-stars">⭐ 16</span>
                                 </div>
                                 <p class="repo-desc">RigidFormer 的实现，使用 Transformers 学习刚性动力学</p>
                                 <div class="repo-meta">
@@ -971,68 +971,26 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/2aronS/agi-socialbot" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">agi-socialbot</span>
-                                    <span class="repo-stars">⭐ 8</span>
-                                </div>
-                                <p class="repo-desc">由 AGI 驱动的社交网络机器人可实现自动交互</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-19</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/dulanjayabhanu/mononeural" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">mononeural</span>
-                                    <span class="repo-stars">⭐ 7</span>
-                                </div>
-                                <p class="repo-desc">一个开源教育平台，用于通过视觉神经元构建、训练和测试来学习人工智能，而无需编写代码。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-05-20</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/lucidrains/populora" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">populora</span>
-                                    <span class="repo-stars">⭐ 7</span>
+                                    <span class="repo-stars">⭐ 11</span>
                                 </div>
-                                <p class="repo-desc">PopuLoRA 的实施和探索，Co-Evolving LLM Populations for Reasoning Self-Play</p>
+                                <p class="repo-desc">Implementation and explorations into PopuLoRA, Co-Evolving LLM Populations for Reasoning Self-Play</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
+                                    <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-05-22</span>
                                 </div>
                             </a>
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/lucidrains/dmpo" target="_blank" class="repo-link">
+                            <a href="https://github.com/2aronS/agi-socialbot" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">dmpo</span>
-                                    <span class="repo-stars">⭐ 6</span>
+                                    <span class="repo-name">agi-socialbot</span>
+                                    <span class="repo-stars">⭐ 8</span>
                                 </div>
-                                <p class="repo-desc">MPO/DMPO的实施与探索</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-20</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/tiago4lexandre/SpiderPi" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">SpiderPi</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">SpiderPi 是 Raspberry Pi Zero 2W 的 IA 平台，可用于侦察和漏洞分析。</p>
+                                <p class="repo-desc">由 AGI 驱动的社交网络机器人，用于自动交互</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-05-19</span>
@@ -1044,12 +1002,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/tgakathunderr/BIM-2" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">BIM-2</span>
-                                    <span class="repo-stars">⭐ 4</span>
+                                    <span class="repo-stars">⭐ 7</span>
                                 </div>
-                                <p class="repo-desc">使用 Jaccard Surprise 作为唯一训练信号的受生物学启发的语言模型。没有反向传播。没有 GPU。在线 Hebbian 从修正中学习。具有顶端反馈的两层皮质。在 200MB 以下的 CPU 上运行。</p>
+                                <p class="repo-desc">使用 Jaccard Surprise 作为唯一训练信号的受生物学启发的语言模型。 No backprop. No GPU. Online Hebbian learning from corrections. Two-layer cortex with apical feedback. Runs on CPU under 200MB.</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-05-21</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/dulanjayabhanu/mononeural" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">mononeural</span>
+                                    <span class="repo-stars">⭐ 6</span>
+                                </div>
+                                <p class="repo-desc">An open-source educational platform for learning artificial intelligence through visual neuron building, training, and testing without writing code.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-05-20</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/lucidrains/dmpo" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">dmpo</span>
+                                    <span class="repo-stars">⭐ 6</span>
+                                </div>
+                                <p class="repo-desc">Implementation and explorations into MPO / DMPO</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-05-20</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/tiago4lexandre/SpiderPi" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">SpiderPi</span>
+                                    <span class="repo-stars">⭐ 5</span>
+                                </div>
+                                <p class="repo-desc">SpiderPi é uma plataforma portátil de recon e análise de vulnerabilidades com IA para Raspberry Pi Zero 2W..</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-05-19</span>
                                 </div>
                             </a>
                         </li>

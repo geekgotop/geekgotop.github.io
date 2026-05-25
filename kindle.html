@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-05-24 22:54:24</p>
+            <p class="hero-meta">构建时间：2026-05-25 22:56:44</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,25 +191,25 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：复盘整理日</p>
-                <p class="theme-focus">优先看 Archive 区：回顾本周输入并做摘要。</p>
-                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The only way to do great work is to love what you do.</p>
-                        <p class="quick-meta">— Steve Jobs</p>
+                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
+                        <p class="quick-meta">— Albert Einstein</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-main">wdnmd1265/ai-flow-architect</p>
-                        <p class="quick-meta">★ 35</p>
-                        <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
+                        <p class="quick-main">deppse100-lgtm/Easy-LocalAI</p>
+                        <p class="quick-meta">★ 26</p>
+                        <p class="quick-note">新兴项目，适合早期观察。 语言: None</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 abstraction，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 concurrency，再口述其含义一次。</li>
                         
-                        <li>趋势: 浏览 wdnmd1265/ai-flow-architect，记录 1 个可借鉴实现点。</li>
+                        <li>趋势: 浏览 deppse100-lgtm/Easy-LocalAI，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Tokenisation via Convex Relaxations》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《SkillOpt: Executive Strategy for Self-Evolving Agent Skills》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">abstraction <span>/æbˈstrækʃn/</span></p>
-                    <p class="study-meaning">n. 抽象；提取</p>
+                    <p class="study-word">concurrency <span>/kənˈkʌrənsi/</span></p>
+                    <p class="study-meaning">n. 并发；并发性</p>
                     
-                    <p class="study-sentence">Abstraction reduces complexity by hiding unnecessary details.</p>
-                    <p class="study-sentence-zh">抽象通过隐藏不必要的细节来降低复杂性。</p>
+                    <p class="study-sentence">Concurrency allows multiple tasks to run in overlapping time periods.</p>
+                    <p class="study-sentence-zh">并发允许多个任务在重叠的时间段内运行。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Tokenisation via Convex Relaxations</p>
-                    <p class="deep-abstract">标记化是当前 NLP 流程不可或缺的一部分。当前的标记化算法（例如 BPE 和 Unigram）是贪婪算法——它们做出局部最优决策，而不考虑整个词汇表。相反，我们将分词器构造制定为线性程序，并使用凸优化工具对其进行求解，从而产生了一种我们称为 ConvexTok 的新算法。我们发现 ConvexTok 持续改进了内在标记化指标以及语言模型实现的每字节位数 (BpB)；它还可以提高下游任务的性能，但一致性较差。此外，ConvexTok 允许用户通过下限来证明他们的标记器相对于某个目标与最优的距离有多远，并且我们根据经验发现它在常见词汇量下的最优值的 1% 以内。</p>
+                    <p class="deep-title">SkillOpt: Executive Strategy for Self-Evolving Agent Skills</p>
+                    <p class="deep-abstract">今天的代理技能是手工制作的、一次性生成的，或者是通过松散控制的自我修订而演变的，其中没有一个表现得像技能的深度学习优化器，也没有一个在反馈下可靠地改进了其起点。我们认为，该技能应该作为冻结代理的外部状态进行训练，并采用与权重空间优化可重复的相同规则。据我们所知，SkillOpt 是第一个用于代理技能的系统可控文本空间优化器：一个单独的优化器模型将评分推出转化为对单个技能文档的有界添加/删除/替换编辑，并且只有在严格提高保留的验证分数时才接受编辑。文本学习率预算、拒绝编辑缓冲区和逐年缓慢/元更新使技能训练稳定，同时在部署时添加零推理时间模型调用。在六个基准、七个目标模型和三个执行工具（直接聊天、Codex、Claude Code）中，SkillOpt 在所有 52 个评估（模型、基准、工具）单元中表现最好或并列，并且击败了人类一次性 LLM、Trace2Skill、TextGrad、GEPA 和 EvoSkill 技能中的每一个单元竞争对手。在 GPT-5.5 上，它在直接聊天中将平均无技能准确度提高了 +23.5 点，在 Codex 代理循环内提高了 +24.8 点，在 Claude Code 内提高了 +19.1 点。转移实验进一步表明，优化的技能工件在跨模型规模、Codex 和 Claude Code 执行环境之间转移以及转移到附近的数学基准时保留价值，而无需进一步优化。</p>
                     
-                    <p class="deep-takeaway">要点：标记化是当前 NLP 流程不可或缺的一部分。当前的标记化算法（例如 BPE 和 Unigram）是贪婪算法——它们做出局部最优决策，而不考虑整个词汇表。相反，我们将分词器构造制定为线性程序，并使用凸优化工具对其进行求解，从而产生了一种我们称为 ConvexTok 的新算法。我们发现 ConvexTok 持续改进了内在标...</p>
+                    <p class="deep-takeaway">要点：今天的代理技能是手工制作的、一次性生成的，或者是通过松散控制的自我修订而演变的，其中没有一个表现得像技能的深度学习优化器，也没有一个在反馈下可靠地改进了其起点。我们认为，该技能应该作为冻结代理的外部状态进行训练，并采用与权重空间优化可重复的相同规则。据我们所知，SkillOpt 是第一个用于代理技能的系统可控文本空间优...</p>
                     
-                    <p class="deep-meta">预计阅读 1 分钟</p>
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -284,8 +284,8 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>wdnmd1265/ai-flow-architect</strong> (★ 35)
-                        <p>具有内置质量仲裁的多模型人工智能工作流引擎。计划→批准→执行→审核管道。双脑设计：大脑#1（计划者）+大脑#2（仲裁者，不同型号）阻止幻觉泄漏。零配置令牌保存。</p>
+                        <strong>deppse100-lgtm/Easy-LocalAI</strong> (★ 26)
+                        <p>LocalAI 的非官方 Windows GUI 启动器 — 通过简单的按钮界面运行 LLM、视觉和语音。原始引擎由 @mudler 提供。</p>
                     </li>
                     
                     <li>
@@ -294,7 +294,7 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>lucidrains/rigidformer</strong> (★ 15)
+                        <strong>lucidrains/rigidformer</strong> (★ 16)
                         <p>RigidFormer 的实现，使用 Transformers 学习刚性动力学</p>
                     </li>
                     
@@ -304,8 +304,8 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>2aronS/agi-socialbot</strong> (★ 8)
-                        <p>由 AGI 驱动的社交网络机器人可实现自动交互</p>
+                        <strong>lucidrains/populora</strong> (★ 11)
+                        <p>Implementation and explorations into PopuLoRA, Co-Evolving LLM Populations for Reasoning Self-Play</p>
                     </li>
                     
                 </ul>
