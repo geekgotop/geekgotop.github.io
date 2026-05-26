@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-05-25 22:56:44</p>
+            <p class="hero-meta">构建时间：2026-05-26 23:06:38</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
-                        <p class="quick-meta">— Albert Einstein</p>
+                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                        <p class="quick-meta">— Chinese Proverb</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">deppse100-lgtm/Easy-LocalAI</p>
-                        <p class="quick-meta">★ 26</p>
+                        <p class="quick-meta">★ 16</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: None</p>
                     
                 </article>
@@ -217,11 +217,9 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 concurrency，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 serialization，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 deppse100-lgtm/Easy-LocalAI，记录 1 个可借鉴实现点。</li>
-                        
-                        <li>深读: 阅读论文《SkillOpt: Executive Strategy for Self-Evolving Agent Skills》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +232,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">concurrency <span>/kənˈkʌrənsi/</span></p>
-                    <p class="study-meaning">n. 并发；并发性</p>
+                    <p class="study-word">serialization <span>/ˌsɪəriəlaɪˈzeɪʃn/</span></p>
+                    <p class="study-meaning">n. 序列化</p>
                     
-                    <p class="study-sentence">Concurrency allows multiple tasks to run in overlapping time periods.</p>
-                    <p class="study-sentence-zh">并发允许多个任务在重叠的时间段内运行。</p>
+                    <p class="study-sentence">Serialization converts an object into a stream of bytes for storage.</p>
+                    <p class="study-sentence-zh">序列化将对象转换为字节流以便存储。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +268,7 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">SkillOpt: Executive Strategy for Self-Evolving Agent Skills</p>
-                    <p class="deep-abstract">今天的代理技能是手工制作的、一次性生成的，或者是通过松散控制的自我修订而演变的，其中没有一个表现得像技能的深度学习优化器，也没有一个在反馈下可靠地改进了其起点。我们认为，该技能应该作为冻结代理的外部状态进行训练，并采用与权重空间优化可重复的相同规则。据我们所知，SkillOpt 是第一个用于代理技能的系统可控文本空间优化器：一个单独的优化器模型将评分推出转化为对单个技能文档的有界添加/删除/替换编辑，并且只有在严格提高保留的验证分数时才接受编辑。文本学习率预算、拒绝编辑缓冲区和逐年缓慢/元更新使技能训练稳定，同时在部署时添加零推理时间模型调用。在六个基准、七个目标模型和三个执行工具（直接聊天、Codex、Claude Code）中，SkillOpt 在所有 52 个评估（模型、基准、工具）单元中表现最好或并列，并且击败了人类一次性 LLM、Trace2Skill、TextGrad、GEPA 和 EvoSkill 技能中的每一个单元竞争对手。在 GPT-5.5 上，它在直接聊天中将平均无技能准确度提高了 +23.5 点，在 Codex 代理循环内提高了 +24.8 点，在 Claude Code 内提高了 +19.1 点。转移实验进一步表明，优化的技能工件在跨模型规模、Codex 和 Claude Code 执行环境之间转移以及转移到附近的数学基准时保留价值，而无需进一步优化。</p>
-                    
-                    <p class="deep-takeaway">要点：今天的代理技能是手工制作的、一次性生成的，或者是通过松散控制的自我修订而演变的，其中没有一个表现得像技能的深度学习优化器，也没有一个在反馈下可靠地改进了其起点。我们认为，该技能应该作为冻结代理的外部状态进行训练，并采用与权重空间优化可重复的相同规则。据我们所知，SkillOpt 是第一个用于代理技能的系统可控文本空间优...</p>
-                    
-                    <p class="deep-meta">预计阅读 2 分钟</p>
+                    <p class="quick-empty">暂无论文数据</p>
                 
             </div>
             
@@ -284,28 +277,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>deppse100-lgtm/Easy-LocalAI</strong> (★ 26)
+                        <strong>deppse100-lgtm/Easy-LocalAI</strong> (★ 16)
                         <p>LocalAI 的非官方 Windows GUI 启动器 — 通过简单的按钮界面运行 LLM、视觉和语音。原始引擎由 @mudler 提供。</p>
                     </li>
                     
                     <li>
-                        <strong>lucidrains/worldparticle</strong> (★ 17)
-                        <p>WorldParticle 的实现，通过 Transformer 拉格朗日粒子动力学的统一世界模拟</p>
+                        <strong>lucidrains/populora</strong> (★ 12)
+                        <p>PopuLoRA 的实施和探索，Co-Evolving LLM Populations for Reasoning Self-Play</p>
                     </li>
                     
                     <li>
-                        <strong>lucidrains/rigidformer</strong> (★ 16)
-                        <p>RigidFormer 的实现，使用 Transformers 学习刚性动力学</p>
+                        <strong>tgakathunderr/BIM-2</strong> (★ 10)
+                        <p>使用 Jaccard Surprise 作为唯一训练信号的受生物学启发的语言模型。没有反向传播。没有 GPU。在线 Hebbian 从修正中学习。具有顶端反馈的两层皮质。在 200MB 以下的 CPU 上运行。</p>
                     </li>
                     
                     <li>
-                        <strong>2aronS/llm-cli</strong> (★ 11)
-                        <p>用于查询大型语言模型的命令行界面</p>
+                        <strong>lucidrains/dmpo</strong> (★ 7)
+                        <p>MPO/DMPO的实施与探索</p>
                     </li>
                     
                     <li>
-                        <strong>lucidrains/populora</strong> (★ 11)
-                        <p>Implementation and explorations into PopuLoRA, Co-Evolving LLM Populations for Reasoning Self-Play</p>
+                        <strong>dulanjayabhanu/mononeural</strong> (★ 6)
+                        <p>一个开源教育平台，用于通过视觉神经元构建、训练和测试来学习人工智能，而无需编写代码。</p>
                     </li>
                     
                 </ul>
@@ -318,7 +311,7 @@ html, body {
             <p class="zone-subtitle">复盘与回顾入口</p>
             <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
             <ul class="archive-stats">
-                <li>论文：3</li>
+                <li>论文：0</li>
                 <li>仓库：10</li>
                 <li>思维模型：3</li>
                 <li>语录：5</li>
