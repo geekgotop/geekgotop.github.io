@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-05-29 23:11:22</p>
+            <p class="hero-meta">构建时间：2026-05-30 22:54:58</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
+                <p class="theme-name">今日主题：复盘整理日</p>
+                <p class="theme-focus">优先看 Archive 区：回顾本周输入并做摘要。</p>
+                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The only way to do great work is to love what you do.</p>
-                        <p class="quick-meta">— Steve Jobs</p>
+                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                        <p class="quick-meta">— Chinese Proverb</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-main">autowarefoundation/auto_fsd</p>
-                        <p class="quick-meta">★ 14</p>
+                        <p class="quick-main">lucidrains/kalmanformer</p>
+                        <p class="quick-meta">★ 15</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,9 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 algorithm，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 encapsulation，再口述其含义一次。</li>
                         
-                        <li>趋势: 浏览 autowarefoundation/auto_fsd，记录 1 个可借鉴实现点。</li>
+                        <li>趋势: 浏览 lucidrains/kalmanformer，记录 1 个可借鉴实现点。</li>
+                        
+                        <li>深读: 阅读论文《Physics Is All You Need? A Case Study in Physicist-Supervised AI Development of Scientific Software》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -232,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">algorithm <span>/ˈælɡəˌrɪðəm/</span></p>
-                    <p class="study-meaning">n. 算法；运算法则</p>
+                    <p class="study-word">encapsulation <span>/ɪnˌkæpsjuˈleɪʃn/</span></p>
+                    <p class="study-meaning">n. 封装；包装</p>
                     
-                    <p class="study-sentence">The sorting algorithm runs in O(n log n) time complexity.</p>
-                    <p class="study-sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
+                    <p class="study-sentence">Encapsulation hides the internal state of an object from the outside.</p>
+                    <p class="study-sentence-zh">封装将对象的内部状态对外部隐藏。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -268,7 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="quick-empty">暂无论文数据</p>
+                    <p class="deep-title">Physics Is All You Need? A Case Study in Physicist-Supervised AI Development of Scientific Software</p>
+                    <p class="deep-abstract">人工智能代理是工具、合著者还是研究人员？我们提出了一个量化案例研究 ($N=1$)：一位物理学家在 12 个工作日和 57 个会话中监督 AI 编码代理（Claude Code、Sonnet 和 Opus 模型）来构建 CLAX-PT，这是 JAX 中的可微分单环微扰理论模块。我们按照干预级别记录并分类了 15 起监督事件。   该代理通过迭代预言机测试自主解决了十个问题。另外两个由物理学家的领域知识决定。它不能的三个——全部逃避了预言机检测——有一个共同的特性：代理将症状减轻视为根本原因的解决。在 57 个会话中，有 33 个会话在无法代表目标物理的代码架构中调整系数，并且即使提示重新考虑也无法重新评估其 CLASS-PT 分支选择；只有注入的物理概念（各向异性 BAO 阻尼）触发了重新设计。另外，代理进行了校准修正，通过了所有预言机测试，但与理论中的任何数量不对应，预测任何其他宇宙学的错误值。   在同一个会话中，捏造因素被捕获并被替换。事实证明，三种监督实践对于捕捉预言机测试遗漏的内容至关重要：在基准校准之外的不同参数点进行测试；共享变更日志，显示跨会议的探索停滞不前；以及针对非物理数字补丁的明确规则。在这种情况下，决定代理输出是否可信的是监督设计，而不是模型能力。缩小差距需要代理提出架构替代方案，而不是在给定结构内进行优化，并区分预测的充分性和解释的正确性——这里没有展示的能力，显然不能通过单独的扩展来解决。 [简略。]</p>
+                    
+                    <p class="deep-takeaway">要点：人工智能代理是工具、合著者还是研究人员？我们提出了一个量化案例研究 ($N=1$)：一位物理学家在 12 个工作日和 57 个会话中监督 AI 编码代理（Claude Code、Sonnet 和 Opus 模型）来构建 CLAX-PT，这是 JAX 中的可微分单环微扰理论模块。我们按照干预级别记录并分类了 15 起监督...</p>
+                    
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -277,8 +284,18 @@ html, body {
                 <ul>
                     
                     <li>
+                        <strong>lucidrains/kalmanformer</strong> (★ 15)
+                        <p>卡尔曼变换器的实现，使用变压器对卡尔曼增益进行建模</p>
+                    </li>
+                    
+                    <li>
                         <strong>autowarefoundation/auto_fsd</strong> (★ 14)
                         <p>用于自动驾驶的开源端到端人工智能模型</p>
+                    </li>
+                    
+                    <li>
+                        <strong>zjunlp/CBM</strong> (★ 7)
+                        <p>模特什么时候应该改变主意？大型语言模型中的上下文信念管理</p>
                     </li>
                     
                     <li>
@@ -287,18 +304,8 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>ajiekusumadhany/nera-trading-agent</strong> (★ 3)
-                        <p>自主交易机器人 — 蒙特卡罗模拟、智能货币概念 (SMC)、Gemini 2.5 Pro CIO 批准和 Telegram 警报。</p>
-                    </li>
-                    
-                    <li>
                         <strong>elijahshepherd/Coder</strong> (★ 3)
                         <p>Coder 是一款开源 AI 编码代理。您提供 API 密钥和模型，它会为您创建一个工作开发工作区。</p>
-                    </li>
-                    
-                    <li>
-                        <strong>SattamAltwaim/PILOT</strong> (★ 3)
-                        <p>在线自适应优化器，通过轻量级学习策略在训练期间调整其更新行为。</p>
                     </li>
                     
                 </ul>
@@ -311,7 +318,7 @@ html, body {
             <p class="zone-subtitle">复盘与回顾入口</p>
             <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
             <ul class="archive-stats">
-                <li>论文：0</li>
+                <li>论文：3</li>
                 <li>仓库：10</li>
                 <li>思维模型：3</li>
                 <li>语录：5</li>

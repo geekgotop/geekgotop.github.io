@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-05-29 23:11:22</span>
+        <span class="generated-time">更新于 2026-05-30 22:54:58</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,7 +846,58 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        <p class="empty-state">暂无论文数据</p>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Physics Is All You Need? A Case Study in Physicist-Supervised<sup class='ipa'>/physicistsupervised*/</sup> AI Development<sup class='ipa'>/dɪˈvɛləpmənt/</sup> of Scientific<sup class='ipa'>/ˌsaɪənˈtɪfɪk/</sup> Software<sup class='ipa'>/ˈsɔfˌwɛr/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Nhat-Minh Nguyen</span>
+                                <span class="date">2026-05-28</span>
+                                <span class="categories">cs.AI | astro-ph.CO</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Are AI agents tools, co-authors, or researchers? We present a quantified case study ($N=1$): a physicist supervising an AI coding agent (Claude Code, Sonnet and Opus models) over 12 work days and 57 sessions to build CLAX-PT, a differentiable one-loop perturbation theory module in JAX. We documented...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">人工智能代理是工具、合著者还是研究人员？我们提出了一个量化案例研究 ($N=1$)：一位物理学家在 12 个工作日和 57 个会话中监督 AI 编码代理（Claude Code、Sonnet 和 Opus 模型）来构建 CLAX-PT，这是 JAX 中的可微分单环微扰理论模块。我们按照干预级别记录并分类了 15 起监督事件。   该代理通过迭代预言机测试自主解决了十个问题。另外两个由物理学家的领域知识决定。它不能的三个——全部逃避了预言机检测——有一个共同的特性：代理将症状减轻视为根本原因的解决。在 57 个会话中，有 33 个会话在无法代表目标物理的代码架构中调整系数，并且即使提示重新考虑也无法重新评估其 CLASS-PT 分支选择；只有注入的物理概念（各向异性 BAO 阻尼）触发了重新设计。另外，代理进行了校准修正，通过了所有预言机测试，但与理论中的任何数量不对应，预测任何其他宇宙学的错误值。   在同一个会话中，捏造因素被捕获并被替换。事实证明，三种监督实践对于捕捉预言机测试遗漏的内容至关重要：在基准校准之外的不同参数点进行测试；共享变更日志，显示跨会议的探索停滞不前；以及针对非物理数字补丁的明确规则。在这种情况下，决定代理输出是否可信的是监督设计，而不是模型能力。缩小差距需要代理提出架构替代方案，而不是在给定结构内进行优化，并区分预测的充分性和解释的正确性——这里没有展示的能力，显然不能通过单独的扩展来解决。 [简略。]</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2605.30353v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">VideoMLA:<sup class='ipa'>/videomla*/</sup> Low-Rank Latent KV Cache for Minute-Scale<sup class='ipa'>/minutescale*/</sup> Autoregressive<sup class='ipa'>/autoregressive*/</sup> Video Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Hidir Yesiltepe, Jiazhen Hu, Tuna Han Salih Meral</span>
+                                <span class="date">2026-05-28</span>
+                                <span class="categories">cs.CV | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Long-rollout causal video diffusion has converged on a fixed-size sliding-window KV cache, with recent progress innovating within this layout by changing which tokens occupy the window or how their positions are encoded. The per-head KV layout itself, a dominant contributor to streaming memory and l...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">长期推出的因果视频扩散已经集中在固定大小的滑动窗口 KV 缓存上，最近的进展是通过改变哪些令牌占据窗口或它们的位置如何编码来在这种布局中进行创新。每个头的 KV 布局本身是流内存和延迟的主要贡献者，但基本上保持不变。在本文中，我们提出了视频扩散中多头潜在注意力（MLA）的第一个研究。 VideoMLA 使用共享的低等级潜在内容和共享的解耦 3D-RoPE 位置密钥替换了每个头的密钥和值，从而将每个缓存层的每个令牌 KV 内存减少了 92.7%。我们进一步研究了为什么 MLA 在视频扩散方面取得了成功，尽管在语言模型中经常用于激励它的谱假设并不成立：预训练的视频注意力不是低秩的，99% 的能量有效秩远远高于任何实际的潜在维度。 VideoMLA 在压缩比下保持质量，其中直接谱近似会预测较大的重建误差。我们表明，MLA 瓶颈（而不是预训练谱）决定了有效排名：谱初始化和随机初始化几乎占据了初始化时的满排名预算，并且训练在适应时保留了该预算。在 VBench 上，VideoMLA 匹配短视距流视频扩散基线，在评估的方法中在长视距上获得最佳总体得分，并将单个 B200 上的吞吐量提高了 1.23 倍。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2605.30351v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">LLMSurgeon:<sup class='ipa'>/llmsurgeon*/</sup> Diagnosing<sup class='ipa'>/ˌdaɪəgˈnoʊsɪŋ/</sup> Data Mixture of Large Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Yaxin Luo, Jiacheng Cui, Xiaohan Zhao</span>
+                                <span class="date">2026-05-28</span>
+                                <span class="categories">cs.CL | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">The pretraining data mixture of Large Language Models (LLMs) constitutes their &#34;digital DNA&#34;, shaping model behaviors, capabilities, and failure modes. Yet this composition is rarely disclosed, making post-hoc auditing of data combination or provenance difficult. In this work, we formalize $\textbf{...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">大型语言模型 (LLM) 的预训练数据混合物构成了它们的“数字 DNA”，塑造了模型行为、功能和故障模式。然而，这种组成很少被披露，这使得对数据组合或来源的事后审计变得困难。在这项工作中，我们形式化了$\textbf{数据混合手术（DMS）}$：仅给出目标LLM生成的文本，估计其预训练语料库在预定义分类下的域级分布。我们提出了 $\textbf{LLMSurgeon}$，一个强大的框架，将 DMS 视为标签移位假设下的逆问题。 LLMSurgeon 不是直接聚合分类器输出，而是估计校准的 $\textit{soft}$ 混淆矩阵并解决约束逆问题以纠正系统域混淆并恢复潜在混合先验。为了进行评估，我们引入了 $\textbf{LLMScan}$，这是一个可验证配方的评估套件，由具有透明预训练混合物的开源 LLM 构建。在 LLMScan 中，LLMSurgeon 在固定协议下以高保真度恢复域混合物。我们的工作提出了一种实用的事后方法，用于在不访问训练数据的情况下审核基础模型的数字 DNA。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2605.30348v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
                     
                 </div>
             </div>
@@ -866,6 +917,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
+                            <a href="https://github.com/lucidrains/kalmanformer" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">kalmanformer</span>
+                                    <span class="repo-stars">⭐ 15</span>
+                                </div>
+                                <p class="repo-desc">卡尔曼变换器的实现，使用变压器对卡尔曼增益进行建模</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-05-30</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/autowarefoundation/auto_fsd" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">auto_fsd</span>
@@ -875,6 +940,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-05-25</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/zjunlp/CBM" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">CBM</span>
+                                    <span class="repo-stars">⭐ 7</span>
+                                </div>
+                                <p class="repo-desc">模特什么时候应该改变主意？大型语言模型中的上下文信念管理</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-05-26</span>
                                 </div>
                             </a>
                         </li>
@@ -894,20 +973,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/ajiekusumadhany/nera-trading-agent" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">nera-trading-agent</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">自主交易机器人 — 蒙特卡罗模拟、智能货币概念 (SMC)、Gemini 2.5 Pro CIO 批准和 Telegram 警报。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-23</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/elijahshepherd/Coder" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Coder</span>
@@ -922,15 +987,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/SattamAltwaim/PILOT" target="_blank" class="repo-link">
+                            <a href="https://github.com/milcio79/ml-ai-algorithm-advisor" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">PILOT</span>
+                                    <span class="repo-name">ml-ai-algorithm-advisor</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">在线自适应优化器，通过轻量级学习策略在训练期间调整其更新行为。</p>
+                                <p class="repo-desc">本地 Streamlit 应用程序，为项目建议和排名 ML、AI、NLP、计算机视觉、时间序列、异常检测、文档智能、GenAI 和 RAG 算法。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-23</span>
+                                    <span class="repo-date">2026-05-27</span>
                                 </div>
                             </a>
                         </li>
@@ -950,15 +1015,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/milcio79/ml-ai-algorithm-advisor" target="_blank" class="repo-link">
+                            <a href="https://github.com/kevinhwang/claude-auto-permission" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">ml-ai-algorithm-advisor</span>
+                                    <span class="repo-name">claude-auto-permission</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">本地 Streamlit 应用程序，为项目的 ML、AI、NLP、计算机视觉、时间序列、异常检测、文档智能、GenAI 和 RAG 算法提供建议和排名。</p>
+                                <p class="repo-desc">适合我们其他人的自动模式！ 🚀</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-27</span>
+                                    <span class="repo-lang">Go</span>
+                                    <span class="repo-date">2026-05-28</span>
                                 </div>
                             </a>
                         </li>
@@ -987,20 +1052,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-05-28</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/kaliwuang/xuanzhao" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">xuanzhao</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">玄照 · 玄学群体智能预测系统 — 七术排盘 × 40+视角交叉印证</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-25</span>
                                 </div>
                             </a>
                         </li>
