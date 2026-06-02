@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-01 23:24:38</span>
+        <span class="generated-time">更新于 2026-06-02 23:42:15</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Lumos-Nexus:<sup class='ipa'>/lumosnexus*/</sup> Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Frequency<sup class='ipa'>/ˈfrikwənsi/</sup> Bridging<sup class='ipa'>/ˈbrɪʤɪŋ/</sup> with Homogeneous<sup class='ipa'>/ˌhoʊməˈʤiniəs/</sup> Latent Space for Video Unified Models</h4>
+                            <h4 class="paper-title">Mitigating<sup class='ipa'>/ˈmɪtəˌgeɪtɪŋ/</sup> Perceptual<sup class='ipa'>/pərˈsɛpʧəwəl/</sup> Judgment<sup class='ipa'>/ˈʤəʤmənt/</sup> Bias in Multimodal<sup class='ipa'>/multimodal*/</sup> LLM-as-a-Judge<sup class='ipa'>/llmasajudge*/</sup> via Perceptual<sup class='ipa'>/pərˈsɛpʧəwəl/</sup> Perturbation<sup class='ipa'>/ˌpərtərˈbeɪʃən/</sup> and Reward Modeling<sup class='ipa'>/ˈmɑdəlɪŋ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Jiazheng Xing, Hangjie Yuan, Lingling Cai</span>
-                                <span class="date">2026-05-29</span>
+                                <span class="authors">Seojeong Park, Jiho Choi, Junyong Kang</span>
+                                <span class="date">2026-06-01</span>
                                 <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Connector-based video unified models have demonstrated strong capability in instruction-grounded video synthesis, but integrating a large high-fidelity generator into the unified training loop is computationally prohibitive, limiting achievable visual quality. We therefore propose Lumos-Nexus, a tra...</p>
+                                <p class="abstract-en">Recent multimodal large language models have demonstrated strong reasoning ability, yet their reliability as automated evaluators remains limited by a critical weakness: when visual evidence conflicts with textual cues, MLLM judges tend to reward plausible narratives over perceptually correct answer...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">基于连接器的视频统一模型在基于指令的视频合成方面表现出了强大的能力，但将大型高保真生成器集成到统一训练循环中在计算上是令人望而却步的，限制了可实现的视觉质量。因此，我们提出了 Lumos-Nexus，这是一种训练高效的统一视频生成框架，有助于开发强大的推理驱动生成能力，同时显着增强视觉保真度。 Lumos-Nexus 采用两阶段设计：1）在训练过程中，只有轻量级生成器与理解块对齐，以学习接受推理驱动的语义控制。 2）在推理过程中，我们引入统一渐进频率桥接（UPFB），逐步将生成过程移交给共享潜在空间中的大容量预训练生成器，从而实现从粗到细的细化并生成高保真视频，而不会影响推理质量。为了填补推理驱动视频生成基准的空白，我们引入了 VR-Bench，它评估模型将推断意图转化为连贯且语义一致的视频内容的能力。大量实验表明，Lumos-Nexus 在 VBench 上在视觉真实感和时间连贯性方面取得了显着的进步，同时在 VR-Bench 上表现出了强大的基于推理的生成性能。代码和模型可在 https://jiazheng-xing.github.io/nexus-lumos-home/ 获取。</p>
+                                    <p class="abstract-zh">最近的多模态大语言模型已经表现出强大的推理能力，但它们作为自动评估器的可靠性仍然受到一个严重弱点的限制：当视觉证据与文本线索发生冲突时，MLLM 法官倾向于奖励合理的叙述，而不是感知上正确的答案。我们识别并系统地分析这种现象，我们将其称为感知判断偏差。通过受控的视觉扰动，现有的多模式法官经常锚定响应文本而不是他们自己的视觉感知，从而导致不一致和不可验证的评估。为了解决这个问题，我们引入了感知扰动判断数据集，该数据集构建了经过最少编辑的反事实响应，以隔离感知错误并实现可验证的监督。在此数据集的基础上，我们开发了一个统一的训练框架，将基于 GRPO 的结构化奖励与批量排名目标相结合，无需显式的成对标签即可实现连贯的全局排序。跨不同 MLLM-as-a-Judge 基准的实验表明，我们的方法大大提高了感知保真度、排名一致性以及与人类评估的一致性。我们的结果建立了一条可扩展且可推广的途径，用于培训多模式法官，这些法官具有感知基础、可解释且对视觉推理冲突具有鲁棒性。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2605.31603v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.02578v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Stateful<sup class='ipa'>/stateful*/</sup> Online Monitoring<sup class='ipa'>/ˈmɑnətərɪŋ/</sup> Catches Distributed<sup class='ipa'>/dɪˈstrɪbjətəd/</sup> Agent Attacks</h4>
+                            <h4 class="paper-title">AdaCodec:<sup class='ipa'>/adacodec*/</sup> A Predictive<sup class='ipa'>/prɪˈdɪktɪv/</sup> Visual Code for Video MLLMs</h4>
                             <div class="paper-meta">
-                                <span class="authors">Davis Brown, Samarth Bhargav, Arav Santhanam</span>
-                                <span class="date">2026-05-29</span>
-                                <span class="categories">cs.CR | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Language models can find thousands of severe software vulnerabilities, and agents are increasingly being misused for cyberattacks. To avoid detection, attackers frequently distribute their misuse, splitting a harmful task across many user accounts so each individual transcript looks benign. Because ...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">语言模型可以发现数千个严重的软件漏洞，代理越来越多地被滥用于网络攻击。为了避免检测，攻击者经常分布滥用，将有害任务分散到多个用户帐户中，以便每个单独的记录看起来都是良性的。由于安全监控器一次只能对一个代理上下文进行评分，因此它们在结构上对滥用行为视而不见，而这种滥用行为仅在多个账户中聚合时才可见。据我们所知，我们通过构建第一个分布式代理攻击来证明这一差距是真实存在的，这是一个多代理支架，它可以完成艰巨的网络安全任务，同时在上下文有限的子代理之间隐藏有害目标，逃避标准监视器，该监视器捕获它的频率仅为之前代理攻击的五分之一。为了防御，我们开发了一种在线状态监控器，它使用实时集群来收集许多代理记录中的微弱可疑信号，并且很少升级到标记用户帐户之间的滥用的语言模型。在大规模模拟数据中心流量的评估中，我们的监视器帕累托在标准监视器中占主导地位，可以提前 30% 捕获分布式攻击，并在网络滥用达到最有害的阶段之前对其进行标记。至关重要的是，对于大约 99% 的用户流量来说，这带来的额外延迟可以忽略不计。这种检测优势仍然存在，但随着良性背景流量变得非常大而缩小。经过广泛的红队练习后，我们改进了防御措施，并令人惊讶地发现它能够捕获标准越狱，因为自适应攻击者会跨帐户重复使用攻击变体。我们的结果指向一种新型安全监视器，它对用户组而不是孤立的记录进行推理。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2605.31593v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">TunerDiT:<sup class='ipa'>/tunerdit*/</sup> Training-free<sup class='ipa'>/trainingfree*/</sup> Progressive<sup class='ipa'>/prəˈgrɛsɪv/</sup> Steering<sup class='ipa'>/ˈstɪrɪŋ/</sup> of Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Transformer<sup class='ipa'>/trænsˈfɔrmər/</sup> for Multi-Event<sup class='ipa'>/multievent*/</sup> Video Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Ruotong Liao, Guowen Huang, Qing Cheng</span>
-                                <span class="date">2026-05-29</span>
+                                <span class="authors">Haowen Hou, Zhen Huang, Zheming Liang</span>
+                                <span class="date">2026-06-01</span>
                                 <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Text-to-video (T2V) generation faces challenging questions when generating videos with long horizons containing multiple events. Inspired by the intrinsics of the diffusion process, we probe video diffusion transformers (DiTs) and uncover intrinsic turning points in the DiT denoising trajectory wher...</p>
+                                <p class="abstract-en">Video is temporally redundant: adjacent frames usually share most objects, background, and layout. Yet existing video multimodal large language models (video MLLMs) usually encode each sampled frame as an independent RGB image, causing visual tokens to repeat content already present in earlier frame...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">在生成包含多个事件的长视野视频时，文本到视频 (T2V) 生成面临着具有挑战性的问题。受扩散过程内在本质的启发，我们探究了视频扩散变换器（DiT）并揭示了 DiT 去噪轨迹中的内在转折点，其中条件文本影响从全局布局到细粒度细节的生成。基于这一发现，我们提出了 TunerDiT，这是一种简单而有效的渐进式转向方法，不需要额外的多事件生成训练。 TunerDiT 包含两个控制手柄：(1) 事件分区屏蔽，强制事件边界，同时允许跨事件过渡带； (2)跨事件提示融合，注入相邻事件语义以进行后期细化。我们贡献了一个自行策划的提示套件，用于对多事件生成进行基准测试，即 Meve。与其他免训练方法相比，TunerDiT 在 8 个指标上实现了最先进的性能，并在视频一致性和事件分离之间提供了可调节的权衡。文本对齐的改进随着事件计数的增加而增加，表明随着事件计数的增加而扩展的可能性。</p>
+                                    <p class="abstract-zh">视频在时间上是冗余的：相邻帧通常共享大多数对象、背景和布局。然而，现有的视频多模态大语言模型（视频 MLLM）通常将每个采样帧编码为独立的 RGB 图像，导致视觉标记重复先前帧中已存在的内容。这建议采用更直接的视频接口：仅当无法从先前的上下文中很好地预测场景时才发送完整的参考帧，否则传输帧间变化的紧凑描述。我们将此接口称为 \emph{预测视觉代码}，并将视频 MLLM 实例化为 \textbf{AdaCodec}。仅当条件预测成本很高时，AdaCodec 才会在参考帧上花费完整的视觉标记；否则，它将帧间变化（包括运动和预测残差）编码为紧凑的 P 令牌。在所有 11 个基准测试中，AdaCodec 在匹配的视觉令牌预算下比 Qwen3-VL-8B 每帧 RGB 基线有所改进。即使预算为 1/7$，具有 32k 代币的 AdaCodec 也超过了所有长视频基准的 224k 基线；在五个通用视频基准测试中，它提高了平均得分，同时将首次标记时间从 9.26 秒大幅缩短至 1.62 秒。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2605.31590v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.02569v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">ClinEnv: An Interactive<sup class='ipa'>/ˌɪnərˈæktɪv/</sup> Multi-Stage<sup class='ipa'>/multistage*/</sup> Long Horizon EHR Environment<sup class='ipa'>/ɪnˈvaɪrənmənt/</sup> for Agents</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Yuxing Lu, Yushuhong Lin, Wenqi Shi</span>
+                                <span class="date">2026-06-01</span>
+                                <span class="categories">cs.AI | cs.CL</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Clinical practice is not the selection of an answer from enumerated options: a physician gathers heterogeneous information incrementally and commits to sequential, irreversible decisions under uncertainty. Static benchmarks cannot probe and existing interactive medical benchmarks each compromise on ...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">临床实践不是从列举的选项中选择答案：医生逐渐收集异构信息，并在不确定的情况下做出连续的、不可逆转的决定。静态基准无法探测，现有的交互式医疗基准至少会在其中一个基准上做出妥协。我们推出了 ClinEnv，这是一个交互式基准，可以在我们称之为纵向住院模拟的范式下评估法学硕士作为主治医生与真实住院患者的入院情况。每个案例都会自动构建成决策阶段的有序序列；在每个阶段，模型在进行药物治疗、手术和诊断之前都必须主动询问四名专业代理人。 ClinEnv 通过基于本体的确定性匹配对模型决定的内容以及收集信息的方式进行评分。在七个模型中，最强的模型仅达到 0.31 的决策 F1，并且结果质量与过程质量急剧脱钩。困难集中在管理决策和后期阶段，其中模型恢复出院诊断的可靠性远高于管理操作（0.51 vs. 0.17 F1），并随着病例的进展继续发出冗余查询。 ClinEnv 使这种信息获取差距（对于仅结果评估来说是不可见的）可以直接测量。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2606.02568v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,26 +920,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/lucidrains/kalmanformer" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">kalmanformer</span>
-                                    <span class="repo-stars">⭐ 36</span>
+                                    <span class="repo-stars">⭐ 44</span>
                                 </div>
                                 <p class="repo-desc">卡尔曼变换器的实现，使用变压器对卡尔曼增益进行建模</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-05-30</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/zjunlp/CBM" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">CBM</span>
-                                    <span class="repo-stars">⭐ 8</span>
-                                </div>
-                                <p class="repo-desc">模特什么时候应该改变主意？大型语言模型中的上下文信念管理</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-26</span>
                                 </div>
                             </a>
                         </li>
@@ -959,6 +945,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/vishal815/ResearchForge-Autonomous-Multi-Agent-Research-System" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ResearchForge-Autonomous-Multi-Agent-Research-System</span>
+                                    <span class="repo-stars">⭐ 4</span>
+                                </div>
+                                <p class="repo-desc">使用人工智能代理将任何主题转化为完整的研究报告。 ResearchForge 自主规划任务、搜索网络、分析信息并生成可行的见解。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-05-30</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/festverse/Fest-Video-Editor" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Fest-Video-Editor</span>
@@ -968,34 +968,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
                                     <span class="repo-date">2026-05-28</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/zjunlp/ParametricMemoryLaw" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ParametricMemoryLaw</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">LoRA 是如何记忆的？ LLM 微调的参数记忆法则</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-05-26</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/vishal815/ResearchForge-Autonomous-Multi-Agent-Research-System" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ResearchForge-Autonomous-Multi-Agent-Research-System</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">🔬 由 LangGraph、Groq/Gemini、Tavily 和 Streamlit 提供支持的自主多智能体研究系统。 AI 代理计划、搜索、分析、验证并生成完整的研究报告，并提供质量评分和 PDF 导出功能。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-30</span>
                                 </div>
                             </a>
                         </li>
@@ -1051,6 +1023,34 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="repo-desc">正如棱镜将光分离成不同的颜色一样，该委托层将复杂的工作流程分离为集中的、单一用途的本地代理。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Go</span>
+                                    <span class="repo-date">2026-05-28</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/frangelbarrera/awesome-ai-agents" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">awesome-ai-agents</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">2026 年最先进的人工智能代理、框架和自主工作流程的精选列表。重点关注生产就绪工具、OSINT 和编码助手。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-06-01</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/JahongirHakimjonov/backend_to_ml" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">backend_to_ml</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">中级 Python（Django、DRF、FastAPI）后端​​开发人员 uchun ML 工程师 / MLOps 工程师 bo&#39;lish yo&#39;li</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-05-28</span>
                                 </div>
                             </a>
