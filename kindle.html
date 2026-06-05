@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-06-04 23:07:02</p>
+            <p class="hero-meta">构建时间：2026-06-05 23:03:53</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,17 +191,17 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">博观而约取，厚积而薄发。</p>
-                        <p class="quick-meta">— 苏轼</p>
+                        <p class="quick-main">The only way to do great work is to love what you do.</p>
+                        <p class="quick-meta">— Steve Jobs</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,9 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 inheritance，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 abstraction，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 lucidrains/kalmanformer，记录 1 个可借鉴实现点。</li>
+                        
+                        <li>深读: 阅读论文《HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -232,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">inheritance <span>/ɪnˈherɪtəns/</span></p>
-                    <p class="study-meaning">n. 继承；遗传</p>
+                    <p class="study-word">abstraction <span>/æbˈstrækʃn/</span></p>
+                    <p class="study-meaning">n. 抽象；提取</p>
                     
-                    <p class="study-sentence">Inheritance enables new classes to receive the properties of existing classes.</p>
-                    <p class="study-sentence-zh">继承使新类能够接收现有类的属性。</p>
+                    <p class="study-sentence">Abstraction reduces complexity by hiding unnecessary details.</p>
+                    <p class="study-sentence-zh">抽象通过隐藏不必要的细节来降低复杂性。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -268,7 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="quick-empty">暂无论文数据</p>
+                    <p class="deep-title">HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers</p>
+                    <p class="deep-abstract">对于在现实世界中部署的人形机器人来说，命令空间（即任务规划和全身控制之间的接口）的选择至关重要。现有的全身控制器通常需要密集的运动学或空间参考，规划人员很难从任务语义中合成这些参考。相反，我们提出了一个紧凑、明确的界面，该界面直观、通用、模块化且具有足够的表现力，可以满足不同的操作技能。为此，我们引入了 HANDOFF，这是一个遵循此界面的单一人形全身控制器，并通过多教师 KL 蒸馏在上下文条件门控方案下蒸馏为来自三个互补专家的专家混合学生：具有安全过滤数据的全身运动跟踪、运动和跌倒恢复。在 Unitree G1 上，HANDOFF 与最先进的速度跟踪相匹配，并提供最大的稳健操作工作空间之一。我们通过多个自然语言驱动的任务部署进一步证明了硬件的可行性，这些任务由 VLM 驱动的代理规划器提供支持，无需特定于任务的数据或控制器微调。</p>
+                    
+                    <p class="deep-takeaway">要点：对于在现实世界中部署的人形机器人来说，命令空间（即任务规划和全身控制之间的接口）的选择至关重要。现有的全身控制器通常需要密集的运动学或空间参考，规划人员很难从任务语义中合成这些参考。相反，我们提出了一个紧凑、明确的界面，该界面直观、通用、模块化且具有足够的表现力，可以满足不同的操作技能。为此，我们引入了 HANDOFF...</p>
+                    
+                    <p class="deep-meta">预计阅读 1 分钟</p>
                 
             </div>
             
@@ -282,7 +289,7 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>lucidrains/disco-rl-pytorch</strong> (★ 14)
+                        <strong>lucidrains/disco-rl-pytorch</strong> (★ 15)
                         <p>DiscoRL 的实施和探索，发现最先进的强化学习算法，David Silver 在 Deepmind 的最后一项工作</p>
                     </li>
                     
@@ -297,8 +304,8 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>Boaxes/Reptile-Central-Database</strong> (★ 3)
-                        <p>用于虚构爬虫供应业务的全栈 CRUD Web 应用程序 - Streamlit、MySQL、Google Cloud Run，以及由 GPT-4o mini 和 LlamaIndex 提供支持的 AI 聊天机器人（RAG + 自然语言 SQL）。</p>
+                        <strong>GNL324/polylens</strong> (★ 4)
+                        <p>由人工智能驱动的预测市场和市场情报平台，用于钱包分析、机会发现、套利检测和定量研究。</p>
                     </li>
                     
                 </ul>
@@ -311,7 +318,7 @@ html, body {
             <p class="zone-subtitle">复盘与回顾入口</p>
             <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
             <ul class="archive-stats">
-                <li>论文：0</li>
+                <li>论文：3</li>
                 <li>仓库：10</li>
                 <li>思维模型：3</li>
                 <li>语录：5</li>

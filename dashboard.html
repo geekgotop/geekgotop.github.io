@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-04 23:07:02</span>
+        <span class="generated-time">更新于 2026-06-05 23:03:53</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,7 +846,58 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        <p class="empty-state">暂无论文数据</p>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">HANDOFF: Humanoid<sup class='ipa'>/ˈhjuməˌnɔɪd/</sup> Agentic Task-Space<sup class='ipa'>/taskspace*/</sup> Whole-Body<sup class='ipa'>/wholebody*/</sup> Control via Distilled<sup class='ipa'>/dɪˈstɪld/</sup> Complementary<sup class='ipa'>/ˌkɑmpləˈmɛnʧi/</sup> Teachers<sup class='ipa'>/ˈtiʧərz/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Lizhi Yang, Junheng Li, Nehar Poddar</span>
+                                <span class="date">2026-06-04</span>
+                                <span class="categories">cs.RO | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task sema...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">对于在现实世界中部署的人形机器人来说，命令空间（即任务规划和全身控制之间的接口）的选择至关重要。现有的全身控制器通常需要密集的运动学或空间参考，规划人员很难从任务语义中合成这些参考。相反，我们提出了一个紧凑、明确的界面，该界面直观、通用、模块化且具有足够的表现力，可以满足不同的操作技能。为此，我们引入了 HANDOFF，这是一个遵循此界面的单一人形全身控制器，并通过多教师 KL 蒸馏在上下文条件门控方案下蒸馏为来自三个互补专家的专家混合学生：具有安全过滤数据的全身运动跟踪、运动和跌倒恢复。在 Unitree G1 上，HANDOFF 与最先进的速度跟踪相匹配，并提供最大的稳健操作工作空间之一。我们通过多个自然语言驱动的任务部署进一步证明了硬件的可行性，这些任务由 VLM 驱动的代理规划器提供支持，无需特定于任务的数据或控制器微调。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2606.06493v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Code2LoRA:<sup class='ipa'>/codelora*/</sup> Hypernetwork-Generated<sup class='ipa'>/hypernetworkgenerated*/</sup> Adapters<sup class='ipa'>/əˈdæptərz/</sup> for Code Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models under Software<sup class='ipa'>/ˈsɔfˌwɛr/</sup> Evolution<sup class='ipa'>/ˌɛvəˈluʃən/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Liliana Hotsko, Yinxi Li, Yuntian Deng</span>
+                                <span class="date">2026-06-04</span>
+                                <span class="categories">cs.SE | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Code language models need repository-level context to resolve imports, APIs, and project conventions. Existing methods inject this knowledge as long inputs (retrieved through RAG or dependency analysis) or through per-repository fine-tuning and LoRA -- costly at repository scale and brittle to evolv...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">代码语言模型需要存储库级上下文来解析导入、API 和项目约定。现有方法将这些知识作为长输入（通过 RAG 或依赖性分析检索）或通过每个存储库微调和 LoRA 注入——在存储库规模上成本高昂，并且对于不断发展的代码库来说很脆弱。我们引入了 Code2LoRA，这是一个超网络框架，可生成特定于存储库的 LoRA 适配器，以零推理时间令牌开销有效地注入存储库知识。 Code2LoRA支持两种使用场景：Code2LoRA-Static将单个存储库快照转换为适配器，适合稳定代码库的理解；而 Code2LoRA-Evo 则维护一个由 GRU 隐藏状态支持的适配器，该状态根据代码差异进行更新，适合不断发展的代码库的主动开发。为了根据参数高效的微调基线评估 Code2LoRA，我们构建了 RepoPeftBench，这是一个包含 604 个 Python 存储库的基准测试，具有两个轨道：一个包含 40K 训练和 12K 测试断言完成任务的静态轨道，以及一个包含 215K 提交衍生训练和 87K 提交衍生测试任务的演化轨道。在静态赛道上，Code2LoRA-Static 实现了 63.8% 的跨存储库和 66.2% 的存储库内精确匹配，匹配每个存储库的 LoRA 上限；在进化轨迹上，Code2LoRA-Evo 实现了 60.3% 的跨存储库精确匹配（比单个共享 LoRA 提高了 5.2 pp）。 Code2LoRA的代码可以在https://anonymous.4open.science/r/code2lora-6857找到；模型检查点和 RepoPeftBench 数据集可以在 https://huggingface.co/code2lora 上找到。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2606.06492v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">TempoVLA:<sup class='ipa'>/tempovla*/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> Speed-Controllable<sup class='ipa'>/speedcontrollable*/</sup> Vision-Language-Action<sup class='ipa'>/visionlanguageaction*/</sup> Policies<sup class='ipa'>/ˈpɑləsiz/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Dong Jing, Jingchen Nie, Tianqi Zhang</span>
+                                <span class="date">2026-06-04</span>
+                                <span class="categories">cs.RO | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VLAs) only inherit a single fixed speed from training demonstrations. Prior efforts to accelerate VLAs...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">机器人操纵在要求快速执行的低风险运输阶段和要求缓慢、精确运动的高风险接触阶段之间交替。然而，现有的视觉-语言-动作模型（VLA）仅继承了训练演示中的单个固定速度。之前通过模型压缩、KV 缓存重用或强化学习来加速 VLA 的努力只是将策略从一种固定速度转变为另一种固定速度，而减速几乎未被探索。我们观察到，每个预测动作的大小已经决定了机器人移动的速度，从而为可控的执行速度开辟了直接途径。我们将此观察结果转化为 TempoVLA，这是一个执行速度由显式条件控制的单个 VLA。 TempoVLA 结合了两个耦合组件。 (1) 数据侧变速轨迹增强 (VSTA)，通过合并或拆分动作来重新计时演示到任何目标速度，同时保留其运动语义。 (2) 为政策提供速度的模型侧调节机制。统计数据显示，VSTA 达到了要求的速度，且运动误差可以忽略不计。模拟和现实任务中的实验表明，TempoVLA 可以实现两个方向的灵活速度控制，而 VSTA 通过更好的数据利用率还进一步提高了默认的 1 倍性能。此外，通过与大型多模态模型配合，TempoVLA实现动态速度控制，在低风险阶段加速，在高风险阶段减速。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2606.06491v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
                     
                 </div>
             </div>
@@ -883,7 +934,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/lucidrains/disco-rl-pytorch" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">disco-rl-pytorch</span>
-                                    <span class="repo-stars">⭐ 14</span>
+                                    <span class="repo-stars">⭐ 15</span>
                                 </div>
                                 <p class="repo-desc">DiscoRL 的实施和探索，发现最先进的强化学习算法，David Silver 在 Deepmind 的最后一项工作</p>
                                 <div class="repo-meta">
@@ -922,6 +973,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/GNL324/polylens" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">polylens</span>
+                                    <span class="repo-stars">⭐ 4</span>
+                                </div>
+                                <p class="repo-desc">由人工智能驱动的预测市场和市场情报平台，用于钱包分析、机会发现、套利检测和定量研究。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-03</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/Boaxes/Reptile-Central-Database" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Reptile-Central-Database</span>
@@ -931,6 +996,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-06-01</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/MarwaneF98/gemini-math-grader" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">gemini-math-grader</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">自动化 AI 助教，使用 Gemini 3.5 Flash 对手写数学作业进行可视化评分和注释。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-03</span>
                                 </div>
                             </a>
                         </li>
@@ -950,14 +1029,14 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/GNL324/polylens" target="_blank" class="repo-link">
+                            <a href="https://github.com/michaeljb79-ai/A-Preamble-to-Automated-Intelligence-Authorization-Topology-and-Identity-Continuity" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">polylens</span>
+                                    <span class="repo-name">A-Preamble-to-Automated-Intelligence-Authorization-Topology-and-Identity-Continuity</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">由人工智能驱动的预测市场和市场情报平台，用于钱包分析、机会发现、套利检测和定量研究。</p>
+                                <p class="repo-desc">自动化智能研究出版物系列的全文。 Zenodo 的规范记录和 DOI。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-lang">None</span>
                                     <span class="repo-date">2026-06-03</span>
                                 </div>
                             </a>
@@ -973,34 +1052,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
                                     <span class="repo-date">2026-05-31</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/CaptainASIC/autonomous-agency-scale" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">autonomous-agency-scale</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">跨 7 个维度的自主 AI 机构测量框架</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-29</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/snwvlr/miku-bot" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">miku-bot</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">功能丰富的 Discord 机器人，具有多提供商 AI（Gemini、Claude、GPT）、自定义个性、100 多个斜线命令、审核、交互等。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">JavaScript</span>
-                                    <span class="repo-date">2026-05-30</span>
                                 </div>
                             </a>
                         </li>
