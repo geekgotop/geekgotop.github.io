@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-05 23:03:53</span>
+        <span class="generated-time">更新于 2026-06-06 23:01:36</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -858,7 +858,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="abstract-en">For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task sema...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">对于在现实世界中部署的人形机器人来说，命令空间（即任务规划和全身控制之间的接口）的选择至关重要。现有的全身控制器通常需要密集的运动学或空间参考，规划人员很难从任务语义中合成这些参考。相反，我们提出了一个紧凑、明确的界面，该界面直观、通用、模块化且具有足够的表现力，可以满足不同的操作技能。为此，我们引入了 HANDOFF，这是一个遵循此界面的单一人形全身控制器，并通过多教师 KL 蒸馏在上下文条件门控方案下蒸馏为来自三个互补专家的专家混合学生：具有安全过滤数据的全身运动跟踪、运动和跌倒恢复。在 Unitree G1 上，HANDOFF 与最先进的速度跟踪相匹配，并提供最大的稳健操作工作空间之一。我们通过多个自然语言驱动的任务部署进一步证明了硬件的可行性，这些任务由 VLM 驱动的代理规划器提供支持，无需特定于任务的数据或控制器微调。</p>
+                                    <p class="abstract-zh">对于在现实世界中部署的人形机器人来说，命令空间（即任务规划和全身控制之间的接口）的选择至关重要。现有的全身控制器通常需要密集的运动学或空间参考，规划人员很难从任务语义中合成这些参考。相反，我们提出了一个紧凑、明确的界面，该界面直观、通用、模块化且具有足够的表现力，可以满足不同的操作技能。为此，我们引入了 HANDOFF，这是一个遵循此界面的单一人形全身控制器，并在上下文条件门控方案下通过多教师 KL 蒸馏提炼成来自三个互补专家的专家混合学生：具有安全过滤数据的全身运动跟踪、运动和跌倒恢复。在 Unitree G1 上，HANDOFF 与最先进的速度跟踪相匹配，并提供最大的稳健操作工作空间之一。我们通过多个自然语言驱动的任务部署进一步证明了硬件的可行性，这些任务由 VLM 驱动的代理规划器提供支持，无需特定于任务的数据或控制器微调。</p>
                                 </details>
                             </div>
                             <a href="http://arxiv.org/abs/2606.06493v1" target="_blank" class="paper-link">阅读原文 →</a>
@@ -892,7 +892,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="abstract-en">Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VLAs) only inherit a single fixed speed from training demonstrations. Prior efforts to accelerate VLAs...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">机器人操纵在要求快速执行的低风险运输阶段和要求缓慢、精确运动的高风险接触阶段之间交替。然而，现有的视觉-语言-动作模型（VLA）仅继承了训练演示中的单个固定速度。之前通过模型压缩、KV 缓存重用或强化学习来加速 VLA 的努力只是将策略从一种固定速度转变为另一种固定速度，而减速几乎未被探索。我们观察到，每个预测动作的大小已经决定了机器人移动的速度，从而为可控的执行速度开辟了直接途径。我们将此观察结果转化为 TempoVLA，这是一个执行速度由显式条件控制的单个 VLA。 TempoVLA 结合了两个耦合组件。 (1) 数据侧变速轨迹增强 (VSTA)，通过合并或拆分动作来重新计时演示到任何目标速度，同时保留其运动语义。 (2) 为政策提供速度的模型侧调节机制。统计数据显示，VSTA 达到了要求的速度，且运动误差可以忽略不计。模拟和现实任务中的实验表明，TempoVLA 可以实现两个方向的灵活速度控制，而 VSTA 通过更好的数据利用率还进一步提高了默认的 1 倍性能。此外，通过与大型多模态模型配合，TempoVLA实现动态速度控制，在低风险阶段加速，在高风险阶段减速。</p>
+                                    <p class="abstract-zh">机器人操纵在要求快速执行的低风险运输阶段和要求缓慢、精确运动的高风险接触阶段之间交替。然而，现有的视觉-语言-动作模型（VLA）仅继承了训练演示中的单一固定速度。之前通过模型压缩、KV 缓存重用或强化学习来加速 VLA 的努力只是将策略从一种固定速度转变为另一种固定速度，而减速几乎未被探索。我们观察到，每个预测动作的大小已经决定了机器人移动的速度，从而为可控的执行速度开辟了直接途径。我们将此观察结果转化为 TempoVLA，这是一个执行速度由显式条件控制的单个 VLA。 TempoVLA 结合了两个耦合组件。 (1) 数据侧变速轨迹增强 (VSTA)，通过合并或拆分动作，同时保留其运动语义，将演示重新计时到任何目标速度。 (2) 为政策提供速度的模型侧调节机制。统计数据显示，VSTA 达到了要求的速度，且运动误差可以忽略不计。模拟和现实任务中的实验表明，TempoVLA 可以实现两个方向的灵活速度控制，而 VSTA 通过更好的数据利用率还进一步提高了默认的 1 倍性能。此外，通过与大型多模态模型配合，TempoVLA实现动态速度控制，在低风险阶段加速，在高风险阶段减速。</p>
                                 </details>
                             </div>
                             <a href="http://arxiv.org/abs/2606.06491v1" target="_blank" class="paper-link">阅读原文 →</a>
@@ -917,20 +917,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
-                            <a href="https://github.com/lucidrains/kalmanformer" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">kalmanformer</span>
-                                    <span class="repo-stars">⭐ 44</span>
-                                </div>
-                                <p class="repo-desc">卡尔曼变换器的实现，使用变压器对卡尔曼增益进行建模</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-30</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/lucidrains/disco-rl-pytorch" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">disco-rl-pytorch</span>
@@ -945,15 +931,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/vishal815/ResearchForge-Autonomous-Multi-Agent-Research-System" target="_blank" class="repo-link">
+                            <a href="https://github.com/GNL324/polylens" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">ResearchForge-Autonomous-Multi-Agent-Research-System</span>
+                                    <span class="repo-name">polylens</span>
                                     <span class="repo-stars">⭐ 5</span>
                                 </div>
-                                <p class="repo-desc">使用人工智能代理将任何主题转化为完整的研究报告。 ResearchForge 自主规划任务、搜索网络、分析信息并生成可行的见解。</p>
+                                <p class="repo-desc">由人工智能驱动的预测市场和市场情报平台，用于钱包分析、机会发现、套利检测和定量研究。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-05-30</span>
+                                    <span class="repo-date">2026-06-03</span>
                                 </div>
                             </a>
                         </li>
@@ -973,15 +959,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/GNL324/polylens" target="_blank" class="repo-link">
+                            <a href="https://github.com/chiru2409/Jarvis-AI-Biped-Robot" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">polylens</span>
+                                    <span class="repo-name">Jarvis-AI-Biped-Robot</span>
                                     <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc">由人工智能驱动的预测市场和市场情报平台，用于钱包分析、机会发现、套利检测和定量研究。</p>
+                                <p class="repo-desc">ESP32-S3 驱动的 AI 双足机器人具有语音交互、记忆、网络搜索、MCP 工具和自主助理功能。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-03</span>
+                                    <span class="repo-lang">C++</span>
+                                    <span class="repo-date">2026-06-05</span>
                                 </div>
                             </a>
                         </li>
@@ -996,6 +982,34 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-06-01</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Ericcc-Ma/learn-hermes-agent" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">learn-hermes-agent</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">从头开始构建自我进化的代理安全带 | 12 节课 | Anthropic/DeepSeek/Qwen/GLM</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-06</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/br1ge/TelegramAI" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">TelegramAI</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">由法学硕士提供支持的 Telegram AI 助手。支持对话式 AI、命令处理和无缝 Telegram 集成</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-06</span>
                                 </div>
                             </a>
                         </li>
@@ -1038,20 +1052,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
                                     <span class="repo-date">2026-06-03</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/behnia137/ai-for-beginners-visual" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ai-for-beginners-visual</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">🧠 在几分钟内了解 AI — 通过简单的视觉效果 + 日常类比解释 32 个核心 AI 概念，适合技术和非技术读者。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-05-31</span>
                                 </div>
                             </a>
                         </li>

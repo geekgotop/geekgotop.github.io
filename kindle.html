@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-06-05 23:03:53</p>
+            <p class="hero-meta">构建时间：2026-06-06 23:01:36</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
+                <p class="theme-name">今日主题：复盘整理日</p>
+                <p class="theme-focus">优先看 Archive 区：回顾本周输入并做摘要。</p>
+                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The only way to do great work is to love what you do.</p>
-                        <p class="quick-meta">— Steve Jobs</p>
+                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
+                        <p class="quick-meta">— Albert Einstein</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-main">lucidrains/kalmanformer</p>
-                        <p class="quick-meta">★ 44</p>
+                        <p class="quick-main">lucidrains/disco-rl-pytorch</p>
+                        <p class="quick-meta">★ 15</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,9 +217,9 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 abstraction，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 concurrency，再口述其含义一次。</li>
                         
-                        <li>趋势: 浏览 lucidrains/kalmanformer，记录 1 个可借鉴实现点。</li>
+                        <li>趋势: 浏览 lucidrains/disco-rl-pytorch，记录 1 个可借鉴实现点。</li>
                         
                         <li>深读: 阅读论文《HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers》摘要并写 2 句总结。</li>
                         
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">abstraction <span>/æbˈstrækʃn/</span></p>
-                    <p class="study-meaning">n. 抽象；提取</p>
+                    <p class="study-word">concurrency <span>/kənˈkʌrənsi/</span></p>
+                    <p class="study-meaning">n. 并发；并发性</p>
                     
-                    <p class="study-sentence">Abstraction reduces complexity by hiding unnecessary details.</p>
-                    <p class="study-sentence-zh">抽象通过隐藏不必要的细节来降低复杂性。</p>
+                    <p class="study-sentence">Concurrency allows multiple tasks to run in overlapping time periods.</p>
+                    <p class="study-sentence-zh">并发允许多个任务在重叠的时间段内运行。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -271,7 +271,7 @@ html, body {
             <div class="deep-preview">
                 
                     <p class="deep-title">HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers</p>
-                    <p class="deep-abstract">对于在现实世界中部署的人形机器人来说，命令空间（即任务规划和全身控制之间的接口）的选择至关重要。现有的全身控制器通常需要密集的运动学或空间参考，规划人员很难从任务语义中合成这些参考。相反，我们提出了一个紧凑、明确的界面，该界面直观、通用、模块化且具有足够的表现力，可以满足不同的操作技能。为此，我们引入了 HANDOFF，这是一个遵循此界面的单一人形全身控制器，并通过多教师 KL 蒸馏在上下文条件门控方案下蒸馏为来自三个互补专家的专家混合学生：具有安全过滤数据的全身运动跟踪、运动和跌倒恢复。在 Unitree G1 上，HANDOFF 与最先进的速度跟踪相匹配，并提供最大的稳健操作工作空间之一。我们通过多个自然语言驱动的任务部署进一步证明了硬件的可行性，这些任务由 VLM 驱动的代理规划器提供支持，无需特定于任务的数据或控制器微调。</p>
+                    <p class="deep-abstract">对于在现实世界中部署的人形机器人来说，命令空间（即任务规划和全身控制之间的接口）的选择至关重要。现有的全身控制器通常需要密集的运动学或空间参考，规划人员很难从任务语义中合成这些参考。相反，我们提出了一个紧凑、明确的界面，该界面直观、通用、模块化且具有足够的表现力，可以满足不同的操作技能。为此，我们引入了 HANDOFF，这是一个遵循此界面的单一人形全身控制器，并在上下文条件门控方案下通过多教师 KL 蒸馏提炼成来自三个互补专家的专家混合学生：具有安全过滤数据的全身运动跟踪、运动和跌倒恢复。在 Unitree G1 上，HANDOFF 与最先进的速度跟踪相匹配，并提供最大的稳健操作工作空间之一。我们通过多个自然语言驱动的任务部署进一步证明了硬件的可行性，这些任务由 VLM 驱动的代理规划器提供支持，无需特定于任务的数据或控制器微调。</p>
                     
                     <p class="deep-takeaway">要点：对于在现实世界中部署的人形机器人来说，命令空间（即任务规划和全身控制之间的接口）的选择至关重要。现有的全身控制器通常需要密集的运动学或空间参考，规划人员很难从任务语义中合成这些参考。相反，我们提出了一个紧凑、明确的界面，该界面直观、通用、模块化且具有足够的表现力，可以满足不同的操作技能。为此，我们引入了 HANDOFF...</p>
                     
@@ -284,18 +284,13 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>lucidrains/kalmanformer</strong> (★ 44)
-                        <p>卡尔曼变换器的实现，使用变压器对卡尔曼增益进行建模</p>
-                    </li>
-                    
-                    <li>
                         <strong>lucidrains/disco-rl-pytorch</strong> (★ 15)
                         <p>DiscoRL 的实施和探索，发现最先进的强化学习算法，David Silver 在 Deepmind 的最后一项工作</p>
                     </li>
                     
                     <li>
-                        <strong>vishal815/ResearchForge-Autonomous-Multi-Agent-Research-System</strong> (★ 5)
-                        <p>使用人工智能代理将任何主题转化为完整的研究报告。 ResearchForge 自主规划任务、搜索网络、分析信息并生成可行的见解。</p>
+                        <strong>GNL324/polylens</strong> (★ 5)
+                        <p>由人工智能驱动的预测市场和市场情报平台，用于钱包分析、机会发现、套利检测和定量研究。</p>
                     </li>
                     
                     <li>
@@ -304,8 +299,13 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>GNL324/polylens</strong> (★ 4)
-                        <p>由人工智能驱动的预测市场和市场情报平台，用于钱包分析、机会发现、套利检测和定量研究。</p>
+                        <strong>chiru2409/Jarvis-AI-Biped-Robot</strong> (★ 4)
+                        <p>ESP32-S3 驱动的 AI 双足机器人具有语音交互、记忆、网络搜索、MCP 工具和自主助理功能。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Boaxes/Reptile-Central-Database</strong> (★ 3)
+                        <p>用于虚构爬虫供应业务的全栈 CRUD Web 应用程序 - Streamlit、MySQL、Google Cloud Run，以及由 GPT-4o mini 和 LlamaIndex 提供支持的 AI 聊天机器人（RAG + 自然语言 SQL）。</p>
                     </li>
                     
                 </ul>
