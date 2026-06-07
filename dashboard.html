@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-06 23:01:36</span>
+        <span class="generated-time">更新于 2026-06-07 23:00:52</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -858,7 +858,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="abstract-en">For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task sema...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">对于在现实世界中部署的人形机器人来说，命令空间（即任务规划和全身控制之间的接口）的选择至关重要。现有的全身控制器通常需要密集的运动学或空间参考，规划人员很难从任务语义中合成这些参考。相反，我们提出了一个紧凑、明确的界面，该界面直观、通用、模块化且具有足够的表现力，可以满足不同的操作技能。为此，我们引入了 HANDOFF，这是一个遵循此界面的单一人形全身控制器，并在上下文条件门控方案下通过多教师 KL 蒸馏提炼成来自三个互补专家的专家混合学生：具有安全过滤数据的全身运动跟踪、运动和跌倒恢复。在 Unitree G1 上，HANDOFF 与最先进的速度跟踪相匹配，并提供最大的稳健操作工作空间之一。我们通过多个自然语言驱动的任务部署进一步证明了硬件的可行性，这些任务由 VLM 驱动的代理规划器提供支持，无需特定于任务的数据或控制器微调。</p>
+                                    <p class="abstract-zh">For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics.相反，我们提出了一个紧凑、明确的界面，该界面直观、通用、模块化且具有足够的表现力，可以满足不同的操作技能。为此，我们引入了 HANDOFF，这是一个遵循此界面的单一人形全身控制器，并通过多教师 KL 蒸馏在上下文条件门控方案下蒸馏为来自三个互补专家的专家混合学生：具有安全过滤数据的全身运动跟踪、运动和跌倒恢复。在 Unitree G1 上，HANDOFF 与最先进的速度跟踪相匹配，并提供最大的稳健操作工作空间之一。我们通过多个自然语言驱动的任务部署进一步证明了硬件的可行性，这些任务由 VLM 驱动的代理规划器提供支持，无需特定于任务的数据或控制器微调。</p>
                                 </details>
                             </div>
                             <a href="http://arxiv.org/abs/2606.06493v1" target="_blank" class="paper-link">阅读原文 →</a>
@@ -875,7 +875,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="abstract-en">Code language models need repository-level context to resolve imports, APIs, and project conventions. Existing methods inject this knowledge as long inputs (retrieved through RAG or dependency analysis) or through per-repository fine-tuning and LoRA -- costly at repository scale and brittle to evolv...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">代码语言模型需要存储库级上下文来解析导入、API 和项目约定。现有方法将这些知识作为长输入（通过 RAG 或依赖性分析检索）或通过每个存储库微调和 LoRA 注入——在存储库规模上成本高昂，并且对于不断发展的代码库来说很脆弱。我们引入了 Code2LoRA，这是一个超网络框架，可生成特定于存储库的 LoRA 适配器，以零推理时间令牌开销有效地注入存储库知识。 Code2LoRA支持两种使用场景：Code2LoRA-Static将单个存储库快照转换为适配器，适合稳定代码库的理解；而 Code2LoRA-Evo 则维护一个由 GRU 隐藏状态支持的适配器，该状态根据代码差异进行更新，适合不断发展的代码库的主动开发。为了根据参数高效的微调基线评估 Code2LoRA，我们构建了 RepoPeftBench，这是一个包含 604 个 Python 存储库的基准测试，具有两个轨道：一个包含 40K 训练和 12K 测试断言完成任务的静态轨道，以及一个包含 215K 提交衍生训练和 87K 提交衍生测试任务的演化轨道。在静态赛道上，Code2LoRA-Static 实现了 63.8% 的跨存储库和 66.2% 的存储库内精确匹配，匹配每个存储库的 LoRA 上限；在进化轨迹上，Code2LoRA-Evo 实现了 60.3% 的跨存储库精确匹配（比单个共享 LoRA 提高了 5.2 pp）。 Code2LoRA的代码可以在https://anonymous.4open.science/r/code2lora-6857找到；模型检查点和 RepoPeftBench 数据集可以在 https://huggingface.co/code2lora 上找到。</p>
+                                    <p class="abstract-zh">代码语言模型需要存储库级上下文来解析导入、API 和项目约定。 Existing methods inject this knowledge as long inputs (retrieved through RAG or dependency analysis) or through per-repository fine-tuning and LoRA -- costly at repository scale and brittle to evolving codebases. We introduce Code2LoRA, a hypernetwork framework that generates repository-specific LoRA adapters, effectively injecting repository knowledge with zero inference-time token overhead. Code2LoRA supports two usage scenarios: Code2LoRA-Static converts a single repository snapshot into an adapter, suitable for comprehension of stable codebases; while Code2LoRA-Evo maintains an adapter backed by a GRU hidden state updated per code diff, suitable for active development of evolving codebases. To evaluate Code2LoRA against parameter-efficient fine-tuning baselines, we build RepoPeftBench, a benchmark of 604 Python repositories with two tracks: a static track with 40K training and 12K test assertion-completion tasks, and an evolution track with 215K commit-derived training and 87K commit-derived test tasks. On the static track, Code2LoRA-Static achieves 63.8% cross-repo and 66.2% in-repo exact match, matching the per-repository LoRA upper bound; on the evolution track, Code2LoRA-Evo achieves 60.3% cross-repo exact match (+5.2 pp over a single shared LoRA). Code2LoRA&#39;s code can be found at https://anonymous.4open.science/r/code2lora-6857; the model checkpoints and RepoPeftBench datasets can be found at https://huggingface.co/code2lora.</p>
                                 </details>
                             </div>
                             <a href="http://arxiv.org/abs/2606.06492v1" target="_blank" class="paper-link">阅读原文 →</a>
@@ -892,7 +892,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="abstract-en">Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VLAs) only inherit a single fixed speed from training demonstrations. Prior efforts to accelerate VLAs...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">机器人操纵在要求快速执行的低风险运输阶段和要求缓慢、精确运动的高风险接触阶段之间交替。然而，现有的视觉-语言-动作模型（VLA）仅继承了训练演示中的单一固定速度。之前通过模型压缩、KV 缓存重用或强化学习来加速 VLA 的努力只是将策略从一种固定速度转变为另一种固定速度，而减速几乎未被探索。我们观察到，每个预测动作的大小已经决定了机器人移动的速度，从而为可控的执行速度开辟了直接途径。我们将此观察结果转化为 TempoVLA，这是一个执行速度由显式条件控制的单个 VLA。 TempoVLA 结合了两个耦合组件。 (1) 数据侧变速轨迹增强 (VSTA)，通过合并或拆分动作，同时保留其运动语义，将演示重新计时到任何目标速度。 (2) 为政策提供速度的模型侧调节机制。统计数据显示，VSTA 达到了要求的速度，且运动误差可以忽略不计。模拟和现实任务中的实验表明，TempoVLA 可以实现两个方向的灵活速度控制，而 VSTA 通过更好的数据利用率还进一步提高了默认的 1 倍性能。此外，通过与大型多模态模型配合，TempoVLA实现动态速度控制，在低风险阶段加速，在高风险阶段减速。</p>
+                                    <p class="abstract-zh">机器人操纵在要求快速执行的低风险运输阶段和要求缓慢、精确运动的高风险接触阶段之间交替。然而，现有的视觉-语言-动作模型（VLA）仅继承了训练演示中的单个固定速度。之前通过模型压缩、KV 缓存重用或强化学习来加速 VLA 的努力只是将策略从一种固定速度转变为另一种固定速度，而减速几乎未被探索。 We observe that the magnitude of each predicted action already governs how fast the robot moves, opening a direct route to controllable execution speed. We turn this observation into TempoVLA, a single VLA whose execution speed is controlled by an explicit condition. TempoVLA combines two coupled components. (1) A data-side Variable-Speed Trajectory Augmentation (VSTA) that re-times demonstration to any target speed by merging or splitting actions while preserving its motion semantics. (2) A model-side conditioning mechanism that feeds the speed to the policy. Statistics show that VSTA reaches the requested speed with negligible motion error. Experiments in simulation and on real-world tasks demonstrate that TempoVLA achieves flexible speed control in both directions, while VSTA additionally boosts the default $1\times$ performance via better data utilization. Furthermore, by cooperating with a large multimodal model, TempoVLA realizes dynamic speed control, accelerating through low-risk phases and decelerating for high-risk ones.</p>
                                 </details>
                             </div>
                             <a href="http://arxiv.org/abs/2606.06491v1" target="_blank" class="paper-link">阅读原文 →</a>
@@ -920,12 +920,26 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/lucidrains/disco-rl-pytorch" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">disco-rl-pytorch</span>
-                                    <span class="repo-stars">⭐ 15</span>
+                                    <span class="repo-stars">⭐ 16</span>
                                 </div>
                                 <p class="repo-desc">DiscoRL 的实施和探索，发现最先进的强化学习算法，David Silver 在 Deepmind 的最后一项工作</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-06-02</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/DivyamSamarwal/ai-resume-score" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ai-resume-score</span>
+                                    <span class="repo-stars">⭐ 6</span>
+                                </div>
+                                <p class="repo-desc">An open-source, multi-model AI recruitment tool that evaluates software engineering resumes against a rigorous 100-point rubric, featuring deep GitHub integration and client-side privacy.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-06-06</span>
                                 </div>
                             </a>
                         </li>
@@ -945,15 +959,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/ik-awais/Octagon" target="_blank" class="repo-link">
+                            <a href="https://github.com/FareedKhan-dev/long-running-agent" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Octagon</span>
+                                    <span class="repo-name">long-running-agent</span>
                                     <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc">⬡ Octagon——FAST NUCES 8 名人工智能学生的协作学习空间。从第一天开始就进行冲刺、拉取请求、代码审查和实际工作流程。</p>
+                                <p class="repo-desc">A step by step implementation to build an agent that runs for week to complete a task and self improve.</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">C++</span>
-                                    <span class="repo-date">2026-05-31</span>
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-03</span>
                                 </div>
                             </a>
                         </li>
@@ -964,10 +978,24 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">Jarvis-AI-Biped-Robot</span>
                                     <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc">ESP32-S3 驱动的 AI 双足机器人具有语音交互、记忆、网络搜索、MCP 工具和自主助理功能。</p>
+                                <p class="repo-desc">ESP32-S3 powered AI biped robot with voice interaction, memory, web search, MCP tools, and autonomous assistant capabilities.</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">C++</span>
                                     <span class="repo-date">2026-06-05</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/michaeljb79-ai/A-Preamble-to-Automated-Intelligence-Authorization-Topology-and-Identity-Continuity" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">A-Preamble-to-Automated-Intelligence-Authorization-Topology-and-Identity-Continuity</span>
+                                    <span class="repo-stars">⭐ 4</span>
+                                </div>
+                                <p class="repo-desc">自动化智能研究出版物系列的全文。 Zenodo 的规范记录和 DOI。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-06-03</span>
                                 </div>
                             </a>
                         </li>
@@ -987,12 +1015,26 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/KorroAi/mue-x" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">mue-x</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">Self-evolving AI agent that rewrites its own source code in real-time. 6 mutation strategies. 7 autonomous drives. GitHub absorption. Built by KORRO, 100% AI company.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-07</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/Ericcc-Ma/learn-hermes-agent" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">learn-hermes-agent</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">从头开始构建自我进化的代理安全带 | 12 节课 | Anthropic/DeepSeek/Qwen/GLM</p>
+                                <p class="repo-desc">Build a Self-Evolving Agent Harness from Scratch | 12 lessons | Anthropic/DeepSeek/Qwen/GLM</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-06-06</span>
@@ -1001,57 +1043,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/br1ge/TelegramAI" target="_blank" class="repo-link">
+                            <a href="https://github.com/bhupinder2121221/Progressive-GAN" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">TelegramAI</span>
+                                    <span class="repo-name">Progressive-GAN</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">由法学硕士提供支持的 Telegram AI 助手。支持对话式 AI、命令处理和无缝 Telegram 集成</p>
+                                <p class="repo-desc">Custom trainable Progressive GAN for High Resolution Image Generation</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-06</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/MarwaneF98/gemini-math-grader" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">gemini-math-grader</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">自动化 AI 助教，使用 Gemini 3.5 Flash 对手写数学作业进行可视化评分和注释。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-03</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/frangelbarrera/awesome-ai-agents" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">awesome-ai-agents</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">2026 年最先进的人工智能代理、框架和自主工作流程的精选列表。重点关注生产就绪工具、OSINT 和编码助手。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-06-01</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/michaeljb79-ai/A-Preamble-to-Automated-Intelligence-Authorization-Topology-and-Identity-Continuity" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">A-Preamble-to-Automated-Intelligence-Authorization-Topology-and-Identity-Continuity</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">自动化智能研究出版物系列的全文。 Zenodo 的规范记录和 DOI。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-06-03</span>
+                                    <span class="repo-date">2026-06-07</span>
                                 </div>
                             </a>
                         </li>
