@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-09 23:15:11</span>
+        <span class="generated-time">更新于 2026-06-10 23:22:33</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">OmniGameArena:<sup class='ipa'>/omnigamearena*/</sup> A Unified UE5 Benchmark<sup class='ipa'>/ˈbɛnʧˌmɑrk/</sup> for VLM Game Agents with Improvement<sup class='ipa'>/ˌɪmˈpruvmənt/</sup> Dynamics<sup class='ipa'>/daɪˈnæmɪks/</sup></h4>
+                            <h4 class="paper-title">A Unifying<sup class='ipa'>/ˈjunəˌfaɪɪŋ/</sup> Lens on Supervised<sup class='ipa'>/ˈsupərˌvaɪzd/</sup> Fine-Tuning<sup class='ipa'>/finetuning*/</sup> Through Target Distribution<sup class='ipa'>/ˌdɪstrəˈbjuʃən/</sup> Design</h4>
                             <div class="paper-meta">
-                                <span class="authors">Mingxian Lin, Shengju Qian, Yuqi Liu</span>
-                                <span class="date">2026-06-08</span>
-                                <span class="categories">cs.CV | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Vision-language model (VLM) agents are increasingly deployed in interactive game environments. Yet game benchmarks for VLM agents typically report a single first-attempt score per (agent, game) pair, focus on single-agent Solo play, and lack unified protocols for evaluating heterogeneous agent class...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">视觉语言模型（VLM）代理越来越多地部署在交互式游戏环境中。然而，VLM 代理的游戏基准通常会报告每个（代理、游戏）对的单个首次尝试分数，专注于单代理单人游戏，并且缺乏在相同基础上评估异构代理类别（商业 VLM、开放权重 VLM 和专门游戏策略）的统一协议。我们通过 OmniGameArena 和 Improvement Dynamics Curve (IDC) 来解决这些差距。OmniGameArena 是 12 款新建虚幻引擎 5 游戏的实时基准，涵盖单人游戏 (7)、PvP (3) 和合作游戏 (2)，具有统一的动作界面；改进动态曲线 (IDC) 是一种代理反射工具，使用工具的反射器 LLM 在多个回合中自动细化有界技能提示。除了冷启动排行榜分数之外，IDC 还为每个（代理、游戏）对公开了两个额外的可观察数据：分数如何在反思轮次中演变，以及学到的技能在保留任务变体上的表现如何。我们报告了冷启动排行榜上 12 个 VLM 代理和 IDC 下的 4 个顶级代理的这些观察结果。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2606.09826v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">An Agency-Transferring<sup class='ipa'>/agencytransferring*/</sup> Model-Free<sup class='ipa'>/modelfree*/</sup> Policy Enhancement<sup class='ipa'>/ɛnˈhænsmənt/</sup> Technique<sup class='ipa'>/tɛkˈnik/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Anton Bolychev, Georgiy Malaniya, Sinan Ibrahim</span>
-                                <span class="date">2026-06-08</span>
+                                <span class="authors">Tong Xie, Yuanhao Ban, Yunqi Hong</span>
+                                <span class="date">2026-06-09</span>
                                 <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Training reinforcement learning (RL) policies from scratch is   costly: it requires careful reward and environment design,   extensive tuning, and substantial computation.   Yet many control problems already have a functional but   suboptimal policy available as a baseline.   This paper proposes a m...</p>
+                                <p class="abstract-en">Supervised fine-tuning (SFT) typically maximizes the likelihood of every token in a demonstrated trajectory. However, an observed token can be non-unique, noisy, or misaligned with the model prior. Strictly fitting toward this one-hot target may be suboptimal, especially when the pretrained model en...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">从头开始训练强化学习（RL）策略的成本很高：它需要仔细的奖励和环境设计、广泛的调整和大量的计算。   然而，许多控制问题已经有一个可行但次优的策略作为基线。   本文提出了一种将这样的基线嵌入到强化学习训练过程中的方法，同时相对于从头开始的方法提高了训练效率，并产生了优于基线的学习策略。   在每个步骤中，该方法都会在基线策略和可训练的学习策略之间进行仲裁，最初强烈依赖基线策略，然后逐步将代理转移到学习策略。   训练结束时，学习策略是一个独立的神经网络，无需基线策略支持即可运行。   该论文正式阐述了基线策略发挥作用的含义：在该策略下，智能体达到设定的目标并很有可能保持该目标。   所提出的仲裁机制旨在在训练期间利用这一特性，从训练一开始就产生较高的目标达成率。   理论分析在规定的假设下提供了对这种行为的正式解释，并将其扩展到最终的无基线制度，其中为独立学习策略的目标达到概率导出了明确的下限。   连续控制基准的实证结果表明，所提出的方法实现了与竞争方法相匹配或超过的回报，同时在比较方法中的整个训练过程中保持了最高的目标达成率——包括在学习政策在没有任何基线支持的情况下运行的最后阶段。</p>
+                                    <p class="abstract-zh">监督微调（SFT）通常会最大化每个标记在演示轨迹中的可能性。然而，观察到的标记可能是不唯一的、有噪声的或与先验模型不一致的。严格拟合这一单一热点目标可能不是最理想的，特别是当预训练模型编码了丰富的先验知识时。在这项工作中，我们将 SFT 重新解释为目标分布设计：我们不再只研究损失目标，而是分析损失驱动模型匹配的代币级别目标。我们引入了 Q-target 框架，它将 SFT 监督分解为两个明确的选择：（1）对观察到的 token 的依赖程度如何，以及（2）如何在替代方案上分配剩余的概率质量。这种观点将许多现有的 SFT 变体统一为目标分布 Q 的隐式选择。基于这种观点，我们提出了 Target-SFT，它直接从所需的目标分布构建训练目标。该方法在评估的十个推理数据集模型设置中始终表现出色，显示了这种基于目标的方法的有效性。总的来说，我们的公式揭示了 SFT 训练的更基本的设计原则，并为 SFT 目标开辟了更广阔的搜索空间。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.09825v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.11189v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Causally<sup class='ipa'>/causally*/</sup> Evaluating<sup class='ipa'>/ɪˈvæljuˌeɪtɪŋ/</sup> the Learnability<sup class='ipa'>/learnability*/</sup> of Formal Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Tasks</h4>
+                            <h4 class="paper-title">EEVEE: Towards Test-time<sup class='ipa'>/testtime*/</sup> Prompt Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> in the Real World for Self-Improving<sup class='ipa'>/selfimproving*/</sup> Agents</h4>
                             <div class="paper-meta">
-                                <span class="authors">Vésteinn Snæbjarnarson, Anej Svete, Josef Valvoda</span>
-                                <span class="date">2026-06-08</span>
-                                <span class="categories">cs.CL | cs.FL</span>
+                                <span class="authors">Weixian Xu, Shilong Liu, Mengdi Wang</span>
+                                <span class="date">2026-06-09</span>
+                                <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Language models, as multi-task learners, acquire a wide range of abilities during training. A fundamental question is how much task-specific data is needed to learn a given task. Answering this for natural language is difficult: tasks are hard to delineate and can confound one another. To rigorously...</p>
+                                <p class="abstract-en">In this paper, we propose EEVEE, the first multi-dataset test-time prompt learning framework for LLM agents, enabling test-time prompt learning under real-world task streams. Existing methods are largely designed for single-dataset settings, while real-world applications require models to handle het...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">语言模型作为多任务学习器，在训练过程中获得广泛的能力。一个基本问题是需要多少特定于任务的数据来学习给定的任务。对于自然语言来说回答这个问题是很困难的：任务很难描述并且可能会相互混淆。为了严格研究数据频率和可学习性之间的关系，我们转向使用从概率有限自动机导出的形式语言的受控设置。这些作为方法论测试平台，证明标准相关评估实践存在固有缺陷。为了进行因果分析，我们引入了分箱半环，这是一种代数对象，可以让我们控制目标属性在采样语料库中出现的频率。我们将实验流程制定为因果图形模型，并导出分解的 Kullback-Leibler 散度度量来衡量特定子任务的可学习性。我们的实验表明，在没有因果干预的情况下评估可学习性会因相关分析中的混杂因素而导致错误的结论，并作为对自然语言环境中相关陷阱的警告。</p>
+                                    <p class="abstract-zh">在本文中，我们提出了 EEVEE，这是第一个用于 LLM 代理的多数据集测试时提示学习框架，可在实际任务流下实现测试时提示学习。现有的方法主要是针对单数据集设置而设计的，而现实世界的应用程序需要模型来处理从多个数据集、域和任务分布中提取的异构输入流，这限制了它们的实际适用性。为了减轻跨数据集干扰，EEVEE 引入了一个路由器，它将传入输入划分为任务集群，并将它们分配给合适的提示配置。该设计通过路由器提示协同进化策略进行优化，该策略采用交错的路由器和提示学习阶段来解决它们的相互依赖性。跨多个数据集的实验表明，该框架提高了异构数据流下的鲁棒性，同时保持单基准学习能力和效率。具体而言，EEVEE 比 Qwen3-4B-Instruct 和 DeepSeek-V3.2 的平均多基准分数提高了 10.38 和 24.32 分，超过 SOTA 方法 GEPA 和 ACE 高达 37.2% 和 48.2%。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.09822v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.11182v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Data Journalist<sup class='ipa'>/ˈʤərnəlɪst/</sup> Agent: Transforming<sup class='ipa'>/trænsˈfɔrmɪŋ/</sup> Data into Verifiable<sup class='ipa'>/ˈvɛrəˌfaɪəbəl/</sup> Multimodal<sup class='ipa'>/multimodal*/</sup> Stories</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Kevin Qinghong Lin, Batu EI, Yuhong Shi</span>
+                                <span class="date">2026-06-09</span>
+                                <span class="categories">cs.CV | cs.CL</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Data tells stories that shape society; the data journalist&#39;s job is to turn raw information into stories non-experts can trust. A high-quality news feature takes a newsroom team weeks: hunting for context, running statistics, choosing an angle, and designing visuals. Recent agents handle individual ...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">数据讲述塑造社会的故事；数据记者的工作是将原始信息转化为非专家可以信任的故事。高质量的新闻专题需要新闻编辑室团队花费数周的时间：寻找背景、运行统计数据、选择角度和设计视觉效果。最近的代理很好地处理了各个步骤：数据科学代理关闭了分析循环，而设计代理则合成了漂亮的网站。但特工可以充当端到端的数据记者吗？我们引入了数据记者代理 (Data2Story)，这是一个多代理框架，可将专业角色编排到单个虚拟新闻编辑室中。 Data2Story 贡献了两项创新。 (i) 声明有证据支持：检查员将每个数字、角度和资产与数据、代码或外部参考联系起来。 (ii) 文章是多模态生成的：Data2Story 不是默认使用纯文本和静态图表，而是推理读者想要看到的内容，然后部署多模态工具，例如地理交互式地图和音乐音频。我们根据 18 篇文章评估 Data2Story，每篇文章都与最初发表的专家文章配对，沿着四个轴：（a）人类代理角度覆盖； (b) 由 53 名参与者在五个维度进行的评估； (c) 作为法官的计算机使用代理，是读者如何浏览互动文章的节省成本的代理； (d) 可验证性，编码验证器根据数据重新执行语句并根据引用检查声明。 Data2Story 制作具有竞争力、证据可追溯的多媒体故事，在透明度和可审核性方面具有特殊优势。人类文章在编辑角度、创意设计和表达方面保持着优势。我们将 Data2Story 定位为记者的合作者，实现更多基于证据、透明且可验证的报道。代码和演示可在 https://data2story.github.io 获取。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2606.11176v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/KorroAi/mue-x" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">mue-x</span>
-                                    <span class="repo-stars">⭐ 12</span>
+                                    <span class="repo-stars">⭐ 13</span>
                                 </div>
                                 <p class="repo-desc">自我进化的人工智能代理，实时重写自己的源代码。 6种突变策略。 7 个自动驾驶。 GitHub吸收。由 100% 人工智能公司 KORRO 打造。</p>
                                 <div class="repo-meta">
@@ -931,28 +931,28 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/FareedKhan-dev/long-running-agent" target="_blank" class="repo-link">
+                            <a href="https://github.com/lucidrains/ASAC" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">long-running-agent</span>
-                                    <span class="repo-stars">⭐ 9</span>
+                                    <span class="repo-name">ASAC</span>
+                                    <span class="repo-stars">⭐ 8</span>
                                 </div>
-                                <p class="repo-desc">逐步实施构建一个运行一周的代理来完成任务并自我改进。</p>
+                                <p class="repo-desc">基于注意力模式的注意力控制（ASAC）的实现，一种认知启发的变压器注意力管理方法</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-03</span>
+                                    <span class="repo-date">2026-06-09</span>
                                 </div>
                             </a>
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/lucidrains/ASAC" target="_blank" class="repo-link">
+                            <a href="https://github.com/PolyHelper/polyhelper" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">ASAC</span>
-                                    <span class="repo-stars">⭐ 7</span>
+                                    <span class="repo-name">polyhelper</span>
+                                    <span class="repo-stars">⭐ 8</span>
                                 </div>
-                                <p class="repo-desc">基于注意力模式的注意力控制（ASAC）的实现，一种认知启发的变压器注意力管理方法</p>
+                                <p class="repo-desc">PolyHelper V4 — 认知人工智能外骨骼。    多人工智能编排平台，实现更安全的人类决策</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-lang">JavaScript</span>
                                     <span class="repo-date">2026-06-09</span>
                                 </div>
                             </a>
@@ -968,20 +968,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-06-06</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/GNL324/polylens" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">polylens</span>
-                                    <span class="repo-stars">⭐ 5</span>
-                                </div>
-                                <p class="repo-desc">由人工智能驱动的预测市场和市场情报平台，用于钱包分析、机会发现、套利检测和定量研究。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-03</span>
                                 </div>
                             </a>
                         </li>
@@ -1015,20 +1001,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/michaeljb79-ai/A-Preamble-to-Automated-Intelligence-Authorization-Topology-and-Identity-Continuity" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">A-Preamble-to-Automated-Intelligence-Authorization-Topology-and-Identity-Continuity</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">自动化智能研究出版物系列的全文。 Zenodo 的规范记录和 DOI。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-06-03</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/br1ge/TelegramAI" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">TelegramAI</span>
@@ -1052,6 +1024,34 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-06-07</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/epappas/pi-agentic-system" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">pi-agentic-system</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">如何使用子代理构建安全安全带； Real Pi 子代理、每次生成、工具调用和路由的 Cedar 授权</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-07</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/aryanap07/Timeless" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Timeless</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">在提示之前，有架构。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Jupyter Notebook</span>
+                                    <span class="repo-date">2026-06-04</span>
                                 </div>
                             </a>
                         </li>
