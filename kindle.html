@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-06-10 23:22:33</p>
+            <p class="hero-meta">构建时间：2026-06-11 23:18:47</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
-                        <p class="quick-meta">— Albert Einstein</p>
+                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                        <p class="quick-meta">— Chinese Proverb</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">KorroAi/mue-x</p>
-                        <p class="quick-meta">★ 13</p>
+                        <p class="quick-meta">★ 14</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 encapsulation，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 KorroAi/mue-x，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《A Unifying Lens on Supervised Fine-Tuning Through Target Distribution Design》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Reroute, Don&#39;t Remove: Recoverable Visual Token Routing for Vision-Language Models》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
-                    <p class="study-meaning">n. 递归；循环</p>
+                    <p class="study-word">encapsulation <span>/ɪnˌkæpsjuˈleɪʃn/</span></p>
+                    <p class="study-meaning">n. 封装；包装</p>
                     
-                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
-                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
+                    <p class="study-sentence">Encapsulation hides the internal state of an object from the outside.</p>
+                    <p class="study-sentence-zh">封装将对象的内部状态对外部隐藏。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">A Unifying Lens on Supervised Fine-Tuning Through Target Distribution Design</p>
-                    <p class="deep-abstract">监督微调（SFT）通常会最大化每个标记在演示轨迹中的可能性。然而，观察到的标记可能是不唯一的、有噪声的或与先验模型不一致的。严格拟合这一单一热点目标可能不是最理想的，特别是当预训练模型编码了丰富的先验知识时。在这项工作中，我们将 SFT 重新解释为目标分布设计：我们不再只研究损失目标，而是分析损失驱动模型匹配的代币级别目标。我们引入了 Q-target 框架，它将 SFT 监督分解为两个明确的选择：（1）对观察到的 token 的依赖程度如何，以及（2）如何在替代方案上分配剩余的概率质量。这种观点将许多现有的 SFT 变体统一为目标分布 Q 的隐式选择。基于这种观点，我们提出了 Target-SFT，它直接从所需的目标分布构建训练目标。该方法在评估的十个推理数据集模型设置中始终表现出色，显示了这种基于目标的方法的有效性。总的来说，我们的公式揭示了 SFT 训练的更基本的设计原则，并为 SFT 目标开辟了更广阔的搜索空间。</p>
+                    <p class="deep-title">Reroute, Don&#39;t Remove: Recoverable Visual Token Routing for Vision-Language Models</p>
+                    <p class="deep-abstract">视觉语言模型 (VLM) 将图像投影成数百到数千个视觉标记，使得解码器推理在注意力计算和 KV 缓存内存中变得昂贵。现有的视觉标记减少方法很大程度上遵循排序和删除范式：它们对视觉标记进行评分，保留紧凑的子集，并永久丢弃其余的。我们证明这种不可逆的行为是脆弱的，因为视觉标记的重要性随着解码器深度的变化而变化；在某一阶段排名较低的令牌可能会在后面的层中变得相关，特别是对于接地敏感的查询。我们提出了 Reroute，这是一个无需培训的插件，可以用可恢复的路由代替删除。在每个路由阶段，选定的视觉令牌通过解码器块，而延迟令牌绕过该阶段并在下一个路由决策时重新进入候选池。重新路由重用现有的注意力评分排名规则和阶段式调度，保留其增强的修剪方法的理论 TFLOP 和 KV 缓存预算类别。在 LLaVA-1.5 和 Qwen 主干上的 FastV、PDrop 和 Nüwa 变体中，重新路由可改善激进令牌减少下的接地，同时保持总体 VQA 性能。这些结果表明，VLM 令牌减少不应仅被视为不可逆的修剪，还应被视为可恢复的路由。代码可以在这里找到：https://github.com/elmma/mllm-reroute/</p>
                     
-                    <p class="deep-takeaway">要点：监督微调（SFT）通常会最大化每个标记在演示轨迹中的可能性。然而，观察到的标记可能是不唯一的、有噪声的或与先验模型不一致的。严格拟合这一单一热点目标可能不是最理想的，特别是当预训练模型编码了丰富的先验知识时。在这项工作中，我们将 SFT 重新解释为目标分布设计：我们不再只研究损失目标，而是分析损失驱动模型匹配的代币级别...</p>
+                    <p class="deep-takeaway">要点：视觉语言模型 (VLM) 将图像投影成数百到数千个视觉标记，使得解码器推理在注意力计算和 KV 缓存内存中变得昂贵。现有的视觉标记减少方法很大程度上遵循排序和删除范式：它们对视觉标记进行评分，保留紧凑的子集，并永久丢弃其余的。我们证明这种不可逆的行为是脆弱的，因为视觉标记的重要性随着解码器深度的变化而变化；在某一阶段排...</p>
                     
                     <p class="deep-meta">预计阅读 1 分钟</p>
                 
@@ -284,18 +284,13 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>KorroAi/mue-x</strong> (★ 13)
+                        <strong>KorroAi/mue-x</strong> (★ 14)
                         <p>自我进化的人工智能代理，实时重写自己的源代码。 6种突变策略。 7 个自动驾驶。 GitHub吸收。由 100% 人工智能公司 KORRO 打造。</p>
                     </li>
                     
                     <li>
-                        <strong>lucidrains/ASAC</strong> (★ 8)
+                        <strong>lucidrains/ASAC</strong> (★ 9)
                         <p>基于注意力模式的注意力控制（ASAC）的实现，一种认知启发的变压器注意力管理方法</p>
-                    </li>
-                    
-                    <li>
-                        <strong>PolyHelper/polyhelper</strong> (★ 8)
-                        <p>PolyHelper V4 — 认知人工智能外骨骼。    多人工智能编排平台，实现更安全的人类决策</p>
                     </li>
                     
                     <li>
@@ -306,6 +301,11 @@ html, body {
                     <li>
                         <strong>chiru2409/Jarvis-AI-Biped-Robot</strong> (★ 4)
                         <p>ESP32-S3 驱动的 AI 双足机器人具有语音交互、记忆、网络搜索、MCP 工具和自主助理功能。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Ericcc-Ma/learn-hermes-agent</strong> (★ 4)
+                        <p>从头开始构建自我进化的代理安全带 | 12 节课 | Anthropic/DeepSeek/Qwen/GLM</p>
                     </li>
                     
                 </ul>

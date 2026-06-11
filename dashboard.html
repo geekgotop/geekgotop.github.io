@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-10 23:22:33</span>
+        <span class="generated-time">更新于 2026-06-11 23:18:47</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">A Unifying<sup class='ipa'>/ˈjunəˌfaɪɪŋ/</sup> Lens on Supervised<sup class='ipa'>/ˈsupərˌvaɪzd/</sup> Fine-Tuning<sup class='ipa'>/finetuning*/</sup> Through Target Distribution<sup class='ipa'>/ˌdɪstrəˈbjuʃən/</sup> Design</h4>
+                            <h4 class="paper-title">Reroute, Don't Remove: Recoverable<sup class='ipa'>/rɪˈkəvərəbəl/</sup> Visual Token Routing for Vision-Language<sup class='ipa'>/visionlanguage*/</sup> Models</h4>
                             <div class="paper-meta">
-                                <span class="authors">Tong Xie, Yuanhao Ban, Yunqi Hong</span>
-                                <span class="date">2026-06-09</span>
-                                <span class="categories">cs.LG | cs.AI</span>
+                                <span class="authors">Cheng-Yu Yang, Shao-Yuan Lo, Yu-Lun Liu</span>
+                                <span class="date">2026-06-10</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Supervised fine-tuning (SFT) typically maximizes the likelihood of every token in a demonstrated trajectory. However, an observed token can be non-unique, noisy, or misaligned with the model prior. Strictly fitting toward this one-hot target may be suboptimal, especially when the pretrained model en...</p>
+                                <p class="abstract-en">Vision-language models (VLMs) project images into hundreds to thousands of visual tokens, making decoder inference expensive in both attention computation and KV-cache memory. Existing visual-token reduction methods largely follow a rank-and-remove paradigm: they score visual tokens, keep a compact ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">监督微调（SFT）通常会最大化每个标记在演示轨迹中的可能性。然而，观察到的标记可能是不唯一的、有噪声的或与先验模型不一致的。严格拟合这一单一热点目标可能不是最理想的，特别是当预训练模型编码了丰富的先验知识时。在这项工作中，我们将 SFT 重新解释为目标分布设计：我们不再只研究损失目标，而是分析损失驱动模型匹配的代币级别目标。我们引入了 Q-target 框架，它将 SFT 监督分解为两个明确的选择：（1）对观察到的 token 的依赖程度如何，以及（2）如何在替代方案上分配剩余的概率质量。这种观点将许多现有的 SFT 变体统一为目标分布 Q 的隐式选择。基于这种观点，我们提出了 Target-SFT，它直接从所需的目标分布构建训练目标。该方法在评估的十个推理数据集模型设置中始终表现出色，显示了这种基于目标的方法的有效性。总的来说，我们的公式揭示了 SFT 训练的更基本的设计原则，并为 SFT 目标开辟了更广阔的搜索空间。</p>
+                                    <p class="abstract-zh">视觉语言模型 (VLM) 将图像投影成数百到数千个视觉标记，使得解码器推理在注意力计算和 KV 缓存内存中变得昂贵。现有的视觉标记减少方法很大程度上遵循排序和删除范式：它们对视觉标记进行评分，保留紧凑的子集，并永久丢弃其余的。我们证明这种不可逆的行为是脆弱的，因为视觉标记的重要性随着解码器深度的变化而变化；在某一阶段排名较低的令牌可能会在后面的层中变得相关，特别是对于接地敏感的查询。我们提出了 Reroute，这是一个无需培训的插件，可以用可恢复的路由代替删除。在每个路由阶段，选定的视觉令牌通过解码器块，而延迟令牌绕过该阶段并在下一个路由决策时重新进入候选池。重新路由重用现有的注意力评分排名规则和阶段式调度，保留其增强的修剪方法的理论 TFLOP 和 KV 缓存预算类别。在 LLaVA-1.5 和 Qwen 主干上的 FastV、PDrop 和 Nüwa 变体中，重新路由可改善激进令牌减少下的接地，同时保持总体 VQA 性能。这些结果表明，VLM 令牌减少不应仅被视为不可逆的修剪，还应被视为可恢复的路由。代码可以在这里找到：https://github.com/elmma/mllm-reroute/</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.11189v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.12412v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">EEVEE: Towards Test-time<sup class='ipa'>/testtime*/</sup> Prompt Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> in the Real World for Self-Improving<sup class='ipa'>/selfimproving*/</sup> Agents</h4>
+                            <h4 class="paper-title">Context-Driven<sup class='ipa'>/contextdriven*/</sup> Incremental<sup class='ipa'>/ˌɪnkrəˈmɛntəl/</sup> Compression<sup class='ipa'>/kəmˈprɛʃən/</sup> for Multi-Turn<sup class='ipa'>/multiturn*/</sup> Dialogue<sup class='ipa'>/ˈdaɪəˌlɔg/</sup> Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Weixian Xu, Shilong Liu, Mengdi Wang</span>
-                                <span class="date">2026-06-09</span>
-                                <span class="categories">cs.LG | cs.AI</span>
+                                <span class="authors">Yeongseo Jung, Jaehyeok Kim, Eunseo Jung</span>
+                                <span class="date">2026-06-10</span>
+                                <span class="categories">cs.CL | cs.LG</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">In this paper, we propose EEVEE, the first multi-dataset test-time prompt learning framework for LLM agents, enabling test-time prompt learning under real-world task streams. Existing methods are largely designed for single-dataset settings, while real-world applications require models to handle het...</p>
+                                <p class="abstract-en">Modern conversational agents condition on an ever-growing dialogue history at each turn, incurring redundant attention and encoding costs that grow with conversation length. Naive truncation or summarization degrades fidelity, while existing context compressors lack cross-turn memory sharing or revi...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">在本文中，我们提出了 EEVEE，这是第一个用于 LLM 代理的多数据集测试时提示学习框架，可在实际任务流下实现测试时提示学习。现有的方法主要是针对单数据集设置而设计的，而现实世界的应用程序需要模型来处理从多个数据集、域和任务分布中提取的异构输入流，这限制了它们的实际适用性。为了减轻跨数据集干扰，EEVEE 引入了一个路由器，它将传入输入划分为任务集群，并将它们分配给合适的提示配置。该设计通过路由器提示协同进化策略进行优化，该策略采用交错的路由器和提示学习阶段来解决它们的相互依赖性。跨多个数据集的实验表明，该框架提高了异构数据流下的鲁棒性，同时保持单基准学习能力和效率。具体而言，EEVEE 比 Qwen3-4B-Instruct 和 DeepSeek-V3.2 的平均多基准分数提高了 10.38 和 24.32 分，超过 SOTA 方法 GEPA 和 ACE 高达 37.2% 和 48.2%。</p>
+                                    <p class="abstract-zh">现代对话智能体每次都会以不断增长的对话历史为条件，导致冗余注意力和编码成本随着对话长度的增加而增加。简单的截断或总结会降低保真度，而现有的上下文压缩器缺乏跨回合内存共享或修订，导致信息丢失并在长对话中复合错误。我们重新审视对话动态下的上下文压缩，并凭经验展示其脆弱性。为了提高效率和鲁棒性，我们引入了上下文驱动增量压缩（C-DIC），它将对话视为交错的上下文线程，并将可修改的每线程压缩状态存储在单个紧凑的对话内存中。在每个回合，轻量级检索、修改和写回循环会跨回合共享信息并更新过时的记忆，从而稳定长期行为。此外，我们将截断的时间反向传播（TBPTT）适应我们的多轮设置，无需全历史反向传播即可学习交叉轮依赖。对长篇对话基准的大量实验证明了 C-DIC 的卓越性能和效率；值得注意的是，C-DIC 在数百次对话轮次中表现出稳定的推理延迟和困惑度，支持高质量对话建模的可扩展路径。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.11182v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.12411v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Data Journalist<sup class='ipa'>/ˈʤərnəlɪst/</sup> Agent: Transforming<sup class='ipa'>/trænsˈfɔrmɪŋ/</sup> Data into Verifiable<sup class='ipa'>/ˈvɛrəˌfaɪəbəl/</sup> Multimodal<sup class='ipa'>/multimodal*/</sup> Stories</h4>
+                            <h4 class="paper-title">FACTR 2: Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> External<sup class='ipa'>/ɪkˈstərnəl/</sup> Force Sensing for Commodity<sup class='ipa'>/kəˈmɑdəti/</sup> Robot Arms Improves<sup class='ipa'>/ˌɪmˈpruvz/</sup> Policy Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Kevin Qinghong Lin, Batu EI, Yuhong Shi</span>
-                                <span class="date">2026-06-09</span>
-                                <span class="categories">cs.CV | cs.CL</span>
+                                <span class="authors">Steven Oh, Jason Jingzhou Liu, Tony Tao</span>
+                                <span class="date">2026-06-10</span>
+                                <span class="categories">cs.RO | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Data tells stories that shape society; the data journalist&#39;s job is to turn raw information into stories non-experts can trust. A high-quality news feature takes a newsroom team weeks: hunting for context, running statistics, choosing an angle, and designing visuals. Recent agents handle individual ...</p>
+                                <p class="abstract-en">Contact-rich manipulation requires force sensitivity, but many robot arms lack dedicated force sensors due to their high cost. We present Neural External Torque Estimation (NEXT), a data-driven method that estimates external joint torques without needing any dedicated force sensors. NEXT trains in 1...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">数据讲述塑造社会的故事；数据记者的工作是将原始信息转化为非专家可以信任的故事。高质量的新闻专题需要新闻编辑室团队花费数周的时间：寻找背景、运行统计数据、选择角度和设计视觉效果。最近的代理很好地处理了各个步骤：数据科学代理关闭了分析循环，而设计代理则合成了漂亮的网站。但特工可以充当端到端的数据记者吗？我们引入了数据记者代理 (Data2Story)，这是一个多代理框架，可将专业角色编排到单个虚拟新闻编辑室中。 Data2Story 贡献了两项创新。 (i) 声明有证据支持：检查员将每个数字、角度和资产与数据、代码或外部参考联系起来。 (ii) 文章是多模态生成的：Data2Story 不是默认使用纯文本和静态图表，而是推理读者想要看到的内容，然后部署多模态工具，例如地理交互式地图和音乐音频。我们根据 18 篇文章评估 Data2Story，每篇文章都与最初发表的专家文章配对，沿着四个轴：（a）人类代理角度覆盖； (b) 由 53 名参与者在五个维度进行的评估； (c) 作为法官的计算机使用代理，是读者如何浏览互动文章的节省成本的代理； (d) 可验证性，编码验证器根据数据重新执行语句并根据引用检查声明。 Data2Story 制作具有竞争力、证据可追溯的多媒体故事，在透明度和可审核性方面具有特殊优势。人类文章在编辑角度、创意设计和表达方面保持着优势。我们将 Data2Story 定位为记者的合作者，实现更多基于证据、透明且可验证的报道。代码和演示可在 https://data2story.github.io 获取。</p>
+                                    <p class="abstract-zh">丰富的接触操作需要力敏感度，但许多机器人手臂由于成本高昂而缺乏专用的力传感器。我们提出了神经外部扭矩估计（NEXT），这是一种数据驱动的方法，无需任何专用的力传感器即可估计外部关节扭矩。 NEXT 只需 10 分钟的自由运动数据即可在 1 分钟内进行训练，但仍能达到与专用关节扭矩传感器相当的估计值。 NEXT 可在低成本手臂上实现力反馈远程操作，并通过力通知重采样训练 (FIRST) 改进策略学习，该训练可在行为克隆期间对接触前和接触片段进行上采样。在五项长期任务中，FIRST 在任务进度方面比之前的力感知策略高出了 17% 以上。 NEXT 和 FIRST 共同为现成的机器人带来了力感知远程操作和策略学习，无需额外的传感硬件。视频结果和代码可在 https://jasonjzliu.com/factr2 获取</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.11176v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.12406v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/KorroAi/mue-x" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">mue-x</span>
-                                    <span class="repo-stars">⭐ 13</span>
+                                    <span class="repo-stars">⭐ 14</span>
                                 </div>
                                 <p class="repo-desc">自我进化的人工智能代理，实时重写自己的源代码。 6种突变策略。 7 个自动驾驶。 GitHub吸收。由 100% 人工智能公司 KORRO 打造。</p>
                                 <div class="repo-meta">
@@ -934,25 +934,11 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/lucidrains/ASAC" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">ASAC</span>
-                                    <span class="repo-stars">⭐ 8</span>
+                                    <span class="repo-stars">⭐ 9</span>
                                 </div>
                                 <p class="repo-desc">基于注意力模式的注意力控制（ASAC）的实现，一种认知启发的变压器注意力管理方法</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-09</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/PolyHelper/polyhelper" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">polyhelper</span>
-                                    <span class="repo-stars">⭐ 8</span>
-                                </div>
-                                <p class="repo-desc">PolyHelper V4 — 认知人工智能外骨骼。    多人工智能编排平台，实现更安全的人类决策</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">JavaScript</span>
                                     <span class="repo-date">2026-06-09</span>
                                 </div>
                             </a>
@@ -1001,6 +987,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/divyanshujethi/AdRank-CTR-Prediction-System" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">AdRank-CTR-Prediction-System</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">生产级点击率预测系统，具有实时推理、排名模型、MLOps 管道和受 Google/Meta 广告系统启发的可扩展广告点击预测架构。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-11</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/br1ge/TelegramAI" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">TelegramAI</span>
@@ -1043,15 +1043,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/aryanap07/Timeless" target="_blank" class="repo-link">
+                            <a href="https://github.com/oguzemirtopuz/SuperArmor-PDF-Generator" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Timeless</span>
-                                    <span class="repo-stars">⭐ 3</span>
+                                    <span class="repo-name">SuperArmor-PDF-Generator</span>
+                                    <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">在提示之前，有架构。</p>
+                                <p class="repo-desc">无服务器、零延迟考试准备助手利用 Groq API (Llama 3.3 70B) 和 Groq Vision OCR 生成定制的高密度学习 PDF。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Jupyter Notebook</span>
-                                    <span class="repo-date">2026-06-04</span>
+                                    <span class="repo-lang">HTML</span>
+                                    <span class="repo-date">2026-06-06</span>
                                 </div>
                             </a>
                         </li>
