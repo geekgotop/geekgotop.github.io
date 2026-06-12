@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-06-11 23:18:47</p>
+            <p class="hero-meta">构建时间：2026-06-12 23:13:45</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,17 +191,17 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
-                        <p class="quick-meta">— Chinese Proverb</p>
+                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
+                        <p class="quick-meta">— 荀子</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 encapsulation，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 polymorphism，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 KorroAi/mue-x，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Reroute, Don&#39;t Remove: Recoverable Visual Token Routing for Vision-Language Models》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">encapsulation <span>/ɪnˌkæpsjuˈleɪʃn/</span></p>
-                    <p class="study-meaning">n. 封装；包装</p>
+                    <p class="study-word">polymorphism <span>/ˌpɒliˈmɔːfɪzəm/</span></p>
+                    <p class="study-meaning">n. 多态性</p>
                     
-                    <p class="study-sentence">Encapsulation hides the internal state of an object from the outside.</p>
-                    <p class="study-sentence-zh">封装将对象的内部状态对外部隐藏。</p>
+                    <p class="study-sentence">Polymorphism allows objects of different classes to be treated as objects of a common superclass.</p>
+                    <p class="study-sentence-zh">多态性允许不同类的对象被当作共同父类的对象来处理。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Reroute, Don&#39;t Remove: Recoverable Visual Token Routing for Vision-Language Models</p>
-                    <p class="deep-abstract">视觉语言模型 (VLM) 将图像投影成数百到数千个视觉标记，使得解码器推理在注意力计算和 KV 缓存内存中变得昂贵。现有的视觉标记减少方法很大程度上遵循排序和删除范式：它们对视觉标记进行评分，保留紧凑的子集，并永久丢弃其余的。我们证明这种不可逆的行为是脆弱的，因为视觉标记的重要性随着解码器深度的变化而变化；在某一阶段排名较低的令牌可能会在后面的层中变得相关，特别是对于接地敏感的查询。我们提出了 Reroute，这是一个无需培训的插件，可以用可恢复的路由代替删除。在每个路由阶段，选定的视觉令牌通过解码器块，而延迟令牌绕过该阶段并在下一个路由决策时重新进入候选池。重新路由重用现有的注意力评分排名规则和阶段式调度，保留其增强的修剪方法的理论 TFLOP 和 KV 缓存预算类别。在 LLaVA-1.5 和 Qwen 主干上的 FastV、PDrop 和 Nüwa 变体中，重新路由可改善激进令牌减少下的接地，同时保持总体 VQA 性能。这些结果表明，VLM 令牌减少不应仅被视为不可逆的修剪，还应被视为可恢复的路由。代码可以在这里找到：https://github.com/elmma/mllm-reroute/</p>
+                    <p class="deep-title">EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments</p>
+                    <p class="deep-abstract">大型语言模型 (LLM) 代理在各种基准测试中都取得了出色的性能，但大多数评估都假设静态环境。相比之下，现实世界的部署本质上是动态的，要求代理不断调整其知识、技能和行为以适应不断变化的环境和更新的任务条件。为了解决这一差距，我们引入了 EvoArena，这是一个基准套件，它将环境变化建模为跨终端、软件和社交领域的渐进式更新序列。我们进一步提出了 EvoMem，一种基于补丁的记忆范式，它将记忆进化记录为结构化更新历史，使智能体能够通过记忆的变化来推理环境进化。实验表明，当前的智能体在 EvoArena 上表现不佳，在不断发展的终端、软件和社交偏好领域实现了 39.6% 的平均准确率。 EvoMem 不断提高性能，在 EvoArena 上平均提高 1.5%，并将 GAIA 和 LoCoMo 等标准基准提高 6.1% 和 4.8%。除了单个任务之外，EvoMem 在 EvoArena 上进一步将链级准确性提高了 3.7%，其中成功需要完成一系列相关的进化子任务的连续序列。机制分析表明，EvoMem 改善了记忆中的证据捕获，表明更好地保存了完整的演化环境状态。我们的结果强调了评估和记忆中建模演化对于可靠代理部署的重要性。</p>
                     
-                    <p class="deep-takeaway">要点：视觉语言模型 (VLM) 将图像投影成数百到数千个视觉标记，使得解码器推理在注意力计算和 KV 缓存内存中变得昂贵。现有的视觉标记减少方法很大程度上遵循排序和删除范式：它们对视觉标记进行评分，保留紧凑的子集，并永久丢弃其余的。我们证明这种不可逆的行为是脆弱的，因为视觉标记的重要性随着解码器深度的变化而变化；在某一阶段排...</p>
+                    <p class="deep-takeaway">要点：大型语言模型 (LLM) 代理在各种基准测试中都取得了出色的性能，但大多数评估都假设静态环境。相比之下，现实世界的部署本质上是动态的，要求代理不断调整其知识、技能和行为以适应不断变化的环境和更新的任务条件。为了解决这一差距，我们引入了 EvoArena，这是一个基准套件，它将环境变化建模为跨终端、软件和社交领域的渐进式...</p>
                     
-                    <p class="deep-meta">预计阅读 1 分钟</p>
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -299,8 +299,8 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>chiru2409/Jarvis-AI-Biped-Robot</strong> (★ 4)
-                        <p>ESP32-S3 驱动的 AI 双足机器人具有语音交互、记忆、网络搜索、MCP 工具和自主助理功能。</p>
+                        <strong>kilvz/Project-Adam</strong> (★ 4)
+                        <p>COGNET 对话式 AI — 自学习、每用户 LoRA 适应、可微记忆、MCP 工具、自主自我对弈</p>
                     </li>
                     
                     <li>

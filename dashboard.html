@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-11 23:18:47</span>
+        <span class="generated-time">更新于 2026-06-12 23:13:45</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Reroute, Don't Remove: Recoverable<sup class='ipa'>/rɪˈkəvərəbəl/</sup> Visual Token Routing for Vision-Language<sup class='ipa'>/visionlanguage*/</sup> Models</h4>
+                            <h4 class="paper-title">EvoArena:<sup class='ipa'>/evoarena*/</sup> Tracking<sup class='ipa'>/ˈtrækɪŋ/</sup> Memory Evolution<sup class='ipa'>/ˌɛvəˈluʃən/</sup> for Robust LLM Agents in Dynamic Environments<sup class='ipa'>/ɪnˈvaɪrənmənts/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Cheng-Yu Yang, Shao-Yuan Lo, Yu-Lun Liu</span>
-                                <span class="date">2026-06-10</span>
-                                <span class="categories">cs.CV | cs.AI</span>
+                                <span class="authors">Jundong Xu, Qingchuan Li, Jiaying Wu</span>
+                                <span class="date">2026-06-11</span>
+                                <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Vision-language models (VLMs) project images into hundreds to thousands of visual tokens, making decoder inference expensive in both attention computation and KV-cache memory. Existing visual-token reduction methods largely follow a rank-and-remove paradigm: they score visual tokens, keep a compact ...</p>
+                                <p class="abstract-en">Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually align their knowledge, skills, and behavior with changing envir...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">视觉语言模型 (VLM) 将图像投影成数百到数千个视觉标记，使得解码器推理在注意力计算和 KV 缓存内存中变得昂贵。现有的视觉标记减少方法很大程度上遵循排序和删除范式：它们对视觉标记进行评分，保留紧凑的子集，并永久丢弃其余的。我们证明这种不可逆的行为是脆弱的，因为视觉标记的重要性随着解码器深度的变化而变化；在某一阶段排名较低的令牌可能会在后面的层中变得相关，特别是对于接地敏感的查询。我们提出了 Reroute，这是一个无需培训的插件，可以用可恢复的路由代替删除。在每个路由阶段，选定的视觉令牌通过解码器块，而延迟令牌绕过该阶段并在下一个路由决策时重新进入候选池。重新路由重用现有的注意力评分排名规则和阶段式调度，保留其增强的修剪方法的理论 TFLOP 和 KV 缓存预算类别。在 LLaVA-1.5 和 Qwen 主干上的 FastV、PDrop 和 Nüwa 变体中，重新路由可改善激进令牌减少下的接地，同时保持总体 VQA 性能。这些结果表明，VLM 令牌减少不应仅被视为不可逆的修剪，还应被视为可恢复的路由。代码可以在这里找到：https://github.com/elmma/mllm-reroute/</p>
+                                    <p class="abstract-zh">大型语言模型 (LLM) 代理在各种基准测试中都取得了出色的性能，但大多数评估都假设静态环境。相比之下，现实世界的部署本质上是动态的，要求代理不断调整其知识、技能和行为以适应不断变化的环境和更新的任务条件。为了解决这一差距，我们引入了 EvoArena，这是一个基准套件，它将环境变化建模为跨终端、软件和社交领域的渐进式更新序列。我们进一步提出了 EvoMem，一种基于补丁的记忆范式，它将记忆进化记录为结构化更新历史，使智能体能够通过记忆的变化来推理环境进化。实验表明，当前的智能体在 EvoArena 上表现不佳，在不断发展的终端、软件和社交偏好领域实现了 39.6% 的平均准确率。 EvoMem 不断提高性能，在 EvoArena 上平均提高 1.5%，并将 GAIA 和 LoCoMo 等标准基准提高 6.1% 和 4.8%。除了单个任务之外，EvoMem 在 EvoArena 上进一步将链级准确性提高了 3.7%，其中成功需要完成一系列相关的进化子任务的连续序列。机制分析表明，EvoMem 改善了记忆中的证据捕获，表明更好地保存了完整的演化环境状态。我们的结果强调了评估和记忆中建模演化对于可靠代理部署的重要性。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.12412v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.13681v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Context-Driven<sup class='ipa'>/contextdriven*/</sup> Incremental<sup class='ipa'>/ˌɪnkrəˈmɛntəl/</sup> Compression<sup class='ipa'>/kəmˈprɛʃən/</sup> for Multi-Turn<sup class='ipa'>/multiturn*/</sup> Dialogue<sup class='ipa'>/ˈdaɪəˌlɔg/</sup> Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h4>
+                            <h4 class="paper-title">Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> to Reason by Analogy via Retrieval-Augmented<sup class='ipa'>/retrievalaugmented*/</sup> Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Fine-Tuning<sup class='ipa'>/finetuning*/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Yeongseo Jung, Jaehyeok Kim, Eunseo Jung</span>
-                                <span class="date">2026-06-10</span>
-                                <span class="categories">cs.CL | cs.LG</span>
+                                <span class="authors">Zilin Xiao, Qi Ma, Chun-cheng Jason Chen</span>
+                                <span class="date">2026-06-11</span>
+                                <span class="categories">cs.CL | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Modern conversational agents condition on an ever-growing dialogue history at each turn, incurring redundant attention and encoding costs that grow with conversation length. Naive truncation or summarization degrades fidelity, while existing context compressors lack cross-turn memory sharing or revi...</p>
+                                <p class="abstract-en">Retrieval-augmented generation (RAG) has become a standard mechanism for grounding language models in external knowledge, yet conventional retrieval based on lexical or semantic similarity is poorly suited for complex reasoning tasks: a semantically similar problem may demand an entirely different s...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">现代对话智能体每次都会以不断增长的对话历史为条件，导致冗余注意力和编码成本随着对话长度的增加而增加。简单的截断或总结会降低保真度，而现有的上下文压缩器缺乏跨回合内存共享或修订，导致信息丢失并在长对话中复合错误。我们重新审视对话动态下的上下文压缩，并凭经验展示其脆弱性。为了提高效率和鲁棒性，我们引入了上下文驱动增量压缩（C-DIC），它将对话视为交错的上下文线程，并将可修改的每线程压缩状态存储在单个紧凑的对话内存中。在每个回合，轻量级检索、修改和写回循环会跨回合共享信息并更新过时的记忆，从而稳定长期行为。此外，我们将截断的时间反向传播（TBPTT）适应我们的多轮设置，无需全历史反向传播即可学习交叉轮依赖。对长篇对话基准的大量实验证明了 C-DIC 的卓越性能和效率；值得注意的是，C-DIC 在数百次对话轮次中表现出稳定的推理延迟和困惑度，支持高质量对话建模的可扩展路径。</p>
+                                    <p class="abstract-zh">检索增强生成（RAG）已成为将语言模型建立在外部知识基础上的标准机制，但基于词汇或语义相似性的传统检索不太适合复杂的推理任务：语义相似的问题可能需要完全不同的解决策略，而表面不同的问题可能共享相同的底层推理模式。我们提出检索增强强化微调（RA-RFT），这是一种训练语言模型通过类比推理的后训练框架。 RA-RFT 使用黄金相关性蒸馏来训练检索器，该检索器根据预期推理收益而不是语义重叠对上下文进行排名，然后通过强化微调方法和检索到的类似演示来微调策略模型，以便模型学会在可验证的结果奖励下利用推理痕迹。我们进一步分析检索上下文的多样性，发现推理感知检索表面互补的解决方案策略，为单个问题提供独特的推理支架。在具有挑战性的数学推理基准中，RA-RFT 始终优于标准强化微调方法。例如，与 Qwen3-1.7B 和 Qwen3-4B 的 GRPO 相比，它分别将 AIME 2025 平均@32 准确度提高了 7.1 和 2.8 个百分点，这表明推理感知检索是改进的补充轴，并且与奖励设计或培训课程的进步正交。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.12411v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.13680v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">FACTR 2: Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> External<sup class='ipa'>/ɪkˈstərnəl/</sup> Force Sensing for Commodity<sup class='ipa'>/kəˈmɑdəti/</sup> Robot Arms Improves<sup class='ipa'>/ˌɪmˈpruvz/</sup> Policy Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
+                            <h4 class="paper-title">Mana: Dexterous<sup class='ipa'>/dexterous*/</sup> Manipulation<sup class='ipa'>/məˌnɪpjəˈleɪʃən/</sup> of Articulated<sup class='ipa'>/ɑrˈtɪkjəˌleɪtəd/</sup> Tools</h4>
                             <div class="paper-meta">
-                                <span class="authors">Steven Oh, Jason Jingzhou Liu, Tony Tao</span>
-                                <span class="date">2026-06-10</span>
+                                <span class="authors">Zhao-Heng Yin, Guanya Shi, Pieter Abbeel</span>
+                                <span class="date">2026-06-11</span>
                                 <span class="categories">cs.RO | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Contact-rich manipulation requires force sensitivity, but many robot arms lack dedicated force sensors due to their high cost. We present Neural External Torque Estimation (NEXT), a data-driven method that estimates external joint torques without needing any dedicated force sensors. NEXT trains in 1...</p>
+                                <p class="abstract-en">Articulated tool manipulation remains a major challenge in dexterous robotics due to the need to coordinate internal degrees of freedom and contact-rich interactions. While prior work has largely focused on rigid objects, articulated tool use remains underexplored because of its physical complexity ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">丰富的接触操作需要力敏感度，但许多机器人手臂由于成本高昂而缺乏专用的力传感器。我们提出了神经外部扭矩估计（NEXT），这是一种数据驱动的方法，无需任何专用的力传感器即可估计外部关节扭矩。 NEXT 只需 10 分钟的自由运动数据即可在 1 分钟内进行训练，但仍能达到与专用关节扭矩传感器相当的估计值。 NEXT 可在低成本手臂上实现力反馈远程操作，并通过力通知重采样训练 (FIRST) 改进策略学习，该训练可在行为克隆期间对接触前和接触片段进行上采样。在五项长期任务中，FIRST 在任务进度方面比之前的力感知策略高出了 17% 以上。 NEXT 和 FIRST 共同为现成的机器人带来了力感知远程操作和策略学习，无需额外的传感硬件。视频结果和代码可在 https://jasonjzliu.com/factr2 获取</p>
+                                    <p class="abstract-zh">由于需要协调内部自由度和丰富的接触交互，铰接式工具操作仍然是灵巧机器人技术的主要挑战。虽然之前的工作主要集中在刚性物体上，但由于其物理复杂性以及学习功能性抓取和操作策略的困难，铰接式工具的使用仍未得到充分探索。我们提出了 Mana（Manipulation Animator），这是一个通用的模拟真实框架，它将灵巧的操作重新解释为动画问题。受计算机动画的启发，Mana 采用从粗到细的流程，通过运动规划和强化学习将程序生成的抓取关键帧转换为操作轨迹。数据生成过程很大程度上是自动的，只需点击几下鼠标即可指定功能可供性（每个工具&lt;1 分钟）。通过跨越不同尺度和关节类型的四种铰接工具，Mana 实现了抓取和手动操作的零次模拟到真实的转换，展示了灵巧铰接工具使用的可扩展方法。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.12406v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.13677v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -959,15 +959,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/chiru2409/Jarvis-AI-Biped-Robot" target="_blank" class="repo-link">
+                            <a href="https://github.com/kilvz/Project-Adam" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Jarvis-AI-Biped-Robot</span>
+                                    <span class="repo-name">Project-Adam</span>
                                     <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc">ESP32-S3 驱动的 AI 双足机器人具有语音交互、记忆、网络搜索、MCP 工具和自主助理功能。</p>
+                                <p class="repo-desc">COGNET 对话式 AI — 自学习、每用户 LoRA 适应、可微记忆、MCP 工具、自主自我对弈</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">C++</span>
-                                    <span class="repo-date">2026-06-05</span>
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-09</span>
                                 </div>
                             </a>
                         </li>
@@ -1001,9 +1001,9 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/br1ge/TelegramAI" target="_blank" class="repo-link">
+                            <a href="https://github.com/shulya-tech/telegram-ai" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">TelegramAI</span>
+                                    <span class="repo-name">telegram-ai</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
                                 <p class="repo-desc">由 Google Gemini 提供支持的可定制 AI Telegram 机器人入门套件 — 多模式、自托管、Telegram Stars 支付、Adsgram 集成。</p>
@@ -1043,15 +1043,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/oguzemirtopuz/SuperArmor-PDF-Generator" target="_blank" class="repo-link">
+                            <a href="https://github.com/rajfazulhussain2008/markindex-mcp" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">SuperArmor-PDF-Generator</span>
+                                    <span class="repo-name">markindex-mcp</span>
                                     <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">无服务器、零延迟考试准备助手利用 Groq API (Llama 3.3 70B) 和 Groq Vision OCR 生成定制的高密度学习 PDF。</p>
+                                <p class="repo-desc"></p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">HTML</span>
-                                    <span class="repo-date">2026-06-06</span>
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-12</span>
                                 </div>
                             </a>
                         </li>
