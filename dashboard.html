@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-14 23:04:38</span>
+        <span class="generated-time">更新于 2026-06-15 23:42:52</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">EvoArena:<sup class='ipa'>/evoarena*/</sup> Tracking<sup class='ipa'>/ˈtrækɪŋ/</sup> Memory Evolution<sup class='ipa'>/ˌɛvəˈluʃən/</sup> for Robust LLM Agents in Dynamic Environments<sup class='ipa'>/ɪnˈvaɪrənmənts/</sup></h4>
+                            <h4 class="paper-title">Gaze Heads: How VLMs Look at What They Describe<sup class='ipa'>/dɪˈskraɪb/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Jundong Xu, Qingchuan Li, Jiaying Wu</span>
-                                <span class="date">2026-06-11</span>
-                                <span class="categories">cs.CL</span>
+                                <span class="authors">Rohit Gandikota, David Bau</span>
+                                <span class="date">2026-06-12</span>
+                                <span class="categories">cs.CV | cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually align their knowledge, skills, and behavior with changing envir...</p>
+                                <p class="abstract-en">How a vision-language model internally solves the task of describing an image is far from obvious. We find that the model develops a specific mechanism for this: a small set of attention heads in its language-model backbone, which we call gaze heads, whose attention tracks the image region the model...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">大型语言模型 (LLM) 代理在各种基准测试中都取得了出色的性能，但大多数评估都假设静态环境。相比之下，现实世界的部署本质上是动态的，要求代理不断调整其知识、技能和行为以适应不断变化的环境和更新的任务条件。为了解决这一差距，我们引入了 EvoArena，这是一个基准套件，它将环境变化建模为跨终端、软件和社交领域的渐进式更新序列。我们进一步提出了 EvoMem，一种基于补丁的记忆范式，它将记忆进化记录为结构化更新历史，使智能体能够通过记忆的变化来推理环境进化。实验表明，当前的智能体在 EvoArena 上表现不佳，在不断发展的终端、软件和社交偏好领域实现了 39.6% 的平均准确率。 EvoMem 不断提高性能，在 EvoArena 上平均提高 1.5%，并将 GAIA 和 LoCoMo 等标准基准提高 6.1% 和 4.8%。除了单个任务之外，EvoMem 在 EvoArena 上进一步将链级准确性提高了 3.7%，其中成功需要完成一系列相关的进化子任务的连续序列。机制分析表明，EvoMem 改善了记忆中的证据捕获，表明更好地保存了完整的演化环境状态。我们的结果强调了评估和记忆中建模演化对于可靠代理部署的重要性。</p>
+                                    <p class="abstract-zh">视觉语言模型如何在内部解决描述图像的任务还远非显而易见。我们发现该模型为此开发了一种特定的机制：其语言模型主干中的一小组注意力头，我们称之为凝视头，其注意力跟踪模型当前描述的图像区域。我们使用漫画作为受控测试平台，在空间上布置叙事顺序，通过几次前向传播找到了它们的简单相关分数。这些注视头不仅仅跟踪所描述的图像标记：将它们的注意力重新定向到选定的区域，迫使 VLM 来描述该区域。对前 100 个凝视头（占所有头的不到 9%）进行一次注意力掩模干预，可以以 83.1% 的准确率引导模型对任何选定的漫画面板的答案，而对随机头进行相同的干预则无法重定向答案，并且对所有头进行干预会破坏生成。同样的杠杆还扩展到持续控制：在生成中期切换凝视目标使模型结束其当前的面板描述，并在几个标记内移动到新的面板描述。除了漫画之外，同样的干预措施将答案重定向到自然 COCO 图像中的选定区域。该机制在从 2B 到 32B 参数的模型大小以及其他 VLM 架构中进一步重复出现，尽管一些冻结编码器系列没有显示可比较的头戴装置。更广泛地说，这表明通过机械分析确定的有针对性的编辑可以作为指导多模态模型行为的实际推理时间杠杆，而无需任何重新训练。我们的代码、交互式演示和数据集可在 https://gaze.baulab.info/ 获取</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.13681v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.14703v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> to Reason by Analogy via Retrieval-Augmented<sup class='ipa'>/retrievalaugmented*/</sup> Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Fine-Tuning<sup class='ipa'>/finetuning*/</sup></h4>
+                            <h4 class="paper-title">ClinHallu:<sup class='ipa'>/clinhallu*/</sup> A Benchmark<sup class='ipa'>/ˈbɛnʧˌmɑrk/</sup> for Diagnosing<sup class='ipa'>/ˌdaɪəgˈnoʊsɪŋ/</sup> Stage-Wise<sup class='ipa'>/stagewise*/</sup> Hallucinations<sup class='ipa'>/həˌlusəˈneɪʃənz/</sup> in Medical MLLM Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Zilin Xiao, Qi Ma, Chun-cheng Jason Chen</span>
-                                <span class="date">2026-06-11</span>
-                                <span class="categories">cs.CL | cs.AI</span>
+                                <span class="authors">Sicheng Yang, Hangjie Yuan, Wenjun Zhang</span>
+                                <span class="date">2026-06-12</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Retrieval-augmented generation (RAG) has become a standard mechanism for grounding language models in external knowledge, yet conventional retrieval based on lexical or semantic similarity is poorly suited for complex reasoning tasks: a semantically similar problem may demand an entirely different s...</p>
+                                <p class="abstract-en">Building trustworthy medical multimodal large language models (MLLMs) is critical for reliable clinical decision support. Existing medical hallucination benchmarks mainly focus on data collection, but often ignore where hallucinations originate within the reasoning process. We find that hallucinatio...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">检索增强生成（RAG）已成为将语言模型建立在外部知识基础上的标准机制，但基于词汇或语义相似性的传统检索不太适合复杂的推理任务：语义相似的问题可能需要完全不同的解决策略，而表面不同的问题可能共享相同的底层推理模式。我们提出检索增强强化微调（RA-RFT），这是一种训练语言模型通过类比推理的后训练框架。 RA-RFT 使用黄金相关性蒸馏来训练检索器，该检索器根据预期推理收益而不是语义重叠对上下文进行排名，然后通过强化微调方法和检索到的类似演示来微调策略模型，以便模型学会在可验证的结果奖励下利用推理痕迹。我们进一步分析检索上下文的多样性，发现推理感知检索表面互补的解决方案策略，为单个问题提供独特的推理支架。在具有挑战性的数学推理基准中，RA-RFT 始终优于标准强化微调方法。例如，与 Qwen3-1.7B 和 Qwen3-4B 的 GRPO 相比，它分别将 AIME 2025 平均@32 准确度提高了 7.1 和 2.8 个百分点，这表明推理感知检索是改进的补充轴，并且与奖励设计或培训课程的进步正交。</p>
+                                    <p class="abstract-zh">构建值得信赖的医学多模式大语言模型 (MLLM) 对于可靠的临床决策支持至关重要。现有的医学幻觉基准主要侧重于数据收集，但往往忽略推理过程中幻觉的起源。我们发现不同样本的幻觉来源有所不同：错误可能源于视觉错误识别、不正确的医学知识回忆或有缺陷的推理整合。为了实现源级幻觉诊断，我们引入了 ClinHallu，这是医学 MLLM 推理中分阶段幻觉诊断的基准。 ClinHallu 包含 7,031 个经过验证的实例，其中每个实例都通过分解为视觉识别、知识回忆和推理集成的结构化推理跟踪进行了增强。我们还使用阶段替换干预措施来衡量纠正特定阶段如何影响最终答案。除了评估之外，我们还表明跟踪监督微调可以减少阶段性幻觉。 ClinHallu 提供了一个细粒度的幻觉测试平台，用于诊断和减轻医学 MLLM 中的推理失败。该基准可在 https://github.com/alibaba-damo-academy/ClinHallu 上公开获取。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.13680v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.14697v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Mana: Dexterous<sup class='ipa'>/dexterous*/</sup> Manipulation<sup class='ipa'>/məˌnɪpjəˈleɪʃən/</sup> of Articulated<sup class='ipa'>/ɑrˈtɪkjəˌleɪtəd/</sup> Tools</h4>
+                            <h4 class="paper-title">Persona-Pruner:<sup class='ipa'>/personapruner*/</sup> Sculpting<sup class='ipa'>/ˈskəlptɪŋ/</sup> Lightweight<sup class='ipa'>/ˈlaɪtˈweɪt/</sup> Models for Role-Playing<sup class='ipa'>/ˈroʊlˌpleɪɪŋ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Zhao-Heng Yin, Guanya Shi, Pieter Abbeel</span>
-                                <span class="date">2026-06-11</span>
-                                <span class="categories">cs.RO | cs.AI</span>
+                                <span class="authors">Jinsu Kim, Jihoon Tack, Noah Lee</span>
+                                <span class="date">2026-06-12</span>
+                                <span class="categories">cs.LG | cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Articulated tool manipulation remains a major challenge in dexterous robotics due to the need to coordinate internal degrees of freedom and contact-rich interactions. While prior work has largely focused on rigid objects, articulated tool use remains underexplored because of its physical complexity ...</p>
+                                <p class="abstract-en">Language Models (LMs) have shown remarkable potential as role-playing chatbots, delivering consistent, stylized interactions when given a specification of a character or user persona. However, applying these capabilities to real-world applications (e.g., ecosystems with numerous NPCs interacting sim...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">由于需要协调内部自由度和丰富的接触交互，铰接式工具操作仍然是灵巧机器人技术的主要挑战。虽然之前的工作主要集中在刚性物体上，但由于其物理复杂性以及学习功能性抓取和操作策略的困难，铰接式工具的使用仍未得到充分探索。我们提出了 Mana（Manipulation Animator），这是一个通用的模拟真实框架，它将灵巧的操作重新解释为动画问题。受计算机动画的启发，Mana 采用从粗到细的流程，通过运动规划和强化学习将程序生成的抓取关键帧转换为操作轨迹。数据生成过程很大程度上是自动的，只需点击几下鼠标即可指定功能可供性（每个工具&lt;1 分钟）。通过跨越不同尺度和关节类型的四种铰接工具，Mana 实现了抓取和手动操作的零次模拟到真实的转换，展示了灵巧铰接工具使用的可扩展方法。</p>
+                                    <p class="abstract-zh">语言模型 (LM) 作为角色扮演聊天机器人显示出了巨大的潜力，在给定角色或用户角色规范时，可以提供一致、风格化的交互。然而，将这些功能应用于现实世界的应用程序（例如，具有大量 NPC 同时交互的生态系统）会因计算成本过高而暴露出严重的低效率问题。在本文中，我们质疑将完整的通用模型专用于单个角色的必要性，假设特定的角色身份仅依赖于模型总容量的一小部分。我们观察到，天真的修剪 LM 通常会严重降低特定角色的角色扮演性能；它不区分多余的知识和基本的性格特征。我们提出了 Persona-Pruner，这是一个通过将特定于角色的子网络与单个描述隔离开来塑造轻量级角色扮演模型的框架。我们的实验一致表明，Persona-Pruner 比现有最先进的 LLM 修剪技术更有效地保留了角色扮演性能，与 RoleBench 上 LLM 作为法官评分的最强基线相比，将密集模型的性能下降减少了 93.8%，同时仍然保持了一般 LLM 能力。代码可在 https://github.com/jsu-kim/Persona-Pruner 获取。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.13677v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.14695v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/amplitudesoldierheed/AI-Voice-Changer-Real-Time-Desktop" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">AI-Voice-Changer-Real-Time-Desktop</span>
-                                    <span class="repo-stars">⭐ 29</span>
+                                    <span class="repo-stars">⭐ 19</span>
                                 </div>
                                 <p class="repo-desc"></p>
                                 <div class="repo-meta">
@@ -931,10 +931,24 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/memoriqme/memoriq" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">memoriq</span>
+                                    <span class="repo-stars">⭐ 12</span>
+                                </div>
+                                <p class="repo-desc">用于保存和搜索 AI 对话的加密 AI 内存库</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Vue</span>
+                                    <span class="repo-date">2026-06-12</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/lucidrains/ASAC" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">ASAC</span>
-                                    <span class="repo-stars">⭐ 10</span>
+                                    <span class="repo-stars">⭐ 11</span>
                                 </div>
                                 <p class="repo-desc">基于注意力模式的注意力控制（ASAC）的实现，一种认知启发的变压器注意力管理方法</p>
                                 <div class="repo-meta">
@@ -945,10 +959,24 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/mrreviewai/ai-tools-for-solopreneurs" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ai-tools-for-solopreneurs</span>
+                                    <span class="repo-stars">⭐ 9</span>
+                                </div>
+                                <p class="repo-desc">为单人企业全天候 (24/7) 工作的 AI 团队 — 7 个部门的 50 多种工具，专为个体企业家打造</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-06-14</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/BansheeTech/Borderline" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Borderline</span>
-                                    <span class="repo-stars">⭐ 5</span>
+                                    <span class="repo-stars">⭐ 6</span>
                                 </div>
                                 <p class="repo-desc">Claude Code 插件，将无聊、低风险的任务（批量 i18n、琐碎的风格调整）委托给 Gemini CLI — 一个透明的 Claude ⇄ Gemini 管道。</p>
                                 <div class="repo-meta">
@@ -959,15 +987,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/memoriqme/memoriq" target="_blank" class="repo-link">
+                            <a href="https://github.com/holasoymalva/guia-de-programacion-con-ai" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">memoriq</span>
+                                    <span class="repo-name">guia-de-programacion-con-ai</span>
+                                    <span class="repo-stars">⭐ 6</span>
+                                </div>
+                                <p class="repo-desc">人工智能和LLMS的开发和程序设计</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-14</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/sairaman436/vybe-intelligence-vault" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">vybe-intelligence-vault</span>
                                     <span class="repo-stars">⭐ 5</span>
                                 </div>
-                                <p class="repo-desc">用于保存和搜索 AI 对话的加密 AI 内存库</p>
+                                <p class="repo-desc">用于 AI 代理、RAG 系统、MCP 服务器、提示、工具、模板和下一代 Web 开发的自动更新开源库。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Vue</span>
-                                    <span class="repo-date">2026-06-12</span>
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-06-11</span>
                                 </div>
                             </a>
                         </li>
@@ -982,20 +1024,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-06-09</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/mrreviewai/ai-tools-for-solopreneurs" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ai-tools-for-solopreneurs</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">为单人企业全天候 (24/7) 工作的 AI 团队 — 7 个部门的 50 多种工具，专为个体企业家打造</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-06-14</span>
                                 </div>
                             </a>
                         </li>
@@ -1024,34 +1052,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-06-12</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/rajfazulhussain2008/markindex-mcp" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">markindex-mcp</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc"></p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-12</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/23se02ml110-krija/Visual-Question-Answering-System" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Visual-Question-Answering-System</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">“由人工智能提供支持的视觉问答 (VQA) 系统，可分析图像并以自然语言回答用户问题。使用计算机视觉、机器学习和现代网络技术构建，可根据视觉内容提供准确的、上下文感知的响应。”</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-06-10</span>
                                 </div>
                             </a>
                         </li>
