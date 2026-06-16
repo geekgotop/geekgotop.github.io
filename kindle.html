@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-06-15 23:42:52</p>
+            <p class="hero-meta">构建时间：2026-06-16 23:20:37</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,17 +191,17 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
-                        <p class="quick-meta">— Albert Einstein</p>
+                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                        <p class="quick-meta">— Chinese Proverb</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 concurrency，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 serialization，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 amplitudesoldierheed/AI-Voice-Changer-Real-Time-Desktop，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Gaze Heads: How VLMs Look at What They Describe》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《The Value Axis: Language Models Encode Whether They&#39;re on the Right Track》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">concurrency <span>/kənˈkʌrənsi/</span></p>
-                    <p class="study-meaning">n. 并发；并发性</p>
+                    <p class="study-word">serialization <span>/ˌsɪəriəlaɪˈzeɪʃn/</span></p>
+                    <p class="study-meaning">n. 序列化</p>
                     
-                    <p class="study-sentence">Concurrency allows multiple tasks to run in overlapping time periods.</p>
-                    <p class="study-sentence-zh">并发允许多个任务在重叠的时间段内运行。</p>
+                    <p class="study-sentence">Serialization converts an object into a stream of bytes for storage.</p>
+                    <p class="study-sentence-zh">序列化将对象转换为字节流以便存储。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Gaze Heads: How VLMs Look at What They Describe</p>
-                    <p class="deep-abstract">视觉语言模型如何在内部解决描述图像的任务还远非显而易见。我们发现该模型为此开发了一种特定的机制：其语言模型主干中的一小组注意力头，我们称之为凝视头，其注意力跟踪模型当前描述的图像区域。我们使用漫画作为受控测试平台，在空间上布置叙事顺序，通过几次前向传播找到了它们的简单相关分数。这些注视头不仅仅跟踪所描述的图像标记：将它们的注意力重新定向到选定的区域，迫使 VLM 来描述该区域。对前 100 个凝视头（占所有头的不到 9%）进行一次注意力掩模干预，可以以 83.1% 的准确率引导模型对任何选定的漫画面板的答案，而对随机头进行相同的干预则无法重定向答案，并且对所有头进行干预会破坏生成。同样的杠杆还扩展到持续控制：在生成中期切换凝视目标使模型结束其当前的面板描述，并在几个标记内移动到新的面板描述。除了漫画之外，同样的干预措施将答案重定向到自然 COCO 图像中的选定区域。该机制在从 2B 到 32B 参数的模型大小以及其他 VLM 架构中进一步重复出现，尽管一些冻结编码器系列没有显示可比较的头戴装置。更广泛地说，这表明通过机械分析确定的有针对性的编辑可以作为指导多模态模型行为的实际推理时间杠杆，而无需任何重新训练。我们的代码、交互式演示和数据集可在 https://gaze.baulab.info/ 获取</p>
+                    <p class="deep-title">The Value Axis: Language Models Encode Whether They&#39;re on the Right Track</p>
+                    <p class="deep-abstract">我们调查语言模型是否在内部跟踪其当前轨迹的价值，定义为其正在进行的策略实现目标的可能性。使用综合的上下文强化学习数据，我们为 Qwen3-8B 构建了一个“价值”轴。我们发现沿着这个轴的激活区分高和低语言置信度、没有和有回溯的推出以及正确和损坏的代码。转向高价值会抑制自我纠正并减少解释性的冗长，而转向低价值会导致回溯和探索。我们证明直接偏好优化（DPO）可以增加奖励行为（例如使用某个单词）的内部价值，使模型在展示这些行为后更加自信地行动。最后，我们应用价值轴来研究野外环境。例如，我们发现 Qwen 在训练后为政治敏感的聊天查询分配了较低的值，并且监督微调增加了训练领域内的内部信心。我们的结果表明，语言模型线性编码对预期目标成功的估计，从而调节他们追求某个方向的信心。</p>
                     
-                    <p class="deep-takeaway">要点：视觉语言模型如何在内部解决描述图像的任务还远非显而易见。我们发现该模型为此开发了一种特定的机制：其语言模型主干中的一小组注意力头，我们称之为凝视头，其注意力跟踪模型当前描述的图像区域。我们使用漫画作为受控测试平台，在空间上布置叙事顺序，通过几次前向传播找到了它们的简单相关分数。这些注视头不仅仅跟踪所描述的图像标记：将它...</p>
+                    <p class="deep-takeaway">要点：我们调查语言模型是否在内部跟踪其当前轨迹的价值，定义为其正在进行的策略实现目标的可能性。使用综合的上下文强化学习数据，我们为 Qwen3-8B 构建了一个“价值”轴。我们发现沿着这个轴的激活区分高和低语言置信度、没有和有回溯的推出以及正确和损坏的代码。转向高价值会抑制自我纠正并减少解释性的冗长，而转向低价值会导致回溯和...</p>
                     
-                    <p class="deep-meta">预计阅读 2 分钟</p>
+                    <p class="deep-meta">预计阅读 1 分钟</p>
                 
             </div>
             
@@ -289,18 +289,18 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>memoriqme/memoriq</strong> (★ 12)
+                        <strong>memoriqme/memoriq</strong> (★ 13)
                         <p>用于保存和搜索 AI 对话的加密 AI 内存库</p>
-                    </li>
-                    
-                    <li>
-                        <strong>lucidrains/ASAC</strong> (★ 11)
-                        <p>基于注意力模式的注意力控制（ASAC）的实现，一种认知启发的变压器注意力管理方法</p>
                     </li>
                     
                     <li>
                         <strong>mrreviewai/ai-tools-for-solopreneurs</strong> (★ 9)
                         <p>为单人企业全天候 (24/7) 工作的 AI 团队 — 7 个部门的 50 多种工具，专为个体企业家打造</p>
+                    </li>
+                    
+                    <li>
+                        <strong>holasoymalva/guia-de-programacion-con-ai</strong> (★ 7)
+                        <p>人工智能和LLMS的开发和程序设计</p>
                     </li>
                     
                     <li>

@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-15 23:42:52</span>
+        <span class="generated-time">更新于 2026-06-16 23:20:37</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Gaze Heads: How VLMs Look at What They Describe<sup class='ipa'>/dɪˈskraɪb/</sup></h4>
+                            <h4 class="paper-title">The Value Axis: Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models Encode Whether They're on the Right Track</h4>
                             <div class="paper-meta">
-                                <span class="authors">Rohit Gandikota, David Bau</span>
-                                <span class="date">2026-06-12</span>
-                                <span class="categories">cs.CV | cs.CL</span>
+                                <span class="authors">Nick Jiang, Isaac Kauvar, Jack Lindsey</span>
+                                <span class="date">2026-06-15</span>
+                                <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">How a vision-language model internally solves the task of describing an image is far from obvious. We find that the model develops a specific mechanism for this: a small set of attention heads in its language-model backbone, which we call gaze heads, whose attention tracks the image region the model...</p>
+                                <p class="abstract-en">We investigate whether language models internally track the value of their current trajectory, defined as the likelihood that their ongoing strategy will achieve their goals. Using synthetic, in-context reinforcement learning data, we construct a &#34;value&#34; axis for Qwen3-8B. We find that activations a...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">视觉语言模型如何在内部解决描述图像的任务还远非显而易见。我们发现该模型为此开发了一种特定的机制：其语言模型主干中的一小组注意力头，我们称之为凝视头，其注意力跟踪模型当前描述的图像区域。我们使用漫画作为受控测试平台，在空间上布置叙事顺序，通过几次前向传播找到了它们的简单相关分数。这些注视头不仅仅跟踪所描述的图像标记：将它们的注意力重新定向到选定的区域，迫使 VLM 来描述该区域。对前 100 个凝视头（占所有头的不到 9%）进行一次注意力掩模干预，可以以 83.1% 的准确率引导模型对任何选定的漫画面板的答案，而对随机头进行相同的干预则无法重定向答案，并且对所有头进行干预会破坏生成。同样的杠杆还扩展到持续控制：在生成中期切换凝视目标使模型结束其当前的面板描述，并在几个标记内移动到新的面板描述。除了漫画之外，同样的干预措施将答案重定向到自然 COCO 图像中的选定区域。该机制在从 2B 到 32B 参数的模型大小以及其他 VLM 架构中进一步重复出现，尽管一些冻结编码器系列没有显示可比较的头戴装置。更广泛地说，这表明通过机械分析确定的有针对性的编辑可以作为指导多模态模型行为的实际推理时间杠杆，而无需任何重新训练。我们的代码、交互式演示和数据集可在 https://gaze.baulab.info/ 获取</p>
+                                    <p class="abstract-zh">我们调查语言模型是否在内部跟踪其当前轨迹的价值，定义为其正在进行的策略实现目标的可能性。使用综合的上下文强化学习数据，我们为 Qwen3-8B 构建了一个“价值”轴。我们发现沿着这个轴的激活区分高和低语言置信度、没有和有回溯的推出以及正确和损坏的代码。转向高价值会抑制自我纠正并减少解释性的冗长，而转向低价值会导致回溯和探索。我们证明直接偏好优化（DPO）可以增加奖励行为（例如使用某个单词）的内部价值，使模型在展示这些行为后更加自信地行动。最后，我们应用价值轴来研究野外环境。例如，我们发现 Qwen 在训练后为政治敏感的聊天查询分配了较低的值，并且监督微调增加了训练领域内的内部信心。我们的结果表明，语言模型线性编码对预期目标成功的估计，从而调节他们追求某个方向的信心。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.14703v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.17056v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">ClinHallu:<sup class='ipa'>/clinhallu*/</sup> A Benchmark<sup class='ipa'>/ˈbɛnʧˌmɑrk/</sup> for Diagnosing<sup class='ipa'>/ˌdaɪəgˈnoʊsɪŋ/</sup> Stage-Wise<sup class='ipa'>/stagewise*/</sup> Hallucinations<sup class='ipa'>/həˌlusəˈneɪʃənz/</sup> in Medical MLLM Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h4>
+                            <h4 class="paper-title">Context-Aware<sup class='ipa'>/contextaware*/</sup> RL for Agentic and Multimodal<sup class='ipa'>/multimodal*/</sup> LLMs</h4>
                             <div class="paper-meta">
-                                <span class="authors">Sicheng Yang, Hangjie Yuan, Wenjun Zhang</span>
-                                <span class="date">2026-06-12</span>
-                                <span class="categories">cs.CV | cs.AI</span>
+                                <span class="authors">Peiyang Xu, Bangzheng Li, Sijia Liu</span>
+                                <span class="date">2026-06-15</span>
+                                <span class="categories">cs.CL | cs.CV</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Building trustworthy medical multimodal large language models (MLLMs) is critical for reliable clinical decision support. Existing medical hallucination benchmarks mainly focus on data collection, but often ignore where hallucinations originate within the reasoning process. We find that hallucinatio...</p>
+                                <p class="abstract-en">Large language models (LLMs) often fail when answering requires identifying a small but decisive piece of evidence within a long or complex context, such as a single line in a tool trace or a subtle detail in an image. We propose ContextRL, a context-aware reinforcement learning (RL) method that imp...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">构建值得信赖的医学多模式大语言模型 (MLLM) 对于可靠的临床决策支持至关重要。现有的医学幻觉基准主要侧重于数据收集，但往往忽略推理过程中幻觉的起源。我们发现不同样本的幻觉来源有所不同：错误可能源于视觉错误识别、不正确的医学知识回忆或有缺陷的推理整合。为了实现源级幻觉诊断，我们引入了 ClinHallu，这是医学 MLLM 推理中分阶段幻觉诊断的基准。 ClinHallu 包含 7,031 个经过验证的实例，其中每个实例都通过分解为视觉识别、知识回忆和推理集成的结构化推理跟踪进行了增强。我们还使用阶段替换干预措施来衡量纠正特定阶段如何影响最终答案。除了评估之外，我们还表明跟踪监督微调可以减少阶段性幻觉。 ClinHallu 提供了一个细粒度的幻觉测试平台，用于诊断和减轻医学 MLLM 中的推理失败。该基准可在 https://github.com/alibaba-damo-academy/ClinHallu 上公开获取。</p>
+                                    <p class="abstract-zh">当回答需要在较长或复杂的上下文中识别小但决定性的证据时（例如工具轨迹中的单行或图像中的微妙细节），大型语言模型 (LLM) 常常会失败。我们提出了 ContextRL，一种上下文感知强化学习（RL）方法，通过 emph{间接} 辅助目标来提高长视野推理和多模态性能。 ContextRL 不是只监督最终答案，而是向模型提供一个查询、一个答案和两个高度相似的上下文，并奖励它选择支持查询-答案对的上下文，从而鼓励细粒度的基础。我们在两个领域构建对比上下文数据：对于编码代理，轨迹充当上下文，通过条件过滤生成 1k 对；对于多模态推理，图像充当上下文，通过生成编辑和相似性搜索生成 7K 对。 ContextRL 在 5 个长期基准测试中比标准 GRPO 平均增益 +2.2%，在 12 个不同的视觉问答基准测试中平均增益 +1.8%。为了将所提出的目标的效果与附加数据的效果分开，我们与数据增强基线进行比较，该基线将相同的对比上下文重新用作标准查询-上下文-答案示例。这些基线几乎没有提供任何改进，表明收益来自所提出的上下文选择目标，而不是仅来自对比数据。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.14697v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.17053v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Persona-Pruner:<sup class='ipa'>/personapruner*/</sup> Sculpting<sup class='ipa'>/ˈskəlptɪŋ/</sup> Lightweight<sup class='ipa'>/ˈlaɪtˈweɪt/</sup> Models for Role-Playing<sup class='ipa'>/ˈroʊlˌpleɪɪŋ/</sup></h4>
+                            <h4 class="paper-title">Benchmarking<sup class='ipa'>/benchmarking*/</sup> LLM Agents on Meta-Analysis<sup class='ipa'>/metaanalysis*/</sup> Articles<sup class='ipa'>/ˈɑrtɪkəlz/</sup> from Nature Portfolio<sup class='ipa'>/pɔrtˈfoʊliˌoʊ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Jinsu Kim, Jihoon Tack, Noah Lee</span>
-                                <span class="date">2026-06-12</span>
-                                <span class="categories">cs.LG | cs.CL</span>
+                                <span class="authors">Anzhe Xie, Weihang Su, Yujia Zhou</span>
+                                <span class="date">2026-06-15</span>
+                                <span class="categories">cs.CL | cs.IR</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Language Models (LMs) have shown remarkable potential as role-playing chatbots, delivering consistent, stylized interactions when given a specification of a character or user persona. However, applying these capabilities to real-world applications (e.g., ecosystems with numerous NPCs interacting sim...</p>
+                                <p class="abstract-en">Meta-analysis is a demanding form of evidence synthesis that combines literature retrieval, PI/ECO-guided study selection, and statistical aggregation. Its structured, verifiable workflow makes it an ideal substrate for evaluating systematic scientific reasoning, yet existing benchmarks lack ground ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">语言模型 (LM) 作为角色扮演聊天机器人显示出了巨大的潜力，在给定角色或用户角色规范时，可以提供一致、风格化的交互。然而，将这些功能应用于现实世界的应用程序（例如，具有大量 NPC 同时交互的生态系统）会因计算成本过高而暴露出严重的低效率问题。在本文中，我们质疑将完整的通用模型专用于单个角色的必要性，假设特定的角色身份仅依赖于模型总容量的一小部分。我们观察到，天真的修剪 LM 通常会严重降低特定角色的角色扮演性能；它不区分多余的知识和基本的性格特征。我们提出了 Persona-Pruner，这是一个通过将特定于角色的子网络与单个描述隔离开来塑造轻量级角色扮演模型的框架。我们的实验一致表明，Persona-Pruner 比现有最先进的 LLM 修剪技术更有效地保留了角色扮演性能，与 RoleBench 上 LLM 作为法官评分的最强基线相比，将密集模型的性能下降减少了 93.8%，同时仍然保持了一般 LLM 能力。代码可在 https://github.com/jsu-kim/Persona-Pruner 获取。</p>
+                                    <p class="abstract-zh">荟萃分析是一种要求很高的证据综合形式，结合了文献检索、PI/ECO 指导的研究选择和统计汇总。其结构化、可验证的工作流程使其成为评估系统科学推理的理想基础，但现有基准在整个检索-筛选-合成流程中缺乏基本事实。我们介绍 MetaSyn，这是一个包含来自 Nature Portfolio 期刊的 442 个专家策划的荟萃分析的数据集。每个条目都将一个研究问题与 PI/ECO 标准、14 万篇 PubMed 文章的检索语料库、经过验证的阳性研究、主题相似但不符合 PI/ECO 条件的硬阴性以及完整的搜索策略和日期范围配对。   对 12 种管道配置（9 种 RAG 变体和一个协议驱动代理）进行基准测试揭示了一个关键的筛选瓶颈：尽管 K=200 时的检索上限为 90.9%，但没有系统能够恢复超过 52.7% 的真实事实（包括文献）。目前的法学硕士无法在具有可比主题相关性的池中可靠地将合格的研究与 PI/ECO 失败的干扰因素区分开来。阶段属性指标捕获系统成功和失败的地方；单个端到端得分则不然。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.14695v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.17041v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -934,26 +934,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/memoriqme/memoriq" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">memoriq</span>
-                                    <span class="repo-stars">⭐ 12</span>
+                                    <span class="repo-stars">⭐ 13</span>
                                 </div>
                                 <p class="repo-desc">用于保存和搜索 AI 对话的加密 AI 内存库</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Vue</span>
                                     <span class="repo-date">2026-06-12</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/lucidrains/ASAC" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ASAC</span>
-                                    <span class="repo-stars">⭐ 11</span>
-                                </div>
-                                <p class="repo-desc">基于注意力模式的注意力控制（ASAC）的实现，一种认知启发的变压器注意力管理方法</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-09</span>
                                 </div>
                             </a>
                         </li>
@@ -967,6 +953,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="repo-desc">为单人企业全天候 (24/7) 工作的 AI 团队 — 7 个部门的 50 多种工具，专为个体企业家打造</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-06-14</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/holasoymalva/guia-de-programacion-con-ai" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">guia-de-programacion-con-ai</span>
+                                    <span class="repo-stars">⭐ 7</span>
+                                </div>
+                                <p class="repo-desc">人工智能和LLMS的开发和程序设计</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-06-14</span>
                                 </div>
                             </a>
@@ -987,20 +987,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/holasoymalva/guia-de-programacion-con-ai" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">guia-de-programacion-con-ai</span>
-                                    <span class="repo-stars">⭐ 6</span>
-                                </div>
-                                <p class="repo-desc">人工智能和LLMS的开发和程序设计</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-14</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/sairaman436/vybe-intelligence-vault" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">vybe-intelligence-vault</span>
@@ -1015,15 +1001,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/kilvz/Project-Adam" target="_blank" class="repo-link">
+                            <a href="https://github.com/rajfazulhussain2008/markindex-mcp" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Project-Adam</span>
-                                    <span class="repo-stars">⭐ 4</span>
+                                    <span class="repo-name">markindex-mcp</span>
+                                    <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">COGNET 对话式 AI — 自学习、每用户 LoRA 适应、可微记忆、MCP 工具、自主自我对弈</p>
+                                <p class="repo-desc"></p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-09</span>
+                                    <span class="repo-date">2026-06-12</span>
                                 </div>
                             </a>
                         </li>
@@ -1051,6 +1037,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="repo-desc">Copiloto de carreira 本地优先 com IA、ATS、工作匹配、机会描述和跟踪器。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-12</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/roninchat/ronin" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ronin</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">Ronin 是原生 Linux 智能应用程序，具有线程 AI 聊天、上下文工具、本地内存/工件。使用 Rust 构建 GPUI。作为带有 CLI 启动器的独立应用程序开始，逐渐发展为 Linux 的可靠智能层。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Rust</span>
                                     <span class="repo-date">2026-06-12</span>
                                 </div>
                             </a>
