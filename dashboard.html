@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-16 23:20:37</span>
+        <span class="generated-time">更新于 2026-06-17 23:20:02</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">The Value Axis: Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models Encode Whether They're on the Right Track</h4>
+                            <h4 class="paper-title">Visual Verification<sup class='ipa'>/ˌvɛrəfəˈkeɪʃən/</sup> Enables Inference-time<sup class='ipa'>/inferencetime*/</sup> Steering<sup class='ipa'>/ˈstɪrɪŋ/</sup> and Autonomous<sup class='ipa'>/ɔˈtɑnəməs/</sup> Policy Improvement<sup class='ipa'>/ˌɪmˈpruvmənt/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Nick Jiang, Isaac Kauvar, Jack Lindsey</span>
-                                <span class="date">2026-06-15</span>
+                                <span class="authors">Mingtong Zhang, Dhruv Shah</span>
+                                <span class="date">2026-06-16</span>
+                                <span class="categories">cs.RO | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Robots deployed in the real world should learn from their experience and improve over time. This requires a mechanism of practicing and learning from feedback. In this paper, we propose VERITAS, a generator-verifier framework for generalist robot policies for inference-time policy steering and self-...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">部署在现实世界中的机器人应该从经验中学习并随着时间的推移而改进。这需要一种练习和从反馈中学习的机制。在本文中，我们提出了 VERITAS，这是一种用于通用机器人策略的生成器验证器框架，用于推理时间策略指导和自我改进。我们使用预先训练的通用机器人策略作为“生成器”，并将其与无梯度“视觉验证器”配对，该验证器在推理时评估动作。该框架支持推理时间引导，无需额外培训即可提高策略性能。我们证明，在没有额外演示数据培训的情况下，推理时间验证的性能始终优于普通通才。此外，我们证明，经过验证的推出为离线策略改进提供了有效的监督：根据经过验证的自生成轨迹进行微调的策略可以实现一致的性能增益。值得注意的是，我们发现经过验证的部署后培训可以达到与专家演示相当的效率，同时不需要人工干预。我们的结果强调推理时间验证是一种实用且可扩展的机制，用于在部署期间改进机器人策略。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2606.18247v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Variable-Width<sup class='ipa'>/variablewidth*/</sup> Transformers<sup class='ipa'>/trænsˈfɔrmərz/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Zhaofeng Wu, Oliver Sieberling, Shawn Tan</span>
+                                <span class="date">2026-06-16</span>
                                 <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">We investigate whether language models internally track the value of their current trajectory, defined as the likelihood that their ongoing strategy will achieve their goals. Using synthetic, in-context reinforcement learning data, we construct a &#34;value&#34; axis for Qwen3-8B. We find that activations a...</p>
+                                <p class="abstract-en">Scaling model size, specifically depth and width, has driven significant progress in transformer-based language models. However, most architectures maintain a constant width across all layers, allocating a fixed parameter and computation budget evenly despite different layers potentially playing dis...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">我们调查语言模型是否在内部跟踪其当前轨迹的价值，定义为其正在进行的策略实现目标的可能性。使用综合的上下文强化学习数据，我们为 Qwen3-8B 构建了一个“价值”轴。我们发现沿着这个轴的激活区分高和低语言置信度、没有和有回溯的推出以及正确和损坏的代码。转向高价值会抑制自我纠正并减少解释性的冗长，而转向低价值会导致回溯和探索。我们证明直接偏好优化（DPO）可以增加奖励行为（例如使用某个单词）的内部价值，使模型在展示这些行为后更加自信地行动。最后，我们应用价值轴来研究野外环境。例如，我们发现 Qwen 在训练后为政治敏感的聊天查询分配了较低的值，并且监督微调增加了训练领域内的内部信心。我们的结果表明，语言模型线性编码对预期目标成功的估计，从而调节他们追求某个方向的信心。</p>
+                                    <p class="abstract-zh">缩放模型大小，特别是深度和宽度，推动了基于 Transformer 的语言模型的重大进展。然而，大多数架构在所有层上保持恒定的宽度，均匀地分配固定参数和计算预算，尽管不同层可能扮演不同的计算角色。在这项工作中，我们通过提出 $\times$ 形 &gt; &lt;前架构，实证研究跨网络深度的非均匀容量分配。该设计利用无参数残余调整机制，保持更宽的早期层和晚期层，同时缩小中间层。在从 200M 到 2B 参数（密集）和 3B 参数（MoE）的纯解码器语言模型中，我们的 &gt; &lt;former 在语言建模损失方面始终优于参数匹配的统一基线。通过减少平均层宽度，该架构还需要更少的总体 FLOP（在拟合损失匹配缩放曲线下减少 22%）和更小的 KV 缓存和 I/O 成本（减少 15%）。在分析中，我们表明这种瓶颈结构导致残差流中的表示在质量上有所不同。总的来说，我们的结果表明，非均匀宽度分配可以导致语言模型的资源优化扩展。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.17056v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.18246v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Context-Aware<sup class='ipa'>/contextaware*/</sup> RL for Agentic and Multimodal<sup class='ipa'>/multimodal*/</sup> LLMs</h4>
+                            <h4 class="paper-title">ReproRepo:<sup class='ipa'>/reprorepo*/</sup> Scaling Reproducibility<sup class='ipa'>/reproducibility*/</sup> Audits with GitHub Repository<sup class='ipa'>/riˈpɑzəˌtɔri/</sup> Issues</h4>
                             <div class="paper-meta">
-                                <span class="authors">Peiyang Xu, Bangzheng Li, Sijia Liu</span>
-                                <span class="date">2026-06-15</span>
-                                <span class="categories">cs.CL | cs.CV</span>
+                                <span class="authors">Shanda Li, Qiuhong Anna Wei, Jingwu Tang</span>
+                                <span class="date">2026-06-16</span>
+                                <span class="categories">cs.CL | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Large language models (LLMs) often fail when answering requires identifying a small but decisive piece of evidence within a long or complex context, such as a single line in a tool trace or a subtle detail in an image. We propose ContextRL, a context-aware reinforcement learning (RL) method that imp...</p>
+                                <p class="abstract-en">Reproducing research results from papers and released code is central to scientific progress. Existing works have introduced benchmarks to evaluate whether LLM agents can assist with reproducibility, but they are difficult to scale due to their reliance on substantial manual effort for data curation...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">当回答需要在较长或复杂的上下文中识别小但决定性的证据时（例如工具轨迹中的单行或图像中的微妙细节），大型语言模型 (LLM) 常常会失败。我们提出了 ContextRL，一种上下文感知强化学习（RL）方法，通过 emph{间接} 辅助目标来提高长视野推理和多模态性能。 ContextRL 不是只监督最终答案，而是向模型提供一个查询、一个答案和两个高度相似的上下文，并奖励它选择支持查询-答案对的上下文，从而鼓励细粒度的基础。我们在两个领域构建对比上下文数据：对于编码代理，轨迹充当上下文，通过条件过滤生成 1k 对；对于多模态推理，图像充当上下文，通过生成编辑和相似性搜索生成 7K 对。 ContextRL 在 5 个长期基准测试中比标准 GRPO 平均增益 +2.2%，在 12 个不同的视觉问答基准测试中平均增益 +1.8%。为了将所提出的目标的效果与附加数据的效果分开，我们与数据增强基线进行比较，该基线将相同的对比上下文重新用作标准查询-上下文-答案示例。这些基线几乎没有提供任何改进，表明收益来自所提出的上下文选择目标，而不是仅来自对比数据。</p>
+                                    <p class="abstract-zh">从论文和发布的代码中复制研究结果是科学进步的核心。现有的工作已经引入了基准来评估 LLM 代理是否可以帮助再现性，但由于它们依赖于大量的手动数据管理和评估，因此很难扩展。我们引入了 ReproRepo，这是一个用于再现性评估的可扩展框架，它利用人类提出的 GitHub 问题作为对现实再现拦截器自然发生的监督。我们在主要会议上的 1,149 篇最新机器学习论文上实例化了 ReproRepo，并评估了四种前沿模型代理配置。我们的结果表明，LLM 代理即使不执行代码，也可以从论文-存储库对中识别出许多现实世界的可重复性问题：我们研究中最好的代理，即带有 GPT-5.5 的 Codex，为研究中约 90% 的论文提供了至少一个语义相关的人类报告的拦截器。进一步的分析表明，代理对于显示可见故障和识别正确的语义区域特别有效，但在精确定位方面可能仍然不够。 ReproRepo 可以作为一个可重用、可扩展的框架，用于未来对现实世界再现性审计的 LLM 代理进行评估。我们的代码发布于 https://github.com/LithiumDA/ReproRepo。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.17053v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Benchmarking<sup class='ipa'>/benchmarking*/</sup> LLM Agents on Meta-Analysis<sup class='ipa'>/metaanalysis*/</sup> Articles<sup class='ipa'>/ˈɑrtɪkəlz/</sup> from Nature Portfolio<sup class='ipa'>/pɔrtˈfoʊliˌoʊ/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Anzhe Xie, Weihang Su, Yujia Zhou</span>
-                                <span class="date">2026-06-15</span>
-                                <span class="categories">cs.CL | cs.IR</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Meta-analysis is a demanding form of evidence synthesis that combines literature retrieval, PI/ECO-guided study selection, and statistical aggregation. Its structured, verifiable workflow makes it an ideal substrate for evaluating systematic scientific reasoning, yet existing benchmarks lack ground ...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">荟萃分析是一种要求很高的证据综合形式，结合了文献检索、PI/ECO 指导的研究选择和统计汇总。其结构化、可验证的工作流程使其成为评估系统科学推理的理想基础，但现有基准在整个检索-筛选-合成流程中缺乏基本事实。我们介绍 MetaSyn，这是一个包含来自 Nature Portfolio 期刊的 442 个专家策划的荟萃分析的数据集。每个条目都将一个研究问题与 PI/ECO 标准、14 万篇 PubMed 文章的检索语料库、经过验证的阳性研究、主题相似但不符合 PI/ECO 条件的硬阴性以及完整的搜索策略和日期范围配对。   对 12 种管道配置（9 种 RAG 变体和一个协议驱动代理）进行基准测试揭示了一个关键的筛选瓶颈：尽管 K=200 时的检索上限为 90.9%，但没有系统能够恢复超过 52.7% 的真实事实（包括文献）。目前的法学硕士无法在具有可比主题相关性的池中可靠地将合格的研究与 PI/ECO 失败的干扰因素区分开来。阶段属性指标捕获系统成功和失败的地方；单个端到端得分则不然。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2606.17041v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.18237v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -931,10 +931,24 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/lucidrains/poly-attention" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">poly-attention</span>
+                                    <span class="repo-stars">⭐ 18</span>
+                                </div>
+                                <p class="repo-desc">Poly-attention 的实现，Chakrabarti 等人提出的一种高阶自注意力机制。哥伦比亚大学</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-16</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/memoriqme/memoriq" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">memoriq</span>
-                                    <span class="repo-stars">⭐ 13</span>
+                                    <span class="repo-stars">⭐ 14</span>
                                 </div>
                                 <p class="repo-desc">用于保存和搜索 AI 对话的加密 AI 内存库</p>
                                 <div class="repo-meta">
@@ -1001,57 +1015,43 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/rajfazulhussain2008/markindex-mcp" target="_blank" class="repo-link">
+                            <a href="https://github.com/likithamadala/ai-pm-learning-fleet" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">markindex-mcp</span>
-                                    <span class="repo-stars">⭐ 3</span>
+                                    <span class="repo-name">ai-pm-learning-fleet</span>
+                                    <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc"></p>
+                                <p class="repo-desc">一个自动运行的人工智能代理团队，教会其所有者像人工智能产品经理一样思考，并在没有保姆的情况下进行日常维护。基于克劳德代码构建。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-12</span>
+                                    <span class="repo-date">2026-06-17</span>
                                 </div>
                             </a>
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/divyanshujethi/AdRank-CTR-Prediction-System" target="_blank" class="repo-link">
+                            <a href="https://github.com/Noshkoto/Noshy" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">AdRank-CTR-Prediction-System</span>
-                                    <span class="repo-stars">⭐ 3</span>
+                                    <span class="repo-name">Noshy</span>
+                                    <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc">生产级点击率预测系统，具有实时推理、排名模型、MLOps 管道和受 Google/Meta 广告系统启发的可扩展广告点击预测架构。</p>
+                                <p class="repo-desc">你的经纪人有失忆症。 Noshy 解决了这个问题。 AI 代理的持久内存 — LLM 提取、混合搜索、零依赖。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-11</span>
+                                    <span class="repo-date">2026-06-16</span>
                                 </div>
                             </a>
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Soturine/SotuHire" target="_blank" class="repo-link">
+                            <a href="https://github.com/thedevroom/lexai" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">SotuHire</span>
+                                    <span class="repo-name">lexai</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">Copiloto de carreira 本地优先 com IA、ATS、工作匹配、机会描述和跟踪器。</p>
+                                <p class="repo-desc">LexAI v2 — 数字法律人工智能办公室。 Next.js + Fastify + tRPC + Prisma。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-12</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/roninchat/ronin" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ronin</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">Ronin 是原生 Linux 智能应用程序，具有线程 AI 聊天、上下文工具、本地内存/工件。使用 Rust 构建 GPUI。作为带有 CLI 启动器的独立应用程序开始，逐渐发展为 Linux 的可靠智能层。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Rust</span>
-                                    <span class="repo-date">2026-06-12</span>
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-06-15</span>
                                 </div>
                             </a>
                         </li>
