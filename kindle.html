@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-06-18 23:42:03</p>
+            <p class="hero-meta">构建时间：2026-06-19 22:52:11</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">博观而约取，厚积而薄发。</p>
-                        <p class="quick-meta">— 苏轼</p>
+                        <p class="quick-main">The only way to do great work is to love what you do.</p>
+                        <p class="quick-meta">— Steve Jobs</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">lucidrains/poly-attention</p>
-                        <p class="quick-meta">★ 27</p>
+                        <p class="quick-meta">★ 32</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 deprecated，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 algorithm，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 lucidrains/poly-attention，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Native Active Perception as Reasoning for Omni-Modal Understanding》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《How Transparent is DiffusionGemma?》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">deprecated <span>/ˈdeprəkeɪtɪd/</span></p>
-                    <p class="study-meaning">adj. 已弃用的；不推荐的</p>
+                    <p class="study-word">algorithm <span>/ˈælɡəˌrɪðəm/</span></p>
+                    <p class="study-meaning">n. 算法；运算法则</p>
                     
-                    <p class="study-sentence">This method is deprecated and will be removed in the next version.</p>
-                    <p class="study-sentence-zh">此方法已弃用，将在下一版本中移除。</p>
+                    <p class="study-sentence">The sorting algorithm runs in O(n log n) time complexity.</p>
+                    <p class="study-sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Native Active Perception as Reasoning for Omni-Modal Understanding</p>
-                    <p class="deep-abstract">用于长视频理解的被动模型通常依赖于“全部观看”范例，无论查询难度如何，都统一处理帧，导致计算成本随着视频持续时间的增加而增加。尽管交互式框架已经出现，但它们通常依赖于全局预扫描，并且它们的上下文成本仍然随着视频长度而变化。我们提出了 OmniAgent，这是第一个原生全模式代理，它将视频理解制定为基于 POMDP 的迭代观察-思考-行动循环。 OmniAgent 执行按需操作，有选择地将视听线索提取到持久的文本内存中，从而有效地将推理复杂性与原始视频持续时间解耦。为了实现这一点，我们引入了（1）代理监督微调，通过双阶段质量控制的 N 最佳轨迹合成来引导原生主动感知，以及（2）TAURA 代理强化学习（回合感知自适应不确定性重新调整优势），它利用回合水平熵来引导信用分配转向关键发现回合。至关重要的是，OmniAgent 表现出积极的测试时间扩展，其中性能随着推理轮数的增加而提高，从而验证了主动感知的有效性。十个基准测试（例如 VideoMME、LVBench）的实证结果表明，OmniAgent 在开源模型中实现了最先进的性能。值得注意的是，在 LVBench 上，我们的 7B 代理的性能优于大 10 倍的 Qwen2.5-VL-72B（50.5% vs. 47.3%）。</p>
+                    <p class="deep-title">How Transparent is DiffusionGemma?</p>
+                    <p class="deep-abstract">LLM 推理透明度对于理解模型决策、减少误用和错位以及调试令人惊讶的模型行为至关重要。然而，DiffusionGemma 在连续的潜在空间中执行大部分计算；这是否会使其推理变得不那么透明？我们通过将透明度分解为两个部分来研究这个问题：变量透明度，我们是否理解模型计算状态的中间快照；以及算法透明度，我们是否可以使用这些快照来重建模型达到其输出的过程。天真地说，DiffusionGemma 的变量透明度很差：它的不透明串行深度，即在可解释模型状态之间发生的串行计算量，乍一看似乎比相应的自回归 Gemma 4 模型高 28.6 倍。然而，我们表明我们可以通过可解释的令牌瓶颈映射去噪步骤之间的信息流，而不会降低下游性能。将这些中间状态视为可解释的，可将不透明序列深度减少到 Gemma 4 的 1.1 倍。扩散模型的算法透明度比自回归模型更难，因为画布中的所有标记预测都可以在每个去噪步骤中发生变化，从而使模型能够在去噪过程中实现复杂的分布式算法。为了开始弥合这一差距，我们进行了一系列可解释性案例研究，揭示了新颖的扩散特定现象的初步证据，例如非时间推理、标记和序列涂抹以及中间上下文推理。最后，我们测试可监控性，这是透明度的一个关键应用，用于衡量模型输出是否对下游任务有用。我们发现 DiffusionGemma 与 Gemma 4 具有类似的可监控性。</p>
                     
-                    <p class="deep-takeaway">要点：用于长视频理解的被动模型通常依赖于“全部观看”范例，无论查询难度如何，都统一处理帧，导致计算成本随着视频持续时间的增加而增加。尽管交互式框架已经出现，但它们通常依赖于全局预扫描，并且它们的上下文成本仍然随着视频长度而变化。我们提出了 OmniAgent，这是第一个原生全模式代理，它将视频理解制定为基于 POMDP 的迭...</p>
+                    <p class="deep-takeaway">要点：LLM 推理透明度对于理解模型决策、减少误用和错位以及调试令人惊讶的模型行为至关重要。然而，DiffusionGemma 在连续的潜在空间中执行大部分计算；这是否会使其推理变得不那么透明？我们通过将透明度分解为两个部分来研究这个问题：变量透明度，我们是否理解模型计算状态的中间快照；以及算法透明度，我们是否可以使用这些快...</p>
                     
                     <p class="deep-meta">预计阅读 2 分钟</p>
                 
@@ -284,18 +284,13 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>lucidrains/poly-attention</strong> (★ 27)
+                        <strong>lucidrains/poly-attention</strong> (★ 32)
                         <p>Poly-attention 的实现，Chakrabarti 等人提出的一种高阶自注意力机制。哥伦比亚大学</p>
                     </li>
                     
                     <li>
                         <strong>amplitudesoldierheed/AI-Voice-Changer-Real-Time-Desktop</strong> (★ 19)
                         <p></p>
-                    </li>
-                    
-                    <li>
-                        <strong>memoriqme/memoriq</strong> (★ 14)
-                        <p>用于保存和搜索 AI 对话的加密 AI 内存库</p>
                     </li>
                     
                     <li>
@@ -306,6 +301,11 @@ html, body {
                     <li>
                         <strong>holasoymalva/guia-de-programacion-con-ai</strong> (★ 8)
                         <p>人工智能和LLMS的开发和程序设计</p>
+                    </li>
+                    
+                    <li>
+                        <strong>BansheeTech/Borderline</strong> (★ 7)
+                        <p>Claude Code 插件，将无聊、低风险的任务（批量 i18n、琐碎的风格调整）委托给 Gemini CLI — 一个透明的 Claude ⇄ Gemini 管道。</p>
                     </li>
                     
                 </ul>
