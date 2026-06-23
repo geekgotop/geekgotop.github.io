@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-22 23:16:10</span>
+        <span class="generated-time">更新于 2026-06-23 23:05:32</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">How Transparent<sup class='ipa'>/trænˈspɛrənt/</sup> is DiffusionGemma?<sup class='ipa'>/diffusiongemma*/</sup></h4>
+                            <h4 class="paper-title">Randomized<sup class='ipa'>/ˈrændəˌmaɪzd/</sup> YaRN Improves<sup class='ipa'>/ˌɪmˈpruvz/</sup> Length Generalization<sup class='ipa'>/ˌʤɛnərəlɪˈzeɪʃən/</sup> for Long-Context<sup class='ipa'>/longcontext*/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Joshua Engels, Callum McDougall, Bilal Chughtai</span>
-                                <span class="date">2026-06-18</span>
-                                <span class="categories">cs.LG | cs.AI</span>
+                                <span class="authors">Manas Mehta, Fangcong Yin, Greg Durrett</span>
+                                <span class="date">2026-06-22</span>
+                                <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">LLM reasoning transparency is a critical affordance for understanding model decisions, mitigating misuse and misalignment, and debugging surprising model behaviors. However, DiffusionGemma performs a larger fraction of its computation in a continuous latent space; does this make its reasoning less t...</p>
+                                <p class="abstract-en">Large language models (LLMs) are typically pretrained on short sequences and then extended to work on longer sequences with additional training. However, such LLMs still struggle to further generalize to very long sequences. We propose Randomized YaRN, a training method that improves length generali...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">LLM 推理透明度对于理解模型决策、减少误用和错位以及调试令人惊讶的模型行为至关重要。然而，DiffusionGemma 在连续的潜在空间中执行大部分计算；这是否会使其推理变得不那么透明？我们通过将透明度分解为两个部分来研究这个问题：变量透明度，我们是否理解模型计算状态的中间快照；以及算法透明度，我们是否可以使用这些快照来重建模型达到其输出的过程。天真地说，DiffusionGemma 的变量透明度很差：它的不透明串行深度，即在可解释模型状态之间发生的串行计算量，乍一看似乎比相应的自回归 Gemma 4 模型高 28.6 倍。然而，我们表明我们可以通过可解释的令牌瓶颈映射去噪步骤之间的信息流，而不会降低下游性能。将这些中间状态视为可解释的，可将不透明序列深度减少到 Gemma 4 的 1.1 倍。扩散模型的算法透明度比自回归模型更难，因为画布中的所有标记预测都可以在每个去噪步骤中发生变化，从而使模型能够在去噪过程中实现复杂的分布式算法。为了开始弥合这一差距，我们进行了一系列可解释性案例研究，揭示了新颖的扩散特定现象的初步证据，例如非时间推理、标记和序列涂抹以及中间上下文推理。最后，我们测试可监控性，这是透明度的一个关键应用，用于衡量模型输出是否对下游任务有用。我们发现 DiffusionGemma 与 Gemma 4 具有类似的可监控性。</p>
+                                    <p class="abstract-zh">大型语言模型 (LLM) 通常在短序列上进行预训练，然后通过额外训练扩展到更长的序列。然而，此类法学硕士仍然难以进一步推广到很长的序列。我们提出了随机 YaRN，这是一种通过将基于 YaRN 的位置外推与随机位置编码和长度课程相结合来提高长度泛化的训练方法。在短上下文数据的训练过程中，标记被分配从更大位置范围采样的 YaRN 位置编码，即使在短上下文输入上，模型也会暴露于分布外的位置表示。我们在两个具有挑战性的长上下文推理基准 BABILong 和多轮共指解析 (MRCR) 上评估随机 YaRN。在使用 &lt;8K 上下文的数据进行训练时，随机 YaRN 持续提高上下文长度从 16K 到 128K 的推理性能，并且优于标准微调，最大增益出现在远远超出分布的长度处。我们的结果表明，逐步将模型暴露于 OOD 位置分布为可推广的长上下文推理提供了有效的方法。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.20560v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.23687v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Structuring<sup class='ipa'>/ˈstrəkʧərɪŋ/</sup> and Tokenizing<sup class='ipa'>/tokenizing*/</sup> Distributed<sup class='ipa'>/dɪˈstrɪbjətəd/</sup> User Interest<sup class='ipa'>/ˈɪntəˌrɛst/</sup> Context for Generative<sup class='ipa'>/ˈʤɛnərətɪv/</sup> Recommendation<sup class='ipa'>/ˌrɛkəmənˈdeɪʃən/</sup></h4>
+                            <h4 class="paper-title">CoorDex: Coordinating<sup class='ipa'>/koʊˈɔrdəˌneɪtɪŋ/</sup> Body and Hand Priors for Continuous<sup class='ipa'>/kənˈtɪnjuəs/</sup> Dexterous<sup class='ipa'>/dexterous*/</sup> Humanoid<sup class='ipa'>/ˈhjuməˌnɔɪd/</sup> Loco-Manipulation<sup class='ipa'>/locomanipulation*/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Ruizhong Qiu, Yinglong Xia, Dongqi Fu</span>
-                                <span class="date">2026-06-18</span>
-                                <span class="categories">cs.IR | cs.AI</span>
+                                <span class="authors">Sikai Li, Shuning Li, Zhenyu Wei</span>
+                                <span class="date">2026-06-22</span>
+                                <span class="categories">cs.RO | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Generative recommendation is an emerging paradigm that has shown promise in industrial recommendation systems, aiming to predict users&#39; next interactions from their historical behaviors. At the core of generative recommendation lies item tokenization, which bridges item semantics and recommendation ...</p>
+                                <p class="abstract-en">Humanoid loco-manipulation is often simplified into a stop-and-go process: walking to an object, stopping to manipulate it, and then resuming locomotion. It also commonly relies on low degree-of-freedom (DoF) end effectors that behave like an open-close grasp primitive. We introduce CoorDex, a learn...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">生成式推荐是一种新兴范式，在工业推荐系统中显示出前景，旨在根据用户的历史行为预测用户的下一次交互。生成推荐的核心是项目标记化，它连接了项目语义和推荐模型。然而，现有的方法通常很难同时有效地组织和注入复杂的用户行为和项目语义上下文到推荐模型中。一方面，现有的基于图的集成方法，例如图序列化和图神经网络，要么面临可扩展性问题，要么仅利用本地图信息。另一方面，现有的语义标记化方法通常依赖于启发式方法并且缺乏明确的监督信号，这可能导致语义表示不准确或次优。为了解决用户兴趣上下文建模中的这些限制，我们提出了 G2Rec，这是一个可扩展的框架，它将基于图的整体用户共同参与建模与语义标记化相结合，以实现工业规模的生成推荐。总体而言，G2Rec 使推荐模型能够捕获整体且基于语义的用户兴趣原型，而不需要真实的用户兴趣，从而在工业顺序推荐中提供更全面、更准确的用户行为上下文建模。跨产品表面的在线部署以及在公共数据集上的广泛实验证明了 G2Rec 相对于现有方法的优越性。</p>
+                                    <p class="abstract-zh">人形机器人的运动操纵通常被简化为一个走走停停的过程：走到一个物体前，停下来操纵它，然后恢复运动。它还通常依赖于低自由度 (DoF) 末端执行器，其行为类似于开闭抓取基元。我们引入了 CoorDex，这是一种学习管道，可将高维身体和灵巧手控制转换为协调的潜在残差控制，从而实现移动中的高自由度灵巧局部操纵。从模拟全身和手部演示开始，CoorDex 为类人身体和灵巧手训练特权运动跟踪教师，将其提炼为本体感觉条件的潜在先验，并使用冻结的先验作为下游残差强化学习的动作空间。协调的潜在残差策略通过共享任务上下文和单独的身体-手残差头来组合这些先验，保留自然的全身运动，同时提高手指级接触可靠性。 CoorDex 使具有 20 自由度无极手的 Unitree G1 人形机器人能够在运动中执行灵巧的操作，包括不间断地抓握和搬运瓶子、在移动中打开冰箱门以及立方体拾取和转动。对行走-抓取-携带任务的消融表明，在相同的奖励预算下，关节空间 PPO、关节空间手控制和整体潜在预测都失败了，而潜在先验接口和协调残差结构使得高维接触丰富的局部操作可训练。项目页面：https://skevinci.github.io/coordex/</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.20554v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.23680v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Toward Calibrated<sup class='ipa'>/ˈkæləˌbreɪtəd/</sup> Mixture-of-Experts<sup class='ipa'>/mixtureofexperts*/</sup> Under Distribution<sup class='ipa'>/ˌdɪstrəˈbjuʃən/</sup> Shift</h4>
+                            <h4 class="paper-title">Semantic<sup class='ipa'>/sɪˈmæntɪk/</sup> Browsing:<sup class='ipa'>/ˈbraʊzɪŋ/</sup> Controllable<sup class='ipa'>/kənˈtroʊləbəl/</sup> Diversity<sup class='ipa'>/dɪˈvərsɪti/</sup> for Image Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Gina Wong, Drew Prinster, Suchi Saria</span>
-                                <span class="date">2026-06-18</span>
-                                <span class="categories">cs.AI | cs.LG</span>
+                                <span class="authors">Sara Dorfman, Maya Vishnevsky, Omer Dahary</span>
+                                <span class="date">2026-06-22</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Calibration aligns a model&#39;s predictive uncertainty with the frequencies of its empirical outcomes and is important for understanding and trusting reported probabilities. Recent work shows that enforcing calibration at the level of individual predictors can improve ensemble accuracy and calibration,...</p>
+                                <p class="abstract-en">Modern text-to-image models excel in visual fidelity and prompt adherence. However, this strict adherence comes at the cost of diversity: generated samples tend to collapse into a single visual interpretation. Existing methods to improve diversity produce outputs driven by incidental variations rath...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">校准将模型的预测不确定性与其经验结果的频率保持一致，对于理解和信任报告的概率非常重要。最近的工作表明，在单个预测变量的层面上实施校准可以提高整体精度和校准，特别是专家混合（MoE）模型显示出强大的经验改进；然而，校准对教育部有帮助的条件尚不清楚。在这项工作中，我们研究 MoE 模型在分布转移下的表现，重点关注路由机制如何与专家级校准相互作用。我们表明，专家校准足以确保在硬路由模型的广泛分布变化下校准整个模型，但不足以校准软路由模型。为了解决这个问题，我们提出了一种对抗性重新加权，它可以惩罚分布偏移下路由聚合的校准误差，并且我们证明它可以改善模型类、预测任务和分布偏移的平均和困难数据子集上的精度校准权衡。</p>
+                                    <p class="abstract-zh">现代文本到图像模型在视觉保真度和快速依从性方面表现出色。然而，这种严格遵守是以多样性为代价的：生成的样本往往会崩溃为单一的视觉解释。现有的提高多样性的方法产生的输出是由偶然变化驱动的，而不是有意义的设计选择。这激发了多样性任务的新变体，其中对生成的样本强制执行结构。我们引入了一种可实现语义浏览的受控多样性方法，用户可以在结构化图像库中导航，并通过系统地遍历有意义的、可解释的变化轴来体验创造性探索。实现这种级别的语义控制需要对场景有深入的理解。我们利用了最近的文本到图像模型是在详细的标题上进行训练的事实，有效地将语义决策与像素生成解耦。这实现了范式转变：我们不再依赖文本到图像模型中的随机变化，而是直接在文本级别引入多样性。通过利用丰富的文本表示，我们允许视觉语言模型（VLM）在整个场景上下文中运行。为了克服标准 VLM 典型的通用输出，我们采用代理工作流程，明确强制与原始提示相协调的结构化变化。我们证明我们的方法可以产生多样化且可导航的设计空间，其中每个变化都对应于特定的、用户可理解的语义决策。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.20544v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.23679v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -915,20 +915,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <ul class="repo-list">
                     
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/lucidrains/poly-attention" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">poly-attention</span>
-                                    <span class="repo-stars">⭐ 38</span>
-                                </div>
-                                <p class="repo-desc">Poly-attention 的实现，Chakrabarti 等人提出的一种高阶自注意力机制。哥伦比亚大学</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-16</span>
-                                </div>
-                            </a>
-                        </li>
                         
                         <li class="repo-item">
                             <a href="https://github.com/Moh4696/free-ai-models" target="_blank" class="repo-link">
@@ -959,24 +945,10 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Noshkoto/Noshy" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Noshy</span>
-                                    <span class="repo-stars">⭐ 5</span>
-                                </div>
-                                <p class="repo-desc">你的经纪人有失忆症。 Noshy 解决了这个问题。 AI 代理的持久内存 — LLM 提取、混合搜索、零依赖。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-16</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/cnaebadi/ai-disclosure-handbook" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">ai-disclosure-handbook</span>
-                                    <span class="repo-stars">⭐ 5</span>
+                                    <span class="repo-stars">⭐ 6</span>
                                 </div>
                                 <p class="repo-desc">关于人工智能隐私、分析、影子分析、本地人工智能、云人工智能和人类自主的未来的实用指南。</p>
                                 <div class="repo-meta">
@@ -1015,20 +987,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/likithamadala/ai-pm-learning-fleet" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ai-pm-learning-fleet</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">一个自动运行的人工智能代理团队，教会其所有者像人工智能产品经理一样思考，并在没有保姆的情况下进行日常维护。基于克劳德代码构建。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-17</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/Hayredin950/SYNAPSE" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">SYNAPSE</span>
@@ -1043,6 +1001,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/likithamadala/ai-pm-learning-fleet" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ai-pm-learning-fleet</span>
+                                    <span class="repo-stars">⭐ 4</span>
+                                </div>
+                                <p class="repo-desc">一个自动运行的人工智能代理团队，教会其所有者像人工智能产品经理一样思考，并在没有保姆的情况下进行日常维护。基于克劳德代码构建。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-17</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/AlicanKaya192/Deep_Learning_Path" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Deep_Learning_Path</span>
@@ -1052,6 +1024,34 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-06-18</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/charanpreetSingh123/MediScanAI" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">MediScanAI</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">🏥 AI驱动的多疾病早期检测平台 |脑肿瘤·糖尿病视网膜病变·皮肤癌| PyTorch · FastAPI · React · Grad-CAM | B.Tech重大项目</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">JavaScript</span>
+                                    <span class="repo-date">2026-06-17</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/nicolbl95/MultiAgent-Financial-Analyzer" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">MultiAgent-Financial-Analyzer</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">多代理人工智能系统，使用 LangGraph、RAG 和 LLM 分析财务报告、识别风险并生成执行摘要。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-17</span>
                                 </div>
                             </a>
                         </li>
