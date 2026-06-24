@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-23 23:05:32</span>
+        <span class="generated-time">更新于 2026-06-24 23:01:08</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Randomized<sup class='ipa'>/ˈrændəˌmaɪzd/</sup> YaRN Improves<sup class='ipa'>/ˌɪmˈpruvz/</sup> Length Generalization<sup class='ipa'>/ˌʤɛnərəlɪˈzeɪʃən/</sup> for Long-Context<sup class='ipa'>/longcontext*/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h4>
+                            <h4 class="paper-title">InSight: Self-Guided<sup class='ipa'>/selfguided*/</sup> Skill Acquisition<sup class='ipa'>/ˌækwəˈzɪʃən/</sup> via Steerable<sup class='ipa'>/steerable*/</sup> VLAs</h4>
                             <div class="paper-meta">
-                                <span class="authors">Manas Mehta, Fangcong Yin, Greg Durrett</span>
-                                <span class="date">2026-06-22</span>
-                                <span class="categories">cs.CL</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Large language models (LLMs) are typically pretrained on short sequences and then extended to work on longer sequences with additional training. However, such LLMs still struggle to further generalize to very long sequences. We propose Randomized YaRN, a training method that improves length generali...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">大型语言模型 (LLM) 通常在短序列上进行预训练，然后通过额外训练扩展到更长的序列。然而，此类法学硕士仍然难以进一步推广到很长的序列。我们提出了随机 YaRN，这是一种通过将基于 YaRN 的位置外推与随机位置编码和长度课程相结合来提高长度泛化的训练方法。在短上下文数据的训练过程中，标记被分配从更大位置范围采样的 YaRN 位置编码，即使在短上下文输入上，模型也会暴露于分布外的位置表示。我们在两个具有挑战性的长上下文推理基准 BABILong 和多轮共指解析 (MRCR) 上评估随机 YaRN。在使用 &lt;8K 上下文的数据进行训练时，随机 YaRN 持续提高上下文长度从 16K 到 128K 的推理性能，并且优于标准微调，最大增益出现在远远超出分布的长度处。我们的结果表明，逐步将模型暴露于 OOD 位置分布为可推广的长上下文推理提供了有效的方法。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2606.23687v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">CoorDex: Coordinating<sup class='ipa'>/koʊˈɔrdəˌneɪtɪŋ/</sup> Body and Hand Priors for Continuous<sup class='ipa'>/kənˈtɪnjuəs/</sup> Dexterous<sup class='ipa'>/dexterous*/</sup> Humanoid<sup class='ipa'>/ˈhjuməˌnɔɪd/</sup> Loco-Manipulation<sup class='ipa'>/locomanipulation*/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Sikai Li, Shuning Li, Zhenyu Wei</span>
-                                <span class="date">2026-06-22</span>
+                                <span class="authors">Maggie Wang, Lars Osterberg, Stephen Tian</span>
+                                <span class="date">2026-06-23</span>
                                 <span class="categories">cs.RO | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Humanoid loco-manipulation is often simplified into a stop-and-go process: walking to an object, stopping to manipulate it, and then resuming locomotion. It also commonly relies on low degree-of-freedom (DoF) end effectors that behave like an open-close grasp primitive. We introduce CoorDex, a learn...</p>
+                                <p class="abstract-en">Vision-language-action (VLA) models can learn manipulation skills from demonstrations, but their capabilities are bounded by the skills in the training data. We present InSight, a framework that unlocks autonomous skill acquisition by rendering VLAs steerable at the primitive-action level (e.g., &#34;mo...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">人形机器人的运动操纵通常被简化为一个走走停停的过程：走到一个物体前，停下来操纵它，然后恢复运动。它还通常依赖于低自由度 (DoF) 末端执行器，其行为类似于开闭抓取基元。我们引入了 CoorDex，这是一种学习管道，可将高维身体和灵巧手控制转换为协调的潜在残差控制，从而实现移动中的高自由度灵巧局部操纵。从模拟全身和手部演示开始，CoorDex 为类人身体和灵巧手训练特权运动跟踪教师，将其提炼为本体感觉条件的潜在先验，并使用冻结的先验作为下游残差强化学习的动作空间。协调的潜在残差策略通过共享任务上下文和单独的身体-手残差头来组合这些先验，保留自然的全身运动，同时提高手指级接触可靠性。 CoorDex 使具有 20 自由度无极手的 Unitree G1 人形机器人能够在运动中执行灵巧的操作，包括不间断地抓握和搬运瓶子、在移动中打开冰箱门以及立方体拾取和转动。对行走-抓取-携带任务的消融表明，在相同的奖励预算下，关节空间 PPO、关节空间手控制和整体潜在预测都失败了，而潜在先验接口和协调残差结构使得高维接触丰富的局部操作可训练。项目页面：https://skevinci.github.io/coordex/</p>
+                                    <p class="abstract-zh">视觉-语言-动作（VLA）模型可以从演示中学习操作技能，但它们的能力受到训练数据中技能的限制。我们提出了 InSight，这是一个框架，通过在原始动作级别（例如，“将夹具移动到碗上”、“向上举起”、“倒瓶子”）使 VLA 可操纵，从而解锁自主技能获取。 InSight 包含两个主要阶段：(1) 自动分割管道，通过 VLM 计划分解和末端执行器姿势将演示分割为带标签的基元，以实现 VLA 图元的可操纵性；(2) VLM 引导的数据飞轮，用于识别完成新任务所需的缺失基元，使用 VLM 提出的低级控制自动尝试缺失基元的演示，并自动标记、存储成功的演示并将其集成到 VLA 训练集中。我们在模拟和现实世界的操作任务中评估 InSight，包括块翻转、抽屉关闭、清扫、扭转和倾倒，而没有对这些目标技能进行任何人类演示。一旦学会，这些原语就可以组合起来执行新颖的长期任务，而无需额外的人类演示。我们的研究结果表明，原始可操纵性为 VLA 政策中持续技能获取提供了实践基础。项目网站：https://insight-vla.github.io。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.23680v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.24884v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Semantic<sup class='ipa'>/sɪˈmæntɪk/</sup> Browsing:<sup class='ipa'>/ˈbraʊzɪŋ/</sup> Controllable<sup class='ipa'>/kənˈtroʊləbəl/</sup> Diversity<sup class='ipa'>/dɪˈvərsɪti/</sup> for Image Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h4>
+                            <h4 class="paper-title">FLUX3D: High-Fidelity<sup class='ipa'>/highfidelity*/</sup> 3D Gaussian<sup class='ipa'>/ˈgaʊsiən/</sup> Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> with Diffusion-Aligned<sup class='ipa'>/diffusionaligned*/</sup> Sparse Representation<sup class='ipa'>/ˌrɛprəzɛnˈteɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Sara Dorfman, Maya Vishnevsky, Omer Dahary</span>
-                                <span class="date">2026-06-22</span>
+                                <span class="authors">Haorui Ji, Weizhe Liu, Hongdong Li</span>
+                                <span class="date">2026-06-23</span>
                                 <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Modern text-to-image models excel in visual fidelity and prompt adherence. However, this strict adherence comes at the cost of diversity: generated samples tend to collapse into a single visual interpretation. Existing methods to improve diversity produce outputs driven by incidental variations rath...</p>
+                                <p class="abstract-en">Sparse voxel representation has emerged as a scalable foundation for image-to-3D Gaussian Splatting (3DGS) generation, yet current methods struggle to preserve high-frequency visual details of input images due to two structural bottlenecks. First, they adopt discriminative 2D features optimized for ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">现代文本到图像模型在视觉保真度和快速依从性方面表现出色。然而，这种严格遵守是以多样性为代价的：生成的样本往往会崩溃为单一的视觉解释。现有的提高多样性的方法产生的输出是由偶然变化驱动的，而不是有意义的设计选择。这激发了多样性任务的新变体，其中对生成的样本强制执行结构。我们引入了一种可实现语义浏览的受控多样性方法，用户可以在结构化图像库中导航，并通过系统地遍历有意义的、可解释的变化轴来体验创造性探索。实现这种级别的语义控制需要对场景有深入的理解。我们利用了最近的文本到图像模型是在详细的标题上进行训练的事实，有效地将语义决策与像素生成解耦。这实现了范式转变：我们不再依赖文本到图像模型中的随机变化，而是直接在文本级别引入多样性。通过利用丰富的文本表示，我们允许视觉语言模型（VLM）在整个场景上下文中运行。为了克服标准 VLM 典型的通用输出，我们采用代理工作流程，明确强制与原始提示相协调的结构化变化。我们证明我们的方法可以产生多样化且可导航的设计空间，其中每个变化都对应于特定的、用户可理解的语义决策。</p>
+                                    <p class="abstract-zh">稀疏体素表示已成为图像到 3D 高斯分布 (3DGS) 生成的可扩展基础，但由于两个结构瓶颈，当前的方法很难保留输入图像的高频视觉细节。首先，他们采用针对语义抽象优化的判别性 2D 特征来构建稀疏体素潜伏，从而抑制重建线索并引发表示瓶颈。其次，在生成阶段，标准扩散变换器缺乏有效的机制来将密集的 2D 图像标记与稀疏的 3D 体素潜伏对齐，从而导致跨模式对应瓶颈。为了解决这些问题，我们提出了 FLUX3D，这是一种可扩展的图像到 3DGS 框架，可以在生成过程中增强表示学习和跨模式对齐。我们首先重新审视基于稀疏体素的 3D 表示学习的 2D 特征选择，提出扩散对齐结构化潜伏 (DA-SLAT) 并将其与仅解码器架构结合起来以提高 3DGS 重建保真度。我们还设计了一个稀疏结构感知扩散框架，它集成了稀疏结构多模态扩散变换器（SMDiT）和模态感知旋转位置嵌入（MARoPE）以实现几何不可知的2D-3D对齐。广泛的基准实验表明，FLUX3D 显着提高了外观保真度，并且在生成高质量 3DGS 资源方面显着优于所有最先进的 (SOTA) 方法。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.23679v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.24874v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">OpenThoughts-Agent:<sup class='ipa'>/openthoughtsagent*/</sup> Data Recipes for Agentic Models</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Negin Raoof, Richard Zhuang, Marianna Nezhurina</span>
+                                <span class="date">2026-06-23</span>
+                                <span class="categories">cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Agentic language models dramatically expand the applications of AI yet little is publicly known about how to curate training data for broadly capable agents. Existing open efforts such as SWE-Smith, SERA, and Nemotron-Terminal typically target a single benchmark, leaving open the question of how to ...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">代理语言模型极大地扩展了人工智能的应用，但公众对如何为具有广泛能力的代理管理训练数据知之甚少。现有的开放工作（例如 SWE-Smith、SERA 和 Nemotron-Terminal）通常针对单一基准，从而留下了如何训练跨不同代理任务泛化的模型的问题。 OpenThoughts-Agent (OT-Agent) 项目通过用于训练代理模型的完全开放的数据管理管道来解决这一差距。我们进行了 100 多项受控消融实验，系统地研究流程的每个阶段，从而深入了解任务来源和多样性的重要性。然后，我们从管道中收集了 10 万个示例的训练集，并在此数据集上微调 Qwen3-32B，这在七个代理基准中产生了 44.8% 的平均准确度，比现有最强的开放数据代理模型（Nemotron-Terminal-32B，40.9%）提高了 3.9 个百分点。此外，我们的训练数据表现出强大的可扩展性，在计算控制的比较中，在每个训练集大小上都优于替代开放数据集。我们在 openthoughts.ai 公开发布我们的训练集、数据管道、实验数据和模型，以支持未来关于代理模型训练的开放研究。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2606.24855v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -917,24 +917,10 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Moh4696/free-ai-models" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">free-ai-models</span>
-                                    <span class="repo-stars">⭐ 9</span>
-                                </div>
-                                <p class="repo-desc">免费访问主要人工智能模型（GPT、Claude、Llama、DeepSeek 等）的 10 种合法方式 — 分步指南，无需订阅，无需卡片。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-06-19</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/FareedKhan-dev/agentic-quantum-computing" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">agentic-quantum-computing</span>
-                                    <span class="repo-stars">⭐ 8</span>
+                                    <span class="repo-stars">⭐ 9</span>
                                 </div>
                                 <p class="repo-desc">端到端代理量子机器学习管道：PennyLane GPU 量子内核异常检测 + LangGraph 多代理系统 + 本地托管的 Qwen3-14B，在网络入侵、LHC 物理和欺诈方面进行基准测试。</p>
                                 <div class="repo-meta">
@@ -945,43 +931,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/cnaebadi/ai-disclosure-handbook" target="_blank" class="repo-link">
+                            <a href="https://github.com/Moh4696/free-ai-models" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">ai-disclosure-handbook</span>
-                                    <span class="repo-stars">⭐ 6</span>
+                                    <span class="repo-name">free-ai-models</span>
+                                    <span class="repo-stars">⭐ 9</span>
                                 </div>
-                                <p class="repo-desc">关于人工智能隐私、分析、影子分析、本地人工智能、云人工智能和人类自主的未来的实用指南。</p>
+                                <p class="repo-desc">免费访问主要人工智能模型（GPT、Claude、Llama、DeepSeek 等）的 10 种合法方式 — 分步指南，无需订阅，无需卡片。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-06-17</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/las7/memharness" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">memharness</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">双时态代理长期记忆：SQLite 支持的 MCP 服务器，具有召回排名、混合向量+FTS 召回和源过时信号</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-06-17</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/teixeirazeus/fablize-for-hermes" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">fablize-for-hermes</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">该项目采用了 Fablize 的验证程序——验证接地、多层证据门控、调查协议和提前停止预防。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-17</span>
+                                    <span class="repo-date">2026-06-19</span>
                                 </div>
                             </a>
                         </li>
@@ -1001,20 +959,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/likithamadala/ai-pm-learning-fleet" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ai-pm-learning-fleet</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">一个自动运行的人工智能代理团队，教会其所有者像人工智能产品经理一样思考，并在没有保姆的情况下进行日常维护。基于克劳德代码构建。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-17</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/AlicanKaya192/Deep_Learning_Path" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Deep_Learning_Path</span>
@@ -1029,29 +973,85 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/charanpreetSingh123/MediScanAI" target="_blank" class="repo-link">
+                            <a href="https://github.com/yyh-001/llm-value-rankings" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">MediScanAI</span>
+                                    <span class="repo-name">llm-value-rankings</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">🏥 AI驱动的多疾病早期检测平台 |脑肿瘤·糖尿病视网膜病变·皮肤癌| PyTorch · FastAPI · React · Grad-CAM | B.Tech重大项目</p>
+                                <p class="repo-desc">Daily LLM value rankings - compare 300+ models by intelligence, speed and price. OpenRouter+人工分析。 大模型排行榜</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">JavaScript</span>
-                                    <span class="repo-date">2026-06-17</span>
+                                    <span class="repo-date">2026-06-23</span>
                                 </div>
                             </a>
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/nicolbl95/MultiAgent-Financial-Analyzer" target="_blank" class="repo-link">
+                            <a href="https://github.com/nomad505050/ions-genesis" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">MultiAgent-Financial-Analyzer</span>
+                                    <span class="repo-name">ions-genesis</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">可遍历知识网络的开放协议。 CBB 遍历让 8B 模型在特定领域的查询上匹配前沿 AI。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-06-22</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Sumitsoni06/Ai-sumarization" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Ai-sumarization</span>
                                     <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">多代理人工智能系统，使用 LangGraph、RAG 和 LLM 分析财务报告、识别风险并生成执行摘要。</p>
+                                <p class="repo-desc">与 Google Gemini API 集成的全栈 Flask Web 应用程序，可将文本内容动态汇总为多种长度。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">HTML</span>
+                                    <span class="repo-date">2026-06-20</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/TheAndreyZakharov/Face-Swap-Studio" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Face-Swap-Studio</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">🧠🎭 Face Swap Studio 是一款本地 macOS 应用程序，用于在一个桌面工作流程中测试多个面部交换模型。 It detects source and target faces, supports batch target selection, visual face mapping, model comparison, GFPGAN restoration, Real-ESRGAN upscaling, result previews, archive export, and temporary session cleanup.</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-17</span>
+                                    <span class="repo-date">2026-06-19</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/ahincho/path-search" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">path-search</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">二维网格搜索算法的学术基准。使用搜索库将 A*、BFS、DFS、Dijkstra 和双向搜索与曼哈顿、欧几里得、切比雪夫和 Octile 启发式进行比较。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-20</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/valorisa/Advanced-Multi-Agent-Orchestrator" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Advanced-Multi-Agent-Orchestrator</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">Advanced multi-agent orchestrator for coordinating specialized AI agents, workflows, and tool-driven automation across complex tasks.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-24</span>
                                 </div>
                             </a>
                         </li>
