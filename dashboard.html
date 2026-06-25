@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-24 23:01:08</span>
+        <span class="generated-time">更新于 2026-06-25 23:13:56</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">InSight: Self-Guided<sup class='ipa'>/selfguided*/</sup> Skill Acquisition<sup class='ipa'>/ˌækwəˈzɪʃən/</sup> via Steerable<sup class='ipa'>/steerable*/</sup> VLAs</h4>
+                            <h4 class="paper-title">Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> Action Priors for Cross-embodiment<sup class='ipa'>/crossembodiment*/</sup> Robot Manipulation<sup class='ipa'>/məˌnɪpjəˈleɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Maggie Wang, Lars Osterberg, Stephen Tian</span>
-                                <span class="date">2026-06-23</span>
+                                <span class="authors">Dong Jing, Tianqi Zhang, Jiaqi Liu</span>
+                                <span class="date">2026-06-24</span>
                                 <span class="categories">cs.RO | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Vision-language-action (VLA) models can learn manipulation skills from demonstrations, but their capabilities are bounded by the skills in the training data. We present InSight, a framework that unlocks autonomous skill acquisition by rendering VLAs steerable at the primitive-action level (e.g., &#34;mo...</p>
+                                <p class="abstract-en">Most Vision-Language-Action (VLA) models build on a Vision-Language Model (VLM) backbone by attaching an action module and optimizing the full policy jointly. This design inherits strong visual and linguistic priors from the VLM, but leaves the action module to learn physical motion almost from scra...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">视觉-语言-动作（VLA）模型可以从演示中学习操作技能，但它们的能力受到训练数据中技能的限制。我们提出了 InSight，这是一个框架，通过在原始动作级别（例如，“将夹具移动到碗上”、“向上举起”、“倒瓶子”）使 VLA 可操纵，从而解锁自主技能获取。 InSight 包含两个主要阶段：(1) 自动分割管道，通过 VLM 计划分解和末端执行器姿势将演示分割为带标签的基元，以实现 VLA 图元的可操纵性；(2) VLM 引导的数据飞轮，用于识别完成新任务所需的缺失基元，使用 VLM 提出的低级控制自动尝试缺失基元的演示，并自动标记、存储成功的演示并将其集成到 VLA 训练集中。我们在模拟和现实世界的操作任务中评估 InSight，包括块翻转、抽屉关闭、清扫、扭转和倾倒，而没有对这些目标技能进行任何人类演示。一旦学会，这些原语就可以组合起来执行新颖的长期任务，而无需额外的人类演示。我们的研究结果表明，原始可操纵性为 VLA 政策中持续技能获取提供了实践基础。项目网站：https://insight-vla.github.io。</p>
+                                    <p class="abstract-zh">大多数视觉-语言-动作（VLA）模型都建立在视觉-语言模型（VLM）主干之上，通过附加动作模块并联合优化整个策略。该设计继承了 VLM 强大的视觉和语言先验，但让动作模块几乎从头开始学习物理运动。因此，该策略缺乏明确的运动先验，迫使早期优化同时发现时间动作动态和跨模式对齐，这一挑战在跨实施例设置中进一步放大。在这项工作中，我们建议在跨模态 VLA 对齐之前使用运动先验对动作模块进行预训练。具体来说，我们引入了一个两阶段训练框架，在 VLA 训练开始之前为动作模块配备跨实施例时间运动结构。在 Stage~1 中，基于流匹配的轻量级编码器-解码器动作模块仅从无条件动作轨迹中有效地学习时间运动结构，而不处理视觉或语言标记。在第 2 阶段，通过解码器重用和早期潜在蒸馏将学到的先验知识转移到 VLA 训练，将视觉语言特征与动作嵌入空间对齐，同时仍然允许端到端策略细化。此外，经过训练的编码器充当紧凑的历史压缩器，将状态动作历史汇总为单个时间上下文标记，以可忽略的成本进行历史感知建模。在模拟和现实世界平台上针对 13 个不同的跨实施例任务进行的广泛实验验证了我们方法的有效性。与没有先验动作的 VLA 训练相比，我们的模型在数据稀缺的现实任务中实现了更快的收敛、更高的成功率和更强的性能。此外，扩大 Stage~1 中的操作数据会产生更通用的先验操作，从而直接提高下游 VLA 性能。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.24884v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.26095v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">FLUX3D: High-Fidelity<sup class='ipa'>/highfidelity*/</sup> 3D Gaussian<sup class='ipa'>/ˈgaʊsiən/</sup> Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> with Diffusion-Aligned<sup class='ipa'>/diffusionaligned*/</sup> Sparse Representation<sup class='ipa'>/ˌrɛprəzɛnˈteɪʃən/</sup></h4>
+                            <h4 class="paper-title">On-Policy<sup class='ipa'>/onpolicy*/</sup> Self-Distillation<sup class='ipa'>/selfdistillation*/</sup> with Sampled Demonstrations<sup class='ipa'>/ˌdɛmənˈstreɪʃənz/</sup> Reduces Output Diversity<sup class='ipa'>/dɪˈvərsɪti/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Haorui Ji, Weizhe Liu, Hongdong Li</span>
-                                <span class="date">2026-06-23</span>
-                                <span class="categories">cs.CV | cs.AI</span>
+                                <span class="authors">Andrei Liviu Nicolicioiu, Mohammad Pezeshki, Aaron Courville</span>
+                                <span class="date">2026-06-24</span>
+                                <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Sparse voxel representation has emerged as a scalable foundation for image-to-3D Gaussian Splatting (3DGS) generation, yet current methods struggle to preserve high-frequency visual details of input images due to two structural bottlenecks. First, they adopt discriminative 2D features optimized for ...</p>
+                                <p class="abstract-en">On-policy self-distillation achieves strong pass@1 accuracy by using a single model as both teacher and student, with the teacher conditioned on a correct demonstration to provide dense token-level feedback. We show that this could come at a hidden cost: rollout diversity decreases and pass@k curves...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">稀疏体素表示已成为图像到 3D 高斯分布 (3DGS) 生成的可扩展基础，但由于两个结构瓶颈，当前的方法很难保留输入图像的高频视觉细节。首先，他们采用针对语义抽象优化的判别性 2D 特征来构建稀疏体素潜伏，从而抑制重建线索并引发表示瓶颈。其次，在生成阶段，标准扩散变换器缺乏有效的机制来将密集的 2D 图像标记与稀疏的 3D 体素潜伏对齐，从而导致跨模式对应瓶颈。为了解决这些问题，我们提出了 FLUX3D，这是一种可扩展的图像到 3DGS 框架，可以在生成过程中增强表示学习和跨模式对齐。我们首先重新审视基于稀疏体素的 3D 表示学习的 2D 特征选择，提出扩散对齐结构化潜伏 (DA-SLAT) 并将其与仅解码器架构结合起来以提高 3DGS 重建保真度。我们还设计了一个稀疏结构感知扩散框架，它集成了稀疏结构多模态扩散变换器（SMDiT）和模态感知旋转位置嵌入（MARoPE）以实现几何不可知的2D-3D对齐。广泛的基准实验表明，FLUX3D 显着提高了外观保真度，并且在生成高质量 3DGS 资源方面显着优于所有最先进的 (SOTA) 方法。</p>
+                                    <p class="abstract-zh">策略自蒸馏通过使用单一模型作为教师和学生，实现了很高的 pass@1 准确性，教师以正确的演示为条件，以提供密集的令牌级反馈。我们表明，这可能会带来隐性成本：rollout 多样性下降且 pass@k 曲线变平（即，生成更多 rollout 无法提高准确性）。我们将其追溯到自蒸馏设计中的复合偏差和抽样演示。教师对每个学生的展示进行评分，同时以正确的展示样本为条件，通过模型自身的偏差来引导其反馈。我们从理论上分析了最佳自蒸馏策略，并表明它通过学生的推出和用作上下文的正确推出之间的逐点条件互信息分数来倾斜基础分布。与理想的最优同策略强化学习 (RL) 不同的是，自蒸馏可以放大现有的概率差距，将质量集中在已经占主导地位的模式上，而理想的最优策略强化学习 (RL) 会保留同样正确的部署之间的概率比。在受控图路径查找任务和科学问答基准上，自蒸馏模型的平均性能匹配或超过强化学习，但表现出明显较低的功能和语义多样性，在需要不同策略的分布外设置上失败。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.24874v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.26091v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">OpenThoughts-Agent:<sup class='ipa'>/openthoughtsagent*/</sup> Data Recipes for Agentic Models</h4>
+                            <h4 class="paper-title">Real-Time<sup class='ipa'>/ˈriəlˌtaɪm/</sup> Voice AI Hears but Does Not Listen</h4>
                             <div class="paper-meta">
-                                <span class="authors">Negin Raoof, Richard Zhuang, Marianna Nezhurina</span>
-                                <span class="date">2026-06-23</span>
-                                <span class="categories">cs.AI</span>
+                                <span class="authors">Martijn Bartelds, Federico Bianchi, James Zou</span>
+                                <span class="date">2026-06-24</span>
+                                <span class="categories">cs.CL | eess.AS</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Agentic language models dramatically expand the applications of AI yet little is publicly known about how to curate training data for broadly capable agents. Existing open efforts such as SWE-Smith, SERA, and Nemotron-Terminal typically target a single benchmark, leaving open the question of how to ...</p>
+                                <p class="abstract-en">Speech conveys information through both words and vocal delivery. We evaluate four leading production realtime voice systems-OpenAI&#39;s GPT Realtime 2, Google&#39;s Gemini 3.1 Flash Live, and Alibaba&#39;s Qwen3.5 Omni Plus and Omni Flash-on tasks where the words and the delivery patterns both convey meaningf...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">代理语言模型极大地扩展了人工智能的应用，但公众对如何为具有广泛能力的代理管理训练数据知之甚少。现有的开放工作（例如 SWE-Smith、SERA 和 Nemotron-Terminal）通常针对单一基准，从而留下了如何训练跨不同代理任务泛化的模型的问题。 OpenThoughts-Agent (OT-Agent) 项目通过用于训练代理模型的完全开放的数据管理管道来解决这一差距。我们进行了 100 多项受控消融实验，系统地研究流程的每个阶段，从而深入了解任务来源和多样性的重要性。然后，我们从管道中收集了 10 万个示例的训练集，并在此数据集上微调 Qwen3-32B，这在七个代理基准中产生了 44.8% 的平均准确度，比现有最强的开放数据代理模型（Nemotron-Terminal-32B，40.9%）提高了 3.9 个百分点。此外，我们的训练数据表现出强大的可扩展性，在计算控制的比较中，在每个训练集大小上都优于替代开放数据集。我们在 openthoughts.ai 公开发布我们的训练集、数据管道、实验数据和模型，以支持未来关于代理模型训练的开放研究。</p>
+                                    <p class="abstract-zh">语音通过言语和声音传递信息。我们评估了四种领先的生产实时语音系统 - OpenAI 的 GPT Realtime 2、Google 的 Gemini 3.1 Flash Live 以及阿里巴巴的 Qwen3.5 Omni Plus 和 Omni Flash-on 任务，其中单词和交付模式都传达有意义的信息。在三个相应的场景中，所有四个系统都根据单词而不是声音起作用。他们会结束哭泣的来电者的通话，这些来电者坚称没有任何问题，批准以惊恐的声音授权的电汇，并登记同意明显带有讽刺意味的来电者。令人惊讶的是，这通常并不是感知失败。当直接询问时，四个系统中的三个可以可靠地识别出他们后来在做出决定时忽略的痛苦、恐惧或讽刺。当这些实时语音系统估计口音和年龄时，我们观察到类似的模式，因为它们的反应经常遵循单词的偏差，而不是说话者的声学特性。我们将感知和行动之间的这种脱节称为语音人工智能的情商差距。提示系统明确关注声音传递只能部分且不一致地提高性能。我们的研究结果表明，当前的实时语音人工智能系统通常表现得好像语音已被简化为转录本，这表明在语气和情感传达重要信息的环境中应谨慎使用它们。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.24855v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.26083v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -917,15 +917,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
-                            <a href="https://github.com/FareedKhan-dev/agentic-quantum-computing" target="_blank" class="repo-link">
+                            <a href="https://github.com/parsehawk/parsehawk" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">agentic-quantum-computing</span>
-                                    <span class="repo-stars">⭐ 9</span>
+                                    <span class="repo-name">parsehawk</span>
+                                    <span class="repo-stars">⭐ 22</span>
                                 </div>
-                                <p class="repo-desc">端到端代理量子机器学习管道：PennyLane GPU 量子内核异常检测 + LangGraph 多代理系统 + 本地托管的 Qwen3-14B，在网络入侵、LHC 物理和欺诈方面进行基准测试。</p>
+                                <p class="repo-desc">本地优先文档人工智能。默认情况下 100% 在本地运行，使用 API、CLI 和 Web UI。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-18</span>
+                                    <span class="repo-date">2026-06-25</span>
                                 </div>
                             </a>
                         </li>
@@ -945,40 +945,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Hayredin950/SYNAPSE" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">SYNAPSE</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">🧠 FAANG 式技术智能平台，利用自主人工智能代理和语义搜索。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-18</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/AlicanKaya192/Deep_Learning_Path" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Deep_Learning_Path</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">Sıfırdan ileri seviyeye 深度学习 yol Haritası。 11 模块：PDF + Python + Jupyter Notebook。 NumPy · TensorFlow · PyTorch 是一种实现方式。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-18</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/yyh-001/llm-value-rankings" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">llm-value-rankings</span>
-                                    <span class="repo-stars">⭐ 3</span>
+                                    <span class="repo-stars">⭐ 5</span>
                                 </div>
-                                <p class="repo-desc">Daily LLM value rankings - compare 300+ models by intelligence, speed and price. OpenRouter+人工分析。 大模型排行榜</p>
+                                <p class="repo-desc">每日 LLM 价值排名 - 按智能、速度和价格比较 300 多个模型。 OpenRouter+人工分析。 大模型排行榜</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">JavaScript</span>
                                     <span class="repo-date">2026-06-23</span>
@@ -1001,6 +973,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/TheAndreyZakharov/Face-Swap-Studio" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Face-Swap-Studio</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">🧠🎭 Face Swap Studio 是一款本地 macOS 应用程序，用于在一个桌面工作流程中测试多个面部交换模型。它检测源和目标人脸，支持批量目标选择、视觉人脸映射、模型比较、GFPGAN 恢复、Real-ESRGAN 升级、结果预览、存档导出和临时会话清理。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-19</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/Sumitsoni06/Ai-sumarization" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Ai-sumarization</span>
@@ -1015,15 +1001,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/TheAndreyZakharov/Face-Swap-Studio" target="_blank" class="repo-link">
+                            <a href="https://github.com/amannanda-22/DOCMINDPRO" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Face-Swap-Studio</span>
+                                    <span class="repo-name">DOCMINDPRO</span>
                                     <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">🧠🎭 Face Swap Studio 是一款本地 macOS 应用程序，用于在一个桌面工作流程中测试多个面部交换模型。 It detects source and target faces, supports batch target selection, visual face mapping, model comparison, GFPGAN restoration, Real-ESRGAN upscaling, result previews, archive export, and temporary session cleanup.</p>
+                                <p class="repo-desc">生产级多 PDF RAG 智能系统，具有 FastAPI、Streamlit、LangChain、Gemini、ChromaDB、BM25、CrossEncoder 和 RAGAS。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-19</span>
+                                    <span class="repo-date">2026-06-25</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/bismillahapaja/stemsend-trashformers" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">stemsend-trashformers</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">♻️ 学校的人工智能循环经济助手，利用 Gemini Vision、基于规则的建议和负责任的人工智能，将废物转化为可重复使用的机会。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-06-24</span>
                                 </div>
                             </a>
                         </li>
@@ -1043,15 +1043,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/valorisa/Advanced-Multi-Agent-Orchestrator" target="_blank" class="repo-link">
+                            <a href="https://github.com/Ciprian-LocalPulse/universal-ai-failure-database" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Advanced-Multi-Agent-Orchestrator</span>
+                                    <span class="repo-name">universal-ai-failure-database</span>
                                     <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">Advanced multi-agent orchestrator for coordinating specialized AI agents, workflows, and tool-driven automation across complex tasks.</p>
+                                <p class="repo-desc">一个开源的、社区驱动的存储库，记录现实世界的人工智能故障，包括幻觉、逻辑错误、数学错误、法律误解和安全漏洞。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-24</span>
+                                    <span class="repo-lang">Brainfuck</span>
+                                    <span class="repo-date">2026-06-21</span>
                                 </div>
                             </a>
                         </li>
