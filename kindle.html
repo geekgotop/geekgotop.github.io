@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-06-25 23:13:56</p>
+            <p class="hero-meta">构建时间：2026-06-26 23:01:48</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
-                        <p class="quick-meta">— Chinese Proverb</p>
+                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
+                        <p class="quick-meta">— 荀子</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">parsehawk/parsehawk</p>
-                        <p class="quick-meta">★ 22</p>
+                        <p class="quick-meta">★ 27</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 serialization，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 asynchronous，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 parsehawk/parsehawk，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Learning Action Priors for Cross-embodiment Robot Manipulation》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《DanceOPD: On-Policy Generative Field Distillation》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">serialization <span>/ˌsɪəriəlaɪˈzeɪʃn/</span></p>
-                    <p class="study-meaning">n. 序列化</p>
+                    <p class="study-word">asynchronous <span>/eɪˈsɪŋkrənəs/</span></p>
+                    <p class="study-meaning">adj. 异步的</p>
                     
-                    <p class="study-sentence">Serialization converts an object into a stream of bytes for storage.</p>
-                    <p class="study-sentence-zh">序列化将对象转换为字节流以便存储。</p>
+                    <p class="study-sentence">Asynchronous programming allows the program to continue executing while waiting for I/O.</p>
+                    <p class="study-sentence-zh">异步编程允许程序在等待 I/O 时继续执行。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Learning Action Priors for Cross-embodiment Robot Manipulation</p>
-                    <p class="deep-abstract">大多数视觉-语言-动作（VLA）模型都建立在视觉-语言模型（VLM）主干之上，通过附加动作模块并联合优化整个策略。该设计继承了 VLM 强大的视觉和语言先验，但让动作模块几乎从头开始学习物理运动。因此，该策略缺乏明确的运动先验，迫使早期优化同时发现时间动作动态和跨模式对齐，这一挑战在跨实施例设置中进一步放大。在这项工作中，我们建议在跨模态 VLA 对齐之前使用运动先验对动作模块进行预训练。具体来说，我们引入了一个两阶段训练框架，在 VLA 训练开始之前为动作模块配备跨实施例时间运动结构。在 Stage~1 中，基于流匹配的轻量级编码器-解码器动作模块仅从无条件动作轨迹中有效地学习时间运动结构，而不处理视觉或语言标记。在第 2 阶段，通过解码器重用和早期潜在蒸馏将学到的先验知识转移到 VLA 训练，将视觉语言特征与动作嵌入空间对齐，同时仍然允许端到端策略细化。此外，经过训练的编码器充当紧凑的历史压缩器，将状态动作历史汇总为单个时间上下文标记，以可忽略的成本进行历史感知建模。在模拟和现实世界平台上针对 13 个不同的跨实施例任务进行的广泛实验验证了我们方法的有效性。与没有先验动作的 VLA 训练相比，我们的模型在数据稀缺的现实任务中实现了更快的收敛、更高的成功率和更强的性能。此外，扩大 Stage~1 中的操作数据会产生更通用的先验操作，从而直接提高下游 VLA 性能。</p>
+                    <p class="deep-title">DanceOPD: On-Policy Generative Field Distillation</p>
+                    <p class="deep-abstract">现代图像生成需要一个统一不同功能的单一模型，包括文本到图像 (T2I)、本地编辑和全局编辑。然而，这些能力很少自然地结合在一起，而且经常发生冲突。例如，编辑往往会降低 T2I 性能，而全局编辑和本地编辑会相互干扰。因此，有效组合这些能力已成为图像生成模型训练的核心挑战。为了解决这个问题，我们引入了 DanceOPD，这是一种用于流匹配模型的策略生成场蒸馏框架，它将每个样本路由到一个能力场，查询一个低噪声学生诱发的状态，并使用简单的速度 MSE 目标进行训练。将每个能力源定义为共享流状态空间上的速度场，学生从在其自己的推出状态上查询的字段中学习以组成专家能力。该公式还吸收了操作员定义的字段，例如无分类器指导。 T2I、编辑、现实场吸收和 CFG 吸收的综合实验表明，我们的方法改进了多能力组合，增强了目标能力，同时保持了锚生成质量。我们相信这项工作为流量匹配模型中的生成场蒸馏建立了一条实用途径。</p>
                     
-                    <p class="deep-takeaway">要点：大多数视觉-语言-动作（VLA）模型都建立在视觉-语言模型（VLM）主干之上，通过附加动作模块并联合优化整个策略。该设计继承了 VLM 强大的视觉和语言先验，但让动作模块几乎从头开始学习物理运动。因此，该策略缺乏明确的运动先验，迫使早期优化同时发现时间动作动态和跨模式对齐，这一挑战在跨实施例设置中进一步放大。在这项工作...</p>
+                    <p class="deep-takeaway">要点：现代图像生成需要一个统一不同功能的单一模型，包括文本到图像 (T2I)、本地编辑和全局编辑。然而，这些能力很少自然地结合在一起，而且经常发生冲突。例如，编辑往往会降低 T2I 性能，而全局编辑和本地编辑会相互干扰。因此，有效组合这些能力已成为图像生成模型训练的核心挑战。为了解决这个问题，我们引入了 DanceOPD，这...</p>
                     
-                    <p class="deep-meta">预计阅读 2 分钟</p>
+                    <p class="deep-meta">预计阅读 1 分钟</p>
                 
             </div>
             
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>parsehawk/parsehawk</strong> (★ 22)
-                        <p>本地优先文档人工智能。默认情况下 100% 在本地运行，使用 API、CLI 和 Web UI。</p>
+                        <strong>parsehawk/parsehawk</strong> (★ 27)
+                        <p>Local-first document AI.默认情况下 100% 在本地运行，使用 API、CLI 和 Web UI。</p>
                     </li>
                     
                     <li>
-                        <strong>Moh4696/free-ai-models</strong> (★ 9)
-                        <p>免费访问主要人工智能模型（GPT、Claude、Llama、DeepSeek 等）的 10 种合法方式 — 分步指南，无需订阅，无需卡片。</p>
-                    </li>
-                    
-                    <li>
-                        <strong>yyh-001/llm-value-rankings</strong> (★ 5)
+                        <strong>yyh-001/llm-value-rankings</strong> (★ 6)
                         <p>每日 LLM 价值排名 - 按智能、速度和价格比较 300 多个模型。 OpenRouter+人工分析。 大模型排行榜</p>
                     </li>
                     
                     <li>
-                        <strong>nomad505050/ions-genesis</strong> (★ 3)
-                        <p>可遍历知识网络的开放协议。 CBB 遍历让 8B 模型在特定领域的查询上匹配前沿 AI。</p>
+                        <strong>ardhaecosystem/synapse</strong> (★ 4)
+                        <p>Synapse — Temporal knowledge graph memory for AI agents. Self-hosted FalkorDB + Graphiti with hippocampus-layer memory management.</p>
                     </li>
                     
                     <li>
-                        <strong>TheAndreyZakharov/Face-Swap-Studio</strong> (★ 2)
-                        <p>🧠🎭 Face Swap Studio 是一款本地 macOS 应用程序，用于在一个桌面工作流程中测试多个面部交换模型。它检测源和目标人脸，支持批量目标选择、视觉人脸映射、模型比较、GFPGAN 恢复、Real-ESRGAN 升级、结果预览、存档导出和临时会话清理。</p>
+                        <strong>Bridgeware-Dynamics-Business/Vibebar</strong> (★ 4)
+                        <p>停止每次会话都向 Cursor 重新解释您的存储库。 vibebar:: 停靠在您的屏幕上，并提供提示、实时代理 MCP、安全扫描和一键切换 - 专为人工智能编码的实际工作方式而构建。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>engineering87/llm-atlas</strong> (★ 3)
+                        <p>Interactive, in-browser visualization of how a transformer language model works: tokens, attention, quantization, and sampling, rendered live.</p>
                     </li>
                     
                 </ul>

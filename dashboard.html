@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-25 23:13:56</span>
+        <span class="generated-time">更新于 2026-06-26 23:01:48</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -736,8 +736,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         <div class="quote-slide ">
                             <blockquote>
                                 <p class="quote-text">In the middle of difficulty lies opportunity.</p>
-                                
-                                <p class="quote-translation">困难之中蕴藏着机遇。</p>
                                 
                             </blockquote>
                             <cite class="quote-author">— Albert Einstein</cite>
@@ -848,54 +846,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> Action Priors for Cross-embodiment<sup class='ipa'>/crossembodiment*/</sup> Robot Manipulation<sup class='ipa'>/məˌnɪpjəˈleɪʃən/</sup></h4>
+                            <h4 class="paper-title">DanceOPD:<sup class='ipa'>/danceopd*/</sup> On-Policy<sup class='ipa'>/onpolicy*/</sup> Generative<sup class='ipa'>/ˈʤɛnərətɪv/</sup> Field Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Dong Jing, Tianqi Zhang, Jiaqi Liu</span>
-                                <span class="date">2026-06-24</span>
-                                <span class="categories">cs.RO | cs.AI</span>
+                                <span class="authors">Wei Zhou, Xiongwei Zhu, Zelin Xu</span>
+                                <span class="date">2026-06-25</span>
+                                <span class="categories">cs.CV | cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Most Vision-Language-Action (VLA) models build on a Vision-Language Model (VLM) backbone by attaching an action module and optimizing the full policy jointly. This design inherits strong visual and linguistic priors from the VLM, but leaves the action module to learn physical motion almost from scra...</p>
+                                <p class="abstract-en">Modern image generation demands a single model that unifies diverse capabilities, including text-to-image (T2I), local editing, and global editing. However, these capabilities are rarely naturally aligned and often conflict. For instance, editing tends to degrade T2I performance, while global and lo...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">大多数视觉-语言-动作（VLA）模型都建立在视觉-语言模型（VLM）主干之上，通过附加动作模块并联合优化整个策略。该设计继承了 VLM 强大的视觉和语言先验，但让动作模块几乎从头开始学习物理运动。因此，该策略缺乏明确的运动先验，迫使早期优化同时发现时间动作动态和跨模式对齐，这一挑战在跨实施例设置中进一步放大。在这项工作中，我们建议在跨模态 VLA 对齐之前使用运动先验对动作模块进行预训练。具体来说，我们引入了一个两阶段训练框架，在 VLA 训练开始之前为动作模块配备跨实施例时间运动结构。在 Stage~1 中，基于流匹配的轻量级编码器-解码器动作模块仅从无条件动作轨迹中有效地学习时间运动结构，而不处理视觉或语言标记。在第 2 阶段，通过解码器重用和早期潜在蒸馏将学到的先验知识转移到 VLA 训练，将视觉语言特征与动作嵌入空间对齐，同时仍然允许端到端策略细化。此外，经过训练的编码器充当紧凑的历史压缩器，将状态动作历史汇总为单个时间上下文标记，以可忽略的成本进行历史感知建模。在模拟和现实世界平台上针对 13 个不同的跨实施例任务进行的广泛实验验证了我们方法的有效性。与没有先验动作的 VLA 训练相比，我们的模型在数据稀缺的现实任务中实现了更快的收敛、更高的成功率和更强的性能。此外，扩大 Stage~1 中的操作数据会产生更通用的先验操作，从而直接提高下游 VLA 性能。</p>
+                                    <p class="abstract-zh">现代图像生成需要一个统一不同功能的单一模型，包括文本到图像 (T2I)、本地编辑和全局编辑。然而，这些能力很少自然地结合在一起，而且经常发生冲突。例如，编辑往往会降低 T2I 性能，而全局编辑和本地编辑会相互干扰。因此，有效组合这些能力已成为图像生成模型训练的核心挑战。为了解决这个问题，我们引入了 DanceOPD，这是一种用于流匹配模型的策略生成场蒸馏框架，它将每个样本路由到一个能力场，查询一个低噪声学生诱发的状态，并使用简单的速度 MSE 目标进行训练。将每个能力源定义为共享流状态空间上的速度场，学生从在其自己的推出状态上查询的字段中学习以组成专家能力。该公式还吸收了操作员定义的字段，例如无分类器指导。 T2I、编辑、现实场吸收和 CFG 吸收的综合实验表明，我们的方法改进了多能力组合，增强了目标能力，同时保持了锚生成质量。我们相信这项工作为流量匹配模型中的生成场蒸馏建立了一条实用途径。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.26095v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.27377v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">On-Policy<sup class='ipa'>/onpolicy*/</sup> Self-Distillation<sup class='ipa'>/selfdistillation*/</sup> with Sampled Demonstrations<sup class='ipa'>/ˌdɛmənˈstreɪʃənz/</sup> Reduces Output Diversity<sup class='ipa'>/dɪˈvərsɪti/</sup></h4>
+                            <h4 class="paper-title">Autoregressive<sup class='ipa'>/autoregressive*/</sup> Boltzmann<sup class='ipa'>/boltzmann*/</sup> Generators<sup class='ipa'>/ˈʤɛnərˌeɪtərz/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Andrei Liviu Nicolicioiu, Mohammad Pezeshki, Aaron Courville</span>
-                                <span class="date">2026-06-24</span>
+                                <span class="authors">Danyal Rehman, Charlie B. Tan, Yoshua Bengio</span>
+                                <span class="date">2026-06-25</span>
                                 <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">On-policy self-distillation achieves strong pass@1 accuracy by using a single model as both teacher and student, with the teacher conditioned on a correct demonstration to provide dense token-level feedback. We show that this could come at a hidden cost: rollout diversity decreases and pass@k curves...</p>
+                                <p class="abstract-en">Efficient sampling of molecular systems at thermodynamic equilibrium is a hallmark challenge in statistical physics. This challenge has driven the development of Boltzmann Generators (BGs), which allow rapid generation of uncorrelated equilibrium samples by combining a generative model with exact li...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">策略自蒸馏通过使用单一模型作为教师和学生，实现了很高的 pass@1 准确性，教师以正确的演示为条件，以提供密集的令牌级反馈。我们表明，这可能会带来隐性成本：rollout 多样性下降且 pass@k 曲线变平（即，生成更多 rollout 无法提高准确性）。我们将其追溯到自蒸馏设计中的复合偏差和抽样演示。教师对每个学生的展示进行评分，同时以正确的展示样本为条件，通过模型自身的偏差来引导其反馈。我们从理论上分析了最佳自蒸馏策略，并表明它通过学生的推出和用作上下文的正确推出之间的逐点条件互信息分数来倾斜基础分布。与理想的最优同策略强化学习 (RL) 不同的是，自蒸馏可以放大现有的概率差距，将质量集中在已经占主导地位的模式上，而理想的最优策略强化学习 (RL) 会保留同样正确的部署之间的概率比。在受控图路径查找任务和科学问答基准上，自蒸馏模型的平均性能匹配或超过强化学习，但表现出明显较低的功能和语义多样性，在需要不同策略的分布外设置上失败。</p>
+                                    <p class="abstract-zh">在热力学平衡下对分子系统进行有效采样是统计物理学中的一个标志性挑战。这一挑战推动了玻尔兹曼生成器 (BG) 的发展，它可以通过将生成模型与精确似然和重要性采样校正相结合来快速生成不相关的平衡样本。然而，现代 BG 主要依赖于归一化流（NF），由于严格的可逆性约束（离散时间）或计算昂贵的似然性（连续时间），其表达能力受到限制。在本文中，我们提出了自回归玻尔兹曼生成器 (ArBG)——一种新颖的自回归建模框架——它通过脱离基于流的 BG 范式克服了这些限制。 ArBG 规避了流的拓扑约束并支持顺序推理时间干预，同时通过利用大型语言模型中有效的架构来提供增强的可扩展性。我们凭经验证明，ArBG 在所有基准测试中都比基于流的模型带来了显着改进，特别是在较大的肽系统（例如 10 残基 Chignolin）中。此外，我们还引入了 Robin，这是一个使用 ArBG 框架训练的 1.32 亿参数可转移模型，它比之前的最先进技术有所改进，将 8 残基系统上的零样本能量误差 E-W$_2$ 减少了超过 60$\%$。该代码可以在以下链接中找到：https://github.com/danyalrehman/autobg。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.26091v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.27361v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Real-Time<sup class='ipa'>/ˈriəlˌtaɪm/</sup> Voice AI Hears but Does Not Listen</h4>
+                            <h4 class="paper-title">Error-Conditioned<sup class='ipa'>/errorconditioned*/</sup> Neural Solvers</h4>
                             <div class="paper-meta">
-                                <span class="authors">Martijn Bartelds, Federico Bianchi, James Zou</span>
-                                <span class="date">2026-06-24</span>
-                                <span class="categories">cs.CL | eess.AS</span>
+                                <span class="authors">Haina Jiang, Liam Wang, Peng-Chen Chen</span>
+                                <span class="date">2026-06-25</span>
+                                <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Speech conveys information through both words and vocal delivery. We evaluate four leading production realtime voice systems-OpenAI&#39;s GPT Realtime 2, Google&#39;s Gemini 3.1 Flash Live, and Alibaba&#39;s Qwen3.5 Omni Plus and Omni Flash-on tasks where the words and the delivery patterns both convey meaningf...</p>
+                                <p class="abstract-en">Neural surrogate models offer fast approximate mappings from PDE parameters to solutions, but they typically treat solving as a purely statistical task: once trained, they struggle to correct their own constraint violations and extrapolate beyond the training distribution. Recent hybrid methods prom...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">语音通过言语和声音传递信息。我们评估了四种领先的生产实时语音系统 - OpenAI 的 GPT Realtime 2、Google 的 Gemini 3.1 Flash Live 以及阿里巴巴的 Qwen3.5 Omni Plus 和 Omni Flash-on 任务，其中单词和交付模式都传达有意义的信息。在三个相应的场景中，所有四个系统都根据单词而不是声音起作用。他们会结束哭泣的来电者的通话，这些来电者坚称没有任何问题，批准以惊恐的声音授权的电汇，并登记同意明显带有讽刺意味的来电者。令人惊讶的是，这通常并不是感知失败。当直接询问时，四个系统中的三个可以可靠地识别出他们后来在做出决定时忽略的痛苦、恐惧或讽刺。当这些实时语音系统估计口音和年龄时，我们观察到类似的模式，因为它们的反应经常遵循单词的偏差，而不是说话者的声学特性。我们将感知和行动之间的这种脱节称为语音人工智能的情商差距。提示系统明确关注声音传递只能部分且不一致地提高性能。我们的研究结果表明，当前的实时语音人工智能系统通常表现得好像语音已被简化为转录本，这表明在语气和情感传达重要信息的环境中应谨慎使用它们。</p>
+                                    <p class="abstract-zh">神经代理模型提供从偏微分方程参数到解决方案的快速近似映射，但它们通常将求解视为纯粹的统计任务：一旦经过训练，它们就很难纠正自己的约束违规并推断出训练分布之外的情况。最近的混合方法通过梯度下降或高斯-牛顿步来瞄准偏微分方程残差，从而提高了物理正确性，但继承了底层经典优化器的计算成本和不稳定性。我们从理论上和经验上表明，在病态系统中，在数值上最小化 PDE 残差可能是重建精度的不可靠代理，这解释了为什么这些方法尽管实现了低残差，但通常不能做出准确的预测。我们提出了基于不同原理的误差条件神经求解器（ENS）：PDE 残差场不是优化目标，而是在每次迭代时作为直接输入传递给网络，使其能够读取自身误差的空间结构并学习更新策略以迭代纠正其预测。在四个 PDE 系列中，ENS 在大多数设置中获得了最高的预测精度，在湍流 Kolmogorov 流上的增益达到 $10\times$，同时避免了混合方法昂贵的计算成本。 ENS 的学习校正策略在分布偏移下进行推广，包括零样本参数变化和交叉方程转移，其相对优势在残差最小化最不可靠的病态条件下最大。项目网站：https://neuralsolver.github.io/。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2606.26083v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2606.27354v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,9 +918,9 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/parsehawk/parsehawk" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">parsehawk</span>
-                                    <span class="repo-stars">⭐ 22</span>
+                                    <span class="repo-stars">⭐ 27</span>
                                 </div>
-                                <p class="repo-desc">本地优先文档人工智能。默认情况下 100% 在本地运行，使用 API、CLI 和 Web UI。</p>
+                                <p class="repo-desc">Local-first document AI.默认情况下 100% 在本地运行，使用 API、CLI 和 Web UI。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-06-25</span>
@@ -931,29 +929,71 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Moh4696/free-ai-models" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">free-ai-models</span>
-                                    <span class="repo-stars">⭐ 9</span>
-                                </div>
-                                <p class="repo-desc">免费访问主要人工智能模型（GPT、Claude、Llama、DeepSeek 等）的 10 种合法方式 — 分步指南，无需订阅，无需卡片。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-06-19</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/yyh-001/llm-value-rankings" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">llm-value-rankings</span>
-                                    <span class="repo-stars">⭐ 5</span>
+                                    <span class="repo-stars">⭐ 6</span>
                                 </div>
                                 <p class="repo-desc">每日 LLM 价值排名 - 按智能、速度和价格比较 300 多个模型。 OpenRouter+人工分析。 大模型排行榜</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">JavaScript</span>
                                     <span class="repo-date">2026-06-23</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/ardhaecosystem/synapse" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">synapse</span>
+                                    <span class="repo-stars">⭐ 4</span>
+                                </div>
+                                <p class="repo-desc">Synapse — Temporal knowledge graph memory for AI agents. Self-hosted FalkorDB + Graphiti with hippocampus-layer memory management.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-26</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Bridgeware-Dynamics-Business/Vibebar" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Vibebar</span>
+                                    <span class="repo-stars">⭐ 4</span>
+                                </div>
+                                <p class="repo-desc">停止每次会话都向 Cursor 重新解释您的存储库。 vibebar:: 停靠在您的屏幕上，并提供提示、实时代理 MCP、安全扫描和一键切换 - 专为人工智能编码的实际工作方式而构建。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-06-21</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/engineering87/llm-atlas" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">llm-atlas</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">Interactive, in-browser visualization of how a transformer language model works: tokens, attention, quantization, and sampling, rendered live.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">HTML</span>
+                                    <span class="repo-date">2026-06-23</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/timjm25/QuantumAgent" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">QuantumAgent</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">Neural net to understand quantum computing</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-06-25</span>
                                 </div>
                             </a>
                         </li>
@@ -973,15 +1013,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/TheAndreyZakharov/Face-Swap-Studio" target="_blank" class="repo-link">
+                            <a href="https://github.com/4reeb-5yed/InterviewIQ" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Face-Swap-Studio</span>
+                                    <span class="repo-name">InterviewIQ</span>
                                     <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">🧠🎭 Face Swap Studio 是一款本地 macOS 应用程序，用于在一个桌面工作流程中测试多个面部交换模型。它检测源和目标人脸，支持批量目标选择、视觉人脸映射、模型比较、GFPGAN 恢复、Real-ESRGAN 升级、结果预览、存档导出和临时会话清理。</p>
+                                <p class="repo-desc">AI-powered career intelligence platform for evidence-based résumé analysis, ATS evaluation, and interview preparation.</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-19</span>
+                                    <span class="repo-date">2026-06-22</span>
                                 </div>
                             </a>
                         </li>
@@ -1006,52 +1046,10 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">DOCMINDPRO</span>
                                     <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">生产级多 PDF RAG 智能系统，具有 FastAPI、Streamlit、LangChain、Gemini、ChromaDB、BM25、CrossEncoder 和 RAGAS。</p>
+                                <p class="repo-desc">Production-grade Multi-PDF RAG Intelligence System with FastAPI, Streamlit, LangChain, Gemini, ChromaDB, BM25, CrossEncoder, and RAGAS.</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-06-25</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/bismillahapaja/stemsend-trashformers" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">stemsend-trashformers</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">♻️ 学校的人工智能循环经济助手，利用 Gemini Vision、基于规则的建议和负责任的人工智能，将废物转化为可重复使用的机会。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-06-24</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/ahincho/path-search" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">path-search</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">二维网格搜索算法的学术基准。使用搜索库将 A*、BFS、DFS、Dijkstra 和双向搜索与曼哈顿、欧几里得、切比雪夫和 Octile 启发式进行比较。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-20</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/Ciprian-LocalPulse/universal-ai-failure-database" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">universal-ai-failure-database</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">一个开源的、社区驱动的存储库，记录现实世界的人工智能故障，包括幻觉、逻辑错误、数学错误、法律误解和安全漏洞。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Brainfuck</span>
-                                    <span class="repo-date">2026-06-21</span>
                                 </div>
                             </a>
                         </li>
