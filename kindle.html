@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-06-28 22:58:43</p>
+            <p class="hero-meta">构建时间：2026-06-29 22:52:27</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：复盘整理日</p>
-                <p class="theme-focus">优先看 Archive 区：回顾本周输入并做摘要。</p>
-                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The only way to do great work is to love what you do.</p>
-                        <p class="quick-meta">— Steve Jobs</p>
+                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
+                        <p class="quick-meta">— Albert Einstein</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">ardhaecosystem/synapse</p>
-                        <p class="quick-meta">★ 43</p>
+                        <p class="quick-meta">★ 62</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 algorithm，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 ardhaecosystem/synapse，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《DanceOPD: On-Policy Generative Field Distillation》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">algorithm <span>/ˈælɡəˌrɪðəm/</span></p>
-                    <p class="study-meaning">n. 算法；运算法则</p>
+                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
+                    <p class="study-meaning">n. 递归；循环</p>
                     
-                    <p class="study-sentence">The sorting algorithm runs in O(n log n) time complexity.</p>
-                    <p class="study-sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
+                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
+                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">DanceOPD: On-Policy Generative Field Distillation</p>
-                    <p class="deep-abstract">现代图像生成需要一个统一不同功能的单一模型，包括文本到图像 (T2I)、本地编辑和全局编辑。然而，这些能力很少自然地结合在一起，而且经常发生冲突。例如，编辑往往会降低 T2I 性能，而全局编辑和本地编辑会相互干扰。因此，有效组合这些能力已成为图像生成模型训练的核心挑战。为了解决这个问题，我们引入了 DanceOPD，这是一种用于流匹配模型的策略生成场蒸馏框架，它将每个样本路由到一个能力场，查询一个低噪声学生诱发的状态，并使用简单的速度 MSE 目标进行训练。将每个能力源定义为共享流状态空间上的速度场，学生从在其自己的推出状态上查询的字段中学习以组成专家能力。该公式还吸收了操作员定义的字段，例如无分类器指导。 T2I、编辑、现实场吸收和 CFG 吸收的综合实验表明，我们的方法改进了多能力组合，增强了目标能力，同时保持了锚生成质量。我们相信这项工作为流量匹配模型中的生成场蒸馏建立了一条实用途径。</p>
+                    <p class="deep-title">DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand</p>
+                    <p class="deep-abstract">灵巧的操纵策略可以解决个人技能问题，但将它们组合成单手执行多项任务仍然具有挑战性。在现有操作技能之上添加新任务通常会对重叠的手指和接触模式提出相互冲突的要求，从而在保留现有操作结果和执行新操作结果之间造成破坏性干扰。我们提出了 DexCompose，一个角色感知的残差组合框架，它通过明确的手指级动作所有权重用预先训练的灵巧策略来进行多任务操作。给定两个预训练的全手策略，DexCompose 首先从第一个技能收集成功的任务后状态，并对候选手指掩模执行发布测试，以确定哪些手指是维持既定技能状态所必需的。然后，它训练两个不对称残差模块：用于任务保存的有界残差稳定器，以及仅在分配给新任务的动作子空间内适应冻结的下游策略的上下文感知残差。我们评估了 16 项复合灵巧操作任务的框架，涵盖四种物体保留技能和四种下游交互。 DexCompose 实现了 77.4% 的平均复合成功率，这表明具有双重残差的结构行动所有权为构建超越传统策略链的灵巧技能提供了一个有希望的方向。</p>
                     
-                    <p class="deep-takeaway">要点：现代图像生成需要一个统一不同功能的单一模型，包括文本到图像 (T2I)、本地编辑和全局编辑。然而，这些能力很少自然地结合在一起，而且经常发生冲突。例如，编辑往往会降低 T2I 性能，而全局编辑和本地编辑会相互干扰。因此，有效组合这些能力已成为图像生成模型训练的核心挑战。为了解决这个问题，我们引入了 DanceOPD，这...</p>
+                    <p class="deep-takeaway">要点：灵巧的操纵策略可以解决个人技能问题，但将它们组合成单手执行多项任务仍然具有挑战性。在现有操作技能之上添加新任务通常会对重叠的手指和接触模式提出相互冲突的要求，从而在保留现有操作结果和执行新操作结果之间造成破坏性干扰。我们提出了 DexCompose，一个角色感知的残差组合框架，它通过明确的手指级动作所有权重用预先训练的...</p>
                     
-                    <p class="deep-meta">预计阅读 1 分钟</p>
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -284,17 +284,17 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>ardhaecosystem/synapse</strong> (★ 43)
+                        <strong>ardhaecosystem/synapse</strong> (★ 62)
                         <p>Synapse——人工智能代理的时间知识图存储器。自托管 FalkorDB + Graphiti，具有海马层内存管理。</p>
                     </li>
                     
                     <li>
-                        <strong>parsehawk/parsehawk</strong> (★ 30)
+                        <strong>parsehawk/parsehawk</strong> (★ 32)
                         <p>本地优先文档人工智能。默认情况下 100% 在本地运行，使用 API、CLI 和 Web UI。</p>
                     </li>
                     
                     <li>
-                        <strong>CrazyDashTool/Local-Agent-Studio</strong> (★ 16)
+                        <strong>CrazyDashTool/Local-Agent-Studio</strong> (★ 19)
                         <p>一个简单的工作室使用代理</p>
                     </li>
                     
