@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-06-29 22:52:27</p>
+            <p class="hero-meta">构建时间：2026-06-30 23:06:56</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,25 +191,25 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
-                        <p class="quick-meta">— Albert Einstein</p>
+                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
+                        <p class="quick-meta">— 荀子</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-main">ardhaecosystem/synapse</p>
-                        <p class="quick-meta">★ 62</p>
-                        <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
+                        <p class="quick-main">jaimasih05-commits/swarm-foraging-qlearn</p>
+                        <p class="quick-meta">★ 152</p>
+                        <p class="quick-note">新兴项目，适合早期观察。 语言: HTML</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 polymorphism，再口述其含义一次。</li>
                         
-                        <li>趋势: 浏览 ardhaecosystem/synapse，记录 1 个可借鉴实现点。</li>
+                        <li>趋势: 浏览 jaimasih05-commits/swarm-foraging-qlearn，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
-                    <p class="study-meaning">n. 递归；循环</p>
+                    <p class="study-word">polymorphism <span>/ˌpɒliˈmɔːfɪzəm/</span></p>
+                    <p class="study-meaning">n. 多态性</p>
                     
-                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
-                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
+                    <p class="study-sentence">Polymorphism allows objects of different classes to be treated as objects of a common superclass.</p>
+                    <p class="study-sentence-zh">多态性允许不同类的对象被当作共同父类的对象来处理。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand</p>
-                    <p class="deep-abstract">灵巧的操纵策略可以解决个人技能问题，但将它们组合成单手执行多项任务仍然具有挑战性。在现有操作技能之上添加新任务通常会对重叠的手指和接触模式提出相互冲突的要求，从而在保留现有操作结果和执行新操作结果之间造成破坏性干扰。我们提出了 DexCompose，一个角色感知的残差组合框架，它通过明确的手指级动作所有权重用预先训练的灵巧策略来进行多任务操作。给定两个预训练的全手策略，DexCompose 首先从第一个技能收集成功的任务后状态，并对候选手指掩模执行发布测试，以确定哪些手指是维持既定技能状态所必需的。然后，它训练两个不对称残差模块：用于任务保存的有界残差稳定器，以及仅在分配给新任务的动作子空间内适应冻结的下游策略的上下文感知残差。我们评估了 16 项复合灵巧操作任务的框架，涵盖四种物体保留技能和四种下游交互。 DexCompose 实现了 77.4% 的平均复合成功率，这表明具有双重残差的结构行动所有权为构建超越传统策略链的灵巧技能提供了一个有希望的方向。</p>
+                    <p class="deep-title">VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes</p>
+                    <p class="deep-abstract">基于感知的人形机器人控制需要将自我中心的观察和任务指令与全身运动联系起来。学习这种映射需要同步的以自我为中心的图像、语言命令和机器人兼容的运动轨迹，但现有的数据源没有大规模地提供这种完整的元组。我们通过在重建场景中综合生成视觉语言运动学（VLK）监督来解决这个瓶颈。我们的管道利用 3D 高斯分布来重建公制尺度的室内环境，使用特权场景信息合成导航和对象交互轨迹，并在事后渲染成对的以自我为中心的观察结果。我们在没有人工干预的情况下生成了 48,000 条配对轨迹，并训练了预测短视界全身运动轨迹的 VLK 策略。全身追踪器将这些预测转化为对物理人形机器人的操作。我们对执行导航和单对象传输的物理 Unitree G1 进行了评估，证明重建场景中的综合交互为基于模拟到真实感知的人形机器人操作提供了有效的监督。项目网站：https://vision-language-kinematics.github.io/</p>
                     
-                    <p class="deep-takeaway">要点：灵巧的操纵策略可以解决个人技能问题，但将它们组合成单手执行多项任务仍然具有挑战性。在现有操作技能之上添加新任务通常会对重叠的手指和接触模式提出相互冲突的要求，从而在保留现有操作结果和执行新操作结果之间造成破坏性干扰。我们提出了 DexCompose，一个角色感知的残差组合框架，它通过明确的手指级动作所有权重用预先训练的...</p>
+                    <p class="deep-takeaway">要点：基于感知的人形机器人控制需要将自我中心的观察和任务指令与全身运动联系起来。学习这种映射需要同步的以自我为中心的图像、语言命令和机器人兼容的运动轨迹，但现有的数据源没有大规模地提供这种完整的元组。我们通过在重建场景中综合生成视觉语言运动学（VLK）监督来解决这个瓶颈。我们的管道利用 3D 高斯分布来重建公制尺度的室内环境...</p>
                     
-                    <p class="deep-meta">预计阅读 2 分钟</p>
+                    <p class="deep-meta">预计阅读 1 分钟</p>
                 
             </div>
             
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>ardhaecosystem/synapse</strong> (★ 62)
-                        <p>Synapse——人工智能代理的时间知识图存储器。自托管 FalkorDB + Graphiti，具有海马层内存管理。</p>
+                        <strong>jaimasih05-commits/swarm-foraging-qlearn</strong> (★ 152)
+                        <p>Q-Learning Swarm Foraging 2026：动态网格环境中的多智能体强化学习</p>
                     </li>
                     
                     <li>
-                        <strong>parsehawk/parsehawk</strong> (★ 32)
-                        <p>本地优先文档人工智能。默认情况下 100% 在本地运行，使用 API、CLI 和 Web UI。</p>
+                        <strong>abnormal-codex/Ai-Pixel-Design-Archive</strong> (★ 152)
+                        <p>2026 年最佳专业设计 AI 图像生成器</p>
                     </li>
                     
                     <li>
-                        <strong>CrazyDashTool/Local-Agent-Studio</strong> (★ 19)
-                        <p>一个简单的工作室使用代理</p>
+                        <strong>okesipoke/manuscript-phoneme-decipher</strong> (★ 152)
+                        <p>伏尼契手稿解码：Elu-Sinhala 音标和词汇工具包 2026</p>
                     </li>
                     
                     <li>
-                        <strong>yyh-001/llm-value-rankings</strong> (★ 7)
-                        <p>每日 LLM 价值排名 - 按智能、速度和价格比较 300 多个模型。 OpenRouter+人工分析。 大模型排行榜</p>
+                        <strong>onlyoneshakibul/magic-eraser-studio</strong> (★ 152)
+                        <p>AI Object Remover 2026 – 消除干扰并保持高清质量</p>
                     </li>
                     
                     <li>
-                        <strong>suhasbhairav/ai-chief-of-staff</strong> (★ 4)
-                        <p>TAI Chief - 每个首席执行官都需要的唯一人工智能参谋长平台。</p>
+                        <strong>Fabiojvv/ai-cortex-hub</strong> (★ 152)
+                        <p>2026 年顶级人工智能工具发现平台：自动管理和实时排行榜</p>
                     </li>
                     
                 </ul>
