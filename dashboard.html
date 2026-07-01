@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-06-30 23:06:56</span>
+        <span class="generated-time">更新于 2026-07-01 23:10:10</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,58 +846,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">VLK: Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> Humanoid<sup class='ipa'>/ˈhjuməˌnɔɪd/</sup> Loco-Manipulation<sup class='ipa'>/locomanipulation*/</sup> from Synthetic<sup class='ipa'>/sɪnˈθɛtɪk/</sup> Interactions<sup class='ipa'>/ˌɪnərˈækʃənz/</sup> in Reconstructed<sup class='ipa'>/ˌrikənˈstrəktɪd/</sup> Scenes</h4>
-                            <div class="paper-meta">
-                                <span class="authors">Yen-Jen Wang, Jiaman Li, Sirui Chen</span>
-                                <span class="date">2026-06-29</span>
-                                <span class="categories">cs.RO | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Perception-based humanoid loco-manipulation requires connecting egocentric observations and task instructions to whole-body motion. Learning this mapping requires synchronized egocentric images, language commands, and robot-compatible kinematic trajectories, yet no existing data source provides this...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">基于感知的人形机器人控制需要将自我中心的观察和任务指令与全身运动联系起来。学习这种映射需要同步的以自我为中心的图像、语言命令和机器人兼容的运动轨迹，但现有的数据源没有大规模地提供这种完整的元组。我们通过在重建场景中综合生成视觉语言运动学（VLK）监督来解决这个瓶颈。我们的管道利用 3D 高斯分布来重建公制尺度的室内环境，使用特权场景信息合成导航和对象交互轨迹，并在事后渲染成对的以自我为中心的观察结果。我们在没有人工干预的情况下生成了 48,000 条配对轨迹，并训练了预测短视界全身运动轨迹的 VLK 策略。全身追踪器将这些预测转化为对物理人形机器人的操作。我们对执行导航和单对象传输的物理 Unitree G1 进行了评估，证明重建场景中的综合交互为基于模拟到真实感知的人形机器人操作提供了有效的监督。项目网站：https://vision-language-kinematics.github.io/</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2606.30645v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">LeVo 2: Stable and Melodious<sup class='ipa'>/məˈloʊdiəs/</sup> Song Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> via Hierarchical<sup class='ipa'>/ˌhaɪˈrɑrkəkəl/</sup> Representation<sup class='ipa'>/ˌrɛprəzɛnˈteɪʃən/</sup> Modeling<sup class='ipa'>/ˈmɑdəlɪŋ/</sup> and Progressive<sup class='ipa'>/prəˈgrɛsɪv/</sup> Post-Training<sup class='ipa'>/posttraining*/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Shun Lei, Huaicheng Zhang, Dapeng Wu</span>
-                                <span class="date">2026-06-29</span>
-                                <span class="categories">cs.SD | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Full-length song generation must preserve coherence and musicality, render detailed vocal and accompaniment acoustics, and follow lyrics and prompts. Existing language model-based systems face a structural trade-off: mixed-token modeling preserves vocal-instrument coordination but obscures track-spe...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">完整长度的歌曲生成必须保持连贯性和音乐性，呈现详细的人声和伴奏声学效果，并遵循歌词和提示。现有的基于语言模型的系统面临着结构性权衡：混合令牌建模保留了声乐乐器协调，但模糊了轨道特定的细节，而双轨预测改善了声学效果，但需要更长的序列并削弱了全局规划。我们推出了 LeVo 2，一种用于可控全长歌曲生成的混合 LLM-Diffusion 框架。 LeVo 2 将这种权衡表述为分层建模：LeLM 首先预测混合标记以进行语义规划，然后并行预测声乐和伴奏标记以进行特定于曲目的细化，而基于扩散的音乐编解码器则重建全长波形。这个扩展版本的一个核心贡献是一个以美学为导向的对齐训练计划。在预训练期间，自动音乐美学评估框架将音乐性等级条件分配给大规模数据，在偏好对齐之前提供音乐性先验。渐进式后期训练采用SFT、大规模离线DPO、闭环半在线DPO分别提高生成质量、可控性和音乐性。然后，模块化扩展训练 Track-Specific LM 进行声学细化，同时保留对齐的语义规划器。该时间表将音乐性学习、可控性对齐和声学细化分开，减轻了优化冲突和静态离线偏好对的限制。专家听力测试和客观评估表明，LeVo 2 在六个主观维度上均优于开源基线，并在多个听力指标上接近领先的商业系统。消融验证了训练策略、美学指导、缩放和分层架构的效果。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2606.30642v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Self-Evolving<sup class='ipa'>/selfevolving*/</sup> World Models for LLM Agent Planning<sup class='ipa'>/ˈplænɪŋ/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Xuan Zhang, Wenxuan Zhang, See-Kiong Ng</span>
-                                <span class="date">2026-06-29</span>
-                                <span class="categories">cs.AI | cs.CL</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">World models offer a principled way to equip long-horizon LLM agents with foresight: predictions of action consequences before execution. However, unreliable foresight can be ignored, misused, or even degrade downstream decision-making. In this paper, we introduce WorldEvolver, a self-evolving world...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">世界模型提供了一种原则性的方法，使长期的法学硕士代理人具有远见：在执行之前预测行动后果。然而，不可靠的远见可能会被忽视、滥用，甚至降低下游决策的质量。在本文中，我们介绍了 WorldEvolver，这是一个自我进化的世界模型框架，它修改其部署时上下文，同时保持下游代理和所有模型参数冻结。 WorldEvolver 集成了三个模块：(i) 情节记忆，通过基于检索的模拟来利用真实的动作转换； (ii) 语义记忆，从预测-观察不匹配中提取持久的启发式规则； (iii)选择性预见，在将低置信度预测整合到智能体推理上下文中之前对其进行过滤。我们在 ALFWorld 和 ScienceWorld 上评估 WorldEvolver，测量 Word2World 上的世界模型预测准确性以及 AgentBoard 上的下游代理成功率。大量实验表明，WorldEvolver 在三个主干网中实现了最高的预测精度，并在下游代理成功率方面领先于其他世界模型基线，这表明测试时内存修正增强了预测保真度和规划性能。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2606.30639v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
+                        <p class="empty-state">暂无论文数据</p>
                     
                 </div>
             </div>
@@ -945,12 +894,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/okesipoke/manuscript-phoneme-decipher" target="_blank" class="repo-link">
+                            <a href="https://github.com/onlyoneshakibul/magic-eraser-studio" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">manuscript-phoneme-decipher</span>
+                                    <span class="repo-name">magic-eraser-studio</span>
                                     <span class="repo-stars">⭐ 152</span>
                                 </div>
-                                <p class="repo-desc">伏尼契手稿解码：Elu-Sinhala 音标和词汇工具包 2026</p>
+                                <p class="repo-desc">AI Object Remover 2026 – 消除干扰并保持高清质量</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">HTML</span>
                                     <span class="repo-date">2026-06-28</span>
@@ -959,12 +908,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/onlyoneshakibul/magic-eraser-studio" target="_blank" class="repo-link">
+                            <a href="https://github.com/okesipoke/manuscript-phoneme-decipher" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">magic-eraser-studio</span>
+                                    <span class="repo-name">manuscript-phoneme-decipher</span>
                                     <span class="repo-stars">⭐ 152</span>
                                 </div>
-                                <p class="repo-desc">AI Object Remover 2026 – 消除干扰并保持高清质量</p>
+                                <p class="repo-desc">伏尼契手稿解码：Elu-Sinhala 音标和词汇工具包 2026</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">HTML</span>
                                     <span class="repo-date">2026-06-28</span>
@@ -987,20 +936,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/aminekago-web/Paradigm-Survival-Arena" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Paradigm-Survival-Arena</span>
-                                    <span class="repo-stars">⭐ 152</span>
-                                </div>
-                                <p class="repo-desc">2026 年生存之战的 6 大人工智能范式</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">HTML</span>
-                                    <span class="repo-date">2026-06-28</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/Sujal-142/ai-image-clean-eraser" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">ai-image-clean-eraser</span>
@@ -1015,10 +950,24 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/aminekago-web/Paradigm-Survival-Arena" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Paradigm-Survival-Arena</span>
+                                    <span class="repo-stars">⭐ 152</span>
+                                </div>
+                                <p class="repo-desc">2026 年生存之战的 6 大人工智能范式</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">HTML</span>
+                                    <span class="repo-date">2026-06-28</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/ardhaecosystem/synapse" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">synapse</span>
-                                    <span class="repo-stars">⭐ 66</span>
+                                    <span class="repo-stars">⭐ 67</span>
                                 </div>
                                 <p class="repo-desc">Synapse——人工智能代理的时间知识图存储器。自托管 FalkorDB + Graphiti，具有海马层内存管理。</p>
                                 <div class="repo-meta">
@@ -1032,9 +981,9 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/parsehawk/parsehawk" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">parsehawk</span>
-                                    <span class="repo-stars">⭐ 33</span>
+                                    <span class="repo-stars">⭐ 37</span>
                                 </div>
-                                <p class="repo-desc">本地优先文档人工智能。默认情况下 100% 在本地运行，使用 API、CLI 和 Web UI。</p>
+                                <p class="repo-desc">使用本地优先文档 AI 将文档转换为结构化 JSON。默认情况下 100% 在本地运行，使用 API、CLI 和 Web UI。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-06-25</span>
