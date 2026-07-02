@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-07-01 23:10:10</span>
+        <span class="generated-time">更新于 2026-07-02 23:00:08</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,7 +846,58 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        <p class="empty-state">暂无论文数据</p>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Measuring<sup class='ipa'>/ˈmɛʒərɪŋ/</sup> the Gap Between Human and LLM Research<sup class='ipa'>/ˈrisərʧ/</sup> Ideas</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Ziyu Chen, Yilun Zhao, Arman Cohan</span>
+                                <span class="date">2026-07-01</span>
+                                <span class="categories">cs.CL | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">LLMs are increasingly used to brainstorm research ideas, but existing evaluations mostly judge individual ideas by novelty, feasibility, or expert preference. We instead ask: how far are current LLM-generated ideas from human researchers? To characterize this gap, we build a large-scale evaluation f...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">法学硕士越来越多地用于集思广益的研究想法，但现有的评估大多通过新颖性、可行性或专家偏好来判断个人想法。相反，我们会问：目前法学硕士提出的想法与人类研究人员的差距有多远？为了描述这一差距，我们根据高质量的人类研究论文构建了一个大规模的构思评估框架。对于每篇论文，我们都会对一小部分密切相关的先前作品进行逆向工程，这些作品可能激发了其核心思想。然后，法学硕士会被提示从一组论文标题和摘要中产生一个新想法。我们引入了一个两轴研究品味分类法，通过机会模式和研究范式来描述每个想法，并用它来量化人类和法学硕士想法之间的差异。在不同法学硕士产生的想法集中，我们观察到一致的分布差距：法学硕士的想法不成比例地集中在类似桥梁的机会和综合方法上，而人类论文参考分布在框架差距和构建贡献的方式上更广泛地传播。这一结果表明，优秀的法学硕士可以产生一系列合理的想法，但该范围仍然比人类的研究品味更窄，并且相对于人类的研究品味有所系统地改变。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2607.01233v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Is One Layer Enough? Training<sup class='ipa'>/ˈtreɪnɪŋ/</sup> A Single Transformer<sup class='ipa'>/trænsˈfɔrmər/</sup> Layer Can Match Full-Parameter<sup class='ipa'>/fullparameter*/</sup> RL Training<sup class='ipa'>/ˈtreɪnɪŋ/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Zijian Zhang, Rizhen Hu, Athanasios Glentis</span>
+                                <span class="date">2026-07-01</span>
+                                <span class="categories">cs.LG | cs.CL</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Reinforcement learning (RL) has become a central component of post-training large language models (LLMs), yet little is understood about how RL adaptation is distributed across transformer layers. Existing approaches typically update all model parameters uniformly, implicitly assuming that every lay...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">强化学习 (RL) 已成为训练后大型语言模型 (LLM) 的核心组成部分，但人们对 RL 适应如何跨 Transformer 层进行分布了解甚少。现有方法通常统一更新所有模型参数，隐含地假设每一层对 RL 后训练期间获得的增益的贡献相似。在这项工作中，我们通过对 RL 训练进行系统的分层研究来挑战这一假设。令人惊讶的是，我们发现训练单个 Transformer 层可以恢复全参数 RL 训练所获得的大部分增益，在某些情况下甚至超过它。为了量化这种现象，我们引入了数量层贡献，它衡量通过单独训练一层而恢复的完全强化学习改进的比例。在涵盖两个模型系列（Qwen3、Qwen2.5）、三种 RL 算法（GRPO、GiGPO、Dr. GRPO）的七个模型以及包括数学推理、代码生成和代理决策在内的多个任务域中，我们观察到一个非常稳定的模式：RL 增益高度集中在变压器层的一小部分子集（在许多情况下甚至是单个变压器层）中。更引人注目的是，相同的结构模式始终出现：高贡献层集中在变压器堆栈的中间，而输入端和输出端附近的层贡献要少得多。由此产生的层排名在数据集、任务、模型系列和强化学习算法之间保持密切相关。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2607.01232v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Language-Critique<sup class='ipa'>/languagecritique*/</sup> Imitation<sup class='ipa'>/ˌɪməˈteɪʃən/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> from Suboptimal<sup class='ipa'>/suboptimal*/</sup> Demonstrations<sup class='ipa'>/ˌdɛmənˈstreɪʃənz/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Chih-Han Yang, Dai-Jie Wu, Yun-Ping Huang</span>
+                                <span class="date">2026-07-01</span>
+                                <span class="categories">cs.LG | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Prior work on imitation learning from suboptimal demonstrations typically relies on compressed supervision signals such as confidence estimates, discriminator scores, or importance weights. These scalar signals are inherently limited, as they cannot explicitly express intermediate reasoning about ta...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">先前从次优演示中进行模仿学习的工作通常依赖于压缩的监督信号，例如置信度估计、鉴别器分数或重要性权重。这些标量信号本质上是有限的，因为它们无法明确表达有关任务进度、故障模式或纠正措施的中间推理。我们提出了一种从次优演示中进行模仿学习的语言批评框架，该框架利用自然语言作为结构化监督信号，避免表达反馈崩溃为标量。我们的方法首先从明确描述当前进展的演示中构建语言标签，识别次优行为并提供细粒度的纠正指导。然后，我们引入一种语言批评损失，直接使用这些结构化信号来训练策略，而不将它们简化为标量，并将其实例化为行为克隆和扩散策略，产生 LC-BC 和 LC-DP。我们进一步提供了一个理论结果，表明所提出的客观上限是标准假设下专家绩效差距的上限。根据经验，我们评估了涵盖导航、操作和游戏玩法的各种连续控制任务，我们的方法始终优于强大的模仿学习和离线强化学习基线。这些结果表明，语言可以作为一种强大且结构化的监督形式，用于从次优数据中学习稳健的政策。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2607.01225v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
                     
                 </div>
             </div>
@@ -869,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/jaimasih05-commits/swarm-foraging-qlearn" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">swarm-foraging-qlearn</span>
-                                    <span class="repo-stars">⭐ 152</span>
+                                    <span class="repo-stars">⭐ 151</span>
                                 </div>
                                 <p class="repo-desc">Q-Learning Swarm Foraging 2026：动态网格环境中的多智能体强化学习</p>
                                 <div class="repo-meta">
@@ -883,7 +934,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/abnormal-codex/Ai-Pixel-Design-Archive" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Ai-Pixel-Design-Archive</span>
-                                    <span class="repo-stars">⭐ 152</span>
+                                    <span class="repo-stars">⭐ 151</span>
                                 </div>
                                 <p class="repo-desc">2026 年最佳专业设计 AI 图像生成器</p>
                                 <div class="repo-meta">
@@ -897,7 +948,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/onlyoneshakibul/magic-eraser-studio" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">magic-eraser-studio</span>
-                                    <span class="repo-stars">⭐ 152</span>
+                                    <span class="repo-stars">⭐ 151</span>
                                 </div>
                                 <p class="repo-desc">AI Object Remover 2026 – 消除干扰并保持高清质量</p>
                                 <div class="repo-meta">
@@ -911,7 +962,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/okesipoke/manuscript-phoneme-decipher" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">manuscript-phoneme-decipher</span>
-                                    <span class="repo-stars">⭐ 152</span>
+                                    <span class="repo-stars">⭐ 151</span>
                                 </div>
                                 <p class="repo-desc">伏尼契手稿解码：Elu-Sinhala 音标和词汇工具包 2026</p>
                                 <div class="repo-meta">
@@ -925,23 +976,9 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/Fabiojvv/ai-cortex-hub" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">ai-cortex-hub</span>
-                                    <span class="repo-stars">⭐ 152</span>
+                                    <span class="repo-stars">⭐ 151</span>
                                 </div>
                                 <p class="repo-desc">2026 年顶级人工智能工具发现平台：自动管理和实时排行榜</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">HTML</span>
-                                    <span class="repo-date">2026-06-28</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/Sujal-142/ai-image-clean-eraser" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ai-image-clean-eraser</span>
-                                    <span class="repo-stars">⭐ 152</span>
-                                </div>
-                                <p class="repo-desc">AI 支持的文本删除器 2026：自动检测和手动精度，高清质量</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">HTML</span>
                                     <span class="repo-date">2026-06-28</span>
@@ -953,9 +990,23 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/aminekago-web/Paradigm-Survival-Arena" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Paradigm-Survival-Arena</span>
-                                    <span class="repo-stars">⭐ 152</span>
+                                    <span class="repo-stars">⭐ 151</span>
                                 </div>
                                 <p class="repo-desc">2026 年生存之战的 6 大人工智能范式</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">HTML</span>
+                                    <span class="repo-date">2026-06-28</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Sujal-142/ai-image-clean-eraser" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ai-image-clean-eraser</span>
+                                    <span class="repo-stars">⭐ 151</span>
+                                </div>
+                                <p class="repo-desc">AI 支持的文本删除器 2026：自动检测和手动精度，高清质量</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">HTML</span>
                                     <span class="repo-date">2026-06-28</span>
@@ -978,29 +1029,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/parsehawk/parsehawk" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">parsehawk</span>
-                                    <span class="repo-stars">⭐ 37</span>
-                                </div>
-                                <p class="repo-desc">使用本地优先文档 AI 将文档转换为结构化 JSON。默认情况下 100% 在本地运行，使用 API、CLI 和 Web UI。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-25</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/CrazyDashTool/Local-Agent-Studio" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Local-Agent-Studio</span>
-                                    <span class="repo-stars">⭐ 20</span>
+                                    <span class="repo-stars">⭐ 21</span>
                                 </div>
                                 <p class="repo-desc">一个简单的工作室使用代理</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">JavaScript</span>
                                     <span class="repo-date">2026-06-27</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/nousheentabassum/nousheentabassum" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">nousheentabassum</span>
+                                    <span class="repo-stars">⭐ 5</span>
+                                </div>
+                                <p class="repo-desc">计算机科学专业学生|全栈开发人员 |人工智能和机器学习爱好者 |使用 React、Node.js 和 Python 构建可扩展的应用程序。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-07-02</span>
                                 </div>
                             </a>
                         </li>
