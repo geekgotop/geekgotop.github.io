@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-07-06 23:02:54</span>
+        <span class="generated-time">更新于 2026-07-07 22:56:51</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Distributed<sup class='ipa'>/dɪˈstrɪbjətəd/</sup> Attacks in Persistent-State<sup class='ipa'>/persistentstate*/</sup> AI Control</h4>
+                            <h4 class="paper-title">From Fixed to Free Cameras: Calibration-Free<sup class='ipa'>/calibrationfree*/</sup> View-Robust<sup class='ipa'>/viewrobust*/</sup> Vision-Language-Action<sup class='ipa'>/visionlanguageaction*/</sup> Model</h4>
                             <div class="paper-meta">
-                                <span class="authors">Josh Hills, Ida Caspary, Asa Cooper Stickland</span>
-                                <span class="date">2026-07-02</span>
-                                <span class="categories">cs.AI</span>
+                                <span class="authors">Wenhao Li, Xueying Jiang, Quanhao Qian</span>
+                                <span class="date">2026-07-06</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">As AI coding agents become more autonomous, they increasingly ship code iteratively, with the codebase persisting across sessions. This persistence creates a new attack surface: a misaligned or prompt-injected agent can distribute attacks across pull requests (PRs) and time its payload for the PR wi...</p>
+                                <p class="abstract-en">Real-world robot deployment rarely maintains the training-stage camera setup, where cameras often experience repositioning or remounting depending on actual scenarios. Existing view-robust Vision-Language-Action (VLA) policies tolerate such camera variations only when the camera extrinsics are expli...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">随着人工智能编码代理变得更加自主，它们越来越多地迭代地交付代码，并且代码库在会话之间持续存在。这种持久性创建了一个新的攻击面：未对齐或提示注入的代理可以跨拉取请求 (PR) 分发攻击，并为具有最佳自然覆盖的 PR 计时其有效负载。为了研究由此产生的动态，我们引入了迭代 VibeCoding，这是一种人工智能控制设置，旨在研究安全部署有能力但可能不受信任的人工智能。在迭代 VibeCoding 中，编码代理在持久代码库中的一系列 PR 上构建软件，同时执行隐蔽的副任务。我们的基准测试包括两个任务系列：CLI 工具和 Flask Web 服务，总共 20 个任务变体。我们使用 Claude Sonnet 4.5 作为攻击代理，使用 GPT-4o 作为监控器。我们将渐进式攻击（将副任务分布在 PR 之间）与集中在单个 PR 中的非渐进式攻击进行比较。没有任何一个监控器能够同时应对这两种情况：哪种策略能够最好地规避（成功地规避监控器）取决于监控器类型，因此防御者无法使用任何一个监控器来阻止渐进式和非渐进式攻击。高规避率 (&gt;= 65%) 普遍存在于模型攻击代理后端（Sonnet 4.5、Gemini 3.1 Pro、Kimi K2.5），证实这是持久状态攻击面的属性，而不是单个模型的功能。在最先进的监控模型中，规避率仍然很高，并且对于能力更强的模型，渐进式和非渐进式规避之间的差距会扩大。我们引入了一个状态链接跟踪器监视器，用于跟踪 PR 中可疑的累积情况。在这两个任务系列中，它比仅查看更多累积历史记录的 diff 监视器更好地检测渐进式攻击。将这种更强大的监视器与四监视器组合中的轨迹监视器相结合，可以将渐进攻击规避率从最弱的标准差异监视器下的 93% 降低到 47%。</p>
+                                    <p class="abstract-zh">现实世界的机器人部署很少维持训练阶段的摄像机设置，其中摄像机经常根据实际场景进行重新定位或重新安装。现有的视图鲁棒性视觉语言动作（VLA）策略只有在明确提供相机外部参数时才能容忍此类相机变化，这使得它们脆弱且难以使用，尤其是在视图鲁棒性至关重要时。我们认为，政策不应该被告知摄像头在哪里，而应该自己弄清楚。为此，我们引入了以相机为中心的 VLA (CamVLA)，这是一种新的 VLA 模型，它通过预测 (i) 在本地相机框架中表示的以相机为中心的末端执行器动作，以及 (ii) 将相机与机器人底座相关联的 6-DoF 手眼矩阵，将操作控制与相机几何结构解耦。确定性几何变换将两个预测组合成机器人基架动作。这使得我应该如何在与姿势无关的以相机为中心的动作生成中从我从相机视角几何基础中观察的位置移动。由此产生的策略是免校准、无深度和单视图，仅需要单个单目 RGB 图像作为部署时的视觉观察和任务指令。对模拟和现实世界机器人数据的评估表明，CamVLA 持续提高了不同看不见的视角的成功率。项目页面：https://alibaba-damo-academy.github.io/CamVLA/。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.02514v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.05396v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">LACUNA: A Testbed for Evaluating<sup class='ipa'>/ɪˈvæljuˌeɪtɪŋ/</sup> Localization<sup class='ipa'>/ˌloʊkələˈzeɪʃən/</sup> Precision<sup class='ipa'>/priˈsɪʒən/</sup> for LLM Unlearning<sup class='ipa'>/unlearning*/</sup></h4>
+                            <h4 class="paper-title">Weak-to-Strong<sup class='ipa'>/weaktostrong*/</sup> Generalization<sup class='ipa'>/ˌʤɛnərəlɪˈzeɪʃən/</sup> via Direct On-Policy<sup class='ipa'>/onpolicy*/</sup> Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Matteo Boglioni, Thibault Rousset, Siva Reddy</span>
-                                <span class="date">2026-07-02</span>
-                                <span class="categories">cs.CL | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">LLMs memorize sensitive training data, including personally identifiable information (PII), creating a pressing need for reliable post hoc removal methods. Unlearning has emerged as a promising solution, with state-of-the-art(SOTA) methods often following a localize-first, unlearn-second paradigm th...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">法学硕士会记住敏感的培训数据，包括个人身份信息 (PII)，因此迫切需要可靠的事后删除方法。取消学习已成为一种有前途的解决方案，最先进的（SOTA）方法通常遵循针对特定模型参数的本地化第一、取消学习第二范式。然而，现有的基准仅在输出级别评估遗忘，从而留下了一个悬而未决的问题：遗忘是否真正从模型参数中删除了知识，或者只是混淆了它，重新浮现攻击的成功加剧了这一担忧。为了弥补这一差距，我们引入了 LACUNA：第一个具有真实参数级本地化的不可学习测试平台。 LACUNA 通过屏蔽持续预训练将合成个体的 PII 注入基于 1B 和 7B OLMo 的模型的预定义参数中，从而能够直接评估遗忘是否针对负责知识存储的权重。我们使用 LACUNA 对当前的 SOTA 去学习方法进行基准测试，发现尽管输出级性能很强，但现有方法非常不精确，并且容易受到重新表面攻击。我们进一步表明，当定位成功时，即使是简单的基于梯度的取消学习方法也能实现强大的擦除能力和对重铺攻击的鲁棒性，凸显了精确取消学习的重要性。我们发布 LACUNA 来补充行为评估，并推动基于本地化的稳健忘却学习的进一步发展。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2607.02513v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Program-as-Weights:<sup class='ipa'>/programasweights*/</sup> A Programming<sup class='ipa'>/ˈproʊˌgræmɪŋ/</sup> Paradigm<sup class='ipa'>/ˈpɛrəˌdaɪm/</sup> for Fuzzy Functions<sup class='ipa'>/ˈfəŋkʃənz/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Wentao Zhang, Liliana Hotsko, Woojeong Kim</span>
-                                <span class="date">2026-07-02</span>
+                                <span class="authors">Shiyuan Feng, Huan-ang Gao, Haohan Chi</span>
+                                <span class="date">2026-07-06</span>
                                 <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Many everyday programming tasks resist clean rule-based implementation, such as alerting on important log lines, repairing malformed JSON, or ranking search results by intent, and are increasingly outsourced to large language model APIs at the cost of locality, reproducibility, and price. We propose...</p>
+                                <p class="abstract-en">Reinforcement learning with verifiable rewards (RLVR) is a powerful recipe for improving language-model reasoning, but it is expensive to repeat on every new strong model because the target model must generate many rollouts during training. As models scale, post-training itself becomes a bottleneck....</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">许多日常编程任务抵制基于干净规则的实现，例如对重要日志行发出警报、修复格式错误的 JSON 或按意图对搜索结果进行排名，并且越来越多地外包给大型语言模型 API，但以局部性、可重复性和价格为代价。我们提出模糊函数编程：将这样的函数从自然语言规范编译成紧凑的、本地可执行的神经工件。我们用程序权重 (PAW) 实例化了这种范例，其中在 FuzzyBench（我们发布的 10M 示例数据集）上训练的 4B 编译器，为冻结的轻量级解释器发出参数高效的适配器。执行 PAW 程序的 0.6B Qwen3 解释器与 Qwen3-32B 直接提示的性能相匹配，同时使用大约五十分之一的推理内存，并在 MacBook M3 上以 30 token/s 的速度运行。 PAW 将基础模型从按输入问题求解器重新构建为工具构建器：每个函数定义调用一次，它会生成一个小型可重用工件，每个函数应用程序的后续调用成本低廉且离线。</p>
+                                    <p class="abstract-zh">具有可验证奖励的强化学习 (RLVR) 是改进语言模型推理的有效方法，但在每个新的强模型上重复的成本很高，因为目标模型必须在训练期间生成许多 rollout。随着模型规模的扩大，训练后本身就成为了瓶颈。我们研究了一种从弱到强的替代方案：在较小的模型上运行强化学习，其中部署成本更低，然后重用强化学习运行学到的知识来改进更强的目标模型。直接提取 RL 后的弱教师是不够的，因为教师的最终策略将有用的 RL 收益与较小模型的局限性混合在一起。我们提出直接按策略蒸馏（Direct-OPD），它转移了教师的 RL 诱导的策略转变。 Direct-OPD 将 RL 后的教师与其自己的 RL 前的参考进行比较，并将它们的对数比视为对学生的密集隐式奖励。简单来说，检查点对告诉我们 RL 使弱模型更有可能采取哪些行动，而 Direct-OPD 将该信号应用于更强的学生自己的政策状态。这直接重用了弱模型的强化学习监督信号，无需训练显式奖励模型或在目标模型上运行稀疏奖励强化学习。根据经验，Direct-OPD 始终利用较弱的教师来改进更强的目标模型；值得注意的是，它在 8 个 A100 GPU 上仅用了 4 小时就将 Qwen3-1.7B 在 AIME 2024 上的性能从 48.3% 提升到了 62.4%。它的性能优于步长匹配的直接强化学习，并支持多个策略转变的顺序组合。我们的结果表明，强化学习的结果可以在模型尺度上作为隐式奖励信号重复使用，而不仅仅是作为最终的模型来模仿。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.02512v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.05394v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Interpretable<sup class='ipa'>/interpretable*/</sup> Human-Label-Free<sup class='ipa'>/humanlabelfree*/</sup> Deep Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> for Real-Bogus<sup class='ipa'>/realbogus*/</sup> Classification<sup class='ipa'>/ˌklæsəfəˈkeɪʃən/</sup> with Uncertainty<sup class='ipa'>/ənˈsərtənti/</sup> Quantification<sup class='ipa'>/kˌwɑntɪfəˈkeɪʃən/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Raphaël Bonnet-Guerrini, Bruno Sanchez, Dominique Fouchez</span>
+                                <span class="date">2026-07-06</span>
+                                <span class="categories">astro-ph.IM | astro-ph.GA</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Time-domain surveys generate many transient candidates, making Real-Bogus classification a critical step in automated discovery pipelines. Reliable labels are costly, while community labels can be noisy and survey-dependent. We aim to develop a Real-Bogus classification framework that can be trained...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">时域调查会产生许多瞬态候选者，使真假分类成为自动发现管道中的关键步骤。可靠的标签成本高昂，而社区标签可能很嘈杂并且依赖于调查。我们的目标是开发一个真实-虚假分类框架，该框架可以在没有人工标记数据的情况下使用注入瞬态和虚假主导的调查数据进行训练，在强类别污染下保持稳健，并提供校准的不确定性量化。我们将模拟瞬态注入与受污染的调查类相结合，并使用不对称共同教学为具有不同标签噪声水平的类训练双网络模型。我们评估基准子集的性能，并使用潜在空间可视化工具分析学习到的表示。对于不确定性量化（UQ），我们比较了 MC dropout 和深度集成，并提出了一种低成本混合策略，利用双网络设置来改进校准。我们将评估扩展到光曲线领域，以评估光曲线类别的恢复。该方法在标记子集上实现了强大的Real-Bogus性能，并且在严重的类别污染下保持稳定。它以高保真度恢复瞬态光曲线类别，而单源识别则受到光曲线衍生标签的模糊性的限制。相对于更昂贵的集成基线，我们的混合 UQ 方法实现了有竞争力的校准。潜在空间分析表明，不确定性与决策边界一致，并揭示了虚假群体中的子类。我们的结果表明，注入驱动的弱监督训练可以实现可扩展且一致的真假分类，无需人工标记的训练数据，同时提供校准的不确定性。该方法适合通过重新运行基于注入的训练管道转移到即将进行的调查。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2607.05393v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/eli-labz/Cognitive-Core-Skills" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Cognitive-Core-Skills</span>
-                                    <span class="repo-stars">⭐ 24</span>
+                                    <span class="repo-stars">⭐ 274</span>
                                 </div>
                                 <p class="repo-desc">针对 LLM、SLM、AI 代理和世界模型的认知核心技能（感知、记忆、推理、规划、行动、验证、学习、治理）的通用、行业中立的分类法 - 包含模式、159 个技能卡、基准和 CI。</p>
                                 <div class="repo-meta">
@@ -973,15 +973,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/RishabSA/WaferDetect" target="_blank" class="repo-link">
+                            <a href="https://github.com/AbrarRagib/ml-roadmap" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">WaferDetect</span>
-                                    <span class="repo-stars">⭐ 4</span>
+                                    <span class="repo-name">ml-roadmap</span>
+                                    <span class="repo-stars">⭐ 5</span>
                                 </div>
-                                <p class="repo-desc"></p>
+                                <p class="repo-desc">完整的机器学习路线图——从头开始的 Python 实现、数学解释、测试代码和实际项目。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-06-30</span>
+                                    <span class="repo-lang">Jupyter Notebook</span>
+                                    <span class="repo-date">2026-07-05</span>
                                 </div>
                             </a>
                         </li>
@@ -1001,6 +1001,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/ale-160/ai-debug" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ai-debug</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">把AI对话从线性列表变成git仓库式的蛛网上下文结构管理工具</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-07-01</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/MautikPatel/Enterprise-AI-Knowledge-Assistant" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Enterprise-AI-Knowledge-Assistant</span>
@@ -1010,20 +1024,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-07-02</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/nirholas/image-analysis-mcp" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">image-analysis-mcp</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">适用于人工智能代理的图像分析和视觉理解工具——描述、检测、从任何图像中提取。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">JavaScript</span>
-                                    <span class="repo-date">2026-06-30</span>
                                 </div>
                             </a>
                         </li>
