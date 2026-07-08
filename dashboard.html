@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-07-07 22:56:51</span>
+        <span class="generated-time">更新于 2026-07-08 23:00:57</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -727,8 +727,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <blockquote>
                                 <p class="quote-text">The only way to do great work is to love what you do.</p>
                                 
-                                <p class="quote-translation">做好工作的唯一方法就是热爱你所做的事情。</p>
-                                
                             </blockquote>
                             <cite class="quote-author">— Steve Jobs</cite>
                         </div>
@@ -736,8 +734,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         <div class="quote-slide ">
                             <blockquote>
                                 <p class="quote-text">In the middle of difficulty lies opportunity.</p>
-                                
-                                <p class="quote-translation">困难之中蕴藏着机遇。</p>
                                 
                             </blockquote>
                             <cite class="quote-author">— Albert Einstein</cite>
@@ -747,7 +743,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <blockquote>
                                 <p class="quote-text">The best time to plant a tree was 20 years ago. The second best time is now.</p>
                                 
-                                <p class="quote-translation">种一棵树最好的时间是20年前。第二个最好的时间是现在。</p>
+                                <p class="quote-translation">种一棵树最好的时间是20年前。 The second best time is now.</p>
                                 
                             </blockquote>
                             <cite class="quote-author">— Chinese Proverb</cite>
@@ -848,54 +844,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">From Fixed to Free Cameras: Calibration-Free<sup class='ipa'>/calibrationfree*/</sup> View-Robust<sup class='ipa'>/viewrobust*/</sup> Vision-Language-Action<sup class='ipa'>/visionlanguageaction*/</sup> Model</h4>
+                            <h4 class="paper-title">ELSA3D: Elastic Semantic<sup class='ipa'>/sɪˈmæntɪk/</sup> Anchoring<sup class='ipa'>/ˈæŋkərɪŋ/</sup> for Unified 3D Understanding<sup class='ipa'>/ˌəndərˈstændɪŋ/</sup> and Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Wenhao Li, Xueying Jiang, Quanhao Qian</span>
-                                <span class="date">2026-07-06</span>
+                                <span class="authors">Tianjiao Yu, Xinzhuo Li, Yifan Shen</span>
+                                <span class="date">2026-07-07</span>
                                 <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Real-world robot deployment rarely maintains the training-stage camera setup, where cameras often experience repositioning or remounting depending on actual scenarios. Existing view-robust Vision-Language-Action (VLA) policies tolerate such camera variations only when the camera extrinsics are expli...</p>
+                                <p class="abstract-en">Unified 3D foundation models aspire to generate 3D assets and reason about them in language within a single backbone, but their text-3D interaction remains largely implicit. Existing methods concatenate text and 3D tokens into a flat sequence and rely on self-attention, collapsing coarse structural ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">现实世界的机器人部署很少维持训练阶段的摄像机设置，其中摄像机经常根据实际场景进行重新定位或重新安装。现有的视图鲁棒性视觉语言动作（VLA）策略只有在明确提供相机外部参数时才能容忍此类相机变化，这使得它们脆弱且难以使用，尤其是在视图鲁棒性至关重要时。我们认为，政策不应该被告知摄像头在哪里，而应该自己弄清楚。为此，我们引入了以相机为中心的 VLA (CamVLA)，这是一种新的 VLA 模型，它通过预测 (i) 在本地相机框架中表示的以相机为中心的末端执行器动作，以及 (ii) 将相机与机器人底座相关联的 6-DoF 手眼矩阵，将操作控制与相机几何结构解耦。确定性几何变换将两个预测组合成机器人基架动作。这使得我应该如何在与姿势无关的以相机为中心的动作生成中从我从相机视角几何基础中观察的位置移动。由此产生的策略是免校准、无深度和单视图，仅需要单个单目 RGB 图像作为部署时的视觉观察和任务指令。对模拟和现实世界机器人数据的评估表明，CamVLA 持续提高了不同看不见的视角的成功率。项目页面：https://alibaba-damo-academy.github.io/CamVLA/。</p>
+                                    <p class="abstract-zh">统一的 3D 基础模型渴望生成 3D 资产并在单个主干中用语言对其进行推理，但它们的文本-3D 交互在很大程度上仍然是隐式的。现有方法将文本和 3D 标记连接成一个平面序列，并依赖自注意力，将粗糙的结构线索和精细的几何细节折叠成一个无差别的表示。我们引入了 ELSA3D，这是一种统一的 3D 模型，它通过弹性语义锚定、结构化语言和几何推理沿着匹配的抽象尺度共同解决这个问题。 ELSA3D 使用尺度感知八叉树分词器来表示几何，并引入锚标记，即选择语义线索的稀疏跨模态单元，将它们路由到最相关的 3D 尺度，检索特定于尺度的几何证据，并将融合信号写回到统一表示中，从而保持交互稀疏而精确。轻量级的每块路由器使计算和推理都具有弹性，选择哪些文本标记在哪个几何尺度上实例化锚点，以便跨模式能力集中在最需要对齐的地方。 ELSA3D 在图像到 3D 生成、文本到 3D 生成和 3D 字幕方面实现了最先进的性能，超越了最强的统一基线，同时相对于同一模型的非弹性版本，将 FLOP 和推理延迟大致减半。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.05396v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.06565v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Weak-to-Strong<sup class='ipa'>/weaktostrong*/</sup> Generalization<sup class='ipa'>/ˌʤɛnərəlɪˈzeɪʃən/</sup> via Direct On-Policy<sup class='ipa'>/onpolicy*/</sup> Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup></h4>
+                            <h4 class="paper-title">Graph Convolutional<sup class='ipa'>/convolutional*/</sup> Attention:<sup class='ipa'>/əˈtɛnʃən/</sup> A Spectral<sup class='ipa'>/ˈspɛktrəl/</sup> Perspective<sup class='ipa'>/pərˈspɛktɪv/</sup> on Graph Denoising<sup class='ipa'>/denoising*/</sup> and Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Shiyuan Feng, Huan-ang Gao, Haohan Chi</span>
-                                <span class="date">2026-07-06</span>
+                                <span class="authors">Shervin Khalafi, Igor Krawczuk, Sergio Rozada</span>
+                                <span class="date">2026-07-07</span>
                                 <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Reinforcement learning with verifiable rewards (RLVR) is a powerful recipe for improving language-model reasoning, but it is expensive to repeat on every new strong model because the target model must generate many rollouts during training. As models scale, post-training itself becomes a bottleneck....</p>
+                                <p class="abstract-en">Denoising graphs is a fundamental problem in graph learning and the core operation of graph diffusion models. Attention-based architectures like graph transformers have recently shown promise in denoising graphs. However, our principled understanding of attention-based graph denoising remains limite...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">具有可验证奖励的强化学习 (RLVR) 是改进语言模型推理的有效方法，但在每个新的强模型上重复的成本很高，因为目标模型必须在训练期间生成许多 rollout。随着模型规模的扩大，训练后本身就成为了瓶颈。我们研究了一种从弱到强的替代方案：在较小的模型上运行强化学习，其中部署成本更低，然后重用强化学习运行学到的知识来改进更强的目标模型。直接提取 RL 后的弱教师是不够的，因为教师的最终策略将有用的 RL 收益与较小模型的局限性混合在一起。我们提出直接按策略蒸馏（Direct-OPD），它转移了教师的 RL 诱导的策略转变。 Direct-OPD 将 RL 后的教师与其自己的 RL 前的参考进行比较，并将它们的对数比视为对学生的密集隐式奖励。简单来说，检查点对告诉我们 RL 使弱模型更有可能采取哪些行动，而 Direct-OPD 将该信号应用于更强的学生自己的政策状态。这直接重用了弱模型的强化学习监督信号，无需训练显式奖励模型或在目标模型上运行稀疏奖励强化学习。根据经验，Direct-OPD 始终利用较弱的教师来改进更强的目标模型；值得注意的是，它在 8 个 A100 GPU 上仅用了 4 小时就将 Qwen3-1.7B 在 AIME 2024 上的性能从 48.3% 提升到了 62.4%。它的性能优于步长匹配的直接强化学习，并支持多个策略转变的顺序组合。我们的结果表明，强化学习的结果可以在模型尺度上作为隐式奖励信号重复使用，而不仅仅是作为最终的模型来模仿。</p>
+                                    <p class="abstract-zh">图去噪是图学习中的一个基本问题，也是图扩散模型的核心运算。像图转换器这样的基于注意力的架构最近在图去噪方面显示出了希望。然而，我们对基于注意力的图去噪的原则性理解仍然有限，因此尚不清楚标准注意力是否是该任务的正确机制。在这里，我们表明，在去噪目标下，线性注意力不是最优的，并且只能在训练分布上学习平均谱去噪滤波器。这造成了一个基本的限制，因为图表通常在整个分布范围内变化。为了克服这一限制，我们引入了频谱注意力，它直接利用输入图频谱，并证明其性能优于线性注意力，其幅度由分布的频谱多样性决定。然后，我们推导出图卷积注意力（GCA），这是该想法的实用且排列等变的实现，通过图过滤查询和键来实现谱去噪。对于随机块模型，GCA 可证明与理想化的频谱注意力机制相匹配。我们进一步表明，关注之后的 softmax 操作通过将噪声特征向量近似投影到干净的特征空间上来提供额外的去噪。根据经验，用 GCA 替换线性注意力能够持续改善合成数据集和真实数据集上的图去噪和扩散，其增益与光谱多样性密切相关。在 DiGress 中，GCA 无需计算昂贵的结构特征即可匹配标准图转换器性能，并且与最近提出的 PEARL 位置编码相结合，可以避免显式特征分解计算，从而在不降低质量的情况下实现更快的推理。代码可以在这里找到：github.com/shervinkhalafi/graph_conv_att</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.05394v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.06546v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Interpretable<sup class='ipa'>/interpretable*/</sup> Human-Label-Free<sup class='ipa'>/humanlabelfree*/</sup> Deep Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> for Real-Bogus<sup class='ipa'>/realbogus*/</sup> Classification<sup class='ipa'>/ˌklæsəfəˈkeɪʃən/</sup> with Uncertainty<sup class='ipa'>/ənˈsərtənti/</sup> Quantification<sup class='ipa'>/kˌwɑntɪfəˈkeɪʃən/</sup></h4>
+                            <h4 class="paper-title">Rethinking<sup class='ipa'>/riˈθɪŋkɪŋ/</sup> Indic AI from a Lens of Cultural<sup class='ipa'>/ˈkəlʧərəl/</sup> Heritage<sup class='ipa'>/ˈhɛrɪtɪʤ/</sup> Preservation<sup class='ipa'>/ˌprɛzərˈveɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Raphaël Bonnet-Guerrini, Bruno Sanchez, Dominique Fouchez</span>
-                                <span class="date">2026-07-06</span>
-                                <span class="categories">astro-ph.IM | astro-ph.GA</span>
+                                <span class="authors">Aparna Madva, Sharath Srivatsa, Srinath Srinivasa</span>
+                                <span class="date">2026-07-07</span>
+                                <span class="categories">cs.AI | cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Time-domain surveys generate many transient candidates, making Real-Bogus classification a critical step in automated discovery pipelines. Reliable labels are costly, while community labels can be noisy and survey-dependent. We aim to develop a Real-Bogus classification framework that can be trained...</p>
+                                <p class="abstract-en">As Artificial Intelligence (AI) makes inroads into different parts of the Indian subcontinent, there is significant interest in studying how AI impacts the linguistic and cultural foundations of this civilization. AI is seen as a &#39;&#39;double-edged sword&#39;&#39; where on the one hand, it can enable access and...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">时域调查会产生许多瞬态候选者，使真假分类成为自动发现管道中的关键步骤。可靠的标签成本高昂，而社区标签可能很嘈杂并且依赖于调查。我们的目标是开发一个真实-虚假分类框架，该框架可以在没有人工标记数据的情况下使用注入瞬态和虚假主导的调查数据进行训练，在强类别污染下保持稳健，并提供校准的不确定性量化。我们将模拟瞬态注入与受污染的调查类相结合，并使用不对称共同教学为具有不同标签噪声水平的类训练双网络模型。我们评估基准子集的性能，并使用潜在空间可视化工具分析学习到的表示。对于不确定性量化（UQ），我们比较了 MC dropout 和深度集成，并提出了一种低成本混合策略，利用双网络设置来改进校准。我们将评估扩展到光曲线领域，以评估光曲线类别的恢复。该方法在标记子集上实现了强大的Real-Bogus性能，并且在严重的类别污染下保持稳定。它以高保真度恢复瞬态光曲线类别，而单源识别则受到光曲线衍生标签的模糊性的限制。相对于更昂贵的集成基线，我们的混合 UQ 方法实现了有竞争力的校准。潜在空间分析表明，不确定性与决策边界一致，并揭示了虚假群体中的子类。我们的结果表明，注入驱动的弱监督训练可以实现可扩展且一致的真假分类，无需人工标记的训练数据，同时提供校准的不确定性。该方法适合通过重新运行基于注入的训练管道转移到即将进行的调查。</p>
+                                    <p class="abstract-zh">随着人工智能 (AI) 侵入印度次大陆的不同地区，人们对研究人工智能如何影响该文明的语言和文化基础产生了浓厚的兴趣。人工智能被视为一把“双刃剑”，一方面，它可以为大量人口提供访问和包容性，另一方面，它可以使世界观同质化并排除代表性不足的语言和世界观。在本文中，我们试图通过解决印度语言学的广泛特征及其与文化实践和世界观紧密联系的方式来描述这个问题。然后，我们对自然语言处理 (NLP) 技术在该领域的演变进行纵向调查，追溯印度语 NLP 的历史发展，涵盖关键里程碑、方法论转变和资源创建工作。此外，本文还研究了印度语言的结构和社会语言学特征，例如丰富的形态、复杂的文字和语法规则、双语和较大的方言变异，并解释了这些特征如何为构建人工智能基础模型带来独特的挑战。然后，我们讨论印度基础模型日益增长的作用，并分析这些模型如何解决这些长期存在的资源和代表性差距。最后，我们提出了一个名为“文化感知”的研究方向，它基于解释学推理重新想象人工智能。文化感知旨在解决开放性问题，例如确保低资源语言的公平表现以及产生具有文化意义的产出。通过汇集过去的工作、当前技术和新兴趋势，本文概述了可以指导印度语自然语言处理下一阶段的研究方向，并有助于开发更强大和更具包容性的印度语基础模型。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.05393v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.06544v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,11 +916,25 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/eli-labz/Cognitive-Core-Skills" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Cognitive-Core-Skills</span>
-                                    <span class="repo-stars">⭐ 274</span>
+                                    <span class="repo-stars">⭐ 273</span>
                                 </div>
                                 <p class="repo-desc">针对 LLM、SLM、AI 代理和世界模型的认知核心技能（感知、记忆、推理、规划、行动、验证、学习、治理）的通用、行业中立的分类法 - 包含模式、159 个技能卡、基准和 CI。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-05</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/ashutosh-rath02/atrophy" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">atrophy</span>
+                                    <span class="repo-stars">⭐ 52</span>
+                                </div>
+                                <p class="repo-desc">Measure what your brain is losing while AI does your work - unaided-skill baselines, decay curves, reliance drills</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-07-05</span>
                                 </div>
                             </a>
@@ -936,7 +946,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">AURA</span>
                                     <span class="repo-stars">⭐ 11</span>
                                 </div>
-                                <p class="repo-desc">自主理解和修复架构</p>
+                                <p class="repo-desc">Autonomous Understanding &amp; Remediation Architecture</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-07-03</span>
@@ -964,9 +974,37 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">nousheentabassum</span>
                                     <span class="repo-stars">⭐ 7</span>
                                 </div>
-                                <p class="repo-desc">计算机科学专业学生|全栈开发人员 |人工智能和机器学习爱好者 |使用 React、Node.js 和 Python 构建可扩展的应用程序。</p>
+                                <p class="repo-desc">计算机科学专业学生|全栈开发人员 | AI &amp; Machine Learning Enthusiast | Building scalable applications with React, Node.js &amp; Python.</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-07-02</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Neuromorphicism/fly-brain-snntorch" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">fly-brain-snntorch</span>
+                                    <span class="repo-stars">⭐ 7</span>
+                                </div>
+                                <p class="repo-desc">Sparse snnTorch implementation of Fruit Fly (Drosophila Melanogaster) Brain</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-07</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/AKMessi/kivarro" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">kivarro</span>
+                                    <span class="repo-stars">⭐ 6</span>
+                                </div>
+                                <p class="repo-desc">local inference, fully under your hand.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Rust</span>
                                     <span class="repo-date">2026-07-02</span>
                                 </div>
                             </a>
@@ -978,10 +1016,24 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">ml-roadmap</span>
                                     <span class="repo-stars">⭐ 5</span>
                                 </div>
-                                <p class="repo-desc">完整的机器学习路线图——从头开始的 Python 实现、数学解释、测试代码和实际项目。</p>
+                                <p class="repo-desc">The complete machine learning roadmap — from-scratch Python implementations, the math explained, tested code, and real projects.</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Jupyter Notebook</span>
                                     <span class="repo-date">2026-07-05</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Pitikha/TangkuAgentOS" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">TangkuAgentOS</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">An open-source AI Operating System for intelligent agents, workflows, memory, plugins, automation, and autonomous AI ecosystems.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-06</span>
                                 </div>
                             </a>
                         </li>
@@ -992,66 +1044,10 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">beekkon-bridge</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">一种用于安全 AI 代理通信的点对点协议，具有零知识身份验证、端到端加密和自动发现功能。开源。</p>
+                                <p class="repo-desc">A peer-to-peer protocol for secure AI agent communication with zero-knowledge authentication, E2E encryption, and automatic discovery.开源。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-07-03</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/ale-160/ai-debug" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ai-debug</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">把AI对话从线性列表变成git仓库式的蛛网上下文结构管理工具</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-07-01</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/MautikPatel/Enterprise-AI-Knowledge-Assistant" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Enterprise-AI-Knowledge-Assistant</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">企业人工智能知识助手使用 RAG、LangChain、Ollama 和 ChromaDB 进行智能文档搜索和问答。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-02</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/kesava09-gif/AgriGenie-AI" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">AgriGenie-AI</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">一个由 AI 驱动的智能农业平台，可帮助农民提供作物建议、天气见解以及使用 Streamlit 和 Google Gemini 的智能 AI 助手。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-01</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/Miyamoto-Renya/NCA_Simulator" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">NCA_Simulator</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">基于网络的可视化工具和神经元胞自动机 (NCA) 的分步检查器，具有实时模拟和细胞级状态分析功能。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">JavaScript</span>
-                                    <span class="repo-date">2026-07-06</span>
                                 </div>
                             </a>
                         </li>
