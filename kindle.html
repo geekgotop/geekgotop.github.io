@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-07-08 23:00:57</p>
+            <p class="hero-meta">构建时间：2026-07-09 23:07:41</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,17 +191,17 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">博观而约取，厚积而薄发。</p>
-                        <p class="quick-meta">— 苏轼</p>
+                        <p class="quick-main">The only way to do great work is to love what you do.</p>
+                        <p class="quick-meta">— Steve Jobs</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 deprecated，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 algorithm，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 eli-labz/Cognitive-Core-Skills，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《ELSA3D: Elastic Semantic Anchoring for Unified 3D Understanding and Generation》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">deprecated <span>/ˈdeprəkeɪtɪd/</span></p>
-                    <p class="study-meaning">adj. 已弃用的；不推荐的</p>
+                    <p class="study-word">algorithm <span>/ˈælɡəˌrɪðəm/</span></p>
+                    <p class="study-meaning">n. 算法；运算法则</p>
                     
-                    <p class="study-sentence">This method is deprecated and will be removed in the next version.</p>
-                    <p class="study-sentence-zh">此方法已弃用，将在下一版本中移除。</p>
+                    <p class="study-sentence">The sorting algorithm runs in O(n log n) time complexity.</p>
+                    <p class="study-sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">ELSA3D: Elastic Semantic Anchoring for Unified 3D Understanding and Generation</p>
-                    <p class="deep-abstract">统一的 3D 基础模型渴望生成 3D 资产并在单个主干中用语言对其进行推理，但它们的文本-3D 交互在很大程度上仍然是隐式的。现有方法将文本和 3D 标记连接成一个平面序列，并依赖自注意力，将粗糙的结构线索和精细的几何细节折叠成一个无差别的表示。我们引入了 ELSA3D，这是一种统一的 3D 模型，它通过弹性语义锚定、结构化语言和几何推理沿着匹配的抽象尺度共同解决这个问题。 ELSA3D 使用尺度感知八叉树分词器来表示几何，并引入锚标记，即选择语义线索的稀疏跨模态单元，将它们路由到最相关的 3D 尺度，检索特定于尺度的几何证据，并将融合信号写回到统一表示中，从而保持交互稀疏而精确。轻量级的每块路由器使计算和推理都具有弹性，选择哪些文本标记在哪个几何尺度上实例化锚点，以便跨模式能力集中在最需要对齐的地方。 ELSA3D 在图像到 3D 生成、文本到 3D 生成和 3D 字幕方面实现了最先进的性能，超越了最强的统一基线，同时相对于同一模型的非弹性版本，将 FLOP 和推理延迟大致减半。</p>
+                    <p class="deep-title">Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning</p>
+                    <p class="deep-abstract">结构-性质关系是生物学、化学和材料科学的基础，其中功能、反应性和物理响应产生于空间、化学和周期性组织。从机械上解释这些关系需要通过科学原理和物理约束来解释结构证据，从立体化学和键合到对称性、能量学和周期顺序。然而，将人工智能应用于这一过程提出了表示和推理的共同挑战：模型必须保留领域本机结构信息，同时显示特定证据如何支持这些约束下的预测。在这里，我们介绍 SciReasoner，这是一种多模式科学基础模型，用于蛋白质、小分子和无机晶体的本机结构推理。 SciReasoner 将坐标、拓扑和周期性连接离散化为统一的结构感知词汇，在推理过程中将结构标记视为可寻址的证据单元。在同源控制的基因本体预测中，SciReasoner 改进了低同源性和孤儿样蛋白质的细胞成分注释，将 $F_{\max}$ 从 0.42 增加到 0.55。在化学中，它将单步逆合成精度从 0.63 提高到 0.72，同时生成片段级断开和前体验证痕迹。在材料科学中，它的表示分离元素相和化合物相并解决高带隙和低带隙状态。在 86 个基准测试中，SciReasoner 在 67 项任务上实现了最先进的性能。在 98% 的情况下，双盲专家评估将其推理轨迹评为首选或至少与前沿大型语言模型相当。通过使结构成为科学约束下推理的可检查基础，SciReasoner 将准确的预测与可解释的科学推理联系起来。</p>
                     
-                    <p class="deep-takeaway">要点：统一的 3D 基础模型渴望生成 3D 资产并在单个主干中用语言对其进行推理，但它们的文本-3D 交互在很大程度上仍然是隐式的。现有方法将文本和 3D 标记连接成一个平面序列，并依赖自注意力，将粗糙的结构线索和精细的几何细节折叠成一个无差别的表示。我们引入了 ELSA3D，这是一种统一的 3D 模型，它通过弹性语义锚定、...</p>
+                    <p class="deep-takeaway">要点：结构-性质关系是生物学、化学和材料科学的基础，其中功能、反应性和物理响应产生于空间、化学和周期性组织。从机械上解释这些关系需要通过科学原理和物理约束来解释结构证据，从立体化学和键合到对称性、能量学和周期顺序。然而，将人工智能应用于这一过程提出了表示和推理的共同挑战：模型必须保留领域本机结构信息，同时显示特定证据如何支持...</p>
                     
-                    <p class="deep-meta">预计阅读 1 分钟</p>
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -289,23 +289,23 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>ashutosh-rath02/atrophy</strong> (★ 52)
-                        <p>Measure what your brain is losing while AI does your work - unaided-skill baselines, decay curves, reliance drills</p>
+                        <strong>ashutosh-rath02/atrophy</strong> (★ 73)
+                        <p>测量人工智能为您工作时您的大脑正在丢失的内容 - 独立技能基线、衰减曲线、依赖练习</p>
                     </li>
                     
                     <li>
-                        <strong>syswe/AURA</strong> (★ 11)
-                        <p>Autonomous Understanding &amp; Remediation Architecture</p>
+                        <strong>syswe/AURA</strong> (★ 12)
+                        <p>自主理解和修复架构</p>
                     </li>
                     
                     <li>
-                        <strong>nssriraam/rika</strong> (★ 7)
-                        <p>存在于您的机器上的人工存在。永久地。原生语音，看到您的屏幕，记住一切，控制您的操作系统。最小的云。没有限制。</p>
+                        <strong>lucidrains/x-jepa</strong> (★ 9)
+                        <p>对 Yann LeCun 提倡的一些方法的探索，以及总体上更全面的架构（JEPA）</p>
                     </li>
                     
                     <li>
-                        <strong>nousheentabassum/nousheentabassum</strong> (★ 7)
-                        <p>计算机科学专业学生|全栈开发人员 | AI &amp; Machine Learning Enthusiast | Building scalable applications with React, Node.js &amp; Python.</p>
+                        <strong>Neuromorphicism/fly-brain-snntorch</strong> (★ 9)
+                        <p>果蝇大脑的稀疏 snnTorch 实现</p>
                     </li>
                     
                 </ul>
