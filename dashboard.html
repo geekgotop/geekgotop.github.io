@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-07-12 22:42:08</span>
+        <span class="generated-time">更新于 2026-07-13 22:52:18</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">UniClawBench:<sup class='ipa'>/uniclawbench*/</sup> A Universal<sup class='ipa'>/ˌjunəˈvərsəl/</sup> Benchmark<sup class='ipa'>/ˈbɛnʧˌmɑrk/</sup> for Proactive<sup class='ipa'>/ˌproʊˈæktɪv/</sup> Agents on Real-World<sup class='ipa'>/realworld*/</sup> Tasks</h4>
+                            <h4 class="paper-title">PHINN-EEG:<sup class='ipa'>/phinneeg*/</sup> Topological<sup class='ipa'>/təpəˈlɑʤɪkəl/</sup> Time-Series<sup class='ipa'>/timeseries*/</sup> Analysis<sup class='ipa'>/æˈnælɪsɪs/</sup> of Dream-State<sup class='ipa'>/dreamstate*/</sup> EEG -- Dynamic Betti Curves for Dream Content Classification<sup class='ipa'>/ˌklæsəfəˈkeɪʃən/</sup> and Topology-Conditioned<sup class='ipa'>/topologyconditioned*/</sup> Neural Signal Synthesis<sup class='ipa'>/ˈsɪnθəsəs/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Zhekai Chen, Chengqi Duan, Kaiyue Sun</span>
-                                <span class="date">2026-07-09</span>
-                                <span class="categories">cs.CL</span>
+                                <span class="authors">Ren Takahashi, Emre Yusuf, Jayabrata Bhaduri</span>
+                                <span class="date">2026-07-10</span>
+                                <span class="categories">q-bio.NC | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">The rapid development of large language models and multimodal large language models has accelerated the emergence of proactive agents capable of operating everyday tools and assisting users in real-world environments. However, existing benchmarks struggle to evaluate such agents effectively, as they...</p>
+                                <p class="abstract-en">Current electroencephalography (EEG)-based dream detection relies on power spectral density (PSD) and statistical moment features, achieving a state-of-the-art area under the receiver operating characteristic curve (AUC) of approximately 0.70 on the DREAM database (Wong et al., 2025, Nature Communic...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">大语言模型和多模态大语言模型的快速发展加速了能够操作日常工具并在现实环境中帮助用户的主动代理的出现。然而，现有的基准很难有效地评估此类代理，因为它们通常依赖于沙盒环境和单轮评估范例。此外，他们基于场景的任务分类法在同一任务类别中混合了多个模型功能，使得很难确定代理失败的根本原因。为了解决这些限制，我们推出了 UniClawBench，这是第一个能力驱动的基准测试，旨在评估动态的现实环境中的主动代理。 UniClawBench 围绕五种基本模型功能构建：技能使用、探索、长上下文推理、多模式理解和跨平台协调。基于这些能力，我们设计了 400 个双语现实世界任务。与之前依赖静态、预先记录的答案的基准测试不同，我们的基准测试使用细粒度、逐步完成检查点来评估实时 Docker 容器中的代理。此外，我们设计了一种闭环评估策略，包括执行代理、隐藏监督代理和用户代理，以模拟真实的多轮人类反馈，而不会泄露评分标准。为了将基本模型功能与框架级设计选择分开，我们评估了多个代理框架下的最先进模型。通过对模型和框架的全面比较，我们展示了基本模型功能和代理框架设计如何共同塑造现实环境中的性能。为了促进未来的研究，我们在 https://github.com/HKU-MMLab/UniClawBench 上公开提供我们的基准测试和代码。</p>
+                                    <p class="abstract-zh">当前基于脑电图 (EEG) 的梦境检测依赖于功率谱密度 (PSD) 和统计矩特征，在 DREAM 数据库上实现了约 0.70 的接收器操作特性曲线 (AUC) 下的最先进面积（Wong 等人，2025，自然通讯）。我们介绍 PHINN-EEG（脑电图持久同源启发神经网络），这是第一个用于梦境心理分析的拓扑时间序列框架。在多通道预觉醒脑电图时期上使用滑动窗口 Takens 延迟嵌入和 Vietoris-Rips 过滤，我们提取了动态 Betti 曲线，该曲线表征了神经活动的几何结构，而不仅仅是其能量。这些拓扑不变量与拓扑条件流匹配相结合，经分析预计将优于现有的 PSD 和 catch22 基准，目标是 DREAM 数据库的 1,462 个觉醒开放访问子集上的 AUC = 0.82-0.90（来自 20 个独立实验室的 263 名参与者的 3,191 次觉醒的完整注册表）。我们进一步引入了用于梦态脑电图合成的拓扑条件整流流模型，并使用具有可比特征维度的频谱条件流模型作为附加消融基线，以专门隔离拓扑条件的值，并提出一组将拓扑与现象学梦报告类别联系起来的候选贝蒂转换原型，作为探索性假设空间有待实证验证。如果得到验证，这项工作代表了神经罕见事件检测中从光谱能量到相空间几何的范式转变，对可穿戴 BCI 梦境监测具有潜在的未来影响。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.08768v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.09662v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">OpenCoF: Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> to Reason Through Video Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h4>
+                            <h4 class="paper-title">Scalable<sup class='ipa'>/ˈskeɪləbəl/</sup> Visual Pretraining<sup class='ipa'>/pretraining*/</sup> for Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Intelligence<sup class='ipa'>/ˌɪnˈtɛləʤəns/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Xinyan Chen, Ziyu Guo, Renrui Zhang</span>
-                                <span class="date">2026-07-09</span>
+                                <span class="authors">Yiming Zhang, Zhonghan Zhao, Wenwei Zhang</span>
+                                <span class="date">2026-07-10</span>
                                 <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Reasoning has become a core capability for large models, especially when reliable decisions require understanding logical consequences. Recent video generation models offer a reasoning path distinct from previous Chain-of-Thought (CoT): reasoning can unfold through temporally connected frames, known...</p>
+                                <p class="abstract-en">The rapid progress of large foundation models has been driven predominantly by pretraining on large-scale text corpora. However, many forms of knowledge are conveyed through visual representations, where figures, typeset equations, and page layouts carry rich information that cannot be faithfully or...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">推理已成为大型模型的核心功能，尤其是当可靠的决策需要理解逻辑结果时。最近的视频生成模型提供了与之前的思想链 (CoT) 不同的推理路径：推理可以通过时间连接的帧展开，称为帧链 (CoF) 推理。然而，现有的视频生成器主要是在通用视频语料库上进行训练，仍然缺乏多样化的监督和专门的 CoF 推理设计。为了解决这一差距，我们引入了 OpenCoF，一个由 OpenCoF-17K 数据集（涵盖 11 个任务族的推理视频数据集）和 Wan-CoF 组成的框架，Wan-CoF 是一个微调视频模型，用于研究不同的时间监督是否可以改善 CoF 行为。在四个视频推理基准测试中，Wan-CoF 比 Wan2.2-I2V-A14B 基准取得了相当大的进步。在此基础上，我们凭经验探索更先进的 CoF 功能设计，即为模型配备视觉和文本推理标记。该机制分别捕获低级视觉线索和高级语义先验，以进行空间和时间推理。通过性能比较和注意力分析，我们检查这些标记如何在模型深度、去噪步骤、空间和时间方面做出贡献。我们的结果表明，更强的视频推理需要广泛的时间监督和组织中间推理状态的明确机制。我们开源数据集、模型和代码，以促进未来面向推理的视频生成的研究。</p>
+                                    <p class="abstract-zh">大型基础模型的快速进展主要是由大规模文本语料库的预训练推动的。然而，许多形式的知识是通过视觉表示来传达的，其中图形、排版方程和页面布局携带着丰富的信息，这些信息无法仅通过文本忠实或完整地捕获。然而，当前的预训练方法通过将文档和网页等视觉丰富的资源转换为纯文本来学习语言智能，从而抛弃了这些视觉线索。本文挑战了语言模型必须在纯文本表示上进行训练的默认假设，并表明视觉预训练是基础模型智能的可扩展学习器。为此，我们对无监督视觉预训练范例进行了系统研究，这些范例直接利用视觉文档而无需提取文本。在多个主干和基准中，同一底层语料库上的视觉预训练始终优于纯文本预训练，为可扩展的语言智能提供了有效的途径。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.08763v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.09657v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Ideas Have Genomes: Benchmarking<sup class='ipa'>/benchmarking*/</sup> Scientific<sup class='ipa'>/ˌsaɪənˈtɪfɪk/</sup> Lineage Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> and Lineage-Grounded<sup class='ipa'>/lineagegrounded*/</sup> Idea Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h4>
+                            <h4 class="paper-title">Evolution<sup class='ipa'>/ˌɛvəˈluʃən/</sup> of Accuracy<sup class='ipa'>/ˈækjərəsi/</sup> and Visual-Cognitive<sup class='ipa'>/visualcognitive*/</sup> Errors in a Decade of Vision-Language<sup class='ipa'>/visionlanguage*/</sup> AI Models</h4>
                             <div class="paper-meta">
-                                <span class="authors">Yifan Zhou, Qihao Yang, Yan Li</span>
-                                <span class="date">2026-07-09</span>
-                                <span class="categories">cs.AI</span>
+                                <span class="authors">Shravan Murlidaran, Miguel P. Eckstein</span>
+                                <span class="date">2026-07-10</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Scientific ideas rarely start from a blank page. They inherit mechanisms, repair known limitations, and recombine pieces of earlier work, much like biological genomes. Current benchmarks still say little about whether AI systems can follow this inheritance structure. We present IdeaGene-Bench (IG-Be...</p>
+                                <p class="abstract-en">Vision language models (VLMs) have made remarkable progress in visual reasoning during the last decade. Most evaluations have used simple scenes (MS-COCO) that do not showcase complex human interactions or behaviors, only a handful of non-curated human descriptions as a benchmark, and have not focus...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">科学思想很少是从白纸开始的。它们继承机制，修复已知的局限性，并重组早期工作的片段，就像生物基因组一样。目前的基准测试仍然很少谈到人工智能系统是否可以遵循这种继承结构。我们推出 IdeaGene-Bench (IG-Bench)，这是科学谱系推理和基于谱系的想法生成的基准。 IG-Bench 围绕 IdeaGene 框架进行组织：每篇论文或提案都表示为一组最小的、有类型的、有证据的 Idea Genome 对象，GenomeDiff 对齐这些对象以记录六种操作进化动态下的继承、突变、丢失、外部导入和新颖插入。该基准包含 1,961 个黄金谱系痕迹、1,085 个精心策划的 Idea Genome 对象以及 10 个科学领域的 920 个成对 GenomeDiff 记录。它支持两种评估。 IG-Exam（42 种任务类型，1,029 个实例）测试思想基因组抽象、继承追踪、进化推理和谱系验证的封闭式谱系推理。 IG-Arena 使用谱系条件种群进化分数（PES）评估生成，询问是否可以将提案作为给定谱系种群的连贯后代插入：它应该继承正确的想法基因组对象，与附近的工作有有意义的变化，并为未来的研究提供选择价值。对 14 名法学硕士科学家进行的实验暴露了成分瓶颈。最强的系统在谱系推理上的准确率仅为 27.3%，结构化谱系上下文会重新洗牌系统排名，而不是统一帮助每个参与者。</p>
+                                    <p class="abstract-zh">过去十年中，视觉语言模型（VLM）在视觉推理方面取得了显着的进步。大多数评估都使用简单的场景（MS-COCO），不展示复杂的人类交互或行为，仅使用少数非策划的人类描述作为基准，并且没有专注于理解模型的错误类型。在这里，我们介绍复杂社会行为 (CSB) 数据集，其中包含 100 张描述复杂社交互动/行为的图像。我们分析了 VLM（四个前多模态大语言模型、MLLM 和五个 MLLM）十年（2017-2025）场景描述的进展。我们评估了模型和 20 种人类描述相对于 CSB 数据集和 MS-COCO 样本的黄金标准的准确性。我们分析了五种视觉认知错误类型：物体检测、识别、幻觉、场景理解和空间依赖。 CSB 数据集在场景描述准确性方面比 MS-COCO 有更显着的改进，预 MLLM 的准确度比排名垫底的人类描述低得多，而 MLLM 获得的准确度与排名靠前的人类描述相似。我们表明，MLLM 消除了更简单的 MS-COCO 场景和描述复杂行为的场景 (CSB) 之间场景描述准确性的差距。 MLLM 几乎消除了我们测试的数据集中的所有错误类型，除了偶尔依赖与人类不同的图像区域进行场景描述（空间依赖性错误）。我们还表明，检测、识别和幻觉错误对场景描述准确性的影响最大。总之，我们的研究结果对视觉语言模型在过去十年中的进步提供了更全面的评估。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.08758v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.09654v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -917,10 +917,24 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
+                            <a href="https://github.com/yan5xu/oh-my-ai-company" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">oh-my-ai-company</span>
+                                    <span class="repo-stars">⭐ 34</span>
+                                </div>
+                                <p class="repo-desc">人工智能公司、产品、创始人、投资者、交通信号和研究笔记的活生生的地图集。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">JavaScript</span>
+                                    <span class="repo-date">2026-07-09</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/lucidrains/x-jepa" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">x-jepa</span>
-                                    <span class="repo-stars">⭐ 17</span>
+                                    <span class="repo-stars">⭐ 28</span>
                                 </div>
                                 <p class="repo-desc">对 Yann LeCun 提倡的一些方法的探索，以及总体上更全面的架构（JEPA）</p>
                                 <div class="repo-meta">
@@ -934,7 +948,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/Quazi-07/Research-Grant-Finder-Agent" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Research-Grant-Finder-Agent</span>
-                                    <span class="repo-stars">⭐ 14</span>
+                                    <span class="repo-stars">⭐ 18</span>
                                 </div>
                                 <p class="repo-desc">一种代理人工智能工具，用于根据研究兴趣和提案相关性搜索、筛选和排名 NIH 资助机会。</p>
                                 <div class="repo-meta">
@@ -954,6 +968,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-07-07</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/ozankasikci/global-agent-memory" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">global-agent-memory</span>
+                                    <span class="repo-stars">⭐ 10</span>
+                                </div>
+                                <p class="repo-desc">用于 Claude Code、Codex 和其他 AI 代理的本地优先、项目感知内存 MCP 服务器，配有 Obsidian 和所有者仪表板。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-11</span>
                                 </div>
                             </a>
                         </li>
@@ -987,14 +1015,14 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/ozankasikci/global-agent-memory" target="_blank" class="repo-link">
+                            <a href="https://github.com/barretlee/agent-pulse" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">global-agent-memory</span>
-                                    <span class="repo-stars">⭐ 6</span>
+                                    <span class="repo-name">agent-pulse</span>
+                                    <span class="repo-stars">⭐ 7</span>
                                 </div>
-                                <p class="repo-desc">用于 Claude Code、Codex 和其他 AI 代理的本地优先、项目感知内存 MCP 服务器，配有 Obsidian 和所有者仪表板。</p>
+                                <p class="repo-desc">有证据支持的人工智能行业情报——趋势、来源更新、每日数据刷新和每周决策简报。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-07-11</span>
                                 </div>
                             </a>
@@ -1004,7 +1032,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/di37/EvalSurfer" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">EvalSurfer</span>
-                                    <span class="repo-stars">⭐ 5</span>
+                                    <span class="repo-stars">⭐ 7</span>
                                 </div>
                                 <p class="repo-desc">适用于 AI 应用程序的技能优先、代理原生评估协议</p>
                                 <div class="repo-meta">
@@ -1024,34 +1052,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Go</span>
                                     <span class="repo-date">2026-07-08</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/Istiaq-Edu/Bangla-Handwriting-Collector" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Bangla-Handwriting-Collector</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc"></p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-07-12</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/Mahdi-Razaghi/tajan" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">tajan</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">🤖 Tajan – 由 BiLSTM 深度学习提供支持的智能双语（波斯语/英语）意图识别聊天机器人。功能：离线波斯语/英语词形还原、智能数据增强 (1.8x)、GUI 界面和 419 个意图类，准确度约为 66%。完全可定制、开源，无需互联网即可运行。使用 TensorFlow、Hazm 和 NLTK 构建。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Jupyter Notebook</span>
-                                    <span class="repo-date">2026-07-10</span>
                                 </div>
                             </a>
                         </li>
