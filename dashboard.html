@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-07-15 22:55:20</span>
+        <span class="generated-time">更新于 2026-07-16 22:53:33</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware<sup class='ipa'>/complexityaware*/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> and Execution<sup class='ipa'>/ˌɛksəˈkjuʃən/</sup></h4>
+                            <h4 class="paper-title">Hindcast:<sup class='ipa'>/hindcast*/</sup> Replaying<sup class='ipa'>/riˈpleɪɪŋ/</sup> Prediction<sup class='ipa'>/priˈdɪkʃən/</sup> Markets to Evaluate<sup class='ipa'>/ɪˈvæljuˌeɪt/</sup> LLM Forecasters<sup class='ipa'>/ˈfɔrˌkæstərz/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Junjie Yin, Xinyu Feng</span>
-                                <span class="date">2026-07-14</span>
-                                <span class="categories">cs.AI | cs.CL</span>
+                                <span class="authors">Xiao Ye, Jacob Dineen, Evan Zhu</span>
+                                <span class="date">2026-07-15</span>
+                                <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Large language model (LLM) agents increasingly automate multi-step engineering and informatics workflows, yet they rarely ask how much effort a task actually requires. They often follow a maximum-context-first strategy--re-reading files and dependencies they have already seen--turning a one-line edi...</p>
+                                <p class="abstract-en">Forecasters are evaluated by backtesting, which replays resolved questions and grades the probability the system would have assigned before the outcome was known. For LLMs, two channels leak the answer into this test. A model that retrieves can surface reports written after the event, turning foreca...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">大型语言模型 (LLM) 代理越来越多地实现多步骤工程和信息学工作流程的自动化，但他们很少询问任务实际需要多少工作量。他们通常遵循最大上下文优先策略 - 重新读取他们已经看到的文件和依赖项 - 将一行编辑变成小型代码库审核。我们认为缺失的能力是任务感知的执行范围估计：判断任务的难度、它真正需要的信息以及提交预算之前的最短可靠路径。我们形式化了最小充足执行和代理认知冗余比（ACRR），并提出了E3（估计、执行、扩展）：代理估计初始操作点，执行最小可行路径，并仅在验证失败时扩展范围。在 MSE-Bench（能力控制模拟器中进行 121 次编辑的确定性基准）上，E3 与最强基线的 100% 成功率相匹配，同时降低了 85% 的成本、91% 的令牌和 92% 的检查文件，并进一步击败了强大的自适应检索基线 16%；这些收益在保留的指令措辞和基本上所有成本权重中都存在。配套的真实模型工具（LLM-Case）证实了实时 gpt-4o 代理编辑真实开源库的效果，每个候选补丁都是通过针对经过测量的预言机实际运行项目的真实 pytest 套件来评分的：过度阅读较为温和但真实，并且 E3 是在类似任务成功方面最精简、最快的策略 - 它是提供者速率限制的一个不足，而不是错误的编辑。我们将其视为执行冗余的受控探测，而不是对任何已部署代理的测量，并将任务感知执行定位为迈向基于工程的人工智能（EGAI）的一步——代理的努力植根于任务的工程现实。我们发布了框架和基准。</p>
+                                    <p class="abstract-zh">预测员通过回溯测试进行评估，回溯测试会重播已解决的问题，并对系统在结果已知之前分配的概率进行评分。对于法学硕士，有两个渠道将答案泄漏到此测试中。检索模型可以显示事件发生后编写的报告，将预测转变为查找，并且每个新模型都根据更接近事件的数据进行训练，因此去年模型的未来问题位于今年的训练数据中。不管怎样，考试成绩在声称成绩具有预见性的同时还能回忆。我们引入了 Hindcast，它通过对模型进行评级来关闭这两种泄漏，就好像它处于选定的过去日期 $t_0$（在任一通道中存在结果之前）一样。 Hindcast 根据公共 Reddit 的冻结快照重播已解决的 Polymarket 预测市场，让模型只读取 $t_0$ 之前编写的帖子，并根据发生的情况和 $t_0$ 的市场自身价格对每个预测进行评分，这本身就是根据相同的过去信息做出的人类预测。由于截止值是按市场设置的，并且快照永远不会改变，因此随着模型的改进，评估会在新市场上重新运行，而不会过时。一旦泄漏被关闭，检索仍然对大多数模型有帮助，但仅限于 Reddit 事先讨论过该事件的情况。如果档案中只包含猜测，检索就会受到伤害。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.13034v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.14051v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">TerraZero:<sup class='ipa'>/terrazero*/</sup> Procedural<sup class='ipa'>/prəˈsiʤərəl/</sup> Driving Simulation<sup class='ipa'>/ˌsɪmjəˈleɪʃən/</sup> for Zero-Demonstration<sup class='ipa'>/zerodemonstration*/</sup> Self-Play<sup class='ipa'>/selfplay*/</sup> at Scale</h4>
+                            <h4 class="paper-title">Deep Interaction:<sup class='ipa'>/ˌɪnərˈækʃən/</sup> An Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Human-AI Interaction<sup class='ipa'>/ˌɪnərˈækʃən/</sup> Method for Large Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> Models</h4>
                             <div class="paper-meta">
-                                <span class="authors">Zhouchonghao Wu, Akshay Rangesh, Weixin Li</span>
-                                <span class="date">2026-07-14</span>
-                                <span class="categories">cs.LG | cs.AI</span>
+                                <span class="authors">Hefeng Zhou, Jinxuan Zhang, Jiong Lou</span>
+                                <span class="date">2026-07-15</span>
+                                <span class="categories">cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Training robust autonomous driving agents requires a simulator that is fast enough for reinforcement learning at scale, realistic enough to ground behavior in real-world map structure, and diverse enough to cover the safety-critical long tail that logged data rarely contains. We present TerraZero, a...</p>
+                                <p class="abstract-en">The emergence of Chain-of-Thought (CoT) reasoning has significantly enhanced the ability of large language models (LLMs) to tackle complex, multi-step tasks. However, when errors occur, current interaction approaches typically involve re-generating another response that may make mistakes again, or u...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">训练强大的自动驾驶代理需要一个模拟器，该模拟器必须足够快以进行大规模强化学习，足够真实以在现实世界地图结构中提供基础行为，并且足够多样化以涵盖记录数据很少包含的安全关键长尾。我们推出 TerraZero，一个程序化驾驶模拟器和自玩训练堆栈。可配置的 C 引擎通过零复制路径在 CPU 上运行模拟并在 GPU 上运行策略推理，在单个服务器级 GPU 上维持每秒 130 万个代理步骤，远快于现有的对象级模拟器，同时保持保真度较轻的单代理系统省略：异构代理、多个动态模型和完整的流量规则实施。 TerraZero 仅将记录的数据视为现实世界地图几何的来源，用基于规则的随机道路使用者和信号控制器填充每个地图，并随机化每个情节的代理动态、奖励和大小，因此地图会产生一组无限的场景。每个报告的策略都是通过单独的强化学习在跨 GPU 的计算高效的自我对战配方上从头开始训练，零人工演示，并且推理时没有后备规划器。政策将零样本推广到各个城市和数据集，包括在没有明确监督的情况下出现的紧急左侧交通驾驶。作为一项自我策略，TerraZero 是第一个超越 InterPlan 长尾基准的完全学习策略，领先于更大的学习规划者；在常规驾驶 val14 中，它被列为最佳方法之一，也是最安全的，发布了最佳碰撞和碰撞时间分数。在 Waymo Open Sim Agents 现实主义中，相同的配方优于其他免演示方法，并且与最强的参考锚定自我对弈方法具有竞争力。一个堆栈具有两种角色：驱动汽车和卡车动态的策略，以及共同控制车辆、行人和骑自行车者的模拟代理。</p>
+                                    <p class="abstract-zh">思想链 (CoT) 推理的出现显着增强了大型语言模型 (LLM) 处理复杂、多步骤任务的能力。然而，当错误发生时，当前的交互方法通常涉及重新生成另一个可能再次出错的响应，或者用户在可能得到响应的后续回合中费力地标记错误步骤&lt;你是对的，我在这里犯了一个错误&gt;，然后重复出现类似的错误。为了解决这个问题，我们提出了一种有效的人工干预机制，用于精确纠正法学硕士中的推理错误，称为深度交互。我们的方法可以直接编辑原始响应，允许纠正错误部分，同时保留准确的推理步骤。我们将编辑后的 ​​CoT 细化为提炼的提示，然后引导法学硕士沿着正确的推理路径前进。实验结果表明，与基线方法相比，我们的方法在 STEM 任务推理上的纠正成功率提高了 25% 以上，并将令牌使用量减少了约 40%。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.13028v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.14049v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">PalmClaw:<sup class='ipa'>/palmclaw*/</sup> A Native On-Device<sup class='ipa'>/ondevice*/</sup> Agent Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup> for Mobile Phones</h4>
+                            <h4 class="paper-title">Earthquaker-AI:<sup class='ipa'>/earthquakerai*/</sup> A Retrieval-Augmented<sup class='ipa'>/retrievalaugmented*/</sup> Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup> with Rubric-Based<sup class='ipa'>/rubricbased*/</sup> Assessment<sup class='ipa'>/əˈsɛsmənt/</sup> for Primary School Earthquake<sup class='ipa'>/ˈərθkˌweɪk/</sup> Education<sup class='ipa'>/ˌɛʤəˈkeɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Hongru Cai, Yongqi Li, Ran Wei</span>
-                                <span class="date">2026-07-14</span>
-                                <span class="categories">cs.CL | cs.AI</span>
+                                <span class="authors">Xanthi Kokkinou, Chaido Mizeli, Nafsika Koulaxidou</span>
+                                <span class="date">2026-07-15</span>
+                                <span class="categories">cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Large Language Model (LLM) agents have moved beyond generating responses to executing multi-step tasks by calling tools, observing the results, and iteratively deciding the next action. Most agent systems run on desktops or servers, which support tool use and task automation. Mobile devices are also...</p>
+                                <p class="abstract-en">This paper presents Earthquaker-AI, a hybrid educational framework building upon a previously implemented educational robotics project by integrating a conversational AI assistant based on Retrieval-Augmented Generation. It aims to enhance earthquake preparedness and conscious action among primary-s...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">大型语言模型 (LLM) 代理已经不再只是生成响应，而是通过调用工具、观察结果并迭代地决定下一步操作来执行多步骤任务。大多数代理系统运行在桌面或服务器上，支持工具使用和任务自动化。移动设备也是重要的代理环境，因为它们可以广泛访问并且包含用户的数据、传感器和日常使用的应用程序。现有的移动代理主要通过点击、滑动和打字等图形用户界面（GUI）操作来操作智能手机，这些操作通常形成长的、依赖于界面的序列，无法直接访问设备功能，并且使得执行边界难以定义。我们提出了 \textbf{PalmClaw}，一个开源代理框架，它在移动电话上本地运行，并直接在设备上管理会话、内存、技能、工具和代理循环。 PalmClaw 将设备功能公开为具有显式参数、结构化结果和明确定义的执行边界的设备工具。这种设计使代理能够直接使用移动​​功能，同时保持每个操作的明确和受控。实验表明，与最强基线相比，任务成功率相对提​​高了 11.5%，完成时间减少了 94.9%，设置负担较低，并且跟踪说明了如何应用执行边界。代码可在 https://github.com/ModalityDance/PalmClaw 获取。</p>
+                                    <p class="abstract-zh">本文介绍了 Earthquaker-AI，这是一种混合教育框架，它建立在之前实施的教育机器人项目的基础上，通过集成基于检索增强生成的对话式 AI 助手。其目的是加强小学生的防震准备和自觉行动。该系统将屡获殊荣的 STEM 项目 Earthquaker 从乐高 WeDo2 的机械模拟扩展到认知和元认知处理。机器人组件使用乐高 WeDo2 自动化来模拟地震响应，让学生与传感器和执行器进行交互，作为保护动作的有形表现。该助理作为一种引导学习机制，使学生的反应与安全准则保持一致，同时提供基于规则的口头反馈，支持紧急情况下的自我调节学习和冷静。 Earthquaker-AI 遵循与认知发展相一致的渐进学习轨迹。在早期年级，重点是通过多项选择题对安全行为进行基本认识，并通过二维标题进行评估。在中年级，学生通过多项选择题确定正确的行动顺序，并通过三轴评估标准进行评估。在高年级，该方法转向口头表达，要求通过包括表达清晰度的四维评分标准评估简短的书面回答。对话模块使用 RAG 在语义上将学生的查询与官方指南相匹配，生成安全、准确的响应。实验评估具有较高的扎实性和准确性，且幻觉率较低。总体而言，Earthquaker-AI 结合了动手参与、信息处理和反思实践。将机器人技术、规则和人工智能相结合，可以促进技术素养、自我监管和负责任地使用数字系统，从而有助于培养早期危机管理技能。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.13027v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.14046v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/barretlee/agent-pulse" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">agent-pulse</span>
-                                    <span class="repo-stars">⭐ 188</span>
+                                    <span class="repo-stars">⭐ 195</span>
                                 </div>
                                 <p class="repo-desc">有证据支持的人工智能行业情报——趋势、来源更新、每日数据刷新和每周决策简报。</p>
                                 <div class="repo-meta">
@@ -931,29 +931,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/lucidrains/x-jepa" target="_blank" class="repo-link">
+                            <a href="https://github.com/Extraltodeus/J-Wash" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">x-jepa</span>
-                                    <span class="repo-stars">⭐ 90</span>
+                                    <span class="repo-name">J-Wash</span>
+                                    <span class="repo-stars">⭐ 168</span>
                                 </div>
-                                <p class="repo-desc">对 Yann LeCun 提倡的一些方法的探索，以及总体上更全面的架构（JEPA）</p>
+                                <p class="repo-desc">Jacobian-Brainwash：一种手动对齐工具，用于基于 Anthropic 的 Jacobian Lens 构建的大型语言模型。结果可导出。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-09</span>
+                                    <span class="repo-date">2026-07-13</span>
                                 </div>
                             </a>
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/yan5xu/oh-my-ai-company" target="_blank" class="repo-link">
+                            <a href="https://github.com/illiahaidar/mcptrustchecker" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">oh-my-ai-company</span>
-                                    <span class="repo-stars">⭐ 71</span>
+                                    <span class="repo-name">mcptrustchecker</span>
+                                    <span class="repo-stars">⭐ 48</span>
                                 </div>
-                                <p class="repo-desc">人工智能公司、产品、创始人、投资者、交通信号和研究笔记的活生生的地图集。</p>
+                                <p class="repo-desc">MCP 安全扫描器 — 模型上下文协议服务器的离线、确定性 A-F 信任评分。检测工具中毒、及时注入和有毒物质流动。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-07-09</span>
+                                    <span class="repo-date">2026-07-13</span>
                                 </div>
                             </a>
                         </li>
@@ -973,29 +973,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/lucidrains/multistep-quasimetric-estimation" target="_blank" class="repo-link">
+                            <a href="https://github.com/Ali-hey-0/recon-modular" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">multistep-quasimetric-estimation</span>
-                                    <span class="repo-stars">⭐ 8</span>
+                                    <span class="repo-name">recon-modular</span>
+                                    <span class="repo-stars">⭐ 5</span>
                                 </div>
-                                <p class="repo-desc">郑等人提出的多步拟测估计的探索和最终实际实施。伯克利分校</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-09</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/fraconca/ai-ready-context-template-engine" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ai-ready-context-template-engine</span>
-                                    <span class="repo-stars">⭐ 7</span>
-                                </div>
-                                <p class="repo-desc">⚡ AI内容工作区模板</p>
+                                <p class="repo-desc">🛡️ 由人工智能驱动的侦察框架统一了 130 多种安全工具——子域枚举、漏洞扫描、云/物联网侦察、暗网监控和区块链审计报告。 GAN驱动的子域预测，分布式执行后量子加密。专为错误赏金、红队和 DevSecOps 而构建。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Shell</span>
-                                    <span class="repo-date">2026-07-09</span>
+                                    <span class="repo-date">2026-07-16</span>
                                 </div>
                             </a>
                         </li>
@@ -1020,7 +1006,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">Bangla-Handwriting-Collector</span>
                                     <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc"></p>
+                                <p class="repo-desc">Bangla Handwriting Collector 是一个静态、无服务器的 Web 应用程序，任何人都可以在数字画布上绘制孟加拉字符。所有收集的手写样本都使用 IndexedDB 本地存储在浏览器中 - 任何数据都不会接触服务器。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-07-12</span>
@@ -1029,15 +1015,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Zo-Dns/Al-Idrisi.AI" target="_blank" class="repo-link">
+                            <a href="https://github.com/wahyunuriman999/AEGIS-Core" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Al-Idrisi.AI</span>
-                                    <span class="repo-stars">⭐ 4</span>
+                                    <span class="repo-name">AEGIS-Core</span>
+                                    <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">阿尔及利亚-Al-Idrisi.AI — 阿尔及利亚 阿尔及利亚 阿尔及利亚 阿尔及利亚 阿尔及利亚 阿尔及利亚 阿尔及利亚</p>
+                                <p class="repo-desc">人工智能工程的认知运行时层。在任何语言模型之上添加规划、内存层次结构和确定性执行。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">HTML</span>
-                                    <span class="repo-date">2026-07-09</span>
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-10</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/ShravanDalavi/AI_Email_Generator" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">AI_Email_Generator</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">使用 Python、Streamlit 和 Ollama 构建的人工智能驱动的电子邮件生成器，无需云 API 即可在本地创建专业的商业电子邮件。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-12</span>
                                 </div>
                             </a>
                         </li>
@@ -1046,7 +1046,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/fkondela/keywordtensor" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">keywordtensor</span>
-                                    <span class="repo-stars">⭐ 4</span>
+                                    <span class="repo-stars">⭐ 3</span>
                                 </div>
                                 <p class="repo-desc">用于训练自定义关键字识别模型和运行实时语音命令检测的 Python 库。</p>
                                 <div class="repo-meta">

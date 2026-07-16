@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-07-15 22:55:20</p>
+            <p class="hero-meta">构建时间：2026-07-16 22:53:33</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
-                        <p class="quick-meta">— Chinese Proverb</p>
+                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
+                        <p class="quick-meta">— 荀子</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">barretlee/agent-pulse</p>
-                        <p class="quick-meta">★ 188</p>
+                        <p class="quick-meta">★ 195</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: TypeScript</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 serialization，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 asynchronous，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 barretlee/agent-pulse，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Hindcast: Replaying Prediction Markets to Evaluate LLM Forecasters》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">serialization <span>/ˌsɪəriəlaɪˈzeɪʃn/</span></p>
-                    <p class="study-meaning">n. 序列化</p>
+                    <p class="study-word">asynchronous <span>/eɪˈsɪŋkrənəs/</span></p>
+                    <p class="study-meaning">adj. 异步的</p>
                     
-                    <p class="study-sentence">Serialization converts an object into a stream of bytes for storage.</p>
-                    <p class="study-sentence-zh">序列化将对象转换为字节流以便存储。</p>
+                    <p class="study-sentence">Asynchronous programming allows the program to continue executing while waiting for I/O.</p>
+                    <p class="study-sentence-zh">异步编程允许程序在等待 I/O 时继续执行。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution</p>
-                    <p class="deep-abstract">大型语言模型 (LLM) 代理越来越多地实现多步骤工程和信息学工作流程的自动化，但他们很少询问任务实际需要多少工作量。他们通常遵循最大上下文优先策略 - 重新读取他们已经看到的文件和依赖项 - 将一行编辑变成小型代码库审核。我们认为缺失的能力是任务感知的执行范围估计：判断任务的难度、它真正需要的信息以及提交预算之前的最短可靠路径。我们形式化了最小充足执行和代理认知冗余比（ACRR），并提出了E3（估计、执行、扩展）：代理估计初始操作点，执行最小可行路径，并仅在验证失败时扩展范围。在 MSE-Bench（能力控制模拟器中进行 121 次编辑的确定性基准）上，E3 与最强基线的 100% 成功率相匹配，同时降低了 85% 的成本、91% 的令牌和 92% 的检查文件，并进一步击败了强大的自适应检索基线 16%；这些收益在保留的指令措辞和基本上所有成本权重中都存在。配套的真实模型工具（LLM-Case）证实了实时 gpt-4o 代理编辑真实开源库的效果，每个候选补丁都是通过针对经过测量的预言机实际运行项目的真实 pytest 套件来评分的：过度阅读较为温和但真实，并且 E3 是在类似任务成功方面最精简、最快的策略 - 它是提供者速率限制的一个不足，而不是错误的编辑。我们将其视为执行冗余的受控探测，而不是对任何已部署代理的测量，并将任务感知执行定位为迈向基于工程的人工智能（EGAI）的一步——代理的努力植根于任务的工程现实。我们发布了框架和基准。</p>
+                    <p class="deep-title">Hindcast: Replaying Prediction Markets to Evaluate LLM Forecasters</p>
+                    <p class="deep-abstract">预测员通过回溯测试进行评估，回溯测试会重播已解决的问题，并对系统在结果已知之前分配的概率进行评分。对于法学硕士，有两个渠道将答案泄漏到此测试中。检索模型可以显示事件发生后编写的报告，将预测转变为查找，并且每个新模型都根据更接近事件的数据进行训练，因此去年模型的未来问题位于今年的训练数据中。不管怎样，考试成绩在声称成绩具有预见性的同时还能回忆。我们引入了 Hindcast，它通过对模型进行评级来关闭这两种泄漏，就好像它处于选定的过去日期 $t_0$（在任一通道中存在结果之前）一样。 Hindcast 根据公共 Reddit 的冻结快照重播已解决的 Polymarket 预测市场，让模型只读取 $t_0$ 之前编写的帖子，并根据发生的情况和 $t_0$ 的市场自身价格对每个预测进行评分，这本身就是根据相同的过去信息做出的人类预测。由于截止值是按市场设置的，并且快照永远不会改变，因此随着模型的改进，评估会在新市场上重新运行，而不会过时。一旦泄漏被关闭，检索仍然对大多数模型有帮助，但仅限于 Reddit 事先讨论过该事件的情况。如果档案中只包含猜测，检索就会受到伤害。</p>
                     
-                    <p class="deep-takeaway">要点：大型语言模型 (LLM) 代理越来越多地实现多步骤工程和信息学工作流程的自动化，但他们很少询问任务实际需要多少工作量。他们通常遵循最大上下文优先策略 - 重新读取他们已经看到的文件和依赖项 - 将一行编辑变成小型代码库审核。我们认为缺失的能力是任务感知的执行范围估计：判断任务的难度、它真正需要的信息以及提交预算之前的最...</p>
+                    <p class="deep-takeaway">要点：预测员通过回溯测试进行评估，回溯测试会重播已解决的问题，并对系统在结果已知之前分配的概率进行评分。对于法学硕士，有两个渠道将答案泄漏到此测试中。检索模型可以显示事件发生后编写的报告，将预测转变为查找，并且每个新模型都根据更接近事件的数据进行训练，因此去年模型的未来问题位于今年的训练数据中。不管怎样，考试成绩在声称成绩具...</p>
                     
-                    <p class="deep-meta">预计阅读 2 分钟</p>
+                    <p class="deep-meta">预计阅读 1 分钟</p>
                 
             </div>
             
@@ -284,18 +284,18 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>barretlee/agent-pulse</strong> (★ 188)
+                        <strong>barretlee/agent-pulse</strong> (★ 195)
                         <p>有证据支持的人工智能行业情报——趋势、来源更新、每日数据刷新和每周决策简报。</p>
                     </li>
                     
                     <li>
-                        <strong>lucidrains/x-jepa</strong> (★ 90)
-                        <p>对 Yann LeCun 提倡的一些方法的探索，以及总体上更全面的架构（JEPA）</p>
+                        <strong>Extraltodeus/J-Wash</strong> (★ 168)
+                        <p>Jacobian-Brainwash：一种手动对齐工具，用于基于 Anthropic 的 Jacobian Lens 构建的大型语言模型。结果可导出。</p>
                     </li>
                     
                     <li>
-                        <strong>yan5xu/oh-my-ai-company</strong> (★ 71)
-                        <p>人工智能公司、产品、创始人、投资者、交通信号和研究笔记的活生生的地图集。</p>
+                        <strong>illiahaidar/mcptrustchecker</strong> (★ 48)
+                        <p>MCP 安全扫描器 — 模型上下文协议服务器的离线、确定性 A-F 信任评分。检测工具中毒、及时注入和有毒物质流动。</p>
                     </li>
                     
                     <li>
@@ -304,8 +304,8 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>lucidrains/multistep-quasimetric-estimation</strong> (★ 8)
-                        <p>郑等人提出的多步拟测估计的探索和最终实际实施。伯克利分校</p>
+                        <strong>Ali-hey-0/recon-modular</strong> (★ 5)
+                        <p>🛡️ 由人工智能驱动的侦察框架统一了 130 多种安全工具——子域枚举、漏洞扫描、云/物联网侦察、暗网监控和区块链审计报告。 GAN驱动的子域预测，分布式执行后量子加密。专为错误赏金、红队和 DevSecOps 而构建。</p>
                     </li>
                     
                 </ul>
