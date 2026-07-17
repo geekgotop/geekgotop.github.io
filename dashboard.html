@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-07-16 22:53:33</span>
+        <span class="generated-time">更新于 2026-07-17 22:43:54</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Hindcast:<sup class='ipa'>/hindcast*/</sup> Replaying<sup class='ipa'>/riˈpleɪɪŋ/</sup> Prediction<sup class='ipa'>/priˈdɪkʃən/</sup> Markets to Evaluate<sup class='ipa'>/ɪˈvæljuˌeɪt/</sup> LLM Forecasters<sup class='ipa'>/ˈfɔrˌkæstərz/</sup></h4>
+                            <h4 class="paper-title">Partition,<sup class='ipa'>/pɑrˈtɪʃən/</sup> Prompt, Aggregate:<sup class='ipa'>/ˈægrəgət/</sup> Statistical<sup class='ipa'>/stəˈtɪstɪkəl/</sup> Self-Consistency<sup class='ipa'>/selfconsistency*/</sup> in Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h4>
                             <div class="paper-meta">
-                                <span class="authors">Xiao Ye, Jacob Dineen, Evan Zhu</span>
-                                <span class="date">2026-07-15</span>
+                                <span class="authors">Patrik Wolf, Thomas Kleine Buening, Andreas Krause</span>
+                                <span class="date">2026-07-16</span>
                                 <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Forecasters are evaluated by backtesting, which replays resolved questions and grades the probability the system would have assigned before the outcome was known. For LLMs, two channels leak the answer into this test. A model that retrieves can surface reports written after the event, turning foreca...</p>
+                                <p class="abstract-en">In-context learning is commonly interpreted as a form of conditional inference, in which the prompt specifies a context and the model&#39;s output is treated as an estimate of the corresponding conditional distribution. If this interpretation holds, then LLM estimates should satisfy basic probabilistic ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">预测员通过回溯测试进行评估，回溯测试会重播已解决的问题，并对系统在结果已知之前分配的概率进行评分。对于法学硕士，有两个渠道将答案泄漏到此测试中。检索模型可以显示事件发生后编写的报告，将预测转变为查找，并且每个新模型都根据更接近事件的数据进行训练，因此去年模型的未来问题位于今年的训练数据中。不管怎样，考试成绩在声称成绩具有预见性的同时还能回忆。我们引入了 Hindcast，它通过对模型进行评级来关闭这两种泄漏，就好像它处于选定的过去日期 $t_0$（在任一通道中存在结果之前）一样。 Hindcast 根据公共 Reddit 的冻结快照重播已解决的 Polymarket 预测市场，让模型只读取 $t_0$ 之前编写的帖子，并根据发生的情况和 $t_0$ 的市场自身价格对每个预测进行评分，这本身就是根据相同的过去信息做出的人类预测。由于截止值是按市场设置的，并且快照永远不会改变，因此随着模型的改进，评估会在新市场上重新运行，而不会过时。一旦泄漏被关闭，检索仍然对大多数模型有帮助，但仅限于 Reddit 事先讨论过该事件的情况。如果档案中只包含猜测，检索就会受到伤害。</p>
+                                    <p class="abstract-zh">上下文学习通常被解释为条件推理的一种形式，其中提示指定上下文，并且模型的输出被视为相应条件分布的估计。如果这种解释成立，那么 LLM 估计应该满足基本概率恒等式。特别是，总概率定律断言，先验加权条件分布在任何有效的总体划分上聚合成总体水平边际。在这项工作中，我们调查了法学硕士的估计在多大程度上遵守了这种自我一致性原则。我们使用二叉树作为评估支架，将群体递归地划分为越来越细粒度的子群体。然后，我们向法学硕士提供上下文中的口头亚总体描述，将所得估计值汇总回总体水平估计值，并在不同粒度的分区之间进行比较。跨问题域和最先进的前沿模型应用该协议，我们发现了对基本一致性属性的广泛违反。对角色提示的深入研究揭示了一种我们称之为宏观谬误的模式：从更细粒度的亚群体反应中重建的估计通常比直接的群体水平估计更符合人类参考数据。这种效应在树结构和估计任务的变化中持续存在，并且可以通过隐式提示部分恢复。总之，这些发现表明模型拥有相关的亚群知识，但不能可靠地将其传播到总体估计中。这一差距确立了统计上的自我一致性，作为评估法学硕士的不饱和、无参考标准。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.14051v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.15277v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Deep Interaction:<sup class='ipa'>/ˌɪnərˈækʃən/</sup> An Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> Human-AI Interaction<sup class='ipa'>/ˌɪnərˈækʃən/</sup> Method for Large Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> Models</h4>
+                            <h4 class="paper-title">RoboTTT: Context Scaling for Robot Policies<sup class='ipa'>/ˈpɑləsiz/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Hefeng Zhou, Jinxuan Zhang, Jiong Lou</span>
-                                <span class="date">2026-07-15</span>
-                                <span class="categories">cs.AI</span>
+                                <span class="authors">Yunfan Jiang, Yevgen Chebotar, Ruijie Zheng</span>
+                                <span class="date">2026-07-16</span>
+                                <span class="categories">cs.RO | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">The emergence of Chain-of-Thought (CoT) reasoning has significantly enhanced the ability of large language models (LLMs) to tackle complex, multi-step tasks. However, when errors occur, current interaction approaches typically involve re-generating another response that may make mistakes again, or u...</p>
+                                <p class="abstract-en">Recent robot foundation models operate with single-step or short-history visuomotor context. We introduce Test-Time-Training Robot Policies (RoboTTT), a robot model and training recipe that scale visuomotor context to 8K timesteps, three orders of magnitude beyond state-of-the-art policies, without ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">思想链 (CoT) 推理的出现显着增强了大型语言模型 (LLM) 处理复杂、多步骤任务的能力。然而，当错误发生时，当前的交互方法通常涉及重新生成另一个可能再次出错的响应，或者用户在可能得到响应的后续回合中费力地标记错误步骤&lt;你是对的，我在这里犯了一个错误&gt;，然后重复出现类似的错误。为了解决这个问题，我们提出了一种有效的人工干预机制，用于精确纠正法学硕士中的推理错误，称为深度交互。我们的方法可以直接编辑原始响应，允许纠正错误部分，同时保留准确的推理步骤。我们将编辑后的 ​​CoT 细化为提炼的提示，然后引导法学硕士沿着正确的推理路径前进。实验结果表明，与基线方法相比，我们的方法在 STEM 任务推理上的纠正成功率提高了 25% 以上，并将令牌使用量减少了约 40%。</p>
+                                    <p class="abstract-zh">最近的机器人基础模型在单步或短历史视觉运动环境下运行。我们引入了测试时间训练机器人策略 (RoboTTT)，这是一种机器人模型和训练方法，可将视觉运动上下文扩展到 8K 时间步长，比最先进的策略高出三个数量级，并且不会增加推理延迟。在这一上下文长度下，我们解锁了新的机器人功能：从人类视频演示中进行一次性上下文模仿、动态策略改进、对扰动的鲁棒性以及在多阶段、长期任务上的更强性能。我们还首次观察到，随着预训练上下文长度的增加，闭环性能稳步提高。 RoboTTT 的核心是将测试时训练集成到机器人基础模型（例如视觉-语言-动作策略）中，生成一个序列模型，其循环状态由快速权重、训练和推理期间梯度下降更新的参数、将历史压缩到权重空间并检索用于长上下文调节的上下文信息组成。为了扩展训练上下文的长度，该方法将序列动作强制与随时间截断的反向传播结合起来。在具有挑战性的真实机器人操作任务中，RoboTTT 的整体性能比单步上下文基线提高了 87%，并完全完成了 5 分钟、10 阶段的组装任务，这是任何基线都无法做到的。使用 8K 时间步长上下文训练的 RoboTTT 比使用 1K 时间步长预训练的相同模型性能高出 62%，这表明上下文长度可以作为机器人基础模型的新缩放轴。视频可在 https://research.nvidia.com/labs/gear/robottt/ 获取</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.14049v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.15275v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Earthquaker-AI:<sup class='ipa'>/earthquakerai*/</sup> A Retrieval-Augmented<sup class='ipa'>/retrievalaugmented*/</sup> Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup> with Rubric-Based<sup class='ipa'>/rubricbased*/</sup> Assessment<sup class='ipa'>/əˈsɛsmənt/</sup> for Primary School Earthquake<sup class='ipa'>/ˈərθkˌweɪk/</sup> Education<sup class='ipa'>/ˌɛʤəˈkeɪʃən/</sup></h4>
+                            <h4 class="paper-title">SciDiagramEdit:<sup class='ipa'>/scidiagramedit*/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> to Edit Scientific<sup class='ipa'>/ˌsaɪənˈtɪfɪk/</sup> Diagrams<sup class='ipa'>/ˈdaɪəˌgræmz/</sup> from Paper Revisions<sup class='ipa'>/riˈvɪʒənz/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Xanthi Kokkinou, Chaido Mizeli, Nafsika Koulaxidou</span>
-                                <span class="date">2026-07-15</span>
-                                <span class="categories">cs.AI</span>
+                                <span class="authors">Yasheng Sun, Zezi Zeng, Yifan Yang</span>
+                                <span class="date">2026-07-16</span>
+                                <span class="categories">cs.CL | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">This paper presents Earthquaker-AI, a hybrid educational framework building upon a previously implemented educational robotics project by integrating a conversational AI assistant based on Retrieval-Augmented Generation. It aims to enhance earthquake preparedness and conscious action among primary-s...</p>
+                                <p class="abstract-en">Editing the figures in a research paper is a routine and time-consuming part of everyday research practice: authors relabel components, rearrange panels, and restyle visuals as they revise their manuscripts. Automating this editing workflow under a natural-language instruction, however, is challengi...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">本文介绍了 Earthquaker-AI，这是一种混合教育框架，它建立在之前实施的教育机器人项目的基础上，通过集成基于检索增强生成的对话式 AI 助手。其目的是加强小学生的防震准备和自觉行动。该系统将屡获殊荣的 STEM 项目 Earthquaker 从乐高 WeDo2 的机械模拟扩展到认知和元认知处理。机器人组件使用乐高 WeDo2 自动化来模拟地震响应，让学生与传感器和执行器进行交互，作为保护动作的有形表现。该助理作为一种引导学习机制，使学生的反应与安全准则保持一致，同时提供基于规则的口头反馈，支持紧急情况下的自我调节学习和冷静。 Earthquaker-AI 遵循与认知发展相一致的渐进学习轨迹。在早期年级，重点是通过多项选择题对安全行为进行基本认识，并通过二维标题进行评估。在中年级，学生通过多项选择题确定正确的行动顺序，并通过三轴评估标准进行评估。在高年级，该方法转向口头表达，要求通过包括表达清晰度的四维评分标准评估简短的书面回答。对话模块使用 RAG 在语义上将学生的查询与官方指南相匹配，生成安全、准确的响应。实验评估具有较高的扎实性和准确性，且幻觉率较低。总体而言，Earthquaker-AI 结合了动手参与、信息处理和反思实践。将机器人技术、规则和人工智能相结合，可以促进技术素养、自我监管和负责任地使用数字系统，从而有助于培养早期危机管理技能。</p>
+                                    <p class="abstract-zh">编辑研究论文中的图表是日常研究实践中例行且耗时的一部分：作者在修改手稿时重新标记组件、重新排列面板并重新设计视觉效果。然而，在自然语言指令下自动化此编辑工作流程具有挑战性，因为科学图形是一个密集的信息图表，其中原理图、图表、照片、标题和箭头等异构视觉元素在严格的视觉语法下组成，以推进特定的论点。为了解决这个问题，我们提出了 SciDiagramEdit，这是一个基准和技能进化框架，可以从自然论文修订中学习并在图形的可编辑矢量源上进行操作，用户可以在其中与代理一起检查和共同编辑单个图元。我们的基准测试从 arXiv 版本历史中挖掘前后图对，每个图都基于作者自己的修订意图。为了适应编辑指令的多样性，我们通过技能进化采用代理学习：代理提议者根据多个时期的执行跟踪不断完善代理的技能规范。由此产生的技能逐渐提高了保留验证集上的编辑准确性，提供了证据表明自然论文修订是指令驱动的图形编辑的有效训练信号。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.14046v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.15272v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/barretlee/agent-pulse" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">agent-pulse</span>
-                                    <span class="repo-stars">⭐ 195</span>
+                                    <span class="repo-stars">⭐ 205</span>
                                 </div>
                                 <p class="repo-desc">有证据支持的人工智能行业情报——趋势、来源更新、每日数据刷新和每周决策简报。</p>
                                 <div class="repo-meta">
@@ -934,7 +934,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/Extraltodeus/J-Wash" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">J-Wash</span>
-                                    <span class="repo-stars">⭐ 168</span>
+                                    <span class="repo-stars">⭐ 173</span>
                                 </div>
                                 <p class="repo-desc">Jacobian-Brainwash：一种手动对齐工具，用于基于 Anthropic 的 Jacobian Lens 构建的大型语言模型。结果可导出。</p>
                                 <div class="repo-meta">
@@ -945,10 +945,38 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/CyberSunil/LLMVault" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">LLMVault</span>
+                                    <span class="repo-stars">⭐ 149</span>
+                                </div>
+                                <p class="repo-desc">一个故意存在漏洞的 OWASP LLM Top 10 培训平台，用于 AI 安全、提示注入、RAG 安全、代理安全和 GenAI 渗透测试。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-15</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/KlaatAI/klaatcode" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">klaatcode</span>
+                                    <span class="repo-stars">⭐ 104</span>
+                                </div>
+                                <p class="repo-desc">终端的开源人工智能编码代理。 Claude 代码级准确性和智能模型路由——为每项任务使用正确的 AI 模型，将成本降低 10 倍。支持 Claude、GPT、Gemini、DeepSeek 等。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-07-17</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/illiahaidar/mcptrustchecker" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">mcptrustchecker</span>
-                                    <span class="repo-stars">⭐ 48</span>
+                                    <span class="repo-stars">⭐ 50</span>
                                 </div>
                                 <p class="repo-desc">MCP 安全扫描器 — 模型上下文协议服务器的离线、确定性 A-F 信任评分。检测工具中毒、及时注入和有毒物质流动。</p>
                                 <div class="repo-meta">
@@ -962,12 +990,26 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/ozankasikci/global-agent-memory" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">global-agent-memory</span>
-                                    <span class="repo-stars">⭐ 10</span>
+                                    <span class="repo-stars">⭐ 13</span>
                                 </div>
                                 <p class="repo-desc">用于 Claude Code、Codex 和其他 AI 代理的本地优先、项目感知内存 MCP 服务器，配有 Obsidian 和所有者仪表板。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-07-11</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/SkyportalAi/skyportalai" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">skyportalai</span>
+                                    <span class="repo-stars">⭐ 6</span>
+                                </div>
+                                <p class="repo-desc">SkyPortal SDK 和 CLI - 开源</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-15</span>
                                 </div>
                             </a>
                         </li>
@@ -987,20 +1029,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Mahdi-Razaghi/tajan" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">tajan</span>
-                                    <span class="repo-stars">⭐ 5</span>
-                                </div>
-                                <p class="repo-desc">🤖 Tajan – 由 BiLSTM 深度学习提供支持的智能双语（波斯语/英语）意图识别聊天机器人。功能：离线波斯语/英语词形还原、智能数据增强 (1.8x)、GUI 界面和 419 个意图类，准确度约为 66%。完全可定制、开源，无需互联网即可运行。使用 TensorFlow、Hazm 和 NLTK 构建。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Jupyter Notebook</span>
-                                    <span class="repo-date">2026-07-10</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/Istiaq-Edu/Bangla-Handwriting-Collector" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Bangla-Handwriting-Collector</span>
@@ -1015,43 +1043,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/wahyunuriman999/AEGIS-Core" target="_blank" class="repo-link">
+                            <a href="https://github.com/AyushParkara/syntra" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">AEGIS-Core</span>
-                                    <span class="repo-stars">⭐ 3</span>
+                                    <span class="repo-name">syntra</span>
+                                    <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc">人工智能工程的认知运行时层。在任何语言模型之上添加规划、内存层次结构和确定性执行。</p>
+                                <p class="repo-desc">用于多模型编码的开源控制平面：基于角色的路由、持久的任务状态和可检查的运行收据。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-10</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/ShravanDalavi/AI_Email_Generator" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">AI_Email_Generator</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">使用 Python、Streamlit 和 Ollama 构建的人工智能驱动的电子邮件生成器，无需云 API 即可在本地创建专业的商业电子邮件。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-12</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/fkondela/keywordtensor" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">keywordtensor</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">用于训练自定义关键字识别模型和运行实时语音命令检测的 Python 库。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-12</span>
+                                    <span class="repo-date">2026-07-16</span>
                                 </div>
                             </a>
                         </li>

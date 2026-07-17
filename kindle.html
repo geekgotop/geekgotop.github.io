@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-07-16 22:53:33</p>
+            <p class="hero-meta">构建时间：2026-07-17 22:43:54</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
-                        <p class="quick-meta">— 荀子</p>
+                        <p class="quick-main">博观而约取，厚积而薄发。</p>
+                        <p class="quick-meta">— 苏轼</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">barretlee/agent-pulse</p>
-                        <p class="quick-meta">★ 195</p>
+                        <p class="quick-meta">★ 205</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: TypeScript</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 asynchronous，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 deprecated，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 barretlee/agent-pulse，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Hindcast: Replaying Prediction Markets to Evaluate LLM Forecasters》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">asynchronous <span>/eɪˈsɪŋkrənəs/</span></p>
-                    <p class="study-meaning">adj. 异步的</p>
+                    <p class="study-word">deprecated <span>/ˈdeprəkeɪtɪd/</span></p>
+                    <p class="study-meaning">adj. 已弃用的；不推荐的</p>
                     
-                    <p class="study-sentence">Asynchronous programming allows the program to continue executing while waiting for I/O.</p>
-                    <p class="study-sentence-zh">异步编程允许程序在等待 I/O 时继续执行。</p>
+                    <p class="study-sentence">This method is deprecated and will be removed in the next version.</p>
+                    <p class="study-sentence-zh">此方法已弃用，将在下一版本中移除。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Hindcast: Replaying Prediction Markets to Evaluate LLM Forecasters</p>
-                    <p class="deep-abstract">预测员通过回溯测试进行评估，回溯测试会重播已解决的问题，并对系统在结果已知之前分配的概率进行评分。对于法学硕士，有两个渠道将答案泄漏到此测试中。检索模型可以显示事件发生后编写的报告，将预测转变为查找，并且每个新模型都根据更接近事件的数据进行训练，因此去年模型的未来问题位于今年的训练数据中。不管怎样，考试成绩在声称成绩具有预见性的同时还能回忆。我们引入了 Hindcast，它通过对模型进行评级来关闭这两种泄漏，就好像它处于选定的过去日期 $t_0$（在任一通道中存在结果之前）一样。 Hindcast 根据公共 Reddit 的冻结快照重播已解决的 Polymarket 预测市场，让模型只读取 $t_0$ 之前编写的帖子，并根据发生的情况和 $t_0$ 的市场自身价格对每个预测进行评分，这本身就是根据相同的过去信息做出的人类预测。由于截止值是按市场设置的，并且快照永远不会改变，因此随着模型的改进，评估会在新市场上重新运行，而不会过时。一旦泄漏被关闭，检索仍然对大多数模型有帮助，但仅限于 Reddit 事先讨论过该事件的情况。如果档案中只包含猜测，检索就会受到伤害。</p>
+                    <p class="deep-title">Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models</p>
+                    <p class="deep-abstract">上下文学习通常被解释为条件推理的一种形式，其中提示指定上下文，并且模型的输出被视为相应条件分布的估计。如果这种解释成立，那么 LLM 估计应该满足基本概率恒等式。特别是，总概率定律断言，先验加权条件分布在任何有效的总体划分上聚合成总体水平边际。在这项工作中，我们调查了法学硕士的估计在多大程度上遵守了这种自我一致性原则。我们使用二叉树作为评估支架，将群体递归地划分为越来越细粒度的子群体。然后，我们向法学硕士提供上下文中的口头亚总体描述，将所得估计值汇总回总体水平估计值，并在不同粒度的分区之间进行比较。跨问题域和最先进的前沿模型应用该协议，我们发现了对基本一致性属性的广泛违反。对角色提示的深入研究揭示了一种我们称之为宏观谬误的模式：从更细粒度的亚群体反应中重建的估计通常比直接的群体水平估计更符合人类参考数据。这种效应在树结构和估计任务的变化中持续存在，并且可以通过隐式提示部分恢复。总之，这些发现表明模型拥有相关的亚群知识，但不能可靠地将其传播到总体估计中。这一差距确立了统计上的自我一致性，作为评估法学硕士的不饱和、无参考标准。</p>
                     
-                    <p class="deep-takeaway">要点：预测员通过回溯测试进行评估，回溯测试会重播已解决的问题，并对系统在结果已知之前分配的概率进行评分。对于法学硕士，有两个渠道将答案泄漏到此测试中。检索模型可以显示事件发生后编写的报告，将预测转变为查找，并且每个新模型都根据更接近事件的数据进行训练，因此去年模型的未来问题位于今年的训练数据中。不管怎样，考试成绩在声称成绩具...</p>
+                    <p class="deep-takeaway">要点：上下文学习通常被解释为条件推理的一种形式，其中提示指定上下文，并且模型的输出被视为相应条件分布的估计。如果这种解释成立，那么 LLM 估计应该满足基本概率恒等式。特别是，总概率定律断言，先验加权条件分布在任何有效的总体划分上聚合成总体水平边际。在这项工作中，我们调查了法学硕士的估计在多大程度上遵守了这种自我一致性原则。...</p>
                     
-                    <p class="deep-meta">预计阅读 1 分钟</p>
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>barretlee/agent-pulse</strong> (★ 195)
+                        <strong>barretlee/agent-pulse</strong> (★ 205)
                         <p>有证据支持的人工智能行业情报——趋势、来源更新、每日数据刷新和每周决策简报。</p>
                     </li>
                     
                     <li>
-                        <strong>Extraltodeus/J-Wash</strong> (★ 168)
+                        <strong>Extraltodeus/J-Wash</strong> (★ 173)
                         <p>Jacobian-Brainwash：一种手动对齐工具，用于基于 Anthropic 的 Jacobian Lens 构建的大型语言模型。结果可导出。</p>
                     </li>
                     
                     <li>
-                        <strong>illiahaidar/mcptrustchecker</strong> (★ 48)
+                        <strong>CyberSunil/LLMVault</strong> (★ 149)
+                        <p>一个故意存在漏洞的 OWASP LLM Top 10 培训平台，用于 AI 安全、提示注入、RAG 安全、代理安全和 GenAI 渗透测试。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>KlaatAI/klaatcode</strong> (★ 104)
+                        <p>终端的开源人工智能编码代理。 Claude 代码级准确性和智能模型路由——为每项任务使用正确的 AI 模型，将成本降低 10 倍。支持 Claude、GPT、Gemini、DeepSeek 等。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>illiahaidar/mcptrustchecker</strong> (★ 50)
                         <p>MCP 安全扫描器 — 模型上下文协议服务器的离线、确定性 A-F 信任评分。检测工具中毒、及时注入和有毒物质流动。</p>
-                    </li>
-                    
-                    <li>
-                        <strong>ozankasikci/global-agent-memory</strong> (★ 10)
-                        <p>用于 Claude Code、Codex 和其他 AI 代理的本地优先、项目感知内存 MCP 服务器，配有 Obsidian 和所有者仪表板。</p>
-                    </li>
-                    
-                    <li>
-                        <strong>Ali-hey-0/recon-modular</strong> (★ 5)
-                        <p>🛡️ 由人工智能驱动的侦察框架统一了 130 多种安全工具——子域枚举、漏洞扫描、云/物联网侦察、暗网监控和区块链审计报告。 GAN驱动的子域预测，分布式执行后量子加密。专为错误赏金、红队和 DevSecOps 而构建。</p>
                     </li>
                     
                 </ul>
