@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-07-19 22:46:06</p>
+            <p class="hero-meta">构建时间：2026-07-20 22:55:19</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,23 +191,25 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：复盘整理日</p>
-                <p class="theme-focus">优先看 Archive 区：回顾本周输入并做摘要。</p>
-                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
-                        <p class="quick-meta">— Albert Einstein</p>
+                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
+                        <p class="quick-meta">— 荀子</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-empty">暂无仓库数据</p>
+                        <p class="quick-main">CyberSunil/LLMVault</p>
+                        <p class="quick-meta">★ 213</p>
+                        <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
                 <article class="quick-card">
@@ -215,9 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 polymorphism，再口述其含义一次。</li>
                         
-                        <li>深读: 阅读论文《Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models》摘要并写 2 句总结。</li>
+                        <li>趋势: 浏览 CyberSunil/LLMVault，记录 1 个可借鉴实现点。</li>
+                        
+                        <li>深读: 阅读论文《Evaluating Open-Weight LLMs for Generating Structured Threat Information for Autonomous Vehicle Vulnerabilities》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -230,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
-                    <p class="study-meaning">n. 递归；循环</p>
+                    <p class="study-word">polymorphism <span>/ˌpɒliˈmɔːfɪzəm/</span></p>
+                    <p class="study-meaning">n. 多态性</p>
                     
-                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
-                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
+                    <p class="study-sentence">Polymorphism allows objects of different classes to be treated as objects of a common superclass.</p>
+                    <p class="study-sentence-zh">多态性允许不同类的对象被当作共同父类的对象来处理。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -266,13 +270,45 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models</p>
-                    <p class="deep-abstract">上下文学习通常被解释为条件推理的一种形式，其中提示指定上下文，并且模型的输出被视为相应条件分布的估计。如果这种解释成立，那么 LLM 估计应该满足基本概率恒等式。特别是，总概率定律断言，先验加权条件分布在任何有效的总体划分上聚合成总体水平边际。在这项工作中，我们调查了法学硕士的估计在多大程度上遵守了这种自我一致性原则。我们使用二叉树作为评估支架，将群体递归地划分为越来越细粒度的子群体。然后，我们向法学硕士提供上下文中的口头亚总体描述，将所得估计值汇总回总体水平估计值，并在不同粒度的分区之间进行比较。跨问题域和最先进的前沿模型应用该协议，我们发现了对基本一致性属性的广泛违反。对角色提示的深入研究揭示了一种我们称之为宏观谬误的模式：从更细粒度的亚群体反应中重建的估计通常比直接的群体水平估计更符合人类参考数据。这种效应在树结构和估计任务的变化中持续存在，并且可以通过隐式提示部分恢复。总之，这些发现表明模型拥有相关的亚群知识，但不能可靠地将其传播到总体估计中。这一差距确立了统计上的自我一致性，作为评估法学硕士的不饱和、无参考标准。</p>
+                    <p class="deep-title">Evaluating Open-Weight LLMs for Generating Structured Threat Information for Autonomous Vehicle Vulnerabilities</p>
+                    <p class="deep-abstract">联网和自动驾驶车辆 (CAV) 依赖于互连的软件和硬件组件，包括传感器、电子控制单元、车载信息娱乐系统和远程信息处理单元，其中的漏洞可能会危及资产、用户和车辆操作。这些漏洞通常以纯文本形式记录在常见漏洞和暴露 (CVE) 数据库中；然而，安全从业人员需要有关受影响资产、弱点类型和攻击行为的结构化信息，以有效降低这些漏洞带来的风险。为此，我们评估了开放权重大型语言模型 (LLM)，用于为 CAV 相关的 CVE 生成结构化威胁信息表达 (STIX)，这是一种众所周知的表示威胁信息的结构化格式。我们构建了一个名为 CAV-STIXGen 的数据集，它将 CAV 漏洞描述映射到 STIX 域对象 (SDO)、STIX 关系对象 (SRO)、常见弱点枚举 (CWE) 和 MITRE ATT&amp;CK 技术映射。使用该数据集，我们评估了 11 个开放权重法学硕士（4B 至 120B 参数），涵盖各种提示策略和温度。单模型配置的 SDO 的 F1 分数为 0.94，SRO 的 F1 分数为 0.63，CWE 映射的 F1 分数为 0.99，而完整的 MITRE ATT&amp;CK 映射仍然具有挑战性。在多代理设置中，Gemma-4-31B 和 Codestral-22B 的 SDO 和 SRO 的 F1 分数分别为 0.91 和 0.43。最后，我们分析 CWE 和 MITRE ATT&amp;CK 共现，以识别 CAV 领域中重复出现的威胁模式，展示人工智能辅助的漏洞到 STIX 转换如何实现威胁情报自动化并优先考虑运输安全中的防御。</p>
                     
-                    <p class="deep-takeaway">要点：上下文学习通常被解释为条件推理的一种形式，其中提示指定上下文，并且模型的输出被视为相应条件分布的估计。如果这种解释成立，那么 LLM 估计应该满足基本概率恒等式。特别是，总概率定律断言，先验加权条件分布在任何有效的总体划分上聚合成总体水平边际。在这项工作中，我们调查了法学硕士的估计在多大程度上遵守了这种自我一致性原则。...</p>
+                    <p class="deep-takeaway">要点：联网和自动驾驶车辆 (CAV) 依赖于互连的软件和硬件组件，包括传感器、电子控制单元、车载信息娱乐系统和远程信息处理单元，其中的漏洞可能会危及资产、用户和车辆操作。这些漏洞通常以纯文本形式记录在常见漏洞和暴露 (CVE) 数据库中；然而，安全从业人员需要有关受影响资产、弱点类型和攻击行为的结构化信息，以有效降低这些漏洞...</p>
                     
                     <p class="deep-meta">预计阅读 2 分钟</p>
                 
+            </div>
+            
+            <div class="deep-list">
+                <h3 class="block-title">热门项目速览</h3>
+                <ul>
+                    
+                    <li>
+                        <strong>CyberSunil/LLMVault</strong> (★ 213)
+                        <p>一个故意存在漏洞的 OWASP LLM Top 10 培训平台，用于 AI 安全、提示注入、RAG 安全、代理安全和 GenAI 渗透测试。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>KlaatAI/klaatcode</strong> (★ 173)
+                        <p>终端的开源人工智能编码代理。 Claude 代码级准确性和智能模型路由——为每项任务使用正确的 AI 模型，将成本降低 10 倍。支持 Claude、GPT、Gemini、DeepSeek 等。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>holland202/Principia-Artificialis</strong> (★ 13)
+                        <p>一个开放的研究项目，探索人工思维的数学：应用于人工智能推理的信息几何、拓扑、动力系统和热力学。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>ailinone/collective-intelligence</strong> (★ 12)
+                        <p>Ailin1 是一个开源集体智能引擎，其中数以万计的人工智能模型通过数十种协调策略进行协作，应用结构化多样性和独立推理来提高可靠性、可审计性和弹性。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>MisterBooo/llm-interview-questions</strong> (★ 12)
+                        <p>100道大模型面试题与100张SVG图解，覆盖LLM、RAG、Agent、参数、推理优化和评估。</p>
+                    </li>
+                    
+                </ul>
             </div>
             
         </section>
@@ -283,7 +319,7 @@ html, body {
             <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
             <ul class="archive-stats">
                 <li>论文：3</li>
-                <li>仓库：0</li>
+                <li>仓库：10</li>
                 <li>思维模型：3</li>
                 <li>语录：5</li>
                 <li>歌词：1</li>
