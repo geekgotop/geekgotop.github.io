@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-07-20 22:55:19</span>
+        <span class="generated-time">更新于 2026-07-21 22:51:20</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Evaluating<sup class='ipa'>/ɪˈvæljuˌeɪtɪŋ/</sup> Open-Weight<sup class='ipa'>/openweight*/</sup> LLMs for Generating<sup class='ipa'>/ˈʤɛnərˌeɪtɪŋ/</sup> Structured<sup class='ipa'>/ˈstrəkʧərd/</sup> Threat Information<sup class='ipa'>/ˌɪnˌfɔrˈmeɪʃən/</sup> for Autonomous<sup class='ipa'>/ɔˈtɑnəməs/</sup> Vehicle Vulnerabilities<sup class='ipa'>/ˌvəlnərəˈbɪlɪtiz/</sup></h4>
+                            <h4 class="paper-title">Automated<sup class='ipa'>/ˈɔtəˌmeɪtɪd/</sup> Discovery<sup class='ipa'>/ˌdɪˈskəvri/</sup> Has No Universally<sup class='ipa'>/ˌjunəˈvərsəli/</sup> Superior<sup class='ipa'>/suˈpɪriər/</sup> Harness</h4>
                             <div class="paper-meta">
-                                <span class="authors">Md Erfan, Ahmed Ryan, Md Kamal Hossain Chowdhury</span>
-                                <span class="date">2026-07-17</span>
-                                <span class="categories">cs.CR | cs.AI</span>
+                                <span class="authors">Akshat Gupta, Jermaine Lei, Alexander Lu</span>
+                                <span class="date">2026-07-20</span>
+                                <span class="categories">cs.CL | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Connected and Autonomous Vehicles (CAVs) rely on interconnected software and hardware components, including sensors, Electronic Control Units, in-vehicle infotainment systems, and telematics units, where vulnerabilities can compromise assets, users, and vehicle operations. These vulnerabilities are ...</p>
+                                <p class="abstract-en">Autonomous discovery systems such as OpenEvolve and TTT-Discover are often used as general-purpose harnesses. However, in practice these are composite systems combining several design choices about archives, parent selection, exploration, and budget allocation into a single recipe. Because discovery...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">联网和自动驾驶车辆 (CAV) 依赖于互连的软件和硬件组件，包括传感器、电子控制单元、车载信息娱乐系统和远程信息处理单元，其中的漏洞可能会危及资产、用户和车辆操作。这些漏洞通常以纯文本形式记录在常见漏洞和暴露 (CVE) 数据库中；然而，安全从业人员需要有关受影响资产、弱点类型和攻击行为的结构化信息，以有效降低这些漏洞带来的风险。为此，我们评估了开放权重大型语言模型 (LLM)，用于为 CAV 相关的 CVE 生成结构化威胁信息表达 (STIX)，这是一种众所周知的表示威胁信息的结构化格式。我们构建了一个名为 CAV-STIXGen 的数据集，它将 CAV 漏洞描述映射到 STIX 域对象 (SDO)、STIX 关系对象 (SRO)、常见弱点枚举 (CWE) 和 MITRE ATT&amp;CK 技术映射。使用该数据集，我们评估了 11 个开放权重法学硕士（4B 至 120B 参数），涵盖各种提示策略和温度。单模型配置的 SDO 的 F1 分数为 0.94，SRO 的 F1 分数为 0.63，CWE 映射的 F1 分数为 0.99，而完整的 MITRE ATT&amp;CK 映射仍然具有挑战性。在多代理设置中，Gemma-4-31B 和 Codestral-22B 的 SDO 和 SRO 的 F1 分数分别为 0.91 和 0.43。最后，我们分析 CWE 和 MITRE ATT&amp;CK 共现，以识别 CAV 领域中重复出现的威胁模式，展示人工智能辅助的漏洞到 STIX 转换如何实现威胁情报自动化并优先考虑运输安全中的防御。</p>
+                                    <p class="abstract-zh">OpenEvolve 和 TTT-Discover 等自主发现系统通常用作通用用途的线束。然而，实际上，这些是复合系统，将有关档案、父选择、探索和预算分配的多种设计选择结合到一个单一的方案中。由于发现运行成本高昂且本质上是随机的，因此通常使用太少的独立试验来比较现有的工具，无法区分关键的方法改进和运行差异。我们系统地将 OpenEvolve 式的进化搜索和 TTT-Discover 搜索工具分解为其组成部分，并使用超过 310 万个 LLM 部署和重复试验统计分析系统地评估 12 个模型问题对中的 30 个预算匹配的工具。我们的结果表明，发现工具存在泛化问题：在评估的模型-问题对中，没有固定的工具具有可靠的优越性，并且 OpenEvolve 的变体通常表现不如更简单的替代方案。因此，线束选择最好被视为超参数而不是通用配方，并且应该根据特定问题和底层模型进行定制。我们还发现早期发现进度可以预测最终性能，并利用此属性提出预算匹配的自适应分配实验，该实验启动多个线束，修剪较弱的部分运行，并将计算重新分配给更强的幸存者，优于随机采样的固定线束和非自适应线束集成的承诺。总之，这些结果促使从固定的安全带选择转向以早期表现为指导的在线适应。我们发布了所有运行池，包括每个模型问题对的基线零分布，作为可重用的统计基础设施，以供未来的利用建议。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.16175v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.18235v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">When Does Muon Help Agentic Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning?<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
+                            <h4 class="paper-title">It's Not What You Say, It's How You Say It: Evaluating<sup class='ipa'>/ɪˈvæljuˌeɪtɪŋ/</sup> LLM Responses<sup class='ipa'>/rɪˈspɑnsɪz/</sup> to Expressions<sup class='ipa'>/ɪkˈsprɛʃənz/</sup> of Belief</h4>
                             <div class="paper-meta">
-                                <span class="authors">Kai Ruan, Jinghao Lin, Zihe Huang</span>
-                                <span class="date">2026-07-17</span>
-                                <span class="categories">cs.LG | cs.AI</span>
+                                <span class="authors">Kevin Du, Clara Kümpel, Michelle Wastl</span>
+                                <span class="date">2026-07-20</span>
+                                <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Muon is competitive with AdamW in large-scale pre-training, but its value for reinforcement-learning (RL) post-training remains unclear. We study vanilla Muon in sparse-reward agentic RL through matched single-seed comparisons with AdamW on ALFWorld using Qwen2.5-0.5B-Instruct. Under Group-in-Group ...</p>
+                                <p class="abstract-en">Users frequently express their beliefs to large language models (LLMs). In some situations, the LLM should accept these contextual beliefs as true. In others, they should stick to their prior knowledge. Notably, users&#39; expressions of belief (EoBs) can take linguistically diverse forms - using presup...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">Muon 在大规模预训练方面与 AdamW 具有竞争力，但其对于强化学习（RL）训练后的价值仍不清楚。我们通过使用 Qwen2.5-0.5B-Instruct 在 ALFWorld 上与 AdamW 进行匹配单种子比较来研究稀疏奖励代理强化学习中的普通 Muon。在组中组策略优化 (GiGPO) 下，仅将 Muon 应用于隐藏权重矩阵可将最终窗口验证成功率从 0.290 提高到 0.546 (+88%)；高速率 AdamW 控件不会保留更新后的成功。效果取决于优势估计器和学习率。在 3e-5 时，Muon 将 GRPO 从 0.161 提高到 0.268，而 GraphGPO 的后期窗口差距缩小到接近饱和。在 1e-5 时，GraphGPO Muon 达到 0.901，将标准化验证 AUC 从 0.399 提高到 0.556，并且在 30 次更新和 60 次更新之前分别达到 0.5 和 0.75 成功。这些探索性结果表明 Muon 可以使代理强化学习受益，并激励联合研究策略优化器、优势估计器和学习率。多种子和跨任务验证仍然开放。</p>
+                                    <p class="abstract-zh">用户经常向大型语言模型（LLM）表达他们的信念。在某些情况下，法学硕士应该接受这些背景信念为真。在其他方面，他们应该坚持他们先前的知识。值得注意的是，用户的信念表达（EoB）可以采取语言上不同的形式 - 使用预设、证据和确定性标记或不同的语气 - 每一种形式都可能对法学硕士有不同的说服力。我们引入了一种类型学来系统地评估不同的 EoB 如何影响模型是否遵循上下文与先验知识。该类型学基于四个语言动机维度：形式、证据性、认知立场和语气，涵盖 17 种细粒度类型。通过将这些 EoB 与世界知识事实配对，我们生成受控的 EoB 查询对，以隔离语言变化的影响。使用此基准，我们评估了 16 个在架构（Llama3、Qwen3、Gemma3）、规模（1B-30B 参数）和训练阶段（基础与指导）方面不同的法学硕士。我们确定了这些轴上响应行为的有意义的变化，例如，较大的模型和指令模型往往比较小的模型和基础模型不太遵循上下文。我们进一步确定了特定的 EoB，这些 EoB 在统计上比其他人更能一致地说服 LM。我们的工作揭示了语言框架如何影响法学硕士上下文整合的系统模式，并对即时工程和模型稳健性产生影响。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.16169v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.18232v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">An Exam for Active Observers<sup class='ipa'>/əbˈzərvərz/</sup></h4>
+                            <h4 class="paper-title">Simple Domain Generalization<sup class='ipa'>/ˌʤɛnərəlɪˈzeɪʃən/</sup> for Strong Pixel-Level<sup class='ipa'>/pixellevel*/</sup> Image Tampering<sup class='ipa'>/ˈtæmpərɪŋ/</sup> Detection<sup class='ipa'>/dɪˈtɛkʃən/</sup> in Modern VLMs</h4>
                             <div class="paper-meta">
-                                <span class="authors">Jiarui Zhang, Muzi Tao, Shangshang Wang</span>
-                                <span class="date">2026-07-17</span>
+                                <span class="authors">Yi Tang, Xinyi Shang, Jiacheng Cui</span>
+                                <span class="date">2026-07-20</span>
                                 <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Human vision is a closed loop: gaze is continuously redirected by intermediate hypotheses rather than a single snapshot. Decades of psychophysics and cognitive science have argued that this active observation is essential for a wide range of tasks. Whether today&#39;s multimodal large language models (M...</p>
+                                <p class="abstract-en">Modern vision-language models (VLMs) have significantly improved image generation and editing capabilities, making pixel-level image tampering detection increasingly important yet challenging under cross-model and out-of-distribution shifts. This work studies domain generalization for pixel-level im...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">人类视觉是一个闭环：视线不断地被中间假设而不是单个快照重定向。数十年的心理物理学和认知科学认为，这种主动观察对于许多任务来说都是必不可少的。当今的多模态大语言模型（MLLM）是否进行主动观察是一个实证问题，当前的视觉语言基准无法回答。我们推出了 ActiveVision，这是一个可以衡量 MLLM 主动观察的基准，包含 3 个类别的 17 项任务。任务旨在强制重复的视觉感知，而不是单一的静态描述。 Frontier MLLM 在 ActiveVision 上崩溃：我们评估的得分最高的模型，GPT-5.5，处于暴露的推理努力最高层，仅解决了 10.6% 的项目，并且在 17 项任务中的 11 项得分为零，甚至 Claude Fable 5，尽管在大多数推理和编码排行榜上名列前茅，但也仅解决了 3.5%，远远落后于三个人类参与者的平均 96.1%。此外，即使模型编写并运行自己的视觉代码，大部分差距仍然存在：此类代码在现实图像上不可靠，并且捕获其故障本身需要模型缺乏的主动感知。总之，这些结果表明，当前的 MLLM 缺乏强大的主动视觉观察、激励架构和闭合感知推理循环的训练目标。</p>
+                                    <p class="abstract-zh">现代视觉语言模型（VLM）显着提高了图像生成和编辑能力，使得像素级图像篡改检测变得越来越重要，但在跨模型和分布外变化的情况下也具有挑战性。这项工作研究了现代 VLM（如 ChatGPT、Gemini、Qwen-Image 等）中像素级图像篡改检测的域泛化，旨在学习在不同的 VLM 生成的操作分布中保持稳健的篡改定位模型。我们提出了一个基于两种实用策略的简单而有效的领域通用培训框架。首先，我们引入了一种平衡的小批量采样方案，该方案策略性地对每个小批量中的篡改图像和真实图像进行采样，防止对被操纵的伪影或干净图像先验进行有偏差的优化，并避免训练崩溃，确保每个优化步骤接收到正确的采样梯度信号。其次，我们采用简单的后期注入策略，其中检测器首先在大规模基础数据上进行训练，直到稳定收敛，然后暴露于来自新兴 VLM 分布的少量新选择的支持数据，从而提高适应性，而不会过度拟合有限的新领域。这些组件共同提供了一个简单而强大的方法，用于改进现代 VLM 中的像素级篡改定位和 OOD 鲁棒性。尽管概念简单，但我们的框架在 GPT-Images-2.0、Gemini-3.1、FLUX.2 和 Seedream 4.5 的 OOD VLM 中，平均 gIoU 和 cIoU 的相对改进分别大幅优于先前最先进的 PIXAR，分别为 26.1% 和 26.8%。我们的代码可在 https://github.com/VILA-Lab/PIXAR-DG 获取</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.16165v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.18230v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/CyberSunil/LLMVault" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">LLMVault</span>
-                                    <span class="repo-stars">⭐ 213</span>
+                                    <span class="repo-stars">⭐ 220</span>
                                 </div>
                                 <p class="repo-desc">一个故意存在漏洞的 OWASP LLM Top 10 培训平台，用于 AI 安全、提示注入、RAG 安全、代理安全和 GenAI 渗透测试。</p>
                                 <div class="repo-meta">
@@ -934,7 +934,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/KlaatAI/klaatcode" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">klaatcode</span>
-                                    <span class="repo-stars">⭐ 173</span>
+                                    <span class="repo-stars">⭐ 202</span>
                                 </div>
                                 <p class="repo-desc">终端的开源人工智能编码代理。 Claude 代码级准确性和智能模型路由——为每项任务使用正确的 AI 模型，将成本降低 10 倍。支持 Claude、GPT、Gemini、DeepSeek 等。</p>
                                 <div class="repo-meta">
@@ -945,24 +945,10 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/holland202/Principia-Artificialis" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Principia-Artificialis</span>
-                                    <span class="repo-stars">⭐ 13</span>
-                                </div>
-                                <p class="repo-desc">一个开放的研究项目，探索人工思维的数学：应用于人工智能推理的信息几何、拓扑、动力系统和热力学。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-15</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/ailinone/collective-intelligence" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">collective-intelligence</span>
-                                    <span class="repo-stars">⭐ 12</span>
+                                    <span class="repo-stars">⭐ 20</span>
                                 </div>
                                 <p class="repo-desc">Ailin1 是一个开源集体智能引擎，其中数以万计的人工智能模型通过数十种协调策略进行协作，应用结构化多样性和独立推理来提高可靠性、可审计性和弹性。</p>
                                 <div class="repo-meta">
@@ -973,10 +959,24 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/holland202/Principia-Artificialis" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Principia-Artificialis</span>
+                                    <span class="repo-stars">⭐ 14</span>
+                                </div>
+                                <p class="repo-desc">一个开放的研究项目，探索人工思维的数学：应用于人工智能推理的信息几何、拓扑、动力系统和热力学。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-15</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/MisterBooo/llm-interview-questions" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">llm-interview-questions</span>
-                                    <span class="repo-stars">⭐ 12</span>
+                                    <span class="repo-stars">⭐ 13</span>
                                 </div>
                                 <p class="repo-desc">100道大模型面试题与100张SVG图解，覆盖LLM、RAG、Agent、参数、推理优化和评估。</p>
                                 <div class="repo-meta">
@@ -1001,15 +1001,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/alirezasafaei-dev/awesome-free-llm-apis-ir" target="_blank" class="repo-link">
+                            <a href="https://github.com/Ali-hey-0/recon-modular" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">awesome-free-llm-apis-ir</span>
+                                    <span class="repo-name">recon-modular</span>
                                     <span class="repo-stars">⭐ 7</span>
                                 </div>
-                                <p class="repo-desc">波斯语优先、机器可读的免费 LLM API 目录，具有配额、OpenAI 兼容性、官方来源和伊朗访问证据。</p>
+                                <p class="repo-desc">🛡️ 由人工智能驱动的侦察框架统一了 130 多种安全工具——子域枚举、漏洞扫描、云/物联网侦察、暗网监控和区块链审计报告。 GAN驱动的子域预测，分布式执行后量子加密。专为错误赏金、红队和 DevSecOps 而构建。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">JavaScript</span>
-                                    <span class="repo-date">2026-07-14</span>
+                                    <span class="repo-lang">Shell</span>
+                                    <span class="repo-date">2026-07-16</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/wobushannes/mouthmind" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">mouthmind</span>
+                                    <span class="repo-stars">⭐ 7</span>
+                                </div>
+                                <p class="repo-desc">MouthMind 是一个用于视觉语音识别的多视图、序列到序列框架。它直接将视频帧转换为字符序列，无需教师强制进行自回归，从而实现稳健、紧急的口语单词学习。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-07-17</span>
                                 </div>
                             </a>
                         </li>
@@ -1029,29 +1043,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Ali-hey-0/recon-modular" target="_blank" class="repo-link">
+                            <a href="https://github.com/loisekk/open-mlpipe" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">recon-modular</span>
-                                    <span class="repo-stars">⭐ 5</span>
+                                    <span class="repo-name">open-mlpipe</span>
+                                    <span class="repo-stars">⭐ 6</span>
                                 </div>
-                                <p class="repo-desc">🛡️ 由人工智能驱动的侦察框架统一了 130 多种安全工具——子域枚举、漏洞扫描、云/物联网侦察、暗网监控和区块链审计报告。 GAN驱动的子域预测，分布式执行后量子加密。专为错误赏金、红队和 DevSecOps 而构建。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Shell</span>
-                                    <span class="repo-date">2026-07-16</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/AyushParkara/syntra" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">syntra</span>
-                                    <span class="repo-stars">⭐ 5</span>
-                                </div>
-                                <p class="repo-desc">用于多模型编码的开源控制平面：基于角色的路由、持久的任务状态和可检查的运行收据。</p>
+                                <p class="repo-desc">生产级自动化 ML 管道 — 从原始数据到部署模型的一条线</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-16</span>
+                                    <span class="repo-date">2026-07-17</span>
                                 </div>
                             </a>
                         </li>
