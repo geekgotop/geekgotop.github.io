@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-07-21 22:51:20</span>
+        <span class="generated-time">更新于 2026-07-22 22:57:06</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Automated<sup class='ipa'>/ˈɔtəˌmeɪtɪd/</sup> Discovery<sup class='ipa'>/ˌdɪˈskəvri/</sup> Has No Universally<sup class='ipa'>/ˌjunəˈvərsəli/</sup> Superior<sup class='ipa'>/suˈpɪriər/</sup> Harness</h4>
+                            <h4 class="paper-title">Copy Less, Ground More: Overcoming<sup class='ipa'>/ˈoʊvərˌkəmɪŋ/</sup> Repetitive<sup class='ipa'>/rɪˈpɛtɪtɪv/</sup> Copying in Long-Context<sup class='ipa'>/longcontext*/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup> via Evidence-Aware<sup class='ipa'>/evidenceaware*/</sup> Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Akshat Gupta, Jermaine Lei, Alexander Lu</span>
-                                <span class="date">2026-07-20</span>
+                                <span class="authors">Lizhe Fang, Weizhou Shen, Tianyi Tang</span>
+                                <span class="date">2026-07-21</span>
                                 <span class="categories">cs.CL | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Autonomous discovery systems such as OpenEvolve and TTT-Discover are often used as general-purpose harnesses. However, in practice these are composite systems combining several design choices about archives, parent selection, exploration, and budget allocation into a single recipe. Because discovery...</p>
+                                <p class="abstract-en">Large language models that generate step-by-step reasoning traces have achieved strong performance on complex tasks, and extending them to long-context settings has emerged as an important frontier. However, we identify a critical failure mode in this regime: \emph{repetitive copying}, where models ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">OpenEvolve 和 TTT-Discover 等自主发现系统通常用作通用用途的线束。然而，实际上，这些是复合系统，将有关档案、父选择、探索和预算分配的多种设计选择结合到一个单一的方案中。由于发现运行成本高昂且本质上是随机的，因此通常使用太少的独立试验来比较现有的工具，无法区分关键的方法改进和运行差异。我们系统地将 OpenEvolve 式的进化搜索和 TTT-Discover 搜索工具分解为其组成部分，并使用超过 310 万个 LLM 部署和重复试验统计分析系统地评估 12 个模型问题对中的 30 个预算匹配的工具。我们的结果表明，发现工具存在泛化问题：在评估的模型-问题对中，没有固定的工具具有可靠的优越性，并且 OpenEvolve 的变体通常表现不如更简单的替代方案。因此，线束选择最好被视为超参数而不是通用配方，并且应该根据特定问题和底层模型进行定制。我们还发现早期发现进度可以预测最终性能，并利用此属性提出预算匹配的自适应分配实验，该实验启动多个线束，修剪较弱的部分运行，并将计算重新分配给更强的幸存者，优于随机采样的固定线束和非自适应线束集成的承诺。总之，这些结果促使从固定的安全带选择转向以早期表现为指导的在线适应。我们发布了所有运行池，包括每个模型问题对的基线零分布，作为可重用的统计基础设施，以供未来的利用建议。</p>
+                                    <p class="abstract-zh">生成逐步推理轨迹的大型语言模型在复杂任务上取得了强大的性能，并将其扩展到长上下文设置已成为一个重要的前沿领域。然而，我们在这种情况下发现了一个关键的失败模式：\emph{重复复制}，其中模型广泛地将文本从输入复制到其推理轨迹中，而不是有效地解决问题。我们表明，这种行为在前沿长上下文法学硕士中普遍存在，并且随着上下文长度的增加而加剧。通过将每个提示分为与任务相关的关键证据和不相关的干扰上下文，我们进一步表明根本原因是基础不足：模型不加区别地复制提示，而那些未能关注关键证据的模型更有可能回答错误。受这一诊断的启发，我们提出了 GEAR（接地证据感知奖励），这是一种奖励塑造方法，通过对与关键证据重叠的接地奖励和与不相关上下文重叠的干扰惩罚来增强准确性信号。为了在自然语言数据上启用 GEAR，我们开发了一个自动化管道，可以从任意文档构建带证据注释的训练数据。我们在多个模型规模和基准上验证了 GEAR，结果显示，在基于准确性的奖励下，GEAR 比标准 RL 平均提高了 4.6 分，在较长的上下文中获得更大的收益，同时还减少了重复复制和思考长度。我们的研究结果表明，即使长上下文评估从简单的检索转向复杂的推理，相关证据的准确基础仍然是不可或缺的能力，并且还有很大的改进空间。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.18235v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.19345v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">It's Not What You Say, It's How You Say It: Evaluating<sup class='ipa'>/ɪˈvæljuˌeɪtɪŋ/</sup> LLM Responses<sup class='ipa'>/rɪˈspɑnsɪz/</sup> to Expressions<sup class='ipa'>/ɪkˈsprɛʃənz/</sup> of Belief</h4>
+                            <h4 class="paper-title">Appearance<sup class='ipa'>/əˈpɪrəns/</sup> Pointers<sup class='ipa'>/ˈpɔɪntərz/</sup> -- Multimodal<sup class='ipa'>/multimodal*/</sup> Region Control of Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Transformers<sup class='ipa'>/trænsˈfɔrmərz/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Kevin Du, Clara Kümpel, Michelle Wastl</span>
-                                <span class="date">2026-07-20</span>
-                                <span class="categories">cs.CL</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Users frequently express their beliefs to large language models (LLMs). In some situations, the LLM should accept these contextual beliefs as true. In others, they should stick to their prior knowledge. Notably, users&#39; expressions of belief (EoBs) can take linguistically diverse forms - using presup...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">用户经常向大型语言模型（LLM）表达他们的信念。在某些情况下，法学硕士应该接受这些背景信念为真。在其他方面，他们应该坚持他们先前的知识。值得注意的是，用户的信念表达（EoB）可以采取语言上不同的形式 - 使用预设、证据和确定性标记或不同的语气 - 每一种形式都可能对法学硕士有不同的说服力。我们引入了一种类型学来系统地评估不同的 EoB 如何影响模型是否遵循上下文与先验知识。该类型学基于四个语言动机维度：形式、证据性、认知立场和语气，涵盖 17 种细粒度类型。通过将这些 EoB 与世界知识事实配对，我们生成受控的 EoB 查询对，以隔离语言变化的影响。使用此基准，我们评估了 16 个在架构（Llama3、Qwen3、Gemma3）、规模（1B-30B 参数）和训练阶段（基础与指导）方面不同的法学硕士。我们确定了这些轴上响应行为的有意义的变化，例如，较大的模型和指令模型往往比较小的模型和基础模型不太遵循上下文。我们进一步确定了特定的 EoB，这些 EoB 在统计上比其他人更能一致地说服 LM。我们的工作揭示了语言框架如何影响法学硕士上下文整合的系统模式，并对即时工程和模型稳健性产生影响。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2607.18232v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Simple Domain Generalization<sup class='ipa'>/ˌʤɛnərəlɪˈzeɪʃən/</sup> for Strong Pixel-Level<sup class='ipa'>/pixellevel*/</sup> Image Tampering<sup class='ipa'>/ˈtæmpərɪŋ/</sup> Detection<sup class='ipa'>/dɪˈtɛkʃən/</sup> in Modern VLMs</h4>
-                            <div class="paper-meta">
-                                <span class="authors">Yi Tang, Xinyi Shang, Jiacheng Cui</span>
-                                <span class="date">2026-07-20</span>
+                                <span class="authors">Rahul Sajnani, Yulia Gryaditskaya, Radomír Měch</span>
+                                <span class="date">2026-07-21</span>
                                 <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Modern vision-language models (VLMs) have significantly improved image generation and editing capabilities, making pixel-level image tampering detection increasingly important yet challenging under cross-model and out-of-distribution shifts. This work studies domain generalization for pixel-level im...</p>
+                                <p class="abstract-en">Controllable image generation remains challenging for creative professionals, who often require precise regional control over materials, object identities, and spatial arrangements that cannot be reliably achieved through text prompting alone. Diffusion Transformers (DiTs) can natively ingest hetero...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">现代视觉语言模型（VLM）显着提高了图像生成和编辑能力，使得像素级图像篡改检测变得越来越重要，但在跨模型和分布外变化的情况下也具有挑战性。这项工作研究了现代 VLM（如 ChatGPT、Gemini、Qwen-Image 等）中像素级图像篡改检测的域泛化，旨在学习在不同的 VLM 生成的操作分布中保持稳健的篡改定位模型。我们提出了一个基于两种实用策略的简单而有效的领域通用培训框架。首先，我们引入了一种平衡的小批量采样方案，该方案策略性地对每个小批量中的篡改图像和真实图像进行采样，防止对被操纵的伪影或干净图像先验进行有偏差的优化，并避免训练崩溃，确保每个优化步骤接收到正确的采样梯度信号。其次，我们采用简单的后期注入策略，其中检测器首先在大规模基础数据上进行训练，直到稳定收敛，然后暴露于来自新兴 VLM 分布的少量新选择的支持数据，从而提高适应性，而不会过度拟合有限的新领域。这些组件共同提供了一个简单而强大的方法，用于改进现代 VLM 中的像素级篡改定位和 OOD 鲁棒性。尽管概念简单，但我们的框架在 GPT-Images-2.0、Gemini-3.1、FLUX.2 和 Seedream 4.5 的 OOD VLM 中，平均 gIoU 和 cIoU 的相对改进分别大幅优于先前最先进的 PIXAR，分别为 26.1% 和 26.8%。我们的代码可在 https://github.com/VILA-Lab/PIXAR-DG 获取</p>
+                                    <p class="abstract-zh">可控的图像生成对于创意专业人士来说仍然具有挑战性，他们通常需要对材料、对象身份和空间安排进行精确的区域控制，而仅通过文本提示无法可靠地实现这些控制。扩散变压器（DiT）本身可以摄取来自文本和图像的异构令牌，但它们缺乏确定这些令牌应在何处以及如何影响输出的机制。我们引入了外观指针，即紧凑的标记，通过将文本或图像输入与用户指定的掩码对齐，引导 DiT 在正确的空间位置找到正确的外观线索。外观指针由区域对应网络生成，并通过空间聚合机制进行细化，使模型能够处理多个区域描述，而不会显着增加令牌负载。我们的方法引入了第一个与模态无关的接口，用于 DiT 中的本地化多模态控制，而无需从头开始重新训练基本模型。在一系列指标中，我们的单一模型达到或超越了特定模态的最先进方法的性能，为生成图像合成中的精确、区域感知、多模态指导提供了一条简单且可扩展的路径。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.18230v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.19344v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">CodeRescue:<sup class='ipa'>/coderescue*/</sup> Budget-Calibrated<sup class='ipa'>/budgetcalibrated*/</sup> Recovery<sup class='ipa'>/rɪˈkəvəri/</sup> Routing for Coding Agents</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Qijia He, Jiayi Cheng, Chenqian Le</span>
+                                <span class="date">2026-07-21</span>
+                                <span class="categories">cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Coding agents increasingly operate in executable environments where a failed attempt produces actionable feedback rather than merely an incorrect answer. Existing cost-aware systems typically treat such failures as cascade decisions: try a cheap model first, then escalate hard cases to a stronger an...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">编码代理越来越多地在可执行环境中运行，其中失败的尝试会产生可操作的反馈，而不仅仅是错误的答案。现有的成本感知系统通常将此类失败视为级联决策：首先尝试一个便宜的模型，然后将困难案例升级为更强大和更昂贵的模型。然而，在编码中，执行反馈也可以使进一步的廉价模型恢复变得有价值，从而提出预算部署问题：代理何时应该花费更多廉价计算，何时应该升级？我们将这种故障后决策制定为异构操作上的恢复路由，并通过执行部署来训练受监督的路由器。为了使同一路由器在不断变化的预算下可用，我们添加了一个保形风险控制（CRC）层，该层无需重新训练即可选择部署时间成本损失，并在可交换性下提供边际预期成本控制。在五个编码基准测试中出现的失败中，廉价的恢复和升级表现出了互补的成功模式。校准边界改进了固定操作、仅提示路由器和二进制级联基线；在主要的 GPT-5.4-nano/GPT-5.4 设置中，一个 CRC 校准的边界点超过了始终升级的解决率，同时使用了其平均恢复成本的 35%。代码可在 https://github.com/Qijia-He/agent-budget-control 获取。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2607.19338v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -917,24 +917,10 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
-                            <a href="https://github.com/CyberSunil/LLMVault" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">LLMVault</span>
-                                    <span class="repo-stars">⭐ 220</span>
-                                </div>
-                                <p class="repo-desc">一个故意存在漏洞的 OWASP LLM Top 10 培训平台，用于 AI 安全、提示注入、RAG 安全、代理安全和 GenAI 渗透测试。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-15</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/KlaatAI/klaatcode" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">klaatcode</span>
-                                    <span class="repo-stars">⭐ 202</span>
+                                    <span class="repo-stars">⭐ 246</span>
                                 </div>
                                 <p class="repo-desc">终端的开源人工智能编码代理。 Claude 代码级准确性和智能模型路由——为每项任务使用正确的 AI 模型，将成本降低 10 倍。支持 Claude、GPT、Gemini、DeepSeek 等。</p>
                                 <div class="repo-meta">
@@ -948,7 +934,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/ailinone/collective-intelligence" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">collective-intelligence</span>
-                                    <span class="repo-stars">⭐ 20</span>
+                                    <span class="repo-stars">⭐ 59</span>
                                 </div>
                                 <p class="repo-desc">Ailin1 是一个开源集体智能引擎，其中数以万计的人工智能模型通过数十种协调策略进行协作，应用结构化多样性和独立推理来提高可靠性、可审计性和弹性。</p>
                                 <div class="repo-meta">
@@ -959,29 +945,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/holland202/Principia-Artificialis" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Principia-Artificialis</span>
-                                    <span class="repo-stars">⭐ 14</span>
-                                </div>
-                                <p class="repo-desc">一个开放的研究项目，探索人工思维的数学：应用于人工智能推理的信息几何、拓扑、动力系统和热力学。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-15</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/MisterBooo/llm-interview-questions" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">llm-interview-questions</span>
-                                    <span class="repo-stars">⭐ 13</span>
+                                    <span class="repo-stars">⭐ 14</span>
                                 </div>
                                 <p class="repo-desc">100道大模型面试题与100张SVG图解，覆盖LLM、RAG、Agent、参数、推理优化和评估。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
                                     <span class="repo-date">2026-07-19</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/jesseoue/opencode-configs" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">opencode-configs</span>
+                                    <span class="repo-stars">⭐ 13</span>
+                                </div>
+                                <p class="repo-desc">OpenConfig — 最好的 OpenCode + oh-my-openagent (OmO) + OpenRouter AI 编码代理配置。西西弗斯·克劳德·GPT·DeepSeek·双子座·MCP·Context7·Exa。 oc安装→医生→启动。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Shell</span>
+                                    <span class="repo-date">2026-07-21</span>
                                 </div>
                             </a>
                         </li>
@@ -1004,12 +990,26 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/Ali-hey-0/recon-modular" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">recon-modular</span>
-                                    <span class="repo-stars">⭐ 7</span>
+                                    <span class="repo-stars">⭐ 8</span>
                                 </div>
                                 <p class="repo-desc">🛡️ 由人工智能驱动的侦察框架统一了 130 多种安全工具——子域枚举、漏洞扫描、云/物联网侦察、暗网监控和区块链审计报告。 GAN驱动的子域预测，分布式执行后量子加密。专为错误赏金、红队和 DevSecOps 而构建。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Shell</span>
                                     <span class="repo-date">2026-07-16</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/KGupta171025/KALKI-1.5" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">KALKI-1.5</span>
+                                    <span class="repo-stars">⭐ 8</span>
+                                </div>
+                                <p class="repo-desc">KALKI AI（Krishna Artificial Lattice Keystone Intelligence）是一种企业智能操作系统（IOS），结合了 LLM、VLM、自主多代理、混合 RAG 和防御性网络安全。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-21</span>
                                 </div>
                             </a>
                         </li>
@@ -1029,15 +1029,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/SkyportalAi/skyportalai" target="_blank" class="repo-link">
+                            <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">skyportalai</span>
-                                    <span class="repo-stars">⭐ 7</span>
+                                    <span class="repo-name">ai-hall-of-fame</span>
+                                    <span class="repo-stars">⭐ 6</span>
                                 </div>
-                                <p class="repo-desc">SkyPortal SDK 和 CLI - 开源</p>
+                                <p class="repo-desc">精心策划、来源良好的记录案例集合，其中人工智能在数学、物理、化学、生物学、医学等领域做出了真正非凡的贡献。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-15</span>
+                                    <span class="repo-date">2026-07-21</span>
                                 </div>
                             </a>
                         </li>
