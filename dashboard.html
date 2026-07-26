@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-07-25 22:51:24</span>
+        <span class="generated-time">更新于 2026-07-26 22:55:41</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,7 +846,58 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        <p class="empty-state">暂无论文数据</p>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">3D-Aware VLMs with Implicit<sup class='ipa'>/ˌɪmˈplɪsət/</sup> and Explicit<sup class='ipa'>/ɪkˈsplɪsət/</sup> Geometries<sup class='ipa'>/ʤiˈɑmətriz/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Wenhao Li, Xueying Jiang, Quanhao Qian</span>
+                                <span class="date">2026-07-23</span>
+                                <span class="categories">cs.CV | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Despite rapid progress, most existing vision-language models (VLMs) built from 2D visual inputs often struggle when handling various 3D tasks that require fine-grained spatial understanding and reasoning. To bridge this gap, we present VLM-IE3D, a unified framework that enhances the 3D spatial aware...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">尽管进展迅速，但大多数现有的基于 2D 视觉输入构建的视觉语言模型 (VLM) 在处理需要细粒度空间理解和推理的各种 3D 任务时常常遇到困难。为了弥补这一差距，我们提出了 VLM-IE3D，这是一个统一的框架，通过为 VLM 配备从 RGB 视频中学习的隐式和显式 3D 几何图形来增强 VLM 的 3D 空间感知。我们的 VLM-IE3D 引入了隐式几何标记 (IGT)，可从输入视频中捕获高级几何先验，以及互补的显式几何标记 (EGT)，可根据重建的 3D 属性对详细几何结构进行编码。最重要的是，VLM-IE3D 配备了 3D 感知适配器，可有效地将两种类型的几何表示与 2D 视觉提示融合在一起。这种纯 RGB 设计注入了强大的 3D 归纳偏差，可实现细粒度的空间理解和推理，而无需任何额外的 3D 输入。大量实验表明，VLM-IE3D 在各种 3D 任务中始终如一地实现了卓越的性能，包括 3D 视频检测、3D 视觉基础、3D 密集字幕和空间推理。代码和模型可在 https://github.com/Vegetebird/VLM-IE3D 获取。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2607.21595v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">GraphVid:<sup class='ipa'>/graphvid*/</sup> Interactive<sup class='ipa'>/ˌɪnərˈæktɪv/</sup> Graph-Controllable<sup class='ipa'>/graphcontrollable*/</sup> Video Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Vedant Shah, Onkar Susladkar, Tushar Prakash</span>
+                                <span class="date">2026-07-23</span>
+                                <span class="categories">cs.CV | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Controllable video generation remains challenging due to the difficulty of specifying precise multi-object interactions using text prompts or motion-control inputs that primarily constrain pixel movement. In practice, trajectory-based control often requires users to draw accurate tracks for multiple...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">由于使用主要限制像素移动的文本提示或运动控制输入来指定精确的多对象交互非常困难，因此可控视频生成仍然具有挑战性。在实践中，基于轨迹的控制通常需要用户为多个对象绘制准确的轨迹，这随着场景复杂性的缩放而变化，并且在遮挡或重叠的情况下变得模糊。为了实现灵活而精确的多主体控制，我们引入了 $\textbf{GraphVid}$，这是一种图条件图像到视频生成模型，可通过结构化交互图实现交互控制。我们进一步策划了$\textbf{GraphVid-Bench}$，这是一个以交互为中心的大规模视频数据集，具有结构化关系注释，可以训练交互感知视频生成模型。尽管与之前的运动控制方法相比，使用的训练数据和可训练参数要少得多，但 GraphVid 仍提供了强大的可控性和视频质量。与Motion-I2V相比，GraphVid将FID降低高达39.9%，将FVD降低37.6%，同时提高PSNR（9.87=&gt;15.98）和SSIM（0.38=&gt;0.61）。我们的结果凸显了结构化语义接口作为可控视频生成的强大范例的潜力。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2607.21580v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Barzilai-Borwein<sup class='ipa'>/barzilaiborwein*/</sup> Fails Superlinear<sup class='ipa'>/superlinear*/</sup> Convergence<sup class='ipa'>/kənˈvərʤəns/</sup> on an Open Set of Quadratics<sup class='ipa'>/quadratics*/</sup> for Every Dimension<sup class='ipa'>/dɪˈmɛnʃən/</sup> $n\geq 4$</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Dawei Li, Xiaotian Jiang, Mingyi Hong</span>
+                                <span class="date">2026-07-23</span>
+                                <span class="categories">math.OC | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Barzilai--Borwein (BB) method has shown strong practical performance in continuous optimization, yet its convergence dynamics remains poorly understood. In particular, a central unresolved question is whether BB converges superlinearly for almost every strictly convex quadratic problem and initializ...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">Barzilai--Borwein (BB) 方法在连续优化方面显示出强大的实用性能，但其收敛动力学仍然知之甚少。特别是，一个未解决的核心问题是 BB 是否对于几乎每个严格凸二次问题和初始化都超线性收敛。我们对这个问题给出否定的答案。具体来说，对于每个有限维 $n\geq4$，我们构造一个非空开集，即正勒贝格测度，严格凸二次问题族和长 Barzilai-Borwein 方法 (BB1) 收敛但不能收敛根超线性的初始点。更准确地说，使用显式常数 $ρ_{\min}=10^{-6},ρ_{\max}=0.61$，梯度的每个谱分量都以相应的几何序列上下为界。因此，误差的梯度范数和能量范数满足具有相同速率的两侧几何估计，而目标间隙满足具有平方速率的相应估计。特别是，所有三个量都受几何序列限制，排除了超线性收敛。该结构非常重要，基于计算机辅助的非共振证明，吸引了第四维投影 BB 动力学的七个周期。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2607.21579v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
                     
                 </div>
             </div>
@@ -869,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/ailinone/collective-intelligence" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">collective-intelligence</span>
-                                    <span class="repo-stars">⭐ 119</span>
+                                    <span class="repo-stars">⭐ 122</span>
                                 </div>
                                 <p class="repo-desc">Ailin1 是一个开源集体智能引擎，其中数以万计的人工智能模型通过数十种协调策略进行协作，应用结构化多样性和独立推理来提高可靠性、可审计性和弹性。</p>
                                 <div class="repo-meta">
@@ -883,7 +934,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/prayangshuuu/hummingbird" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">hummingbird</span>
-                                    <span class="repo-stars">⭐ 42</span>
+                                    <span class="repo-stars">⭐ 43</span>
                                 </div>
                                 <p class="repo-desc">hummingbird 是一个轻量级、零依赖运行时，适用于大规模开源专家混合 (MoE) 语言模型。它将 SSD、RAM 和 VRAM 统一到单个智能内存层次结构中，从而能够在消费类硬件上进行 GPT-OSS 120B、GLM、DeepSeek、Qwen 等模型的推理</p>
                                 <div class="repo-meta">
@@ -897,7 +948,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/jesseoue/opencode-configs" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">opencode-configs</span>
-                                    <span class="repo-stars">⭐ 22</span>
+                                    <span class="repo-stars">⭐ 24</span>
                                 </div>
                                 <p class="repo-desc">OpenConfig — 最好的 OpenCode + oh-my-openagent (OmO) + OpenRouter AI 编码代理配置。西西弗斯·克劳德·GPT·DeepSeek·双子座·MCP·Context7·Exa。 oc安装→医生→启动。</p>
                                 <div class="repo-meta">
@@ -908,24 +959,10 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/MisterBooo/llm-interview-questions" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">llm-interview-questions</span>
-                                    <span class="repo-stars">⭐ 17</span>
-                                </div>
-                                <p class="repo-desc">100道大模型面试题与100张SVG图解，覆盖LLM、RAG、Agent、参数、推理优化和评估。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-07-19</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">facial-recognition-pipeline</span>
-                                    <span class="repo-stars">⭐ 17</span>
+                                    <span class="repo-stars">⭐ 22</span>
                                 </div>
                                 <p class="repo-desc">python笔记本人脸识别</p>
                                 <div class="repo-meta">
@@ -936,10 +973,24 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/Morteza-Asadi-Shalmaiy/antispoofing-fr" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">antispoofing-fr</span>
+                                    <span class="repo-stars">⭐ 20</span>
+                                </div>
+                                <p class="repo-desc">python笔记本反欺骗面部识别</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Jupyter Notebook</span>
+                                    <span class="repo-date">2026-07-24</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/Morteza-Asadi-Shalmaiy/Superres-fr" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Superres-fr</span>
-                                    <span class="repo-stars">⭐ 16</span>
+                                    <span class="repo-stars">⭐ 18</span>
                                 </div>
                                 <p class="repo-desc">python笔记本超分辨率</p>
                                 <div class="repo-meta">
@@ -964,34 +1015,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Morteza-Asadi-Shalmaiy/antispoofing-fr" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">antispoofing-fr</span>
-                                    <span class="repo-stars">⭐ 15</span>
-                                </div>
-                                <p class="repo-desc">python笔记本反欺骗面部识别</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Jupyter Notebook</span>
-                                    <span class="repo-date">2026-07-24</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/ChaoYue0307/awesome-graph-engineering" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">awesome-graph-engineering</span>
-                                    <span class="repo-stars">⭐ 8</span>
-                                </div>
-                                <p class="repo-desc">🕸️ 用于图结构多智能体系统和可编程人工智能智能体组织的现场指南、开放数据集和交互式图集。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-19</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/KGupta171025/KALKI-1.5" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">KALKI-1.5</span>
@@ -1001,6 +1024,34 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-07-21</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ai-hall-of-fame</span>
+                                    <span class="repo-stars">⭐ 7</span>
+                                </div>
+                                <p class="repo-desc">精心策划、来源良好的记录案例集合，其中人工智能在数学、物理、化学、生物学、医学等领域做出了真正非凡的贡献。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-21</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/behramkendra/korugan" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">korugan</span>
+                                    <span class="repo-stars">⭐ 7</span>
+                                </div>
+                                <p class="repo-desc">由 AI 驱动的开源边缘安全平台，适用于 Cloudflare、CDN、DNS、WAF 和基础设施自动化。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Go</span>
+                                    <span class="repo-date">2026-07-24</span>
                                 </div>
                             </a>
                         </li>

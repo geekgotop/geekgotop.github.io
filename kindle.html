@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-07-25 22:51:24</p>
+            <p class="hero-meta">构建时间：2026-07-26 22:55:41</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -193,22 +193,22 @@ html, body {
             <div class="theme-card">
                 <p class="theme-name">今日主题：复盘整理日</p>
                 <p class="theme-focus">优先看 Archive 区：回顾本周输入并做摘要。</p>
-                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
+                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
-                        <p class="quick-meta">— 荀子</p>
+                        <p class="quick-main">博观而约取，厚积而薄发。</p>
+                        <p class="quick-meta">— 苏轼</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">ailinone/collective-intelligence</p>
-                        <p class="quick-meta">★ 119</p>
+                        <p class="quick-meta">★ 122</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: TypeScript</p>
                     
                 </article>
@@ -217,9 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 asynchronous，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 deprecated，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 ailinone/collective-intelligence，记录 1 个可借鉴实现点。</li>
+                        
+                        <li>深读: 阅读论文《3D-Aware VLMs with Implicit and Explicit Geometries》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -232,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">asynchronous <span>/eɪˈsɪŋkrənəs/</span></p>
-                    <p class="study-meaning">adj. 异步的</p>
+                    <p class="study-word">deprecated <span>/ˈdeprəkeɪtɪd/</span></p>
+                    <p class="study-meaning">adj. 已弃用的；不推荐的</p>
                     
-                    <p class="study-sentence">Asynchronous programming allows the program to continue executing while waiting for I/O.</p>
-                    <p class="study-sentence-zh">异步编程允许程序在等待 I/O 时继续执行。</p>
+                    <p class="study-sentence">This method is deprecated and will be removed in the next version.</p>
+                    <p class="study-sentence-zh">此方法已弃用，将在下一版本中移除。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -268,7 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="quick-empty">暂无论文数据</p>
+                    <p class="deep-title">3D-Aware VLMs with Implicit and Explicit Geometries</p>
+                    <p class="deep-abstract">尽管进展迅速，但大多数现有的基于 2D 视觉输入构建的视觉语言模型 (VLM) 在处理需要细粒度空间理解和推理的各种 3D 任务时常常遇到困难。为了弥补这一差距，我们提出了 VLM-IE3D，这是一个统一的框架，通过为 VLM 配备从 RGB 视频中学习的隐式和显式 3D 几何图形来增强 VLM 的 3D 空间感知。我们的 VLM-IE3D 引入了隐式几何标记 (IGT)，可从输入视频中捕获高级几何先验，以及互补的显式几何标记 (EGT)，可根据重建的 3D 属性对详细几何结构进行编码。最重要的是，VLM-IE3D 配备了 3D 感知适配器，可有效地将两种类型的几何表示与 2D 视觉提示融合在一起。这种纯 RGB 设计注入了强大的 3D 归纳偏差，可实现细粒度的空间理解和推理，而无需任何额外的 3D 输入。大量实验表明，VLM-IE3D 在各种 3D 任务中始终如一地实现了卓越的性能，包括 3D 视频检测、3D 视觉基础、3D 密集字幕和空间推理。代码和模型可在 https://github.com/Vegetebird/VLM-IE3D 获取。</p>
+                    
+                    <p class="deep-takeaway">要点：尽管进展迅速，但大多数现有的基于 2D 视觉输入构建的视觉语言模型 (VLM) 在处理需要细粒度空间理解和推理的各种 3D 任务时常常遇到困难。为了弥补这一差距，我们提出了 VLM-IE3D，这是一个统一的框架，通过为 VLM 配备从 RGB 视频中学习的隐式和显式 3D 几何图形来增强 VLM 的 3D 空间感知。我...</p>
+                    
+                    <p class="deep-meta">预计阅读 1 分钟</p>
                 
             </div>
             
@@ -277,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>ailinone/collective-intelligence</strong> (★ 119)
+                        <strong>ailinone/collective-intelligence</strong> (★ 122)
                         <p>Ailin1 是一个开源集体智能引擎，其中数以万计的人工智能模型通过数十种协调策略进行协作，应用结构化多样性和独立推理来提高可靠性、可审计性和弹性。</p>
                     </li>
                     
                     <li>
-                        <strong>prayangshuuu/hummingbird</strong> (★ 42)
+                        <strong>prayangshuuu/hummingbird</strong> (★ 43)
                         <p>hummingbird 是一个轻量级、零依赖运行时，适用于大规模开源专家混合 (MoE) 语言模型。它将 SSD、RAM 和 VRAM 统一到单个智能内存层次结构中，从而能够在消费类硬件上进行 GPT-OSS 120B、GLM、DeepSeek、Qwen 等模型的推理</p>
                     </li>
                     
                     <li>
-                        <strong>jesseoue/opencode-configs</strong> (★ 22)
+                        <strong>jesseoue/opencode-configs</strong> (★ 24)
                         <p>OpenConfig — 最好的 OpenCode + oh-my-openagent (OmO) + OpenRouter AI 编码代理配置。西西弗斯·克劳德·GPT·DeepSeek·双子座·MCP·Context7·Exa。 oc安装→医生→启动。</p>
                     </li>
                     
                     <li>
-                        <strong>MisterBooo/llm-interview-questions</strong> (★ 17)
-                        <p>100道大模型面试题与100张SVG图解，覆盖LLM、RAG、Agent、参数、推理优化和评估。</p>
+                        <strong>Morteza-Asadi-Shalmaiy/facial-recognition-pipeline</strong> (★ 22)
+                        <p>python笔记本人脸识别</p>
                     </li>
                     
                     <li>
-                        <strong>Morteza-Asadi-Shalmaiy/facial-recognition-pipeline</strong> (★ 17)
-                        <p>python笔记本人脸识别</p>
+                        <strong>Morteza-Asadi-Shalmaiy/antispoofing-fr</strong> (★ 20)
+                        <p>python笔记本反欺骗面部识别</p>
                     </li>
                     
                 </ul>
@@ -311,7 +318,7 @@ html, body {
             <p class="zone-subtitle">复盘与回顾入口</p>
             <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
             <ul class="archive-stats">
-                <li>论文：0</li>
+                <li>论文：3</li>
                 <li>仓库：10</li>
                 <li>思维模型：3</li>
                 <li>语录：5</li>
