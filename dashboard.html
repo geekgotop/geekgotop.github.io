@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-07-27 22:56:33</span>
+        <span class="generated-time">更新于 2026-07-28 22:54:23</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">SM4RT: Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> Structured<sup class='ipa'>/ˈstrəkʧərd/</sup> Motion Geometry<sup class='ipa'>/ʤiˈɑmətri/</sup> for 4D Reconstruction<sup class='ipa'>/ˌrikənˈstrəkʃən/</sup></h4>
+                            <h4 class="paper-title">ClinFusion:<sup class='ipa'>/clinfusion*/</sup> A Vision-Centric<sup class='ipa'>/visioncentric*/</sup> Multimodal<sup class='ipa'>/multimodal*/</sup> LLM System for Holistic<sup class='ipa'>/hoʊˈlɪstɪk/</sup> Medical Understanding<sup class='ipa'>/ˌəndərˈstændɪŋ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Shing Ho J. Lin, Wenzhao Zheng, Dong Zhuo</span>
-                                <span class="date">2026-07-24</span>
+                                <span class="authors">Hangjie Yuan, Yichen Qian, Zhiwei Tang</span>
+                                <span class="date">2026-07-27</span>
                                 <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Geometry Foundation Models (GFMs) have substantially advanced monocular 3D reconstruction, yet extending this capability to 4D dynamic understanding remains a fundamental challenge. Most existing motion perception methods (e.g., sparse tracking, dense point-wise flow) treat motion as independent poi...</p>
+                                <p class="abstract-en">Multimodal large language models (MLLMs) hold immense potential to revolutionize clinical practice, yet deploying them in the medical domain is fundamentally a vision-centric challenge: models must absorb knowledge from heterogeneous 2D and 3D medical images, and evaluation protocols must align with...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">几何基础模型 (GFM) 具有相当先进的单目 3D 重建能力，但将这种能力扩展到 4D 动态理解仍然是一个基本挑战。大多数现有的运动感知方法（例如，稀疏跟踪、密集的逐点流）将运动视为独立的逐点位移，忽略了物理运动的结构化本质。然而，现实世界的物体通常遵循刚体运动学，因此点通常集体移动，而不是孤立的。运动本身具有几何结构：物理对象经历一组由 SE(3) 控制的刚体变换，而不是非结构化的逐点位移。基于这一见解，我们提出了 SM4RT，一种用于端到端 3D 重建和结构化运动感知的结构化运动 4D 重建变压器。 SM4RT 引入了运动结构来表示场景动态，其中场景运动被分解为一组紧凑的运动基础，每个运动基础表示为 SE(3) 中 6D 扭曲的时间序列。然后，通过这些基础上的稀疏、分时的每像素分配权重来恢复密集的场景运动，确保同一对象上的点共享共同的刚体运动轨迹。 SM4RT 引入了并行运动几何编码器和解码器，可在单目 RGB 视频的单次前向传递中联合推断 3D 几何、世界坐标运动和场景运动结构。 SM4RT 实现了强大的运动重建性能，同时保留了场景运动的几何结构。</p>
+                                    <p class="abstract-zh">多模态大语言模型 (MLLM) 具有彻底改变临床实践的巨大潜力，但将其部署在医学领域从根本上来说是一个以视觉为中心的挑战：模型必须从异构 2D 和 3D 医学图像中吸收知识，评估协议必须与放射科医生的临床实践保持一致，并提供准确、细粒度和事实驱动的评估。在本文中，我们介绍了 ClinFusion，这是一种以视觉为中心的 MLLM，旨在实现整体医学理解，系统地解决这些局限性。我们提出了一种组合级联视觉编码器架构，具有级联空间感知局部融合算子，可在融合编码器内统一不同的 2D 和本机 3D 医学图像理解。我们进一步介绍了一个基于视觉的评估框架，包括用于指令遵循评估的 MedIF-Bench 和用于临床对齐和事实驱动的报告生成评估的基于兴趣区域的方法。我们表明，ClinFusion 在一套全面的 2D 和 3D 多模态医疗基准测试中树立了新的最先进水平——涵盖视觉问答、报告生成和指令跟踪——以及文本医疗任务，在 24 个基准测试中的 20 个上优于领先的开源医疗 MLLM（\textit{e.g.}、Hulu-Med、Lingshu），并展示了比强大的专有模型更好的多模态功能，例如GPT-5.2 和 Gemini-3-Flash 在 16 个基准测试中的 13 个上运行，并且可以通过使用代理工具进一步增强检索增强和工具辅助的临床工作流程。由委员会认证的放射科医生进行的盲法评估证实，ClinFusion 生成了排名最高的报告，并验证了我们的基于投资回报率的指标在所有检查的自动评估指标中与专家判断的相关性最强。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.22534v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.24743v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Skill Self-Play:<sup class='ipa'>/selfplay*/</sup> Pushing the Frontier<sup class='ipa'>/frənˈtɪr/</sup> of LLM Capability<sup class='ipa'>/ˌkeɪpəˈbɪləti/</sup> with Co-Evolving<sup class='ipa'>/coevolving*/</sup> Skills</h4>
+                            <h4 class="paper-title">Rethinking<sup class='ipa'>/riˈθɪŋkɪŋ/</sup> Classifier-Free<sup class='ipa'>/classifierfree*/</sup> Guidance<sup class='ipa'>/ˈgaɪdəns/</sup> in On-Policy<sup class='ipa'>/onpolicy*/</sup> Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Siyuan Huang, Pengyu Cheng, Haotian Liu</span>
-                                <span class="date">2026-07-24</span>
-                                <span class="categories">cs.CL</span>
+                                <span class="authors">Bingnan Li, Haozhe Wang, Haozhong Xiong</span>
+                                <span class="date">2026-07-27</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">LLM training is shifting from manual design and annotation to interaction-driven self-evolution. However, existing self-evolutionary methods face a fundamental dilemma between task diversity and verification reliability: environment-bound methods obtain precise feedback but confine learning to narro...</p>
+                                <p class="abstract-en">On-policy distillation (OPD) adapts diffusion models by querying a teacher along trajectories generated by the current student, but how it should behave under classifier-free guidance (CFG), a default component of modern diffusion systems, remains poorly understood. Existing OPD methods naturally ex...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">LLM培训正在从手动设计和注释转向交互驱动的自我进化。然而，现有的自进化方法在任务多样性和验证可靠性之间面临着根本性的困境：受环境限制的方法获得精确的反馈，但将学习限制在狭窄的领域，而开放式的自生成扩大了任务空间，但缺乏可靠的验证，导致误导性奖励污染训练循环。我们将代理技能视为调和这种紧张关系的强大中间立场：每种技能都确保在特定场景中深入、可验证的执行，而跨技能的动态路由则保持开放式任务的多样性。利用这一见解，我们引入了技能自我对弈（Skill-SP），这是一个由提议者、求解器和动态技能控制器组成的共同进化框架。这些组件通过强化学习循环进行编排，在连续的自我游戏循环中共同进化：提议者根据动态采样的技能生成具有挑战性的任务；求解器探索候选解决方案以突破其能力边界；技能控制器收集执行反馈来更新和扩展技能库。这种交互式共同进化有效地弥合了结构化验证和开放式探索之间的差距。对工具使用和推理基准的实证评估表明，Skill-SP 作为强大的进化引擎，持续推动有能力的骨干网的性能上限，同时促进最初错位模型的惊人转变。我们的代码可在 https://github.com/Qwen-Applications/skill-self-play 获取。</p>
+                                    <p class="abstract-zh">在策略蒸馏（OPD）通过沿着当前学生生成的轨迹查询教师来调整扩散模型，但它在无分类器指导（CFG）（现代扩散系统的默认组件）下应该如何表现仍然知之甚少。现有的 OPD 方法自然地将速度匹配扩展到 CFG 组合预测，直接匹配教师和学生引导的速度。我们表明，该目标在分支级别上未被充分识别：正分支错误和负分支错误可以在引导预测中进行补偿。通过两个对比案例，我们发现朴素匹配在共享负条件下仍然有效，其中两个分支错误共同减少。然而，当模型的原生 CFG 模式在教师的负分支中保留学生无法获得的特权信息时，这种联合约简就会失效，并且组合目标会引发对抗性分支错误动态，减少正分支错误，同时增加负分支错误。我们将这种故障模式称为负分支不对称 (NBA)。为了解决 NBA 问题，我们引入了正方向匹配 (PDM)，这是一种分支感知 OPD 目标，它分别约束正预测和 CFG 条件方向。我们将 PDM 应用于从稠密到稀疏的视频控制，其中朴素引导匹配对推理引导尺度高度敏感，而分支感知监督可以实现更稳健、更有效的知识转移。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.22529v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.24731v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Explainable<sup class='ipa'>/ɪkˈspleɪnəbəl/</sup> Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> for assisting<sup class='ipa'>/əˈsɪstɪŋ/</sup> Air Traffic Controllers<sup class='ipa'>/kənˈtroʊlərz/</sup></h4>
+                            <h4 class="paper-title">KANEx: Translating<sup class='ipa'>/ˈtrænsˌleɪtɪŋ/</sup> Kolmogorov-Arnold<sup class='ipa'>/kolmogorovarnold*/</sup> Networks'<sup class='ipa'>/ˈnɛtˌwərks/</sup> Interpretability<sup class='ipa'>/interpretability*/</sup> to Medical Explainability<sup class='ipa'>/explainability*/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Anduel Mehmeti, Gabriella Gigante, Salvatore Venticinque</span>
-                                <span class="date">2026-07-24</span>
-                                <span class="categories">cs.AI</span>
+                                <span class="authors">Krithi Shailya, Ananya Lakshmi Ravi, Venkatanathan K. V.</span>
+                                <span class="date">2026-07-27</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">To effectively integrate AI into high-stakes, critical environments such as healthcare, autonomous driving, and aviation--and to advance toward higher levels of automation and seamless human-AI collaboration--building trust in AI-driven solutions is essential. Trust, in turn, is closely linked to th...</p>
+                                <p class="abstract-en">Computer vision models have become highly effective for medical applications, yet their black-box nature continues to undermine clinician trust. In clinical workflows, chest X-ray classifiers are increasingly paired with Vision-Language Models (VLMs) to generate natural-language explanations. Howeve...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">为了有效地将人工智能集成到医疗保健、自动驾驶和航空等高风险、关键环境中，并迈向更高水平的自动化和无缝人机协作，建立对人工智能驱动解决方案的信任至关重要。反过来，信任与人工智能系统的可解释性密切相关。人工智能在各个领域的快速发展凸显了建立信任的挑战，当人工智能应用于深度学习时，人们对人工智能可解释性的兴趣日益浓厚。在此背景下，本工作旨在探索可解释性技术在强化学习（RL）算法中的应用，特别是在空中交通管制（ATC）的安全关键领域。使用简化的 ATC 环境作为初始测试平台，使用强化学习算法训练智能代理，以做出避开禁飞区的替代飞行路线的决策。作为一种初步的可解释性方法，采用显着性图，提供对对代理决策过程影响最显着的输入特征的洞察。</p>
+                                    <p class="abstract-zh">计算机视觉模型在医疗应用中已经变得非常有效，但其黑匣子性质继续破坏临床医生的信任。在临床工作流程中，胸部 X 射线分类器越来越多地与视觉语言模型 (VLM) 配对以生成自然语言解释。然而，这些系统增加了语言的流畅性，却没有解决视觉模型潜在的不透明性。随着柯尔莫哥洛夫-阿诺德网络（KAN）的出现，其基于样条的组件提供了本质上可解释的功能单元，我们研究是否可以利用这种架构透明度来产生更值得信赖的文本解释。我们推出 KANEx，这是第一个利用 KAN 的符号透明度来支持 VLM 推理的框架。这种可解释性还使得设计 KAN-Map 成为可能，这是一种直接源自 KAN 模型而不是梯度近似的新型热图生成方法。我们将这些基础上下文输入下游 VLM 以增强可解释性。以 MIMIC-CXR 数据集为基准，我们证明了具有 ResNet/ViT 基线的基于 KAN 的架构展示了改进的语义相似性，同时产生了更加忠实的显着图。 KAN 架构将视觉定位和下游推理质量提高了 10%。我们的研究结果表明，将语言解释和视觉归因建立在数学可解释的单位中是迈向值得信赖的医疗人工智能的必要步骤。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.22525v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.24730v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -915,7 +915,147 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <ul class="repo-list">
                     
-                        <p class="empty-state">暂无仓库数据</p>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">facial-recognition-pipeline</span>
+                                    <span class="repo-stars">⭐ 28</span>
+                                </div>
+                                <p class="repo-desc">python笔记本人脸识别</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Jupyter Notebook</span>
+                                    <span class="repo-date">2026-07-23</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Morteza-Asadi-Shalmaiy/antispoofing-fr" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">antispoofing-fr</span>
+                                    <span class="repo-stars">⭐ 23</span>
+                                </div>
+                                <p class="repo-desc">python笔记本反欺骗面部识别</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Jupyter Notebook</span>
+                                    <span class="repo-date">2026-07-24</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/lucidrains/robo_ttt" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">robo_ttt</span>
+                                    <span class="repo-stars">⭐ 20</span>
+                                </div>
+                                <p class="repo-desc">Yunfan Jiang等人提出的RoboTTT的实现。斯坦福大学和英伟达的</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-27</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Morteza-Asadi-Shalmaiy/Superres-fr" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Superres-fr</span>
+                                    <span class="repo-stars">⭐ 15</span>
+                                </div>
+                                <p class="repo-desc">python笔记本超分辨率</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Jupyter Notebook</span>
+                                    <span class="repo-date">2026-07-24</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Morteza-Asadi-Shalmaiy/Re-Identification-fr" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Re-Identification-fr</span>
+                                    <span class="repo-stars">⭐ 14</span>
+                                </div>
+                                <p class="repo-desc">python笔记本ReId项目</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Jupyter Notebook</span>
+                                    <span class="repo-date">2026-07-24</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/behramkendra/korugan" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">korugan</span>
+                                    <span class="repo-stars">⭐ 7</span>
+                                </div>
+                                <p class="repo-desc">由 AI 驱动的开源边缘安全平台，适用于 Cloudflare、CDN、DNS、WAF 和基础设施自动化。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Go</span>
+                                    <span class="repo-date">2026-07-24</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/GodSeason/sharedbrain" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">sharedbrain</span>
+                                    <span class="repo-stars">⭐ 5</span>
+                                </div>
+                                <p class="repo-desc">用于持久人工智能、可审计代理、分布式有用工作和未来去中心化智能经济的实验性开源基础设施。寻求贡献者。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">JavaScript</span>
+                                    <span class="repo-date">2026-07-26</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/david-eze/Sonar-Scanner" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Sonar-Scanner</span>
+                                    <span class="repo-stars">⭐ 5</span>
+                                </div>
+                                <p class="repo-desc">ESP32-S3 上的 AI 增强型声纳扫描仪，具有 EKF 滤波、ML 对象分类和实时占用网格可视化功能。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-22</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/sumitsingh4411/ai-roadmap" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ai-roadmap</span>
+                                    <span class="repo-stars">⭐ 5</span>
+                                </div>
+                                <p class="repo-desc">从零开始学习 AI 的免费开源路线图 — 从第一行 Python 到发布 LLM 应用程序的 34 节课程。在网络上阅读或直接从 Markdown 中阅读。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Astro</span>
+                                    <span class="repo-date">2026-07-25</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/EthanYixuanMi/AI-Assisted-6G-Indoor-Localization-Digital-Twin" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">AI-Assisted-6G-Indoor-Localization-Digital-Twin</span>
+                                    <span class="repo-stars">⭐ 4</span>
+                                </div>
+                                <p class="repo-desc">室内定位数字孪生框架，用于通过模拟、可视化和回放来评估定位算法 - 无需物理硬件。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-23</span>
+                                </div>
+                            </a>
+                        </li>
+                        
                     
                 </ul>
             </section>

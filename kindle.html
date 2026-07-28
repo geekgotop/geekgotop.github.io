@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-07-27 22:56:33</p>
+            <p class="hero-meta">构建时间：2026-07-28 22:54:23</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,23 +191,25 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The only way to do great work is to love what you do.</p>
-                        <p class="quick-meta">— Steve Jobs</p>
+                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
+                        <p class="quick-meta">— Albert Einstein</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-empty">暂无仓库数据</p>
+                        <p class="quick-main">Morteza-Asadi-Shalmaiy/facial-recognition-pipeline</p>
+                        <p class="quick-meta">★ 28</p>
+                        <p class="quick-note">新兴项目，适合早期观察。 语言: Jupyter Notebook</p>
                     
                 </article>
                 <article class="quick-card">
@@ -215,9 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 algorithm，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
                         
-                        <li>深读: 阅读论文《SM4RT: Learning Structured Motion Geometry for 4D Reconstruction》摘要并写 2 句总结。</li>
+                        <li>趋势: 浏览 Morteza-Asadi-Shalmaiy/facial-recognition-pipeline，记录 1 个可借鉴实现点。</li>
+                        
+                        <li>深读: 阅读论文《ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -230,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">algorithm <span>/ˈælɡəˌrɪðəm/</span></p>
-                    <p class="study-meaning">n. 算法；运算法则</p>
+                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
+                    <p class="study-meaning">n. 递归；循环</p>
                     
-                    <p class="study-sentence">The sorting algorithm runs in O(n log n) time complexity.</p>
-                    <p class="study-sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
+                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
+                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -266,13 +270,45 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">SM4RT: Learning Structured Motion Geometry for 4D Reconstruction</p>
-                    <p class="deep-abstract">几何基础模型 (GFM) 具有相当先进的单目 3D 重建能力，但将这种能力扩展到 4D 动态理解仍然是一个基本挑战。大多数现有的运动感知方法（例如，稀疏跟踪、密集的逐点流）将运动视为独立的逐点位移，忽略了物理运动的结构化本质。然而，现实世界的物体通常遵循刚体运动学，因此点通常集体移动，而不是孤立的。运动本身具有几何结构：物理对象经历一组由 SE(3) 控制的刚体变换，而不是非结构化的逐点位移。基于这一见解，我们提出了 SM4RT，一种用于端到端 3D 重建和结构化运动感知的结构化运动 4D 重建变压器。 SM4RT 引入了运动结构来表示场景动态，其中场景运动被分解为一组紧凑的运动基础，每个运动基础表示为 SE(3) 中 6D 扭曲的时间序列。然后，通过这些基础上的稀疏、分时的每像素分配权重来恢复密集的场景运动，确保同一对象上的点共享共同的刚体运动轨迹。 SM4RT 引入了并行运动几何编码器和解码器，可在单目 RGB 视频的单次前向传递中联合推断 3D 几何、世界坐标运动和场景运动结构。 SM4RT 实现了强大的运动重建性能，同时保留了场景运动的几何结构。</p>
+                    <p class="deep-title">ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding</p>
+                    <p class="deep-abstract">多模态大语言模型 (MLLM) 具有彻底改变临床实践的巨大潜力，但将其部署在医学领域从根本上来说是一个以视觉为中心的挑战：模型必须从异构 2D 和 3D 医学图像中吸收知识，评估协议必须与放射科医生的临床实践保持一致，并提供准确、细粒度和事实驱动的评估。在本文中，我们介绍了 ClinFusion，这是一种以视觉为中心的 MLLM，旨在实现整体医学理解，系统地解决这些局限性。我们提出了一种组合级联视觉编码器架构，具有级联空间感知局部融合算子，可在融合编码器内统一不同的 2D 和本机 3D 医学图像理解。我们进一步介绍了一个基于视觉的评估框架，包括用于指令遵循评估的 MedIF-Bench 和用于临床对齐和事实驱动的报告生成评估的基于兴趣区域的方法。我们表明，ClinFusion 在一套全面的 2D 和 3D 多模态医疗基准测试中树立了新的最先进水平——涵盖视觉问答、报告生成和指令跟踪——以及文本医疗任务，在 24 个基准测试中的 20 个上优于领先的开源医疗 MLLM（\textit{e.g.}、Hulu-Med、Lingshu），并展示了比强大的专有模型更好的多模态功能，例如GPT-5.2 和 Gemini-3-Flash 在 16 个基准测试中的 13 个上运行，并且可以通过使用代理工具进一步增强检索增强和工具辅助的临床工作流程。由委员会认证的放射科医生进行的盲法评估证实，ClinFusion 生成了排名最高的报告，并验证了我们的基于投资回报率的指标在所有检查的自动评估指标中与专家判断的相关性最强。</p>
                     
-                    <p class="deep-takeaway">要点：几何基础模型 (GFM) 具有相当先进的单目 3D 重建能力，但将这种能力扩展到 4D 动态理解仍然是一个基本挑战。大多数现有的运动感知方法（例如，稀疏跟踪、密集的逐点流）将运动视为独立的逐点位移，忽略了物理运动的结构化本质。然而，现实世界的物体通常遵循刚体运动学，因此点通常集体移动，而不是孤立的。运动本身具有几何结构...</p>
+                    <p class="deep-takeaway">要点：多模态大语言模型 (MLLM) 具有彻底改变临床实践的巨大潜力，但将其部署在医学领域从根本上来说是一个以视觉为中心的挑战：模型必须从异构 2D 和 3D 医学图像中吸收知识，评估协议必须与放射科医生的临床实践保持一致，并提供准确、细粒度和事实驱动的评估。在本文中，我们介绍了 ClinFusion，这是一种以视觉为中心的...</p>
                     
                     <p class="deep-meta">预计阅读 2 分钟</p>
                 
+            </div>
+            
+            <div class="deep-list">
+                <h3 class="block-title">热门项目速览</h3>
+                <ul>
+                    
+                    <li>
+                        <strong>Morteza-Asadi-Shalmaiy/facial-recognition-pipeline</strong> (★ 28)
+                        <p>python笔记本人脸识别</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Morteza-Asadi-Shalmaiy/antispoofing-fr</strong> (★ 23)
+                        <p>python笔记本反欺骗面部识别</p>
+                    </li>
+                    
+                    <li>
+                        <strong>lucidrains/robo_ttt</strong> (★ 20)
+                        <p>Yunfan Jiang等人提出的RoboTTT的实现。斯坦福大学和英伟达的</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Morteza-Asadi-Shalmaiy/Superres-fr</strong> (★ 15)
+                        <p>python笔记本超分辨率</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Morteza-Asadi-Shalmaiy/Re-Identification-fr</strong> (★ 14)
+                        <p>python笔记本ReId项目</p>
+                    </li>
+                    
+                </ul>
             </div>
             
         </section>
@@ -283,7 +319,7 @@ html, body {
             <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
             <ul class="archive-stats">
                 <li>论文：3</li>
-                <li>仓库：0</li>
+                <li>仓库：10</li>
                 <li>思维模型：3</li>
                 <li>语录：5</li>
                 <li>歌词：1</li>
