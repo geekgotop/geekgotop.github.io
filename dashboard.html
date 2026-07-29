@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-07-28 22:54:23</span>
+        <span class="generated-time">更新于 2026-07-29 22:56:22</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">ClinFusion:<sup class='ipa'>/clinfusion*/</sup> A Vision-Centric<sup class='ipa'>/visioncentric*/</sup> Multimodal<sup class='ipa'>/multimodal*/</sup> LLM System for Holistic<sup class='ipa'>/hoʊˈlɪstɪk/</sup> Medical Understanding<sup class='ipa'>/ˌəndərˈstændɪŋ/</sup></h4>
+                            <h4 class="paper-title">Pass the Baton: Trajectory-Relayed<sup class='ipa'>/trajectoryrelayed*/</sup> On-Policy<sup class='ipa'>/onpolicy*/</sup> Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Hangjie Yuan, Yichen Qian, Zhiwei Tang</span>
-                                <span class="date">2026-07-27</span>
-                                <span class="categories">cs.CV | cs.AI</span>
+                                <span class="authors">Haolei Xu, Xiaowen Xu, Haiwen Hong</span>
+                                <span class="date">2026-07-28</span>
+                                <span class="categories">cs.CL | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Multimodal large language models (MLLMs) hold immense potential to revolutionize clinical practice, yet deploying them in the medical domain is fundamentally a vision-centric challenge: models must absorb knowledge from heterogeneous 2D and 3D medical images, and evaluation protocols must align with...</p>
+                                <p class="abstract-en">On-policy distillation (OPD) grounds token-level supervision in the student&#39;s own trajectory, yet suffers from prefix failure: once the student commits to a wrong reasoning direction, all subsequent generation builds on this deviation, producing misdirected continuations that elicit unreliable super...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">多模态大语言模型 (MLLM) 具有彻底改变临床实践的巨大潜力，但将其部署在医学领域从根本上来说是一个以视觉为中心的挑战：模型必须从异构 2D 和 3D 医学图像中吸收知识，评估协议必须与放射科医生的临床实践保持一致，并提供准确、细粒度和事实驱动的评估。在本文中，我们介绍了 ClinFusion，这是一种以视觉为中心的 MLLM，旨在实现整体医学理解，系统地解决这些局限性。我们提出了一种组合级联视觉编码器架构，具有级联空间感知局部融合算子，可在融合编码器内统一不同的 2D 和本机 3D 医学图像理解。我们进一步介绍了一个基于视觉的评估框架，包括用于指令遵循评估的 MedIF-Bench 和用于临床对齐和事实驱动的报告生成评估的基于兴趣区域的方法。我们表明，ClinFusion 在一套全面的 2D 和 3D 多模态医疗基准测试中树立了新的最先进水平——涵盖视觉问答、报告生成和指令跟踪——以及文本医疗任务，在 24 个基准测试中的 20 个上优于领先的开源医疗 MLLM（\textit{e.g.}、Hulu-Med、Lingshu），并展示了比强大的专有模型更好的多模态功能，例如GPT-5.2 和 Gemini-3-Flash 在 16 个基准测试中的 13 个上运行，并且可以通过使用代理工具进一步增强检索增强和工具辅助的临床工作流程。由委员会认证的放射科医生进行的盲法评估证实，ClinFusion 生成了排名最高的报告，并验证了我们的基于投资回报率的指标在所有检查的自动评估指标中与专家判断的相关性最强。</p>
+                                    <p class="abstract-zh">在策略蒸馏（OPD）将令牌级监督置于学生自己的轨迹中，但会遭受前缀失败：一旦学生犯了错误的推理方向，所有后续生成都会建立在这种偏差之上，产生误导的延续，从而引发不可靠的监督和浪费计算。我们发现了失败前缀上的师生继续不对称性，即教师倾向于重定向，而学生继续沿着原始方向继续，并将其转换为中继按策略蒸馏（Relay-OPD）中的无标签切换触发器。在训练期间，Relay-OPD 通过让教师在检测到的触发点短暂接管以产生教师腿来构建接力轨迹，之后学生恢复并在生成的轨迹上进行优化。有限的接力预算将干预集中在关键的早期位置，同时限制对学生政策的偏离。在 Qwen3-4B-Instruct-2507 教师和 Qwen3-0.6B/1.7B-Non-Thinking 学生的八个数学推理基准测试中，Relay-OPD 在每个基准测试中都取得了最好或第二好的结果，比标准 OPD 多出 +5.73%，比最强基线 FastOPD 平均多出 1.49%（1.7B），并始终保持 0.6B 的增益。训练轨迹长度减少 50% 以上。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.24743v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.26057v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Rethinking<sup class='ipa'>/riˈθɪŋkɪŋ/</sup> Classifier-Free<sup class='ipa'>/classifierfree*/</sup> Guidance<sup class='ipa'>/ˈgaɪdəns/</sup> in On-Policy<sup class='ipa'>/onpolicy*/</sup> Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup></h4>
+                            <h4 class="paper-title">$π\mathbf{R}^2$: Reactive<sup class='ipa'>/riˈæktɪv/</sup> Real-time<sup class='ipa'>/ˈriəlˌtaɪm/</sup> Flow Policies<sup class='ipa'>/ˈpɑləsiz/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Bingnan Li, Haozhe Wang, Haozhong Xiong</span>
-                                <span class="date">2026-07-27</span>
-                                <span class="categories">cs.CV | cs.AI</span>
+                                <span class="authors">Sungjae Park, Shubham Tulsiani</span>
+                                <span class="date">2026-07-28</span>
+                                <span class="categories">cs.RO | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">On-policy distillation (OPD) adapts diffusion models by querying a teacher along trajectories generated by the current student, but how it should behave under classifier-free guidance (CFG), a default component of modern diffusion systems, remains poorly understood. Existing OPD methods naturally ex...</p>
+                                <p class="abstract-en">Generalist manipulation policies increasingly take the form of action-chunking flow policies built on large pretrained backbones. Such chunks run open-loop, so the policy cannot react to sensory input arriving mid-execution, sacrificing \emph{reactivity}. Replanning more often would restore it, but ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">在策略蒸馏（OPD）通过沿着当前学生生成的轨迹查询教师来调整扩散模型，但它在无分类器指导（CFG）（现代扩散系统的默认组件）下应该如何表现仍然知之甚少。现有的 OPD 方法自然地将速度匹配扩展到 CFG 组合预测，直接匹配教师和学生引导的速度。我们表明，该目标在分支级别上未被充分识别：正分支错误和负分支错误可以在引导预测中进行补偿。通过两个对比案例，我们发现朴素匹配在共享负条件下仍然有效，其中两个分支错误共同减少。然而，当模型的原生 CFG 模式在教师的负分支中保留学生无法获得的特权信息时，这种联合约简就会失效，并且组合目标会引发对抗性分支错误动态，减少正分支错误，同时增加负分支错误。我们将这种故障模式称为负分支不对称 (NBA)。为了解决 NBA 问题，我们引入了正方向匹配 (PDM)，这是一种分支感知 OPD 目标，它分别约束正预测和 CFG 条件方向。我们将 PDM 应用于从稠密到稀疏的视频控制，其中朴素引导匹配对推理引导尺度高度敏感，而分支感知监督可以实现更稳健、更有效的知识转移。</p>
+                                    <p class="abstract-zh">通用操纵策略越来越多地采用建立在大型预训练骨干上的动作分块流策略的形式。这些块是开环运行的，因此策略无法对执行中到达的感觉输入做出反应，从而牺牲了\emph{反应性}。更频繁地重新规划可以恢复它，但是感知到行动的管道（一个大的主干加上多个去噪步骤）太慢：这种\emph{延迟}禁止频繁的重新规划，并使承诺的行动变得陈旧，使得此类政策不适合动态的闭环控制。我们提出了 $π\mathbf{R}^2$，这使得这些策略具有反应性和实时性，同时保留了大型骨干网、富有表现力的多模式策略和多动作预测。 $π\mathbf{R}^2$ 建立在扩散强迫的每个位置噪声表的基础上，提出了两个想法。首先，它将调节分为快速通道（本体感觉，每次更新）和异步更新的慢速通道（视觉语言特征），因此该策略对块内的本体感觉做出反应，同时容忍陈旧的视觉。其次，延迟自适应流程调度将运行中的操作视为修复条件，并在每次调用的一个去噪步骤中发出操作，让一个经过训练的模型适应不同的硬件延迟。只需对现有架构进行最小程度的修改，$π\mathbf{R}^2$ 就可以通过预训练策略进行微调：应用于真实 xArm6+XHand 平台上的 GR00T-N1.7，它重新规划闭环的速度比基本策略快大约 $4\times$（在 A5000 GPU 上约为 $25$Hz），每 $40$ms 执行一次新的观察。在模拟和现实世界的操纵任务中，$π\mathbf{R}^2$ 在模拟中将成功率提高了高达 $23\%$，在现实世界中比最强基线提高了 $π\mathbf{R}^2$ 的成功率高达 $30\%$。项目页面：https://pi-r2-flow.github.io/</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.24731v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.26055v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">KANEx: Translating<sup class='ipa'>/ˈtrænsˌleɪtɪŋ/</sup> Kolmogorov-Arnold<sup class='ipa'>/kolmogorovarnold*/</sup> Networks'<sup class='ipa'>/ˈnɛtˌwərks/</sup> Interpretability<sup class='ipa'>/interpretability*/</sup> to Medical Explainability<sup class='ipa'>/explainability*/</sup></h4>
+                            <h4 class="paper-title">Desktop-Delta<sup class='ipa'>/desktopdelta*/</sup> Bench: Do Computer-Use<sup class='ipa'>/computeruse*/</sup> Models Understand<sup class='ipa'>/ˌəndərˈstænd/</sup> Desktop GUI Transitions?<sup class='ipa'>/trænˈzɪʃənz/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Krithi Shailya, Ananya Lakshmi Ravi, Venkatanathan K. V.</span>
-                                <span class="date">2026-07-27</span>
-                                <span class="categories">cs.CV | cs.AI</span>
+                                <span class="authors">Abhishek Pillai, Samir Kumar Nayak, Yuan Chen</span>
+                                <span class="date">2026-07-28</span>
+                                <span class="categories">cs.AI | cs.CV</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Computer vision models have become highly effective for medical applications, yet their black-box nature continues to undermine clinician trust. In clinical workflows, chest X-ray classifiers are increasingly paired with Vision-Language Models (VLMs) to generate natural-language explanations. Howeve...</p>
+                                <p class="abstract-en">Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks. Current benchmarks primarily measure end-task success or single-frame grounding. Neither isolates whether a model can reconstruct the causal, task-relevant transition produced by an action- crucial for r...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">计算机视觉模型在医疗应用中已经变得非常有效，但其黑匣子性质继续破坏临床医生的信任。在临床工作流程中，胸部 X 射线分类器越来越多地与视觉语言模型 (VLM) 配对以生成自然语言解释。然而，这些系统增加了语言的流畅性，却没有解决视觉模型潜在的不透明性。随着柯尔莫哥洛夫-阿诺德网络（KAN）的出现，其基于样条的组件提供了本质上可解释的功能单元，我们研究是否可以利用这种架构透明度来产生更值得信赖的文本解释。我们推出 KANEx，这是第一个利用 KAN 的符号透明度来支持 VLM 推理的框架。这种可解释性还使得设计 KAN-Map 成为可能，这是一种直接源自 KAN 模型而不是梯度近似的新型热图生成方法。我们将这些基础上下文输入下游 VLM 以增强可解释性。以 MIMIC-CXR 数据集为基准，我们证明了具有 ResNet/ViT 基线的基于 KAN 的架构展示了改进的语义相似性，同时产生了更加忠实的显着图。 KAN 架构将视觉定位和下游推理质量提高了 10%。我们的研究结果表明，将语言解释和视觉归因建立在数学可解释的单位中是迈向值得信赖的医疗人工智能的必要步骤。</p>
+                                    <p class="abstract-zh">计算机使用代理 (CUA) 越来越多地通过桌面 GUI 来完成长期任务。当前的基准主要衡量最终任务的成功或单帧接地。两者都没有孤立模型是否可以重建由行动产生的因果、任务相关的转变——这对于拒绝陈旧的观察、验证进展和从失败中恢复至关重要。这很困难，因为推理、远程输入、应用程序渲染和屏幕截图都是异步的：下一次观察可能会延迟、被遮挡、短暂或不相关，然后被误读为进度并纳入后续计划。我们推出了 Desktop-Delta Bench (DDB)，这是一种离线步骤级基准测试，包含 2,013 个经过人工验证的实例，这些实例来自新颖的多应用 Linux 轨迹，横跨约 15 个应用程序和 50 个任务域。 DDB 轨迹通过 2 个互补任务针对 3 个故障维度（状态验证、源跟踪和上下文感知控制）：463 个 3 帧时间排序实例，其中包括 105 个具有跨轨迹诱饵的实例，以及从 5 个操作及其有效负载标记的 1,550 个前后对。我们评估了 8 个封闭和开源模型系列，涵盖 32 个排序和 16 个单操作设置，观察到一致的差距。排序仍然不饱和：最佳非诱饵和诱饵精确匹配率分别为 65.1% 和 65.7%。任务上下文将诱饵识别率提高了 6.9 个百分点，但将非诱饵精确匹配率降低了 2.2 个百分点；错误分析揭示了所呈现的 A-B-C 顺序的系统复制。单动作结果表明，推断动作族比定位它更难：单击 F1 为 0.96，而拖动为 0.76，而识别的拖动通常都可以很好地定位。因此，DDB 通过填补 GUI 基础和最终任务成功之间缺失的诊断层来补充端到端基准测试，从而有针对性地改进桌面 CUA 验证、可靠性和恢复。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.24730v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.26041v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,12 +920,26 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">facial-recognition-pipeline</span>
-                                    <span class="repo-stars">⭐ 28</span>
+                                    <span class="repo-stars">⭐ 32</span>
                                 </div>
                                 <p class="repo-desc">python笔记本人脸识别</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Jupyter Notebook</span>
                                     <span class="repo-date">2026-07-23</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/lucidrains/robo_ttt" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">robo_ttt</span>
+                                    <span class="repo-stars">⭐ 28</span>
+                                </div>
+                                <p class="repo-desc">Yunfan Jiang等人提出的RoboTTT的实现。斯坦福大学和英伟达的</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-27</span>
                                 </div>
                             </a>
                         </li>
@@ -940,20 +954,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Jupyter Notebook</span>
                                     <span class="repo-date">2026-07-24</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/lucidrains/robo_ttt" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">robo_ttt</span>
-                                    <span class="repo-stars">⭐ 20</span>
-                                </div>
-                                <p class="repo-desc">Yunfan Jiang等人提出的RoboTTT的实现。斯坦福大学和英伟达的</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-27</span>
                                 </div>
                             </a>
                         </li>
@@ -1015,20 +1015,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/david-eze/Sonar-Scanner" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Sonar-Scanner</span>
-                                    <span class="repo-stars">⭐ 5</span>
-                                </div>
-                                <p class="repo-desc">ESP32-S3 上的 AI 增强型声纳扫描仪，具有 EKF 滤波、ML 对象分类和实时占用网格可视化功能。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-22</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/sumitsingh4411/ai-roadmap" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">ai-roadmap</span>
@@ -1052,6 +1038,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-07-23</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/filonux/LinuxMint-Scripter" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">LinuxMint-Scripter</span>
+                                    <span class="repo-stars">⭐ 4</span>
+                                </div>
+                                <p class="repo-desc">LinuxMint Scripter 是一个在 Linux Mint 22.3 上使用的 Web 应用程序，允许在 Bash 或 Python 列表中创建脚本</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">HTML</span>
+                                    <span class="repo-date">2026-07-25</span>
                                 </div>
                             </a>
                         </li>
