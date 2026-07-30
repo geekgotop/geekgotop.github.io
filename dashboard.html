@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-07-29 22:56:22</span>
+        <span class="generated-time">更新于 2026-07-30 23:01:07</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -727,8 +727,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <blockquote>
                                 <p class="quote-text">The only way to do great work is to love what you do.</p>
                                 
-                                <p class="quote-translation">做好工作的唯一方法就是热爱你所做的事情。</p>
-                                
                             </blockquote>
                             <cite class="quote-author">— Steve Jobs</cite>
                         </div>
@@ -736,8 +734,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         <div class="quote-slide ">
                             <blockquote>
                                 <p class="quote-text">In the middle of difficulty lies opportunity.</p>
-                                
-                                <p class="quote-translation">困难之中蕴藏着机遇。</p>
                                 
                             </blockquote>
                             <cite class="quote-author">— Albert Einstein</cite>
@@ -848,54 +844,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Pass the Baton: Trajectory-Relayed<sup class='ipa'>/trajectoryrelayed*/</sup> On-Policy<sup class='ipa'>/onpolicy*/</sup> Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup></h4>
+                            <h4 class="paper-title">Mental World Modeling<sup class='ipa'>/ˈmɑdəlɪŋ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Haolei Xu, Xiaowen Xu, Haiwen Hong</span>
-                                <span class="date">2026-07-28</span>
+                                <span class="authors">Hao Fei, Yiran Zhao</span>
+                                <span class="date">2026-07-29</span>
+                                <span class="categories">cs.CL</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">World models enable a predictive substrate for planning and action, yet existing formulations merely answer a physical question: what/where it is, and how will it evolve. Human behavior, however, is driven by hidden mental state (what a person believes, wants, intends, feels, and considers socially ...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">世界模型为规划和行动提供了预测基础，但现有的公式仅回答了一个物理问题：它是什么/在哪里，以及它将如何演变。然而，人类行为是由隐藏的心理状态（一个人相信、想要、打算、感觉和认为社会允许的）驱动的，因此跟踪物理场景而不是每个智能体所知道和相信的模型会预测正确场景的错误动作。我们制定了心理世界建模（MWM），这是一个通用的理论框架，它使心理变量成为世界模型的核心组成部分，而不是事后的基本原理：MWM保持耦合的物理-心理世界状态，呈现特定于目标的部分观察，并模拟候选动作如何共同更新这两个组成部分。我们在 MENTIS 中实例化了该框架，这是一个免训练且完全可检查的基线，它将过程分解为状态解析、目标观察生成、动作分解、耦合的身体和心理转换以及分支级价值评估。在手动构建的质量控制的数据集上，涵盖文本、图像和声音视频故事的情境决策场景，使用 8 个现代 LLM 世界模型进行的实验表明，显式建模心理状态对于预测人类决策至关重要。更深入的分析进一步暴露了当前心理世界建模的瓶颈。我们期望 MWM 成为世界建模的下一阶段，从模拟物理场景到模拟其中的思维。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2607.27201v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Can AI agents conduct open-ended<sup class='ipa'>/openended*/</sup> AI research?<sup class='ipa'>/ˈrisərʧ/</sup> Early evidence<sup class='ipa'>/ˈɛvədəns/</sup> from two case studies</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Peter Kirgis, Sayash Kapoor, Andrew Schwartz</span>
+                                <span class="date">2026-07-29</span>
+                                <span class="categories">cs.AI | cs.CY</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Forecasts of explosive AI progress hinge on AI agents automating AI research. But evidence on whether agents can carry out open-ended AI research is thin. Current evaluations either test agents on narrow, verifiable tasks, which excludes open-ended research, or submit AI-generated papers to blind pe...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">人工智能爆炸性进展的预测取决于人工智能代理自动化人工智能研究。但关于智能体是否可以进行开放式人工智能研究的证据还很少。目前的评估要么在狭窄的、可验证的任务上测试代理，这排除了开放式研究，要么将人工智能生成的论文提交给盲目的同行评审，这种评审过度拉伸、随机且评审质量较差。我们引入了第三种衡量人工智能研发自动化进展的方法。代理承担高质量未发表论文的核心、开放式研究问题，论文的原作者对其输出进行评分。我们称这些为影子评估。我们对两份未发布的 NeurIPS 2026 提交内容进行了影子评估，为前沿代理提供了六天的时间和数千美元的计算资源。这些特工在没有人类帮助的情况下完成了所有工程，但无法在回答研究问题方面取得实质性进展。结果，这两篇论文都被作者明确拒绝。我们确定了五种反复出现的失败模式：对可发表研究的标准判断不佳、对研究设计中的缺陷缺乏创造性的反应、从死胡同中无效的回溯、资源意识差和指令漂移。对第二个模型和支架的稳健性检查重现了这些故障。我们发布专家评论、调查回复、代理存储库和日志。我们的结果提供了早期证据，表明当今的智能体可以进行人工智能研究的工程设计，但在研究生命周期的关键部分上却遇到了困难。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2607.27191v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">APEX-Accounting<sup class='ipa'>/apexaccounting*/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Julien Benchek, Austin Bennett, Jasmin Kern</span>
+                                <span class="date">2026-07-29</span>
                                 <span class="categories">cs.CL | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">On-policy distillation (OPD) grounds token-level supervision in the student&#39;s own trajectory, yet suffers from prefix failure: once the student commits to a wrong reasoning direction, all subsequent generation builds on this deviation, producing misdirected continuations that elicit unreliable super...</p>
+                                <p class="abstract-en">We introduce APEX-Accounting, a benchmark built by Mercor in partnership with Ramp, to assess whether frontier models can do the real work of accountants. Tasks include reconciling accounts, accruing expenses, posting transactions, and producing reports. The private eval set comprises 160 tasks, spl...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">在策略蒸馏（OPD）将令牌级监督置于学生自己的轨迹中，但会遭受前缀失败：一旦学生犯了错误的推理方向，所有后续生成都会建立在这种偏差之上，产生误导的延续，从而引发不可靠的监督和浪费计算。我们发现了失败前缀上的师生继续不对称性，即教师倾向于重定向，而学生继续沿着原始方向继续，并将其转换为中继按策略蒸馏（Relay-OPD）中的无标签切换触发器。在训练期间，Relay-OPD 通过让教师在检测到的触发点短暂接管以产生教师腿来构建接力轨迹，之后学生恢复并在生成的轨迹上进行优化。有限的接力预算将干预集中在关键的早期位置，同时限制对学生政策的偏离。在 Qwen3-4B-Instruct-2507 教师和 Qwen3-0.6B/1.7B-Non-Thinking 学生的八个数学推理基准测试中，Relay-OPD 在每个基准测试中都取得了最好或第二好的结果，比标准 OPD 多出 +5.73%，比最强基线 FastOPD 平均多出 1.49%（1.7B），并始终保持 0.6B 的增益。训练轨迹长度减少 50% 以上。</p>
+                                    <p class="abstract-zh">我们引入 APEX-Accounting，这是 Mercor 与 Ramp 合作建立的基准，用于评估前沿模型是否可以完成会计师的实际工作。任务包括核对账户、应计费用、过帐交易和生成报告。私人评估集包含 160 个任务，分布在 10 个世界中。每个世界都包含一个会计系统以及电子表格、PDF 和其他文件。每项任务均由会计和簿记专家撰写和解决，他们还编写评分标准。在 9 个前沿模型中，Claude-Fable-5 (Max) 以 56.4% 的平均 Criteria@3 领先，领先于 Muse-Spark-1.1 (xHigh) 的 52.6%。没有模型得分超过 2.6% Pass^8 (GPT-5.6-Sol (Max+Pro))，最高 Pass@8 为 21.5% (Muse-Spark-1.1 (xHigh))。我们尝试将代币预算从 1 美元增加到 50 美元，并观察辛普森悖论的一个实例：分数随着代币预算的增加而增加，但在给定的预算约束范围内，模型花费更多代币的任务的分数较低。由于 APEX-Accounting 是一个封闭的基准测试，因此可以根据要求对任何前沿模型运行排行榜评估。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2607.26057v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">$π\mathbf{R}^2$: Reactive<sup class='ipa'>/riˈæktɪv/</sup> Real-time<sup class='ipa'>/ˈriəlˌtaɪm/</sup> Flow Policies<sup class='ipa'>/ˈpɑləsiz/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Sungjae Park, Shubham Tulsiani</span>
-                                <span class="date">2026-07-28</span>
-                                <span class="categories">cs.RO | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Generalist manipulation policies increasingly take the form of action-chunking flow policies built on large pretrained backbones. Such chunks run open-loop, so the policy cannot react to sensory input arriving mid-execution, sacrificing \emph{reactivity}. Replanning more often would restore it, but ...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">通用操纵策略越来越多地采用建立在大型预训练骨干上的动作分块流策略的形式。这些块是开环运行的，因此策略无法对执行中到达的感觉输入做出反应，从而牺牲了\emph{反应性}。更频繁地重新规划可以恢复它，但是感知到行动的管道（一个大的主干加上多个去噪步骤）太慢：这种\emph{延迟}禁止频繁的重新规划，并使承诺的行动变得陈旧，使得此类政策不适合动态的闭环控制。我们提出了 $π\mathbf{R}^2$，这使得这些策略具有反应性和实时性，同时保留了大型骨干网、富有表现力的多模式策略和多动作预测。 $π\mathbf{R}^2$ 建立在扩散强迫的每个位置噪声表的基础上，提出了两个想法。首先，它将调节分为快速通道（本体感觉，每次更新）和异步更新的慢速通道（视觉语言特征），因此该策略对块内的本体感觉做出反应，同时容忍陈旧的视觉。其次，延迟自适应流程调度将运行中的操作视为修复条件，并在每次调用的一个去噪步骤中发出操作，让一个经过训练的模型适应不同的硬件延迟。只需对现有架构进行最小程度的修改，$π\mathbf{R}^2$ 就可以通过预训练策略进行微调：应用于真实 xArm6+XHand 平台上的 GR00T-N1.7，它重新规划闭环的速度比基本策略快大约 $4\times$（在 A5000 GPU 上约为 $25$Hz），每 $40$ms 执行一次新的观察。在模拟和现实世界的操纵任务中，$π\mathbf{R}^2$ 在模拟中将成功率提高了高达 $23\%$，在现实世界中比最强基线提高了 $π\mathbf{R}^2$ 的成功率高达 $30\%$。项目页面：https://pi-r2-flow.github.io/</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2607.26055v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Desktop-Delta<sup class='ipa'>/desktopdelta*/</sup> Bench: Do Computer-Use<sup class='ipa'>/computeruse*/</sup> Models Understand<sup class='ipa'>/ˌəndərˈstænd/</sup> Desktop GUI Transitions?<sup class='ipa'>/trænˈzɪʃənz/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Abhishek Pillai, Samir Kumar Nayak, Yuan Chen</span>
-                                <span class="date">2026-07-28</span>
-                                <span class="categories">cs.AI | cs.CV</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks. Current benchmarks primarily measure end-task success or single-frame grounding. Neither isolates whether a model can reconstruct the causal, task-relevant transition produced by an action- crucial for r...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">计算机使用代理 (CUA) 越来越多地通过桌面 GUI 来完成长期任务。当前的基准主要衡量最终任务的成功或单帧接地。两者都没有孤立模型是否可以重建由行动产生的因果、任务相关的转变——这对于拒绝陈旧的观察、验证进展和从失败中恢复至关重要。这很困难，因为推理、远程输入、应用程序渲染和屏幕截图都是异步的：下一次观察可能会延迟、被遮挡、短暂或不相关，然后被误读为进度并纳入后续计划。我们推出了 Desktop-Delta Bench (DDB)，这是一种离线步骤级基准测试，包含 2,013 个经过人工验证的实例，这些实例来自新颖的多应用 Linux 轨迹，横跨约 15 个应用程序和 50 个任务域。 DDB 轨迹通过 2 个互补任务针对 3 个故障维度（状态验证、源跟踪和上下文感知控制）：463 个 3 帧时间排序实例，其中包括 105 个具有跨轨迹诱饵的实例，以及从 5 个操作及其有效负载标记的 1,550 个前后对。我们评估了 8 个封闭和开源模型系列，涵盖 32 个排序和 16 个单操作设置，观察到一致的差距。排序仍然不饱和：最佳非诱饵和诱饵精确匹配率分别为 65.1% 和 65.7%。任务上下文将诱饵识别率提高了 6.9 个百分点，但将非诱饵精确匹配率降低了 2.2 个百分点；错误分析揭示了所呈现的 A-B-C 顺序的系统复制。单动作结果表明，推断动作族比定位它更难：单击 F1 为 0.96，而拖动为 0.76，而识别的拖动通常都可以很好地定位。因此，DDB 通过填补 GUI 基础和最终任务成功之间缺失的诊断层来补充端到端基准测试，从而有针对性地改进桌面 CUA 验证、可靠性和恢复。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2607.26041v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2607.27189v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -917,26 +913,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">facial-recognition-pipeline</span>
-                                    <span class="repo-stars">⭐ 32</span>
-                                </div>
-                                <p class="repo-desc">python笔记本人脸识别</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Jupyter Notebook</span>
-                                    <span class="repo-date">2026-07-23</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/lucidrains/robo_ttt" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">robo_ttt</span>
-                                    <span class="repo-stars">⭐ 28</span>
+                                    <span class="repo-stars">⭐ 30</span>
                                 </div>
-                                <p class="repo-desc">Yunfan Jiang等人提出的RoboTTT的实现。斯坦福大学和英伟达的</p>
+                                <p class="repo-desc">Implementation of RoboTTT proposed by Yunfan Jiang et al.斯坦福大学和英伟达的</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-07-27</span>
@@ -950,7 +932,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">antispoofing-fr</span>
                                     <span class="repo-stars">⭐ 23</span>
                                 </div>
-                                <p class="repo-desc">python笔记本反欺骗面部识别</p>
+                                <p class="repo-desc">python notebook anti spoofing facial recognition</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Jupyter Notebook</span>
                                     <span class="repo-date">2026-07-24</span>
@@ -964,7 +946,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">Superres-fr</span>
                                     <span class="repo-stars">⭐ 15</span>
                                 </div>
-                                <p class="repo-desc">python笔记本超分辨率</p>
+                                <p class="repo-desc">python notebook super resolution</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Jupyter Notebook</span>
                                     <span class="repo-date">2026-07-24</span>
@@ -992,7 +974,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">korugan</span>
                                     <span class="repo-stars">⭐ 7</span>
                                 </div>
-                                <p class="repo-desc">由 AI 驱动的开源边缘安全平台，适用于 Cloudflare、CDN、DNS、WAF 和基础设施自动化。</p>
+                                <p class="repo-desc">AI-powered open-source edge security platform for Cloudflare, CDN, DNS, WAF and infrastructure automation.</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Go</span>
                                     <span class="repo-date">2026-07-24</span>
@@ -1001,15 +983,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/GodSeason/sharedbrain" target="_blank" class="repo-link">
+                            <a href="https://github.com/StephaneSGL/excel-ai-vba-studio" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">sharedbrain</span>
-                                    <span class="repo-stars">⭐ 5</span>
+                                    <span class="repo-name">excel-ai-vba-studio</span>
+                                    <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc">用于持久人工智能、可审计代理、分布式有用工作和未来去中心化智能经济的实验性开源基础设施。寻求贡献者。</p>
+                                <p class="repo-desc">Public source-available VS Code extension for Excel, AI workbook context and VBA tools.特定于项目的添加是非商业性的。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">JavaScript</span>
-                                    <span class="repo-date">2026-07-26</span>
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-07-24</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/taygun08/founder-class" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">founder-class</span>
+                                    <span class="repo-stars">⭐ 4</span>
+                                </div>
+                                <p class="repo-desc">İş dünyasında bir insanı yenilmez ve başarılı kılacak kapsamlı eğitim müfredatı. 10 modül: Muhasebe, Finans, Psikoloji, Strateji, Pazarlama, Girişimcilik, AI, Araştırma, İş Hukuku + Capstone. 98 hafta, ~22 ay. Tüm ücretli kaynaklara ücretsiz alternatif。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-07-28</span>
                                 </div>
                             </a>
                         </li>
@@ -1018,9 +1014,9 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/sumitsingh4411/ai-roadmap" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">ai-roadmap</span>
-                                    <span class="repo-stars">⭐ 5</span>
+                                    <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc">从零开始学习 AI 的免费开源路线图 — 从第一行 Python 到发布 LLM 应用程序的 34 节课程。在网络上阅读或直接从 Markdown 中阅读。</p>
+                                <p class="repo-desc">A free, open-source roadmap to learn AI from zero — 34 lessons from your first line of Python to shipping an LLM app. Read on the web or straight from the Markdown.</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Astro</span>
                                     <span class="repo-date">2026-07-25</span>
@@ -1029,15 +1025,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/EthanYixuanMi/AI-Assisted-6G-Indoor-Localization-Digital-Twin" target="_blank" class="repo-link">
+                            <a href="https://github.com/iii-hq/oh-my-harness" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">AI-Assisted-6G-Indoor-Localization-Digital-Twin</span>
-                                    <span class="repo-stars">⭐ 4</span>
+                                    <span class="repo-name">oh-my-harness</span>
+                                    <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">室内定位数字孪生框架，用于通过模拟、可视化和回放来评估定位算法 - 无需物理硬件。</p>
+                                <p class="repo-desc">You own this harness as a stack of installable workers, and “build your own” stops meaning “fork a framework.” It means “swap a few workers.”</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-23</span>
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-07-29</span>
                                 </div>
                             </a>
                         </li>
@@ -1046,9 +1042,9 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/filonux/LinuxMint-Scripter" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">LinuxMint-Scripter</span>
-                                    <span class="repo-stars">⭐ 4</span>
+                                    <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">LinuxMint Scripter 是一个在 Linux Mint 22.3 上使用的 Web 应用程序，允许在 Bash 或 Python 列表中创建脚本</p>
+                                <p class="repo-desc">LinuxMint Scripter es una aplicación web de una sola página que permite crear scripts de Bash o Python listos para usar en Linux Mint 22.3</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">HTML</span>
                                     <span class="repo-date">2026-07-25</span>
