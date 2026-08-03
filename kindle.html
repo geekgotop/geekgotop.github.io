@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-08-02 22:52:03</p>
+            <p class="hero-meta">构建时间：2026-08-03 22:56:04</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：复盘整理日</p>
-                <p class="theme-focus">优先看 Archive 区：回顾本周输入并做摘要。</p>
-                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">博观而约取，厚积而薄发。</p>
-                        <p class="quick-meta">— 苏轼</p>
+                        <p class="quick-main">The only way to do great work is to love what you do.</p>
+                        <p class="quick-meta">— Steve Jobs</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">Indhu27-pixel/Labour-Law-Violation-System</p>
-                        <p class="quick-meta">★ 49</p>
+                        <p class="quick-meta">★ 50</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 inheritance，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 abstraction，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 Indhu27-pixel/Labour-Law-Violation-System，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Learning to Trace Seiberg Dualities》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《TokTier: Exact Stateful Tokenization for Agentic LLM Serving》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">inheritance <span>/ɪnˈherɪtəns/</span></p>
-                    <p class="study-meaning">n. 继承；遗传</p>
+                    <p class="study-word">abstraction <span>/æbˈstrækʃn/</span></p>
+                    <p class="study-meaning">n. 抽象；提取</p>
                     
-                    <p class="study-sentence">Inheritance enables new classes to receive the properties of existing classes.</p>
-                    <p class="study-sentence-zh">继承使新类能够接收现有类的属性。</p>
+                    <p class="study-sentence">Abstraction reduces complexity by hiding unnecessary details.</p>
+                    <p class="study-sentence-zh">抽象通过隐藏不必要的细节来降低复杂性。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Learning to Trace Seiberg Dualities</p>
-                    <p class="deep-abstract">对偶性在建立广泛的物理系统中的微观现象和涌现现象方面发挥着重要作用。然而，在实践中，即使所有“游戏规则”都是众所周知的，确定两个系统何时是对偶的，在计算上通常也具有挑战性。换句话说，当面对两个系统时，如何有效地确定它们实际上是对偶的？在本文中，我们使用机器学习方法来解决超对称箭袋规范理论的塞伯格对偶性问题。从数学上讲，这涉及建立箭袋的突变，这又是“学习解开”主题的变体。一方面，这为我们提供了一种用于确定不同对偶性的计算复杂性的实用工具。另一方面，它也让我们能够研究不同的网络架构如何学习如何追踪塞伯格对偶性。我们发现，对于具有适度数量的箭袋节点（数量级为 10 美元）的箭袋，由变压器和多层感知器组成的不同网络架构往往优于确定性算法。通过完善的探路算法（本质上是“箭袋谷歌地图”）补充网络可以进一步提高搜索策略的效率和准确性。我们预计此类问题可以作为应用于理论物理的前沿人工智能模型的有用基准。</p>
+                    <p class="deep-title">TokTier: Exact Stateful Tokenization for Agentic LLM Serving</p>
+                    <p class="deep-abstract">LLM serving systems cache prompt KV state, yet most front ends still re-tokenize the full request text on every call. The cost lands on coding agents, which resubmit a long transcript after each small tool result, and reuse is hard because even a short append can change token boundaries near the end of the previous sequence. Across 153,951 calls from two agent ecosystems, the median call appends about 1.4K characters, and only 1.0-3.6% of calls start or rebuild a session with contexts of millions of characters. At a 94.1% fleet prompt-cache hit rate, tokenization reaches up to 64% of time to first token.   TokTier is a stateful tokenization service with one contract: emitted token IDs are always identical to full reference tokenization of the request text. For a session continuation, it re-tokenizes a small window around the append and splices only after a per-request stable-boundary check, widening the window or falling back to full tokenization on failure. For a call without a reusable prefix, it decomposes GPT-family regex pre-tokenization into run-local rules and runs exact pre-tokenization and BPE on a GPU. A sampled shadow verifier re-checks live traffic.   Across 17 tokenizer families, differential campaigns cover 1.5x10^10 split checks, a 12.4 TB real-text corpus, and 93,000+ replayed agent steps, with zero divergence. Incremental repair takes 0.5-1.1 ms from 100K to 3M characters, up to 437x faster than HF tokenization and 2.1x faster at 1M than the strongest cache-based baseline (Gigatoken) fully prewarmed. GPU full tokenization encodes a 1M-character request in 0.87 ms, up to 491x below HF and 23.4x below the fastest published CPU method. With vLLM, median time to first token drops 16-34% and P99 drops 23% under recorded bursts. Under a 50 ms P99 objective, four repair cores plus one GPU sustain 1,821 requests/s where a 16-core stateless front end saturates at 40.</p>
                     
-                    <p class="deep-takeaway">要点：对偶性在建立广泛的物理系统中的微观现象和涌现现象方面发挥着重要作用。然而，在实践中，即使所有“游戏规则”都是众所周知的，确定两个系统何时是对偶的，在计算上通常也具有挑战性。换句话说，当面对两个系统时，如何有效地确定它们实际上是对偶的？在本文中，我们使用机器学习方法来解决超对称箭袋规范理论的塞伯格对偶性问题。从数学上讲，...</p>
+                    <p class="deep-takeaway">要点：LLM serving systems cache prompt KV state, yet most front ends still re-tokenize the full request text on every call. The cost lands on coding agents, which res...</p>
                     
                     <p class="deep-meta">预计阅读 2 分钟</p>
                 
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>Indhu27-pixel/Labour-Law-Violation-System</strong> (★ 49)
-                        <p>由人工智能驱动的劳动法违法行为检测系统，使用弱监督、BiLSTM、图神经网络 (GNN) 和可解释的人工智能来识别劳动法违法行为。</p>
-                    </li>
-                    
-                    <li>
-                        <strong>lucidrains/robo_ttt</strong> (★ 30)
-                        <p>Yunfan Jiang等人提出的RoboTTT的实现。斯坦福大学和英伟达的</p>
+                        <strong>Indhu27-pixel/Labour-Law-Violation-System</strong> (★ 50)
+                        <p>AI-powered Labour Law Violation Detection System using Weak Supervision, BiLSTM, Graph Neural Networks (GNN), and Explainable AI to identify labour law violations.</p>
                     </li>
                     
                     <li>
                         <strong>holistic-ai/surface</strong> (★ 22)
-                        <p>这里运行什么人工智能，以及它的成本是多少。对您的人工智能工具、站点、代币和支出进行本地扫描。</p>
+                        <p>What AI runs here, and what it costs. A local scan of your AI tools, sites, tokens and spend.</p>
                     </li>
                     
                     <li>
-                        <strong>samber/awesome-ai-native</strong> (★ 5)
+                        <strong>samber/awesome-ai-native</strong> (★ 6)
                         <p>人工智能原生产品的精选列表：其中法学硕士是产品本身，而不是附加功能的应用程序和工具。</p>
                     </li>
                     
                     <li>
+                        <strong>iii-hq/oh-my-harness</strong> (★ 5)
+                        <p>你拥有这个工具作为一堆可安装的工作人员，“构建你自己的”不再意味着“分叉一个框架”。意思是“交换一些工人”。</p>
+                    </li>
+                    
+                    <li>
                         <strong>Commonwealth-Bank-of-Australia/EmbGen-KDD-Release</strong> (★ 5)
-                        <p>EmbGen 代码库：使用重新组装的语料库进行教学</p>
+                        <p>Codebase for EmbGen: Teaching with Reassembled Corpora</p>
                     </li>
                     
                 </ul>
