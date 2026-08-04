@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-08-03 22:56:04</p>
+            <p class="hero-meta">构建时间：2026-08-04 22:58:15</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,17 +191,17 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The only way to do great work is to love what you do.</p>
-                        <p class="quick-meta">— Steve Jobs</p>
+                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
+                        <p class="quick-meta">— Albert Einstein</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 abstraction，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 concurrency，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 Indhu27-pixel/Labour-Law-Violation-System，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《TokTier: Exact Stateful Tokenization for Agentic LLM Serving》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">abstraction <span>/æbˈstrækʃn/</span></p>
-                    <p class="study-meaning">n. 抽象；提取</p>
+                    <p class="study-word">concurrency <span>/kənˈkʌrənsi/</span></p>
+                    <p class="study-meaning">n. 并发；并发性</p>
                     
-                    <p class="study-sentence">Abstraction reduces complexity by hiding unnecessary details.</p>
-                    <p class="study-sentence-zh">抽象通过隐藏不必要的细节来降低复杂性。</p>
+                    <p class="study-sentence">Concurrency allows multiple tasks to run in overlapping time periods.</p>
+                    <p class="study-sentence-zh">并发允许多个任务在重叠的时间段内运行。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">TokTier: Exact Stateful Tokenization for Agentic LLM Serving</p>
-                    <p class="deep-abstract">LLM serving systems cache prompt KV state, yet most front ends still re-tokenize the full request text on every call. The cost lands on coding agents, which resubmit a long transcript after each small tool result, and reuse is hard because even a short append can change token boundaries near the end of the previous sequence. Across 153,951 calls from two agent ecosystems, the median call appends about 1.4K characters, and only 1.0-3.6% of calls start or rebuild a session with contexts of millions of characters. At a 94.1% fleet prompt-cache hit rate, tokenization reaches up to 64% of time to first token.   TokTier is a stateful tokenization service with one contract: emitted token IDs are always identical to full reference tokenization of the request text. For a session continuation, it re-tokenizes a small window around the append and splices only after a per-request stable-boundary check, widening the window or falling back to full tokenization on failure. For a call without a reusable prefix, it decomposes GPT-family regex pre-tokenization into run-local rules and runs exact pre-tokenization and BPE on a GPU. A sampled shadow verifier re-checks live traffic.   Across 17 tokenizer families, differential campaigns cover 1.5x10^10 split checks, a 12.4 TB real-text corpus, and 93,000+ replayed agent steps, with zero divergence. Incremental repair takes 0.5-1.1 ms from 100K to 3M characters, up to 437x faster than HF tokenization and 2.1x faster at 1M than the strongest cache-based baseline (Gigatoken) fully prewarmed. GPU full tokenization encodes a 1M-character request in 0.87 ms, up to 491x below HF and 23.4x below the fastest published CPU method. With vLLM, median time to first token drops 16-34% and P99 drops 23% under recorded bursts. Under a 50 ms P99 objective, four repair cores plus one GPU sustain 1,821 requests/s where a 16-core stateless front end saturates at 40.</p>
+                    <p class="deep-title">AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling</p>
+                    <p class="deep-abstract">语言在生成建模中仍然是一个异常值：虽然图像、视频和音频越来越多地在连续潜在空间中建模，但文本生成仍然主要依赖于离散标记。现有的连续语言模型要么继承不是为联合生成和解码而设计的嵌入空间，要么压缩自动编码的潜在变量以方便扩散，从而牺牲令牌级保真度。我们没有简化表示以适应生成模型，而是保留高容量、可解码的潜在文本，并设计扩散模型来直接学习其分布。   我们引入了 AURORA-LM，一种连续潜在扩散语言模型，它将可解​​码文本表示的构建与其分布建模分开。基于查询的编码器-解码器将文本组织成大容量、前缀对齐的潜在序列，块因果扩散变换器通过流匹配学习其分布，从左到右生成块，同时并行对每个块内的位置进行去噪。由于这种潜在模型更难扩散到模型，因此 AURORA-LM 仅限制噪声输入路径，同时保留完整的干净潜在预测目标，在不减少面向解码器的容量的情况下容纳全宽度潜在模型。我们进一步将噪声水平分布校准到潜在宽度，并引入自轨迹一致性来桥接独立采样的训练噪声和推理时的迭代去噪。   AURORA-LM 在 OpenWebText 自由生成和 XSum 总结方面在评估的连续和基于扩散的语言模型中实现了最强的性能。通过大约 1500 EFLOP 的总计算量扩展到 1B 参数可以产生进一步的收益，超过了匹配评估协议下更大的公开发布的潜在扩散语言模型。所有实验均在 Ascend NPU 上进行。</p>
                     
-                    <p class="deep-takeaway">要点：LLM serving systems cache prompt KV state, yet most front ends still re-tokenize the full request text on every call. The cost lands on coding agents, which res...</p>
+                    <p class="deep-takeaway">要点：语言在生成建模中仍然是一个异常值：虽然图像、视频和音频越来越多地在连续潜在空间中建模，但文本生成仍然主要依赖于离散标记。现有的连续语言模型要么继承不是为联合生成和解码而设计的嵌入空间，要么压缩自动编码的潜在变量以方便扩散，从而牺牲令牌级保真度。我们没有简化表示以适应生成模型，而是保留高容量、可解码的潜在文本，并设计扩散...</p>
                     
                     <p class="deep-meta">预计阅读 2 分钟</p>
                 
@@ -285,12 +285,17 @@ html, body {
                     
                     <li>
                         <strong>Indhu27-pixel/Labour-Law-Violation-System</strong> (★ 50)
-                        <p>AI-powered Labour Law Violation Detection System using Weak Supervision, BiLSTM, Graph Neural Networks (GNN), and Explainable AI to identify labour law violations.</p>
+                        <p>由人工智能驱动的劳动法违法行为检测系统，使用弱监督、BiLSTM、图神经网络 (GNN) 和可解释的人工智能来识别劳动法违法行为。</p>
                     </li>
                     
                     <li>
-                        <strong>holistic-ai/surface</strong> (★ 22)
-                        <p>What AI runs here, and what it costs. A local scan of your AI tools, sites, tokens and spend.</p>
+                        <strong>Commonwealth-Bank-of-Australia/architect-agent</strong> (★ 7)
+                        <p>超越通才法学硕士的代码库：用于结构化代码工作流程执行的专业代理系统</p>
+                    </li>
+                    
+                    <li>
+                        <strong>BradGroux/ai-native-operating-framework</strong> (★ 6)
+                        <p>一个开放的业务运营框架和方法，供人和人工智能执行工作。</p>
                     </li>
                     
                     <li>
@@ -301,11 +306,6 @@ html, body {
                     <li>
                         <strong>iii-hq/oh-my-harness</strong> (★ 5)
                         <p>你拥有这个工具作为一堆可安装的工作人员，“构建你自己的”不再意味着“分叉一个框架”。意思是“交换一些工人”。</p>
-                    </li>
-                    
-                    <li>
-                        <strong>Commonwealth-Bank-of-Australia/EmbGen-KDD-Release</strong> (★ 5)
-                        <p>Codebase for EmbGen: Teaching with Reassembled Corpora</p>
                     </li>
                     
                 </ul>
