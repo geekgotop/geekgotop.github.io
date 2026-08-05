@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-08-04 22:58:15</p>
+            <p class="hero-meta">构建时间：2026-08-05 22:54:27</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,17 +191,17 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
-                        <p class="quick-meta">— Albert Einstein</p>
+                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                        <p class="quick-meta">— Chinese Proverb</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 concurrency，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 serialization，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 Indhu27-pixel/Labour-Law-Violation-System，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《ParVL: Parallel Scaling and Expandable Compute Allocation for Multimodal LLMs》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">concurrency <span>/kənˈkʌrənsi/</span></p>
-                    <p class="study-meaning">n. 并发；并发性</p>
+                    <p class="study-word">serialization <span>/ˌsɪəriəlaɪˈzeɪʃn/</span></p>
+                    <p class="study-meaning">n. 序列化</p>
                     
-                    <p class="study-sentence">Concurrency allows multiple tasks to run in overlapping time periods.</p>
-                    <p class="study-sentence-zh">并发允许多个任务在重叠的时间段内运行。</p>
+                    <p class="study-sentence">Serialization converts an object into a stream of bytes for storage.</p>
+                    <p class="study-sentence-zh">序列化将对象转换为字节流以便存储。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling</p>
-                    <p class="deep-abstract">语言在生成建模中仍然是一个异常值：虽然图像、视频和音频越来越多地在连续潜在空间中建模，但文本生成仍然主要依赖于离散标记。现有的连续语言模型要么继承不是为联合生成和解码而设计的嵌入空间，要么压缩自动编码的潜在变量以方便扩散，从而牺牲令牌级保真度。我们没有简化表示以适应生成模型，而是保留高容量、可解码的潜在文本，并设计扩散模型来直接学习其分布。   我们引入了 AURORA-LM，一种连续潜在扩散语言模型，它将可解​​码文本表示的构建与其分布建模分开。基于查询的编码器-解码器将文本组织成大容量、前缀对齐的潜在序列，块因果扩散变换器通过流匹配学习其分布，从左到右生成块，同时并行对每个块内的位置进行去噪。由于这种潜在模型更难扩散到模型，因此 AURORA-LM 仅限制噪声输入路径，同时保留完整的干净潜在预测目标，在不减少面向解码器的容量的情况下容纳全宽度潜在模型。我们进一步将噪声水平分布校准到潜在宽度，并引入自轨迹一致性来桥接独立采样的训练噪声和推理时的迭代去噪。   AURORA-LM 在 OpenWebText 自由生成和 XSum 总结方面在评估的连续和基于扩散的语言模型中实现了最强的性能。通过大约 1500 EFLOP 的总计算量扩展到 1B 参数可以产生进一步的收益，超过了匹配评估协议下更大的公开发布的潜在扩散语言模型。所有实验均在 Ascend NPU 上进行。</p>
+                    <p class="deep-title">ParVL: Parallel Scaling and Expandable Compute Allocation for Multimodal LLMs</p>
+                    <p class="deep-abstract">多模态大型语言模型 (MLLM) 的现有扩展策略通常会扩展模型参数或顺序推理计算，从而产生大量内存或延迟开销。更重要的是，大多数现有方法无法改变视觉转换器和大型语言模型组件之间严格的、固定的计算分配，从而限制了特定于任务的优化。为了解决这个问题，我们引入了 MLLM 的并行视觉语言 (ParVL) 扩展框架，该框架通过跨多个视觉和语言分支重用现有的 ViT 和 LLM 主干参数来扩展并行计算。该框架提出了一个核心问题：给定固定的主干参数预算，额外的共享主干计算应如何在视觉和语言模态之间分配？我们在共享主干上使用特定于分支的前缀参数实例化每个并行计算流，并通过对大约 13B 令牌的全参数监督微调来端到端训练整个模型。我们系统地研究了 ViT 编码器和 LLM 解码器之间的计算分配权衡。与相同方法的单分支基线相比，ParVL 提高了整体多模态性能，并且最佳评估的视觉语言分配因任务而异。代码可在 https://github.com/YangYangGirl/ParVL 获取。</p>
                     
-                    <p class="deep-takeaway">要点：语言在生成建模中仍然是一个异常值：虽然图像、视频和音频越来越多地在连续潜在空间中建模，但文本生成仍然主要依赖于离散标记。现有的连续语言模型要么继承不是为联合生成和解码而设计的嵌入空间，要么压缩自动编码的潜在变量以方便扩散，从而牺牲令牌级保真度。我们没有简化表示以适应生成模型，而是保留高容量、可解码的潜在文本，并设计扩散...</p>
+                    <p class="deep-takeaway">要点：多模态大型语言模型 (MLLM) 的现有扩展策略通常会扩展模型参数或顺序推理计算，从而产生大量内存或延迟开销。更重要的是，大多数现有方法无法改变视觉转换器和大型语言模型组件之间严格的、固定的计算分配，从而限制了特定于任务的优化。为了解决这个问题，我们引入了 MLLM 的并行视觉语言 (ParVL) 扩展框架，该框架通过...</p>
                     
-                    <p class="deep-meta">预计阅读 2 分钟</p>
+                    <p class="deep-meta">预计阅读 1 分钟</p>
                 
             </div>
             
@@ -285,12 +285,17 @@ html, body {
                     
                     <li>
                         <strong>Indhu27-pixel/Labour-Law-Violation-System</strong> (★ 50)
-                        <p>由人工智能驱动的劳动法违法行为检测系统，使用弱监督、BiLSTM、图神经网络 (GNN) 和可解释的人工智能来识别劳动法违法行为。</p>
+                        <p>AI-powered Labour Law Violation Detection System using Weak Supervision, BiLSTM, Graph Neural Networks (GNN), and Explainable AI to identify labour law violations.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>kittisora/top-ai-repos</strong> (★ 16)
+                        <p>Discover, compare, and track open-source AI repositories ranked by activity, growth, quality, and production readiness. Updating daily.</p>
                     </li>
                     
                     <li>
                         <strong>Commonwealth-Bank-of-Australia/architect-agent</strong> (★ 7)
-                        <p>超越通才法学硕士的代码库：用于结构化代码工作流程执行的专业代理系统</p>
+                        <p>Codebase for Beyond Generalist LLMs: Specialist Agentic Systems for Structured  Code Workflow Execution paper</p>
                     </li>
                     
                     <li>
@@ -301,11 +306,6 @@ html, body {
                     <li>
                         <strong>samber/awesome-ai-native</strong> (★ 6)
                         <p>人工智能原生产品的精选列表：其中法学硕士是产品本身，而不是附加功能的应用程序和工具。</p>
-                    </li>
-                    
-                    <li>
-                        <strong>iii-hq/oh-my-harness</strong> (★ 5)
-                        <p>你拥有这个工具作为一堆可安装的工作人员，“构建你自己的”不再意味着“分叉一个框架”。意思是“交换一些工人”。</p>
                     </li>
                     
                 </ul>

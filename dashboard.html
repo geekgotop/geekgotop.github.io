@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-08-04 22:58:15</span>
+        <span class="generated-time">更新于 2026-08-05 22:54:27</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">AURORA-LM:<sup class='ipa'>/auroralm*/</sup> Autoencoding<sup class='ipa'>/autoencoding*/</sup> Unified Representation<sup class='ipa'>/ˌrɛprəzɛnˈteɪʃən/</sup> for Continuous-Latent<sup class='ipa'>/continuouslatent*/</sup> Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Modeling<sup class='ipa'>/ˈmɑdəlɪŋ/</sup></h4>
+                            <h4 class="paper-title">ParVL: Parallel<sup class='ipa'>/ˈpɛrəˌlɛl/</sup> Scaling and Expandable<sup class='ipa'>/ɪkˈspændəbəl/</sup> Compute Allocation<sup class='ipa'>/ˌæləˈkeɪʃən/</sup> for Multimodal<sup class='ipa'>/multimodal*/</sup> LLMs</h4>
                             <div class="paper-meta">
-                                <span class="authors">Jiajun Liang, Yucheng Liao, Yukang Cao</span>
-                                <span class="date">2026-08-03</span>
+                                <span class="authors">Yang Yang, Qinyu Zhao, Mouxiang Chen</span>
+                                <span class="date">2026-08-04</span>
+                                <span class="categories">cs.CV | cs.CL</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Existing scaling strategies for Multimodal Large Language Models (MLLMs) typically expand either model parameters or sequential inference computation, incurring substantial memory or latency overhead. More importantly, most existing methods fail to alter the rigid, fixed computation allocation betwe...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">多模态大型语言模型 (MLLM) 的现有扩展策略通常会扩展模型参数或顺序推理计算，从而产生大量内存或延迟开销。更重要的是，大多数现有方法无法改变视觉转换器和大型语言模型组件之间严格的、固定的计算分配，从而限制了特定于任务的优化。为了解决这个问题，我们引入了 MLLM 的并行视觉语言 (ParVL) 扩展框架，该框架通过跨多个视觉和语言分支重用现有的 ViT 和 LLM 主干参数来扩展并行计算。该框架提出了一个核心问题：给定固定的主干参数预算，额外的共享主干计算应如何在视觉和语言模态之间分配？我们在共享主干上使用特定于分支的前缀参数实例化每个并行计算流，并通过对大约 13B 令牌的全参数监督微调来端到端训练整个模型。我们系统地研究了 ViT 编码器和 LLM 解码器之间的计算分配权衡。与相同方法的单分支基线相比，ParVL 提高了整体多模态性能，并且最佳评估的视觉语言分配因任务而异。代码可在 https://github.com/YangYangGirl/ParVL 获取。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2608.04010v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">SocietyBench:<sup class='ipa'>/societybench*/</sup> Forecasting<sup class='ipa'>/ˈfɔrˌkæstɪŋ/</sup> Counterfactual<sup class='ipa'>/counterfactual*/</sup> Social-World<sup class='ipa'>/socialworld*/</sup> Evolution<sup class='ipa'>/ˌɛvəˈluʃən/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Zhenran Wang, Zhonghan Bian, Jinsong Li</span>
+                                <span class="date">2026-08-04</span>
                                 <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Language remains an outlier in generative modeling: while images, video, and audio are increasingly modeled in continuous latent spaces, text generation still relies predominantly on discrete tokens. Existing continuous language models either inherit embedding spaces not designed for joint generatio...</p>
+                                <p class="abstract-en">Large language models (LLMs), and the agents built on top of them, are now benchmarked heavily on whether they can finish a task -- fix a bug, drive a browser, operate a GUI. A complementary social ability, namely how well a model understands and forecasts the way real social events unfold, has bare...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">语言在生成建模中仍然是一个异常值：虽然图像、视频和音频越来越多地在连续潜在空间中建模，但文本生成仍然主要依赖于离散标记。现有的连续语言模型要么继承不是为联合生成和解码而设计的嵌入空间，要么压缩自动编码的潜在变量以方便扩散，从而牺牲令牌级保真度。我们没有简化表示以适应生成模型，而是保留高容量、可解码的潜在文本，并设计扩散模型来直接学习其分布。   我们引入了 AURORA-LM，一种连续潜在扩散语言模型，它将可解​​码文本表示的构建与其分布建模分开。基于查询的编码器-解码器将文本组织成大容量、前缀对齐的潜在序列，块因果扩散变换器通过流匹配学习其分布，从左到右生成块，同时并行对每个块内的位置进行去噪。由于这种潜在模型更难扩散到模型，因此 AURORA-LM 仅限制噪声输入路径，同时保留完整的干净潜在预测目标，在不减少面向解码器的容量的情况下容纳全宽度潜在模型。我们进一步将噪声水平分布校准到潜在宽度，并引入自轨迹一致性来桥接独立采样的训练噪声和推理时的迭代去噪。   AURORA-LM 在 OpenWebText 自由生成和 XSum 总结方面在评估的连续和基于扩散的语言模型中实现了最强的性能。通过大约 1500 EFLOP 的总计算量扩展到 1B 参数可以产生进一步的收益，超过了匹配评估协议下更大的公开发布的潜在扩散语言模型。所有实验均在 Ascend NPU 上进行。</p>
+                                    <p class="abstract-zh">大型语言模型 (LLM) 以及构建在其之上的代理现在主要针对它们是否能够完成任务（修复错误、驱动浏览器、操作 GUI）进行基准测试。一种互补的社交能力，即模型对真实社会事件展开方式的理解和预测程度，几乎没有被测量过。我们引入了 SocietyBench，这是一种端到端基准测试，它采用单行事件主题，收集五个平台上的网络新闻和社交媒体帖子，将它们提炼成一个日期索引的时间线，将事实事件和公众舆论层分开，然后将该时间线上的每个截止日期转变为经过审计的预测问题库。问题在两个正交的 100 点轴上进行评分：概率校准和时间准确性。在任何模型看到时间线之前，一个三阶段过程会替换每个命名实体，并按每个事件的常量移动每个日期，将真实的弧线转变为反事实的社交世界——结构与所发生的情况相同，但剥离了模型可以与训练前记忆相匹配的表面标签。在中文和英文版本中的五个异质事件和 125 个预测点上，六个前沿法学硕士中最强的仅达到 75.0（满分 100），而锚点则为 50。这两个轴是分开的：模型可以是校准强但时间弱的，或者相反。基于共享基础模型构建的三个代理框架未能在该基础上进行改进，并且每个法学硕士都有两个无模型启发式方法。每个事件的差距在单个轴上达到 21.4 点，这是我们评估多个事件而不是一个事件的主要论点。所有匿名时间表、题库、基本事实和评分代码均已发布。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2608.02602v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2608.04009v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Bridging<sup class='ipa'>/ˈbrɪʤɪŋ/</sup> Artificial<sup class='ipa'>/ˌɑrtəˈfɪʃəl/</sup> Intelligence<sup class='ipa'>/ˌɪnˈtɛləʤəns/</sup> and Power Systems Education<sup class='ipa'>/ˌɛʤəˈkeɪʃən/</sup> Using a Hands-On Executable<sup class='ipa'>/executable*/</sup> Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup></h4>
+                            <h4 class="paper-title">WorldCup<sup class='ipa'>/worldcup*/</sup> Arena: Prospective,<sup class='ipa'>/prəˈspɛktɪv/</sup> Leakage-Free<sup class='ipa'>/leakagefree*/</sup> Evaluation<sup class='ipa'>/ɪˌvæljuˈeɪʃən/</sup> of Frontier<sup class='ipa'>/frənˈtɪr/</sup> LLMs on a Live Tournament<sup class='ipa'>/ˈtʊrnəmənt/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Junjie Yin, Buxin She, Xinyu Feng</span>
-                                <span class="date">2026-08-03</span>
-                                <span class="categories">eess.SY | cs.AI</span>
+                                <span class="authors">Zhenran Wang, Zhonghan Bian, Jinsong Li</span>
+                                <span class="date">2026-08-04</span>
+                                <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Artificial intelligence (AI) is increasingly central to power and energy systems, supporting modeling, forecasting, optimization, and control. Yet most existing works emphasize specialized applications and offer little reusable material for newcomers or interdisciplinary learners, who increasingly r...</p>
+                                <p class="abstract-en">Benchmarks that measure the forecasting ability of large language models are almost always retrospective: the event has happened, the answer is somewhere on the Web, and the evaluation must defend itself against memorisation. We report the opposite design. Over the 39 days of the 2026 FIFA World Cup...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">人工智能 (AI) 越来越成为电力和能源系统的核心，支持建模、预测、优化和控制。然而，大多数现有作品都强调专门的应用程序，并且为新手或跨学科学习者提供的可重复使用的材料很少，他们越来越依赖大型语言模型而不是构建自己的语言模型。这一差距表明需要基于工程的人工智能（EGAI），其中人工智能工作流程遵循既定的工程和电力系统领域规则，而不是充当与任务无关的黑匣子。受到研究人员和从业者社区调查的推动，调查显示 92% 的人表示在运行 AI 模型之前至少存在一个障碍，94% 的人希望参加针对特定功能的实践课程。本文提出了一个由开放的可执行模块库组成的框架，降低了人工智能在电力系统中的进入门槛。这些模块遵循渐进式难度阶梯，将核心人工智能概念映射到代表性电力系统任务上：（i）用于函数逼近和负载曲线拟合的基础深度神经网络（DNN）模板； (ii) 5 总线系统的域耦合卷积神经网络 (CNN) 功率流替代； (iii) DN​​N 辅助优化、用于电池存储控制的深度强化学习 (DRL) 以及用于摆动方程的物理信息神经网络 (PINN) 的前沿模块。所有模块均以 Jupyter 笔记本的形式发布，可在本地或 Google Colab 上运行，并通过 IEEE 在线课程和 IEEE 电力与能源协会 (PES) 网络研讨会系列提供。该网络研讨会吸引了超过 590 名现场与会者，是参加人数最多的 10 场 IEEE PES 网络研讨会之一，并且在两周内访问了超过 344 次存储库，强化了基于调查的动机。</p>
+                                    <p class="abstract-zh">衡量大型语言模型预测能力的基准几乎总是回顾性的：事件已经发生，答案就在网络上的某个地方，并且评估必须防止记忆。我们报告了相反的设计。在 2026 年 FIFA 世界杯的 39 天里，六位前沿法学硕士（均具有扩展思维和本地服务器端网络搜索）在每次开赛前（一次一场比赛）都被要求填写一张针对所有 104 场比赛的 7 个市场预测卡，以及 12 个小组冠军和赛前总冠军池；提出问题时不存在答案，因此评估通过构建而不是通过过滤实现无泄漏，并且冻结档案保存了 4,494 个评分预测。锦标赛建立的是六个系统共享的一组行为。在比赛结果方面，他们的平均赔率为 63.9%，与支持博彩公司最喜欢的球队持平——事实上，这也是他们通常所做的。他们彼此意见一致的次数远远多于他们正确的次数，因此多数票不会增加任何结果。他们对平局和进球的承诺不足，并将他们的比分选择集中到一个典型的结果上。准确性追踪的是一场比赛的不平衡程度，而不是人们对它的了解程度：它在最接近的比赛中崩溃，那里的档案最丰富，而有关整个锦标赛的问题得到了很好的回答。在这项任务上，当前一代的前沿系统并没有明显的区别：在整个运行过程中，排名在顶部和底部保持不变，而在中间则有变动，并且自始至终，利润率都保持狭窄。简报档案、赛程和官方结果连同评分代码一起作为基准发布。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2608.02599v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">GradCuit:<sup class='ipa'>/gradcuit*/</sup> Credit-Assigned<sup class='ipa'>/creditassigned*/</sup> Gradient<sup class='ipa'>/ˈgreɪdiənt/</sup> Flow Enables Robust and Interpretable<sup class='ipa'>/interpretable*/</sup> Test-Time<sup class='ipa'>/testtime*/</sup> Latent Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Zhaoxin Yu, Qi Shen, Hengli Li</span>
-                                <span class="date">2026-08-03</span>
-                                <span class="categories">cs.LG | cs.CL</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Optimization-based latent reasoning improves large language model outputs by optimizing instance-specific continuous states at test time while keeping model parameters frozen. Existing methods, however, typically connect these states to the reasoning trajectory through decoded tokens, making sequenc...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">基于优化的潜在推理通过在测试时优化特定于实例的连续状态同时保持模型参数冻结来改进大型语言模型输出。然而，现有方法通常通过解码的标记将这些状态连接到推理轨迹，从而使序列级信用分配变得间接，并模糊了潜在更新如何塑造后续推理。我们引入了 GradCuit（通过电路的梯度），它在提示的隐藏表示和生成的延续之间的选定 Transformer 层插入可优化的潜在状态。因果自注意力为每个连续标记对数概率提供了通过剩余 Transformer 块到达每个先前潜在状态的可微路径，从而使整个连续的奖励加权梯度能够直接分配给潜在状态。在五个指令调整的主干、三个推理基准和两种答案格式中，GradCuit 的平均准确率达到 64.5%，比思想链提示高 6.6 个百分点，比最强竞争方法高 2.4 个百分点。 GradCuit 还表现出更高的稳健性：在七种学习率设置中，它始终优于 LatentSeek，同时将准确度的标准差从 1.53 降低到 0.82，甚至它的随机游走变体仍然与 LatentSeek 具有竞争力。为了可解释性，令牌级梯度归因揭示了潜在影响集中在推理连接器令牌上，而层分析将早期到中期的 Transformer 层识别为最有效的优化空间。通过直接优化结果反馈的内部推理，GradCuit 开辟了一个稳健且可解释的测试时间缩放的新轴，其中法学硕士可以调整他们的推理方式，而不仅仅是重新生成、采样或重新排序输出。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2608.02585v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2608.04008v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -922,9 +922,23 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">Labour-Law-Violation-System</span>
                                     <span class="repo-stars">⭐ 50</span>
                                 </div>
-                                <p class="repo-desc">由人工智能驱动的劳动法违法行为检测系统，使用弱监督、BiLSTM、图神经网络 (GNN) 和可解释的人工智能来识别劳动法违法行为。</p>
+                                <p class="repo-desc">AI-powered Labour Law Violation Detection System using Weak Supervision, BiLSTM, Graph Neural Networks (GNN), and Explainable AI to identify labour law violations.</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-07-31</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/kittisora/top-ai-repos" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">top-ai-repos</span>
+                                    <span class="repo-stars">⭐ 16</span>
+                                </div>
+                                <p class="repo-desc">Discover, compare, and track open-source AI repositories ranked by activity, growth, quality, and production readiness. Updating daily.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-07-31</span>
                                 </div>
                             </a>
@@ -936,7 +950,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">architect-agent</span>
                                     <span class="repo-stars">⭐ 7</span>
                                 </div>
-                                <p class="repo-desc">超越通才法学硕士的代码库：用于结构化代码工作流程执行的专业代理系统</p>
+                                <p class="repo-desc">Codebase for Beyond Generalist LLMs: Specialist Agentic Systems for Structured  Code Workflow Execution paper</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-07-31</span>
@@ -973,43 +987,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/iii-hq/oh-my-harness" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">oh-my-harness</span>
-                                    <span class="repo-stars">⭐ 5</span>
-                                </div>
-                                <p class="repo-desc">你拥有这个工具作为一堆可安装的工作人员，“构建你自己的”不再意味着“分叉一个框架”。意思是“交换一些工人”。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-07-29</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/Commonwealth-Bank-of-Australia/EmbGen-KDD-Release" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">EmbGen-KDD-Release</span>
-                                    <span class="repo-stars">⭐ 5</span>
-                                </div>
-                                <p class="repo-desc">EmbGen 代码库：使用重新组装的语料库进行教学</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-29</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/gauravxsuvo/Hueclid" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Hueclid</span>
-                                    <span class="repo-stars">⭐ 4</span>
+                                    <span class="repo-stars">⭐ 6</span>
                                 </div>
-                                <p class="repo-desc">Hueclid 将任何屏幕截图或照片转换为易于访问的 UI 调色板。它为背景、表面、文本、按钮等创建颜色，确保它们以可读的对比度一起工作。</p>
+                                <p class="repo-desc">Hueclid turns any screenshot or photo into an accessible UI color palette. It creates colors for backgrounds, surfaces, text, buttons, and more, making sure they all work together with readable contrast.</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">HTML</span>
                                     <span class="repo-date">2026-08-02</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/lucidrains/light-loco-parkour" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">light-loco-parkour</span>
+                                    <span class="repo-stars">⭐ 5</span>
+                                </div>
+                                <p class="repo-desc">Light Loco Parkour 的实现，通过多技能蒸馏实现多功能感知全身运动，出自 Light Origins Labs</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-08-05</span>
                                 </div>
                             </a>
                         </li>
@@ -1029,6 +1029,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/NaveenKumarP21/Hand-Gesture-Controlled-Video-Playback-System" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Hand-Gesture-Controlled-Video-Playback-System</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">AI-powered hand gesture control system for video playback and volume adjustment using OpenCV, MediaPipe, and Python.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-08-04</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/naman2302/DiffLoom" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">DiffLoom</span>
@@ -1038,20 +1052,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-07-30</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/vstorm-co/agenticos" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">agenticos</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">适用于贵公司人工智能代理的操作系统。自托管、开源，属于您。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-07-31</span>
                                 </div>
                             </a>
                         </li>
