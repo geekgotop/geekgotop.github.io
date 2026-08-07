@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-08-07 01:28:44</p>
+            <p class="hero-meta">构建时间：2026-08-07 22:29:49</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -207,9 +207,9 @@ html, body {
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-main">lucidrains/light-loco-parkour</p>
-                        <p class="quick-meta">★ 8</p>
-                        <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
+                        <p class="quick-main">TOPDEV99999/AI-Knowledge-Management-Platform</p>
+                        <p class="quick-meta">★ 91</p>
+                        <p class="quick-note">新兴项目，适合早期观察。 语言: Jupyter Notebook</p>
                     
                 </article>
                 <article class="quick-card">
@@ -219,9 +219,9 @@ html, body {
                         
                         <li>词汇: 朗读并复述 deprecated，再口述其含义一次。</li>
                         
-                        <li>趋势: 浏览 lucidrains/light-loco-parkour，记录 1 个可借鉴实现点。</li>
+                        <li>趋势: 浏览 TOPDEV99999/AI-Knowledge-Management-Platform，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《The Illusion of Visual Tool-Use: A Causal Audit of Thinking with Images》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Learning When to Trust via Selective Context Preference Optimization》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">The Illusion of Visual Tool-Use: A Causal Audit of Thinking with Images</p>
-                    <p class="deep-abstract">“用图像思考”范式为多模式法学硕士配备了主动视觉操作，例如裁剪和缩放。然而，与直接推理相比，使用这些操作的模型通常只能获得边际收益或负收益，而代币成本要高得多。他们还可能会反复裁剪不相关的区域，并且无法正确回答直接推理答案的问题。我们询问返回的视觉证据是否会因果影响答案。为了回答这个问题，我们将视觉工具的使用制定为因果图，将观察介导的路径与行动引起的捷径分开。然后，我们通过三个级别的干预措施对其进行审核：策略（将工具使用与直接推理进行比较）、轨迹（在推出期间破坏所有观察结果）和步骤（反事实地替换固定前缀下的单个观察结果）。我们的阶梯级估计值“视觉证据增益”隔离了每个返回的观察结果的贡献。通过六个代表性模型和五个细粒度感知基准，我们发现了具有两种故障模式的政策错误校准。在“不看就打电话”中，返回的观察结果对答案没有因果影响。在“没有计划的观察”中，观察结果提供了丰富的信息，但通话时间表却是不连贯的。轨迹级诊断分解了策略级准确性增益，并显示增益集中在校准的少数群体中。我们将这种差异称为视觉工具使用的错觉：尽管总体准确性有所提高，但视觉工具的使用在广泛的推广中并不具有因果关系。该代码可在 https://github.com/OpenCausaLab/CauAudit 获取。</p>
+                    <p class="deep-title">Learning When to Trust via Selective Context Preference Optimization</p>
+                    <p class="deep-abstract">语言模型越来越多地根据外部信号来决定其答案，而一个误导性的答案就可能使正确答案变成错误的。显而易见的补救措施，即训练模型来抵抗此类信号，隐藏了一种失败模式：忽略所有上下文的模型看起来很稳健，但当上下文值得信任时却毫无用处。我们将问题重新定义为选择性信任，并引入了 MIST（一种人工注释的基准），它在四种匹配条件（干净、误导、正确上下文和不相关上下文）下呈现每个推理项，以及 SC2W，这是一个配对指标，用于计算误导性信号将干净正确答案翻转为错误答案的频率。通过一项全面的基准研究，我们观察到这种敏感性是普遍存在的。然后，我们提出 SCOPE，它挖掘干净正确/误导错误的失败，并在所有四个条件下均衡平衡的匹配偏好对上优化标准直接偏好优化（DPO）目标，而不是单独优化误导性项目。我们的方法大大减少了流行开源模型上的 SC2W，同时在添加的上下文干净、正确或不相关时保持准确性。通过这项工作，我们认为应该根据选择性信任来判断模型，而不仅仅是根据抵制。</p>
                     
-                    <p class="deep-takeaway">要点：“用图像思考”范式为多模式法学硕士配备了主动视觉操作，例如裁剪和缩放。然而，与直接推理相比，使用这些操作的模型通常只能获得边际收益或负收益，而代币成本要高得多。他们还可能会反复裁剪不相关的区域，并且无法正确回答直接推理答案的问题。我们询问返回的视觉证据是否会因果影响答案。为了回答这个问题，我们将视觉工具的使用制定为因果...</p>
+                    <p class="deep-takeaway">要点：语言模型越来越多地根据外部信号来决定其答案，而一个误导性的答案就可能使正确答案变成错误的。显而易见的补救措施，即训练模型来抵抗此类信号，隐藏了一种失败模式：忽略所有上下文的模型看起来很稳健，但当上下文值得信任时却毫无用处。我们将问题重新定义为选择性信任，并引入了 MIST（一种人工注释的基准），它在四种匹配条件（干净、...</p>
                     
-                    <p class="deep-meta">预计阅读 2 分钟</p>
+                    <p class="deep-meta">预计阅读 1 分钟</p>
                 
             </div>
             
@@ -284,18 +284,18 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>lucidrains/light-loco-parkour</strong> (★ 8)
+                        <strong>TOPDEV99999/AI-Knowledge-Management-Platform</strong> (★ 91)
+                        <p>一个由 LLM 支持的代理知识助手，通过自动实体提取、结构化数据分析和基于 SQL 的推理来增强 RAG 功能，为复杂、多步骤和分析查询提供准确的答案。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>lucidrains/light-loco-parkour</strong> (★ 11)
                         <p>Light Loco Parkour 的实现，通过多技能蒸馏实现多功能感知全身运动，出自 Light Origins Labs</p>
                     </li>
                     
                     <li>
-                        <strong>gauravxsuvo/Hueclid</strong> (★ 6)
+                        <strong>gauravxsuvo/Hueclid</strong> (★ 7)
                         <p>Hueclid 将任何屏幕截图或照片转换为易于访问的 UI 调色板。它为背景、表面、文本、按钮等创建颜色，确保它们以可读的对比度一起工作。</p>
-                    </li>
-                    
-                    <li>
-                        <strong>TOPDEV99999/AI-Knowledge-Management-Platform</strong> (★ 6)
-                        <p>一个由 LLM 支持的代理知识助手，通过自动实体提取、结构化数据分析和基于 SQL 的推理来增强 RAG 功能，为复杂、多步骤和分析查询提供准确的答案。</p>
                     </li>
                     
                     <li>
@@ -305,7 +305,7 @@ html, body {
                     
                     <li>
                         <strong>Abdulrahman0Khaled/youtube2skills</strong> (★ 3)
-                        <p>Production-ready pipeline that transforms YouTube videos into executable AI Agent Skills using LLMs, semantic extraction, vector search, and autonomous quality validation.</p>
+                        <p>生产就绪的管道，使用 LLM、语义提取、矢量搜索和自主质量验证将 YouTube 视频转换为可执行的 AI 代理技能。</p>
                     </li>
                     
                 </ul>
