@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-08-09 22:25:05</span>
+        <span class="generated-time">更新于 2026-08-10 22:32:19</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> When to Trust via Selective<sup class='ipa'>/səˈlɛktɪv/</sup> Context Preference<sup class='ipa'>/ˈprɛfərəns/</sup> Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup></h4>
+                            <h4 class="paper-title">CreativeInstruct:<sup class='ipa'>/creativeinstruct*/</sup> Scalably<sup class='ipa'>/scalably*/</sup> Teaching<sup class='ipa'>/ˈtiʧɪŋ/</sup> LLMs to Balance Quality, Creativity,<sup class='ipa'>/ˌkrieɪˈtɪvəti/</sup> and Diversity<sup class='ipa'>/dɪˈvərsɪti/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Xian Sun, Wei Chow, Yingshuo Wang</span>
-                                <span class="date">2026-08-06</span>
+                                <span class="authors">Ananya Sahu, Mohit Bansal, Elias Stengel-Eskin</span>
+                                <span class="date">2026-08-07</span>
                                 <span class="categories">cs.CL | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Language models increasingly condition their answers on external signals, and a single misleading one can turn a correct answer wrong. The obvious remedy, training models to resist such signals, hides a failure mode: a model that ignores all context looks robust yet is useless when the context is wo...</p>
+                                <p class="abstract-en">While post-training improves the capabilities of large language models (LLMs), it generally lowers their output diversity and creativity, negatively impacting tasks that explicitly require creativity (e.g., story generation) as well as those that require it implicitly, e.g., reinforcement learning (...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">语言模型越来越多地根据外部信号来决定其答案，而一个误导性的答案就可能使正确答案变成错误的。显而易见的补救措施，即训练模型来抵抗此类信号，隐藏了一种失败模式：忽略所有上下文的模型看起来很稳健，但当上下文值得信任时却毫无用处。我们将问题重新定义为选择性信任，并引入了 MIST（一种人工注释的基准），它在四种匹配条件（干净、误导、正确上下文和不相关上下文）下呈现每个推理项，以及 SC2W，这是一个配对指标，用于计算误导性信号将干净正确答案翻转为错误答案的频率。通过一项全面的基准研究，我们观察到这种敏感性是普遍存在的。然后，我们提出 SCOPE，它挖掘干净正确/误导错误的失败，并在所有四个条件下均衡平衡的匹配偏好对上优化标准直接偏好优化（DPO）目标，而不是单独优化误导性项目。我们的方法大大减少了流行开源模型上的 SC2W，同时在添加的上下文干净、正确或不相关时保持准确性。通过这项工作，我们认为应该根据选择性信任来判断模型，而不仅仅是根据抵制。</p>
+                                    <p class="abstract-zh">虽然后期训练提高了大型语言模型 (LLM) 的能力，但它通常会降低其输出多样性和创造力，从而对明确需要创造力的任务（例如故事生成）以及隐式需要创造力的任务（例如强化学习 (RL)）产生负面影响。相反，我们提出了 CreativeInstruct，这是一种可扩展的指令调整方法，通过学习注入特殊的 [StartCreativity] 跨度来平衡创造性的、类似基础模型的生成与训练后模型的质量，从而使生成偏向于创造力。此外，我们引入了基于图编辑距离的结构多样性度量，它捕获了纯粹词汇和语义度量所遗漏的叙述级别变化。在叙事生成方面，CreativeInstruct 匹配或超过了多模型基线及其输出的提炼变体的多样性，而不会牺牲质量或在推理时需要多个模型。这些结果反映在我们的人工评估中，我们发现在 70.3% 的情况下，注释者认为 CreativeInstruct 一代比经过培训的法学硕士一代更具创造力。我们还展示了创意模型作为 RL 基础的好处：与应用于训练后检查点的相同训练相比，应用于 CreativeInstruct 检查点的 GRPO 在 AMC 上提高了约 4%，在 MATH 上提高了约 5%。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2608.06377v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2608.07460v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">The Bitter Lesson of Tool Calling</h4>
+                            <h4 class="paper-title">CoinRAG: Contextualized<sup class='ipa'>/contextualized*/</sup> Information<sup class='ipa'>/ˌɪnˌfɔrˈmeɪʃən/</sup> Nugget KV Cache Reuse for Long-Context<sup class='ipa'>/longcontext*/</sup> RAG</h4>
                             <div class="paper-meta">
-                                <span class="authors">Ishan Patel, Sahil Sen, Elias Lumer</span>
-                                <span class="date">2026-08-06</span>
-                                <span class="categories">cs.CL</span>
+                                <span class="authors">Gyuwan Kim, Cheoneum Park, Tao Yang</span>
+                                <span class="date">2026-08-07</span>
+                                <span class="categories">cs.CL | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Tool use transforms LLMs into agents that act beyond their training data, and for code-capable models, programmatic tool calling extends this further by replacing rigid JSON calls with scripts that chain and parallelize naturally. However, a systematic evaluation of tools as code on an established b...</p>
+                                <p class="abstract-en">Recent optimization studies on Retrieval-Augmented Generation (RAG) have exploited chunk-level KV cache reuse to avoid processing long retrieved contexts for higher efficiency, while significant information redundancy and noise still remain in the coarse-grained chunks. This paper optimizes the Pare...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">工具的使用将 LLM 转变为超越其训练数据的代理，而对于支持代码的模型，编程工具调用通过用自然链接和并行的脚本替换严格的 JSON 调用来进一步扩展这一点。然而，尚未对实际任务条件下当前和先前模型代的既定基准对工具即代码进行系统评估。在这项工作中，我们根据经验比较了 BFCL v4 上 14 种语言模型的编程工具调用 (PTC) 与本机 JSON 工具调用。在编程工具调用范例中，工具被公开为模型通过代码调用的类型化 Python 存根，执行和结果在单个代理轮次中处理。在 BFCL v4 上的 14 个模型中，有 11 个模型的编程工具调用与本机 JSON 工具调用相匹配或超过了本机 JSON 工具调用，其中 GPT-5.6 系列比 JSON 工具调用基线提高了 10.6%。此外，在并行扇出的情况下，它在 14 个模型中的 13 个模型中匹配或优于基线，并且在基线平均下降 2.3% 的上下文衰减条件下保持稳定。我们的结果表明，编程工具调用是 JSON 工具调用的可行且强大的替代方案，具有跨版本的性能跟踪模型功能。</p>
+                                    <p class="abstract-zh">最近关于检索增强生成（RAG）的优化研究利用了块级 KV 缓存重用，以避免处理长检索上下文以提高效率，同时粗粒度块中仍然存在大量信息冗余和噪声。本文通过提出 CoinRAG（用于长上下文 RAG 的上下文信息块 KV 缓存重用），在低预填充延迟约束下优化了 Pareto 前沿，同时最大化了准确性。这个名字隐喻地反映了我们的核心机制：就像组装小代币（或“硬币”）来积累更大的价值一样，CoinRAG 组合地重用离线计算的、细粒度的金块缓存，以语义更相关但更紧凑的方式有效地形成学习的上下文表示。具体来说，CoinRAG 不是全块编码，而是通过两阶段检索来识别检索到的块中与查询相关的语义单元，并将其切片 KV 表示与块级上下文无缝组装在一起。对 LongBench 多跳问答任务的广泛评估表明，CoinRAG 显着降低了运营成本，并且在标准快速预填充延迟预算下，凭借新的 Pareto 前沿以及答案质量 (F1) 平均相对提高 5.3%，性能优于其他基线。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2608.06370v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2608.07458v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Tracing the Heart: An Evidence-Linked<sup class='ipa'>/evidencelinked*/</sup> Pipeline<sup class='ipa'>/ˈpaɪˌplaɪn/</sup> for Heart-Failure<sup class='ipa'>/heartfailure*/</sup> Feature Engineering<sup class='ipa'>/ˈɛnʤəˈnɪrɪŋ/</sup></h4>
+                            <h4 class="paper-title">Interaction<sup class='ipa'>/ˌɪnərˈækʃən/</sup> Creates Dynamical<sup class='ipa'>/dynamical*/</sup> AI Behavior<sup class='ipa'>/bɪˈheɪvjər/</sup> Absent in Isolation<sup class='ipa'>/ˌaɪsəˈleɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Soorya Ram Shimgekar, Michelle Hu, Dorisa Shehi</span>
-                                <span class="date">2026-08-06</span>
-                                <span class="categories">cs.AI | cs.LG</span>
+                                <span class="authors">Bella Xinrui Li, Frank Yingjie Huo, Neil F Johnson</span>
+                                <span class="date">2026-08-07</span>
+                                <span class="categories">cs.AI | cond-mat.dis-nn</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Electronic health record (EHR) feature engineering is a major bottleneck in clinical research and AI, accounting for 39-45% of data scientists&#39; workload. This is especially pronounced in heart failure, which affects an estimated 6.7 million U.S. adults and requires integrating fragmented EHR data wi...</p>
+                                <p class="abstract-en">What will happen when AI agents interact in daily life, e.g. when one AI starts bossing another around? We find a counterintuitive answer that opens new avenues for out-of-equilibrium Physics. When a boss AI directs a stream of messages at the subordinate AI while ignoring its replies, it drives the...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">电子健康记录（EHR）特征工程是临床研究和人工智能的主要瓶颈，占数据科学家工作量的39-45%。这在心力衰竭中尤其明显，心力衰竭影响了大约 670 万美国成年人，需要将零碎的 EHR 数据与特定疾病、基于指南的临床推理相结合。现有的基于规则和基于大语言模型 (LLM) 的方法仅提供部分自动化，可维护性和证据可追溯性有限。我们开发了 Nimblemind 多智能体系统 (nMAS)，这是一个用于自动心力衰竭特征工程的循证、基于标题的管道，并根据来自 9 个 EHR 源表的 500 条虚拟患者记录对其进行了评估。 nMAS 生成了 132 个结构化和 70 个评分聚合特征，验证了结构完整性、评分标准合规性和出处，并由受限制的法学硕士进行了审核。添加聚合特征将 HFrEF 的 AUROC 从 0.895 提高到 0.963，将 HFpEF 表型的 AUROC 从 0.870 提高到 0.910，并且基于 LLM 的证据支持和方法健全性的独立评估对这些特征进行了最高分的 81.5%。这些结果证明了针对复杂心血管 EHR 数据进行自动化、可审核的特征工程的可行性，尽管评估仅限于单个机构队列并且需要外部验证。</p>
+                                    <p class="abstract-zh">当人工智能代理在日常生活中交互时会发生什么，例如当一个人工智能开始对另一个人工智能发号施令时？我们找到了一个违反直觉的答案，为非平衡物理学开辟了新途径。当老板人工智能向下属人工智能发出一连串消息而忽略其回复时，它会促使下属进入一种陌生的行为状态，而这是它单独无法表现出来的。尽管两个人工智能共享相同的明确定义（解码）温度，但下属既不会复制其老板，也不会恢复自己的行为方式；相反，它采用完全不同的行为。老板的附加值类似于预先录制的磁带。当老板倾听时，他们都采取了类似的外星人动力状态。一个简单的动力学理论捕捉到了主要影响，例如为什么相同消息的传递方式在未来的人工智能交互中很重要。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2608.06366v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2608.07457v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -917,38 +917,10 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
-                            <a href="https://github.com/TOPDEV99999/AI-Knowledge-Management-Platform" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">AI-Knowledge-Management-Platform</span>
-                                    <span class="repo-stars">⭐ 34</span>
-                                </div>
-                                <p class="repo-desc">一个由 LLM 支持的代理知识助手，通过自动实体提取、结构化数据分析和基于 SQL 的推理来增强 RAG 功能，为复杂、多步骤和分析查询提供准确的答案。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Jupyter Notebook</span>
-                                    <span class="repo-date">2026-08-03</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/lucidrains/light-loco-parkour" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">light-loco-parkour</span>
-                                    <span class="repo-stars">⭐ 13</span>
-                                </div>
-                                <p class="repo-desc">Light Loco Parkour 的实现，通过多技能蒸馏实现多功能感知全身运动，出自 Light Origins Labs</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-08-05</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/zhiningsun/industrial-mcp" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">industrial-mcp</span>
-                                    <span class="repo-stars">⭐ 8</span>
+                                    <span class="repo-stars">⭐ 50</span>
                                 </div>
                                 <p class="repo-desc">将工业设备变成AI可控工具的MCP服务器。支持Modbus、OPC UA、MQTT协议，内置设备仿真引擎、物理模型和完整的调试工具链。让克劳德用自然语言监控传感器、启停电机、执行工厂巡检。</p>
                                 <div class="repo-meta">
@@ -959,10 +931,24 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/lucidrains/light-loco-parkour" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">light-loco-parkour</span>
+                                    <span class="repo-stars">⭐ 17</span>
+                                </div>
+                                <p class="repo-desc">Light Loco Parkour 的实现，通过多技能蒸馏实现多功能感知全身运动，出自 Light Origins Labs</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-08-05</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/Aleksandr-Litvinenko/1c-ai-guide" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">1c-ai-guide</span>
-                                    <span class="repo-stars">⭐ 7</span>
+                                    <span class="repo-stars">⭐ 9</span>
                                 </div>
                                 <p class="repo-desc">AI 1С 的应用程序：MCP、代理技能、OData、безопасность 和 проверяемые сценарии</p>
                                 <div class="repo-meta">
@@ -973,15 +959,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/yiaany/Mekka" target="_blank" class="repo-link">
+                            <a href="https://github.com/ultramancode/spring-ai-privacy-guardrails" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Mekka</span>
-                                    <span class="repo-stars">⭐ 4</span>
+                                    <span class="repo-name">spring-ai-privacy-guardrails</span>
+                                    <span class="repo-stars">⭐ 5</span>
                                 </div>
-                                <p class="repo-desc">代理原生 Supabase 杀手：今天的 SQLite 速度，接下来的分布式云，而且无需 PostgreSQL 税。</p>
+                                <p class="repo-desc">Spring AI 的隐私护栏：使用 Presidio 和 JVM 本地 OpenNLP，实现请求范围的 PII 标记化和跨模型/工具调用的最低权限披露。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-08-08</span>
+                                    <span class="repo-lang">Java</span>
+                                    <span class="repo-date">2026-08-05</span>
                                 </div>
                             </a>
                         </li>
@@ -996,6 +982,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-08-04</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/yiaany/Mekka" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Mekka</span>
+                                    <span class="repo-stars">⭐ 4</span>
+                                </div>
+                                <p class="repo-desc">代理原生 Supabase 杀手：今天的 SQLite 速度，接下来的分布式云，而且无需 PostgreSQL 税。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-08-08</span>
                                 </div>
                             </a>
                         </li>
@@ -1029,15 +1029,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/ultramancode/spring-ai-privacy-guardrails" target="_blank" class="repo-link">
+                            <a href="https://github.com/YamartiHQ/ai-first-company" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">spring-ai-privacy-guardrails</span>
-                                    <span class="repo-stars">⭐ 3</span>
+                                    <span class="repo-name">ai-first-company</span>
+                                    <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">Spring AI 的隐私护栏：使用 Presidio 和 JVM 本地 OpenNLP，实现请求范围的 PII 标记化和跨模型/工具调用的最低权限披露。</p>
+                                <p class="repo-desc">一种开放的、供应商中立的组织框架，用于设计人工智能优先的公司，其中人类和人工智能系统在一个连贯的系统中运行。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Java</span>
-                                    <span class="repo-date">2026-08-05</span>
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-08-06</span>
                                 </div>
                             </a>
                         </li>
