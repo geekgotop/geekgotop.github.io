@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-08-10 22:32:19</span>
+        <span class="generated-time">更新于 2026-08-11 22:37:24</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,58 +846,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">CreativeInstruct:<sup class='ipa'>/creativeinstruct*/</sup> Scalably<sup class='ipa'>/scalably*/</sup> Teaching<sup class='ipa'>/ˈtiʧɪŋ/</sup> LLMs to Balance Quality, Creativity,<sup class='ipa'>/ˌkrieɪˈtɪvəti/</sup> and Diversity<sup class='ipa'>/dɪˈvərsɪti/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Ananya Sahu, Mohit Bansal, Elias Stengel-Eskin</span>
-                                <span class="date">2026-08-07</span>
-                                <span class="categories">cs.CL | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">While post-training improves the capabilities of large language models (LLMs), it generally lowers their output diversity and creativity, negatively impacting tasks that explicitly require creativity (e.g., story generation) as well as those that require it implicitly, e.g., reinforcement learning (...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">虽然后期训练提高了大型语言模型 (LLM) 的能力，但它通常会降低其输出多样性和创造力，从而对明确需要创造力的任务（例如故事生成）以及隐式需要创造力的任务（例如强化学习 (RL)）产生负面影响。相反，我们提出了 CreativeInstruct，这是一种可扩展的指令调整方法，通过学习注入特殊的 [StartCreativity] 跨度来平衡创造性的、类似基础模型的生成与训练后模型的质量，从而使生成偏向于创造力。此外，我们引入了基于图编辑距离的结构多样性度量，它捕获了纯粹词汇和语义度量所遗漏的叙述级别变化。在叙事生成方面，CreativeInstruct 匹配或超过了多模型基线及其输出的提炼变体的多样性，而不会牺牲质量或在推理时需要多个模型。这些结果反映在我们的人工评估中，我们发现在 70.3% 的情况下，注释者认为 CreativeInstruct 一代比经过培训的法学硕士一代更具创造力。我们还展示了创意模型作为 RL 基础的好处：与应用于训练后检查点的相同训练相比，应用于 CreativeInstruct 检查点的 GRPO 在 AMC 上提高了约 4%，在 MATH 上提高了约 5%。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2608.07460v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">CoinRAG: Contextualized<sup class='ipa'>/contextualized*/</sup> Information<sup class='ipa'>/ˌɪnˌfɔrˈmeɪʃən/</sup> Nugget KV Cache Reuse for Long-Context<sup class='ipa'>/longcontext*/</sup> RAG</h4>
-                            <div class="paper-meta">
-                                <span class="authors">Gyuwan Kim, Cheoneum Park, Tao Yang</span>
-                                <span class="date">2026-08-07</span>
-                                <span class="categories">cs.CL | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Recent optimization studies on Retrieval-Augmented Generation (RAG) have exploited chunk-level KV cache reuse to avoid processing long retrieved contexts for higher efficiency, while significant information redundancy and noise still remain in the coarse-grained chunks. This paper optimizes the Pare...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">最近关于检索增强生成（RAG）的优化研究利用了块级 KV 缓存重用，以避免处理长检索上下文以提高效率，同时粗粒度块中仍然存在大量信息冗余和噪声。本文通过提出 CoinRAG（用于长上下文 RAG 的上下文信息块 KV 缓存重用），在低预填充延迟约束下优化了 Pareto 前沿，同时最大化了准确性。这个名字隐喻地反映了我们的核心机制：就像组装小代币（或“硬币”）来积累更大的价值一样，CoinRAG 组合地重用离线计算的、细粒度的金块缓存，以语义更相关但更紧凑的方式有效地形成学习的上下文表示。具体来说，CoinRAG 不是全块编码，而是通过两阶段检索来识别检索到的块中与查询相关的语义单元，并将其切片 KV 表示与块级上下文无缝组装在一起。对 LongBench 多跳问答任务的广泛评估表明，CoinRAG 显着降低了运营成本，并且在标准快速预填充延迟预算下，凭借新的 Pareto 前沿以及答案质量 (F1) 平均相对提高 5.3%，性能优于其他基线。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2608.07458v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Interaction<sup class='ipa'>/ˌɪnərˈækʃən/</sup> Creates Dynamical<sup class='ipa'>/dynamical*/</sup> AI Behavior<sup class='ipa'>/bɪˈheɪvjər/</sup> Absent in Isolation<sup class='ipa'>/ˌaɪsəˈleɪʃən/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Bella Xinrui Li, Frank Yingjie Huo, Neil F Johnson</span>
-                                <span class="date">2026-08-07</span>
-                                <span class="categories">cs.AI | cond-mat.dis-nn</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">What will happen when AI agents interact in daily life, e.g. when one AI starts bossing another around? We find a counterintuitive answer that opens new avenues for out-of-equilibrium Physics. When a boss AI directs a stream of messages at the subordinate AI while ignoring its replies, it drives the...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">当人工智能代理在日常生活中交互时会发生什么，例如当一个人工智能开始对另一个人工智能发号施令时？我们找到了一个违反直觉的答案，为非平衡物理学开辟了新途径。当老板人工智能向下属人工智能发出一连串消息而忽略其回复时，它会促使下属进入一种陌生的行为状态，而这是它单独无法表现出来的。尽管两个人工智能共享相同的明确定义（解码）温度，但下属既不会复制其老板，也不会恢复自己的行为方式；相反，它采用完全不同的行为。老板的附加值类似于预先录制的磁带。当老板倾听时，他们都采取了类似的外星人动力状态。一个简单的动力学理论捕捉到了主要影响，例如为什么相同消息的传递方式在未来的人工智能交互中很重要。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2608.07457v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
+                        <p class="empty-state">暂无论文数据</p>
                     
                 </div>
             </div>
@@ -934,12 +883,26 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/lucidrains/light-loco-parkour" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">light-loco-parkour</span>
-                                    <span class="repo-stars">⭐ 17</span>
+                                    <span class="repo-stars">⭐ 19</span>
                                 </div>
                                 <p class="repo-desc">Light Loco Parkour 的实现，通过多技能蒸馏实现多功能感知全身运动，出自 Light Origins Labs</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-08-05</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/vincenzo-afk/Intelis-Agent" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Intelis-Agent</span>
+                                    <span class="repo-stars">⭐ 12</span>
+                                </div>
+                                <p class="repo-desc">AI-powered research and intelligence platform that monitors the web, analyzes information, detects trends, and delivers personalized reports.</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-08-10</span>
                                 </div>
                             </a>
                         </li>
@@ -973,20 +936,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/NaveenKumarP21/Hand-Gesture-Controlled-Video-Playback-System" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Hand-Gesture-Controlled-Video-Playback-System</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">基于 AI 的手势控制系统，使用 OpenCV、MediaPipe 和 Python 进行视频播放和音量调节。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-08-04</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/yiaany/Mekka" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Mekka</span>
@@ -1001,15 +950,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/KalarisLabs/Myriad" target="_blank" class="repo-link">
+                            <a href="https://github.com/amir-sbg/FlexSplat" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Myriad</span>
+                                    <span class="repo-name">FlexSplat</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">生物技术和制药代理技能。访问 10,000 个可搜索、可安装的生物信息学、药物发现、基因组学和自动化生命科学工作流程任务。</p>
+                                <p class="repo-desc">[BMVC 2026] 使用联合训练的 VGGT 几何和基于查询的多视图高斯解码，用于未校准的以对象为中心的新颖视图合成的前馈 3D 高斯泼溅。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-08-04</span>
+                                    <span class="repo-date">2026-08-08</span>
                                 </div>
                             </a>
                         </li>
