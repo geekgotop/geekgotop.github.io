@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-08-11 22:37:24</span>
+        <span class="generated-time">更新于 2026-08-12 22:35:23</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,7 +846,58 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        <p class="empty-state">暂无论文数据</p>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Surgical<sup class='ipa'>/ˈsərʤɪkəl/</sup> WAM: A World-Action<sup class='ipa'>/worldaction*/</sup> Model for Data-Efficient<sup class='ipa'>/dataefficient*/</sup> Surgical<sup class='ipa'>/ˈsərʤɪkəl/</sup> Robot Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Wenrui Bao, Tianyun Jiang, Zhiben Chen</span>
+                                <span class="date">2026-08-11</span>
+                                <span class="categories">cs.RO | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Learning reliable surgical manipulation policies is bottlenecked by the scarcity of action-labeled demonstrations: teleoperated surgical robot (e.g., dVRK) trajectories with synchronized kinematics are costly to collect, while surgical tasks demand precise contact handling, long-horizon reasoning, a...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">学习可靠的手术操作策略因缺乏动作标记的演示而受到瓶颈：具有同步运动学的遥控手术机器人（例如 dVRK）轨迹的收集成本很高，而手术任务需要精确的接触处理、长视野推理和双手协调。相对于同步视频运动学轨迹，内窥镜视频相对便宜且丰富，利用它的自然方法是学习手术场景的世界模型。然而，现有的手术世界模型主要使用视频进行模拟或策略评估，很少将学到的动态转化为闭环控制。这一差距提出了我们的核心问题：在固定预算的动作标记演示下，无动作视频预训练是否可以改善闭环手术操作？为了回答这个问题，我们引入了外科世界动作模型（Surgical WAM），这是一个基于 Cosmos Policy 构建的统一生成模型，可以共同预测未来的内窥镜观察结果和可执行的外科机器人动作块。 Surgical WAM 首先从无动作视频中学习手术视觉动态，然后根据固定的动作标记预算进行微调；在部署时，它充当闭环后退控制器，执行每个预测动作块的短前缀，并根据结果观察重新计划。在一组四个模拟手术操作任务中，视频预训练将平均成功率从 63.5% 提高到 77.8%，其中 PegTransfer 的绝对成功率提高了 20 个百分点，其中在接触丰富和双手任务中的改进最大。这些结果表明，无动作视频为学习具有有限动作监督的手术机器人控制提供了可转移的视觉动态先验，将数据高效的视频预训练定位为扩大手术机器人学习的实用途径。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2608.11204v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">ConVAWG: A Retrieval-Grounded<sup class='ipa'>/retrievalgrounded*/</sup> Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup> for Controlled<sup class='ipa'>/kənˈtroʊld/</sup> Synthetic<sup class='ipa'>/sɪnˈθɛtɪk/</sup> Dialogue<sup class='ipa'>/ˈdaɪəˌlɔg/</sup> Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> in Violence<sup class='ipa'>/ˈvaɪələns/</sup> Against Women and Girls</h4>
+                            <div class="paper-meta">
+                                <span class="authors">Chen Lyu, Xingwei Tan, Simon Cullen</span>
+                                <span class="date">2026-08-11</span>
+                                <span class="categories">cs.CL | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Synthetic dialogue generation offers a way to study conversational dynamics in sensitive domains where real data are difficult to access, release, or annotate. The underlying abuse may occur online or offline: threats and coercion can appear directly in messages, while behaviours such as surveillanc...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">合成对话生成提供了一种研究敏感领域对话动态的方法，在这些领域中，真实数据难以访问、发布或注释。潜在的虐待可能发生在网上或线下：威胁和胁迫可以直接出现在消息中，而监视、隔离、跟踪和身体暴力等行为可能是有计划的、披露的或通过对话提及的。隐私和法律限制导致大规模真实对话数据集难以发布；现有的工作主要集中在网络滥用行为的句子层面的毒性上，在将滥用行为建模为一种相关的、暂时展开的现象方面存在空白。在这项工作中，我们专注于将针对妇女和女孩的暴力 (VAWG) 场景建模为多轮对话。我们介绍了 ConVAWG，一个基于检索的框架，用于生成与 CPS 一致的合成 VAWG 聊天对话。 ConVAWG 根据角色种子、英国国家统计局报告的人口统计模式、官方犯罪定义以及检索到的家庭凶杀审查案例构建场景；将它们转换为分层事件时间线；生成多场景角色扮演对话；并对适当的话语应用有针对性的激活引导的毒性控制。我们发布了 200 个场景的 6,000 多个多回合对话事件，以及丰富的场景、事件和回合级元数据。广泛的人工评估、法学硕士作为法官的评估、消融和下游任务显示出强大的对话质量和领域保真度。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2608.11200v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Beyond a Bag of Features:<sup class='ipa'>/ˈfiʧərz/</sup> Set-Level<sup class='ipa'>/setlevel*/</sup> Instability<sup class='ipa'>/ˌɪnstəˈbɪlɪti/</sup> in Sparse Autoencoders<sup class='ipa'>/autoencoders*/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Nikolai Bolik, Lennart Stöpler, Artur Andrzejak</span>
+                                <span class="date">2026-08-11</span>
+                                <span class="categories">cs.LG | cs.CL</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Shani et al. (2026) show that LLM representations broadly recover human category boundaries, while failing to reflect fine-grained typicality structure. Their analysis uses cosine similarity over dense model representations. We revisit their approach using overlap over active sparse autoencoder (SAE...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">沙尼等人。 （2026）表明，LLM 表示广泛地恢复了人类类别边界，但未能反映细粒度的典型性结构。他们的分析使用密集模型表示的余弦相似度。我们重新审视他们的方法，使用主动稀疏自动编码器（SAE）潜在集的重叠作为更可解释的相似性度量。我们首先验证这种集合级度量是有意义的：SAE 潜在集可以在受控玩具模型中恢复类似联合的组合结构，并在自然文本中引入语义连贯的邻域。将人类概念分析扩展到 SAE 集相似性，我们发现 SAE 激活集并没有比密集嵌入或残差流状态更忠实地恢复人类类别边界或类别内典型性，而是跟踪模型内部相似性结构。为了进一步探讨这一差距，我们研究了良好控制的语义修改下的活跃潜在集，揭示了人类对概念变化的判断与 SAE 活跃集变化的判断之间存在很大的不匹配。我们将此解释为证据，表明在理想化设置之外，SAE 特征不是通过简单的特征包语义组成的。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2608.11197v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
                     
                 </div>
             </div>
@@ -880,26 +931,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/lucidrains/light-loco-parkour" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">light-loco-parkour</span>
-                                    <span class="repo-stars">⭐ 19</span>
-                                </div>
-                                <p class="repo-desc">Light Loco Parkour 的实现，通过多技能蒸馏实现多功能感知全身运动，出自 Light Origins Labs</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-08-05</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/vincenzo-afk/Intelis-Agent" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Intelis-Agent</span>
-                                    <span class="repo-stars">⭐ 12</span>
+                                    <span class="repo-stars">⭐ 17</span>
                                 </div>
-                                <p class="repo-desc">AI-powered research and intelligence platform that monitors the web, analyzes information, detects trends, and delivers personalized reports.</p>
+                                <p class="repo-desc">由人工智能驱动的研究和情报平台，可监控网络、分析信息、检测趋势并提供个性化报告。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
                                     <span class="repo-date">2026-08-10</span>
@@ -922,15 +959,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/ultramancode/spring-ai-privacy-guardrails" target="_blank" class="repo-link">
+                            <a href="https://github.com/musichen/awesome-artificial-intelligence" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">spring-ai-privacy-guardrails</span>
-                                    <span class="repo-stars">⭐ 5</span>
+                                    <span class="repo-name">awesome-artificial-intelligence</span>
+                                    <span class="repo-stars">⭐ 7</span>
                                 </div>
-                                <p class="repo-desc">Spring AI 的隐私护栏：使用 Presidio 和 JVM 本地 OpenNLP，实现请求范围的 PII 标记化和跨模型/工具调用的最低权限披露。</p>
+                                <p class="repo-desc">Awesome-artificial-intelligence - 人工智能 (AI) 课程、书籍、视频讲座和论文的精选列表。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Java</span>
-                                    <span class="repo-date">2026-08-05</span>
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-08-12</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Anastasiamaster/contentqueen-app-erfahrung-review-deutsch" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">contentqueen-app-erfahrung-review-deutsch</span>
+                                    <span class="repo-stars">⭐ 4</span>
+                                </div>
+                                <p class="repo-desc">Contentqueen 应用程序经过测试：为营销人员和创作者提供的终极 KI 文本生成器，采用德语语言。 Schluss mit Schreibblockaden！ 🚀</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-08-09</span>
                                 </div>
                             </a>
                         </li>
@@ -950,15 +1001,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/amir-sbg/FlexSplat" target="_blank" class="repo-link">
+                            <a href="https://github.com/vincenzo-afk/Developer-OS" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">FlexSplat</span>
+                                    <span class="repo-name">Developer-OS</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">[BMVC 2026] 使用联合训练的 VGGT 几何和基于查询的多视图高斯解码，用于未校准的以对象为中心的新颖视图合成的前馈 3D 高斯泼溅。</p>
+                                <p class="repo-desc">专为网络构建的桌面操作系统 - 通过受 Windows 启发的交互式界面探索我的项目、人工智能研究、成就和数字工作空间。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-08-08</span>
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-08-12</span>
                                 </div>
                             </a>
                         </li>
@@ -978,15 +1029,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/YamartiHQ/ai-first-company" target="_blank" class="repo-link">
+                            <a href="https://github.com/amir-sbg/FlexSplat" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">ai-first-company</span>
-                                    <span class="repo-stars">⭐ 2</span>
+                                    <span class="repo-name">FlexSplat</span>
+                                    <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">一种开放的、供应商中立的组织框架，用于设计人工智能优先的公司，其中人类和人工智能系统在一个连贯的系统中运行。</p>
+                                <p class="repo-desc">[BMVC 2026] 使用联合训练的 VGGT 几何和基于查询的多视图高斯解码，用于未校准的以对象为中心的新颖视图合成的前馈 3D 高斯泼溅。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-08-06</span>
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-08-08</span>
                                 </div>
                             </a>
                         </li>

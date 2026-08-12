@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-08-11 22:37:24</p>
+            <p class="hero-meta">构建时间：2026-08-12 22:35:23</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,17 +191,17 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">博观而约取，厚积而薄发。</p>
-                        <p class="quick-meta">— 苏轼</p>
+                        <p class="quick-main">The only way to do great work is to love what you do.</p>
+                        <p class="quick-meta">— Steve Jobs</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,9 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 inheritance，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 abstraction，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 zhiningsun/industrial-mcp，记录 1 个可借鉴实现点。</li>
+                        
+                        <li>深读: 阅读论文《Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -232,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">inheritance <span>/ɪnˈherɪtəns/</span></p>
-                    <p class="study-meaning">n. 继承；遗传</p>
+                    <p class="study-word">abstraction <span>/æbˈstrækʃn/</span></p>
+                    <p class="study-meaning">n. 抽象；提取</p>
                     
-                    <p class="study-sentence">Inheritance enables new classes to receive the properties of existing classes.</p>
-                    <p class="study-sentence-zh">继承使新类能够接收现有类的属性。</p>
+                    <p class="study-sentence">Abstraction reduces complexity by hiding unnecessary details.</p>
+                    <p class="study-sentence-zh">抽象通过隐藏不必要的细节来降低复杂性。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -268,7 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="quick-empty">暂无论文数据</p>
+                    <p class="deep-title">Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning</p>
+                    <p class="deep-abstract">学习可靠的手术操作策略因缺乏动作标记的演示而受到瓶颈：具有同步运动学的遥控手术机器人（例如 dVRK）轨迹的收集成本很高，而手术任务需要精确的接触处理、长视野推理和双手协调。相对于同步视频运动学轨迹，内窥镜视频相对便宜且丰富，利用它的自然方法是学习手术场景的世界模型。然而，现有的手术世界模型主要使用视频进行模拟或策略评估，很少将学到的动态转化为闭环控制。这一差距提出了我们的核心问题：在固定预算的动作标记演示下，无动作视频预训练是否可以改善闭环手术操作？为了回答这个问题，我们引入了外科世界动作模型（Surgical WAM），这是一个基于 Cosmos Policy 构建的统一生成模型，可以共同预测未来的内窥镜观察结果和可执行的外科机器人动作块。 Surgical WAM 首先从无动作视频中学习手术视觉动态，然后根据固定的动作标记预算进行微调；在部署时，它充当闭环后退控制器，执行每个预测动作块的短前缀，并根据结果观察重新计划。在一组四个模拟手术操作任务中，视频预训练将平均成功率从 63.5% 提高到 77.8%，其中 PegTransfer 的绝对成功率提高了 20 个百分点，其中在接触丰富和双手任务中的改进最大。这些结果表明，无动作视频为学习具有有限动作监督的手术机器人控制提供了可转移的视觉动态先验，将数据高效的视频预训练定位为扩大手术机器人学习的实用途径。</p>
+                    
+                    <p class="deep-takeaway">要点：学习可靠的手术操作策略因缺乏动作标记的演示而受到瓶颈：具有同步运动学的遥控手术机器人（例如 dVRK）轨迹的收集成本很高，而手术任务需要精确的接触处理、长视野推理和双手协调。相对于同步视频运动学轨迹，内窥镜视频相对便宜且丰富，利用它的自然方法是学习手术场景的世界模型。然而，现有的手术世界模型主要使用视频进行模拟或策略评...</p>
+                    
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -282,13 +289,8 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>lucidrains/light-loco-parkour</strong> (★ 19)
-                        <p>Light Loco Parkour 的实现，通过多技能蒸馏实现多功能感知全身运动，出自 Light Origins Labs</p>
-                    </li>
-                    
-                    <li>
-                        <strong>vincenzo-afk/Intelis-Agent</strong> (★ 12)
-                        <p>AI-powered research and intelligence platform that monitors the web, analyzes information, detects trends, and delivers personalized reports.</p>
+                        <strong>vincenzo-afk/Intelis-Agent</strong> (★ 17)
+                        <p>由人工智能驱动的研究和情报平台，可监控网络、分析信息、检测趋势并提供个性化报告。</p>
                     </li>
                     
                     <li>
@@ -297,8 +299,13 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>ultramancode/spring-ai-privacy-guardrails</strong> (★ 5)
-                        <p>Spring AI 的隐私护栏：使用 Presidio 和 JVM 本地 OpenNLP，实现请求范围的 PII 标记化和跨模型/工具调用的最低权限披露。</p>
+                        <strong>musichen/awesome-artificial-intelligence</strong> (★ 7)
+                        <p>Awesome-artificial-intelligence - 人工智能 (AI) 课程、书籍、视频讲座和论文的精选列表。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Anastasiamaster/contentqueen-app-erfahrung-review-deutsch</strong> (★ 4)
+                        <p>Contentqueen 应用程序经过测试：为营销人员和创作者提供的终极 KI 文本生成器，采用德语语言。 Schluss mit Schreibblockaden！ 🚀</p>
                     </li>
                     
                 </ul>
@@ -311,7 +318,7 @@ html, body {
             <p class="zone-subtitle">复盘与回顾入口</p>
             <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
             <ul class="archive-stats">
-                <li>论文：0</li>
+                <li>论文：3</li>
                 <li>仓库：10</li>
                 <li>思维模型：3</li>
                 <li>语录：5</li>
