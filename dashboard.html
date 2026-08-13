@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-08-12 22:35:23</span>
+        <span class="generated-time">更新于 2026-08-13 22:36:13</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Surgical<sup class='ipa'>/ˈsərʤɪkəl/</sup> WAM: A World-Action<sup class='ipa'>/worldaction*/</sup> Model for Data-Efficient<sup class='ipa'>/dataefficient*/</sup> Surgical<sup class='ipa'>/ˈsərʤɪkəl/</sup> Robot Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
+                            <h4 class="paper-title">AVA-Encoder:<sup class='ipa'>/avaencoder*/</sup> Towards Agent-Native<sup class='ipa'>/agentnative*/</sup> Video Representation<sup class='ipa'>/ˌrɛprəzɛnˈteɪʃən/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Wenrui Bao, Tianyun Jiang, Zhiben Chen</span>
-                                <span class="date">2026-08-11</span>
-                                <span class="categories">cs.RO | cs.AI</span>
+                                <span class="authors">Chuyue Li, Jinpeng Yu, Haozhe Wang</span>
+                                <span class="date">2026-08-12</span>
+                                <span class="categories">cs.CV | cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Learning reliable surgical manipulation policies is bottlenecked by the scarcity of action-labeled demonstrations: teleoperated surgical robot (e.g., dVRK) trajectories with synchronized kinematics are costly to collect, while surgical tasks demand precise contact handling, long-horizon reasoning, a...</p>
+                                <p class="abstract-en">Creative agents still lack an effective way to learn from high-quality human films, limiting their ability to produce cinematic-grade videos. A key challenge is the absence of a structured video representation that is both faithful to film content and directly usable for agentic reasoning and manipu...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">学习可靠的手术操作策略因缺乏动作标记的演示而受到瓶颈：具有同步运动学的遥控手术机器人（例如 dVRK）轨迹的收集成本很高，而手术任务需要精确的接触处理、长视野推理和双手协调。相对于同步视频运动学轨迹，内窥镜视频相对便宜且丰富，利用它的自然方法是学习手术场景的世界模型。然而，现有的手术世界模型主要使用视频进行模拟或策略评估，很少将学到的动态转化为闭环控制。这一差距提出了我们的核心问题：在固定预算的动作标记演示下，无动作视频预训练是否可以改善闭环手术操作？为了回答这个问题，我们引入了外科世界动作模型（Surgical WAM），这是一个基于 Cosmos Policy 构建的统一生成模型，可以共同预测未来的内窥镜观察结果和可执行的外科机器人动作块。 Surgical WAM 首先从无动作视频中学习手术视觉动态，然后根据固定的动作标记预算进行微调；在部署时，它充当闭环后退控制器，执行每个预测动作块的短前缀，并根据结果观察重新计划。在一组四个模拟手术操作任务中，视频预训练将平均成功率从 63.5% 提高到 77.8%，其中 PegTransfer 的绝对成功率提高了 20 个百分点，其中在接触丰富和双手任务中的改进最大。这些结果表明，无动作视频为学习具有有限动作监督的手术机器人控制提供了可转移的视觉动态先验，将数据高效的视频预训练定位为扩大手术机器人学习的实用途径。</p>
+                                    <p class="abstract-zh">创意人员仍然缺乏从高质量人类电影中学习的有效方法，限制了他们制作电影级视频的能力。一个关键的挑战是缺乏既忠实于电影内容又可直接用于代理推理和操作的结构化视频表示。为了应对这一挑战，我们提出了代理视频自动编码器（AVA-Encoder），这是一个通过代理自动编码学习代理原生视频表示的框架。   AVA-Encoder 将视频转换为知识图 (KG) 表示，然后将其重建回视频。它的层次结构和状态节点存储结构化文本，而链接的资产层则保存生成的图像、音频和视频。键入的边缘以代理可以轻松理解、查询和编辑的形式保留这些文本描述和资产之间的关系。视频重建差异驱动了文本梯度优化框架，该框架将评估反馈表示为外循环中数据独立编码策略伪训练的自然语言更新方向，以及测试时内循环中可选的数据相关 KG 表示细化。   大量实验表明，AVA-Encoder 比最强的外部基线提高了 20.7 个百分点。在仅受控策略设置中，其伪训练镜头级代理视频编码器策略也优于精心人工调整的策略，同时使用的系统提示令牌减少了 74.3%。我们发布了完整的 AVA-Encoder 框架、可靠的代理视频重建基准，以及第一个高质量电影 KG 表示的数据集。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2608.11204v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2608.12313v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">ConVAWG: A Retrieval-Grounded<sup class='ipa'>/retrievalgrounded*/</sup> Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup> for Controlled<sup class='ipa'>/kənˈtroʊld/</sup> Synthetic<sup class='ipa'>/sɪnˈθɛtɪk/</sup> Dialogue<sup class='ipa'>/ˈdaɪəˌlɔg/</sup> Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup> in Violence<sup class='ipa'>/ˈvaɪələns/</sup> Against Women and Girls</h4>
+                            <h4 class="paper-title">DreamFly:<sup class='ipa'>/dreamfly*/</sup> Causal Memory and Receding-Horizon<sup class='ipa'>/recedinghorizon*/</sup> Diffusion<sup class='ipa'>/dɪfˈjuʒən/</sup> Planning<sup class='ipa'>/ˈplænɪŋ/</sup> for Aerial Vision-Language<sup class='ipa'>/visionlanguage*/</sup> Navigation<sup class='ipa'>/ˌnævəˈgeɪʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Chen Lyu, Xingwei Tan, Simon Cullen</span>
-                                <span class="date">2026-08-11</span>
-                                <span class="categories">cs.CL | cs.AI</span>
+                                <span class="authors">Yan Deng, Fei Xu</span>
+                                <span class="date">2026-08-12</span>
+                                <span class="categories">cs.CV | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Synthetic dialogue generation offers a way to study conversational dynamics in sensitive domains where real data are difficult to access, release, or annotate. The underlying abuse may occur online or offline: threats and coercion can appear directly in messages, while behaviours such as surveillanc...</p>
+                                <p class="abstract-en">Aerial vision-language navigation (VLN) requires an embodied agent to integrate visual evidence over time, plan future actions, and determine when it has reached a navigation goal under partial observability. Although recent VLA models offer a promising perception-to-action paradigm, adapting them t...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">合成对话生成提供了一种研究敏感领域对话动态的方法，在这些领域中，真实数据难以访问、发布或注释。潜在的虐待可能发生在网上或线下：威胁和胁迫可以直接出现在消息中，而监视、隔离、跟踪和身体暴力等行为可能是有计划的、披露的或通过对话提及的。隐私和法律限制导致大规模真实对话数据集难以发布；现有的工作主要集中在网络滥用行为的句子层面的毒性上，在将滥用行为建模为一种相关的、暂时展开的现象方面存在空白。在这项工作中，我们专注于将针对妇女和女孩的暴力 (VAWG) 场景建模为多轮对话。我们介绍了 ConVAWG，一个基于检索的框架，用于生成与 CPS 一致的合成 VAWG 聊天对话。 ConVAWG 根据角色种子、英国国家统计局报告的人口统计模式、官方犯罪定义以及检索到的家庭凶杀审查案例构建场景；将它们转换为分层事件时间线；生成多场景角色扮演对话；并对适当的话语应用有针对性的激活引导的毒性控制。我们发布了 200 个场景的 6,000 多个多回合对话事件，以及丰富的场景、事件和回合级元数据。广泛的人工评估、法学硕士作为法官的评估、消融和下游任务显示出强大的对话质量和领域保真度。</p>
+                                    <p class="abstract-zh">空中视觉语言导航（VLN）需要一个实体代理随着时间的推移整合视觉证据，规划未来的行动，并确定何时在部分可观测性下达到导航目标。尽管最近的 VLA 模型提供了一种很有前途的感知到行动范式，但由于历史背景有限、规划期限短和不可靠的隐式终止，使其适应空中导航仍然具有挑战性。为了应对这些挑战，我们提出了 DreamFly，这是一种基于 Dream-VLA 的基于扩散的空中 VLN 框架。 DreamFly 引入了一种因果对齐的历史记忆，仅使用当前决策步骤之前的观察来增强当前的视觉表示，从而实现时间推理，而不会泄漏未来的信息。我们进一步将导航制定为后退扩散规划，其中策略预测 $K$ 步操作块，但在重新规划之前仅执行第一个操作。这一计划-$K$、执行一策略使用未来行动作为辅助规划目标，同时保留闭环视觉反馈。最后，LiteStop 直接根据初始全掩码状态下的动作逻辑估计停止概率，从而将显式终止与动作生成解耦。 OpenFly 基准测试表明，在可见和不可见的环境中都取得了一致的改进。 DreamFly 在测试可见/测试未见的分割上分别实现了 32.04%/29.46% SR 和 28.22%/23.54% SPL，在这两个指标上均优于所有比较方法，同时实现了最低的导航误差。这些结果证明了对空中 VLN 的历史背景、未来行动结构和显式终止进行联合建模的有效性。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2608.11200v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2608.12308v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Beyond a Bag of Features:<sup class='ipa'>/ˈfiʧərz/</sup> Set-Level<sup class='ipa'>/setlevel*/</sup> Instability<sup class='ipa'>/ˌɪnstəˈbɪlɪti/</sup> in Sparse Autoencoders<sup class='ipa'>/autoencoders*/</sup></h4>
+                            <h4 class="paper-title">AI4AI at Test-Time:<sup class='ipa'>/testtime*/</sup> Strong-to-Weak<sup class='ipa'>/strongtoweak*/</sup> Capability<sup class='ipa'>/ˌkeɪpəˈbɪləti/</sup> Transfer<sup class='ipa'>/ˈtrænsfər/</sup> via Harnesses<sup class='ipa'>/ˈhɑrnəsɪz/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Nikolai Bolik, Lennart Stöpler, Artur Andrzejak</span>
-                                <span class="date">2026-08-11</span>
-                                <span class="categories">cs.LG | cs.CL</span>
+                                <span class="authors">Cheng Qian, Wenting Zhao, Liangwei Yang</span>
+                                <span class="date">2026-08-12</span>
+                                <span class="categories">cs.LG | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Shani et al. (2026) show that LLM representations broadly recover human category boundaries, while failing to reflect fine-grained typicality structure. Their analysis uses cosine similarity over dense model representations. We revisit their approach using overlap over active sparse autoencoder (SAE...</p>
+                                <p class="abstract-en">Recent work on distillation transfers the capabilities of large models to smaller ones often by updating the latter&#39;s parameters, through teacher forcing, on-policy distillation, and related training-time methods. In this paper, we ask whether such transfer can instead occur at test time. We study s...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">沙尼等人。 （2026）表明，LLM 表示广泛地恢复了人类类别边界，但未能反映细粒度的典型性结构。他们的分析使用密集模型表示的余弦相似度。我们重新审视他们的方法，使用主动稀疏自动编码器（SAE）潜在集的重叠作为更可解释的相似性度量。我们首先验证这种集合级度量是有意义的：SAE 潜在集可以在受控玩具模型中恢复类似联合的组合结构，并在自然文本中引入语义连贯的邻域。将人类概念分析扩展到 SAE 集相似性，我们发现 SAE 激活集并没有比密集嵌入或残差流状态更忠实地恢复人类类别边界或类别内典型性，而是跟踪模型内部相似性结构。为了进一步探讨这一差距，我们研究了良好控制的语义修改下的活跃潜在集，揭示了人类对概念变化的判断与 SAE 活跃集变化的判断之间存在很大的不匹配。我们将此解释为证据，表明在理想化设置之外，SAE 特征不是通过简单的特征包语义组成的。</p>
+                                    <p class="abstract-zh">最近关于蒸馏的工作通常通过更新后者的参数、通过教师强制、策略蒸馏和相关的训练时间方法，将大型模型的功能转移到较小的模型。在本文中，我们询问这种转移是否可以在测试时发生。我们研究从强到弱的脚手架：更强的构建器模型是否可以构建推理时间工具，帮助较弱的目标模型更可靠地解决任务，而无需任何参数更新。使用四个代表性的心理理论基准，每个构建器模型使用 5% 的数据作为验证集，在多轮中迭代地完善其工具，之后在完整的测试集上评估最终的工具。根据经验，这种形式的测试时能力转移非常有效，几乎使平均目标模型性能从 0.49 提高了一倍到 0.91。我们的分析表明，收益主要来自将不稳定的模型推理转移到确定性代码、特定于基准的路由和严格的答案格式执行，而不是来自鼓励目标模型进行更广泛的推理或更广泛的采样。我们进一步发现，构建器模型推理工作单调地提高了线束质量，相对于构建器模型自身的能力，平台效应是适度的，而较弱的目标模型获得了最大的收益。这些结果表明，推理时间工具设计是对传统训练时间蒸馏的重要补充，使强大的模型能够将认知结构转移到较弱的模型，而无需重新训练。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2608.11197v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2608.12307v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/zhiningsun/industrial-mcp" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">industrial-mcp</span>
-                                    <span class="repo-stars">⭐ 50</span>
+                                    <span class="repo-stars">⭐ 51</span>
                                 </div>
                                 <p class="repo-desc">将工业设备变成AI可控工具的MCP服务器。支持Modbus、OPC UA、MQTT协议，内置设备仿真引擎、物理模型和完整的调试工具链。让克劳德用自然语言监控传感器、启停电机、执行工厂巡检。</p>
                                 <div class="repo-meta">
@@ -938,7 +938,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 </div>
                                 <p class="repo-desc">由人工智能驱动的研究和情报平台，可监控网络、分析信息、检测趋势并提供个性化报告。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
+                                    <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-08-10</span>
                                 </div>
                             </a>
@@ -1001,15 +1001,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/vincenzo-afk/Developer-OS" target="_blank" class="repo-link">
+                            <a href="https://github.com/amir-sbg/FlexSplat" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Developer-OS</span>
-                                    <span class="repo-stars">⭐ 3</span>
+                                    <span class="repo-name">FlexSplat</span>
+                                    <span class="repo-stars">⭐ 4</span>
                                 </div>
-                                <p class="repo-desc">专为网络构建的桌面操作系统 - 通过受 Windows 启发的交互式界面探索我的项目、人工智能研究、成就和数字工作空间。</p>
+                                <p class="repo-desc">[BMVC 2026] 使用联合训练的 VGGT 几何和基于查询的多视图高斯解码，用于未校准的以对象为中心的新颖视图合成的前馈 3D 高斯泼溅。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-08-12</span>
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-08-08</span>
                                 </div>
                             </a>
                         </li>
@@ -1029,29 +1029,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/amir-sbg/FlexSplat" target="_blank" class="repo-link">
+                            <a href="https://github.com/vincenzo-afk/Developer-OS" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">FlexSplat</span>
+                                    <span class="repo-name">Developer-OS</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">[BMVC 2026] 使用联合训练的 VGGT 几何和基于查询的多视图高斯解码，用于未校准的以对象为中心的新颖视图合成的前馈 3D 高斯泼溅。</p>
+                                <p class="repo-desc">专为网络构建的桌面操作系统 - 通过受 Windows 启发的交互式界面探索我的项目、人工智能研究、成就和数字工作空间。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-08-08</span>
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-08-12</span>
                                 </div>
                             </a>
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/SuryadevChippada/NODUS" target="_blank" class="repo-link">
+                            <a href="https://github.com/alfernado/silzen" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">NODUS</span>
-                                    <span class="repo-stars">⭐ 2</span>
+                                    <span class="repo-name">silzen</span>
+                                    <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">本地优先的桌面人工智能工作区，其中对话以视觉思维导图的形式发展。私下运行本地 LLM 或连接支持的云 API。</p>
+                                <p class="repo-desc">Silzen 是一种建立在绝对逻辑和冥想静止基础上的对话式人工智能。受到农业大师一丝不苟的效率的启发，但以流淌的河流般的平静来表达，Silzen 剥去了企业的浮夸和炒作。它不使用感叹号。它以毫不妥协的精度和脚踏实地、平和的态度解决任务。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-08-06</span>
+                                    <span class="repo-lang">JavaScript</span>
+                                    <span class="repo-date">2026-08-08</span>
                                 </div>
                             </a>
                         </li>
