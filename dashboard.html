@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-08-17 22:19:04</span>
+        <span class="generated-time">更新于 2026-08-18 22:17:28</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Decoding<sup class='ipa'>/dɪˈkoʊdɪŋ/</sup> the Past: An Uncertainty-Aware<sup class='ipa'>/uncertaintyaware*/</sup> Deep Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup> for Sex Attribution<sup class='ipa'>/ˌætrɪˈbjuʃən/</sup> in Prehistoric<sup class='ipa'>/ˌprihɪˈstɔrɪk/</sup> Hand Stencils<sup class='ipa'>/stencils*/</sup></h4>
+                            <h4 class="paper-title">Don't Drop the BATON: Long-Horizon<sup class='ipa'>/longhorizon*/</sup> Robot Manipulation<sup class='ipa'>/məˌnɪpjəˈleɪʃən/</sup> via Agentic Subtask Exploration<sup class='ipa'>/ˌɛksplərˈeɪʃən/</sup> and Transition-aware<sup class='ipa'>/transitionaware*/</sup> Memory</h4>
                             <div class="paper-meta">
-                                <span class="authors">Karel Becerra, Boris Mederos, Dean Snow</span>
-                                <span class="date">2026-08-14</span>
-                                <span class="categories">cs.CV | cs.AI</span>
+                                <span class="authors">Bingxin Xu, Yuzhang Shang, Emilio Ferrara</span>
+                                <span class="date">2026-08-17</span>
+                                <span class="categories">cs.RO | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Determining the biological sex of the individuals who created Upper Paleolithic hand stencils remains a challenging problem due to the absence of ground truth, population differences between contemporary and prehistoric groups, and the uncertainty introduced by image degradation. Traditional morphom...</p>
+                                <p class="abstract-en">Long-horizon robot manipulation chains many contact-rich skills into one multi-stage task. Vision-language-action (VLA) models increasingly master the individual skills, yet the chain still fails: errors compound beyond the policy&#39;s ability to correct, and one subtask silently constrains the next. A...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">由于缺乏基本事实、当代和史前群体之间的人口差异以及图像退化带来的不确定性，确定旧石器时代晚期手工模板制作者的生物性别仍然是一个具有挑战性的问题。传统的形态测量方法存在性别间结构高度重叠、跨群体推广性差以及主观特征工程等问题。这项研究提出了一种用于史前手工模板中性别归因的不确定性感知深度学习框架，该框架在整个分析流程中明确建模、传播和聚合不确定性。该方法结合了双图像处理、双轮廓提取、结构化轮廓增强、模型架构多样性和基于集成的决策聚合。该管道为每个模板生成 12 个合理的轮廓实现，以捕获边界不确定性，这些轮廓由两个由 10 个深度神经网络（EfficientNet-B3 和 MobileViT-S）组成的集合进行处理，并在 14,036 个当代手部样本上进行训练。此外，三角验证方案将集成预测与无监督的 2D 潜在空间流形映射 (UMAP + k-NN) 和可解释的 AI 空间属性 (LayerCAM) 相结合，以确保解剖学的一致性。在当代数据上，集成模型实现了强大的分类性能，在老年群体中的准确率超过 88%。当应用于史前模板时，该框架会产生性别预测和内部一致性的置信度测量，从而能够区分形态稳定和模糊的情况。集合预测、潜在空间结构和可解释性分析的收敛表明，不确定性可以成为考古推论的可测量组成部分，从而能够对古代岩石艺术进行稳健且可重复的解码。</p>
+                                    <p class="abstract-zh">长视野机器人操作将许多接触丰富的技能链接到一项多阶段任务中。视觉-语言-行动（VLA）模型越来越多地掌握个人技能，但链条仍然失败：错误复合超出了策略的纠正能力，并且一个子任务默默地限制了下一个子任务。一个有前景的方法是冻结 VLA 并让 LLM 代理负责：它以语言进行规划，使用分析基元在自由空间中移动，仅针对接触丰富的片段调用 VLA，并将适应写入语言记忆中。应用于长视野时，它会破裂两次。 （1）能力来自于测试时的全任务探索，其成本是分阶段相乘的：如果一个阶段需要T个episode，那么K阶段的任务需要大约T^K，并且失败并不能揭示是哪个阶段造成的。 (2) 它没有转换的表示：VLA 原语带有退出但没有进入条件，因此子任务可以以其后继者无法使用的形式成功。我们展示了指挥棒。与（1）相反，BATON将子任务作为探索的单元：每个子任务都在廉价的短视野范围内进行探索，并将其解决方案存储在内存中；然后，由这些解决方案组成一个长视野轨迹，而不是发现整个轨迹。成本变成累加性（T*K），并且每次失败都归因于单个阶段。与（2）相反，BATON 为探索配备了转换感知记忆。在子任务中，验证者代理控制调用转换：仅在手腕视图确认场景准备就绪后才调用 VLA。在子任务中，切换转换会恢复受前任残留干扰的进入状态，而前瞻转换会选择后继任务可以继承其结果的策略。没有更新任何参数。在长期基准 RoboMemArena 上，BATON 比 SoTA 提高了 11.6% 的任务成功率和 14.9% 的累积成功率。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2608.14539v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2608.16889v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Marionette:<sup class='ipa'>/marionette*/</sup> Predicting<sup class='ipa'>/prɪˈdɪktɪŋ/</sup> World States, Rendering<sup class='ipa'>/ˈrɛndərɪŋ/</sup> Geometry,<sup class='ipa'>/ʤiˈɑmətri/</sup> Painting<sup class='ipa'>/ˈpeɪnɪŋ/</sup> Appearance<sup class='ipa'>/əˈpɪrəns/</sup></h4>
+                            <h4 class="paper-title">Improving<sup class='ipa'>/ˌɪmˈpruvɪŋ/</sup> the matrix multiplication<sup class='ipa'>/ˌməltəpləˈkeɪʃən/</sup> exponent<sup class='ipa'>/ˈɛkˌspoʊnənt/</sup> with modern optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> and AlphaEvolve<sup class='ipa'>/alphaevolve*/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Zian Meng, Zhen Li, Chuanhao Li</span>
-                                <span class="date">2026-08-14</span>
-                                <span class="categories">cs.CV | cs.AI</span>
+                                <span class="authors">Emilien Dupont, Marvin Eisenberger, Borislav Kozlovskii</span>
+                                <span class="date">2026-08-17</span>
+                                <span class="categories">cs.DS | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Interactive game world models typically autoregress visual observations directly in pixel or latent space, forcing structured properties such as pose, geometry, and occlusion to be implicitly maintained by the same generative sequence. Over long horizons, errors in these latent world properties accu...</p>
+                                <p class="abstract-en">The current best bounds on the matrix multiplication exponent $ω$ are obtained through a refinement of the laser method called combination loss analysis (Duan et al., 2022; Williams et al., 2024; Alman et al., 2025). In this note, we address the optimization problem at the core of this approach and ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">交互式游戏世界模型通常直接在像素或潜在空间中自动回归视觉观察，迫使姿势、几何和遮挡等结构化属性由相同的生成序列隐式维护。随着时间的推移，这些潜在的世界属性中的错误会不断累积，使得一致性和可控性变得脆弱。我们明确地对不断演变的世界状态进行建模，将精确的几何计算委托给固定的零参数渲染器，并让神经模型来合成外观。我们将这个想法具体化为木偶，这是一个带有铰接角色的互动游戏的世界模型。首先，两阶段自回归动力学模型预测一个明确且可解释的 276 维 3D 世界状态，包括多实体铰接骨架、度量根轨迹和旋转。其次，零参数图形桥将预测状态转换为姿势控制视频，以封闭形式计算世界空间几何和遮挡。第三，控制条件视频扩散观察模型从所得的结构化控制中合成逼真的 RGB 观察结果。我们的实验确定了木偶的两个特性。首先，预测的世界状态是直接可控的。强制执行不匹配的操作流可将 48 个保留段中的根对齐关节误差更改为 31%。其次，长期行为是由国家决定的，并且可以在那里修复。如果没有自由，两个生成的角色会漂移到 21.2 m 的距离（录制的会话保持在 5 m 附近），并且三分之一的帧显示地面穿透。对显式状态施加的两个规则，即地形碰撞器和分离帽，将穿透力降低了 66%，并保持配对，而无需更改观测模型。通过预测状态路由外观不会影响我们可以检测到的保真度，记录姿势的 FVD 为 831，而 FVD 为 799。</p>
+                                    <p class="abstract-zh">矩阵乘法指数 $ω$ 的当前最佳界限是通过称为组合损失分析的激光方法的改进获得的（Duan 等人，2022；Williams 等人，2024；Alman 等人，2025）。在本文中，我们解决了该方法核心的优化问题，并提出了一些改进方案。首先，我们重新表述优化问题，使我们能够在比以前更大的环境中解决它。其次，我们利用机器学习的最新进展来为这个问题设计一种新的优化算法。最后，我们使用 AlphaEvolve 改进最终的优化算法。我们的组合方法产生的上限为 $ω$ &lt; 2.371177，改进了之前的最佳界限 2.371339。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2608.14530v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2608.16884v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Handover<sup class='ipa'>/ˈhændoʊvər/</sup> of In-Context<sup class='ipa'>/incontext*/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> State Across Session Boundaries<sup class='ipa'>/ˈbaʊndəriz/</sup></h4>
+                            <h4 class="paper-title">AutoSR: Automatic<sup class='ipa'>/ˌɔtəˈmætɪk/</sup> Symbolic<sup class='ipa'>/sɪmˈbɑlɪk/</sup> Regression<sup class='ipa'>/rəˈgrɛʃən/</sup> by Searching<sup class='ipa'>/ˈsərʧɪŋ/</sup> Research<sup class='ipa'>/ˈrisərʧ/</sup> States</h4>
                             <div class="paper-meta">
-                                <span class="authors">Masahiro Kato, Taka Kato</span>
-                                <span class="date">2026-08-14</span>
-                                <span class="categories">cs.AI | econ.EM</span>
+                                <span class="authors">Kejia Zhang, Youran Sun, Xinyu Ren</span>
+                                <span class="date">2026-08-17</span>
+                                <span class="categories">cs.SC | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">This study investigates the methodological and theoretical properties of session handover in applications that use large language models. A task may continue in a new session when the context reaches the model&#39;s input limit, when the application restarts, or when another agent is asked to finish the...</p>
+                                <p class="abstract-en">We introduce Automatic Symbolic Regression (AutoSR), a fully automated system that instantiates Research-Space Symbolic Regression by searching persistent scientific investigations rather than isolated equations. Finite, noisy data often yield numerically competitive expressions that imply very diff...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">本研究研究了使用大型语言模型的应用程序中会话切换的方法和理论特性。当上下文达到模型的输入限制、应用程序重新启动或要求另一个代理完成任务时，任务可以在新会话中继续。然后，应用程序必须决定传递先前会话中的哪些信息。我们将切换表述为任务相关的上下文学习（ICL）状态的转移，并将早期材料的精确恢复与目标分布的保留区分开来。在外生条件下，预测等价表征最粗略的确定性充分切换并给出固定长度的比特要求。该分析隔离了内存约束、编写器和延续过程的影响，并在已知实现的下游查询之前量化了写入成本。我们提出了一个由三部分组成的记录，它准确地存储决策和约束，使用任务合理的统计数据来重复证据，并保留原始观察结果，这些观察结果的影响没有被这些统计数据保留。高斯线性回归给出了精确的有限维切换和有限位扰动界限，而非参数回归给出了将内存与平方预测误差相关的上限和下限。这些结果提供了一种理论和方法，用于决定切换必须保留什么以及其内存需求如何取决于延续任务。</p>
+                                    <p class="abstract-zh">我们引入自动符号回归（AutoSR），这是一个完全自动化的系统，它通过搜索持续的科学研究而不是孤立的方程来实例化研究空间符号回归。有限的、嘈杂的数据通常会产生数值上有竞争力的表达式，这意味着在观察范围之外有非常不同的行为，使得数值拟合和句法复杂性不足以衡量科学可信度。现有的方法主要集中在改进表达上，但搜索通常除了结果公式和分数之外几乎不保留什么，从而丢失了科学记录，例如动机和探索，这些记录告诉下一步要尝试什么。 AutoSR 将此记录保存在 \textbf{研究状态} 中，将每个候选方程与沿其分支开发的推理、计算证据和独立审查相结合。提案者-评审者代理在渐进式扩大蒙特卡罗树搜索（PW-MCTS）下开发这些状态，该搜索在竞争性调查之间分配计算，而积累的研究记录最终被合成为最终报告，解释主导关系及其选择的基础。在两个基准套件中选定的九个挑战中，AutoSR 在每种情况下都恢复了代数等效关系，包括三个未发布系统恢复的 cp3 基准问题和六个结构不同的 LSR 变换问题。总体而言，AutoSR 将符号回归从方程级搜索扩展到自动化科学研究，使科学知识和积累的证据能够塑造探索的内容以及如何证明所得方程的合理性。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2608.14528v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2608.16876v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,12 +920,40 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/Greninja9257/LabLLM" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">LabLLM</span>
-                                    <span class="repo-stars">⭐ 39</span>
+                                    <span class="repo-stars">⭐ 49</span>
                                 </div>
                                 <p class="repo-desc">一个原生 macOS 实验室，用于教授微型语言模型思考 — 构建架构、训练权重，并观看小型 LLM 从头开始​​，在 Apple Silicon 上本地使用自定义数据、分词器、检查点和 MLX 加速。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Swift</span>
                                     <span class="repo-date">2026-08-15</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/davidclark-ops2004a7/Skyrim-AI-Revolution-Ultimate-NPC-Mod" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Skyrim-AI-Revolution-Ultimate-NPC-Mod</span>
+                                    <span class="repo-stars">⭐ 21</span>
+                                </div>
+                                <p class="repo-desc">🧠 天际特别版 AI 驱动的 NPC 模组 — 为同伴和 NPC 提供真正的人工智能。记忆、调度、自主行动、动态个性、免费本地AI语音生成。 SkyrimNET + IntelEngine + SeverActions + VoiceForge Studio。永远免费。 Steam 和 GOG 兼容。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-08-16</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/lucidrains/bdh-cq" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">bdh-cq</span>
+                                    <span class="repo-stars">⭐ 16</span>
+                                </div>
+                                <p class="repo-desc">BDH-CQ 的实现：具有循环潜在推理的上下文学习，由 Pathway Research 提出</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-08-16</span>
                                 </div>
                             </a>
                         </li>
@@ -945,12 +973,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/lucidrains/bdh-cq" target="_blank" class="repo-link">
+                            <a href="https://github.com/researchradar/research-radar" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">bdh-cq</span>
-                                    <span class="repo-stars">⭐ 12</span>
+                                    <span class="repo-name">research-radar</span>
+                                    <span class="repo-stars">⭐ 11</span>
                                 </div>
-                                <p class="repo-desc">BDH-CQ 的实现：具有循环潜在推理的上下文学习，由 Pathway Research 提出</p>
+                                <p class="repo-desc">自托管研究情报，用于收集、删除重复、排名、搜索和浏览您关心的研究人员、主题和来源。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-08-16</span>
@@ -973,20 +1001,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/davidclark-ops2004a7/Skyrim-AI-Revolution-Ultimate-NPC-Mod" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Skyrim-AI-Revolution-Ultimate-NPC-Mod</span>
-                                    <span class="repo-stars">⭐ 9</span>
-                                </div>
-                                <p class="repo-desc">🧠 天际特别版 AI 驱动的 NPC 模组 — 为同伴和 NPC 提供真正的人工智能。记忆、调度、自主行动、动态个性、免费本地AI语音生成。 SkyrimNET + IntelEngine + SeverActions + VoiceForge Studio。永远免费。 Steam 和 GOG 兼容。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-08-16</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/soares-grs/encAIxa" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">encAIxa</span>
@@ -1001,15 +1015,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/FloofLogic/Floofclaw" target="_blank" class="repo-link">
+                            <a href="https://github.com/maziyarpanahi/ai-demos" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Floofclaw</span>
-                                    <span class="repo-stars">⭐ 4</span>
+                                    <span class="repo-name">ai-demos</span>
+                                    <span class="repo-stars">⭐ 6</span>
                                 </div>
-                                <p class="repo-desc">用于持久 AI 代理的微型 C 运行时：本地优先、事件驱动、安全重启且完全可检查。</p>
+                                <p class="repo-desc">您可以理解、运行和重新混合的开源 AI 演示 - 针对视觉、多模式模型、本地或托管推理等的小型、可重复构建。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">C</span>
-                                    <span class="repo-date">2026-08-11</span>
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-08-18</span>
                                 </div>
                             </a>
                         </li>
@@ -1029,26 +1043,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/coe-management-system/coe-management-system" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">coe-management-system</span>
-                                    <span class="repo-stars">⭐ 4</span>
-                                </div>
-                                <p class="repo-desc">大学 CoE 管理系统，用于集中学术数据、分析、调度、工作量优化和人工智能辅助管理。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-08-11</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/Bugatsec/Prompt-Engineering-Holy-Grail" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">Prompt-Engineering-Holy-Grail</span>
-                                    <span class="repo-stars">⭐ 2</span>
+                                    <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">An archived and maintained copy of the Prompt Engineering Hub: a curated collection of prompt engineering resources, tools, guides, datasets, and learning materials. Originally created by @zacfrulloni.</p>
+                                <p class="repo-desc">即时工程中心的存档和维护副本：即时工程资源、工具、指南、数据集和学习材料的精选集合。最初由@zacfrulloni 创建。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">HTML</span>
                                     <span class="repo-date">2026-08-14</span>
