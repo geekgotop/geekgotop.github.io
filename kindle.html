@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-08-18 22:17:28</p>
+            <p class="hero-meta">构建时间：2026-08-19 22:19:25</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
-                        <p class="quick-meta">— Albert Einstein</p>
+                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                        <p class="quick-meta">— Chinese Proverb</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">Greninja9257/LabLLM</p>
-                        <p class="quick-meta">★ 49</p>
+                        <p class="quick-meta">★ 54</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Swift</p>
                     
                 </article>
@@ -217,11 +217,9 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 encapsulation，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 Greninja9257/LabLLM，记录 1 个可借鉴实现点。</li>
-                        
-                        <li>深读: 阅读论文《Don&#39;t Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +232,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
-                    <p class="study-meaning">n. 递归；循环</p>
+                    <p class="study-word">encapsulation <span>/ɪnˌkæpsjuˈleɪʃn/</span></p>
+                    <p class="study-meaning">n. 封装；包装</p>
                     
-                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
-                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
+                    <p class="study-sentence">Encapsulation hides the internal state of an object from the outside.</p>
+                    <p class="study-sentence-zh">封装将对象的内部状态对外部隐藏。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +268,7 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Don&#39;t Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory</p>
-                    <p class="deep-abstract">长视野机器人操作将许多接触丰富的技能链接到一项多阶段任务中。视觉-语言-行动（VLA）模型越来越多地掌握个人技能，但链条仍然失败：错误复合超出了策略的纠正能力，并且一个子任务默默地限制了下一个子任务。一个有前景的方法是冻结 VLA 并让 LLM 代理负责：它以语言进行规划，使用分析基元在自由空间中移动，仅针对接触丰富的片段调用 VLA，并将适应写入语言记忆中。应用于长视野时，它会破裂两次。 （1）能力来自于测试时的全任务探索，其成本是分阶段相乘的：如果一个阶段需要T个episode，那么K阶段的任务需要大约T^K，并且失败并不能揭示是哪个阶段造成的。 (2) 它没有转换的表示：VLA 原语带有退出但没有进入条件，因此子任务可以以其后继者无法使用的形式成功。我们展示了指挥棒。与（1）相反，BATON将子任务作为探索的单元：每个子任务都在廉价的短视野范围内进行探索，并将其解决方案存储在内存中；然后，由这些解决方案组成一个长视野轨迹，而不是发现整个轨迹。成本变成累加性（T*K），并且每次失败都归因于单个阶段。与（2）相反，BATON 为探索配备了转换感知记忆。在子任务中，验证者代理控制调用转换：仅在手腕视图确认场景准备就绪后才调用 VLA。在子任务中，切换转换会恢复受前任残留干扰的进入状态，而前瞻转换会选择后继任务可以继承其结果的策略。没有更新任何参数。在长期基准 RoboMemArena 上，BATON 比 SoTA 提高了 11.6% 的任务成功率和 14.9% 的累积成功率。</p>
-                    
-                    <p class="deep-takeaway">要点：长视野机器人操作将许多接触丰富的技能链接到一项多阶段任务中。视觉-语言-行动（VLA）模型越来越多地掌握个人技能，但链条仍然失败：错误复合超出了策略的纠正能力，并且一个子任务默默地限制了下一个子任务。一个有前景的方法是冻结 VLA 并让 LLM 代理负责：它以语言进行规划，使用分析基元在自由空间中移动，仅针对接触丰富的...</p>
-                    
-                    <p class="deep-meta">预计阅读 2 分钟</p>
+                    <p class="quick-empty">暂无论文数据</p>
                 
             </div>
             
@@ -284,8 +277,13 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>Greninja9257/LabLLM</strong> (★ 49)
+                        <strong>Greninja9257/LabLLM</strong> (★ 54)
                         <p>一个原生 macOS 实验室，用于教授微型语言模型思考 — 构建架构、训练权重，并观看小型 LLM 从头开始​​，在 Apple Silicon 上本地使用自定义数据、分词器、检查点和 MLX 加速。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>researchradar/research-radar</strong> (★ 34)
+                        <p>自托管研究情报，用于收集、删除重复、排名、搜索和浏览您关心的研究人员、主题和来源。</p>
                     </li>
                     
                     <li>
@@ -294,18 +292,13 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>lucidrains/bdh-cq</strong> (★ 16)
+                        <strong>lucidrains/bdh-cq</strong> (★ 18)
                         <p>BDH-CQ 的实现：具有循环潜在推理的上下文学习，由 Pathway Research 提出</p>
                     </li>
                     
                     <li>
-                        <strong>clownjee/knowledge-import-pipeline</strong> (★ 14)
-                        <p>面向任务教育教材的AI知识抽取与交互式知识图谱平台，支持PDF解析、知识点提取、支持搜索、前置关系构建及MCP查询服务。</p>
-                    </li>
-                    
-                    <li>
-                        <strong>researchradar/research-radar</strong> (★ 11)
-                        <p>自托管研究情报，用于收集、删除重复、排名、搜索和浏览您关心的研究人员、主题和来源。</p>
+                        <strong>soares-grs/encAIxa</strong> (★ 8)
+                        <p>优化 IA 课程，提供证据和 PDF 的基础知识。 ATS：本地、私有和多平台</p>
                     </li>
                     
                 </ul>
@@ -318,7 +311,7 @@ html, body {
             <p class="zone-subtitle">复盘与回顾入口</p>
             <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
             <ul class="archive-stats">
-                <li>论文：3</li>
+                <li>论文：0</li>
                 <li>仓库：10</li>
                 <li>思维模型：3</li>
                 <li>语录：5</li>

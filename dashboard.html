@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-08-18 22:17:28</span>
+        <span class="generated-time">更新于 2026-08-19 22:19:25</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,58 +846,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Don't Drop the BATON: Long-Horizon<sup class='ipa'>/longhorizon*/</sup> Robot Manipulation<sup class='ipa'>/məˌnɪpjəˈleɪʃən/</sup> via Agentic Subtask Exploration<sup class='ipa'>/ˌɛksplərˈeɪʃən/</sup> and Transition-aware<sup class='ipa'>/transitionaware*/</sup> Memory</h4>
-                            <div class="paper-meta">
-                                <span class="authors">Bingxin Xu, Yuzhang Shang, Emilio Ferrara</span>
-                                <span class="date">2026-08-17</span>
-                                <span class="categories">cs.RO | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Long-horizon robot manipulation chains many contact-rich skills into one multi-stage task. Vision-language-action (VLA) models increasingly master the individual skills, yet the chain still fails: errors compound beyond the policy&#39;s ability to correct, and one subtask silently constrains the next. A...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">长视野机器人操作将许多接触丰富的技能链接到一项多阶段任务中。视觉-语言-行动（VLA）模型越来越多地掌握个人技能，但链条仍然失败：错误复合超出了策略的纠正能力，并且一个子任务默默地限制了下一个子任务。一个有前景的方法是冻结 VLA 并让 LLM 代理负责：它以语言进行规划，使用分析基元在自由空间中移动，仅针对接触丰富的片段调用 VLA，并将适应写入语言记忆中。应用于长视野时，它会破裂两次。 （1）能力来自于测试时的全任务探索，其成本是分阶段相乘的：如果一个阶段需要T个episode，那么K阶段的任务需要大约T^K，并且失败并不能揭示是哪个阶段造成的。 (2) 它没有转换的表示：VLA 原语带有退出但没有进入条件，因此子任务可以以其后继者无法使用的形式成功。我们展示了指挥棒。与（1）相反，BATON将子任务作为探索的单元：每个子任务都在廉价的短视野范围内进行探索，并将其解决方案存储在内存中；然后，由这些解决方案组成一个长视野轨迹，而不是发现整个轨迹。成本变成累加性（T*K），并且每次失败都归因于单个阶段。与（2）相反，BATON 为探索配备了转换感知记忆。在子任务中，验证者代理控制调用转换：仅在手腕视图确认场景准备就绪后才调用 VLA。在子任务中，切换转换会恢复受前任残留干扰的进入状态，而前瞻转换会选择后继任务可以继承其结果的策略。没有更新任何参数。在长期基准 RoboMemArena 上，BATON 比 SoTA 提高了 11.6% 的任务成功率和 14.9% 的累积成功率。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2608.16889v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Improving<sup class='ipa'>/ˌɪmˈpruvɪŋ/</sup> the matrix multiplication<sup class='ipa'>/ˌməltəpləˈkeɪʃən/</sup> exponent<sup class='ipa'>/ˈɛkˌspoʊnənt/</sup> with modern optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> and AlphaEvolve<sup class='ipa'>/alphaevolve*/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Emilien Dupont, Marvin Eisenberger, Borislav Kozlovskii</span>
-                                <span class="date">2026-08-17</span>
-                                <span class="categories">cs.DS | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">The current best bounds on the matrix multiplication exponent $ω$ are obtained through a refinement of the laser method called combination loss analysis (Duan et al., 2022; Williams et al., 2024; Alman et al., 2025). In this note, we address the optimization problem at the core of this approach and ...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">矩阵乘法指数 $ω$ 的当前最佳界限是通过称为组合损失分析的激光方法的改进获得的（Duan 等人，2022；Williams 等人，2024；Alman 等人，2025）。在本文中，我们解决了该方法核心的优化问题，并提出了一些改进方案。首先，我们重新表述优化问题，使我们能够在比以前更大的环境中解决它。其次，我们利用机器学习的最新进展来为这个问题设计一种新的优化算法。最后，我们使用 AlphaEvolve 改进最终的优化算法。我们的组合方法产生的上限为 $ω$ &lt; 2.371177，改进了之前的最佳界限 2.371339。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2608.16884v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">AutoSR: Automatic<sup class='ipa'>/ˌɔtəˈmætɪk/</sup> Symbolic<sup class='ipa'>/sɪmˈbɑlɪk/</sup> Regression<sup class='ipa'>/rəˈgrɛʃən/</sup> by Searching<sup class='ipa'>/ˈsərʧɪŋ/</sup> Research<sup class='ipa'>/ˈrisərʧ/</sup> States</h4>
-                            <div class="paper-meta">
-                                <span class="authors">Kejia Zhang, Youran Sun, Xinyu Ren</span>
-                                <span class="date">2026-08-17</span>
-                                <span class="categories">cs.SC | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">We introduce Automatic Symbolic Regression (AutoSR), a fully automated system that instantiates Research-Space Symbolic Regression by searching persistent scientific investigations rather than isolated equations. Finite, noisy data often yield numerically competitive expressions that imply very diff...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">我们引入自动符号回归（AutoSR），这是一个完全自动化的系统，它通过搜索持续的科学研究而不是孤立的方程来实例化研究空间符号回归。有限的、嘈杂的数据通常会产生数值上有竞争力的表达式，这意味着在观察范围之外有非常不同的行为，使得数值拟合和句法复杂性不足以衡量科学可信度。现有的方法主要集中在改进表达上，但搜索通常除了结果公式和分数之外几乎不保留什么，从而丢失了科学记录，例如动机和探索，这些记录告诉下一步要尝试什么。 AutoSR 将此记录保存在 \textbf{研究状态} 中，将每个候选方程与沿其分支开发的推理、计算证据和独立审查相结合。提案者-评审者代理在渐进式扩大蒙特卡罗树搜索（PW-MCTS）下开发这些状态，该搜索在竞争性调查之间分配计算，而积累的研究记录最终被合成为最终报告，解释主导关系及其选择的基础。在两个基准套件中选定的九个挑战中，AutoSR 在每种情况下都恢复了代数等效关系，包括三个未发布系统恢复的 cp3 基准问题和六个结构不同的 LSR 变换问题。总体而言，AutoSR 将符号回归从方程级搜索扩展到自动化科学研究，使科学知识和积累的证据能够塑造探索的内容以及如何证明所得方程的合理性。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2608.16876v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
+                        <p class="empty-state">暂无论文数据</p>
                     
                 </div>
             </div>
@@ -920,12 +869,26 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/Greninja9257/LabLLM" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">LabLLM</span>
-                                    <span class="repo-stars">⭐ 49</span>
+                                    <span class="repo-stars">⭐ 54</span>
                                 </div>
                                 <p class="repo-desc">一个原生 macOS 实验室，用于教授微型语言模型思考 — 构建架构、训练权重，并观看小型 LLM 从头开始​​，在 Apple Silicon 上本地使用自定义数据、分词器、检查点和 MLX 加速。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Swift</span>
                                     <span class="repo-date">2026-08-15</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/researchradar/research-radar" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">research-radar</span>
+                                    <span class="repo-stars">⭐ 34</span>
+                                </div>
+                                <p class="repo-desc">自托管研究情报，用于收集、删除重复、排名、搜索和浏览您关心的研究人员、主题和来源。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-08-16</span>
                                 </div>
                             </a>
                         </li>
@@ -948,54 +911,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/lucidrains/bdh-cq" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">bdh-cq</span>
-                                    <span class="repo-stars">⭐ 16</span>
+                                    <span class="repo-stars">⭐ 18</span>
                                 </div>
                                 <p class="repo-desc">BDH-CQ 的实现：具有循环潜在推理的上下文学习，由 Pathway Research 提出</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-08-16</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/clownjee/knowledge-import-pipeline" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">knowledge-import-pipeline</span>
-                                    <span class="repo-stars">⭐ 14</span>
-                                </div>
-                                <p class="repo-desc">面向任务教育教材的AI知识抽取与交互式知识图谱平台，支持PDF解析、知识点提取、支持搜索、前置关系构建及MCP查询服务。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Java</span>
-                                    <span class="repo-date">2026-08-12</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/researchradar/research-radar" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">research-radar</span>
-                                    <span class="repo-stars">⭐ 11</span>
-                                </div>
-                                <p class="repo-desc">自托管研究情报，用于收集、删除重复、排名、搜索和浏览您关心的研究人员、主题和来源。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-08-16</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/musichen/awesome-artificial-intelligence" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">awesome-artificial-intelligence</span>
-                                    <span class="repo-stars">⭐ 11</span>
-                                </div>
-                                <p class="repo-desc">Awesome-artificial-intelligence - 人工智能 (AI) 课程、书籍、视频讲座和论文的精选列表。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-08-12</span>
                                 </div>
                             </a>
                         </li>
@@ -1018,12 +939,26 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/maziyarpanahi/ai-demos" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">ai-demos</span>
-                                    <span class="repo-stars">⭐ 6</span>
+                                    <span class="repo-stars">⭐ 7</span>
                                 </div>
                                 <p class="repo-desc">您可以理解、运行和重新混合的开源 AI 演示 - 针对视觉、多模式模型、本地或托管推理等的小型、可重复构建。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-08-18</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/liventruth/UL-SMF-Cache-Compression" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">UL-SMF-Cache-Compression</span>
+                                    <span class="repo-stars">⭐ 7</span>
+                                </div>
+                                <p class="repo-desc">统一潜在状态内存结构 (UL-SMF) 是一种软硬件共同设计的内存压缩结构，可解决长上下文 Transformer 推理中的内存瓶颈。通过将 FSQ 与动态 16 维潜在映射相结合，UL-SMF 将键值 (KV) 缓存张量压缩高达 384 倍，同时保持 &gt;94% 的语义保留。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-08-13</span>
                                 </div>
                             </a>
                         </li>
@@ -1052,6 +987,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">HTML</span>
                                     <span class="repo-date">2026-08-14</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/foundrypaul-cloud/paul-open" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">paul-open</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">PAUL Open 是 Paul Foundry 的开放研究计划，旨在开发面向研究、知识、教育和提高人类生活质量的可复制人工智能系统。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-08-15</span>
                                 </div>
                             </a>
                         </li>
