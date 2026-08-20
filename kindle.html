@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-08-19 22:19:25</p>
+            <p class="hero-meta">构建时间：2026-08-20 22:21:15</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
-                        <p class="quick-meta">— Chinese Proverb</p>
+                        <p class="quick-main">博观而约取，厚积而薄发。</p>
+                        <p class="quick-meta">— 苏轼</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">Greninja9257/LabLLM</p>
-                        <p class="quick-meta">★ 54</p>
+                        <p class="quick-meta">★ 58</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Swift</p>
                     
                 </article>
@@ -217,9 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 encapsulation，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 inheritance，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 Greninja9257/LabLLM，记录 1 个可借鉴实现点。</li>
+                        
+                        <li>深读: 阅读论文《SPADE: Self-Play in Adaptive Synthetic Executable Environments》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -232,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">encapsulation <span>/ɪnˌkæpsjuˈleɪʃn/</span></p>
-                    <p class="study-meaning">n. 封装；包装</p>
+                    <p class="study-word">inheritance <span>/ɪnˈherɪtəns/</span></p>
+                    <p class="study-meaning">n. 继承；遗传</p>
                     
-                    <p class="study-sentence">Encapsulation hides the internal state of an object from the outside.</p>
-                    <p class="study-sentence-zh">封装将对象的内部状态对外部隐藏。</p>
+                    <p class="study-sentence">Inheritance enables new classes to receive the properties of existing classes.</p>
+                    <p class="study-sentence-zh">继承使新类能够接收现有类的属性。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -268,7 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="quick-empty">暂无论文数据</p>
+                    <p class="deep-title">SPADE: Self-Play in Adaptive Synthetic Executable Environments</p>
+                    <p class="deep-abstract">持续的自我完善需要不断扩大的自我生成的、多样化的、适应性的目标。对于语言代理，现有的训练环境池（手工策划、静态合成或冻结验证器）使目标分布随着学习者的扩展而保持固定。我们引入了 SPADE（自适应合成可执行环境中的自我游戏），这是一种自我游戏 RL 框架，其中单个 LLM 扮演两个角色：环境设计师，使用 OpenAI Gym 风格的 reset()/step() 接口将完整的长期训练环境编写为可执行代码，以及学习在其中进行操作的推理代理。每个都是一个有状态的多回合环境（状态转换、奖励函数和验证码），因此一个界面涵盖推理问题和多步骤代理工具的使用。推理代理的遗憾是使用有和没有特权提示的奖励之间的差距来估计的；在优化这种遗憾信号时，环境设计师学会以代理能力边缘的环境为目标，同时保持它们的可行性。通过大量的实验，我们发现了几个对成功至关重要的组件：将环境设计器基于从大型预训练语料库中采样的文档，并为其提供累积的环境记忆。扩展到 30B 参数模型后，SPADE 在八个保留的数学、科学、代码和推理基准测试中比最强的固定环境基准平均提高了 +5.3，并将工具使用设置在 BFCL-v4 多轮上提高了 +5.7，在 ACEBench-Agent 上提高了 +13.9；在游戏设置中，最强基线的差距随着模型规模的增加而增长。通过使环境设计本身成为一个可学习的组成部分，SPADE 向开放式自我完善迈出了具体的一步。</p>
+                    
+                    <p class="deep-takeaway">要点：持续的自我完善需要不断扩大的自我生成的、多样化的、适应性的目标。对于语言代理，现有的训练环境池（手工策划、静态合成或冻结验证器）使目标分布随着学习者的扩展而保持固定。我们引入了 SPADE（自适应合成可执行环境中的自我游戏），这是一种自我游戏 RL 框架，其中单个 LLM 扮演两个角色：环境设计师，使用 OpenAI...</p>
+                    
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -277,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>Greninja9257/LabLLM</strong> (★ 54)
+                        <strong>Greninja9257/LabLLM</strong> (★ 58)
                         <p>一个原生 macOS 实验室，用于教授微型语言模型思考 — 构建架构、训练权重，并观看小型 LLM 从头开始​​，在 Apple Silicon 上本地使用自定义数据、分词器、检查点和 MLX 加速。</p>
                     </li>
                     
                     <li>
-                        <strong>researchradar/research-radar</strong> (★ 34)
+                        <strong>researchradar/research-radar</strong> (★ 37)
                         <p>自托管研究情报，用于收集、删除重复、排名、搜索和浏览您关心的研究人员、主题和来源。</p>
                     </li>
                     
                     <li>
-                        <strong>davidclark-ops2004a7/Skyrim-AI-Revolution-Ultimate-NPC-Mod</strong> (★ 21)
-                        <p>🧠 天际特别版 AI 驱动的 NPC 模组 — 为同伴和 NPC 提供真正的人工智能。记忆、调度、自主行动、动态个性、免费本地AI语音生成。 SkyrimNET + IntelEngine + SeverActions + VoiceForge Studio。永远免费。 Steam 和 GOG 兼容。</p>
-                    </li>
-                    
-                    <li>
-                        <strong>lucidrains/bdh-cq</strong> (★ 18)
+                        <strong>lucidrains/bdh-cq</strong> (★ 20)
                         <p>BDH-CQ 的实现：具有循环潜在推理的上下文学习，由 Pathway Research 提出</p>
                     </li>
                     
                     <li>
+                        <strong>maziyarpanahi/ai-demos</strong> (★ 8)
+                        <p>您可以理解、运行和重新混合的开源 AI 演示 - 针对视觉、多模式模型、本地或托管推理等的小型、可重复构建。</p>
+                    </li>
+                    
+                    <li>
                         <strong>soares-grs/encAIxa</strong> (★ 8)
-                        <p>优化 IA 课程，提供证据和 PDF 的基础知识。 ATS：本地、私有和多平台</p>
+                        <p>Otimize seu currículo para cada vaga com IA, sugestões baseadas em evidências e geração de PDF. ATS — local, privado e multiplataforma</p>
                     </li>
                     
                 </ul>
@@ -311,7 +318,7 @@ html, body {
             <p class="zone-subtitle">复盘与回顾入口</p>
             <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
             <ul class="archive-stats">
-                <li>论文：0</li>
+                <li>论文：3</li>
                 <li>仓库：10</li>
                 <li>思维模型：3</li>
                 <li>语录：5</li>

@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-08-19 22:19:25</span>
+        <span class="generated-time">更新于 2026-08-20 22:21:15</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -846,7 +846,58 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                 
                 <div class="papers-feed">
                     
-                        <p class="empty-state">暂无论文数据</p>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">SPADE: Self-Play<sup class='ipa'>/selfplay*/</sup> in Adaptive<sup class='ipa'>/əˈdæptɪv/</sup> Synthetic<sup class='ipa'>/sɪnˈθɛtɪk/</sup> Executable<sup class='ipa'>/executable*/</sup> Environments<sup class='ipa'>/ɪnˈvaɪrənmənts/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Bo Liu, Simon Yu, Yiding Jiang</span>
+                                <span class="date">2026-08-19</span>
+                                <span class="categories">cs.CL | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, statically synthesized, or frozen-verifier) keep the goal distribution fixed as the learner scales. We introduce SPADE (Self...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">持续的自我完善需要不断扩大的自我生成的、多样化的、适应性的目标。对于语言代理，现有的训练环境池（手工策划、静态合成或冻结验证器）使目标分布随着学习者的扩展而保持固定。我们引入了 SPADE（自适应合成可执行环境中的自我游戏），这是一种自我游戏 RL 框架，其中单个 LLM 扮演两个角色：环境设计师，使用 OpenAI Gym 风格的 reset()/step() 接口将完整的长期训练环境编写为可执行代码，以及学习在其中进行操作的推理代理。每个都是一个有状态的多回合环境（状态转换、奖励函数和验证码），因此一个界面涵盖推理问题和多步骤代理工具的使用。推理代理的遗憾是使用有和没有特权提示的奖励之间的差距来估计的；在优化这种遗憾信号时，环境设计师学会以代理能力边缘的环境为目标，同时保持它们的可行性。通过大量的实验，我们发现了几个对成功至关重要的组件：将环境设计器基于从大型预训练语料库中采样的文档，并为其提供累积的环境记忆。扩展到 30B 参数模型后，SPADE 在八个保留的数学、科学、代码和推理基准测试中比最强的固定环境基准平均提高了 +5.3，并将工具使用设置在 BFCL-v4 多轮上提高了 +5.7，在 ACEBench-Agent 上提高了 +13.9；在游戏设置中，最强基线的差距随着模型规模的增加而增长。通过使环境设计本身成为一个可学习的组成部分，SPADE 向开放式自我完善迈出了具体的一步。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2608.19197v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">ADEPT: Accelerating<sup class='ipa'>/ækˈsɛlərˌeɪtɪŋ/</sup> Dexterity<sup class='ipa'>/dɛkˈstɛrɪti/</sup> via Pre-Training<sup class='ipa'>/pretraining*/</sup> and Post-Training<sup class='ipa'>/posttraining*/</sup> using Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Jayjun Lee, Jessica Yin, Asif Rana</span>
+                                <span class="date">2026-08-19</span>
+                                <span class="categories">cs.RO | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">We introduce Accelerating Dexterity via Pre-Training (ADEPT), a large-scale reinforcement learning (RL) framework for learning sim-to-real transferable dexterity across high degree-of-freedom (DoF) robot embodiments that can solve long-horizon tasks directly from raw visuo-tactile perception. ADEPT ...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">我们引入了通过预训练加速敏捷性（ADEPT），这是一种大规模强化学习（RL）框架，用于在高自由度（DoF）机器人实施例中学习模拟到真实的可转移敏捷性，可以直接从原始视觉触觉感知解决长视野任务。 ADEPT 在通用对象重置任务上预训练灵巧策略，然后以此预训练行为作为先验来对下游策略进行后训练。 ADEPT 能够学习在多指机器人上很难从头开始发现的新行为，并避免为每个新的下游任务重新学习相同的技能集。预训练策略对下游任务的休息阶段进行零射击，但简单的强化学习微调会在传输过程中迅速降低这种能力。我们通过结合行为克隆蒸馏、评论家预热和保守的政策更新的稳定的训练后配方来解决这个问题。为了安全地充分利用运动学灵活性，我们引入了一种关节空间几何结构，它可以在 RL 策略和机器人之间进行调解。我们将经过培训的教师提炼为具有感知能力的学生，在两个实施例上进行零镜头模拟到真实的迁移：带有两个 RGB 摄像头的 23 DoF Kuka-Allegro，以及带有两个 RGB 摄像头和五个基于视觉的触觉传感器的 29 DoF Flexiv-Sharpa，并且可以以人类水平的速度灵巧地解决具有挑战性的初始状态的长视野任务。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2608.19182v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Beyond Teacher Likelihood:<sup class='ipa'>/ˈlaɪkliˌhʊd/</sup> Group-Calibrated<sup class='ipa'>/groupcalibrated*/</sup> On-Policy<sup class='ipa'>/onpolicy*/</sup> Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup> for Long-Context<sup class='ipa'>/longcontext*/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Zhu Zhang, Jixun Wang, Xiaoang Xu</span>
+                                <span class="date">2026-08-19</span>
+                                <span class="categories">cs.LG | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">On-policy distillation (OPD) trains a student on its own responses using dense token-level guidance from a stronger teacher. In long-context tasks, however, token-level teacher support can favor locally plausible responses that omit evidence distributed across the input or violate global task constr...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">在策略蒸馏（OPD）使用更强的老师提供的密集令牌级指导来训练学生自己的反应。然而，在长上下文任务中，令牌级教师支持可能有利于局部合理的响应，从而忽略分布在输入中的证据或违反全局任务限制。相反，特定于任务的验证者在响应级别评估任务完成情况，并可能返回反映部分成功的分级奖励。我们根据两个代表性长上下文证据聚合任务的固定响应来诊断这种不匹配。在较长的输入范围内，轨迹级 OPD 分数与验证者奖励的一致性逐渐降低，表明教师与验证者之间存在分歧。受这一观察的启发，我们引入了组校准按策略蒸馏（GC-OPD）。 GC-OPD 分别对每个推出组内的验证者奖励和轨迹级 OPD 分数进行标准化，并将它们的差异用作签名的教师-验证者分歧残差。基于相对优势的信用分配 (RACA) 根据其相对 OPD 优势将轨迹级残差分配给各个代币，同时保留原始 OPD 信号。在五个长上下文基准中，GC-OPD 训练后将官方 Qwen3-4B 和 Qwen3-8B 检查点的五个基准平均值分别从 29.08 提高到 40.47，从 35.12 提高到 44.65。在相同设置下，原版 OPD 分别达到 39.31 和 43.56。受控消融表明，签名残差比附加的 OPD 派生项或直接组归一化验证者奖励添加更有效，而 RACA 比统一代币分配进一步改进。总之，这些结果表明，相对于组的残差校准可以纳入验证者的结果，而无需放弃密集的令牌级指导。代码可在 https://github.com/SolereZhang/GC-OPD 获取。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2608.19181v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
                     
                 </div>
             </div>
@@ -869,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/Greninja9257/LabLLM" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">LabLLM</span>
-                                    <span class="repo-stars">⭐ 54</span>
+                                    <span class="repo-stars">⭐ 58</span>
                                 </div>
                                 <p class="repo-desc">一个原生 macOS 实验室，用于教授微型语言模型思考 — 构建架构、训练权重，并观看小型 LLM 从头开始​​，在 Apple Silicon 上本地使用自定义数据、分词器、检查点和 MLX 加速。</p>
                                 <div class="repo-meta">
@@ -883,7 +934,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/researchradar/research-radar" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">research-radar</span>
-                                    <span class="repo-stars">⭐ 34</span>
+                                    <span class="repo-stars">⭐ 37</span>
                                 </div>
                                 <p class="repo-desc">自托管研究情报，用于收集、删除重复、排名、搜索和浏览您关心的研究人员、主题和来源。</p>
                                 <div class="repo-meta">
@@ -894,24 +945,10 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/davidclark-ops2004a7/Skyrim-AI-Revolution-Ultimate-NPC-Mod" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">Skyrim-AI-Revolution-Ultimate-NPC-Mod</span>
-                                    <span class="repo-stars">⭐ 21</span>
-                                </div>
-                                <p class="repo-desc">🧠 天际特别版 AI 驱动的 NPC 模组 — 为同伴和 NPC 提供真正的人工智能。记忆、调度、自主行动、动态个性、免费本地AI语音生成。 SkyrimNET + IntelEngine + SeverActions + VoiceForge Studio。永远免费。 Steam 和 GOG 兼容。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
-                                    <span class="repo-date">2026-08-16</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/lucidrains/bdh-cq" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">bdh-cq</span>
-                                    <span class="repo-stars">⭐ 18</span>
+                                    <span class="repo-stars">⭐ 20</span>
                                 </div>
                                 <p class="repo-desc">BDH-CQ 的实现：具有循环潜在推理的上下文学习，由 Pathway Research 提出</p>
                                 <div class="repo-meta">
@@ -922,24 +959,10 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/soares-grs/encAIxa" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">encAIxa</span>
-                                    <span class="repo-stars">⭐ 8</span>
-                                </div>
-                                <p class="repo-desc">优化 IA 课程，提供证据和 PDF 的基础知识。 ATS：本地、私有和多平台</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-08-15</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
                             <a href="https://github.com/maziyarpanahi/ai-demos" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">ai-demos</span>
-                                    <span class="repo-stars">⭐ 7</span>
+                                    <span class="repo-stars">⭐ 8</span>
                                 </div>
                                 <p class="repo-desc">您可以理解、运行和重新混合的开源 AI 演示 - 针对视觉、多模式模型、本地或托管推理等的小型、可重复构建。</p>
                                 <div class="repo-meta">
@@ -950,15 +973,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/liventruth/UL-SMF-Cache-Compression" target="_blank" class="repo-link">
+                            <a href="https://github.com/soares-grs/encAIxa" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">UL-SMF-Cache-Compression</span>
-                                    <span class="repo-stars">⭐ 7</span>
+                                    <span class="repo-name">encAIxa</span>
+                                    <span class="repo-stars">⭐ 8</span>
                                 </div>
-                                <p class="repo-desc">统一潜在状态内存结构 (UL-SMF) 是一种软硬件共同设计的内存压缩结构，可解决长上下文 Transformer 推理中的内存瓶颈。通过将 FSQ 与动态 16 维潜在映射相结合，UL-SMF 将键值 (KV) 缓存张量压缩高达 384 倍，同时保持 &gt;94% 的语义保留。</p>
+                                <p class="repo-desc">Otimize seu currículo para cada vaga com IA, sugestões baseadas em evidências e geração de PDF. ATS — local, privado e multiplataforma</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-08-13</span>
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-08-15</span>
                                 </div>
                             </a>
                         </li>
@@ -972,6 +995,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="repo-desc">软件、云、人工智能和企业系统的独立技术架构审查指南、清单、模板和供应商偏见危险信号。</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-08-15</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/foundrypaul-cloud/paul-open" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">paul-open</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">PAUL Open 是 Paul Foundry 的开放研究计划，旨在开发面向研究、知识、教育和提高人类生活质量的可复制人工智能系统。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-08-15</span>
                                 </div>
                             </a>
@@ -992,15 +1029,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/foundrypaul-cloud/paul-open" target="_blank" class="repo-link">
+                            <a href="https://github.com/samsingh2008/RAKSHA_GRID" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">paul-open</span>
-                                    <span class="repo-stars">⭐ 3</span>
+                                    <span class="repo-name">RAKSHA_GRID</span>
+                                    <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">PAUL Open 是 Paul Foundry 的开放研究计划，旨在开发面向研究、知识、教育和提高人类生活质量的可复制人工智能系统。</p>
+                                <p class="repo-desc">RAKSHA GRID——人工智能驱动的灾难决策智能平台，可将碎片化的紧急报告转化为优先事件、优化资源、自适应路线和指挥官就绪的行动。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-08-15</span>
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-08-20</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/regyssilveira/sdd-em-delphi-exemplos" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">sdd-em-delphi-exemplos</span>
+                                    <span class="repo-stars">⭐ 2</span>
+                                </div>
+                                <p class="repo-desc">Delphi 中 SDD 官方示例</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Pascal</span>
+                                    <span class="repo-date">2026-08-14</span>
                                 </div>
                             </a>
                         </li>
