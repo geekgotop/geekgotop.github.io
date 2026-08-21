@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-08-20 22:21:15</span>
+        <span class="generated-time">更新于 2026-08-21 22:18:42</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -736,8 +736,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         <div class="quote-slide ">
                             <blockquote>
                                 <p class="quote-text">In the middle of difficulty lies opportunity.</p>
-                                
-                                <p class="quote-translation">困难之中蕴藏着机遇。</p>
                                 
                             </blockquote>
                             <cite class="quote-author">— Albert Einstein</cite>
@@ -848,54 +846,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">SPADE: Self-Play<sup class='ipa'>/selfplay*/</sup> in Adaptive<sup class='ipa'>/əˈdæptɪv/</sup> Synthetic<sup class='ipa'>/sɪnˈθɛtɪk/</sup> Executable<sup class='ipa'>/executable*/</sup> Environments<sup class='ipa'>/ɪnˈvaɪrənmənts/</sup></h4>
+                            <h4 class="paper-title">ConceptGuard:<sup class='ipa'>/conceptguard*/</sup> Benchmarking<sup class='ipa'>/benchmarking*/</sup> Context-Sensitive<sup class='ipa'>/contextsensitive*/</sup> Unlearning<sup class='ipa'>/unlearning*/</sup> in Large Language<sup class='ipa'>/ˈlæŋgwɪʤ/</sup> Models</h4>
                             <div class="paper-meta">
-                                <span class="authors">Bo Liu, Simon Yu, Yiding Jiang</span>
-                                <span class="date">2026-08-19</span>
+                                <span class="authors">Sahil Kale, Ian Harris</span>
+                                <span class="date">2026-08-20</span>
+                                <span class="categories">cs.CL</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Large Language Models (LLMs) increasingly require selective removal of harmful or sensitive knowledge, called unlearning, yet existing methods and benchmarks fail to evaluate this capability completely. Current approaches rely on disjoint forget and retain sets composed of independent facts, and mea...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh">大型语言模型 (LLM) 越来越需要选择性地删除有害或敏感知识，称为“忘却”，但现有的方法和基准无法完全评估这种能力。当前的方法依赖于不相交的遗忘和保留由独立事实组成的集合，并使用简单而直接的事实回忆来衡量成功。这种框架未能抓住遗忘的关键要求，即消除有害行为同时保留良性和有益知识的能力。我们认为，有效的忘却必须在概念层面上进行，确保完全删除不安全的应用程序，同时保持其正确和有用的用法，从而实现概念上有意义和完全的忘却。为了从实用的角度更好地评估遗忘技术，我们引入了双重用途概念的概念：可以在有害和良性环境中使用的概念。基于这些概念，我们构建了一个名为 ConceptGuard 的基准，其中忘记集和保留集在概念使用中明确互补。我们的基准独特地使得能够在概念层面而不是稀疏事实的层面上探索和衡量遗忘，并且评估是意图敏感的，其目标是最大化上下文分离以促进更安全的行为。我们证明当前的忘却技术在这种情况下表现不佳，表现出较弱的上下文分离以及 ROUGE 和概念级指标的表现不佳。我们的结果揭示了强烈的遗忘与效用权衡、情境敏感性的收益有限以及跨方法的概念级控制的一致性较差，并为更好地符合现实世界安全要求的遗忘方法提供了想法。我们的数据集是公开的。</p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2608.20338v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">G-CARL: Grounded<sup class='ipa'>/ˈgraʊndɪd/</sup> Checklist-Aligned<sup class='ipa'>/checklistaligned*/</sup> Reward Learning<sup class='ipa'>/ˈlərnɪŋ/</sup> for Patient-Oriented<sup class='ipa'>/patientoriented*/</sup> Medical Report Interpretation<sup class='ipa'>/ˌɪnˌtərprɪˈteɪʃən/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Shiao Xie, Siyu Chen, Jianwei Lv</span>
+                                <span class="date">2026-08-20</span>
                                 <span class="categories">cs.CL | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, statically synthesized, or frozen-verifier) keep the goal distribution fixed as the learner scales. We introduce SPADE (Self...</p>
+                                <p class="abstract-en">Personalized interpretation of medical reports has emerged as an increasingly important need among patients. Addressing this need requires both evidence-grounded medical factuality and context-dependent patient communication, yet existing medical vision-language tasks do not adequately capture these...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">持续的自我完善需要不断扩大的自我生成的、多样化的、适应性的目标。对于语言代理，现有的训练环境池（手工策划、静态合成或冻结验证器）使目标分布随着学习者的扩展而保持固定。我们引入了 SPADE（自适应合成可执行环境中的自我游戏），这是一种自我游戏 RL 框架，其中单个 LLM 扮演两个角色：环境设计师，使用 OpenAI Gym 风格的 reset()/step() 接口将完整的长期训练环境编写为可执行代码，以及学习在其中进行操作的推理代理。每个都是一个有状态的多回合环境（状态转换、奖励函数和验证码），因此一个界面涵盖推理问题和多步骤代理工具的使用。推理代理的遗憾是使用有和没有特权提示的奖励之间的差距来估计的；在优化这种遗憾信号时，环境设计师学会以代理能力边缘的环境为目标，同时保持它们的可行性。通过大量的实验，我们发现了几个对成功至关重要的组件：将环境设计器基于从大型预训练语料库中采样的文档，并为其提供累积的环境记忆。扩展到 30B 参数模型后，SPADE 在八个保留的数学、科学、代码和推理基准测试中比最强的固定环境基准平均提高了 +5.3，并将工具使用设置在 BFCL-v4 多轮上提高了 +5.7，在 ACEBench-Agent 上提高了 +13.9；在游戏设置中，最强基线的差距随着模型规模的增加而增长。通过使环境设计本身成为一个可学习的组成部分，SPADE 向开放式自我完善迈出了具体的一步。</p>
+                                    <p class="abstract-zh">对医疗报告的个性化解读已成为患者日益重要的需求。满足这一需求需要以证据为基础的医学事实和依赖于上下文的患者沟通，但现有的医学视觉语言任务并不能充分满足这些双重要求。为了弥补这一差距，我们引入了面向患者的医疗报告解释（PMRI），这是一种新颖的开放式多模式生成任务，需要模型根据用户的查询和对话历史以准确且易于理解的语言解释医疗报告。这两个目标在可验证性方面存在根本差异，但仍然紧密耦合，使得它们难以在传统的监督微调和整体强化学习范式下联合优化。为了应对这一挑战，我们提出了 G-CARL，这是一种扎根的、与清单一致的强化学习框架，它将用于原子声明验证的多源检索与用于响应覆盖的上下文感知、特定于实例的加权清单相结合，为事实性、用户需求满意度和表达质量提供结构化监督，而不限制响应多样性。我们进一步构建了 MMedReport，一个真实世界的 PMRI 基准，以及临床医生设计的三维评估协议。大量实验表明，G-CARL 在整体质量、声明级别精度和检查表召回率方面始终优于现有的训练后基线。临床医生的配对偏好评估进一步证实 G-CARL 产生的解释更准确且更符合患者需求。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2608.19197v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2608.20331v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">ADEPT: Accelerating<sup class='ipa'>/ækˈsɛlərˌeɪtɪŋ/</sup> Dexterity<sup class='ipa'>/dɛkˈstɛrɪti/</sup> via Pre-Training<sup class='ipa'>/pretraining*/</sup> and Post-Training<sup class='ipa'>/posttraining*/</sup> using Reinforcement<sup class='ipa'>/ˌriɪnˈfɔrsmənt/</sup> Learning<sup class='ipa'>/ˈlərnɪŋ/</sup></h4>
+                            <h4 class="paper-title">An Agentic Approach<sup class='ipa'>/əˈproʊʧ/</sup> for Active Data Collection,<sup class='ipa'>/kəˈlɛkʃən/</sup> Travel Behavior<sup class='ipa'>/bɪˈheɪvjər/</sup> Modeling,<sup class='ipa'>/ˈmɑdəlɪŋ/</sup> and Weather-Sensitive<sup class='ipa'>/weathersensitive*/</sup> Demand Prediction<sup class='ipa'>/priˈdɪkʃən/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Jayjun Lee, Jessica Yin, Asif Rana</span>
-                                <span class="date">2026-08-19</span>
-                                <span class="categories">cs.RO | cs.AI</span>
+                                <span class="authors">Narges Ahmadi, Yubo Jiao, Jônatas Augusto Manzolli</span>
+                                <span class="date">2026-08-20</span>
+                                <span class="categories">cs.AI | cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">We introduce Accelerating Dexterity via Pre-Training (ADEPT), a large-scale reinforcement learning (RL) framework for learning sim-to-real transferable dexterity across high degree-of-freedom (DoF) robot embodiments that can solve long-horizon tasks directly from raw visuo-tactile perception. ADEPT ...</p>
+                                <p class="abstract-en">Travel behavior research increasingly combines digital data collection with predictive modeling, yet these stages are often developed and evaluated separately. This study proposes a three-agent workflow integrating conversational data collection, structured data processing, and behavioral prediction...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">我们引入了通过预训练加速敏捷性（ADEPT），这是一种大规模强化学习（RL）框架，用于在高自由度（DoF）机器人实施例中学习模拟到真实的可转移敏捷性，可以直接从原始视觉触觉感知解决长视野任务。 ADEPT 在通用对象重置任务上预训练灵巧策略，然后以此预训练行为作为先验来对下游策略进行后训练。 ADEPT 能够学习在多指机器人上很难从头开始发现的新行为，并避免为每个新的下游任务重新学习相同的技能集。预训练策略对下游任务的休息阶段进行零射击，但简单的强化学习微调会在传输过程中迅速降低这种能力。我们通过结合行为克隆蒸馏、评论家预热和保守的政策更新的稳定的训练后配方来解决这个问题。为了安全地充分利用运动学灵活性，我们引入了一种关节空间几何结构，它可以在 RL 策略和机器人之间进行调解。我们将经过培训的教师提炼为具有感知能力的学生，在两个实施例上进行零镜头模拟到真实的迁移：带有两个 RGB 摄像头的 23 DoF Kuka-Allegro，以及带有两个 RGB 摄像头和五个基于视觉的触觉传感器的 29 DoF Flexiv-Sharpa，并且可以以人类水平的速度灵巧地解决具有挑战性的初始状态的长视野任务。</p>
+                                    <p class="abstract-zh">出行行为研究越来越多地将数字数据收集与预测建模结合起来，但这些阶段通常是单独开发和评估的。本研究提出了一种集成会话数据收集、结构化数据处理和行为预测的三代理工作流程。一项由聊天机器人管理、图像增强的陈述偏好调查收集了学生通勤者在五个预定义天气场景中的模式选择，产生了 454 个受访者场景观察结果。使用多项 Logit 模型分析与天气相关的关联，而逻辑回归和随机森林提供了机器学习基准。九个本地部署的大型语言模型 (LLM)，参数范围从 2 到 350 亿个参数，在四个零样本提示和上下文条件下进行评估，并通过角色、少数样本和基于视觉的配置进行扩展。随机森林实现了 69.6% 的五级准确率，而最好的纯文本零样本 LLM 在没有特定任务拟合的情况下达到了 69.9%。习惯性旅行信息产生了最一致的收益，专家框架通常优于角色扮演，当习惯性旅行信息不可用时，角色信息最有用。少数样本提示改进了多个模型的预测，在少量示例后收益趋于稳定。使用向受访者显示的相同天气图像，基于视觉的最佳配置达到了 71.5% 的五级准确度，这表明视觉上下文可以为所选模型提供额外的预测信息。总体而言，该研究展示了如何在可审计的多代理工作流程中协调对话式调查、结构化数据处理、传统行为建模、机器学习和多模式 LLM 预测。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2608.19182v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">Beyond Teacher Likelihood:<sup class='ipa'>/ˈlaɪkliˌhʊd/</sup> Group-Calibrated<sup class='ipa'>/groupcalibrated*/</sup> On-Policy<sup class='ipa'>/onpolicy*/</sup> Distillation<sup class='ipa'>/ˌdɪstəˈleɪʃən/</sup> for Long-Context<sup class='ipa'>/longcontext*/</sup> Reasoning<sup class='ipa'>/ˈrizənɪŋ/</sup></h4>
-                            <div class="paper-meta">
-                                <span class="authors">Zhu Zhang, Jixun Wang, Xiaoang Xu</span>
-                                <span class="date">2026-08-19</span>
-                                <span class="categories">cs.LG | cs.AI</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">On-policy distillation (OPD) trains a student on its own responses using dense token-level guidance from a stronger teacher. In long-context tasks, however, token-level teacher support can favor locally plausible responses that omit evidence distributed across the input or violate global task constr...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">在策略蒸馏（OPD）使用更强的老师提供的密集令牌级指导来训练学生自己的反应。然而，在长上下文任务中，令牌级教师支持可能有利于局部合理的响应，从而忽略分布在输入中的证据或违反全局任务限制。相反，特定于任务的验证者在响应级别评估任务完成情况，并可能返回反映部分成功的分级奖励。我们根据两个代表性长上下文证据聚合任务的固定响应来诊断这种不匹配。在较长的输入范围内，轨迹级 OPD 分数与验证者奖励的一致性逐渐降低，表明教师与验证者之间存在分歧。受这一观察的启发，我们引入了组校准按策略蒸馏（GC-OPD）。 GC-OPD 分别对每个推出组内的验证者奖励和轨迹级 OPD 分数进行标准化，并将它们的差异用作签名的教师-验证者分歧残差。基于相对优势的信用分配 (RACA) 根据其相对 OPD 优势将轨迹级残差分配给各个代币，同时保留原始 OPD 信号。在五个长上下文基准中，GC-OPD 训练后将官方 Qwen3-4B 和 Qwen3-8B 检查点的五个基准平均值分别从 29.08 提高到 40.47，从 35.12 提高到 44.65。在相同设置下，原版 OPD 分别达到 39.31 和 43.56。受控消融表明，签名残差比附加的 OPD 派生项或直接组归一化验证者奖励添加更有效，而 RACA 比统一代币分配进一步改进。总之，这些结果表明，相对于组的残差校准可以纳入验证者的结果，而无需放弃密集的令牌级指导。代码可在 https://github.com/SolereZhang/GC-OPD 获取。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2608.19181v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2608.20320v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,7 +918,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/Greninja9257/LabLLM" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">LabLLM</span>
-                                    <span class="repo-stars">⭐ 58</span>
+                                    <span class="repo-stars">⭐ 59</span>
                                 </div>
                                 <p class="repo-desc">一个原生 macOS 实验室，用于教授微型语言模型思考 — 构建架构、训练权重，并观看小型 LLM 从头开始​​，在 Apple Silicon 上本地使用自定义数据、分词器、检查点和 MLX 加速。</p>
                                 <div class="repo-meta">
@@ -959,6 +957,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/soares-grs/encAIxa" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">encAIxa</span>
+                                    <span class="repo-stars">⭐ 8</span>
+                                </div>
+                                <p class="repo-desc">优化 IA 课程，提供证据和 PDF 格式的基础信息。 ATS：本地、私有和多平台</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-08-15</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/maziyarpanahi/ai-demos" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">ai-demos</span>
@@ -968,20 +980,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-08-18</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/soares-grs/encAIxa" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">encAIxa</span>
-                                    <span class="repo-stars">⭐ 8</span>
-                                </div>
-                                <p class="repo-desc">Otimize seu currículo para cada vaga com IA, sugestões baseadas em evidências e geração de PDF. ATS — local, privado e multiplataforma</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-08-15</span>
                                 </div>
                             </a>
                         </li>
@@ -1001,6 +999,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/patopolser/Coima" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Coima</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">阿根廷反腐败工具：分析公共采购流程并发现风险模式和异常情况。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-08-20</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/foundrypaul-cloud/paul-open" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">paul-open</span>
@@ -1015,43 +1027,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Bugatsec/Prompt-Engineering-Holy-Grail" target="_blank" class="repo-link">
+                            <a href="https://github.com/kamalesh404/Agentic-discourse" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">Prompt-Engineering-Holy-Grail</span>
+                                    <span class="repo-name">Agentic-discourse</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">即时工程中心的存档和维护副本：即时工程资源、工具、指南、数据集和学习材料的精选集合。最初由@zacfrulloni 创建。</p>
+                                <p class="repo-desc">一个实时的多代理辩论平台，人工智能角色使用实时网络数据分析、辩论和综合复杂的主题。使用 Next.js、FastAPI 和 LangGraph 构建。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">HTML</span>
-                                    <span class="repo-date">2026-08-14</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/samsingh2008/RAKSHA_GRID" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">RAKSHA_GRID</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">RAKSHA GRID——人工智能驱动的灾难决策智能平台，可将碎片化的紧急报告转化为优先事件、优化资源、自适应路线和指挥官就绪的行动。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">None</span>
+                                    <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-08-20</span>
                                 </div>
                             </a>
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/regyssilveira/sdd-em-delphi-exemplos" target="_blank" class="repo-link">
+                            <a href="https://github.com/686f6c61/radar-huggingface-dataset" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">sdd-em-delphi-exemplos</span>
-                                    <span class="repo-stars">⭐ 2</span>
+                                    <span class="repo-name">radar-huggingface-dataset</span>
+                                    <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">Delphi 中 SDD 官方示例</p>
+                                <p class="repo-desc">HuggingFace 模型数据集：元数据和标准化、许可分类、参数、真实模型、退休模型和模型的技术。每日增量实现 3 次。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Pascal</span>
-                                    <span class="repo-date">2026-08-14</span>
+                                    <span class="repo-lang">JavaScript</span>
+                                    <span class="repo-date">2026-08-18</span>
                                 </div>
                             </a>
                         </li>
