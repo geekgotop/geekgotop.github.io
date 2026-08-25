@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-08-24 22:20:04</p>
+            <p class="hero-meta">构建时间：2026-08-25 22:20:56</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
-                        <p class="quick-meta">— 荀子</p>
+                        <p class="quick-main">博观而约取，厚积而薄发。</p>
+                        <p class="quick-meta">— 苏轼</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">NiluK/worldmodels101</p>
-                        <p class="quick-meta">★ 27</p>
+                        <p class="quick-meta">★ 67</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: TypeScript</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 asynchronous，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 deprecated，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 NiluK/worldmodels101，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Primal Acceleration of Newton&#39;s Method》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《How to Train a Critic Stably and Efficiently》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">asynchronous <span>/eɪˈsɪŋkrənəs/</span></p>
-                    <p class="study-meaning">adj. 异步的</p>
+                    <p class="study-word">deprecated <span>/ˈdeprəkeɪtɪd/</span></p>
+                    <p class="study-meaning">adj. 已弃用的；不推荐的</p>
                     
-                    <p class="study-sentence">Asynchronous programming allows the program to continue executing while waiting for I/O.</p>
-                    <p class="study-sentence-zh">异步编程允许程序在等待 I/O 时继续执行。</p>
+                    <p class="study-sentence">This method is deprecated and will be removed in the next version.</p>
+                    <p class="study-sentence-zh">此方法已弃用，将在下一版本中移除。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Primal Acceleration of Newton&#39;s Method</p>
-                    <p class="deep-abstract">We develop a new direct accelerated Newton method for minimizing convex functions with Lipschitz continuous Hessian. The algorithm uses only primal variables and performs just one linear solve per iteration. With a simple predetermined choice of parameters, it achieves the global convergence rate of $O(1/k^3)$ in terms of the functional residual. To the best of our knowledge, this is the first second-order method for this problem class attaining this rate while relying solely on one linear system solve per iteration (without solving auxiliary nonlinear regularized subproblems, such as cubic regularization, performing nonlinear parameter searches, or using dual extragradient corrections). Our method can be implemented in a Hessian-free way, using an inexact linear system solver, while preserving the fast global rate. We further extend our construction to arbitrary geometry through Bregman divergence, and to composite optimization problems.</p>
+                    <p class="deep-title">How to Train a Critic Stably and Efficiently</p>
+                    <p class="deep-abstract">Group-based reinforcement learning methods such as GRPO for large language models avoid training a critic by sampling multiple responses for each prompt. A reliable critic could instead estimate token-level advantages from one response, but standard critic-based training recipes are often unstable. We study this instability and develop \textbf{Best-Practice Critic Optimization (BPCO)}, a recipe that combines DPPO, value predictions bounded to the reward range, Monte Carlo value targets, unnormalized policy advantages, and length-adaptive generalized advantage estimation. Because the critic is used only during training, BPCO can also condition it on reward-defining information, such as a reference answer or grading rubric, that is hidden from the policy. Controlled experiments isolate the effect of each design choice. Across mathematical reasoning tasks with models ranging from 1.5B parameters to 30B-A3B mixtures of experts, BPCO improves a strong critic-based baseline consistently, and matches or exceeds a group-based baseline while sampling one response per prompt. The same recipe also improves learning with rubric-based rewards. These results show that a carefully designed critic provides a reliable alternative to group-relative advantage estimation. Code is available at https://github.com/QPHutu/golden_critic</p>
                     
-                    <p class="deep-takeaway">要点：We develop a new direct accelerated Newton method for minimizing convex functions with Lipschitz continuous Hessian. The algorithm uses only primal variables an...</p>
+                    <p class="deep-takeaway">要点：Group-based reinforcement learning methods such as GRPO for large language models avoid training a critic by sampling multiple responses for each prompt. A reli...</p>
                     
                     <p class="deep-meta">预计阅读 1 分钟</p>
                 
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>NiluK/worldmodels101</strong> (★ 27)
+                        <strong>NiluK/worldmodels101</strong> (★ 67)
                         <p>Free interactive course on world models in AI. Nine visual chapters on prediction, latent dynamics, planning, JEPA, video models, and failure modes.</p>
                     </li>
                     
                     <li>
-                        <strong>SeydinaBANE/courPythonForIA</strong> (★ 15)
+                        <strong>SeydinaBANE/courPythonForIA</strong> (★ 16)
                         <p> ▎ Cours de Python en français pour débuter dans l&#39;IA — 18 notebooks Jupyter, des variables aux appels d&#39;API, avec des exemples concrets d&#39;agents et de données.</p>
                     </li>
                     
                     <li>
-                        <strong>Tahirpathan-AiLab/Evaan_Personal_Intelligence_Engine</strong> (★ 10)
+                        <strong>bashebr/ai-native-sdlc</strong> (★ 15)
+                        <p>Reusable Codex + Claude Code skill and plugin implementing Anthropic&#39;s AI-Native SDLC: Plan → Design → Build → Test → Deploy → Maintain, with human approval gates at every handoff.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Tahirpathan-AiLab/Evaan_Personal_Intelligence_Engine</strong> (★ 11)
                         <p>Evaan — a fully local, offline-capable AI companion chatbot built with Python &amp; Hugging Face Transformers, running on Qwen2.5-0.5B-Instruct (CPU-only, no fine-tuning). Features a persona-driven system prompt, rule-based mood/tone detection, and persistent JSON memory across sessions — no API key or internet needed after setup.</p>
                     </li>
                     
                     <li>
                         <strong>gitzyong812/agent_tutorial</strong> (★ 8)
                         <p>动手智能体构建：从AI数字员工到一人公司。Hands-On Agent Building: From AI Digital Employees to One-Person Companies</p>
-                    </li>
-                    
-                    <li>
-                        <strong>maziyarpanahi/ai-demos</strong> (★ 8)
-                        <p>Open-source AI demos you can understand, run, and remix — small, reproducible builds for vision, multimodal models, local or hosted inference, and more.</p>
                     </li>
                     
                 </ul>
