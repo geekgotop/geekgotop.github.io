@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-08-25 22:20:56</p>
+            <p class="hero-meta">构建时间：2026-08-27 02:50:23</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -193,23 +193,23 @@ html, body {
             <div class="theme-card">
                 <p class="theme-name">今日主题：英语强化日</p>
                 <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
+                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">博观而约取，厚积而薄发。</p>
-                        <p class="quick-meta">— 苏轼</p>
+                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
+                        <p class="quick-meta">— Albert Einstein</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-main">NiluK/worldmodels101</p>
-                        <p class="quick-meta">★ 67</p>
-                        <p class="quick-note">新兴项目，适合早期观察。 语言: TypeScript</p>
+                        <p class="quick-main">bashebr/ai-native-sdlc</p>
+                        <p class="quick-meta">★ 20</p>
+                        <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 deprecated，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
                         
-                        <li>趋势: 浏览 NiluK/worldmodels101，记录 1 个可借鉴实现点。</li>
+                        <li>趋势: 浏览 bashebr/ai-native-sdlc，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《How to Train a Critic Stably and Efficiently》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">deprecated <span>/ˈdeprəkeɪtɪd/</span></p>
-                    <p class="study-meaning">adj. 已弃用的；不推荐的</p>
+                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
+                    <p class="study-meaning">n. 递归；循环</p>
                     
-                    <p class="study-sentence">This method is deprecated and will be removed in the next version.</p>
-                    <p class="study-sentence-zh">此方法已弃用，将在下一版本中移除。</p>
+                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
+                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">How to Train a Critic Stably and Efficiently</p>
-                    <p class="deep-abstract">Group-based reinforcement learning methods such as GRPO for large language models avoid training a critic by sampling multiple responses for each prompt. A reliable critic could instead estimate token-level advantages from one response, but standard critic-based training recipes are often unstable. We study this instability and develop \textbf{Best-Practice Critic Optimization (BPCO)}, a recipe that combines DPPO, value predictions bounded to the reward range, Monte Carlo value targets, unnormalized policy advantages, and length-adaptive generalized advantage estimation. Because the critic is used only during training, BPCO can also condition it on reward-defining information, such as a reference answer or grading rubric, that is hidden from the policy. Controlled experiments isolate the effect of each design choice. Across mathematical reasoning tasks with models ranging from 1.5B parameters to 30B-A3B mixtures of experts, BPCO improves a strong critic-based baseline consistently, and matches or exceeds a group-based baseline while sampling one response per prompt. The same recipe also improves learning with rubric-based rewards. These results show that a carefully designed critic provides a reliable alternative to group-relative advantage estimation. Code is available at https://github.com/QPHutu/golden_critic</p>
+                    <p class="deep-title">VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning</p>
+                    <p class="deep-abstract">Native visual reasoning treats visual generation as the medium of reasoning itself: visual states (i.e. images and videos) are not merely inputs to be understood or outputs to be rendered, but first-class substrates for problem solving beyond language. Yet progress remains bottlenecked by the lack of scalable training tasks, reliable feedback, and controlled comparisons across generative substrates. In this work, we introduce VBVR-Pro, a closed-loop testbed that makes native visual reasoning through generation trainable, verifiable, optimizable, and experimentally controllable. 1) Task scaling. VBVR-Pro turns visual reasoning into a controlled task space of 300 procedurally generated tasks. Models trained on VBVR-Pro show strong transfer beyond the proposed suite across seven external visual reasoning benchmarks such as RISE-Video, MME-CoF-Pro, and BabyVision. 2) Verifiable rewards. VBVR-Pro provides verifiable reward scorers for task-grounded evaluation. Through a systematic study of leading MLLMs as judges, we identify recurring failure modes of the prevalent VLM-as-a-judge paradigm. In contrast, the proposed scorers are grounded in deterministic, task-specific rules, achieve fine-grained alignment with human judgments. Importantly, they serve as reliable reward signals for large-scale multi-task reinforcement learning and demonstrate stronger post-RL performance across visual reasoning tasks. 3) Mechanism study. VBVR-Pro enables controlled modality studies across more than 30 image, video, and interleaved generators. Our analysis shows that video generation remains strongest for tasks requiring persistent spatiotemporal state tracking, while interleaved generation provides a compute-efficient alternative. Critically, ablations and probing suggest the presence of vision-native trajectories that are crucial to visual reasoning. We release all data, models, scorers, and code.</p>
                     
-                    <p class="deep-takeaway">要点：Group-based reinforcement learning methods such as GRPO for large language models avoid training a critic by sampling multiple responses for each prompt. A reli...</p>
+                    <p class="deep-takeaway">要点：Native visual reasoning treats visual generation as the medium of reasoning itself: visual states (i.e. images and videos) are not merely inputs to be understoo...</p>
                     
-                    <p class="deep-meta">预计阅读 1 分钟</p>
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -284,18 +284,13 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>NiluK/worldmodels101</strong> (★ 67)
-                        <p>Free interactive course on world models in AI. Nine visual chapters on prediction, latent dynamics, planning, JEPA, video models, and failure modes.</p>
-                    </li>
-                    
-                    <li>
-                        <strong>SeydinaBANE/courPythonForIA</strong> (★ 16)
-                        <p> ▎ Cours de Python en français pour débuter dans l&#39;IA — 18 notebooks Jupyter, des variables aux appels d&#39;API, avec des exemples concrets d&#39;agents et de données.</p>
-                    </li>
-                    
-                    <li>
-                        <strong>bashebr/ai-native-sdlc</strong> (★ 15)
+                        <strong>bashebr/ai-native-sdlc</strong> (★ 20)
                         <p>Reusable Codex + Claude Code skill and plugin implementing Anthropic&#39;s AI-Native SDLC: Plan → Design → Build → Test → Deploy → Maintain, with human approval gates at every handoff.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>zidniryi/open-source-ai-models</strong> (★ 13)
+                        <p>A curated directory of open-source &amp; open-weight AI models — compare params, VRAM, context length, and license before picking a model for coding, OCR, vision, image generation, speech, reasoning, and RAG.</p>
                     </li>
                     
                     <li>
@@ -305,7 +300,12 @@ html, body {
                     
                     <li>
                         <strong>gitzyong812/agent_tutorial</strong> (★ 8)
-                        <p>动手智能体构建：从AI数字员工到一人公司。Hands-On Agent Building: From AI Digital Employees to One-Person Companies</p>
+                        <p>开源智能体教程《动手构建智能体：从 AI 数字员工到一人公司》。Open‑Source AI Agent Tutorial: &lt;Hands‑On Agent Building: From AI Digital Employees to One‑Person Companies&gt;</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Darren-Dcruz/Investilens</strong> (★ 4)
+                        <p>AI-powered investment research agent that generates institutional-grade stock dossiers using multi-source web intelligence, deterministic financial scoring, and narrative storytelling for both beginner and advanced investors.</p>
                     </li>
                     
                 </ul>
