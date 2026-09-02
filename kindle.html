@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-09-01 23:44:53</p>
+            <p class="hero-meta">构建时间：2026-09-02 23:48:29</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,25 +191,25 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">博观而约取，厚积而薄发。</p>
-                        <p class="quick-meta">— 苏轼</p>
+                        <p class="quick-main">The only way to do great work is to love what you do.</p>
+                        <p class="quick-meta">— Steve Jobs</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-main">waddadelmehdi/ocp-annual-report-rag</p>
-                        <p class="quick-meta">★ 16</p>
-                        <p class="quick-note">新兴项目，适合早期观察。 语言: Jupyter Notebook</p>
+                        <p class="quick-main">AlekseiUL/humanlike</p>
+                        <p class="quick-meta">★ 9</p>
+                        <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 inheritance，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 abstraction，再口述其含义一次。</li>
                         
-                        <li>趋势: 浏览 waddadelmehdi/ocp-annual-report-rag，记录 1 个可借鉴实现点。</li>
+                        <li>趋势: 浏览 AlekseiUL/humanlike，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Context-Aware Interleaved Batching for WhisperX》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">inheritance <span>/ɪnˈherɪtəns/</span></p>
-                    <p class="study-meaning">n. 继承；遗传</p>
+                    <p class="study-word">abstraction <span>/æbˈstrækʃn/</span></p>
+                    <p class="study-meaning">n. 抽象；提取</p>
                     
-                    <p class="study-sentence">Inheritance enables new classes to receive the properties of existing classes.</p>
-                    <p class="study-sentence-zh">继承使新类能够接收现有类的属性。</p>
+                    <p class="study-sentence">Abstraction reduces complexity by hiding unnecessary details.</p>
+                    <p class="study-sentence-zh">抽象通过隐藏不必要的细节来降低复杂性。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Context-Aware Interleaved Batching for WhisperX</p>
-                    <p class="deep-abstract">虽然 WhisperX 通过音频内批处理加速语音转录，但它会隔离音频片段，从而丢失连贯标点符号和术语转录所需的历史上下文。相反，标准 Whisper 会按顺序保留上下文，但会受到缓慢的推理和幻觉循环的影响。为了实现两全其美，我们提出了上下文感知交错批处理。通过使用 VAD 派生的片段边界，我们的算法稳定了 Whisper 的文本调节，使我们能够安全地维护跨批处理音频片段的连续历史上下文。正如长格式音频基准测试所证明的那样，这种方法降低了单词错误率 (WER) 并改进了专有名词转录，同时保持了高吞吐量的推理速度。</p>
+                    <p class="deep-title">Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation</p>
+                    <p class="deep-abstract">LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood. We investigate this procedure mechanistically through an eight-attack perturbation taxonomy across the Readability and Adequacy dimensions of NLG quality, a generation pipeline that produces paired clean and corrupt summaries with controlled error intensity and explicit token-level modification maps, and a four-experiment battery of causal tracing, logit-lens vocabulary projection, and attention-head knockout applied to Themis (Llama-3-8B) and Prometheus (Mistral-7B). Both evaluators implement a structured, coherent evaluation pipeline operating in two stages: below layer 15, attention performs local error comparison and routes the result to the final input position; above it, the MLP cascade integrates the signal and writes the rating, with the decision crystallizing in the residual stream at a sharp late layer (L = 26 on Themis, L = 25 on Prometheus). Furthermore, a base-model control at the same scale (Llama-3-8B) reproduces the routing architecture and crystallization but not the stage separation, isolating the two mechanisms that fine-tuning specifically installs, suppression of below-L15 MLP contribution at the last position and a two-layer advance of the crystallization depth, indicating that fine-tuning sculpts an existing substrate rather than building the pipeline from scratch. We release the source code and data at https://github.com/himil-v/judge-mech</p>
                     
-                    <p class="deep-takeaway">要点：虽然 WhisperX 通过音频内批处理加速语音转录，但它会隔离音频片段，从而丢失连贯标点符号和术语转录所需的历史上下文。相反，标准 Whisper 会按顺序保留上下文，但会受到缓慢的推理和幻觉循环的影响。为了实现两全其美，我们提出了上下文感知交错批处理。通过使用 VAD 派生的片段边界，我们的算法稳定了 Whispe...</p>
+                    <p class="deep-takeaway">要点：LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal proce...</p>
                     
-                    <p class="deep-meta">预计阅读 1 分钟</p>
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>waddadelmehdi/ocp-annual-report-rag</strong> (★ 16)
-                        <p>RAG 演示：使用 LangChain、Chroma 和 bge-m3 嵌入对 OCP 2025 财务报告进行问答，以及法学硕士作为法官的忠诚度评分。</p>
+                        <strong>AlekseiUL/humanlike</strong> (★ 9)
+                        <p>Humanlike — 对话式 AI 代理的确定性角色、上下文、记忆和隐私控制 · Детерминированное поведение ИИ-агентов</p>
                     </li>
                     
                     <li>
-                        <strong>zidniryi/open-source-ai-models</strong> (★ 14)
-                        <p>开源和开放权重 AI 模型的精选目录 - 在选择编码、OCR、视觉、图像生成、语音、推理和 RAG 模型之前比较参数、VRAM、上下文长度和许可证。</p>
+                        <strong>PanomaAI/panoma</strong> (★ 3)
+                        <p>您的项目的本地目录 - 智能，始终学习，适合您和您的代理</p>
                     </li>
                     
                     <li>
-                        <strong>yuvanvishnupandi/heurisko</strong> (★ 5)
-                        <p>Heurisko 是一款由多代理 AI 提供支持的自主 AI 研究助理和学术搜索引擎，提供深度文档智能、对话研究和实时流功能。</p>
+                        <strong>sanketpadhyal/RivoCode-Cli</strong> (★ 3)
+                        <p>面向开发人员的自主人工智能编码助手。编写代码、管理文件、运行终端命令以及直接从终端搜索网络。使用 TypeScript 和 Bun 作为现代、快速的 monorepo 工具链构建。</p>
                     </li>
                     
                     <li>
-                        <strong>madhumita-pardeshi/CODSOFT_TASKS_02</strong> (★ 2)
-                        <p>🖼️ AI 驱动的图像字幕应用程序，使用计算机视觉和 NLP 概念为图像生成有意义的描述。</p>
+                        <strong>Anil-matcha/awesome-claude-fable-5-1</strong> (★ 2)
+                        <p>精心策划的 Claude Fable 5.1 用例、API 迁移说明、提示模式、集成、演示和基准证据。</p>
                     </li>
                     
                     <li>
-                        <strong>soumadip-dev/AgentCareer</strong> (★ 2)
-                        <p>人工智能职业教练使用多代理工作流程和知识检索来创建个性化职业路线图。</p>
+                        <strong>AbuZar-Ansarii/PocketStrike</strong> (★ 2)
+                        <p>PocketStrike 是一款隐私优先的移动人工智能工作站。它将零云本机设备上 GGUF 推理（ARM NEON 加速）与前沿云 LLM、多步骤 ReAct 代理工具、模型上下文协议 (MCP) 服务器、自进化跨会话内存和 FLUX 神经图像生成相结合。</p>
                     </li>
                     
                 </ul>
