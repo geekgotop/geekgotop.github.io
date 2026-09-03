@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-09-02 23:48:29</span>
+        <span class="generated-time">更新于 2026-09-03 23:45:02</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -848,54 +848,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Beyond Scores: Understanding<sup class='ipa'>/ˌəndərˈstændɪŋ/</sup> LLM-as-a-Judge<sup class='ipa'>/llmasajudge*/</sup> Mechanisms<sup class='ipa'>/ˈmɛkəˌnɪzəmz/</sup> in Summarization<sup class='ipa'>/summarization*/</sup> Evaluation<sup class='ipa'>/ɪˌvæljuˈeɪʃən/</sup></h4>
+                            <h4 class="paper-title">Discriminative<sup class='ipa'>/dɪˈskrɪmənətɪv/</sup> World Models for Web Agents</h4>
                             <div class="paper-meta">
-                                <span class="authors">Himil Vasava, Ming Jiang</span>
-                                <span class="date">2026-09-01</span>
-                                <span class="categories">cs.CL | cs.LG</span>
+                                <span class="authors">Kelvin Li, Dhruv Pendharkar, Anish Pahilajani</span>
+                                <span class="date">2026-09-02</span>
+                                <span class="categories">cs.AI | cs.LG</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood. We investigate this procedure mechanistically through an eight-attack perturba...</p>
+                                <p class="abstract-en">Recent web agents use world models for test-time action selection by sampling candidate actions, predicting the resulting web states, and ranking them with a ranker model or a Process Reward Model (PRM). These world models are typically trained via supervised next-state prediction to generate fixed ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh"></p>
+                                    <p class="abstract-zh">最近的 Web 代理使用世界模型进行测试时操作选择，方法是对候选操作进行采样、预测生成的 Web 状态，并使用排名模型或过程奖励模型 (PRM) 对它们进行排名。这些世界模型通常通过有监督的下一状态预测进行训练，以生成固定的表示形式，例如 HTML 或 AXTree 快照。然而，这个目标与下游排名器不一致，下游排名器依赖于对候选者进行区分的预测状态来准确地对它们进行评分。为了解决这个问题，我们引入了预测状态匹配，这是一个训练目标，其中预测表示必须区分真实的结果状态和替代动作所达到的状态。我们使用源自 WebArena Go-Browse 轨迹的分支网络代理数据集来训练这些模型，其中每个决策点都包含多个替代操作及其结果状态。对我们保留的预测状态匹配基准的实验表明，我们的方法优于经过监督的下一状态预测训练的世界模型。我们进一步表明，与仅采取行动的 PRM 和使用受监督的下一状态世界模型增强的 PRM 相比，我们的方法提高了 WebPRMBench 上 PRM 式行动的排名。最后，在 WebArena-Lite 上，使用我们的世界模型进行测试时操作选择可以提高端到端任务的成功率。我们的项目页面位于：https://dhruvpendharkar.github.io/dwm/。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2609.01604v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2609.02885v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Efficient<sup class='ipa'>/ɪˈfɪʃənt/</sup> SWE Agent Benchmarking<sup class='ipa'>/benchmarking*/</sup> via Trajectory-Aware<sup class='ipa'>/trajectoryaware*/</sup> Evaluation<sup class='ipa'>/ɪˌvæljuˈeɪʃən/</sup></h4>
+                            <h4 class="paper-title">Towards Trustworthy<sup class='ipa'>/ˈtrəstˌwərði/</sup> Autonomous<sup class='ipa'>/ɔˈtɑnəməs/</sup> Robots: An Explainable<sup class='ipa'>/ɪkˈspleɪnəbəl/</sup> AI-Based Decision<sup class='ipa'>/dɪˈsɪʒən/</sup> Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Kefeng Duan, Dewu Zheng, Yanlin Wang</span>
-                                <span class="date">2026-09-01</span>
-                                <span class="categories">cs.SE | cs.AI</span>
+                                <span class="authors">Cagri Temel</span>
+                                <span class="date">2026-09-02</span>
+                                <span class="categories">cs.RO | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Evaluating software engineering agents on realistic benchmarks is costly, since each task may require multi-step code exploration, modification, and test execution. Existing efficient evaluation methods select representative subsets to estimate full-benchmark performance, but are largely result-only...</p>
+                                <p class="abstract-en">Autonomous robots powered by deep learning face a fundamental auditability challenge: when incidents occur, investigators cannot reconstruct why the system made specific decisions. This paper presents TRACE (Transparent Reasoning Architecture for Credible Execution), a decision framework that ensure...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">在实际基准上评估软件工程代理的成本很高，因为每个任务可能需要多步骤的代码探索、修改和测试执行。现有的高效评估方法选择代表性子集来估计全基准性能，但很大程度上仅限于结果：它们适合历史通过/失败响应矩阵或静态任务语义，而忽略了代理如何解决问题。我们提出了 PTA-IRT，一种融合过程和结果信号的特权轨迹感知项目响应理论框架。历史执行轨迹提供超越通过/失败的流程级证据，例如探索的上下文、尝试的编辑和解决路径，PTA-IRT 将其用作校准子集选择和能力估计的特权信息。在较低的校准预算下，PTA-IRT 在四个 SWE 基准的分数和排名恢复方面始终优于之前的 IRT 基线。代码和数据可在 https://github.com/DeepSoftwareAnalytics/PTA-IRT 上公开获取。</p>
+                                    <p class="abstract-zh">由深度学习驱动的自主机器人面临着基本的可审计性挑战：当事件发生时，调查人员无法重建系统做出特定决策的原因。本文提出了 TRACE（可信执行透明推理架构），这是一个决策框架，可确保每个自主操作都可以通过记录的因果链追溯到传感器证据。该框架将决策组织为四个可审计层：用于基于证据的实体识别的语义感知、使用因果图进行概率状态估计的信念推理、使用反事实文档进行约束感知规划的行动综合以及用于合规性监控的执行验证。 TRACE 与模型无关，但旨在集成基于学习的感知模块（CNN、变压器），同时保留决策级别的可审计性。我们使用三个客观指标来评估该框架：证据可追溯性（传感器到决策的链接）、决策可重构性（事后分析能力）和时间连续性（审计追踪完整性）。对仓库机器人导航的实验评估表明，TRACE 在 500 个模拟决策周期中实现了 98.6% 的证据可追溯性、99.0% 的时间连续性和 98.1% 的决策可重构性。像 LIME 这样的事后方法提供了特征归因，但缺乏决策级重建所需的工件结构。该框架满足了欧盟人工智能法案对高风险系统透明度的要求，并有助于为安全关键型自主系统提供可解释的人工智能。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2609.01603v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2609.02861v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Adaptive<sup class='ipa'>/əˈdæptɪv/</sup> Critical<sup class='ipa'>/ˈkrɪtɪkəl/</sup> Token-Aware<sup class='ipa'>/tokenaware*/</sup> Retrieval<sup class='ipa'>/rɪˈtrivəl/</sup> for Repository-Level<sup class='ipa'>/repositorylevel*/</sup> Code Generation<sup class='ipa'>/ˌʤɛnərˈeɪʃən/</sup></h4>
+                            <h4 class="paper-title">User Feedback<sup class='ipa'>/ˈfidˌbæk/</sup> Provides<sup class='ipa'>/prəˈvaɪdz/</sup> a Unique Signal that LLMs Can not Detect</h4>
                             <div class="paper-meta">
-                                <span class="authors">Kefeng Duan, Dewu Zheng, Yanlin Wang</span>
-                                <span class="date">2026-09-01</span>
-                                <span class="categories">cs.SE | cs.AI</span>
+                                <span class="authors">Shachar Don-Yehiya, Leshem Choshen, Omri Abend</span>
+                                <span class="date">2026-09-02</span>
+                                <span class="categories">cs.CL</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">The repository-level code generation task requires synthesizing code that satisfies task requirements while remaining consistent with the target repository context. Since real-world repositories often exceed the input length limits of LLMs, existing approaches commonly adopt retrieval-augmented gene...</p>
+                                <p class="abstract-en">Harnessing naturally occurring feedback from user interactions offers a promising learning signal for Large Language Models (LLMs). However, recent studies suggest this feedback is inherently noisy and difficult to leverage effectively. We challenge this conception by demonstrating that user feedbac...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">存储库级代码生成任务需要合成满足任务要求的代码，同时与目标存储库上下文保持一致。由于现实世界的存储库通常超出法学硕士的输入长度限制，因此现有方法通常采用检索增强生成（RAG）来提供存储库特定的上下文。尽管改进了存储库上下文检索，但现有方法通常提供上下文作为任务级支持，而没有明确识别在生成过程中需要细粒度存储库上下文的关键令牌。在LLM的自回归生成过程中，错误往往集中在少数决定性位置：一旦错误生成此类标记，后续代码可能会遵循错误的语义路径，最终导致功能失败。我们将这些位置称为“关键令牌”。在本文中，我们提出了 ACToR，一种用于存储库级代码生成的自适应关键令牌感知检索框架。 ACToR 在生成过程中识别关键令牌，并根据需要触发有针对性的检索，以在这些决定性位置提供存储库上下文。此外，我们为密集检索器设计了一种位置感知加权方法，以优先考虑为生成提供更多信息的上下文。我们在两个具有代表性的存储库级基准测试（RepoExec 和 CoderEval）上评估 ACToR。实验结果表明，ACToR 始终优于最先进的方法，在 RepoExec 上实现了 8.4% 的相对改进，在 CoderEval 上实现了 15.4% 的相对改进。除了性能提升之外，我们还系统地量化了关键令牌的影响，揭示了它们在主要生成失败中的核心作用，并强调了有针对性的检索策略的必要性。我们在 https://github.com/DeepSoftwareAnalytics/ACToR 提供代码和数据。</p>
+                                    <p class="abstract-zh">利用用户交互中自然发生的反馈为大型语言模型（LLM）提供了有希望的学习信号。然而，最近的研究表明这种反馈本质上是嘈杂的并且难以有效利用。我们通过证明用户反馈是一个高度可行的改进信号来挑战这一概念，并且其感知的无效性源于当前评估范式中的系统偏差。为了隔离反馈的有用性，我们构建了具有明确基础事实的合成数据以及自然数据，以验证我们的发现在现实世界场景中是否成立。通过比较两种设置中访问反馈和不访问反馈时生成的模型修订，我们发现反馈通知修订以明显高于基线修订的速度解决目标问题。最后，我们揭示了评估偏差的根源：当模型完全由于反馈而成功解决问题时，法学硕士法官经常无法识别真正正确的响应，而是系统性地倾向于较差的基线输出。</p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2609.01601v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2609.02859v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -920,7 +920,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/AlekseiUL/humanlike" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">humanlike</span>
-                                    <span class="repo-stars">⭐ 9</span>
+                                    <span class="repo-stars">⭐ 11</span>
                                 </div>
                                 <p class="repo-desc">Humanlike — 对话式 AI 代理的确定性角色、上下文、记忆和隐私控制 · Детерминированное поведение ИИ-агентов</p>
                                 <div class="repo-meta">
@@ -934,12 +934,40 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <a href="https://github.com/PanomaAI/panoma" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">panoma</span>
-                                    <span class="repo-stars">⭐ 3</span>
+                                    <span class="repo-stars">⭐ 5</span>
                                 </div>
                                 <p class="repo-desc">您的项目的本地目录 - 智能，始终学习，适合您和您的代理</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-08-31</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/lucidrains/ccbp-pytorch" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ccbp-pytorch</span>
+                                    <span class="repo-stars">⭐ 5</span>
+                                </div>
+                                <p class="repo-desc">在 Pytorch 中实现拟议的 CCBP（连续连续 BackProp）</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-09-03</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/TirupMehta/ModelRegistry" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ModelRegistry</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">ModelRegistry 是一个社区驱动的机器可读索引，用于跟踪基础人工智能的状态。</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-09-02</span>
                                 </div>
                             </a>
                         </li>
@@ -959,6 +987,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/Saganaki22/obs-dlss5-nr" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">obs-dlss5-nr</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">OBS Studio 的非官方 DLSS 5 神经渲染过滤器。  使用默认/自然/电影风格选择器在任何视频源（游戏捕获、媒体源、网络摄像头等）上运行 NVIDIA DLSS 5 NR（NGX 功能 18）</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">C++</span>
+                                    <span class="repo-date">2026-09-02</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/Anil-matcha/awesome-claude-fable-5-1" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">awesome-claude-fable-5-1</span>
@@ -968,20 +1010,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
                                     <span class="repo-date">2026-09-01</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/AbuZar-Ansarii/PocketStrike" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">PocketStrike</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">PocketStrike 是一款隐私优先的移动人工智能工作站。它将零云本机设备上 GGUF 推理（ARM NEON 加速）与前沿云 LLM、多步骤 ReAct 代理工具、模型上下文协议 (MCP) 服务器、自进化跨会话内存和 FLUX 神经图像生成相结合。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Dart</span>
-                                    <span class="repo-date">2026-08-27</span>
                                 </div>
                             </a>
                         </li>
@@ -1015,43 +1043,15 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Saganaki22/obs-dlss5-nr" target="_blank" class="repo-link">
+                            <a href="https://github.com/rajeshyemul/ts-pw-test-assistant" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">obs-dlss5-nr</span>
+                                    <span class="repo-name">ts-pw-test-assistant</span>
                                     <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">OBS Studio 的非官方 DLSS 5 神经渲染过滤器。  使用默认/自然/电影风格选择器在任何视频源（游戏捕获、媒体源、网络摄像头等）上运行 NVIDIA DLSS 5 NR（NGX 功能 18）</p>
+                                <p class="repo-desc">由 AI 驱动的测试生成助手，可将 JIRA 需求转换为结构化测试用例和可执行的 Playwright + TypeScript E2E 测试，并具有框架感知代码生成和自动质量验证。</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">C++</span>
-                                    <span class="repo-date">2026-09-02</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/Yuktimittal19/On-board-AI" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">On-board-AI</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">面向神经分化学生的人工智能学习平台，具有实时微控制器和电路调试功能。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">HTML</span>
+                                    <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-08-28</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/egorribun/AI-Course" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">AI-Course</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">Интенсивный курс подготовки к экзамену по Методам ИИ и глубокому обучению (ГУУ 2026)</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">HTML</span>
-                                    <span class="repo-date">2026-08-27</span>
                                 </div>
                             </a>
                         </li>
