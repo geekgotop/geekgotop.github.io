@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-09-03 23:45:02</span>
+        <span class="generated-time">更新于 2026-09-04 23:39:30</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -727,8 +727,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <blockquote>
                                 <p class="quote-text">The only way to do great work is to love what you do.</p>
                                 
-                                <p class="quote-translation">做好工作的唯一方法就是热爱你所做的事情。</p>
-                                
                             </blockquote>
                             <cite class="quote-author">— Steve Jobs</cite>
                         </div>
@@ -737,8 +735,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                             <blockquote>
                                 <p class="quote-text">In the middle of difficulty lies opportunity.</p>
                                 
-                                <p class="quote-translation">困难之中蕴藏着机遇。</p>
-                                
                             </blockquote>
                             <cite class="quote-author">— Albert Einstein</cite>
                         </div>
@@ -746,8 +742,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         <div class="quote-slide ">
                             <blockquote>
                                 <p class="quote-text">The best time to plant a tree was 20 years ago. The second best time is now.</p>
-                                
-                                <p class="quote-translation">种一棵树最好的时间是20年前。第二个最好的时间是现在。</p>
                                 
                             </blockquote>
                             <cite class="quote-author">— Chinese Proverb</cite>
@@ -848,54 +842,54 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Discriminative<sup class='ipa'>/dɪˈskrɪmənətɪv/</sup> World Models for Web Agents</h4>
+                            <h4 class="paper-title">Compile by Training:<sup class='ipa'>/ˈtreɪnɪŋ/</sup> Turning Natural-Language<sup class='ipa'>/naturallanguage*/</sup> Specifications<sup class='ipa'>/ˌspɛsəfəˈkeɪʃənz/</sup> into Local Neural Functions<sup class='ipa'>/ˈfəŋkʃənz/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Kelvin Li, Dhruv Pendharkar, Anish Pahilajani</span>
-                                <span class="date">2026-09-02</span>
+                                <span class="authors">Yuntian Deng, Pengyu Nie, Stuart Shieber</span>
+                                <span class="date">2026-09-03</span>
+                                <span class="categories">cs.CL | cs.AI</span>
+                            </div>
+                            <div class="paper-abstract">
+                                <p class="abstract-en">Many recurring text functions are easy to describe but difficult to implement with rules, while calling a large remote model for every input introduces repeated cost, latency, and dependency on a provider. We present compile by training, which turns a natural-language specification into a reusable n...</p>
+                                <details class="abstract-details">
+                                    <summary>查看中文翻译</summary>
+                                    <p class="abstract-zh"></p>
+                                </details>
+                            </div>
+                            <a href="http://arxiv.org/abs/2609.04199v1" target="_blank" class="paper-link">阅读原文 →</a>
+                        </article>
+                        
+                        <article class="paper-item">
+                            <h4 class="paper-title">Clean Engineering,<sup class='ipa'>/ˈɛnʤəˈnɪrɪŋ/</sup> Unstable<sup class='ipa'>/ənˈsteɪbəl/</sup> Measurement:<sup class='ipa'>/ˈmɛʒərmənt/</sup> A Preregistered<sup class='ipa'>/preregistered*/</sup> Reliability<sup class='ipa'>/riˌlaɪəˈbɪləti/</sup> Failure of Black-Box<sup class='ipa'>/blackbox*/</sup> LLM Observers<sup class='ipa'>/əbˈzərvərz/</sup> on Shared Endpoints<sup class='ipa'>/ˈɛndˌpɔɪnts/</sup></h4>
+                            <div class="paper-meta">
+                                <span class="authors">Haoyaun Zhu, Jie Zhang</span>
+                                <span class="date">2026-09-03</span>
                                 <span class="categories">cs.AI | cs.LG</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Recent web agents use world models for test-time action selection by sampling candidate actions, predicting the resulting web states, and ranking them with a ranker model or a Process Reward Model (PRM). These world models are typically trained via supervised next-state prediction to generate fixed ...</p>
+                                <p class="abstract-en">Language-model judges now gate training data, score generations, and drive leaderboards. The judge is then a measurement instrument, resting on one rarely stated assumption: the same request, sent to the same model name, reads the same tomorrow. We audited that assumption in two preregistered campai...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">最近的 Web 代理使用世界模型进行测试时操作选择，方法是对候选操作进行采样、预测生成的 Web 状态，并使用排名模型或过程奖励模型 (PRM) 对它们进行排名。这些世界模型通常通过有监督的下一状态预测进行训练，以生成固定的表示形式，例如 HTML 或 AXTree 快照。然而，这个目标与下游排名器不一致，下游排名器依赖于对候选者进行区分的预测状态来准确地对它们进行评分。为了解决这个问题，我们引入了预测状态匹配，这是一个训练目标，其中预测表示必须区分真实的结果状态和替代动作所达到的状态。我们使用源自 WebArena Go-Browse 轨迹的分支网络代理数据集来训练这些模型，其中每个决策点都包含多个替代操作及其结果状态。对我们保留的预测状态匹配基准的实验表明，我们的方法优于经过监督的下一状态预测训练的世界模型。我们进一步表明，与仅采取行动的 PRM 和使用受监督的下一状态世界模型增强的 PRM 相比，我们的方法提高了 WebPRMBench 上 PRM 式行动的排名。最后，在 WebArena-Lite 上，使用我们的世界模型进行测试时操作选择可以提高端到端任务的成功率。我们的项目页面位于：https://dhruvpendharkar.github.io/dwm/。</p>
+                                    <p class="abstract-zh"></p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2609.02885v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2609.04198v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                         <article class="paper-item">
-                            <h4 class="paper-title">Towards Trustworthy<sup class='ipa'>/ˈtrəstˌwərði/</sup> Autonomous<sup class='ipa'>/ɔˈtɑnəməs/</sup> Robots: An Explainable<sup class='ipa'>/ɪkˈspleɪnəbəl/</sup> AI-Based Decision<sup class='ipa'>/dɪˈsɪʒən/</sup> Framework<sup class='ipa'>/ˈfreɪmˌwərk/</sup></h4>
+                            <h4 class="paper-title">ESPO: Error-Structured<sup class='ipa'>/errorstructured*/</sup> Prompt Optimization<sup class='ipa'>/ɑptɪmɪˈzeɪʃən/</sup> via Diagnose,<sup class='ipa'>/ˌdaɪəgˈnoʊs/</sup> Diversify,<sup class='ipa'>/dɪˈvərsəˌfaɪ/</sup> and Stabilize<sup class='ipa'>/ˈsteɪbəˌlaɪz/</sup></h4>
                             <div class="paper-meta">
-                                <span class="authors">Cagri Temel</span>
-                                <span class="date">2026-09-02</span>
-                                <span class="categories">cs.RO | cs.AI</span>
+                                <span class="authors">Lihao Liu, Peng Tang, Kunwar Yashraj Singh</span>
+                                <span class="date">2026-09-03</span>
+                                <span class="categories">cs.CL | cs.AI</span>
                             </div>
                             <div class="paper-abstract">
-                                <p class="abstract-en">Autonomous robots powered by deep learning face a fundamental auditability challenge: when incidents occur, investigators cannot reconstruct why the system made specific decisions. This paper presents TRACE (Transparent Reasoning Architecture for Credible Execution), a decision framework that ensure...</p>
+                                <p class="abstract-en">Evolutionary prompt optimizers such as GEPA suffer from prompt bloat: each iteration appends rules and caveats, producing prompts up to 3$\times$ longer yet no more accurate. We trace this to three deficiencies - incomplete error observation, limited search diversity, and unreliable selection - and ...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">由深度学习驱动的自主机器人面临着基本的可审计性挑战：当事件发生时，调查人员无法重建系统做出特定决策的原因。本文提出了 TRACE（可信执行透明推理架构），这是一个决策框架，可确保每个自主操作都可以通过记录的因果链追溯到传感器证据。该框架将决策组织为四个可审计层：用于基于证据的实体识别的语义感知、使用因果图进行概率状态估计的信念推理、使用反事实文档进行约束感知规划的行动综合以及用于合规性监控的执行验证。 TRACE 与模型无关，但旨在集成基于学习的感知模块（CNN、变压器），同时保留决策级别的可审计性。我们使用三个客观指标来评估该框架：证据可追溯性（传感器到决策的链接）、决策可重构性（事后分析能力）和时间连续性（审计追踪完整性）。对仓库机器人导航的实验评估表明，TRACE 在 500 个模拟决策周期中实现了 98.6% 的证据可追溯性、99.0% 的时间连续性和 98.1% 的决策可重构性。像 LIME 这样的事后方法提供了特征归因，但缺乏决策级重建所需的工件结构。该框架满足了欧盟人工智能法案对高风险系统透明度的要求，并有助于为安全关键型自主系统提供可解释的人工智能。</p>
+                                    <p class="abstract-zh"></p>
                                 </details>
                             </div>
-                            <a href="http://arxiv.org/abs/2609.02861v1" target="_blank" class="paper-link">阅读原文 →</a>
-                        </article>
-                        
-                        <article class="paper-item">
-                            <h4 class="paper-title">User Feedback<sup class='ipa'>/ˈfidˌbæk/</sup> Provides<sup class='ipa'>/prəˈvaɪdz/</sup> a Unique Signal that LLMs Can not Detect</h4>
-                            <div class="paper-meta">
-                                <span class="authors">Shachar Don-Yehiya, Leshem Choshen, Omri Abend</span>
-                                <span class="date">2026-09-02</span>
-                                <span class="categories">cs.CL</span>
-                            </div>
-                            <div class="paper-abstract">
-                                <p class="abstract-en">Harnessing naturally occurring feedback from user interactions offers a promising learning signal for Large Language Models (LLMs). However, recent studies suggest this feedback is inherently noisy and difficult to leverage effectively. We challenge this conception by demonstrating that user feedbac...</p>
-                                <details class="abstract-details">
-                                    <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">利用用户交互中自然发生的反馈为大型语言模型（LLM）提供了有希望的学习信号。然而，最近的研究表明这种反馈本质上是嘈杂的并且难以有效利用。我们通过证明用户反馈是一个高度可行的改进信号来挑战这一概念，并且其感知的无效性源于当前评估范式中的系统偏差。为了隔离反馈的有用性，我们构建了具有明确基础事实的合成数据以及自然数据，以验证我们的发现在现实世界场景中是否成立。通过比较两种设置中访问反馈和不访问反馈时生成的模型修订，我们发现反馈通知修订以明显高于基线修订的速度解决目标问题。最后，我们揭示了评估偏差的根源：当模型完全由于反馈而成功解决问题时，法学硕士法官经常无法识别真正正确的响应，而是系统性地倾向于较差的基线输出。</p>
-                                </details>
-                            </div>
-                            <a href="http://arxiv.org/abs/2609.02859v1" target="_blank" class="paper-link">阅读原文 →</a>
+                            <a href="http://arxiv.org/abs/2609.04197v1" target="_blank" class="paper-link">阅读原文 →</a>
                         </article>
                         
                     
@@ -917,40 +911,12 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
-                            <a href="https://github.com/AlekseiUL/humanlike" target="_blank" class="repo-link">
+                            <a href="https://github.com/JoseAngelSolorzanoLuna/UFO-Cathedral-v6.4-FailSafe-Free-AI" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">humanlike</span>
-                                    <span class="repo-stars">⭐ 11</span>
+                                    <span class="repo-name">UFO-Cathedral-v6.4-FailSafe-Free-AI</span>
+                                    <span class="repo-stars">⭐ 13</span>
                                 </div>
-                                <p class="repo-desc">Humanlike — 对话式 AI 代理的确定性角色、上下文、记忆和隐私控制 · Детерминированное поведение ИИ-агентов</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-09-01</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/PanomaAI/panoma" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">panoma</span>
-                                    <span class="repo-stars">⭐ 5</span>
-                                </div>
-                                <p class="repo-desc">您的项目的本地目录 - 智能，始终学习，适合您和您的代理</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-08-31</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/lucidrains/ccbp-pytorch" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ccbp-pytorch</span>
-                                    <span class="repo-stars">⭐ 5</span>
-                                </div>
-                                <p class="repo-desc">在 Pytorch 中实现拟议的 CCBP（连续连续 BackProp）</p>
+                                <p class="repo-desc">100% Free, Offline, 8GB RAM Computer-Artificial Intelligence + Formal Safety (Gate + Ledger + Council + Shadow Mode) — Free alternative to $200/mo OpenAI Operator / Perplexity Computer / ClawBot / Claude Computer</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">Python</span>
                                     <span class="repo-date">2026-09-03</span>
@@ -959,14 +925,70 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/TirupMehta/ModelRegistry" target="_blank" class="repo-link">
+                            <a href="https://github.com/AlekseiUL/humanlike" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">ModelRegistry</span>
-                                    <span class="repo-stars">⭐ 3</span>
+                                    <span class="repo-name">humanlike</span>
+                                    <span class="repo-stars">⭐ 13</span>
                                 </div>
-                                <p class="repo-desc">ModelRegistry 是一个社区驱动的机器可读索引，用于跟踪基础人工智能的状态。</p>
+                                <p class="repo-desc">Humanlike — deterministic persona, context, memory and privacy controls for conversational AI agents · Детерминированное поведение ИИ-агентов</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-09-01</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/lucidrains/ccbp-pytorch" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">ccbp-pytorch</span>
+                                    <span class="repo-stars">⭐ 10</span>
+                                </div>
+                                <p class="repo-desc">Implementation of the proposed CCBP (Continuous Continual BackProp) in Pytorch</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-09-03</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/PanomaAI/panoma" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">panoma</span>
+                                    <span class="repo-stars">⭐ 7</span>
+                                </div>
+                                <p class="repo-desc">The local catalog of your projects — intelligent, always learning, for you and your agents</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">TypeScript</span>
+                                    <span class="repo-date">2026-08-31</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Felix-Theodore-Zeng/eight-market-quant-ai" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">eight-market-quant-ai</span>
+                                    <span class="repo-stars">⭐ 6</span>
+                                </div>
+                                <p class="repo-desc">Eight-market data collection, quantitative analytics, technical structure, and Hermes AI forecasting system</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-09-04</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/Saganaki22/obs-dlss5-nr" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">obs-dlss5-nr</span>
+                                    <span class="repo-stars">⭐ 4</span>
+                                </div>
+                                <p class="repo-desc">Unofficial DLSS 5 Neural Rendering filter for OBS Studio.  runs NVIDIA DLSS 5 NR (NGX feature 18) on any video source (Game Capture, Media Source, Webcam, …) with a Default / Natural / Cinematic style selector</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">C++</span>
                                     <span class="repo-date">2026-09-02</span>
                                 </div>
                             </a>
@@ -978,7 +1000,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">RivoCode-Cli</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">面向开发人员的自主人工智能编码助手。编写代码、管理文件、运行终端命令以及直接从终端搜索网络。使用 TypeScript 和 Bun 作为现代、快速的 monorepo 工具链构建。</p>
+                                <p class="repo-desc">An autonomous AI coding assistant for developers. Write code, manage files, run terminal commands, and search the web directly from your terminal. Built with TypeScript and Bun as a modern, fast monorepo toolchain.</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-08-29</span>
@@ -987,15 +1009,29 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
-                            <a href="https://github.com/Saganaki22/obs-dlss5-nr" target="_blank" class="repo-link">
+                            <a href="https://github.com/TirupMehta/ModelRegistry" target="_blank" class="repo-link">
                                 <div class="repo-header">
-                                    <span class="repo-name">obs-dlss5-nr</span>
+                                    <span class="repo-name">ModelRegistry</span>
                                     <span class="repo-stars">⭐ 3</span>
                                 </div>
-                                <p class="repo-desc">OBS Studio 的非官方 DLSS 5 神经渲染过滤器。  使用默认/自然/电影风格选择器在任何视频源（游戏捕获、媒体源、网络摄像头等）上运行 NVIDIA DLSS 5 NR（NGX 功能 18）</p>
+                                <p class="repo-desc">ModelRegistry is a community-driven, machine-readable index tracking the state of foundational artificial intelligence.</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">C++</span>
+                                    <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-09-02</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
+                            <a href="https://github.com/shinomakoi/dungeon-bench" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">dungeon-bench</span>
+                                    <span class="repo-stars">⭐ 3</span>
+                                </div>
+                                <p class="repo-desc">Testing LLM performance at playing simple games</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-09-03</span>
                                 </div>
                             </a>
                         </li>
@@ -1006,52 +1042,10 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                     <span class="repo-name">awesome-claude-fable-5-1</span>
                                     <span class="repo-stars">⭐ 2</span>
                                 </div>
-                                <p class="repo-desc">精心策划的 Claude Fable 5.1 用例、API 迁移说明、提示模式、集成、演示和基准证据。</p>
+                                <p class="repo-desc">Curated Claude Fable 5.1 use cases, API migration notes, prompting patterns, integrations, demos, and benchmark evidence.</p>
                                 <div class="repo-meta">
                                     <span class="repo-lang">None</span>
                                     <span class="repo-date">2026-09-01</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/soumadip-dev/AgentCareer" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">AgentCareer</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">人工智能职业教练使用多代理工作流程和知识检索来创建个性化职业路线图。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-08-28</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/wajidmir23/AI-resume-analyzer" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">AI-resume-analyzer</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">AI驱动的简历分析器，计算ATS分数，提取技能，检测缺失的关键词，并提供改进建议</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-08-29</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/rajeshyemul/ts-pw-test-assistant" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ts-pw-test-assistant</span>
-                                    <span class="repo-stars">⭐ 2</span>
-                                </div>
-                                <p class="repo-desc">由 AI 驱动的测试生成助手，可将 JIRA 需求转换为结构化测试用例和可执行的 Playwright + TypeScript E2E 测试，并具有框架感知代码生成和自动质量验证。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">TypeScript</span>
-                                    <span class="repo-date">2026-08-28</span>
                                 </div>
                             </a>
                         </li>
