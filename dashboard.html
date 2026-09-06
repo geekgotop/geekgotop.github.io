@@ -698,7 +698,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
     <header id="header">
         <h1 class="logo">Kindle<span>Dash</span></h1>
         <p class="tagline">信息聚合仪表盘</p>
-        <span class="generated-time">更新于 2026-09-05 23:30:33</span>
+        <span class="generated-time">更新于 2026-09-06 23:26:56</span>
     </header>
 
     <!-- ==================== Bento Grid 主布局 ==================== -->
@@ -858,7 +858,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="abstract-en">Many recurring text functions are easy to describe but difficult to implement with rules, while calling a large remote model for every input introduces repeated cost, latency, and dependency on a provider. We present compile by training, which turns a natural-language specification into a reusable n...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">许多重复出现的文本函数很容易描述，但很难用规则来实现，而为每个输入调用大型远程模型会带来重复的成本、延迟和对提供者的依赖。我们提出了通过训练进行编译，它将自然语言规范转化为可重用的神经函数。在编译时，教师模型会生成特定于任务的示例，用于训练紧凑解释器的小型适配器。生成的函数无需教师即可运行，并且可以像普通软件一样进行存储、版本控制和编写。在 FuzzyBench-Hard（Program-as-Weights 快速编译器未产生精确匹配的子集）上，通过训练进行编译达到了 83.6% 的语义准确度。这种更高的精度伴随着更高的编译时间成本：对于快速编译器来说大约是一分钟而不是几秒钟。我们将编译器部署在公共交互式服务中，并在多站点网站助手、语言控制的 3D 化身和双向英语-克劳迪什翻译器中演示编译功能。</p>
+                                    <p class="abstract-zh">许多重复出现的文本函数很容易描述，但很难用规则来实现，而为每个输入调用大型远程模型会带来重复的成本、延迟和对提供者的依赖。我们提出了通过训练进行编译，它将自然语言规范转化为可重用的神经函数。在编译时，教师模型会生成特定于任务的示例，用于训练紧凑解释器的小型适配器。生成的函数无需教师即可运行，并且可以像普通软件一样进行存储、版本控制和编写。在 FuzzyBench-Hard（Program-as-Weights 快速编译器未产生精确匹配的子集）上，通过训练进行编译达到了 83.6% 的语义准确度。这种更高的准确性伴随着更高的编译时间成本：对于快速编译器来说大约是一分钟而不是几秒钟。我们将编译器部署在公共交互式服务中，并在多站点网站助手、语言控制的 3D 化身和双向英语-克劳迪什翻译器中演示编译功能。</p>
                                 </details>
                             </div>
                             <a href="http://arxiv.org/abs/2609.04199v1" target="_blank" class="paper-link">阅读原文 →</a>
@@ -875,7 +875,7 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <p class="abstract-en">Language-model judges now gate training data, score generations, and drive leaderboards. The judge is then a measurement instrument, resting on one rarely stated assumption: the same request, sent to the same model name, reads the same tomorrow. We audited that assumption in two preregistered campai...</p>
                                 <details class="abstract-details">
                                     <summary>查看中文翻译</summary>
-                                    <p class="abstract-zh">语言模型评委现在负责控制训练数据、评分生成并推动排行榜。法官是一个测量仪器，基于一个很少提及的假设：相同的请求，发送到相同的型号名称，明天读取相同的结果。我们在两个预先注册的活动中审核了这一假设，每个阈值都是预先确定的；两者都没有通过验证其工具。在 52,988 次经审核的请求尝试中，同一窗口重复排名在 Spearman 0.400 上与要求的 0.90 一致，字节相同的次日重播在 0.78 上与要求的 0.99 上一致，每次执行记录都处于上限。三种机制解释了这种差距：标签到含义的映射，使读数产生与信号一样强烈的偏差；候选者比仪器本身的本底噪声低七个数量级；和字节相同的输入返回不同的排名，这是精确排列读数复合的噪声。度量替换和采样都无法在测试网格上修复它。预先登记的后续行动解决了这个问题：等待对采样的日子没有帮助（0.805 与 0.800，在另外五天内重复）；切换提供商没有帮助（四个提供商共享席位，中位数为 0.74 到 0.88，根据他们公开的任何元数据字段进行预测）；批处理不变内核上的自托管仅在服务器安静时才有帮助；对于具有已知间隙的构造错误，读数的分隔会跟踪错误类型，而不是大小。我们将证据提炼成三级快照身份阶梯、八项设计规则和报告清单；大约占研究呼叫量 2% 的试点将提前暴露两个无法到达的大门。所有结果都涉及共享服务基础设施上的外部测量行为。在共享端点上，型号名称不是冻结仪器；预先注册的评估必须在冻结其上的任何门之前测量其仪器。</p>
+                                    <p class="abstract-zh">语言模型评委现在负责控制训练数据、评分生成并推动排行榜。法官是一个测量仪器，基于一个很少提及的假设：相同的请求，发送到相同的型号名称，明天读取相同的结果。我们在两个预先注册的活动中审核了这一假设，每个阈值都是预先确定的；两者都没有通过验证其工具。在 52,988 次经审计的请求尝试中，同一窗口重复排名在 Spearman 0.400 上与要求的 0.90 一致，字节相同的次日重播在 0.78 上与要求的 0.99 上一致，每次执行记录都处于上限。三种机制解释了这种差距：标签到含义的映射，使读数产生与信号一样强烈的偏差；候选者比仪器本身的本底噪声低七个数量级；和字节相同的输入返回不同的排名，这是精确排列读数复合的噪声。度量替换和采样都无法在测试网格上修复它。预先登记的后续行动解决了这个问题：等待对采样的日子没有帮助（0.805 与 0.800，在另外五天内重复）；切换提供商没有帮助（四个提供商共享席位，中位数为 0.74 到 0.88，根据他们公开的任何元数据字段进行预测）；批处理不变内核上的自托管仅在服务器安静时才有帮助；对于具有已知间隙的构造错误，读数的分隔会跟踪错误类型，而不是大小。我们将证据提炼成三级快照身份阶梯、八项设计规则和报告清单；大约占研究呼叫量 2% 的试点将提前暴露两个无法到达的大门。所有结果都涉及共享服务基础设施上的外部测量行为。在共享端点上，型号名称不是冻结仪器；预先注册的评估必须在冻结其上的任何门之前测量其仪器。</p>
                                 </details>
                             </div>
                             <a href="http://arxiv.org/abs/2609.04198v1" target="_blank" class="paper-link">阅读原文 →</a>
@@ -917,6 +917,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                     
                         
                         <li class="repo-item">
+                            <a href="https://github.com/AlekseiUL/humanlike" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">humanlike</span>
+                                    <span class="repo-stars">⭐ 15</span>
+                                </div>
+                                <p class="repo-desc">Humanlike — deterministic persona, context, memory and privacy controls for conversational AI agents · Детерминированное поведение ИИ-агентов</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-date">2026-09-01</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/JoseAngelSolorzanoLuna/UFO-Cathedral-v6.4-FailSafe-Free-AI" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">UFO-Cathedral-v6.4-FailSafe-Free-AI</span>
@@ -924,22 +938,8 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 </div>
                                 <p class="repo-desc">100% 免费、离线、8GB RAM 计算机人工智能 + 形式安全（门 + 账本 + 理事会 + 影子模式） — 免费替代 200 美元/月 OpenAI Operator / Perplexity Computer / ClawBot / Claude Computer</p>
                                 <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
+                                    <span class="repo-lang">HTML</span>
                                     <span class="repo-date">2026-09-03</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/AlekseiUL/humanlike" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">humanlike</span>
-                                    <span class="repo-stars">⭐ 13</span>
-                                </div>
-                                <p class="repo-desc">Humanlike — 对话式 AI 代理的确定性角色、上下文、记忆和隐私控制 · Детерминированное поведение ИИ-агентов</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-09-01</span>
                                 </div>
                             </a>
                         </li>
@@ -959,10 +959,24 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/Delinor-Hens/Vortex" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">Vortex</span>
+                                    <span class="repo-stars">⭐ 10</span>
+                                </div>
+                                <p class="repo-desc">ИИ под названием Vortex для любых задач。 Сейчас уже доступна рабочая версия проекта, которая ежедневно улучшается</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">C++</span>
+                                    <span class="repo-date">2026-09-06</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/Felix-Theodore-Zeng/eight-market-quant-ai" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">eight-market-quant-ai</span>
-                                    <span class="repo-stars">⭐ 8</span>
+                                    <span class="repo-stars">⭐ 9</span>
                                 </div>
                                 <p class="repo-desc">八个市场数据采集、量化分析、技术架构、Hermes AI预测系统</p>
                                 <div class="repo-meta">
@@ -987,6 +1001,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/lucidrains/system2-attention" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">system2-attention</span>
+                                    <span class="repo-stars">⭐ 7</span>
+                                </div>
+                                <p class="repo-desc">语言模型中程序的实现可以控制他们自己的注意力，来自 Namgyu Ho 等人。韩国科学技术院</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-09-06</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/Saganaki22/obs-dlss5-nr" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">obs-dlss5-nr</span>
@@ -1001,6 +1029,20 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                         </li>
                         
                         <li class="repo-item">
+                            <a href="https://github.com/lucidrains/no-contact-no-worries" target="_blank" class="repo-link">
+                                <div class="repo-header">
+                                    <span class="repo-name">no-contact-no-worries</span>
+                                    <span class="repo-stars">⭐ 4</span>
+                                </div>
+                                <p class="repo-desc">实现NoContactNoWorries，通过视觉和本体感觉估计接触，实现手部灵巧操作</p>
+                                <div class="repo-meta">
+                                    <span class="repo-lang">None</span>
+                                    <span class="repo-date">2026-09-05</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="repo-item">
                             <a href="https://github.com/TirupMehta/ModelRegistry" target="_blank" class="repo-link">
                                 <div class="repo-header">
                                     <span class="repo-name">ModelRegistry</span>
@@ -1010,48 +1052,6 @@ p, blockquote, .abstract-zh, .model-desc, .model-example {
                                 <div class="repo-meta">
                                     <span class="repo-lang">TypeScript</span>
                                     <span class="repo-date">2026-09-02</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/shinomakoi/dungeon-bench" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">dungeon-bench</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">测试玩简单游戏时的 LLM 表现</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-09-03</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/sebastiancarlos/mongotar" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">mongotar</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">🌱 mongotar：要提示和返回的文件。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-09-04</span>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="repo-item">
-                            <a href="https://github.com/graviterra/ensemble-prover" target="_blank" class="repo-link">
-                                <div class="repo-header">
-                                    <span class="repo-name">ensemble-prover</span>
-                                    <span class="repo-stars">⭐ 3</span>
-                                </div>
-                                <p class="repo-desc">自主定理证明器将语言模型证明搜索与 Lean 4 验证相结合。</p>
-                                <div class="repo-meta">
-                                    <span class="repo-lang">Python</span>
-                                    <span class="repo-date">2026-08-31</span>
                                 </div>
                             </a>
                         </li>
