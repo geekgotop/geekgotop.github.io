@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-09-06 23:26:56</p>
+            <p class="hero-meta">构建时间：2026-09-07 23:56:02</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,17 +191,17 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：复盘整理日</p>
-                <p class="theme-focus">优先看 Archive 区：回顾本周输入并做摘要。</p>
-                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">博观而约取，厚积而薄发。</p>
-                        <p class="quick-meta">— 苏轼</p>
+                        <p class="quick-main">The only way to do great work is to love what you do.</p>
+                        <p class="quick-meta">— Steve Jobs</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 deprecated，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 algorithm，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 AlekseiUL/humanlike，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Compile by Training: Turning Natural-Language Specifications into Local Neural Functions》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">deprecated <span>/ˈdeprəkeɪtɪd/</span></p>
-                    <p class="study-meaning">adj. 已弃用的；不推荐的</p>
+                    <p class="study-word">algorithm <span>/ˈælɡəˌrɪðəm/</span></p>
+                    <p class="study-meaning">n. 算法；运算法则</p>
                     
-                    <p class="study-sentence">This method is deprecated and will be removed in the next version.</p>
-                    <p class="study-sentence-zh">此方法已弃用，将在下一版本中移除。</p>
+                    <p class="study-sentence">The sorting algorithm runs in O(n log n) time complexity.</p>
+                    <p class="study-sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Compile by Training: Turning Natural-Language Specifications into Local Neural Functions</p>
-                    <p class="deep-abstract">许多重复出现的文本函数很容易描述，但很难用规则来实现，而为每个输入调用大型远程模型会带来重复的成本、延迟和对提供者的依赖。我们提出了通过训练进行编译，它将自然语言规范转化为可重用的神经函数。在编译时，教师模型会生成特定于任务的示例，用于训练紧凑解释器的小型适配器。生成的函数无需教师即可运行，并且可以像普通软件一样进行存储、版本控制和编写。在 FuzzyBench-Hard（Program-as-Weights 快速编译器未产生精确匹配的子集）上，通过训练进行编译达到了 83.6% 的语义准确度。这种更高的准确性伴随着更高的编译时间成本：对于快速编译器来说大约是一分钟而不是几秒钟。我们将编译器部署在公共交互式服务中，并在多站点网站助手、语言控制的 3D 化身和双向英语-克劳迪什翻译器中演示编译功能。</p>
+                    <p class="deep-title">WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data</p>
+                    <p class="deep-abstract">可穿戴传感领域的最新进展使得能够连续监测生理和行为信号，但现有的基准很少评估人工智能系统是否可以对真实用户的纵向可穿戴记录进行推理。我们推出了 WearableQA，这是一个包含 4,084 个 10 选项多项选择问题的基准测试，这些问题由可穿戴时间序列、血液生物标记物和 200 名真实用户的人口统计数据构成，每个问题都有长达 500 天的每日测量数据。 WearableQA 保留了真实的可穿戴分布，包括设备噪声和个体间的变异性。为了评估不同的推理能力，我们引入了沿着两个互补轴组织的 16 种问题类型：数据与健康推理，它将纵向测量的计算与生理解释区分开来；单信号推理与跨信号推理，将单个信号的推理与多个信号的集成分开。为了大规模构建可靠的问题，我们采用了双重基础框架，该框架将基于文献的生理发现与经过统计验证的基于人群的生理模式相结合。这使得能够捕获在现实世界的可穿戴数据中观察到的有意义的关系。对 14 个专有和开源法学硕士的评估表明，WearableQA 有效区分了模型功能，相对于 10% 的机会基线，性能范围为 19.6% 到 72.9%。此外，WearableQA 问题还远没有得到解决：大多数模型的准确率都低于 60%。总体而言，WearableQA 提供了一个现实的诊断基准，用于评估 LLM 对现实世界可穿戴数据的推理。</p>
                     
-                    <p class="deep-takeaway">要点：许多重复出现的文本函数很容易描述，但很难用规则来实现，而为每个输入调用大型远程模型会带来重复的成本、延迟和对提供者的依赖。我们提出了通过训练进行编译，它将自然语言规范转化为可重用的神经函数。在编译时，教师模型会生成特定于任务的示例，用于训练紧凑解释器的小型适配器。生成的函数无需教师即可运行，并且可以像普通软件一样进行存...</p>
+                    <p class="deep-takeaway">要点：可穿戴传感领域的最新进展使得能够连续监测生理和行为信号，但现有的基准很少评估人工智能系统是否可以对真实用户的纵向可穿戴记录进行推理。我们推出了 WearableQA，这是一个包含 4,084 个 10 选项多项选择问题的基准测试，这些问题由可穿戴时间序列、血液生物标记物和 200 名真实用户的人口统计数据构成，每个问题...</p>
                     
-                    <p class="deep-meta">预计阅读 1 分钟</p>
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -285,7 +285,12 @@ html, body {
                     
                     <li>
                         <strong>AlekseiUL/humanlike</strong> (★ 15)
-                        <p>Humanlike — deterministic persona, context, memory and privacy controls for conversational AI agents · Детерминированное поведение ИИ-агентов</p>
+                        <p>Humanlike — 对话式 AI 代理的确定性角色、上下文、记忆和隐私控制 · Детерминированное поведение ИИ-агентов</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Delinor-Hens/Vortex</strong> (★ 14)
+                        <p>ИИ под названием Vortex для любых задач。 Сейчас уже доступна рабочая версия проекта, которая ежедневно улучшается</p>
                     </li>
                     
                     <li>
@@ -294,18 +299,13 @@ html, body {
                     </li>
                     
                     <li>
+                        <strong>lucidrains/declarative-attention</strong> (★ 11)
+                        <p>语言模型中程序的实现可以控制他们自己的注意力，来自 Namgyu Ho 等人。韩国科学技术院</p>
+                    </li>
+                    
+                    <li>
                         <strong>lucidrains/ccbp-pytorch</strong> (★ 10)
                         <p>在 Pytorch 中实现拟议的 CCBP（连续连续 BackProp）</p>
-                    </li>
-                    
-                    <li>
-                        <strong>Delinor-Hens/Vortex</strong> (★ 10)
-                        <p>ИИ под названием Vortex для любых задач。 Сейчас уже доступна рабочая версия проекта, которая ежедневно улучшается</p>
-                    </li>
-                    
-                    <li>
-                        <strong>Felix-Theodore-Zeng/eight-market-quant-ai</strong> (★ 9)
-                        <p>八个市场数据采集、量化分析、技术架构、Hermes AI预测系统</p>
                     </li>
                     
                 </ul>
