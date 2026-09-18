@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-09-17 23:52:03</p>
+            <p class="hero-meta">构建时间：2026-09-18 23:50:02</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
-                        <p class="quick-meta">— Albert Einstein</p>
+                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                        <p class="quick-meta">— Chinese Proverb</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-main">lucidrains/RLT</p>
-                        <p class="quick-meta">★ 52</p>
+                        <p class="quick-main">everclear077/awesome-ai-x-accounts</p>
+                        <p class="quick-meta">★ 57</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 encapsulation，再口述其含义一次。</li>
                         
-                        <li>趋势: 浏览 lucidrains/RLT，记录 1 个可借鉴实现点。</li>
+                        <li>趋势: 浏览 everclear077/awesome-ai-x-accounts，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Objective vs. Search: Decomposing What Makes a Good Tokeniser》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
-                    <p class="study-meaning">n. 递归；循环</p>
+                    <p class="study-word">encapsulation <span>/ɪnˌkæpsjuˈleɪʃn/</span></p>
+                    <p class="study-meaning">n. 封装；包装</p>
                     
-                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
-                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
+                    <p class="study-sentence">Encapsulation hides the internal state of an object from the outside.</p>
+                    <p class="study-sentence-zh">封装将对象的内部状态对外部隐藏。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Objective vs. Search: Decomposing What Makes a Good Tokeniser</p>
-                    <p class="deep-abstract">Two dominant tokenisation algorithms are used by modern language models: byte-pair encoding (BPE) and UnigramLM. These differ along two orthogonal axes: their optimisation objective (compression vs. log-likelihood) and their search procedure (bottom-up merging vs. top-down pruning). Existing comparisons confound these axes, making it unclear whether their observed differences stem from what is being optimised vs. how it is being optimised. We disentangle the two by introducing two new tokenisation algorithms that complete this 2x2 design space: BottomUpLL, a bottom-up likelihood-based tokeniser, and TopDownComp, a top-down compression-based tokeniser. We train language models with tokenisers produced by each algorithm, varying: model size, vocabulary sizes, and domain (English-only vs. multilingual). Evaluating models on bits-per-byte, we find that the search procedure -- not the objective -- is the dominant factor: bottom-up tokenisers consistently achieve lower bits-per-byte in most settings. Evaluating models on the BLiMP task, however, shows no consistent relationship between design choice and performance. Overall, our results disentangle the effect of tokeniser design choices on language modelling performance, offering concrete guidance for their more principled construction.</p>
+                    <p class="deep-title">Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation</p>
+                    <p class="deep-abstract">Coding agents have emerged as a promising paradigm for robot manipulation: a language model writes the robot controller as a program, and agents built in this way now operate robots without robot-specific training.Whether this paradigm is also safe, however, has not been asked. We evaluate coding agent under a safety constraint, where each task pairs a manipulation goal with an obstacle the robot must not touch. The agent pursues the goal but collides with the obstacle in most cases, treating task completion as its sole objective while neglecting safety. The agent reasons about the obstacle in its traces, and the prompt already forbids touching it, so neither perception nor instruction is at fault; the fault lies in the planning, where the stated constraint never becomes a priority. By decomposing manipulation into a route phase and a contact-rich moment, we locate the source of the failure. Along the route, the model cannot prioritize the safety constraint, having no notion of a clearing route and none of replanning once a chosen route becomes infeasible. At the contact, it is unaware that contact execution is bounded by the same constraint. To close this gap, we present SafeHarness, which equips the model with two obstacle-aware harnesses that enable it to prioritize the safety constraint. Obstacle-aware route planning grounds the objects as bounding boxes and draws candidate routes over them as sequences of waypoints. The agent then plans a route in advance, verifies it, replans when necessary, and only then executes it. Obstacle-aware contact execution instead selects the contact position so that the contact itself avoids the obstacle. SafeHarness attains 71.9% task success and 87.5% collision avoidance, surpassing the previous SOTA by 6.5% and 27.0%, respectively. These results are $2.3\times$ and $1.5\times$ those of the same agent without harnesses.</p>
                     
-                    <p class="deep-takeaway">要点：Two dominant tokenisation algorithms are used by modern language models: byte-pair encoding (BPE) and UnigramLM. These differ along two orthogonal axes: their o...</p>
+                    <p class="deep-takeaway">要点：Coding agents have emerged as a promising paradigm for robot manipulation: a language model writes the robot controller as a program, and agents built in this w...</p>
                     
-                    <p class="deep-meta">预计阅读 1 分钟</p>
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>lucidrains/RLT</strong> (★ 52)
+                        <strong>everclear077/awesome-ai-x-accounts</strong> (★ 57)
+                        <p>A categorized directory of X accounts covering AI, LLMs, agents, and technology, with original profile bios and follower counts. Available in 7 languages.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>lucidrains/RLT</strong> (★ 54)
                         <p>Implementation of the recurrent looped transformer proposed by Yifan Zhang of Princeton </p>
                     </li>
                     
                     <li>
-                        <strong>templatesgrokbot/templatesgrokbot.com</strong> (★ 51)
+                        <strong>templatesgrokbot/templatesgrokbot.com</strong> (★ 34)
                         <p>TemplatesGrokBot.com is a library of 3,000+ ready-made Grok Bot templates. Search by task or job title, install any bot in Grokbot in minutes, and connect the whole catalog to your agents via MCP. Made by Jeroen / Nexibeo.com to help anyone build a full team of AI agents for their job.</p>
                     </li>
                     
                     <li>
-                        <strong>everclear077/awesome-ai-x-accounts</strong> (★ 50)
-                        <p>A categorized directory of X accounts covering AI, LLMs, agents, and technology, with original profile bios and follower counts. Available in 7 languages.</p>
+                        <strong>thunderstrike668/contentqueen-app-erfahrung-review-deutsch</strong> (★ 18)
+                        <p>Contentqueen App im Test: Der ultimative KI-Textgenerator für Marketer &amp; Creators im deutschsprachigen Raum. Schluss mit Schreibblockaden! 🚀</p>
                     </li>
                     
                     <li>
                         <strong>sadia-sigma-lab/BLINDSPOT</strong> (★ 15)
                         <p>Live Benchmark for long Horizon tool using Agentic Systems</p>
-                    </li>
-                    
-                    <li>
-                        <strong>thunderstrike668/contentqueen-app-erfahrung-review-deutsch</strong> (★ 15)
-                        <p>Contentqueen App im Test: Der ultimative KI-Textgenerator für Marketer &amp; Creators im deutschsprachigen Raum. Schluss mit Schreibblockaden! 🚀</p>
                     </li>
                     
                 </ul>
