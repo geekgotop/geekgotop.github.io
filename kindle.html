@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-09-22 23:57:56</p>
+            <p class="hero-meta">构建时间：2026-09-24 00:11:46</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -193,22 +193,22 @@ html, body {
             <div class="theme-card">
                 <p class="theme-name">今日主题：英语强化日</p>
                 <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
+                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
-                        <p class="quick-meta">— Chinese Proverb</p>
+                        <p class="quick-main">博观而约取，厚积而薄发。</p>
+                        <p class="quick-meta">— 苏轼</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">kraayenjon/awesome-jev</p>
-                        <p class="quick-meta">★ 111</p>
+                        <p class="quick-meta">★ 126</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: None</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 serialization，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 deprecated，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 kraayenjon/awesome-jev，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">serialization <span>/ˌsɪəriəlaɪˈzeɪʃn/</span></p>
-                    <p class="study-meaning">n. 序列化</p>
+                    <p class="study-word">deprecated <span>/ˈdeprəkeɪtɪd/</span></p>
+                    <p class="study-meaning">adj. 已弃用的；不推荐的</p>
                     
-                    <p class="study-sentence">Serialization converts an object into a stream of bytes for storage.</p>
-                    <p class="study-sentence-zh">序列化将对象转换为字节流以便存储。</p>
+                    <p class="study-sentence">This method is deprecated and will be removed in the next version.</p>
+                    <p class="study-sentence-zh">此方法已弃用，将在下一版本中移除。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay</p>
-                    <p class="deep-abstract">Modern video games provide a measurable testbed for AI models, combining abilities of visual understanding, instruction decomposition, goal planning, and precise action control over multiple temporal horizons. Existing datasets and benchmarks, however, either cover a narrow range of games, lack language instructions, or rely on high-variance online rollouts. To address these challenges, we introduce GameHorizon, a unified data and evaluation suite that measures gameplay capabilities at different horizons for diverse model families. GameHorizon Suite consists of three components. First, GameHorizon-Annotator is a scalable and automated annotation pipeline for multi-horizon instructions. Second, utilizing the pipeline, we construct GameHorizon-Data, the first large-scale AAA gameplay dataset with temporally aligned videos, player actions, and multi-horizon instructions. It comprises 5,000 hours of recordings from 21 games, collected by 100 human expert players. Third, we build GameHorizon-Bench with reproducible offline and stepwise online testing. The offline track enables reproducible evaluation using thousands of standardized questions organized into three primary tasks and a series of diagnostic variants, while the online track tests whether offline scores reflect actual gameplay capabilities and localizes failures to specific steps within long-horizon gameplay. Based on our GameHorizon Suite, we evaluate 47 models through more than one million model invocations, revealing a meaningful hierarchy of task difficulty and pronounced differences in model capabilities. Our work can provide a standardized yardstick for evaluating gameplay capabilities across horizons and model families. We will release our dataset, annotator, and benchmark to facilitate future research.</p>
+                    <p class="deep-title">Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs</p>
+                    <p class="deep-abstract">Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, largely due to the absence of effective Key-Value (KV) caching and scalable parallel decoding mechanisms. Existing acceleration methods typically study KV caching and parallel decoding in isolation, overlooking the I/O bottlenecks that arise when cache reuse and parallel token verification are jointly applied. In this work, we introduce $\textbf{Flash-dLLM}$, a training-free inference acceleration framework for fast and memory-efficient dLLMs. Flash-dLLM first identifies GPU memory I/O as a dominant bottleneck in KV-cache-enabled dLLM inference and addresses it with an I/O-aware fused KV-cache kernel that reduces redundant memory movement. Building on this optimized cache mechanism, Flash-dLLM further proposes an efficient KV-cache-driven draft-and-verify decoding strategy, where the dLLM itself serves as both drafter and verifier without requiring an auxiliary model. This unified design enables faster decoding while preserving generation quality and improving scalability to longer sequences and larger batch size. Extensive experiments on mathematical reasoning and code-generation benchmarks demonstrate that Flash-dLLM consistently outperforms existing state-of-the-art dLLM acceleration methods in both inference speed and memory efficiency. In particular, it achieves $5.1\times$ and $11.0\times$ speedups over prior strongest baseline Elastic-Cache on GSM8K and HumanEval, respectively.</p>
                     
-                    <p class="deep-takeaway">要点：Modern video games provide a measurable testbed for AI models, combining abilities of visual understanding, instruction decomposition, goal planning, and precis...</p>
+                    <p class="deep-takeaway">要点：Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation....</p>
                     
                     <p class="deep-meta">预计阅读 2 分钟</p>
                 
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>kraayenjon/awesome-jev</strong> (★ 111)
+                        <strong>kraayenjon/awesome-jev</strong> (★ 126)
                         <p>A curated list of Jev use cases, projects, SDKs, and resources. Jev is TypeSafe AI&#39;s System One model for fast, typed decisions in software — Choice, Score, and Noul with calibrated probabilities.</p>
                     </li>
                     
                     <li>
-                        <strong>templatesgrokbot/templatesgrokbot.com</strong> (★ 34)
-                        <p>TemplatesGrokBot.com is a library of 3,000+ ready-made Grok Bot templates. Search by task or job title, install any bot in Grokbot in minutes, and connect the whole catalog to your agents via MCP. Made by Jeroen / Nexibeo.com to help anyone build a full team of AI agents for their job.</p>
+                        <strong>gilsonnogueira/notebooklm-para-concursos</strong> (★ 25)
+                        <p>Ecossistema de Engenharia de Estudos com IA Fundamentada (NotebookLM + Gemini Estudantes). Metodologia N.A.G. (Nucleo de Aprendizagem Guiada) com 19 Prompts calibrados, Raio-X estatistico de bancas e Metodo MIT.</p>
                     </li>
                     
                     <li>
-                        <strong>wh000wh000/awesome-jev-live</strong> (★ 13)
+                        <strong>wh000wh000/awesome-jev-live</strong> (★ 15)
                         <p>Awesome Jev — evidence-graded index of TypeSafe System One: SDKs, MCP tools, agents, apps and open models. 20 languages, rebuilt every 2 hours.</p>
                     </li>
                     
                     <li>
-                        <strong>lucidrains/stack-attention</strong> (★ 12)
-                        <p>For following a line of research that augments attention with a differentiable stack, beginning with DuSell et al. at ETH Zurich</p>
+                        <strong>NSStudent/JevSwiftSDK</strong> (★ 8)
+                        <p>An independent, type-safe Swift SDK for TypeSafe Jev, with async/await, batching, retries, and SPM support.</p>
                     </li>
                     
                     <li>
-                        <strong>talhapythoneer/anti-sycophancy-prompt</strong> (★ 10)
-                        <p>A system prompt against AI sycophancy, backed by 42 sources on why models tend to agree with you.</p>
+                        <strong>Loophole-LLC/Jayce</strong> (★ 5)
+                        <p>Adaptive Prototype Memory: a small prototype learner benchmarked against backprop, plus a chat demo where it learns from a local LLM.</p>
                     </li>
                     
                 </ul>
