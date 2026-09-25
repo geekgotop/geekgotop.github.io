@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-09-24 00:11:46</p>
+            <p class="hero-meta">构建时间：2026-09-25 00:13:33</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">博观而约取，厚积而薄发。</p>
-                        <p class="quick-meta">— 苏轼</p>
+                        <p class="quick-main">The only way to do great work is to love what you do.</p>
+                        <p class="quick-meta">— Steve Jobs</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-main">kraayenjon/awesome-jev</p>
-                        <p class="quick-meta">★ 126</p>
+                        <p class="quick-main">gilsonnogueira/notebooklm-para-concursos</p>
+                        <p class="quick-meta">★ 28</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: None</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 deprecated，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 algorithm，再口述其含义一次。</li>
                         
-                        <li>趋势: 浏览 kraayenjon/awesome-jev，记录 1 个可借鉴实现点。</li>
+                        <li>趋势: 浏览 gilsonnogueira/notebooklm-para-concursos，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Contrastive Learning for Authorship Verification》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">deprecated <span>/ˈdeprəkeɪtɪd/</span></p>
-                    <p class="study-meaning">adj. 已弃用的；不推荐的</p>
+                    <p class="study-word">algorithm <span>/ˈælɡəˌrɪðəm/</span></p>
+                    <p class="study-meaning">n. 算法；运算法则</p>
                     
-                    <p class="study-sentence">This method is deprecated and will be removed in the next version.</p>
-                    <p class="study-sentence-zh">此方法已弃用，将在下一版本中移除。</p>
+                    <p class="study-sentence">The sorting algorithm runs in O(n log n) time complexity.</p>
+                    <p class="study-sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs</p>
-                    <p class="deep-abstract">Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, largely due to the absence of effective Key-Value (KV) caching and scalable parallel decoding mechanisms. Existing acceleration methods typically study KV caching and parallel decoding in isolation, overlooking the I/O bottlenecks that arise when cache reuse and parallel token verification are jointly applied. In this work, we introduce $\textbf{Flash-dLLM}$, a training-free inference acceleration framework for fast and memory-efficient dLLMs. Flash-dLLM first identifies GPU memory I/O as a dominant bottleneck in KV-cache-enabled dLLM inference and addresses it with an I/O-aware fused KV-cache kernel that reduces redundant memory movement. Building on this optimized cache mechanism, Flash-dLLM further proposes an efficient KV-cache-driven draft-and-verify decoding strategy, where the dLLM itself serves as both drafter and verifier without requiring an auxiliary model. This unified design enables faster decoding while preserving generation quality and improving scalability to longer sequences and larger batch size. Extensive experiments on mathematical reasoning and code-generation benchmarks demonstrate that Flash-dLLM consistently outperforms existing state-of-the-art dLLM acceleration methods in both inference speed and memory efficiency. In particular, it achieves $5.1\times$ and $11.0\times$ speedups over prior strongest baseline Elastic-Cache on GSM8K and HumanEval, respectively.</p>
+                    <p class="deep-title">Contrastive Learning for Authorship Verification</p>
+                    <p class="deep-abstract">Our results show that contrastive learning outperforms a classification-based approach to authorship verification under the tested settings. We identify loss function, batch size, training duration, pre-trained model, input context length, and random text span data augmentation as important factors of model performance. Based on these considerations, we develop a ModernBERT Bi-Encoder model that achieves 98.4% accuracy on the PAN21 authorship verification task.</p>
                     
-                    <p class="deep-takeaway">要点：Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation....</p>
+                    <p class="deep-takeaway">要点：Our results show that contrastive learning outperforms a classification-based approach to authorship verification under the tested settings. We identify loss fu...</p>
                     
-                    <p class="deep-meta">预计阅读 2 分钟</p>
+                    <p class="deep-meta">预计阅读 1 分钟</p>
                 
             </div>
             
@@ -284,18 +284,13 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>kraayenjon/awesome-jev</strong> (★ 126)
-                        <p>A curated list of Jev use cases, projects, SDKs, and resources. Jev is TypeSafe AI&#39;s System One model for fast, typed decisions in software — Choice, Score, and Noul with calibrated probabilities.</p>
-                    </li>
-                    
-                    <li>
-                        <strong>gilsonnogueira/notebooklm-para-concursos</strong> (★ 25)
+                        <strong>gilsonnogueira/notebooklm-para-concursos</strong> (★ 28)
                         <p>Ecossistema de Engenharia de Estudos com IA Fundamentada (NotebookLM + Gemini Estudantes). Metodologia N.A.G. (Nucleo de Aprendizagem Guiada) com 19 Prompts calibrados, Raio-X estatistico de bancas e Metodo MIT.</p>
                     </li>
                     
                     <li>
-                        <strong>wh000wh000/awesome-jev-live</strong> (★ 15)
-                        <p>Awesome Jev — evidence-graded index of TypeSafe System One: SDKs, MCP tools, agents, apps and open models. 20 languages, rebuilt every 2 hours.</p>
+                        <strong>initPM/ai-kyc-aml-assistant</strong> (★ 18)
+                        <p>An AI-assisted compliance dashboard for accelerating customer onboarding, featuring automated document verification and PEP/sanctions risk screening workflows.</p>
                     </li>
                     
                     <li>
@@ -306,6 +301,11 @@ html, body {
                     <li>
                         <strong>Loophole-LLC/Jayce</strong> (★ 5)
                         <p>Adaptive Prototype Memory: a small prototype learner benchmarked against backprop, plus a chat demo where it learns from a local LLM.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>lucidrains/log-depth-recurrent-modeling</strong> (★ 5)
+                        <p>Explorations into the Log Depth Recurrent Modeling proposed by Yiqin Wang of Imperial College London</p>
                     </li>
                     
                 </ul>
