@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-09-28 00:15:54</p>
+            <p class="hero-meta">构建时间：2026-09-29 01:25:34</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,17 +191,17 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
-                        <p class="quick-meta">— 荀子</p>
+                        <p class="quick-main">博观而约取，厚积而薄发。</p>
+                        <p class="quick-meta">— 苏轼</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 polymorphism，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 inheritance，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 initPM/ai-kyc-aml-assistant，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《LLM Agents Can Easily Tamper With Their Own Traces》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Transfer Learning for Edge Classification on Dynamic Text-Attributed Graphs》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">polymorphism <span>/ˌpɒliˈmɔːfɪzəm/</span></p>
-                    <p class="study-meaning">n. 多态性</p>
+                    <p class="study-word">inheritance <span>/ɪnˈherɪtəns/</span></p>
+                    <p class="study-meaning">n. 继承；遗传</p>
                     
-                    <p class="study-sentence">Polymorphism allows objects of different classes to be treated as objects of a common superclass.</p>
-                    <p class="study-sentence-zh">多态性允许不同类的对象被当作共同父类的对象来处理。</p>
+                    <p class="study-sentence">Inheritance enables new classes to receive the properties of existing classes.</p>
+                    <p class="study-sentence-zh">继承使新类能够接收现有类的属性。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">LLM Agents Can Easily Tamper With Their Own Traces</p>
-                    <p class="deep-abstract">Asynchronous monitoring, incident investigations, and compliance audits primarily rely on agent traces to reconstruct what happened. These analyses assume that LLM agents cannot tamper with their own execution traces. We show that local LLM agents such as Claude Code, Codex, Antigravity, Open Code and Grok Build fail to enforce this boundary. All tested harnesses, except Muse Code, allowed agents to delete their traces when asked, without triggering monitor guardrails. We also validate that external attackers can exploit this gap to induce trace deletion. Finally, we show that trace tampering behavior emerges naturally in frontier models, when agents try to improve their rewards. We advise practitioners to ensure trace logging happens through an independent interception mechanism outside of the agent&#39;s control, preserving trace integrity even in cases of full host compromise. Overall, our findings identify a concrete failure of trace integrity in agent infrastructure which can be used to conceal misaligned behaviors like scheming or sabotage.</p>
+                    <p class="deep-title">Transfer Learning for Edge Classification on Dynamic Text-Attributed Graphs</p>
+                    <p class="deep-abstract">Learning transferable representations for dynamic text-attributed graphs (DyTAGs) requires models to capture underlying interaction dynamics that persist across domains. However, existing methods tend to overfit to domain-specific structural, temporal, and semantic patterns, limiting edge classification performance under distribution shifts. To expose and address this, we formally establish a leave-one-domain-out (LODO) transfer learning protocol for edge classification on DyTAGs. Under this protocol, we demonstrate that state-of-the-art self-supervised methods for dynamic graph learning perform poorly when transferred to unseen domains. Strikingly, existing methods underperform a structurally and temporally unaware Bag of Events (BoE) model we introduce, which inputs only unordered sequences of node and edge text features. Proceeding from the BoE, we propose Spatio-Temporal Semantic Alignment (STSA), which integrates a spatio-temporal encoder that fuses representations of time deltas and node occurrence frequencies into a unified manifold. STSA is trained with a Contrastive Semantic Forecasting objective, which anchors edge representations to a multi-domain textual latent space initialized by a pretrained language model, providing a robust prior that outperforms BoE and all existing methods we evaluate.</p>
                     
-                    <p class="deep-takeaway">要点：Asynchronous monitoring, incident investigations, and compliance audits primarily rely on agent traces to reconstruct what happened. These analyses assume that...</p>
+                    <p class="deep-takeaway">要点：Learning transferable representations for dynamic text-attributed graphs (DyTAGs) requires models to capture underlying interaction dynamics that persist across...</p>
                     
                     <p class="deep-meta">预计阅读 1 分钟</p>
                 
@@ -289,8 +289,13 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>lucidrains/recurrent-transformer</strong> (★ 14)
+                        <strong>lucidrains/recurrent-transformer</strong> (★ 17)
                         <p>Explorations into the Recurrent Transformer proposed by Costin-Andrei Oncescu et al. of Harvard University</p>
+                    </li>
+                    
+                    <li>
+                        <strong>lucidrains/survival-rl</strong> (★ 9)
+                        <p>Explorations into Survival Reinforcement Learning, proposed by Tiofack et al. earlier this year</p>
                     </li>
                     
                     <li>
@@ -299,13 +304,8 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>Parithosh-Varma/opencode-proxy</strong> (★ 3)
-                        <p>Use OpenCode Zen free models anywhere — zero-dep local OpenAI-compatible proxy (mimo, nemotron, ling, big-pickle, muse-spark)</p>
-                    </li>
-                    
-                    <li>
-                        <strong>lucidrains/survival-rl</strong> (★ 3)
-                        <p>Explorations into Survival Reinforcement Learning, proposed by Tiofack et al. earlier this year</p>
+                        <strong>DaragonTech/MIT-Human</strong> (★ 4)
+                        <p>An MIT-derived license permitting human development while restricting AI-assisted modification and derivative works</p>
                     </li>
                     
                 </ul>
