@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-10-05 00:26:46</p>
+            <p class="hero-meta">构建时间：2026-10-06 02:01:35</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The only way to do great work is to love what you do.</p>
-                        <p class="quick-meta">— Steve Jobs</p>
+                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
+                        <p class="quick-meta">— Albert Einstein</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">VoltEmperorChaos/ai-agent-for-pc</p>
-                        <p class="quick-meta">★ 46</p>
+                        <p class="quick-meta">★ 47</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: None</p>
                     
                 </article>
@@ -217,9 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 algorithm，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 VoltEmperorChaos/ai-agent-for-pc，记录 1 个可借鉴实现点。</li>
+                        
+                        <li>深读: 阅读论文《Robot Learning with Visual Predicted Force》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -232,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">algorithm <span>/ˈælɡəˌrɪðəm/</span></p>
-                    <p class="study-meaning">n. 算法；运算法则</p>
+                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
+                    <p class="study-meaning">n. 递归；循环</p>
                     
-                    <p class="study-sentence">The sorting algorithm runs in O(n log n) time complexity.</p>
-                    <p class="study-sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
+                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
+                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -268,7 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="quick-empty">暂无论文数据</p>
+                    <p class="deep-title">Robot Learning with Visual Predicted Force</p>
+                    <p class="deep-abstract">Force-aware manipulation typically relies on specialized force or tactile sensors. We show that force-aware manipulation can instead be achieved through visual force prediction from the deformation of a compliant Fin Ray gripper. Our approach trains two models. First, we train a visual force estimator on calibration data and use it to annotate task demonstrations with force estimates. Second, we train an action--force proposal policy on these force-augmented demonstrations to jointly generate candidate robot actions and their associated forces. At test time, we sample candidate actions and the forces they are expected to produce, then execute the action whose predicted force is closest to a target from the demonstrations. We evaluate our approach on berry picking, empty-can grasping, in-hand reorientation, and plug insertion. Our results show that visual force prediction can guide inference-time action selection for contact-rich manipulation without requiring force or tactile sensors at deployment.</p>
+                    
+                    <p class="deep-takeaway">要点：Force-aware manipulation typically relies on specialized force or tactile sensors. We show that force-aware manipulation can instead be achieved through visual...</p>
+                    
+                    <p class="deep-meta">预计阅读 1 分钟</p>
                 
             </div>
             
@@ -277,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>VoltEmperorChaos/ai-agent-for-pc</strong> (★ 46)
+                        <strong>VoltEmperorChaos/ai-agent-for-pc</strong> (★ 47)
                         <p>A simple Windows AI agent that runs locally with a single .exe file. No command line or complex setup required.</p>
                     </li>
                     
                     <li>
-                        <strong>gonzaroman/IHMT-MEMORY</strong> (★ 19)
+                        <strong>gonzaroman/IHMT-MEMORY</strong> (★ 21)
                         <p>Long-term memory for AI coding agents (Claude Code, Codex, opencode) as a tree of plain files</p>
                     </li>
                     
                     <li>
-                        <strong>zermello/awesome-robotics</strong> (★ 15)
+                        <strong>zermello/awesome-robotics</strong> (★ 14)
                         <p>Free Robotics &amp; AI learning resources, including courses, books, lectures, research papers, tutorials, projects, and more.</p>
                     </li>
                     
                     <li>
-                        <strong>Mafifrizi/tanuki</strong> (★ 7)
+                        <strong>Mafifrizi/tanuki</strong> (★ 11)
                         <p>Tactical Identity Operator for Linux &amp; Hybrid Active Directory </p>
                     </li>
                     
                     <li>
-                        <strong>LKDenchin/Micro-Multi</strong> (★ 4)
-                        <p>Local multi-agent desktop workspace compatible with deepseek-harness (dsh) plugins. 本地多 Agent 桌面工作台，兼容 deepseek-harness（dsh）插件体系。</p>
+                        <strong>lucidrains/self-play-pretrain-zero-data</strong> (★ 5)
+                        <p>Implementation of Self-Play Pretraining with Zero Data</p>
                     </li>
                     
                 </ul>
@@ -311,7 +318,7 @@ html, body {
             <p class="zone-subtitle">复盘与回顾入口</p>
             <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
             <ul class="archive-stats">
-                <li>论文：0</li>
+                <li>论文：3</li>
                 <li>仓库：10</li>
                 <li>思维模型：3</li>
                 <li>语录：5</li>
