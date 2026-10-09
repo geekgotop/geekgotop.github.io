@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-10-08 01:31:45</p>
+            <p class="hero-meta">构建时间：2026-10-09 01:41:45</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
-                        <p class="quick-meta">— 荀子</p>
+                        <p class="quick-main">博观而约取，厚积而薄发。</p>
+                        <p class="quick-meta">— 苏轼</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-main">Mafifrizi/tanuki</p>
-                        <p class="quick-meta">★ 15</p>
+                        <p class="quick-main">PkLavc/Autotrader</p>
+                        <p class="quick-meta">★ 20</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 polymorphism，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 inheritance，再口述其含义一次。</li>
                         
-                        <li>趋势: 浏览 Mafifrizi/tanuki，记录 1 个可借鉴实现点。</li>
+                        <li>趋势: 浏览 PkLavc/Autotrader，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《AgentTime: Can Agents Estimate and Control Their Own Runtime?》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">polymorphism <span>/ˌpɒliˈmɔːfɪzəm/</span></p>
-                    <p class="study-meaning">n. 多态性</p>
+                    <p class="study-word">inheritance <span>/ɪnˈherɪtəns/</span></p>
+                    <p class="study-meaning">n. 继承；遗传</p>
                     
-                    <p class="study-sentence">Polymorphism allows objects of different classes to be treated as objects of a common superclass.</p>
-                    <p class="study-sentence-zh">多态性允许不同类的对象被当作共同父类的对象来处理。</p>
+                    <p class="study-sentence">Inheritance enables new classes to receive the properties of existing classes.</p>
+                    <p class="study-sentence-zh">继承使新类能够接收现有类的属性。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">AgentTime: Can Agents Estimate and Control Their Own Runtime?</p>
-                    <p class="deep-abstract">An essential control of AI agents is their ability to manage runtime. This ability requires a sense of time-awareness, to predict and estimate wall-clock time and to control their own actions. Prior work has focused on time-awareness, but duration-following and control in native agent harnesses remain unexplored. We present AgentTime, a benchmark for testing whether agents can work for a requested duration, predict their runtime, and estimate elapsed time afterward. It comprises 222 tasks from 18 sources spanning coding, computer use, agentic work, and automated research. Duration-following experiments append a single instruction specifying how long to work, with requests ranging from about a minute to multiple days. Accuracy on these instructions varies substantially: Fable 5.1 in Claude Code deviates from requested runtimes by a typical factor of 2.9$\times$, compared with only 1.2$\times$ for GPT-6 Astra in Codex. However, matching the requested runtime does not, by itself, establish continued work on the task. Among 158 reviewed Astra runs with classifiable transcripts, 14 explicitly slept after appearing to finish. In forecasting experiments, predictions tend to overestimate natural runtimes. In retrospective experiments, removing temporal information more than doubles deviation for Sol and Astra and nearly doubles it for Fable. An agent&#39;s ability to complete a task does not guarantee that it can control its own time or work for the whole requested duration. For agents to run reliably, safely, and autonomously over long horizons, we require the evaluation of both.</p>
+                    <p class="deep-title">DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents</p>
+                    <p class="deep-abstract">Memory-augmented mobile GUI agents store successful execution trajectories and reuse them in later tasks, but a stored trajectory rarely matches a new task exactly. The new task may use different parameters, share only some of its steps with a stored trajectory, or have no relevant record in memory. Forcing the agent to use irrelevant memory can mislead it, whereas discarding memory that may still be useful deprives it of guidance from past experience. To address this dilemma, we propose DeltaReplay, a step-level memory reuse framework that decides how to use existing memory without modifying it. We observe that the reusable part of a stored record is determined not by the record itself but by its relation to the new task, mainly through two factors: page-level consistency and action-level generality. We therefore store execution trajectories as paths in a transition graph, whose nodes (pages) and edges (actions between pages) capture these two factors. At reuse time, the action on each edge is split into a task-independent operation and task-specific parameters. DeltaReplay then compares each recorded step with the new task and the current screen, and decides whether to follow it, execute it after replacing its parameters, or leave it to the base agent. On AndroidWorld and SPA-Bench, DeltaReplay improves the task success rate over a base agent with the same backbone by up to 10.3 and 25.0 percentage points, respectively. These results indicate that deciding at each step how to use retrieved memory lets agents benefit even from partially matching trajectories.</p>
                     
-                    <p class="deep-takeaway">要点：An essential control of AI agents is their ability to manage runtime. This ability requires a sense of time-awareness, to predict and estimate wall-clock time a...</p>
+                    <p class="deep-takeaway">要点：Memory-augmented mobile GUI agents store successful execution trajectories and reuse them in later tasks, but a stored trajectory rarely matches a new task exac...</p>
                     
                     <p class="deep-meta">预计阅读 2 分钟</p>
                 
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>Mafifrizi/tanuki</strong> (★ 15)
-                        <p>Tactical Identity Operator for Linux &amp; Hybrid Active Directory </p>
-                    </li>
-                    
-                    <li>
-                        <strong>PkLavc/Autotrader</strong> (★ 7)
+                        <strong>PkLavc/Autotrader</strong> (★ 20)
                         <p>Autonomous AI trading system powered by Kronos. Forecasts markets, builds portfolios and paper-trades automatically with GitHub Actions.</p>
                     </li>
                     
                     <li>
-                        <strong>lucidrains/self-play-pretrain-zero-data</strong> (★ 6)
-                        <p>Implementation of Self-Play Pretraining with Zero Data</p>
+                        <strong>lel-media/electrocheck-engine</strong> (★ 6)
+                        <p>The Electrocheck fact-checker</p>
                     </li>
                     
                     <li>
-                        <strong>thinkingdev923/EstateWise-ChatBot</strong> (★ 6)
-                        <p>🏠 An AI real estate app featuring secure auth, conversation management, &amp; personalized property recommendations. Powered by Agentic AI, RAG (w/ Pinecone), GraphRAG (w/ Neo4j), MCP, kNN, K‑Means Clustering, CoT, LangGraph, and a Mixture‑of‑Experts ensemble to deliver accurate, effective, and scalable AI insights. Also features a VS Code extension!</p>
+                        <strong>FangGovernorFilter/CupCat-VideoEditor-Ai</strong> (★ 4)
+                        <p>🧁 Free, local, AI-native video editor for Windows — Claude edits your timeline over MCP; the AI toolbox runs on-device. No credits, no watermark.</p>
                     </li>
                     
                     <li>
-                        <strong>PDFMathTranslate/PDFMathReader</strong> (★ 5)
-                        <p>Read scientific documents in any language, with realtime translation, on any platform. / 实时翻译任何语言的科学文献，适用于任何平台。</p>
+                        <strong>Breakluguide/CupCat-Video-Editor-Ai</strong> (★ 4)
+                        <p>🧁 Free, local, AI-native video editor for Windows — Claude edits your timeline over MCP; the AI toolbox runs on-device. No credits, no watermark.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Vizdumb2005/LOKI</strong> (★ 3)
+                        <p>LOKI — Digital Mentalist is an AI‑powered open source project combining machine learning, psychology, and interactive design to deliver a production‑ready digital mentalism experience.</p>
                     </li>
                     
                 </ul>
