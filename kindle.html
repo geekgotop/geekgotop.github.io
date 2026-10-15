@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-10-14 00:49:27</p>
+            <p class="hero-meta">构建时间：2026-10-15 00:15:55</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,17 +191,17 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The only way to do great work is to love what you do.</p>
-                        <p class="quick-meta">— Steve Jobs</p>
+                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
+                        <p class="quick-meta">— Albert Einstein</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 algorithm，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 burlakovmb/NOWA-Bio-Inspired-AI，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Can Language Models Play the Wikipedia Game?》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《ChunkAct: Action Chunking for Agentic Robotics》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">algorithm <span>/ˈælɡəˌrɪðəm/</span></p>
-                    <p class="study-meaning">n. 算法；运算法则</p>
+                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
+                    <p class="study-meaning">n. 递归；循环</p>
                     
-                    <p class="study-sentence">The sorting algorithm runs in O(n log n) time complexity.</p>
-                    <p class="study-sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
+                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
+                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Can Language Models Play the Wikipedia Game?</p>
-                    <p class="deep-abstract">Language models increasingly support or automate information retrieval from document collections too large to index. This task is difficult when it requires specialist linguistic or scientific knowledge. We used the Wikipedia Game to test language models on an analogous information retrieval task. In the game, players must reach a target article using only article links. We compared sentence embedding models and LLMs across five Wikipedia languages and five academic-literature datasets. We construct very large local graphs of Wikipedia pages and of paper citations using OpenAlex and provide code to build and navigate them. This allows the study of language models&#39; navigation capabilities without relying on third-party APIs. We compared the models with human and TF-IDF benchmarks. The Wikipedia Game format enables robust comparisons across techniques, languages, and domains. No model significantly outperformed humans, although the best models (GPT-o3 mini, GPT-4o, QwQ:32B, and DeepSeek-R1:70B) achieved comparable success. Performance and rankings varied across languages and topics, with implications for practitioners utilising these techniques.</p>
+                    <p class="deep-title">ChunkAct: Action Chunking for Agentic Robotics</p>
+                    <p class="deep-abstract">Agentic robotics places a large language model (LLM) agent in the robot control loop, where it composes perception, motion, and vision-language-action (VLA) tools under the guidance of a memory and thereby generalizes to new tasks without retraining. This generality comes at a steep price in efficiency. Every primitive requires a round of LLM reasoning over the full interaction history, so the cost of an episode grows with the number of primitives. We find this reasoning largely redundant: once a sub-goal is chosen, its primitives follow a routine already prescribed by memory. We present ChunkAct, which introduces action chunking to agentic robotics. Online, a single call launches a chunk of chained primitives, which executes autonomously and returns control only upon failure. Offline, ChunkAct compiles the memory into these chunks, so execution is memory-free at test time and the planner is reserved for decisions that require reasoning. LLM computation therefore scales with the number of decisions rather than the number of primitives. On LIBERO-Pro, ChunkAct improves task success by 5.0 points over the state of the art in agentic robotics while requiring 2.9x fewer LLM calls, 4.4x fewer input tokens, and 2.3x fewer output tokens.</p>
                     
-                    <p class="deep-takeaway">要点：Language models increasingly support or automate information retrieval from document collections too large to index. This task is difficult when it requires spe...</p>
+                    <p class="deep-takeaway">要点：Agentic robotics places a large language model (LLM) agent in the robot control loop, where it composes perception, motion, and vision-language-action (VLA) too...</p>
                     
                     <p class="deep-meta">预计阅读 1 分钟</p>
                 
@@ -289,23 +289,23 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>lucidrains/selfplay2perfect</strong> (★ 5)
-                        <p>Implementation of Play2Perfect, from Tyler Ga Wei Lum et al. of Stanford, but with a Self Play element</p>
+                        <strong>alfera-labs/company-use</strong> (★ 6)
+                        <p>The Open Source AI Co-worker for your whole team. Lives in Slack, API, Whatsapp, web and gets work done.</p>
                     </li>
                     
                     <li>
-                        <strong>shashikantdev3/attention-span</strong> (★ 4)
-                        <p>Daily AI news, fact-checked and traced back to its roots. A source-checked history of AI since 1943, a glossary with lineage, and the labs and people behind it. Open data, built nightly on free Gemini and Groq tiers.</p>
+                        <strong>gautamjajoo/awesome-economics-of-ai</strong> (★ 3)
+                        <p>A curated guide to the costs, markets, adoption, and economic effects of AI.</p>
                     </li>
                     
                     <li>
-                        <strong>SamurAIGPT/Text-To-Video-AI</strong> (★ 3)
-                        <p>Generate video from text using AI</p>
+                        <strong>federicolaterra/knemora</strong> (★ 3)
+                        <p>Open-source, Local-first AI (SI) Second Brain.</p>
                     </li>
                     
                     <li>
-                        <strong>Kingsmichaei/oyago</strong> (★ 3)
-                        <p>OyaGO: Lagos bus directions with Gemma + Backboard RAG and memory</p>
+                        <strong>DefinetlyNotAI/Ageatopia</strong> (★ 3)
+                        <p>A local-first multi-agent AI research platform for studying autonomous behavior, survival incentives, emergent dynamics, and learning in isolated simulated worlds.</p>
                     </li>
                     
                 </ul>
