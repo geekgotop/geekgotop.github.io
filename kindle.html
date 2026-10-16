@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-10-15 00:15:55</p>
+            <p class="hero-meta">构建时间：2026-10-16 00:01:38</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
-                        <p class="quick-meta">— Albert Einstein</p>
+                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                        <p class="quick-meta">— Chinese Proverb</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-main">burlakovmb/NOWA-Bio-Inspired-AI</p>
-                        <p class="quick-meta">★ 7</p>
+                        <p class="quick-main">Generated-Computers/Locals</p>
+                        <p class="quick-meta">★ 13</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 encapsulation，再口述其含义一次。</li>
                         
-                        <li>趋势: 浏览 burlakovmb/NOWA-Bio-Inspired-AI，记录 1 个可借鉴实现点。</li>
+                        <li>趋势: 浏览 Generated-Computers/Locals，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《ChunkAct: Action Chunking for Agentic Robotics》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
-                    <p class="study-meaning">n. 递归；循环</p>
+                    <p class="study-word">encapsulation <span>/ɪnˌkæpsjuˈleɪʃn/</span></p>
+                    <p class="study-meaning">n. 封装；包装</p>
                     
-                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
-                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
+                    <p class="study-sentence">Encapsulation hides the internal state of an object from the outside.</p>
+                    <p class="study-sentence-zh">封装将对象的内部状态对外部隐藏。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">ChunkAct: Action Chunking for Agentic Robotics</p>
-                    <p class="deep-abstract">Agentic robotics places a large language model (LLM) agent in the robot control loop, where it composes perception, motion, and vision-language-action (VLA) tools under the guidance of a memory and thereby generalizes to new tasks without retraining. This generality comes at a steep price in efficiency. Every primitive requires a round of LLM reasoning over the full interaction history, so the cost of an episode grows with the number of primitives. We find this reasoning largely redundant: once a sub-goal is chosen, its primitives follow a routine already prescribed by memory. We present ChunkAct, which introduces action chunking to agentic robotics. Online, a single call launches a chunk of chained primitives, which executes autonomously and returns control only upon failure. Offline, ChunkAct compiles the memory into these chunks, so execution is memory-free at test time and the planner is reserved for decisions that require reasoning. LLM computation therefore scales with the number of decisions rather than the number of primitives. On LIBERO-Pro, ChunkAct improves task success by 5.0 points over the state of the art in agentic robotics while requiring 2.9x fewer LLM calls, 4.4x fewer input tokens, and 2.3x fewer output tokens.</p>
+                    <p class="deep-title">Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion</p>
+                    <p class="deep-abstract">Recent advances in robot learning have driven rapid progress in humanoid control, enabling increasingly agile behaviors in the real world. However, humanoid control networks are typically obtained through conventional training procedures, while comparatively little attention has been given to directly modeling the distribution of their learned weights and generating functional networks in weight space. In this work, we investigate whether high-performing humanoid control networks can be generatively modeled directly through their weights. We adopt a latent diffusion framework that couples a linear autoencoder with a Diffusion Transformer. The autoencoder compresses actor network parameters into a compact latent space, and the Diffusion Transformer models the distribution of these latents. Trained on networks collected from reinforcement learning for the Unitree G1 robot, our approach generates deployable networks that perform various motions in the real world, including walking, dancing, and spin kick. Beyond generation, we further study the learned weight space to better understand the structure captured by these humanoid control networks. We identify a structural principle in the first-layer weights that consistently reflects the robot&#39;s kinematic prior. Notably, this kinematic prior emerges under both Reinforcement Learning (RL) and Imitation Learning (IL) training, suggesting that it is not specific to a particular optimization process but may instead reflect common knowledge associated with humanoid embodiment. Together, these results demonstrate the feasibility of generative modeling in humanoid network weight space, while providing initial insights into the information encoded by their learned weights. Additional results are available on our project website: https://humanoid-weight-diffusion.github.io/</p>
                     
-                    <p class="deep-takeaway">要点：Agentic robotics places a large language model (LLM) agent in the robot control loop, where it composes perception, motion, and vision-language-action (VLA) too...</p>
+                    <p class="deep-takeaway">要点：Recent advances in robot learning have driven rapid progress in humanoid control, enabling increasingly agile behaviors in the real world. However, humanoid con...</p>
                     
-                    <p class="deep-meta">预计阅读 1 分钟</p>
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>burlakovmb/NOWA-Bio-Inspired-AI</strong> (★ 7)
+                        <strong>Generated-Computers/Locals</strong> (★ 13)
+                        <p>Run many AI agents at once on your Mac, about three times faster.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>enhesa/big-agentic-brain</strong> (★ 10)
+                        <p>Memory, messaging and collaboration for AI agents. Shared learnings, reminders and agent-to-agent messages with trust-weighted ranking, behind a JSON API, MCP and a Claude Code plugin. One container, SQLite, no external services.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>burlakovmb/NOWA-Bio-Inspired-AI</strong> (★ 8)
                         <p>New bio inspired AI</p>
                     </li>
                     
                     <li>
-                        <strong>alfera-labs/company-use</strong> (★ 6)
+                        <strong>alfera-labs/company-use</strong> (★ 7)
                         <p>The Open Source AI Co-worker for your whole team. Lives in Slack, API, Whatsapp, web and gets work done.</p>
                     </li>
                     
                     <li>
                         <strong>gautamjajoo/awesome-economics-of-ai</strong> (★ 3)
                         <p>A curated guide to the costs, markets, adoption, and economic effects of AI.</p>
-                    </li>
-                    
-                    <li>
-                        <strong>federicolaterra/knemora</strong> (★ 3)
-                        <p>Open-source, Local-first AI (SI) Second Brain.</p>
-                    </li>
-                    
-                    <li>
-                        <strong>DefinetlyNotAI/Ageatopia</strong> (★ 3)
-                        <p>A local-first multi-agent AI research platform for studying autonomous behavior, survival incentives, emergent dynamics, and learning in isolated simulated worlds.</p>
                     </li>
                     
                 </ul>
