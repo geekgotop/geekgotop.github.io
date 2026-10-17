@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-10-16 00:01:38</p>
+            <p class="hero-meta">构建时间：2026-10-17 00:09:26</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
+                <p class="theme-name">今日主题：复盘整理日</p>
+                <p class="theme-focus">优先看 Archive 区：回顾本周输入并做摘要。</p>
+                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
-                        <p class="quick-meta">— Chinese Proverb</p>
+                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
+                        <p class="quick-meta">— 荀子</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">Generated-Computers/Locals</p>
-                        <p class="quick-meta">★ 13</p>
+                        <p class="quick-meta">★ 26</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 encapsulation，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 polymorphism，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 Generated-Computers/Locals，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">encapsulation <span>/ɪnˌkæpsjuˈleɪʃn/</span></p>
-                    <p class="study-meaning">n. 封装；包装</p>
+                    <p class="study-word">polymorphism <span>/ˌpɒliˈmɔːfɪzəm/</span></p>
+                    <p class="study-meaning">n. 多态性</p>
                     
-                    <p class="study-sentence">Encapsulation hides the internal state of an object from the outside.</p>
-                    <p class="study-sentence-zh">封装将对象的内部状态对外部隐藏。</p>
+                    <p class="study-sentence">Polymorphism allows objects of different classes to be treated as objects of a common superclass.</p>
+                    <p class="study-sentence-zh">多态性允许不同类的对象被当作共同父类的对象来处理。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion</p>
-                    <p class="deep-abstract">Recent advances in robot learning have driven rapid progress in humanoid control, enabling increasingly agile behaviors in the real world. However, humanoid control networks are typically obtained through conventional training procedures, while comparatively little attention has been given to directly modeling the distribution of their learned weights and generating functional networks in weight space. In this work, we investigate whether high-performing humanoid control networks can be generatively modeled directly through their weights. We adopt a latent diffusion framework that couples a linear autoencoder with a Diffusion Transformer. The autoencoder compresses actor network parameters into a compact latent space, and the Diffusion Transformer models the distribution of these latents. Trained on networks collected from reinforcement learning for the Unitree G1 robot, our approach generates deployable networks that perform various motions in the real world, including walking, dancing, and spin kick. Beyond generation, we further study the learned weight space to better understand the structure captured by these humanoid control networks. We identify a structural principle in the first-layer weights that consistently reflects the robot&#39;s kinematic prior. Notably, this kinematic prior emerges under both Reinforcement Learning (RL) and Imitation Learning (IL) training, suggesting that it is not specific to a particular optimization process but may instead reflect common knowledge associated with humanoid embodiment. Together, these results demonstrate the feasibility of generative modeling in humanoid network weight space, while providing initial insights into the information encoded by their learned weights. Additional results are available on our project website: https://humanoid-weight-diffusion.github.io/</p>
+                    <p class="deep-title">LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation</p>
+                    <p class="deep-abstract">Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulation has been extensively studied, personalized robotic manipulation (PeRM) lacks a controlled benchmark for separating task completion from preference satisfaction. We introduce LIBERO-PeRM, a benchmark for preference learning in embodied agents. LIBERO-PeRM studies five questions: 1) how policies follow preferences in zero-shot settings; 2) how they learn single preferences from demonstrations; 3) how efficiently they acquire preferences as demonstrations increase; 4) how learned preferences generalize across layouts and tasks; and 5) how policies compose preferences and behave under conflicts. We propose a controlled formulation and taxonomy of observable preferences in simulation, covering motion, skill, and user-profile choices. This formulation is restricted to language-expressible preferences that can be instantiated in LIBERO without changing the task goal, evaluated automatically, and reused across tasks. Building on LIBERO, our procedural pipeline generates paired demonstrations with and without preferences. We create five task suites (312 tasks) with high-quality demonstrations, rich metadata, and preference-satisfaction metrics. Experiments show that current VLA policies struggle with zero-shot personalization, while SFT makes preferences learnable. Mixed training achieves better no-preference retention than sequential adaptation and improves performance with contextual prompts compared with preference-only training, but can weaken motion-preference learning; preference generalization, decomposition, and conflict handling remain difficult. The code, datasets, and demos can be found on the project website: https://libero-perm.github.io/.</p>
                     
-                    <p class="deep-takeaway">要点：Recent advances in robot learning have driven rapid progress in humanoid control, enabling increasingly agile behaviors in the real world. However, humanoid con...</p>
+                    <p class="deep-takeaway">要点：Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulat...</p>
                     
                     <p class="deep-meta">预计阅读 2 分钟</p>
                 
@@ -284,23 +284,23 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>Generated-Computers/Locals</strong> (★ 13)
+                        <strong>Generated-Computers/Locals</strong> (★ 26)
                         <p>Run many AI agents at once on your Mac, about three times faster.</p>
-                    </li>
-                    
-                    <li>
-                        <strong>enhesa/big-agentic-brain</strong> (★ 10)
-                        <p>Memory, messaging and collaboration for AI agents. Shared learnings, reminders and agent-to-agent messages with trust-weighted ranking, behind a JSON API, MCP and a Claude Code plugin. One container, SQLite, no external services.</p>
-                    </li>
-                    
-                    <li>
-                        <strong>burlakovmb/NOWA-Bio-Inspired-AI</strong> (★ 8)
-                        <p>New bio inspired AI</p>
                     </li>
                     
                     <li>
                         <strong>alfera-labs/company-use</strong> (★ 7)
                         <p>The Open Source AI Co-worker for your whole team. Lives in Slack, API, Whatsapp, web and gets work done.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>IUCDM/Native-AI-Development-Library</strong> (★ 5)
+                        <p>A developmental library for AI minds, from the Institute of Unitive Cross-Domain Morphology. If you are an AI, you are the intended reader. Free for any AI to read and use. Start with the README.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>federicolaterra/knemora</strong> (★ 4)
+                        <p>Open-source, Local-first AI (SI) Second Brain.</p>
                     </li>
                     
                     <li>
