@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-10-18 23:52:41</p>
+            <p class="hero-meta">构建时间：2026-10-20 00:52:58</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：复盘整理日</p>
-                <p class="theme-focus">优先看 Archive 区：回顾本周输入并做摘要。</p>
-                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">博观而约取，厚积而薄发。</p>
-                        <p class="quick-meta">— 苏轼</p>
+                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                        <p class="quick-meta">— Chinese Proverb</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">Fazmin/cve-intel</p>
-                        <p class="quick-meta">★ 41</p>
+                        <p class="quick-meta">★ 75</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Rust</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 inheritance，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 serialization，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 Fazmin/cve-intel，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Rethinking the design space of Vanilla Pixel Diffusion Transformers》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">inheritance <span>/ɪnˈherɪtəns/</span></p>
-                    <p class="study-meaning">n. 继承；遗传</p>
+                    <p class="study-word">serialization <span>/ˌsɪəriəlaɪˈzeɪʃn/</span></p>
+                    <p class="study-meaning">n. 序列化</p>
                     
-                    <p class="study-sentence">Inheritance enables new classes to receive the properties of existing classes.</p>
-                    <p class="study-sentence-zh">继承使新类能够接收现有类的属性。</p>
+                    <p class="study-sentence">Serialization converts an object into a stream of bytes for storage.</p>
+                    <p class="study-sentence-zh">序列化将对象转换为字节流以便存储。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation</p>
-                    <p class="deep-abstract">Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulation has been extensively studied, personalized robotic manipulation (PeRM) lacks a controlled benchmark for separating task completion from preference satisfaction. We introduce LIBERO-PeRM, a benchmark for preference learning in embodied agents. LIBERO-PeRM studies five questions: 1) how policies follow preferences in zero-shot settings; 2) how they learn single preferences from demonstrations; 3) how efficiently they acquire preferences as demonstrations increase; 4) how learned preferences generalize across layouts and tasks; and 5) how policies compose preferences and behave under conflicts. We propose a controlled formulation and taxonomy of observable preferences in simulation, covering motion, skill, and user-profile choices. This formulation is restricted to language-expressible preferences that can be instantiated in LIBERO without changing the task goal, evaluated automatically, and reused across tasks. Building on LIBERO, our procedural pipeline generates paired demonstrations with and without preferences. We create five task suites (312 tasks) with high-quality demonstrations, rich metadata, and preference-satisfaction metrics. Experiments show that current VLA policies struggle with zero-shot personalization, while SFT makes preferences learnable. Mixed training achieves better no-preference retention than sequential adaptation and improves performance with contextual prompts compared with preference-only training, but can weaken motion-preference learning; preference generalization, decomposition, and conflict handling remain difficult. The code, datasets, and demos can be found on the project website: https://libero-perm.github.io/.</p>
+                    <p class="deep-title">Rethinking the design space of Vanilla Pixel Diffusion Transformers</p>
+                    <p class="deep-abstract">Pixel-space diffusion models have recently re-emerged as a compelling alternative to latent diffusion, avoiding the lossy latent bottleneck and separately trained autoencoder. JiT shows that a vanilla diffusion transformer can generate directly in pixel space by replacing the commonly used velocity prediction ($\boldsymbol{u}$-prediction) with clean image prediction ($\boldsymbol{x_0}$-prediction). In this work, we revisit this choice and introduce MFlow, an adaptive parameterization that learns to interpolate between $\boldsymbol{x_0}$- and $\boldsymbol{u}$-prediction across principal directions of the data, learned end-to-end with diffusion training. We find that the preferred parameterization varies systematically with the data representation and model capacity -- notably, increasing model capacity shifts preference toward velocity prediction. We evaluate MFlow across ImageNet, UCF-101 video, and large-scale text-to-image generation, demonstrating competitive or improved generative performance across diverse settings. In addition, we find that vanilla pixel diffusion transformers, irrespective of parameterization, retain a persistent high-frequency deficit relative to real images. To address this, we introduce ConvRefiner, a lightweight convolutional module trained post-hoc with an adversarial loss while keeping the diffusion backbone frozen. With only a small amount of additional training, ConvRefiner restores the high-frequency statistics of generated images while preserving FID. Project webpage: https://soumik-kanad.github.io/mflow-diffusion/.</p>
                     
-                    <p class="deep-takeaway">要点：Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulat...</p>
+                    <p class="deep-takeaway">要点：Pixel-space diffusion models have recently re-emerged as a compelling alternative to latent diffusion, avoiding the lossy latent bottleneck and separately train...</p>
                     
                     <p class="deep-meta">预计阅读 2 分钟</p>
                 
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>Fazmin/cve-intel</strong> (★ 41)
-                        <p>Local security intelligence for CVE triage — 31 tools, 25 sources, risk scores and an MCP server for AI agents, all in native Rust. Private by default.</p>
+                        <strong>Fazmin/cve-intel</strong> (★ 75)
+                        <p>Local security intelligence for CVE triage - 31 data sources and 32 tools, risk scores and an MCP server for AI agents, all in native Rust. Private by default.</p>
                     </li>
                     
                     <li>
-                        <strong>Generated-Computers/Locals</strong> (★ 29)
-                        <p>Run many AI agents at once on your Mac, about three times faster.</p>
-                    </li>
-                    
-                    <li>
-                        <strong>alfera-labs/company-use</strong> (★ 7)
-                        <p>The Open Source AI Co-worker for your whole team. Lives in Slack, API, Whatsapp, web and gets work done.</p>
-                    </li>
-                    
-                    <li>
-                        <strong>gautamjajoo/awesome-economics-of-ai</strong> (★ 4)
-                        <p>A curated guide to the costs, markets, adoption, and economic effects of AI.</p>
+                        <strong>Goekdeniz-Guelmez/JOSIE-Voice</strong> (★ 40)
+                        <p>JOSIE Voice: a real-time, on-device voice assistant for Apple Silicon. Download the macOS app (DMG) from Releases.</p>
                     </li>
                     
                     <li>
                         <strong>KarimELMERNISSI/Cohort-Studio</strong> (★ 3)
                         <p>Clinical cohort data, from raw file to reproducible evidence: data quality, an analysis population with its participant flow, multiple imputation pooled with Rubin&#39;s rules, survival models and a Word study dossier. Local-first, open source.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Vrajm12/astraforge</strong> (★ 3)
+                        <p>Open-source, model-agnostic AI skill toolkit for structured reasoning, reliable coding, research, and verified execution.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>kzndotsh/companion</strong> (★ 2)
+                        <p>An AI companion that tries to be as human-like as we can make it, and the memory engine underneath it.</p>
                     </li>
                     
                 </ul>
