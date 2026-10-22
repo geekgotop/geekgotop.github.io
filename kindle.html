@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-10-21 00:21:47</p>
+            <p class="hero-meta">构建时间：2026-10-22 00:24:21</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
-                        <p class="quick-meta">— 荀子</p>
+                        <p class="quick-main">博观而约取，厚积而薄发。</p>
+                        <p class="quick-meta">— 苏轼</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">Fazmin/cve-intel</p>
-                        <p class="quick-meta">★ 81</p>
+                        <p class="quick-meta">★ 86</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Rust</p>
                     
                 </article>
@@ -217,11 +217,9 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 asynchronous，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 deprecated，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 Fazmin/cve-intel，记录 1 个可借鉴实现点。</li>
-                        
-                        <li>深读: 阅读论文《OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +232,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">asynchronous <span>/eɪˈsɪŋkrənəs/</span></p>
-                    <p class="study-meaning">adj. 异步的</p>
+                    <p class="study-word">deprecated <span>/ˈdeprəkeɪtɪd/</span></p>
+                    <p class="study-meaning">adj. 已弃用的；不推荐的</p>
                     
-                    <p class="study-sentence">Asynchronous programming allows the program to continue executing while waiting for I/O.</p>
-                    <p class="study-sentence-zh">异步编程允许程序在等待 I/O 时继续执行。</p>
+                    <p class="study-sentence">This method is deprecated and will be removed in the next version.</p>
+                    <p class="study-sentence-zh">此方法已弃用，将在下一版本中移除。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +268,7 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory</p>
-                    <p class="deep-abstract">Multimodal large language models (MLLMs) have made rapid progress on visual reasoning, yet many tasks require evidence that is difficult to obtain through internal reasoning alone: our controlled study on 22 benchmarks shows that simply increasing the inference budget of the base model yields only modest gains. Such tasks demand grounded perception, external knowledge, and numerical measurements obtained through heterogeneous tools, whose outputs must be made interpretable to the model and retained across reasoning steps. We introduce OpenVLHarness, a multimodal reasoning harness organized around a capability layer and persistent multimodal memory. The capability layer combines task-level tool interfaces with evidence rendering, providing consistent access to heterogeneous backends and converting their outputs into model-readable observations. Persistent multimodal memory retains the corresponding images, structured data, and web references as addressable artifacts throughout each query. A coding interface executes generated programs over stored data, enabling computations that combine results from multiple tools. Together, these mechanisms support an iterative process of acquiring, inspecting, and composing multimodal evidence. Evaluated on 22 benchmarks with eight open and proprietary backbones, OpenVLHarness improves average scores by 9.7-12.6 points over matched no-tool baselines, including +11.2 with Qwen3-VL-8B, +9.7 with Kimi K3, and +9.9 with GPT-6 Astra. With GPT-6 Luna at medium reasoning effort, OpenVLHarness outperforms the base model, Codex, and Visual Sketchpad at maximum effort by 7.7-8.5 points while incurring at most 37% of their model-token cost.</p>
-                    
-                    <p class="deep-takeaway">要点：Multimodal large language models (MLLMs) have made rapid progress on visual reasoning, yet many tasks require evidence that is difficult to obtain through inter...</p>
-                    
-                    <p class="deep-meta">预计阅读 2 分钟</p>
+                    <p class="quick-empty">暂无论文数据</p>
                 
             </div>
             
@@ -284,28 +277,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>Fazmin/cve-intel</strong> (★ 81)
-                        <p>Local security intelligence for CVE triage - 31 data sources and 32 tools, risk scores and an MCP server for AI agents, all in native Rust. Private by default.</p>
+                        <strong>Fazmin/cve-intel</strong> (★ 86)
+                        <p>Local security intelligence for CVE triage - 38 data sources and 36 tools, risk scores and an MCP server for AI agents, all in native Rust. Private by default.</p>
                     </li>
                     
                     <li>
-                        <strong>dcarrero/genpic</strong> (★ 15)
+                        <strong>dcarrero/genpic</strong> (★ 19)
                         <p>AI portrait SaaS (Laravel 11, Livewire, Filament, Stripe, fal.ai) — run in production, released as open source after closing</p>
+                    </li>
+                    
+                    <li>
+                        <strong>FareedKhan-dev/dynamic-workflow-agents</strong> (★ 5)
+                        <p>Claude and Qwen editions of Dynamic Workflows from Scratch</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Sociaro-Research/open-media-gateway</strong> (★ 4)
+                        <p>OMG - Open Media Gateway</p>
                     </li>
                     
                     <li>
                         <strong>codebyshambhavi/pramana-dfir</strong> (★ 3)
                         <p>Evidence-first AI platform for cyber investigation and digital forensics, turning digital traces into traceable, defensible findings.</p>
-                    </li>
-                    
-                    <li>
-                        <strong>Sociaro-Research/open-media-gateway</strong> (★ 3)
-                        <p>OMG - Open Media Gateway</p>
-                    </li>
-                    
-                    <li>
-                        <strong>FareedKhan-dev/dynamic-workflow-agents</strong> (★ 3)
-                        <p>Claude and Qwen editions of Dynamic Workflows from Scratch</p>
                     </li>
                     
                 </ul>
@@ -318,7 +311,7 @@ html, body {
             <p class="zone-subtitle">复盘与回顾入口</p>
             <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
             <ul class="archive-stats">
-                <li>论文：3</li>
+                <li>论文：0</li>
                 <li>仓库：10</li>
                 <li>思维模型：3</li>
                 <li>语录：5</li>
