@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-10-23 00:21:14</p>
+            <p class="hero-meta">构建时间：2026-10-24 00:12:40</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
+                <p class="theme-name">今日主题：复盘整理日</p>
+                <p class="theme-focus">优先看 Archive 区：回顾本周输入并做摘要。</p>
+                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The only way to do great work is to love what you do.</p>
-                        <p class="quick-meta">— Steve Jobs</p>
+                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
+                        <p class="quick-meta">— Albert Einstein</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">Fazmin/cve-intel</p>
-                        <p class="quick-meta">★ 91</p>
+                        <p class="quick-meta">★ 93</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Rust</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 algorithm，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 Fazmin/cve-intel，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">algorithm <span>/ˈælɡəˌrɪðəm/</span></p>
-                    <p class="study-meaning">n. 算法；运算法则</p>
+                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
+                    <p class="study-meaning">n. 递归；循环</p>
                     
-                    <p class="study-sentence">The sorting algorithm runs in O(n log n) time complexity.</p>
-                    <p class="study-sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
+                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
+                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data</p>
-                    <p class="deep-abstract">Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing synthesis methods depend on external corpora or stronger teacher models, which become harder to obtain as the trained models get stronger. Recently, RL from zero data, in which a model learns from tasks it proposes itself, has achieved excellent performance, but existing methods target short-context tasks. Therefore, we propose $\textbf{LongZero}$, a method that lets an LLM improve its own long-context reasoning without any external data. Instead of writing questions and answers over existing documents, LongZero first has the model synthesize the question and answer with its supporting evidence in a compact structured form, and only then separately expands the evidence into a long multi-document context. LongZero combines these self-written multi-hop reasoning tasks with self-written multi-round retrieval tasks and trains the model with GRPO. We evaluate LongZero on two LLMs across five long-context reasoning benchmarks and compare it with RL on data synthesized from external corpora. Experimental results show that LongZero can generalize to real tasks, and outperforms both baselines, suggesting a viable and promising path to improving long-context reasoning of LLMs.</p>
+                    <p class="deep-title">Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning</p>
+                    <p class="deep-abstract">Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of finding at least one correct solution. Running all candidate solutions to completion can be computationally demanding, so recent work prunes the candidate pool after generating only a short prefix, committing further computation only to the surviving candidates. Existing pruning strategies divide broadly into two categories: Quality-based methods assign a score to each partial solution and discard those predicted to ultimately lead to an incorrect final solution, while diversity-based methods select partial solutions that follow different reasoning trajectories and are therefore likely to cover different final solutions. The tension between these two objectives is an instance of exploration versus exploitation, yet little to no prior work on pruning exposes this trade-off directly, let alone optimizes it. In this paper, we introduce a pruning procedure that addresses this trade-off directly by optimizing pass@$k$ over the selected solution pool. In particular, it chooses the pool to maximize the probability that at least one of its partial solutions, when continued to completion, yields a correct answer. Because this objective simultaneously rewards high-quality partial solutions and penalizes redundancy among them, quality and diversity are naturally balanced by the criterion itself rather than through separate ad-hoc design choices. On eight open-weight reasoning models, our method outperforms existing quality-based and diversity-based pruning strategies. The gains are particularly pronounced when the pruning procedure keeps a moderate number of partial solutions for continued generation, highlighting the value of directly balancing quality and diversity during pruning.</p>
                     
-                    <p class="deep-takeaway">要点：Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are lo...</p>
+                    <p class="deep-takeaway">要点：Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of fin...</p>
                     
                     <p class="deep-meta">预计阅读 2 分钟</p>
                 
@@ -284,13 +284,18 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>Fazmin/cve-intel</strong> (★ 91)
-                        <p>Local security intelligence for CVE triage - 38 data sources and 36 tools, risk scores and an MCP server for AI agents, all in native Rust. Private by default.</p>
+                        <strong>Fazmin/cve-intel</strong> (★ 93)
+                        <p>Local security intelligence for CVE triage - 39 data sources and 36 tools, risk scores and an MCP server for AI agents, all in native Rust. Private by default.</p>
                     </li>
                     
                     <li>
-                        <strong>agentshield-dev/agentshield</strong> (★ 25)
+                        <strong>agentshield-dev/agentshield</strong> (★ 49)
                         <p>Agentshield is open source defense for Kubernetes and AWS. It learns how your workloads really talk, flags lateral movement with evidence, and proposes fixes you approve.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Cinderubasp/InterviewCopilot-rpocket-team</strong> (★ 29)
+                        <p>EdTech application designed to bridge the gap between learning and landing your dream job</p>
                     </li>
                     
                     <li>
@@ -299,13 +304,8 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>Sociaro-Research/open-media-gateway</strong> (★ 4)
+                        <strong>Sociaro-Research/open-media-gateway</strong> (★ 8)
                         <p>OMG - Open Media Gateway</p>
-                    </li>
-                    
-                    <li>
-                        <strong>amorey/agent-zero</strong> (★ 4)
-                        <p>A starter template for AI-native coding projects</p>
                     </li>
                     
                 </ul>
