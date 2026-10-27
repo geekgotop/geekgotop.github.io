@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-10-25 23:44:37</p>
+            <p class="hero-meta">构建时间：2026-10-27 01:03:32</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：复盘整理日</p>
-                <p class="theme-focus">优先看 Archive 区：回顾本周输入并做摘要。</p>
-                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
-                        <p class="quick-meta">— Chinese Proverb</p>
+                        <p class="quick-main">博观而约取，厚积而薄发。</p>
+                        <p class="quick-meta">— 苏轼</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">agentshield-dev/agentshield</p>
-                        <p class="quick-meta">★ 51</p>
+                        <p class="quick-meta">★ 54</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Go</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 encapsulation，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 inheritance，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 agentshield-dev/agentshield，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《The Language of Instruction: Genre and Generative AI》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">encapsulation <span>/ɪnˌkæpsjuˈleɪʃn/</span></p>
-                    <p class="study-meaning">n. 封装；包装</p>
+                    <p class="study-word">inheritance <span>/ɪnˈherɪtəns/</span></p>
+                    <p class="study-meaning">n. 继承；遗传</p>
                     
-                    <p class="study-sentence">Encapsulation hides the internal state of an object from the outside.</p>
-                    <p class="study-sentence-zh">封装将对象的内部状态对外部隐藏。</p>
+                    <p class="study-sentence">Inheritance enables new classes to receive the properties of existing classes.</p>
+                    <p class="study-sentence-zh">继承使新类能够接收现有类的属性。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning</p>
-                    <p class="deep-abstract">Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of finding at least one correct solution. Running all candidate solutions to completion can be computationally demanding, so recent work prunes the candidate pool after generating only a short prefix, committing further computation only to the surviving candidates. Existing pruning strategies divide broadly into two categories: Quality-based methods assign a score to each partial solution and discard those predicted to ultimately lead to an incorrect final solution, while diversity-based methods select partial solutions that follow different reasoning trajectories and are therefore likely to cover different final solutions. The tension between these two objectives is an instance of exploration versus exploitation, yet little to no prior work on pruning exposes this trade-off directly, let alone optimizes it. In this paper, we introduce a pruning procedure that addresses this trade-off directly by optimizing pass@$k$ over the selected solution pool. In particular, it chooses the pool to maximize the probability that at least one of its partial solutions, when continued to completion, yields a correct answer. Because this objective simultaneously rewards high-quality partial solutions and penalizes redundancy among them, quality and diversity are naturally balanced by the criterion itself rather than through separate ad-hoc design choices. On eight open-weight reasoning models, our method outperforms existing quality-based and diversity-based pruning strategies. The gains are particularly pronounced when the pruning procedure keeps a moderate number of partial solutions for continued generation, highlighting the value of directly balancing quality and diversity during pruning.</p>
+                    <p class="deep-title">The Language of Instruction: Genre and Generative AI</p>
+                    <p class="deep-abstract">This article argues that instruction-fine-tuned language models should be understood as implementing a genre, what is proposed as the instructional-conversational genre. This genre is an amalgamation of discursive language from prior conversations between generative models and humans recursively run through these massive neural networks. It is instantiated in applications through instruction fine-tuning, the inclusion of a pretext known as a system prompt, and the formalization of inputs in mark-up languages characterized by the use of special tokens and role assignment in turntaking structures.</p>
                     
-                    <p class="deep-takeaway">要点：Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of fin...</p>
+                    <p class="deep-takeaway">要点：This article argues that instruction-fine-tuned language models should be understood as implementing a genre, what is proposed as the instructional-conversation...</p>
                     
-                    <p class="deep-meta">预计阅读 2 分钟</p>
+                    <p class="deep-meta">预计阅读 1 分钟</p>
                 
             </div>
             
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>agentshield-dev/agentshield</strong> (★ 51)
+                        <strong>agentshield-dev/agentshield</strong> (★ 54)
                         <p>Agentshield is open source defense for Kubernetes and AWS. It learns how your workloads really talk, flags lateral movement with evidence, and proposes fixes you approve.</p>
                     </li>
                     
                     <li>
-                        <strong>Cinderubasp/InterviewCopilot-rpocket-team</strong> (★ 29)
+                        <strong>Cinderubasp/InterviewCopilot-rpocket-team</strong> (★ 54)
                         <p>EdTech application designed to bridge the gap between learning and landing your dream job</p>
                     </li>
                     
                     <li>
-                        <strong>Sociaro-Research/open-media-gateway</strong> (★ 21)
-                        <p>OMG - Open Media Gateway</p>
-                    </li>
-                    
-                    <li>
-                        <strong>dcarrero/genpic</strong> (★ 20)
-                        <p>AI portrait SaaS (Laravel 11, Livewire, Filament, Stripe, fal.ai) — run in production, released as open source after closing</p>
-                    </li>
-                    
-                    <li>
-                        <strong>faraflow/faraflow</strong> (★ 14)
+                        <strong>faraflow/faraflow</strong> (★ 47)
                         <p>Visual builder and execution engine for AI powered organizations</p>
+                    </li>
+                    
+                    <li>
+                        <strong>OFat34764e/InterviewCopilot-rpocket-team</strong> (★ 32)
+                        <p>EdTech application designed to bridge the gap between learning and landing your dream job</p>
+                    </li>
+                    
+                    <li>
+                        <strong>zidniryi/cutvii</strong> (★ 19)
+                        <p>CutVii - Creative editing. Flexible workflow. On-device AI</p>
                     </li>
                     
                 </ul>
