@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-10-28 00:55:44</p>
+            <p class="hero-meta">构建时间：2026-10-29 01:29:17</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The only way to do great work is to love what you do.</p>
-                        <p class="quick-meta">— Steve Jobs</p>
+                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
+                        <p class="quick-meta">— Albert Einstein</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">Cinderubasp/InterviewCopilot-rpocket-team</p>
-                        <p class="quick-meta">★ 54</p>
+                        <p class="quick-meta">★ 53</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: HTML</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 abstraction，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 concurrency，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 Cinderubasp/InterviewCopilot-rpocket-team，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Retriever-Free Retrieval: Navigating Documents with Decision Models》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">abstraction <span>/æbˈstrækʃn/</span></p>
-                    <p class="study-meaning">n. 抽象；提取</p>
+                    <p class="study-word">concurrency <span>/kənˈkʌrənsi/</span></p>
+                    <p class="study-meaning">n. 并发；并发性</p>
                     
-                    <p class="study-sentence">Abstraction reduces complexity by hiding unnecessary details.</p>
-                    <p class="study-sentence-zh">抽象通过隐藏不必要的细节来降低复杂性。</p>
+                    <p class="study-sentence">Concurrency allows multiple tasks to run in overlapping time periods.</p>
+                    <p class="study-sentence-zh">并发允许多个任务在重叠的时间段内运行。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Retriever-Free Retrieval: Navigating Documents with Decision Models</p>
-                    <p class="deep-abstract">While language models have become dramatically more capable, retrieval still largely relies on lexical matching or similarity in fixed embedding spaces. This creates a capability asymmetry: what the retriever fails to find, even the strongest generator cannot recover. We propose DecisionRAG, which brings the capabilities of pretrained language models to retrieval using decision models that jointly evaluate candidate branches in a single forward pass, without generating any tokens, and show that judging candidates in a shared context makes their relevance estimates comparable. Like a person browsing a library, DecisionRAG navigates the corpus&#39;s inherent structure from broad topics down to individual passages, deciding at each level which branches are worth exploring. Without task-specific training or a first-stage retriever, DecisionRAG outperforms dense retrieval with an 8B reranker by 13.8 R@1 points on MultiDoc2Dial and 17.4 Hit@1 points on Natural Questions. Across four benchmarks, including a corpus of 2.68 million Wikipedia paragraphs, retrieval takes just 0.7-1.8 seconds per query.</p>
+                    <p class="deep-title">Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction</p>
+                    <p class="deep-abstract">Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use in resource-constrained settings. We introduce Hexels: novel planar hexagonal surface elements with a first-order spatial color field for efficient 3D scene and 2D image representation. Hexels exploit locally planar regions with smoothly varying appearance using fewer, larger primitives. Their hexagonal support provides an area- and boundary-efficient domain, while the local color field captures appearance variation within each primitive. Across 34 scenes, Hexels improve PSNR over memory-matched 2DGS by 4.53-7.38 dB across datasets while requiring lower training VRAM. We further ablate Hexels by showing that per primitive, Hexels outperform 2DGS by upto 4.74 dB while using lower training VRAM and having 2.31 times faster FPS. Even in unconstrained settings, Hexels offers complementary quality-memory trade-offs. For efficient 3D surface reconstruction, Hexels reduce error by 28.9% compared with memory-matched 2DGS across 15 DTU scans. On 6 Tanks and Temples surface scenes, Hexels achieves the highest mean F1 among compared methods (34.38%, versus 31.72% for 2DGS). We further also show that Hexels, as a general primitive, improves 2D image representation over Image-GS. Hexels push the Pareto frontier on the quality-efficiency trade-off of surface-aligned primitives.</p>
                     
-                    <p class="deep-takeaway">要点：While language models have become dramatically more capable, retrieval still largely relies on lexical matching or similarity in fixed embedding spaces. This cr...</p>
+                    <p class="deep-takeaway">要点：Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use...</p>
                     
-                    <p class="deep-meta">预计阅读 1 分钟</p>
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -284,7 +284,7 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>Cinderubasp/InterviewCopilot-rpocket-team</strong> (★ 54)
+                        <strong>Cinderubasp/InterviewCopilot-rpocket-team</strong> (★ 53)
                         <p>EdTech application designed to bridge the gap between learning and landing your dream job</p>
                     </li>
                     
@@ -299,13 +299,13 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>zidniryi/cutvii</strong> (★ 21)
-                        <p>CutVii - Creative editing. Flexible workflow. On-device AI</p>
+                        <strong>lucidrains/attention-contact-planning</strong> (★ 10)
+                        <p>Implementation of Attention-based Contact Planning, by Junzhe He of ETH Zürich</p>
                     </li>
                     
                     <li>
-                        <strong>lucidrains/attention-contact-planning</strong> (★ 10)
-                        <p>Implementation of Attention-based Contact Planning, by Junzhe He of ETH Zürich</p>
+                        <strong>xAerux/aerus-ezai</strong> (★ 7)
+                        <p>EZ AI — Local AI made easy: Windows command center for local AI apps, model library, and coding agents.</p>
                     </li>
                     
                 </ul>
