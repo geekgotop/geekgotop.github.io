@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-11-03 03:15:39</p>
+            <p class="hero-meta">构建时间：2026-11-04 01:51:10</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">博观而约取，厚积而薄发。</p>
-                        <p class="quick-meta">— 苏轼</p>
+                        <p class="quick-main">The only way to do great work is to love what you do.</p>
+                        <p class="quick-meta">— Steve Jobs</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">Jumbomuffin777/Frontier-UI</p>
-                        <p class="quick-meta">★ 53</p>
+                        <p class="quick-meta">★ 58</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 deprecated，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 algorithm，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 Jumbomuffin777/Frontier-UI，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Character-Name Concentration in LLM Fiction: Measuring Displacement and Mitigating Repetition》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">deprecated <span>/ˈdeprəkeɪtɪd/</span></p>
-                    <p class="study-meaning">adj. 已弃用的；不推荐的</p>
+                    <p class="study-word">algorithm <span>/ˈælɡəˌrɪðəm/</span></p>
+                    <p class="study-meaning">n. 算法；运算法则</p>
                     
-                    <p class="study-sentence">This method is deprecated and will be removed in the next version.</p>
-                    <p class="study-sentence-zh">此方法已弃用，将在下一版本中移除。</p>
+                    <p class="study-sentence">The sorting algorithm runs in O(n log n) time complexity.</p>
+                    <p class="study-sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Character-Name Concentration in LLM Fiction: Measuring Displacement and Mitigating Repetition</p>
-                    <p class="deep-abstract">Character names in large language model (LLM) fiction concentrate on a handful of recurrent names such as &#39;Elara&#39; and &#39;Elias&#39;, a measurable face of AI slop. Existing fixes either require logit access or retraining, or operate per request and cannot control concentration across a corpus. How much prompt-level strategies reduce concentration, and at what cost to name naturalness, has not been systematically measured. We present an empirical study of name-concentration control across eight strategies and introduce speculative naming, a fine-tuning-free method that adapts the draft-verify-reject paradigm of speculative decoding from tokens to names. The method requests candidate name-sets through verbalized sampling, scores them against a SlopTracker that combines a per-model fingerprint with a runtime counter, and selects through a temperature-controlled rule or its strict variant (HARD). We use 20 LLMs to generate 44,782 stories in four languages from text and visual stimuli (88,919 named characters), and measure concentration with a list-free collision metric (Slop Ratio, SR) decomposed into known and emergent components. List-based strategies do not remove slop: static banlists displace concentration to emergent names and more than halve the share of attested real names. Speculative naming removes it: the sampling scaffold alone cuts SR by 89% on average, the dynamic tracker brings the total reduction to 95%, mean collision probability falls from 7.3% to 0.4%, and known-name collisions hold at zero while naturalness stays close to baseline (42-69% attested by language) and within-story collisions drop from 4.3% to 0.2%. The strategy ranking is stable across languages, model families, and name-counting conventions. Name concentration is thus controllable at the corpus level without logit access or retraining; broader creative diversity beyond naming remains open.</p>
+                    <p class="deep-title">Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations</p>
+                    <p class="deep-abstract">Sensorized human demonstrations offer scalable data for mobile manipulation, but embodiment differences complicate policy learning. We present Pixel-UMI, a pipeline for learning environment-aware whole-body policies from human data. We first introduce Environment-Aware Retargeting (EAR), which combines reconstructed scene geometry with demonstrated head and gripper trajectories to determine robot posture and generate collision-aware joint and base targets. Delay-calibrated action assignment converts these trajectories into actions. However, kinematic differences can leave residual pose errors, creating viewpoint mismatches between human demonstrations and robot observations. We therefore introduce Retargeting-Error-Aware Masking (REAM), which uses these errors during training to reduce reliance on mismatched views at deployment. Finally, because estimated actions cannot fully capture contact-rich interactions, we collect on-policy human corrections through DAgger to improve performance. We evaluate Pixel-UMI on five challenging tasks spanning articulated-object manipulation, deformable-object handling, constrained-space reaching, whole-body collision avoidance, and contact-rich bimanual coordination, achieving 87.0% average task progress. Video results are available at https://pixel-robot.com/pixel-umi</p>
                     
-                    <p class="deep-takeaway">要点：Character names in large language model (LLM) fiction concentrate on a handful of recurrent names such as &#39;Elara&#39; and &#39;Elias&#39;, a measurable face of AI slop. Exi...</p>
+                    <p class="deep-takeaway">要点：Sensorized human demonstrations offer scalable data for mobile manipulation, but embodiment differences complicate policy learning. We present Pixel-UMI, a pipe...</p>
                     
-                    <p class="deep-meta">预计阅读 2 分钟</p>
+                    <p class="deep-meta">预计阅读 1 分钟</p>
                 
             </div>
             
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>Jumbomuffin777/Frontier-UI</strong> (★ 53)
+                        <strong>Jumbomuffin777/Frontier-UI</strong> (★ 58)
                         <p>ChatGPT-style generative UI for Open WebUI: photo galleries, live maps with real routes, multi-day trips, budgets, calculators, live weather &amp; stocks, link previews, and one-click Word/Excel/PowerPoint exports via ArtCraft. One file, no API keys.</p>
                     </li>
                     
                     <li>
-                        <strong>Omianheart/Deadline-resp-Tracker-AI</strong> (★ 25)
-                        <p>📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects &amp; submission dates from academic documents, with smart deadline Q&amp;A and Telegram notifications. 🤖📸💬📲</p>
+                        <strong>vixhal-baraiya/qwenFS</strong> (★ 33)
+                        <p>Qwen3.5-2B with a filesystem compiled and inserted directly into its weights.</p>
                     </li>
                     
                     <li>
-                        <strong>Anil-matcha/open-spaces</strong> (★ 3)
+                        <strong>Anil-matcha/open-spaces</strong> (★ 4)
                         <p>Free, open-source alternative to ChatGPT Spaces: a self-hostable AI workspace for shared pages and conversations.</p>
-                    </li>
-                    
-                    <li>
-                        <strong>abchughtai786/automated-job-posting-pipeline</strong> (★ 3)
-                        <p>Node.js pipeline that collects, screens with AI, de-duplicates and publishes job listings demo with sample data</p>
                     </li>
                     
                     <li>
                         <strong>biletian/awesome-ai-news-sources-zh</strong> (★ 3)
                         <p>精选 AI 资讯信源清单（中英双语）· Curated AI news sources, read daily by Zhiyike</p>
+                    </li>
+                    
+                    <li>
+                        <strong>bogdancstrike/image-organizer</strong> (★ 3)
+                        <p>Turn a messy photo folder into beautifully organized albums. Locally, in seconds, with an undo button.  Sort by what&#39;s in the photos, cull a shoot like a pro (blurry · eyes closed · best of burst), and watch every thumbnail fly into its folder.</p>
                     </li>
                     
                 </ul>
