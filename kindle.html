@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-11-04 01:51:10</p>
+            <p class="hero-meta">构建时间：2026-11-05 01:57:48</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：The only way to do great work is to ...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The only way to do great work is to love what you do.</p>
-                        <p class="quick-meta">— Steve Jobs</p>
+                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
+                        <p class="quick-meta">— Albert Einstein</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-main">Jumbomuffin777/Frontier-UI</p>
-                        <p class="quick-meta">★ 58</p>
+                        <p class="quick-main">vixhal-baraiya/qwenFS</p>
+                        <p class="quick-meta">★ 88</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 algorithm，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
                         
-                        <li>趋势: 浏览 Jumbomuffin777/Frontier-UI，记录 1 个可借鉴实现点。</li>
+                        <li>趋势: 浏览 vixhal-baraiya/qwenFS，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《DreamX: Video Diffusion Model is a Universal Latent Action Learner》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">algorithm <span>/ˈælɡəˌrɪðəm/</span></p>
-                    <p class="study-meaning">n. 算法；运算法则</p>
+                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
+                    <p class="study-meaning">n. 递归；循环</p>
                     
-                    <p class="study-sentence">The sorting algorithm runs in O(n log n) time complexity.</p>
-                    <p class="study-sentence-zh">该排序算法的时间复杂度为 O(n log n)。</p>
+                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
+                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations</p>
-                    <p class="deep-abstract">Sensorized human demonstrations offer scalable data for mobile manipulation, but embodiment differences complicate policy learning. We present Pixel-UMI, a pipeline for learning environment-aware whole-body policies from human data. We first introduce Environment-Aware Retargeting (EAR), which combines reconstructed scene geometry with demonstrated head and gripper trajectories to determine robot posture and generate collision-aware joint and base targets. Delay-calibrated action assignment converts these trajectories into actions. However, kinematic differences can leave residual pose errors, creating viewpoint mismatches between human demonstrations and robot observations. We therefore introduce Retargeting-Error-Aware Masking (REAM), which uses these errors during training to reduce reliance on mismatched views at deployment. Finally, because estimated actions cannot fully capture contact-rich interactions, we collect on-policy human corrections through DAgger to improve performance. We evaluate Pixel-UMI on five challenging tasks spanning articulated-object manipulation, deformable-object handling, constrained-space reaching, whole-body collision avoidance, and contact-rich bimanual coordination, achieving 87.0% average task progress. Video results are available at https://pixel-robot.com/pixel-umi</p>
+                    <p class="deep-title">DreamX: Video Diffusion Model is a Universal Latent Action Learner</p>
+                    <p class="deep-abstract">Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invariant to changes in embodiment and appearance. Existing latent action models infer actions from visual transitions, but their representations often entangle the underlying action with irrelevant visual variations, limiting transfer across embodiments. We introduce DreamX, which repurposes a pretrained video diffusion model as a universal latent action learner. Our approach extracts compact latent actions from the video model&#39;s rich spatiotemporal features, compressing each latent video frame by $\boldsymbol{300\times}$ ($\boldsymbol{1{,}200 \rightarrow 4}$ tokens). In addition, by leveraging the video model&#39;s generative prior, these latent actions capture action-relevant dynamics disentangled from visual appearance. The resulting latent space serves as a shared action interface across embodiments (human and robot), environments, and action parameterizations. On LARY-Bench, DreamX achieves state-of-the-art performance among latent action models. Moreover, actions encoded in one setting remain effective in another: the latent space supports any-to-any video transfer and zero-shot action transfer across diverse embodiments and environments. Furthermore, this shared interface also enables policy learning in a compact latent action space, reducing the computational cost of video-diffusion-based policies.</p>
                     
-                    <p class="deep-takeaway">要点：Sensorized human demonstrations offer scalable data for mobile manipulation, but embodiment differences complicate policy learning. We present Pixel-UMI, a pipe...</p>
+                    <p class="deep-takeaway">要点：Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invarian...</p>
                     
-                    <p class="deep-meta">预计阅读 1 分钟</p>
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>Jumbomuffin777/Frontier-UI</strong> (★ 58)
-                        <p>ChatGPT-style generative UI for Open WebUI: photo galleries, live maps with real routes, multi-day trips, budgets, calculators, live weather &amp; stocks, link previews, and one-click Word/Excel/PowerPoint exports via ArtCraft. One file, no API keys.</p>
-                    </li>
-                    
-                    <li>
-                        <strong>vixhal-baraiya/qwenFS</strong> (★ 33)
+                        <strong>vixhal-baraiya/qwenFS</strong> (★ 88)
                         <p>Qwen3.5-2B with a filesystem compiled and inserted directly into its weights.</p>
                     </li>
                     
                     <li>
-                        <strong>Anil-matcha/open-spaces</strong> (★ 4)
-                        <p>Free, open-source alternative to ChatGPT Spaces: a self-hostable AI workspace for shared pages and conversations.</p>
+                        <strong>Jumbomuffin777/Frontier-UI</strong> (★ 59)
+                        <p>ChatGPT-style generative UI for Open WebUI: photo galleries, live maps with real routes, multi-day trips, budgets, calculators, live weather &amp; stocks, link previews, and one-click Word/Excel/PowerPoint exports via ArtCraft. One file, no API keys.</p>
                     </li>
                     
                     <li>
-                        <strong>biletian/awesome-ai-news-sources-zh</strong> (★ 3)
-                        <p>精选 AI 资讯信源清单（中英双语）· Curated AI news sources, read daily by Zhiyike</p>
+                        <strong>BrightRaider/universal-gpu-unlock</strong> (★ 4)
+                        <p>Universal one-click UEFI pre-boot rate-limiter unlock for NVIDIA GeForce RTX 40 &amp; 30 Series (Ada Lovelace &amp; Ampere). Uncaps full tensor performance across Windows, PyTorch, CUDA, and WSL2.</p>
                     </li>
                     
                     <li>
-                        <strong>bogdancstrike/image-organizer</strong> (★ 3)
-                        <p>Turn a messy photo folder into beautifully organized albums. Locally, in seconds, with an undo button.  Sort by what&#39;s in the photos, cull a shoot like a pro (blurry · eyes closed · best of burst), and watch every thumbnail fly into its folder.</p>
+                        <strong>DeepakSingh98/qwenlab</strong> (★ 4)
+                        <p>Six small transformers compiled into Qwen3.5-9B, trained in its own forward passes. Qwen runs the experiments.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>Coretech001/Aurum-AI</strong> (★ 3)
+                        <p>AI-powered desktop platform for gold market analysis, algorithmic trading, and local model experimentation with MetaTrader 5 integration.</p>
                     </li>
                     
                 </ul>
