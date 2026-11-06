@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-11-05 01:57:48</p>
+            <p class="hero-meta">构建时间：2026-11-06 01:57:46</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：英语强化日</p>
-                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
-                <p class="theme-trigger">触发句：In the middle of difficulty lies opp...</p>
+                <p class="theme-name">今日主题：AI工程日</p>
+                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
+                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">In the middle of difficulty lies opportunity.</p>
-                        <p class="quick-meta">— Albert Einstein</p>
+                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                        <p class="quick-meta">— Chinese Proverb</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">vixhal-baraiya/qwenFS</p>
-                        <p class="quick-meta">★ 88</p>
+                        <p class="quick-meta">★ 91</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
                     
                 </article>
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 recursion，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 encapsulation，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 vixhal-baraiya/qwenFS，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《DreamX: Video Diffusion Model is a Universal Latent Action Learner》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《A Framework for Context Enrichment and Selective Robustness in LLM Social Agents》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">recursion <span>/rɪˈkɜːrʒn/</span></p>
-                    <p class="study-meaning">n. 递归；循环</p>
+                    <p class="study-word">encapsulation <span>/ɪnˌkæpsjuˈleɪʃn/</span></p>
+                    <p class="study-meaning">n. 封装；包装</p>
                     
-                    <p class="study-sentence">Recursion is a method where the solution depends on solutions to smaller instances.</p>
-                    <p class="study-sentence-zh">递归是一种方法，其解决方案依赖于较小实例的解决方案。</p>
+                    <p class="study-sentence">Encapsulation hides the internal state of an object from the outside.</p>
+                    <p class="study-sentence-zh">封装将对象的内部状态对外部隐藏。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,10 +270,10 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">DreamX: Video Diffusion Model is a Universal Latent Action Learner</p>
-                    <p class="deep-abstract">Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invariant to changes in embodiment and appearance. Existing latent action models infer actions from visual transitions, but their representations often entangle the underlying action with irrelevant visual variations, limiting transfer across embodiments. We introduce DreamX, which repurposes a pretrained video diffusion model as a universal latent action learner. Our approach extracts compact latent actions from the video model&#39;s rich spatiotemporal features, compressing each latent video frame by $\boldsymbol{300\times}$ ($\boldsymbol{1{,}200 \rightarrow 4}$ tokens). In addition, by leveraging the video model&#39;s generative prior, these latent actions capture action-relevant dynamics disentangled from visual appearance. The resulting latent space serves as a shared action interface across embodiments (human and robot), environments, and action parameterizations. On LARY-Bench, DreamX achieves state-of-the-art performance among latent action models. Moreover, actions encoded in one setting remain effective in another: the latent space supports any-to-any video transfer and zero-shot action transfer across diverse embodiments and environments. Furthermore, this shared interface also enables policy learning in a compact latent action space, reducing the computational cost of video-diffusion-based policies.</p>
+                    <p class="deep-title">A Framework for Context Enrichment and Selective Robustness in LLM Social Agents</p>
+                    <p class="deep-abstract">Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been shown to substantially change their behavior under meaning-preserving prompt variations, creating a validation problem for social simulation. One plausible hypothesis is that this brittleness reflects a lack of grounding and can be reduced by enriching the context provided to the agents. Whether richer context improves robustness remains unclear, in part because context richness and robustness are rarely defined in ways that support controlled comparisons. We address the first need with controlled context enrichment, a set of prompt substitution rules that systematically enriches distinct types of context: neutral padding, generic social background, descriptive decision grounding, and normative decision grounding. We address the second by introducing selective robustness as a validation criterion: insensitivity to meaning-preserving prompt variation combined with a directional response to decision-relevant changes in the social world. We demonstrate the framework in a Prisoner&#39;s Dilemma-like game, showing how it can be used to identify which forms of context enrichment produce more desirable and robust agent behavior. We find that these forms of enrichment produce distinct behavioral patterns that vary between the two models tested.</p>
                     
-                    <p class="deep-takeaway">要点：Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invarian...</p>
+                    <p class="deep-takeaway">要点：Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape...</p>
                     
                     <p class="deep-meta">预计阅读 2 分钟</p>
                 
@@ -284,28 +284,28 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>vixhal-baraiya/qwenFS</strong> (★ 88)
+                        <strong>vixhal-baraiya/qwenFS</strong> (★ 91)
                         <p>Qwen3.5-2B with a filesystem compiled and inserted directly into its weights.</p>
                     </li>
                     
                     <li>
-                        <strong>Jumbomuffin777/Frontier-UI</strong> (★ 59)
+                        <strong>Jumbomuffin777/Frontier-UI</strong> (★ 63)
                         <p>ChatGPT-style generative UI for Open WebUI: photo galleries, live maps with real routes, multi-day trips, budgets, calculators, live weather &amp; stocks, link previews, and one-click Word/Excel/PowerPoint exports via ArtCraft. One file, no API keys.</p>
                     </li>
                     
                     <li>
-                        <strong>BrightRaider/universal-gpu-unlock</strong> (★ 4)
-                        <p>Universal one-click UEFI pre-boot rate-limiter unlock for NVIDIA GeForce RTX 40 &amp; 30 Series (Ada Lovelace &amp; Ampere). Uncaps full tensor performance across Windows, PyTorch, CUDA, and WSL2.</p>
+                        <strong>AstralBeneathSilver/Deadline-resp-Tracker-AI</strong> (★ 40)
+                        <p>📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects &amp; submission dates from academic documents, with smart deadline Q&amp;A and Telegram notifications. 🤖📸💬📲</p>
                     </li>
                     
                     <li>
-                        <strong>DeepakSingh98/qwenlab</strong> (★ 4)
+                        <strong>DjibrilM/MagicVoiceAI</strong> (★ 11)
+                        <p> An offline desktop Text-to-Speech (TTS) studio built with Electron and the Qvac sdk </p>
+                    </li>
+                    
+                    <li>
+                        <strong>DeepakSingh98/qwenlab</strong> (★ 9)
                         <p>Six small transformers compiled into Qwen3.5-9B, trained in its own forward passes. Qwen runs the experiments.</p>
-                    </li>
-                    
-                    <li>
-                        <strong>Coretech001/Aurum-AI</strong> (★ 3)
-                        <p>AI-powered desktop platform for gold market analysis, algorithmic trading, and local model experimentation with MetaTrader 5 integration.</p>
                     </li>
                     
                 </ul>
