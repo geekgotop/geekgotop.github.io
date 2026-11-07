@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-11-06 01:57:46</p>
+            <p class="hero-meta">构建时间：2026-11-07 01:33:28</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,25 +191,25 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：The best time to plant a tree was 20...</p>
+                <p class="theme-name">今日主题：复盘整理日</p>
+                <p class="theme-focus">优先看 Archive 区：回顾本周输入并做摘要。</p>
+                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">The best time to plant a tree was 20 years ago. The second best time is now.</p>
-                        <p class="quick-meta">— Chinese Proverb</p>
+                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
+                        <p class="quick-meta">— 荀子</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
-                        <p class="quick-main">vixhal-baraiya/qwenFS</p>
-                        <p class="quick-meta">★ 91</p>
-                        <p class="quick-note">新兴项目，适合早期观察。 语言: Python</p>
+                        <p class="quick-main">didilili/mianstack</p>
+                        <p class="quick-meta">★ 121</p>
+                        <p class="quick-note">新兴项目，适合早期观察。 语言: JavaScript</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 encapsulation，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 polymorphism，再口述其含义一次。</li>
                         
-                        <li>趋势: 浏览 vixhal-baraiya/qwenFS，记录 1 个可借鉴实现点。</li>
+                        <li>趋势: 浏览 didilili/mianstack，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《A Framework for Context Enrichment and Selective Robustness in LLM Social Agents》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">encapsulation <span>/ɪnˌkæpsjuˈleɪʃn/</span></p>
-                    <p class="study-meaning">n. 封装；包装</p>
+                    <p class="study-word">polymorphism <span>/ˌpɒliˈmɔːfɪzəm/</span></p>
+                    <p class="study-meaning">n. 多态性</p>
                     
-                    <p class="study-sentence">Encapsulation hides the internal state of an object from the outside.</p>
-                    <p class="study-sentence-zh">封装将对象的内部状态对外部隐藏。</p>
+                    <p class="study-sentence">Polymorphism allows objects of different classes to be treated as objects of a common superclass.</p>
+                    <p class="study-sentence-zh">多态性允许不同类的对象被当作共同父类的对象来处理。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">A Framework for Context Enrichment and Selective Robustness in LLM Social Agents</p>
-                    <p class="deep-abstract">Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been shown to substantially change their behavior under meaning-preserving prompt variations, creating a validation problem for social simulation. One plausible hypothesis is that this brittleness reflects a lack of grounding and can be reduced by enriching the context provided to the agents. Whether richer context improves robustness remains unclear, in part because context richness and robustness are rarely defined in ways that support controlled comparisons. We address the first need with controlled context enrichment, a set of prompt substitution rules that systematically enriches distinct types of context: neutral padding, generic social background, descriptive decision grounding, and normative decision grounding. We address the second by introducing selective robustness as a validation criterion: insensitivity to meaning-preserving prompt variation combined with a directional response to decision-relevant changes in the social world. We demonstrate the framework in a Prisoner&#39;s Dilemma-like game, showing how it can be used to identify which forms of context enrichment produce more desirable and robust agent behavior. We find that these forms of enrichment produce distinct behavioral patterns that vary between the two models tested.</p>
+                    <p class="deep-title">SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization</p>
+                    <p class="deep-abstract">LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation many times to maintain population diversity. We present SwarmEvolve, a framework in which hundreds of low-cost agents per round work in swarms, reason in latent space without decoding to text, and share information by passing KV caches. Each swarm studies the problem from a different angle. A novelty filter keeps the most distinct agent ideas by directly measuring the distances between the agents&#39; hidden state vectors. Crossover of ideas happens naturally in latent space, as a summarizer agent receives the combined KV caches of all swarm members. On 21 problems in mathematical discovery and scientific computing, SwarmEvolve gets the highest average score and needs a median of only 3 to 8 minutes to reach the best scores that other state-of-the-art frameworks reach in 60 minutes. On several problems, SwarmEvolve with Qwen3 8B improves on the solutions that AlphaEvolve first found with frontier LLMs. Our work shows that agent swarms that communicate in latent space offer a fast, low-cost approach to program search for scientific problems.</p>
                     
-                    <p class="deep-takeaway">要点：Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape...</p>
+                    <p class="deep-takeaway">要点：LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining hi...</p>
                     
-                    <p class="deep-meta">预计阅读 2 分钟</p>
+                    <p class="deep-meta">预计阅读 1 分钟</p>
                 
             </div>
             
@@ -284,12 +284,17 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>vixhal-baraiya/qwenFS</strong> (★ 91)
+                        <strong>didilili/mianstack</strong> (★ 121)
+                        <p>🚀 面栈 MianStack｜程序员面试题库天花板！Java、Python、数据库、算法、大模型、AI Agent、RAG 一栈备齐。真实面经关联高频考点，按公司、岗位定向备考；图文题解、精华专题、项目源码拆解，全系标配。面试官出题，面栈出招！免费开源，持续更新。</p>
+                    </li>
+                    
+                    <li>
+                        <strong>vixhal-baraiya/qwenFS</strong> (★ 92)
                         <p>Qwen3.5-2B with a filesystem compiled and inserted directly into its weights.</p>
                     </li>
                     
                     <li>
-                        <strong>Jumbomuffin777/Frontier-UI</strong> (★ 63)
+                        <strong>Jumbomuffin777/Frontier-UI</strong> (★ 64)
                         <p>ChatGPT-style generative UI for Open WebUI: photo galleries, live maps with real routes, multi-day trips, budgets, calculators, live weather &amp; stocks, link previews, and one-click Word/Excel/PowerPoint exports via ArtCraft. One file, no API keys.</p>
                     </li>
                     
@@ -299,13 +304,8 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>DjibrilM/MagicVoiceAI</strong> (★ 11)
+                        <strong>DjibrilM/MagicVoiceAI</strong> (★ 13)
                         <p> An offline desktop Text-to-Speech (TTS) studio built with Electron and the Qvac sdk </p>
-                    </li>
-                    
-                    <li>
-                        <strong>DeepakSingh98/qwenlab</strong> (★ 9)
-                        <p>Six small transformers compiled into Qwen3.5-9B, trained in its own forward passes. Qwen runs the experiments.</p>
                     </li>
                     
                 </ul>
