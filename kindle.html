@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-11-16 01:32:36</p>
+            <p class="hero-meta">构建时间：2026-11-17 04:17:17</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,24 +191,24 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
-                        <p class="quick-meta">— 荀子</p>
+                        <p class="quick-main">博观而约取，厚积而薄发。</p>
+                        <p class="quick-meta">— 苏轼</p>
                     
                 </article>
                 <article class="quick-card">
                     <h3 class="quick-title">今日热仓</h3>
                     
                         <p class="quick-main">Igniaemage/Deadline-resp-Tracker-AI</p>
-                        <p class="quick-meta">★ 50</p>
+                        <p class="quick-meta">★ 21</p>
                         <p class="quick-note">新兴项目，适合早期观察。 语言: HTML</p>
                     
                 </article>
@@ -217,9 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 polymorphism，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 inheritance，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 Igniaemage/Deadline-resp-Tracker-AI，记录 1 个可借鉴实现点。</li>
+                        
+                        <li>深读: 阅读论文《A Matrix with Steps: An Episodic and Procedural Memory Method for Tool-Using Agents and Robots》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -232,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">polymorphism <span>/ˌpɒliˈmɔːfɪzəm/</span></p>
-                    <p class="study-meaning">n. 多态性</p>
+                    <p class="study-word">inheritance <span>/ɪnˈherɪtəns/</span></p>
+                    <p class="study-meaning">n. 继承；遗传</p>
                     
-                    <p class="study-sentence">Polymorphism allows objects of different classes to be treated as objects of a common superclass.</p>
-                    <p class="study-sentence-zh">多态性允许不同类的对象被当作共同父类的对象来处理。</p>
+                    <p class="study-sentence">Inheritance enables new classes to receive the properties of existing classes.</p>
+                    <p class="study-sentence-zh">继承使新类能够接收现有类的属性。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -268,7 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="quick-empty">暂无论文数据</p>
+                    <p class="deep-title">A Matrix with Steps: An Episodic and Procedural Memory Method for Tool-Using Agents and Robots</p>
+                    <p class="deep-abstract">Agents that call tools and robots that execute tasks are challenged by two shortcomings: they repeat what failed before, and they learn from runs that they only believe succeeded. We describe the construction of a memory that addresses both, built for a production agent platform. Every run is recorded as an episode, and only an outcome confirmed by an external check, a test, a tool result or a person counts; the agent&#39;s own claim never does. What is learned from episodes is kept in a memory with two parts: an associative matrix, written with the delta rule, which finds the procedure that applies to a situation; and a section of ordered, addressable step records that answers what comes after a given step, where a step is a goal of the agent, not a motion. Because the matrix sums its associations, it keeps no order and cannot return or delete a single one; it serves as the finder, and order, outcome counts and deletion live in the records. We describe how execution outcomes are stored, how episodes are recalled and used for solving tasks, and the file format that stores the memory. In simulation, a robot that judged its own success and stopped when it believed it was done reported $96\%$ of its tasks as done and solved $35\%$; with external verification it solved $79%$. In a store of $100000$ synthetic episodes ($457$MB on disk), the oldest episode was still found first, no episode from another person&#39;s memory was returned, and a success vouched for only by the model was never recalled; a lookup took $16$ms on a laptop and $40$ms on a server node (median). Task outcomes were measured up to about $10000$ confirmed records, where the exact records solved every revisit at the first attempt.</p>
+                    
+                    <p class="deep-takeaway">要点：Agents that call tools and robots that execute tasks are challenged by two shortcomings: they repeat what failed before, and they learn from runs that they only...</p>
+                    
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -277,18 +284,18 @@ html, body {
                 <ul>
                     
                     <li>
-                        <strong>Igniaemage/Deadline-resp-Tracker-AI</strong> (★ 50)
+                        <strong>Igniaemage/Deadline-resp-Tracker-AI</strong> (★ 21)
                         <p>📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects &amp; submission dates from academic documents, with smart deadline Q&amp;A and Telegram notifications. 🤖📸💬📲</p>
                     </li>
                     
                     <li>
-                        <strong>rohitjee7022-blip/Anonymous-Campus</strong> (★ 37)
-                        <p>Anonymous Campus protects student identities while enabling honest campus facility feedback. It uses aggregated ratings and issue tracking to help administrators improve facilities, with BharatCode AI analysing feedback trends and generating actionable recommendations.</p>
+                        <strong>lucidrains/supermimic-pytorch</strong> (★ 4)
+                        <p>Unofficial implementation of Supermimic, Scaling Humanoid Whole-Body Control with One Differentiable World Model, from Qiayuan Liao et al. of Berkeley</p>
                     </li>
                     
                     <li>
-                        <strong>dharunram-lgtm/Echo_Knowledge</strong> (★ 4)
-                        <p>ECHO Knowledge is a local-first AI-powered knowledge management system for organizing documents, semantic search, grounded AI answers, and interactive knowledge graphs. Built with Tauri, Rust, React, TypeScript, and SQLite, with Gemini and Groq BYOK support.</p>
+                        <strong>Pro-GenAI/awesome-checklists</strong> (★ 4)
+                        <p>✅ Practical, reusable checklists for planning, building, reviewing, and launching software and AI products.</p>
                     </li>
                     
                     <li>
@@ -311,7 +318,7 @@ html, body {
             <p class="zone-subtitle">复盘与回顾入口</p>
             <p class="archive-tip">本次构建已生成完整内容，可在断网状态下按模块顺序复习。</p>
             <ul class="archive-stats">
-                <li>论文：0</li>
+                <li>论文：3</li>
                 <li>仓库：10</li>
                 <li>思维模型：3</li>
                 <li>语录：5</li>
