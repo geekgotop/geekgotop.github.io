@@ -177,7 +177,7 @@ html, body {
         <header class="hero">
             <h1 class="hero-title">Kindle Dash</h1>
             <p class="hero-subtitle">离线优先的个人学习主页</p>
-            <p class="hero-meta">构建时间：2026-11-25 04:44:58</p>
+            <p class="hero-meta">构建时间：2026-11-26 03:54:38</p>
             <ul class="index-list">
                 <li><a href="#zone-quick">Quick · 快速输入</a></li>
                 <li><a href="#zone-study">Study · 英语学习</a></li>
@@ -191,17 +191,17 @@ html, body {
             <p class="zone-subtitle">2-5 分钟快速输入</p>
             
             <div class="theme-card">
-                <p class="theme-name">今日主题：AI工程日</p>
-                <p class="theme-focus">优先看 Deep 区：论文要点 + 热门项目实现。</p>
-                <p class="theme-trigger">触发句：不积跬步，无以至千里；不积小流，无以成江海。...</p>
+                <p class="theme-name">今日主题：英语强化日</p>
+                <p class="theme-focus">优先看 Study 区：词汇、例句和复述练习。</p>
+                <p class="theme-trigger">触发句：博观而约取，厚积而薄发。...</p>
             </div>
             
             <div class="quick-cards">
                 <article class="quick-card">
                     <h3 class="quick-title">今日一句</h3>
                     
-                        <p class="quick-main">不积跬步，无以至千里；不积小流，无以成江海。</p>
-                        <p class="quick-meta">— 荀子</p>
+                        <p class="quick-main">博观而约取，厚积而薄发。</p>
+                        <p class="quick-meta">— 苏轼</p>
                     
                 </article>
                 <article class="quick-card">
@@ -217,11 +217,11 @@ html, body {
                     
                     <ol class="quick-plan-list">
                         
-                        <li>词汇: 朗读并复述 polymorphism，再口述其含义一次。</li>
+                        <li>词汇: 朗读并复述 inheritance，再口述其含义一次。</li>
                         
                         <li>趋势: 浏览 LEX310Dex/walid-slimani-ai-portfolio，记录 1 个可借鉴实现点。</li>
                         
-                        <li>深读: 阅读论文《Benchmarking Evidence Sufficiency in Vision-Language Models for Autonomous Driving》摘要并写 2 句总结。</li>
+                        <li>深读: 阅读论文《RAP: Radial-Angular Random Projection for Hyperbolic Representations》摘要并写 2 句总结。</li>
                         
                     </ol>
                     
@@ -234,11 +234,11 @@ html, body {
             <p class="zone-subtitle">英语词汇和语感训练</p>
             <div class="study-preview">
                 
-                    <p class="study-word">polymorphism <span>/ˌpɒliˈmɔːfɪzəm/</span></p>
-                    <p class="study-meaning">n. 多态性</p>
+                    <p class="study-word">inheritance <span>/ɪnˈherɪtəns/</span></p>
+                    <p class="study-meaning">n. 继承；遗传</p>
                     
-                    <p class="study-sentence">Polymorphism allows objects of different classes to be treated as objects of a common superclass.</p>
-                    <p class="study-sentence-zh">多态性允许不同类的对象被当作共同父类的对象来处理。</p>
+                    <p class="study-sentence">Inheritance enables new classes to receive the properties of existing classes.</p>
+                    <p class="study-sentence-zh">继承使新类能够接收现有类的属性。</p>
                     
                     
                     <p class="study-tip">学习建议：先读例句再回看释义，强化语境记忆。</p>
@@ -270,12 +270,12 @@ html, body {
             <p class="zone-subtitle">AI/ML 深度学习输入</p>
             <div class="deep-preview">
                 
-                    <p class="deep-title">Benchmarking Evidence Sufficiency in Vision-Language Models for Autonomous Driving</p>
-                    <p class="deep-abstract">Reliable driving VLMs must do more than answer correctly or localize relevant scene actors: they must determine whether the available visual evidence is sufficient to support an answer. Existing evaluations largely treat grounding and answerability as separate measurements, making it difficult to distinguish well-supported predictions from those localized to relevant but insufficient evidence. We introduce DriveAnswer, a benchmark of 20,151 questions across seven reasoning families, that operationalizes this distinction using matched strong- and weak-evidence configurations. Each pair preserves the underlying scene fact and semantic answer while changing whether the observations support answering, making abstention the appropriate response under weak evidence. On the six-family evaluation, the strongest zero-shot baseline reaches 67.31% strong-evidence accuracy, yet only 21.55% of matched questions satisfy both answer-abstain behavior and complete grounding. With controlled adaptation, Gemma-4-12B reaches 63.29% on this joint capability, nearly tripling its zero-shot performance. Qwen3-VL-8B exhibits the same broad improvement in evidence-sensitive answering and grounding. These results show that semantic correctness, evidence sufficiency, and grounding are distinct capabilities that should be evaluated jointly.</p>
+                    <p class="deep-title">RAP: Radial-Angular Random Projection for Hyperbolic Representations</p>
+                    <p class="deep-abstract">Random projection is a basic compression primitive for Euclidean representation learning, with the Johnson--Lindenstrauss lemma giving a target dimension $k=O(\varepsilon^{-2}\log n)$ independent of the ambient dimension. As hyperbolic representations gain increasing attention in modern Transformers, vision-language models, and large language models, the same need for oblivious dimensionality reduction arises, but no analogous primitive yet exists for hyperbolic representations. We study this gap. Two natural attempts fail in dual ways: a tangent-space scheme gives a clean local guarantee but is chart-bound and pays a curvature penalty, while a fully hyperbolic projection in the hyperboloid model is geometrically native but mixes radial and angular error before feeding them into the conditioning of $\operatorname{arcosh}$. We propose radial-angular random projection (RAP), which preserves the radial coordinate exactly and applies a Euclidean random projection only to the angular direction, lifting the result back to the target hyperboloid. RAP is hyperbolic-to-hyperbolic by construction, costs one Gaussian matrix-vector product, and reduces hyperbolic compression to a normalized angular JL question on $\mathbb{S}^{d-1}$. We prove a finite-set RAP guarantee with explicit $\sinh(\sqrt{c}\,r_x)\sinh(\sqrt{c}\,r_y)$ conditioning, complemented by a local tangent-space JL theorem and an arcosh-conditioning lemma for the fully hyperbolic comparator. Across an origin-centered broad-radius point cloud, a balanced tree, a clustered Gaussian, and the WordNet noun hierarchy, RAP attains the lowest mean relative distortion in every $(n,k)$ cell, reducing distortion over the strongest hyperbolic baseline by approximately $48\%$--$49\%$ on broad-radius data. RAP also scales to million-point datasets and improves retrieval on vision--language representations over hyperbolic projection baselines.</p>
                     
-                    <p class="deep-takeaway">要点：Reliable driving VLMs must do more than answer correctly or localize relevant scene actors: they must determine whether the available visual evidence is suffici...</p>
+                    <p class="deep-takeaway">要点：Random projection is a basic compression primitive for Euclidean representation learning, with the Johnson--Lindenstrauss lemma giving a target dimension $k=O(\...</p>
                     
-                    <p class="deep-meta">预计阅读 1 分钟</p>
+                    <p class="deep-meta">预计阅读 2 分钟</p>
                 
             </div>
             
@@ -289,23 +289,23 @@ html, body {
                     </li>
                     
                     <li>
-                        <strong>steveopen1/artex-ld</strong> (★ 5)
+                        <strong>steveopen1/artex-ld</strong> (★ 7)
                         <p>AI 自主渗透测试平台 —— ARTEX 二开优化版（整合 RuoJi6/ARTEX 与 AntiFox 的证据驱动交付能力）</p>
                     </li>
                     
                     <li>
-                        <strong>AlphaLima/ha-drive-energy-doc</strong> (★ 5)
+                        <strong>rapttor/sparkbots</strong> (★ 7)
+                        <p> A calmer way to keep track of many AI coding agents: a tiny 3D office where every session is a robot at a desk. Free, open source, runs on your machine.</p>
+                    </li>
+                    
+                    <li>
+                        <strong>AlphaLima/ha-drive-energy-doc</strong> (★ 6)
                         <p>The smart, fully automated fuel log for Home Assistant</p>
                     </li>
                     
                     <li>
-                        <strong>lucidrains/SEA-pytorch</strong> (★ 4)
+                        <strong>lucidrains/SEA-pytorch</strong> (★ 5)
                         <p>Explorations into Scaling Empowered Agents, from Catherine Ji et al. of Eysenbach&#39;s group</p>
-                    </li>
-                    
-                    <li>
-                        <strong>RadLamine/ClaudGPT</strong> (★ 3)
-                        <p>Open-source AI-powered Telegram bot for AI chat, image generation, document processing, code analysis, and voice interaction.</p>
                     </li>
                     
                 </ul>
